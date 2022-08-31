@@ -1,0 +1,23 @@
+// Prebuilt google-beta Provider for Terraform CDK (cdktf)
+package googlebeta
+
+
+type GoogleStorageTransferJobTransferSpecTransferOptions struct {
+	// Whether objects should be deleted from the source after they are transferred to the sink.
+	//
+	// Note that this option and delete_objects_unique_in_sink are mutually exclusive.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_job#delete_objects_from_source_after_transfer GoogleStorageTransferJob#delete_objects_from_source_after_transfer}
+	DeleteObjectsFromSourceAfterTransfer interface{} `field:"optional" json:"deleteObjectsFromSourceAfterTransfer" yaml:"deleteObjectsFromSourceAfterTransfer"`
+	// Whether objects that exist only in the sink should be deleted.
+	//
+	// Note that this option and delete_objects_from_source_after_transfer are mutually exclusive.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_job#delete_objects_unique_in_sink GoogleStorageTransferJob#delete_objects_unique_in_sink}
+	DeleteObjectsUniqueInSink interface{} `field:"optional" json:"deleteObjectsUniqueInSink" yaml:"deleteObjectsUniqueInSink"`
+	// Whether overwriting objects that already exist in the sink is allowed.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_transfer_job#overwrite_objects_already_existing_in_sink GoogleStorageTransferJob#overwrite_objects_already_existing_in_sink}
+	OverwriteObjectsAlreadyExistingInSink interface{} `field:"optional" json:"overwriteObjectsAlreadyExistingInSink" yaml:"overwriteObjectsAlreadyExistingInSink"`
+}
+

@@ -1,0 +1,13 @@
+// Prebuilt google-beta Provider for Terraform CDK (cdktf)
+package googlebeta
+
+
+type GoogleBigtableInstanceIamBindingCondition struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_instance_iam_binding#expression GoogleBigtableInstanceIamBinding#expression}.
+	Expression *string `field:"required" json:"expression" yaml:"expression"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_instance_iam_binding#title GoogleBigtableInstanceIamBinding#title}.
+	Title *string `field:"required" json:"title" yaml:"title"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_instance_iam_binding#description GoogleBigtableInstanceIamBinding#description}.
+	Description *string `field:"optional" json:"description" yaml:"description"`
+}
+

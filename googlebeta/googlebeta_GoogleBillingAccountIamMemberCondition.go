@@ -1,0 +1,13 @@
+// Prebuilt google-beta Provider for Terraform CDK (cdktf)
+package googlebeta
+
+
+type GoogleBillingAccountIamMemberCondition struct {
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_member#expression GoogleBillingAccountIamMember#expression}.
+	Expression *string `field:"required" json:"expression" yaml:"expression"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_member#title GoogleBillingAccountIamMember#title}.
+	Title *string `field:"required" json:"title" yaml:"title"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_billing_account_iam_member#description GoogleBillingAccountIamMember#description}.
+	Description *string `field:"optional" json:"description" yaml:"description"`
+}
+
