@@ -66,6 +66,8 @@ type GoogleApigeeOrganization interface {
 	ProjectId() *string
 	SetProjectId(val *string)
 	ProjectIdInput() *string
+	Properties() GoogleApigeeOrganizationPropertiesOutputReference
+	PropertiesInput() *GoogleApigeeOrganizationProperties
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -119,6 +121,7 @@ type GoogleApigeeOrganization interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutProperties(value *GoogleApigeeOrganizationProperties)
 	PutTimeouts(value *GoogleApigeeOrganizationTimeouts)
 	ResetAnalyticsRegion()
 	ResetAuthorizedNetwork()
@@ -129,6 +132,7 @@ type GoogleApigeeOrganization interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProperties()
 	ResetRetention()
 	ResetRuntimeDatabaseEncryptionKeyName()
 	ResetRuntimeType()
@@ -403,6 +407,26 @@ func (j *jsiiProxy_GoogleApigeeOrganization) ProjectIdInput() *string {
 	_jsii_.Get(
 		j,
 		"projectIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) Properties() GoogleApigeeOrganizationPropertiesOutputReference {
+	var returns GoogleApigeeOrganizationPropertiesOutputReference
+	_jsii_.Get(
+		j,
+		"properties",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeOrganization) PropertiesInput() *GoogleApigeeOrganizationProperties {
+	var returns *GoogleApigeeOrganizationProperties
+	_jsii_.Get(
+		j,
+		"propertiesInput",
 		&returns,
 	)
 	return returns
@@ -991,6 +1015,17 @@ func (g *jsiiProxy_GoogleApigeeOrganization) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (g *jsiiProxy_GoogleApigeeOrganization) PutProperties(value *GoogleApigeeOrganizationProperties) {
+	if err := g.validatePutPropertiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProperties",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleApigeeOrganization) PutTimeouts(value *GoogleApigeeOrganizationTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1054,6 +1089,14 @@ func (g *jsiiProxy_GoogleApigeeOrganization) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeOrganization) ResetProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProperties",
 		nil, // no parameters
 	)
 }

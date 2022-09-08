@@ -30,6 +30,8 @@ type GoogleVertexAiFeaturestore interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EncryptionSpec() GoogleVertexAiFeaturestoreEncryptionSpecOutputReference
+	EncryptionSpecInput() *GoogleVertexAiFeaturestoreEncryptionSpec
 	Etag() *string
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
@@ -109,8 +111,10 @@ type GoogleVertexAiFeaturestore interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutEncryptionSpec(value *GoogleVertexAiFeaturestoreEncryptionSpec)
 	PutOnlineServingConfig(value *GoogleVertexAiFeaturestoreOnlineServingConfig)
 	PutTimeouts(value *GoogleVertexAiFeaturestoreTimeouts)
+	ResetEncryptionSpec()
 	ResetForceDestroy()
 	ResetId()
 	ResetLabels()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestore) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestore) EncryptionSpec() GoogleVertexAiFeaturestoreEncryptionSpecOutputReference {
+	var returns GoogleVertexAiFeaturestoreEncryptionSpecOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestore) EncryptionSpecInput() *GoogleVertexAiFeaturestoreEncryptionSpec {
+	var returns *GoogleVertexAiFeaturestoreEncryptionSpec
+	_jsii_.Get(
+		j,
+		"encryptionSpecInput",
 		&returns,
 	)
 	return returns
@@ -876,6 +900,17 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestore) OverrideLogicalId(newLogicalId *s
 	)
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeaturestore) PutEncryptionSpec(value *GoogleVertexAiFeaturestoreEncryptionSpec) {
+	if err := g.validatePutEncryptionSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEncryptionSpec",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeaturestore) PutOnlineServingConfig(value *GoogleVertexAiFeaturestoreOnlineServingConfig) {
 	if err := g.validatePutOnlineServingConfigParameters(value); err != nil {
 		panic(err)
@@ -895,6 +930,14 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestore) PutTimeouts(value *GoogleVertexAi
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestore) ResetEncryptionSpec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEncryptionSpec",
+		nil, // no parameters
 	)
 }
 

@@ -13,6 +13,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy_rule google_dns_response_policy_rule}.
 type GoogleDnsResponsePolicyRule interface {
 	cdktf.TerraformResource
+	Behavior() *string
+	SetBehavior(val *string)
+	BehaviorInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -105,6 +108,7 @@ type GoogleDnsResponsePolicyRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutLocalData(value *GoogleDnsResponsePolicyRuleLocalData)
 	PutTimeouts(value *GoogleDnsResponsePolicyRuleTimeouts)
+	ResetBehavior()
 	ResetId()
 	ResetLocalData()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -125,6 +129,26 @@ type GoogleDnsResponsePolicyRule interface {
 // The jsii proxy struct for GoogleDnsResponsePolicyRule
 type jsiiProxy_GoogleDnsResponsePolicyRule struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleDnsResponsePolicyRule) Behavior() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"behavior",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsResponsePolicyRule) BehaviorInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"behaviorInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDnsResponsePolicyRule) CdktfStack() cdktf.TerraformStack {
@@ -454,6 +478,17 @@ func NewGoogleDnsResponsePolicyRule_Override(g GoogleDnsResponsePolicyRule, scop
 		"@cdktf/provider-google-beta.GoogleDnsResponsePolicyRule",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleDnsResponsePolicyRule)SetBehavior(val *string) {
+	if err := j.validateSetBehaviorParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"behavior",
+		val,
 	)
 }
 
@@ -824,6 +859,14 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyRule) PutTimeouts(value *GoogleDnsResp
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsResponsePolicyRule) ResetBehavior() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBehavior",
+		nil, // no parameters
 	)
 }
 

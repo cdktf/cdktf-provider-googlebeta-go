@@ -78,6 +78,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutConfidentialNodesParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutCostManagementConfigParameters(value *GoogleContainerClusterCostManagementConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutDatabaseEncryptionParameters(value *GoogleContainerClusterDatabaseEncryption) error {
 	return nil
 }
@@ -155,6 +159,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutReleaseChannelParameters(v
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutResourceUsageExportConfigParameters(value *GoogleContainerClusterResourceUsageExportConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutServiceExternalIpsConfigParameters(value *GoogleContainerClusterServiceExternalIpsConfig) error {
 	return nil
 }
 

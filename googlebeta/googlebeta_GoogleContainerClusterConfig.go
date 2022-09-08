@@ -52,6 +52,10 @@ type GoogleContainerClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#confidential_nodes GoogleContainerCluster#confidential_nodes}
 	ConfidentialNodes *GoogleContainerClusterConfidentialNodes `field:"optional" json:"confidentialNodes" yaml:"confidentialNodes"`
+	// cost_management_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#cost_management_config GoogleContainerCluster#cost_management_config}
+	CostManagementConfig *GoogleContainerClusterCostManagementConfig `field:"optional" json:"costManagementConfig" yaml:"costManagementConfig"`
 	// database_encryption block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#database_encryption GoogleContainerCluster#database_encryption}
@@ -263,6 +267,10 @@ type GoogleContainerClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#resource_usage_export_config GoogleContainerCluster#resource_usage_export_config}
 	ResourceUsageExportConfig *GoogleContainerClusterResourceUsageExportConfig `field:"optional" json:"resourceUsageExportConfig" yaml:"resourceUsageExportConfig"`
+	// service_external_ips_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#service_external_ips_config GoogleContainerCluster#service_external_ips_config}
+	ServiceExternalIpsConfig *GoogleContainerClusterServiceExternalIpsConfig `field:"optional" json:"serviceExternalIpsConfig" yaml:"serviceExternalIpsConfig"`
 	// The name or self_link of the Google Compute Engine subnetwork in which the cluster's instances are launched.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#subnetwork GoogleContainerCluster#subnetwork}

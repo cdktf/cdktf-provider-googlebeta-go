@@ -36,6 +36,8 @@ type GoogleContainerCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CostManagementConfig() GoogleContainerClusterCostManagementConfigOutputReference
+	CostManagementConfigInput() *GoogleContainerClusterCostManagementConfig
 	// Experimental.
 	Count() *float64
 	// Experimental.
@@ -191,6 +193,8 @@ type GoogleContainerCluster interface {
 	ResourceUsageExportConfig() GoogleContainerClusterResourceUsageExportConfigOutputReference
 	ResourceUsageExportConfigInput() *GoogleContainerClusterResourceUsageExportConfig
 	SelfLink() *string
+	ServiceExternalIpsConfig() GoogleContainerClusterServiceExternalIpsConfigOutputReference
+	ServiceExternalIpsConfigInput() *GoogleContainerClusterServiceExternalIpsConfig
 	ServicesIpv4Cidr() *string
 	Subnetwork() *string
 	SetSubnetwork(val *string)
@@ -241,6 +245,7 @@ type GoogleContainerCluster interface {
 	PutClusterAutoscaling(value *GoogleContainerClusterClusterAutoscaling)
 	PutClusterTelemetry(value *GoogleContainerClusterClusterTelemetry)
 	PutConfidentialNodes(value *GoogleContainerClusterConfidentialNodes)
+	PutCostManagementConfig(value *GoogleContainerClusterCostManagementConfig)
 	PutDatabaseEncryption(value *GoogleContainerClusterDatabaseEncryption)
 	PutDefaultSnatStatus(value *GoogleContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *GoogleContainerClusterDnsConfig)
@@ -261,6 +266,7 @@ type GoogleContainerCluster interface {
 	PutPrivateClusterConfig(value *GoogleContainerClusterPrivateClusterConfig)
 	PutReleaseChannel(value *GoogleContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *GoogleContainerClusterResourceUsageExportConfig)
+	PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig)
 	PutTimeouts(value *GoogleContainerClusterTimeouts)
 	PutTpuConfig(value *GoogleContainerClusterTpuConfig)
 	PutVerticalPodAutoscaling(value *GoogleContainerClusterVerticalPodAutoscaling)
@@ -272,6 +278,7 @@ type GoogleContainerCluster interface {
 	ResetClusterIpv4Cidr()
 	ResetClusterTelemetry()
 	ResetConfidentialNodes()
+	ResetCostManagementConfig()
 	ResetDatabaseEncryption()
 	ResetDatapathProvider()
 	ResetDefaultMaxPodsPerNode()
@@ -320,6 +327,7 @@ type GoogleContainerCluster interface {
 	ResetRemoveDefaultNodePool()
 	ResetResourceLabels()
 	ResetResourceUsageExportConfig()
+	ResetServiceExternalIpsConfig()
 	ResetSubnetwork()
 	ResetTimeouts()
 	ResetTpuConfig()
@@ -505,6 +513,26 @@ func (j *jsiiProxy_GoogleContainerCluster) ConstructNodeMetadata() *map[string]i
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) CostManagementConfig() GoogleContainerClusterCostManagementConfigOutputReference {
+	var returns GoogleContainerClusterCostManagementConfigOutputReference
+	_jsii_.Get(
+		j,
+		"costManagementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) CostManagementConfigInput() *GoogleContainerClusterCostManagementConfig {
+	var returns *GoogleContainerClusterCostManagementConfig
+	_jsii_.Get(
+		j,
+		"costManagementConfigInput",
 		&returns,
 	)
 	return returns
@@ -1580,6 +1608,26 @@ func (j *jsiiProxy_GoogleContainerCluster) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) ServiceExternalIpsConfig() GoogleContainerClusterServiceExternalIpsConfigOutputReference {
+	var returns GoogleContainerClusterServiceExternalIpsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"serviceExternalIpsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ServiceExternalIpsConfigInput() *GoogleContainerClusterServiceExternalIpsConfig {
+	var returns *GoogleContainerClusterServiceExternalIpsConfig
+	_jsii_.Get(
+		j,
+		"serviceExternalIpsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) ServicesIpv4Cidr() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2427,6 +2475,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutConfidentialNodes(value *GoogleCon
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutCostManagementConfig(value *GoogleContainerClusterCostManagementConfig) {
+	if err := g.validatePutCostManagementConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCostManagementConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutDatabaseEncryption(value *GoogleContainerClusterDatabaseEncryption) {
 	if err := g.validatePutDatabaseEncryptionParameters(value); err != nil {
 		panic(err)
@@ -2647,6 +2706,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutResourceUsageExportConfig(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig) {
+	if err := g.validatePutServiceExternalIpsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putServiceExternalIpsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutTimeouts(value *GoogleContainerClusterTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -2743,6 +2813,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetConfidentialNodes() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfidentialNodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetCostManagementConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCostManagementConfig",
 		nil, // no parameters
 	)
 }
@@ -3111,6 +3189,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetResourceUsageExportConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetResourceUsageExportConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetServiceExternalIpsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceExternalIpsConfig",
 		nil, // no parameters
 	)
 }

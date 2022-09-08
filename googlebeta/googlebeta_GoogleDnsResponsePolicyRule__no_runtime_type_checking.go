@@ -66,6 +66,10 @@ func validateGoogleDnsResponsePolicyRule_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDnsResponsePolicyRule) validateSetBehaviorParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsResponsePolicyRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

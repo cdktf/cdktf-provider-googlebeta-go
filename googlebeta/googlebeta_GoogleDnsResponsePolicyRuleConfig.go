@@ -32,6 +32,10 @@ type GoogleDnsResponsePolicyRuleConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy_rule#rule_name GoogleDnsResponsePolicyRule#rule_name}
 	RuleName *string `field:"required" json:"ruleName" yaml:"ruleName"`
+	// Answer this query with a behavior rather than DNS data. Acceptable values are 'behaviorUnspecified', and 'bypassResponsePolicy'.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy_rule#behavior GoogleDnsResponsePolicyRule#behavior}
+	Behavior *string `field:"optional" json:"behavior" yaml:"behavior"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy_rule#id GoogleDnsResponsePolicyRule#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

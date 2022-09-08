@@ -54,6 +54,10 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironment) validatePutNodeConfigParameters(value *GoogleApigeeEnvironmentNodeConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironment) validatePutTimeoutsParameters(value *GoogleApigeeEnvironmentTimeouts) error {
 	return nil
 }

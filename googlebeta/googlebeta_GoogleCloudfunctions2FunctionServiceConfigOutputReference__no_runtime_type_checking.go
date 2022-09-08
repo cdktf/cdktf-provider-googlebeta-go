@@ -46,6 +46,14 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretEnvironmentVariablesParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validatePutSecretVolumesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

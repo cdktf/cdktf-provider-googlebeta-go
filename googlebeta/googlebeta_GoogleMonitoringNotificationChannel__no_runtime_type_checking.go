@@ -82,6 +82,10 @@ func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetEnabledParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetForceDeleteParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetIdParameters(val *string) error {
 	return nil
 }

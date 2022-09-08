@@ -54,6 +54,10 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestore) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeaturestore) validatePutEncryptionSpecParameters(value *GoogleVertexAiFeaturestoreEncryptionSpec) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeaturestore) validatePutOnlineServingConfigParameters(value *GoogleVertexAiFeaturestoreOnlineServingConfig) error {
 	return nil
 }

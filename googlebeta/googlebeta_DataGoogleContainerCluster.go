@@ -24,6 +24,7 @@ type DataGoogleContainerCluster interface {
 	ConfidentialNodes() DataGoogleContainerClusterConfidentialNodesList
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	CostManagementConfig() DataGoogleContainerClusterCostManagementConfigList
 	// Experimental.
 	Count() *float64
 	// Experimental.
@@ -111,6 +112,7 @@ type DataGoogleContainerCluster interface {
 	ResourceLabels() cdktf.StringMap
 	ResourceUsageExportConfig() DataGoogleContainerClusterResourceUsageExportConfigList
 	SelfLink() *string
+	ServiceExternalIpsConfig() DataGoogleContainerClusterServiceExternalIpsConfigList
 	ServicesIpv4Cidr() *string
 	Subnetwork() *string
 	// Experimental.
@@ -254,6 +256,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) ConstructNodeMetadata() *map[stri
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) CostManagementConfig() DataGoogleContainerClusterCostManagementConfigList {
+	var returns DataGoogleContainerClusterCostManagementConfigList
+	_jsii_.Get(
+		j,
+		"costManagementConfig",
 		&returns,
 	)
 	return returns
@@ -894,6 +906,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) SelfLink() *string {
 	_jsii_.Get(
 		j,
 		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) ServiceExternalIpsConfig() DataGoogleContainerClusterServiceExternalIpsConfigList {
+	var returns DataGoogleContainerClusterServiceExternalIpsConfigList
+	_jsii_.Get(
+		j,
+		"serviceExternalIpsConfig",
 		&returns,
 	)
 	return returns

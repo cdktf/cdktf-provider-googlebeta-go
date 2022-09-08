@@ -44,6 +44,9 @@ type GoogleComputeInstanceAdvancedMachineFeaturesOutputReference interface {
 	ThreadsPerCore() *float64
 	SetThreadsPerCore(val *float64)
 	ThreadsPerCoreInput() *float64
+	VisibleCoreCount() *float64
+	SetVisibleCoreCount(val *float64)
+	VisibleCoreCountInput() *float64
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,6 +73,7 @@ type GoogleComputeInstanceAdvancedMachineFeaturesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnableNestedVirtualization()
 	ResetThreadsPerCore()
+	ResetVisibleCoreCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -195,6 +199,26 @@ func (j *jsiiProxy_GoogleComputeInstanceAdvancedMachineFeaturesOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceAdvancedMachineFeaturesOutputReference) VisibleCoreCount() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"visibleCoreCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAdvancedMachineFeaturesOutputReference) VisibleCoreCountInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"visibleCoreCountInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleComputeInstanceAdvancedMachineFeaturesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceAdvancedMachineFeaturesOutputReference {
 	_init_.Initialize()
@@ -296,6 +320,17 @@ func (j *jsiiProxy_GoogleComputeInstanceAdvancedMachineFeaturesOutputReference)S
 	_jsii_.Set(
 		j,
 		"threadsPerCore",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceAdvancedMachineFeaturesOutputReference)SetVisibleCoreCount(val *float64) {
+	if err := j.validateSetVisibleCoreCountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"visibleCoreCount",
 		val,
 	)
 }
@@ -498,6 +533,14 @@ func (g *jsiiProxy_GoogleComputeInstanceAdvancedMachineFeaturesOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetThreadsPerCore",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceAdvancedMachineFeaturesOutputReference) ResetVisibleCoreCount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVisibleCoreCount",
 		nil, // no parameters
 	)
 }

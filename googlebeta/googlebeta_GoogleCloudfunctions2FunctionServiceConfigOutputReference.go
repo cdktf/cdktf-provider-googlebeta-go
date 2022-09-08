@@ -49,6 +49,10 @@ type GoogleCloudfunctions2FunctionServiceConfigOutputReference interface {
 	MinInstanceCount() *float64
 	SetMinInstanceCount(val *float64)
 	MinInstanceCountInput() *float64
+	SecretEnvironmentVariables() GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList
+	SecretEnvironmentVariablesInput() interface{}
+	SecretVolumes() GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList
+	SecretVolumesInput() interface{}
 	Service() *string
 	SetService(val *string)
 	ServiceAccountEmail() *string
@@ -97,12 +101,16 @@ type GoogleCloudfunctions2FunctionServiceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutSecretEnvironmentVariables(value interface{})
+	PutSecretVolumes(value interface{})
 	ResetAllTrafficOnLatestRevision()
 	ResetAvailableMemory()
 	ResetEnvironmentVariables()
 	ResetIngressSettings()
 	ResetMaxInstanceCount()
 	ResetMinInstanceCount()
+	ResetSecretEnvironmentVariables()
+	ResetSecretVolumes()
 	ResetService()
 	ResetServiceAccountEmail()
 	ResetTimeoutSeconds()
@@ -298,6 +306,46 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) Mi
 	_jsii_.Get(
 		j,
 		"minInstanceCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) SecretEnvironmentVariables() GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList {
+	var returns GoogleCloudfunctions2FunctionServiceConfigSecretEnvironmentVariablesList
+	_jsii_.Get(
+		j,
+		"secretEnvironmentVariables",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) SecretEnvironmentVariablesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretEnvironmentVariablesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) SecretVolumes() GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList {
+	var returns GoogleCloudfunctions2FunctionServiceConfigSecretVolumesList
+	_jsii_.Get(
+		j,
+		"secretVolumes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) SecretVolumesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secretVolumesInput",
 		&returns,
 	)
 	return returns
@@ -823,6 +871,28 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) In
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) PutSecretEnvironmentVariables(value interface{}) {
+	if err := g.validatePutSecretEnvironmentVariablesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecretEnvironmentVariables",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) PutSecretVolumes(value interface{}) {
+	if err := g.validatePutSecretVolumesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecretVolumes",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) ResetAllTrafficOnLatestRevision() {
 	_jsii_.InvokeVoid(
 		g,
@@ -867,6 +937,22 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetMinInstanceCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) ResetSecretEnvironmentVariables() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretEnvironmentVariables",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) ResetSecretVolumes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretVolumes",
 		nil, // no parameters
 	)
 }

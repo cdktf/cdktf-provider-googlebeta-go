@@ -61,6 +61,8 @@ type GoogleApigeeEnvironment interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NodeConfig() GoogleApigeeEnvironmentNodeConfigOutputReference
+	NodeConfigInput() *GoogleApigeeEnvironmentNodeConfig
 	OrgId() *string
 	SetOrgId(val *string)
 	OrgIdInput() *string
@@ -107,12 +109,14 @@ type GoogleApigeeEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutNodeConfig(value *GoogleApigeeEnvironmentNodeConfig)
 	PutTimeouts(value *GoogleApigeeEnvironmentTimeouts)
 	ResetApiProxyType()
 	ResetDeploymentType()
 	ResetDescription()
 	ResetDisplayName()
 	ResetId()
+	ResetNodeConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -347,6 +351,26 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeEnvironment) NodeConfig() GoogleApigeeEnvironmentNodeConfigOutputReference {
+	var returns GoogleApigeeEnvironmentNodeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"nodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeEnvironment) NodeConfigInput() *GoogleApigeeEnvironmentNodeConfig {
+	var returns *GoogleApigeeEnvironmentNodeConfig
+	_jsii_.Get(
+		j,
+		"nodeConfigInput",
 		&returns,
 	)
 	return returns
@@ -852,6 +876,17 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironment) PutNodeConfig(value *GoogleApigeeEnvironmentNodeConfig) {
+	if err := g.validatePutNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironment) PutTimeouts(value *GoogleApigeeEnvironmentTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -899,6 +934,14 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvironment) ResetNodeConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeConfig",
 		nil, // no parameters
 	)
 }

@@ -78,6 +78,10 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetVisibleCoreCountParameters(val *float64) error {
+	return nil
+}
+
 func validateNewGoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
