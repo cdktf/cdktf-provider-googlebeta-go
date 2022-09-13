@@ -92,6 +92,7 @@ type DataGoogleContainerCluster interface {
 	NodeLocations() *[]*string
 	NodePool() DataGoogleContainerClusterNodePoolList
 	NodePoolAutoConfig() DataGoogleContainerClusterNodePoolAutoConfigList
+	NodePoolDefaults() DataGoogleContainerClusterNodePoolDefaultsList
 	NodeVersion() *string
 	NotificationConfig() DataGoogleContainerClusterNotificationConfigList
 	Operation() *string
@@ -756,6 +757,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) NodePoolAutoConfig() DataGoogleCo
 	_jsii_.Get(
 		j,
 		"nodePoolAutoConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) NodePoolDefaults() DataGoogleContainerClusterNodePoolDefaultsList {
+	var returns DataGoogleContainerClusterNodePoolDefaultsList
+	_jsii_.Get(
+		j,
+		"nodePoolDefaults",
 		&returns,
 	)
 	return returns

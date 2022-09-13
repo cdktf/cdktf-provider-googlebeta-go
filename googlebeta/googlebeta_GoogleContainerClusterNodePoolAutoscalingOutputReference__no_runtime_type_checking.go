@@ -62,6 +62,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoscalingOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoscalingOutputReference) validateSetLocationPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoscalingOutputReference) validateSetMaxNodeCountParameters(val *float64) error {
 	return nil
 }
@@ -75,6 +79,14 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoscalingOutputReference) val
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoscalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoscalingOutputReference) validateSetTotalMaxNodeCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoscalingOutputReference) validateSetTotalMinNodeCountParameters(val *float64) error {
 	return nil
 }
 

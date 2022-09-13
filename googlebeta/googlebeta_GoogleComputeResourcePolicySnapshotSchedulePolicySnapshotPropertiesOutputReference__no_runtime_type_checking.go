@@ -50,6 +50,10 @@ func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProp
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) validateSetChainNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

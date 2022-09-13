@@ -134,6 +134,10 @@ func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetNameParameters(val *string) error {
 	return nil
 }

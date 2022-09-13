@@ -91,6 +91,10 @@ type GoogleCloudbuildTriggerConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#included_files GoogleCloudbuildTrigger#included_files}
 	IncludedFiles *[]*string `field:"optional" json:"includedFiles" yaml:"includedFiles"`
+	// The [Cloud Build location](https://cloud.google.com/build/docs/locations) for the trigger. If not specified, "global" is used.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#location GoogleCloudbuildTrigger#location}
+	Location *string `field:"optional" json:"location" yaml:"location"`
 	// Name of the trigger. Must be unique within the project.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_trigger#name GoogleCloudbuildTrigger#name}

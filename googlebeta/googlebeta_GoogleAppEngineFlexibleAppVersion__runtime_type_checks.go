@@ -515,6 +515,14 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateSetServiceParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateSetServiceAccountParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateSetServingStatusParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

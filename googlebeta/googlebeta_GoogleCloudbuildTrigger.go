@@ -74,6 +74,9 @@ type GoogleCloudbuildTrigger interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -164,6 +167,7 @@ type GoogleCloudbuildTrigger interface {
 	ResetIgnoredFiles()
 	ResetIncludeBuildLogs()
 	ResetIncludedFiles()
+	ResetLocation()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -527,6 +531,26 @@ func (j *jsiiProxy_GoogleCloudbuildTrigger) Lifecycle() *cdktf.TerraformResource
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTrigger) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTrigger) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
 		&returns,
 	)
 	return returns
@@ -972,6 +996,17 @@ func (j *jsiiProxy_GoogleCloudbuildTrigger)SetLifecycle(val *cdktf.TerraformReso
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTrigger)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -1469,6 +1504,14 @@ func (g *jsiiProxy_GoogleCloudbuildTrigger) ResetIncludedFiles() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIncludedFiles",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTrigger) ResetLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

@@ -76,6 +76,8 @@ type GoogleBigtableTable interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	Timeouts() GoogleBigtableTableTimeoutsOutputReference
+	TimeoutsInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -102,6 +104,7 @@ type GoogleBigtableTable interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutColumnFamily(value interface{})
+	PutTimeouts(value *GoogleBigtableTableTimeouts)
 	ResetColumnFamily()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -109,6 +112,7 @@ type GoogleBigtableTable interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetSplitKeys()
+	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -399,6 +403,26 @@ func (j *jsiiProxy_GoogleBigtableTable) TerraformResourceType() *string {
 	_jsii_.Get(
 		j,
 		"terraformResourceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableTable) Timeouts() GoogleBigtableTableTimeoutsOutputReference {
+	var returns GoogleBigtableTableTimeoutsOutputReference
+	_jsii_.Get(
+		j,
+		"timeouts",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableTable) TimeoutsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"timeoutsInput",
 		&returns,
 	)
 	return returns
@@ -793,6 +817,17 @@ func (g *jsiiProxy_GoogleBigtableTable) PutColumnFamily(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigtableTable) PutTimeouts(value *GoogleBigtableTableTimeouts) {
+	if err := g.validatePutTimeoutsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigtableTable) ResetColumnFamily() {
 	_jsii_.InvokeVoid(
 		g,
@@ -829,6 +864,14 @@ func (g *jsiiProxy_GoogleBigtableTable) ResetSplitKeys() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSplitKeys",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigtableTable) ResetTimeouts() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeouts",
 		nil, // no parameters
 	)
 }

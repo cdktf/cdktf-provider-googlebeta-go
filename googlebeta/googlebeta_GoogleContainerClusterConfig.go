@@ -219,6 +219,10 @@ type GoogleContainerClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#node_pool_auto_config GoogleContainerCluster#node_pool_auto_config}
 	NodePoolAutoConfig *GoogleContainerClusterNodePoolAutoConfig `field:"optional" json:"nodePoolAutoConfig" yaml:"nodePoolAutoConfig"`
+	// node_pool_defaults block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#node_pool_defaults GoogleContainerCluster#node_pool_defaults}
+	NodePoolDefaults *GoogleContainerClusterNodePoolDefaults `field:"optional" json:"nodePoolDefaults" yaml:"nodePoolDefaults"`
 	// The Kubernetes version on the nodes.
 	//
 	// Must either be unset or set to the same value as min_master_version on create. Defaults to the default version set by GKE which is not necessarily the latest version. This only affects nodes in the default node pool. While a fuzzy version can be specified, it's recommended that you specify explicit versions as Terraform will see spurious diffs when fuzzy versions are used. See the google_container_engine_versions data source's version_prefix field to approximate fuzzy versions in a Terraform-compatible way. To update nodes in other node pools, use the version attribute on the node pool.

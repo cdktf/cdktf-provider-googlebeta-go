@@ -337,6 +337,14 @@ func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetLifecycleParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetNameParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

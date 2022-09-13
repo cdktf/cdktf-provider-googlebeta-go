@@ -15,6 +15,9 @@ type GoogleComputeSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ChainName() *string
+	SetChainName(val *string)
+	ChainNameInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -124,6 +127,7 @@ type GoogleComputeSnapshot interface {
 	PutSnapshotEncryptionKey(value *GoogleComputeSnapshotSnapshotEncryptionKey)
 	PutSourceDiskEncryptionKey(value *GoogleComputeSnapshotSourceDiskEncryptionKey)
 	PutTimeouts(value *GoogleComputeSnapshotTimeouts)
+	ResetChainName()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -156,6 +160,26 @@ func (j *jsiiProxy_GoogleComputeSnapshot) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot) ChainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSnapshot) ChainNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chainNameInput",
 		&returns,
 	)
 	return returns
@@ -631,6 +655,17 @@ func NewGoogleComputeSnapshot_Override(g GoogleComputeSnapshot, scope constructs
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeSnapshot)SetChainName(val *string) {
+	if err := j.validateSetChainNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"chainName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeSnapshot)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1042,6 +1077,14 @@ func (g *jsiiProxy_GoogleComputeSnapshot) PutTimeouts(value *GoogleComputeSnapsh
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSnapshot) ResetChainName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetChainName",
+		nil, // no parameters
 	)
 }
 

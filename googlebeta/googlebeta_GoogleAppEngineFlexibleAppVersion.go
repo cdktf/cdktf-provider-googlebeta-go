@@ -120,6 +120,9 @@ type GoogleAppEngineFlexibleAppVersion interface {
 	RuntimeMainExecutablePathInput() *string
 	Service() *string
 	SetService(val *string)
+	ServiceAccount() *string
+	SetServiceAccount(val *string)
+	ServiceAccountInput() *string
 	ServiceInput() *string
 	ServingStatus() *string
 	SetServingStatus(val *string)
@@ -200,6 +203,7 @@ type GoogleAppEngineFlexibleAppVersion interface {
 	ResetRuntimeApiVersion()
 	ResetRuntimeChannel()
 	ResetRuntimeMainExecutablePath()
+	ResetServiceAccount()
 	ResetServingStatus()
 	ResetTimeouts()
 	ResetVersionId()
@@ -869,6 +873,26 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Service() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ServiceInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1245,6 +1269,17 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetService(val *string) {
 	_jsii_.Set(
 		j,
 		"service",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetServiceAccount(val *string) {
+	if err := j.validateSetServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccount",
 		val,
 	)
 }
@@ -1822,6 +1857,14 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetRuntimeMainExecutable
 	_jsii_.InvokeVoid(
 		g,
 		"resetRuntimeMainExecutablePath",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ResetServiceAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccount",
 		nil, // no parameters
 	)
 }

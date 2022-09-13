@@ -182,6 +182,10 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateSetServiceParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateSetServiceAccountParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) validateSetServingStatusParameters(val *string) error {
 	return nil
 }

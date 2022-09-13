@@ -58,6 +58,10 @@ func (g *jsiiProxy_GoogleBigtableTable) validatePutColumnFamilyParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableTable) validatePutTimeoutsParameters(value *GoogleBigtableTableTimeouts) error {
+	return nil
+}
+
 func validateGoogleBigtableTable_IsConstructParameters(x interface{}) error {
 	return nil
 }

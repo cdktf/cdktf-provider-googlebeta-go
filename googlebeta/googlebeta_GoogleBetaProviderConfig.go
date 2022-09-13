@@ -31,6 +31,8 @@ type GoogleBetaProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#batching GoogleBetaProvider#batching}
 	Batching *GoogleBetaProviderBatching `field:"optional" json:"batching" yaml:"batching"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_analytics_hub_custom_endpoint GoogleBetaProvider#bigquery_analytics_hub_custom_endpoint}.
+	BigqueryAnalyticsHubCustomEndpoint *string `field:"optional" json:"bigqueryAnalyticsHubCustomEndpoint" yaml:"bigqueryAnalyticsHubCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_connection_custom_endpoint GoogleBetaProvider#bigquery_connection_custom_endpoint}.
 	BigqueryConnectionCustomEndpoint *string `field:"optional" json:"bigqueryConnectionCustomEndpoint" yaml:"bigqueryConnectionCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#big_query_custom_endpoint GoogleBetaProvider#big_query_custom_endpoint}.
@@ -105,6 +107,8 @@ type GoogleBetaProviderConfig struct {
 	DataprocMetastoreCustomEndpoint *string `field:"optional" json:"dataprocMetastoreCustomEndpoint" yaml:"dataprocMetastoreCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#datastore_custom_endpoint GoogleBetaProvider#datastore_custom_endpoint}.
 	DatastoreCustomEndpoint *string `field:"optional" json:"datastoreCustomEndpoint" yaml:"datastoreCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#datastream_custom_endpoint GoogleBetaProvider#datastream_custom_endpoint}.
+	DatastreamCustomEndpoint *string `field:"optional" json:"datastreamCustomEndpoint" yaml:"datastreamCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#deployment_manager_custom_endpoint GoogleBetaProvider#deployment_manager_custom_endpoint}.
 	DeploymentManagerCustomEndpoint *string `field:"optional" json:"deploymentManagerCustomEndpoint" yaml:"deploymentManagerCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#dialogflow_custom_endpoint GoogleBetaProvider#dialogflow_custom_endpoint}.

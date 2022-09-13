@@ -142,6 +142,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutNodePoolAutoConfigParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutNodePoolDefaultsParameters(value *GoogleContainerClusterNodePoolDefaults) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutNotificationConfigParameters(value *GoogleContainerClusterNotificationConfig) error {
 	return nil
 }

@@ -11,6 +11,9 @@ import (
 
 type GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference interface {
 	cdktf.ComplexObject
+	ChainName() *string
+	SetChainName(val *string)
+	ChainNameInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -71,6 +74,7 @@ type GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetChainName()
 	ResetGuestFlush()
 	ResetLabels()
 	ResetStorageLocations()
@@ -87,6 +91,26 @@ type GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputRe
 // The jsii proxy struct for GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference
 type jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ChainName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ChainNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"chainNameInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ComplexObjectIndex() interface{} {
@@ -244,6 +268,17 @@ func NewGoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutpu
 		"@cdktf/provider-google-beta.GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference)SetChainName(val *string) {
+	if err := j.validateSetChainNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"chainName",
+		val,
 	)
 }
 
@@ -519,6 +554,14 @@ func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotProp
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ResetChainName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetChainName",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicySnapshotPropertiesOutputReference) ResetGuestFlush() {

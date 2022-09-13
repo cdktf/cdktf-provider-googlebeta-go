@@ -49,6 +49,9 @@ type GoogleBetaProvider interface {
 	Batching() *GoogleBetaProviderBatching
 	SetBatching(val *GoogleBetaProviderBatching)
 	BatchingInput() *GoogleBetaProviderBatching
+	BigqueryAnalyticsHubCustomEndpoint() *string
+	SetBigqueryAnalyticsHubCustomEndpoint(val *string)
+	BigqueryAnalyticsHubCustomEndpointInput() *string
 	BigqueryConnectionCustomEndpoint() *string
 	SetBigqueryConnectionCustomEndpoint(val *string)
 	BigqueryConnectionCustomEndpointInput() *string
@@ -164,6 +167,9 @@ type GoogleBetaProvider interface {
 	DatastoreCustomEndpoint() *string
 	SetDatastoreCustomEndpoint(val *string)
 	DatastoreCustomEndpointInput() *string
+	DatastreamCustomEndpoint() *string
+	SetDatastreamCustomEndpoint(val *string)
+	DatastreamCustomEndpointInput() *string
 	DeploymentManagerCustomEndpoint() *string
 	SetDeploymentManagerCustomEndpoint(val *string)
 	DeploymentManagerCustomEndpointInput() *string
@@ -401,6 +407,7 @@ type GoogleBetaProvider interface {
 	ResetArtifactRegistryCustomEndpoint()
 	ResetAssuredWorkloadsCustomEndpoint()
 	ResetBatching()
+	ResetBigqueryAnalyticsHubCustomEndpoint()
 	ResetBigqueryConnectionCustomEndpoint()
 	ResetBigQueryCustomEndpoint()
 	ResetBigqueryDataTransferCustomEndpoint()
@@ -438,6 +445,7 @@ type GoogleBetaProvider interface {
 	ResetDataprocCustomEndpoint()
 	ResetDataprocMetastoreCustomEndpoint()
 	ResetDatastoreCustomEndpoint()
+	ResetDatastreamCustomEndpoint()
 	ResetDeploymentManagerCustomEndpoint()
 	ResetDialogflowCustomEndpoint()
 	ResetDialogflowCxCustomEndpoint()
@@ -759,6 +767,26 @@ func (j *jsiiProxy_GoogleBetaProvider) BatchingInput() *GoogleBetaProviderBatchi
 	_jsii_.Get(
 		j,
 		"batchingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) BigqueryAnalyticsHubCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bigqueryAnalyticsHubCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) BigqueryAnalyticsHubCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bigqueryAnalyticsHubCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1519,6 +1547,26 @@ func (j *jsiiProxy_GoogleBetaProvider) DatastoreCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"datastoreCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) DatastreamCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datastreamCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) DatastreamCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"datastreamCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3093,6 +3141,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetBatching(val *GoogleBetaProviderBatchin
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetBigqueryAnalyticsHubCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"bigqueryAnalyticsHubCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetBigqueryConnectionCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3385,6 +3441,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetDatastoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"datastoreCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetDatastreamCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"datastreamCustomEndpoint",
 		val,
 	)
 }
@@ -4100,6 +4164,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetBatching() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetBigqueryAnalyticsHubCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBigqueryAnalyticsHubCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetBigqueryConnectionCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4392,6 +4464,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetDatastoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDatastoreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetDatastreamCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatastreamCustomEndpoint",
 		nil, // no parameters
 	)
 }

@@ -155,6 +155,8 @@ type GoogleContainerCluster interface {
 	NodePool() GoogleContainerClusterNodePoolList
 	NodePoolAutoConfig() GoogleContainerClusterNodePoolAutoConfigOutputReference
 	NodePoolAutoConfigInput() *GoogleContainerClusterNodePoolAutoConfig
+	NodePoolDefaults() GoogleContainerClusterNodePoolDefaultsOutputReference
+	NodePoolDefaultsInput() *GoogleContainerClusterNodePoolDefaults
 	NodePoolInput() interface{}
 	NodeVersion() *string
 	SetNodeVersion(val *string)
@@ -261,6 +263,7 @@ type GoogleContainerCluster interface {
 	PutNodeConfig(value *GoogleContainerClusterNodeConfig)
 	PutNodePool(value interface{})
 	PutNodePoolAutoConfig(value *GoogleContainerClusterNodePoolAutoConfig)
+	PutNodePoolDefaults(value *GoogleContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *GoogleContainerClusterNotificationConfig)
 	PutPodSecurityPolicyConfig(value *GoogleContainerClusterPodSecurityPolicyConfig)
 	PutPrivateClusterConfig(value *GoogleContainerClusterPrivateClusterConfig)
@@ -314,6 +317,7 @@ type GoogleContainerCluster interface {
 	ResetNodeLocations()
 	ResetNodePool()
 	ResetNodePoolAutoConfig()
+	ResetNodePoolDefaults()
 	ResetNodeVersion()
 	ResetNotificationConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -1343,6 +1347,26 @@ func (j *jsiiProxy_GoogleContainerCluster) NodePoolAutoConfigInput() *GoogleCont
 	_jsii_.Get(
 		j,
 		"nodePoolAutoConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodePoolDefaults() GoogleContainerClusterNodePoolDefaultsOutputReference {
+	var returns GoogleContainerClusterNodePoolDefaultsOutputReference
+	_jsii_.Get(
+		j,
+		"nodePoolDefaults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) NodePoolDefaultsInput() *GoogleContainerClusterNodePoolDefaults {
+	var returns *GoogleContainerClusterNodePoolDefaults
+	_jsii_.Get(
+		j,
+		"nodePoolDefaultsInput",
 		&returns,
 	)
 	return returns
@@ -2651,6 +2675,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutNodePoolAutoConfig(value *GoogleCo
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutNodePoolDefaults(value *GoogleContainerClusterNodePoolDefaults) {
+	if err := g.validatePutNodePoolDefaultsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodePoolDefaults",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutNotificationConfig(value *GoogleContainerClusterNotificationConfig) {
 	if err := g.validatePutNotificationConfigParameters(value); err != nil {
 		panic(err)
@@ -3101,6 +3136,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetNodePoolAutoConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNodePoolAutoConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetNodePoolDefaults() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodePoolDefaults",
 		nil, // no parameters
 	)
 }

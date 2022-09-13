@@ -49,5 +49,9 @@ type GoogleBigtableTableConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_table#split_keys GoogleBigtableTable#split_keys}
 	SplitKeys *[]*string `field:"optional" json:"splitKeys" yaml:"splitKeys"`
+	// timeouts block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_table#timeouts GoogleBigtableTable#timeouts}
+	Timeouts *GoogleBigtableTableTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

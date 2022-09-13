@@ -18,6 +18,9 @@ type GoogleComputeTargetSslProxy interface {
 	BackendServiceInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertificateMap() *string
+	SetCertificateMap(val *string)
+	CertificateMapInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -114,6 +117,7 @@ type GoogleComputeTargetSslProxy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleComputeTargetSslProxyTimeouts)
+	ResetCertificateMap()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -121,6 +125,7 @@ type GoogleComputeTargetSslProxy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetProxyHeader()
+	ResetSslCertificates()
 	ResetSslPolicy()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -163,6 +168,26 @@ func (j *jsiiProxy_GoogleComputeTargetSslProxy) CdktfStack() cdktf.TerraformStac
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeTargetSslProxy) CertificateMap() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateMap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeTargetSslProxy) CertificateMapInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"certificateMapInput",
 		&returns,
 	)
 	return returns
@@ -549,6 +574,17 @@ func (j *jsiiProxy_GoogleComputeTargetSslProxy)SetBackendService(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeTargetSslProxy)SetCertificateMap(val *string) {
+	if err := j.validateSetCertificateMapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateMap",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeTargetSslProxy)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -930,6 +966,14 @@ func (g *jsiiProxy_GoogleComputeTargetSslProxy) PutTimeouts(value *GoogleCompute
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeTargetSslProxy) ResetCertificateMap() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCertificateMap",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeTargetSslProxy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -966,6 +1010,14 @@ func (g *jsiiProxy_GoogleComputeTargetSslProxy) ResetProxyHeader() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProxyHeader",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeTargetSslProxy) ResetSslCertificates() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSslCertificates",
 		nil, // no parameters
 	)
 }
