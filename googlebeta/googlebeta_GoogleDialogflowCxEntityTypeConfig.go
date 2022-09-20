@@ -60,7 +60,7 @@ type GoogleDialogflowCxEntityTypeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_entity_type#language_code GoogleDialogflowCxEntityType#language_code}
 	LanguageCode *string `field:"optional" json:"languageCode" yaml:"languageCode"`
-	// The agent to create a entity type for.  Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
+	// The agent to create a entity type for. Format: projects/<Project ID>/locations/<Location ID>/agents/<Agent ID>.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_entity_type#parent GoogleDialogflowCxEntityType#parent}
 	Parent *string `field:"optional" json:"parent" yaml:"parent"`

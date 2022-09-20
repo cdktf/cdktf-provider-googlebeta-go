@@ -119,7 +119,7 @@ type GoogleComputeInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance#reservation_affinity GoogleComputeInstance#reservation_affinity}
 	ReservationAffinity *GoogleComputeInstanceReservationAffinity `field:"optional" json:"reservationAffinity" yaml:"reservationAffinity"`
-	// A list of short names or self_links of resource policies to attach to the instance.
+	// A list of self_links of resource policies to attach to the instance.
 	//
 	// Currently a max of 1 resource policy is supported.
 	//

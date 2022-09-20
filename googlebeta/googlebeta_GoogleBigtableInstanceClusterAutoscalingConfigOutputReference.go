@@ -39,6 +39,9 @@ type GoogleBigtableInstanceClusterAutoscalingConfigOutputReference interface {
 	MinNodes() *float64
 	SetMinNodes(val *float64)
 	MinNodesInput() *float64
+	StorageTarget() *float64
+	SetStorageTarget(val *float64)
+	StorageTargetInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +74,7 @@ type GoogleBigtableInstanceClusterAutoscalingConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetStorageTarget()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -196,6 +200,26 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) StorageTarget() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) StorageTargetInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"storageTargetInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -306,6 +330,17 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	_jsii_.Set(
 		j,
 		"minNodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference)SetStorageTarget(val *float64) {
+	if err := j.validateSetStorageTargetParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storageTarget",
 		val,
 	)
 }
@@ -516,6 +551,14 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) ResetStorageTarget() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageTarget",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleBigtableInstanceClusterAutoscalingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
