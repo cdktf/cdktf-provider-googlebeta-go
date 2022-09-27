@@ -30,6 +30,8 @@ type GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleComputeSecurityPolicyAdvancedOptionsConfig
 	SetInternalValue(val *GoogleComputeSecurityPolicyAdvancedOptionsConfig)
+	JsonCustomConfig() GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference
+	JsonCustomConfigInput() *GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig
 	JsonParsing() *string
 	SetJsonParsing(val *string)
 	JsonParsingInput() *string
@@ -68,6 +70,8 @@ type GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutJsonCustomConfig(value *GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig)
+	ResetJsonCustomConfig()
 	ResetJsonParsing()
 	ResetLogLevel()
 	// Produce the Token's value at resolution time.
@@ -130,6 +134,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) JsonCustomConfig() GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference {
+	var returns GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference
+	_jsii_.Get(
+		j,
+		"jsonCustomConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) JsonCustomConfigInput() *GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig {
+	var returns *GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig
+	_jsii_.Get(
+		j,
+		"jsonCustomConfigInput",
 		&returns,
 	)
 	return returns
@@ -484,6 +508,25 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) PutJsonCustomConfig(value *GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig) {
+	if err := g.validatePutJsonCustomConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putJsonCustomConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) ResetJsonCustomConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetJsonCustomConfig",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) ResetJsonParsing() {

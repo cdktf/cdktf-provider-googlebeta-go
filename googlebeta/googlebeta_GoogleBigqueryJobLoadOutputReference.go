@@ -55,6 +55,9 @@ type GoogleBigqueryJobLoadOutputReference interface {
 	IgnoreUnknownValuesInput() interface{}
 	InternalValue() *GoogleBigqueryJobLoad
 	SetInternalValue(val *GoogleBigqueryJobLoad)
+	JsonExtension() *string
+	SetJsonExtension(val *string)
+	JsonExtensionInput() *string
 	MaxBadRecords() *float64
 	SetMaxBadRecords(val *float64)
 	MaxBadRecordsInput() *float64
@@ -127,6 +130,7 @@ type GoogleBigqueryJobLoadOutputReference interface {
 	ResetEncoding()
 	ResetFieldDelimiter()
 	ResetIgnoreUnknownValues()
+	ResetJsonExtension()
 	ResetMaxBadRecords()
 	ResetNullMarker()
 	ResetProjectionFields()
@@ -376,6 +380,26 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadOutputReference) InternalValue() *Google
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryJobLoadOutputReference) JsonExtension() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jsonExtension",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryJobLoadOutputReference) JsonExtensionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jsonExtensionInput",
 		&returns,
 	)
 	return returns
@@ -735,6 +759,17 @@ func (j *jsiiProxy_GoogleBigqueryJobLoadOutputReference)SetInternalValue(val *Go
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryJobLoadOutputReference)SetJsonExtension(val *string) {
+	if err := j.validateSetJsonExtensionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jsonExtension",
 		val,
 	)
 }
@@ -1139,6 +1174,14 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadOutputReference) ResetIgnoreUnknownValue
 	_jsii_.InvokeVoid(
 		g,
 		"resetIgnoreUnknownValues",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryJobLoadOutputReference) ResetJsonExtension() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetJsonExtension",
 		nil, // no parameters
 	)
 }

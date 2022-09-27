@@ -26,6 +26,9 @@ type GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EgressSetting() *string
+	SetEgressSetting(val *string)
+	EgressSettingInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleAppEngineStandardAppVersionVpcAccessConnector
@@ -65,6 +68,7 @@ type GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetEgressSetting()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -105,6 +109,26 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputRefe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference) EgressSetting() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"egressSetting",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference) EgressSettingInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"egressSettingInput",
 		&returns,
 	)
 	return returns
@@ -216,6 +240,17 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputRefe
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference)SetEgressSetting(val *string) {
+	if err := j.validateSetEgressSettingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"egressSetting",
 		val,
 	)
 }
@@ -448,6 +483,14 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputRefe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference) ResetEgressSetting() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEgressSetting",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

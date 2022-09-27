@@ -92,6 +92,10 @@ type GoogleRedisInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_redis_instance#maintenance_schedule GoogleRedisInstance#maintenance_schedule}
 	MaintenanceSchedule *GoogleRedisInstanceMaintenanceSchedule `field:"optional" json:"maintenanceSchedule" yaml:"maintenanceSchedule"`
+	// persistence_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_redis_instance#persistence_config GoogleRedisInstance#persistence_config}
+	PersistenceConfig *GoogleRedisInstancePersistenceConfig `field:"optional" json:"persistenceConfig" yaml:"persistenceConfig"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_redis_instance#project GoogleRedisInstance#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// Optional.

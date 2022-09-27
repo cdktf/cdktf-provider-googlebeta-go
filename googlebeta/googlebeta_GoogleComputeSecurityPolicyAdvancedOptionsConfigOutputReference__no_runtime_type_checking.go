@@ -46,6 +46,10 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReferen
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validatePutJsonCustomConfigParameters(value *GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

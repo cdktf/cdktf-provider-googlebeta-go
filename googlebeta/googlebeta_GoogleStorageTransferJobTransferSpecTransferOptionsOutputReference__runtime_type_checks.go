@@ -233,6 +233,14 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) validateSetOverwriteWhenParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

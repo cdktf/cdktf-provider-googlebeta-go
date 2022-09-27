@@ -76,6 +76,13 @@ type GoogleBigqueryJobLoad struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_job#ignore_unknown_values GoogleBigqueryJob#ignore_unknown_values}
 	IgnoreUnknownValues interface{} `field:"optional" json:"ignoreUnknownValues" yaml:"ignoreUnknownValues"`
+	// If sourceFormat is set to newline-delimited JSON, indicates whether it should be processed as a JSON variant such as GeoJSON.
+	//
+	// For a sourceFormat other than JSON, omit this field. If the sourceFormat is newline-delimited JSON: - for newline-delimited
+	// GeoJSON: set to GEOJSON.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_job#json_extension GoogleBigqueryJob#json_extension}
+	JsonExtension *string `field:"optional" json:"jsonExtension" yaml:"jsonExtension"`
 	// The maximum number of bad records that BigQuery can ignore when running the job.
 	//
 	// If the number of bad records exceeds this value,

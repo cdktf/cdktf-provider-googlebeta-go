@@ -74,6 +74,10 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) validateSetOverwriteWhenParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecTransferOptionsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

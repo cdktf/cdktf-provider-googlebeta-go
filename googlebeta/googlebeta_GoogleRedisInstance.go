@@ -85,6 +85,8 @@ type GoogleRedisInstance interface {
 	// The tree node.
 	Node() constructs.Node
 	Nodes() GoogleRedisInstanceNodesList
+	PersistenceConfig() GoogleRedisInstancePersistenceConfigOutputReference
+	PersistenceConfigInput() *GoogleRedisInstancePersistenceConfig
 	PersistenceIamIdentity() *string
 	Port() *float64
 	Project() *string
@@ -165,6 +167,7 @@ type GoogleRedisInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMaintenancePolicy(value *GoogleRedisInstanceMaintenancePolicy)
 	PutMaintenanceSchedule(value *GoogleRedisInstanceMaintenanceSchedule)
+	PutPersistenceConfig(value *GoogleRedisInstancePersistenceConfig)
 	PutTimeouts(value *GoogleRedisInstanceTimeouts)
 	ResetAlternativeLocationId()
 	ResetAuthEnabled()
@@ -180,6 +183,7 @@ type GoogleRedisInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPersistenceConfig()
 	ResetProject()
 	ResetReadReplicasMode()
 	ResetRedisConfigs()
@@ -611,6 +615,26 @@ func (j *jsiiProxy_GoogleRedisInstance) Nodes() GoogleRedisInstanceNodesList {
 	_jsii_.Get(
 		j,
 		"nodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) PersistenceConfig() GoogleRedisInstancePersistenceConfigOutputReference {
+	var returns GoogleRedisInstancePersistenceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"persistenceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) PersistenceConfigInput() *GoogleRedisInstancePersistenceConfig {
+	var returns *GoogleRedisInstancePersistenceConfig
+	_jsii_.Get(
+		j,
+		"persistenceConfigInput",
 		&returns,
 	)
 	return returns
@@ -1522,6 +1546,17 @@ func (g *jsiiProxy_GoogleRedisInstance) PutMaintenanceSchedule(value *GoogleRedi
 	)
 }
 
+func (g *jsiiProxy_GoogleRedisInstance) PutPersistenceConfig(value *GoogleRedisInstancePersistenceConfig) {
+	if err := g.validatePutPersistenceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPersistenceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleRedisInstance) PutTimeouts(value *GoogleRedisInstanceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1625,6 +1660,14 @@ func (g *jsiiProxy_GoogleRedisInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisInstance) ResetPersistenceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPersistenceConfig",
 		nil, // no parameters
 	)
 }

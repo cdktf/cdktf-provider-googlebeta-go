@@ -58,6 +58,10 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputRefe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference) validateSetEgressSettingParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineStandardAppVersionVpcAccessConnectorOutputReference) validateSetInternalValueParameters(val *GoogleAppEngineStandardAppVersionVpcAccessConnector) error {
 	return nil
 }
