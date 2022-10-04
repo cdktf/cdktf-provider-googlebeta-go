@@ -45,6 +45,10 @@ func (g *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) validatePutFilterParameters(value *GoogleContainerClusterNotificationConfigPubsubFilter) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -62,6 +62,12 @@ type GoogleTagsTagKey interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	Purpose() *string
+	SetPurpose(val *string)
+	PurposeData() *map[string]*string
+	SetPurposeData(val *map[string]*string)
+	PurposeDataInput() *map[string]*string
+	PurposeInput() *string
 	// Experimental.
 	RawOverrides() interface{}
 	ShortName() *string
@@ -107,6 +113,8 @@ type GoogleTagsTagKey interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPurpose()
+	ResetPurposeData()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -333,6 +341,46 @@ func (j *jsiiProxy_GoogleTagsTagKey) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTagsTagKey) Purpose() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"purpose",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTagsTagKey) PurposeData() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"purposeData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTagsTagKey) PurposeDataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"purposeDataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTagsTagKey) PurposeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"purposeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTagsTagKey) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -547,6 +595,28 @@ func (j *jsiiProxy_GoogleTagsTagKey)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleTagsTagKey)SetPurpose(val *string) {
+	if err := j.validateSetPurposeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"purpose",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleTagsTagKey)SetPurposeData(val *map[string]*string) {
+	if err := j.validateSetPurposeDataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"purposeData",
 		val,
 	)
 }
@@ -821,6 +891,22 @@ func (g *jsiiProxy_GoogleTagsTagKey) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTagsTagKey) ResetPurpose() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPurpose",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTagsTagKey) ResetPurposeData() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPurposeData",
 		nil, // no parameters
 	)
 }

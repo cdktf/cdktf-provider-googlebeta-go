@@ -65,6 +65,14 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) validateSetPemCertificateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) validateSetPemPrivateKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) validateSetPrivateKeyPemParameters(val *string) error {
 	return nil
 }

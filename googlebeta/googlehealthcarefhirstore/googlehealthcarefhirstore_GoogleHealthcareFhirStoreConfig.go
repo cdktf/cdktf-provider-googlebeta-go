@@ -100,6 +100,10 @@ type GoogleHealthcareFhirStoreConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_fhir_store#notification_config GoogleHealthcareFhirStore#notification_config}
 	NotificationConfig *GoogleHealthcareFhirStoreNotificationConfig `field:"optional" json:"notificationConfig" yaml:"notificationConfig"`
+	// notification_configs block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_fhir_store#notification_configs GoogleHealthcareFhirStore#notification_configs}
+	NotificationConfigs interface{} `field:"optional" json:"notificationConfigs" yaml:"notificationConfigs"`
 	// stream_configs block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_fhir_store#stream_configs GoogleHealthcareFhirStore#stream_configs}

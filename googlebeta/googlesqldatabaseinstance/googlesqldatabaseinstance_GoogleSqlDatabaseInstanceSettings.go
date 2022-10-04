@@ -22,7 +22,7 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	// settings.backup_configuration.enabled is set to true.
 	// For MySQL instances, ensure that settings.backup_configuration.binary_log_enabled is set to true.
 	// For Postgres instances, ensure that settings.backup_configuration.point_in_time_recovery_enabled
-	// is set to true.
+	// is set to true. Defaults to ZONAL.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#availability_type GoogleSqlDatabaseInstance#availability_type}
 	AvailabilityType *string `field:"optional" json:"availabilityType" yaml:"availabilityType"`
@@ -38,7 +38,7 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#database_flags GoogleSqlDatabaseInstance#database_flags}
 	DatabaseFlags interface{} `field:"optional" json:"databaseFlags" yaml:"databaseFlags"`
-	// Enables auto-resizing of the storage size. Defaults to true. Set to false if you want to set disk_size.
+	// Enables auto-resizing of the storage size. Defaults to true.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#disk_autoresize GoogleSqlDatabaseInstance#disk_autoresize}
 	DiskAutoresize interface{} `field:"optional" json:"diskAutoresize" yaml:"diskAutoresize"`
@@ -50,11 +50,11 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	DiskAutoresizeLimit *float64 `field:"optional" json:"diskAutoresizeLimit" yaml:"diskAutoresizeLimit"`
 	// The size of data disk, in GB.
 	//
-	// Size of a running instance cannot be reduced but can be increased. If you want to set this field, set disk_autoresize to false.
+	// Size of a running instance cannot be reduced but can be increased. The minimum value is 10GB.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#disk_size GoogleSqlDatabaseInstance#disk_size}
 	DiskSize *float64 `field:"optional" json:"diskSize" yaml:"diskSize"`
-	// The type of data disk: PD_SSD or PD_HDD.
+	// The type of data disk: PD_SSD or PD_HDD. Defaults to PD_SSD.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#disk_type GoogleSqlDatabaseInstance#disk_type}
 	DiskType *string `field:"optional" json:"diskType" yaml:"diskType"`

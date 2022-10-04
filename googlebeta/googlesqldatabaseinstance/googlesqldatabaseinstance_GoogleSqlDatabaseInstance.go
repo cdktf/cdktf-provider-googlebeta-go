@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance google_sql_database_instance}.
 type GoogleSqlDatabaseInstance interface {
 	cdktf.TerraformResource
+	AvailableMaintenanceVersions() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clone() GoogleSqlDatabaseInstanceCloneOutputReference
@@ -57,6 +58,9 @@ type GoogleSqlDatabaseInstance interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenanceVersion() *string
+	SetMaintenanceVersion(val *string)
+	MaintenanceVersionInput() *string
 	MasterInstanceName() *string
 	SetMasterInstanceName(val *string)
 	MasterInstanceNameInput() *string
@@ -137,6 +141,7 @@ type GoogleSqlDatabaseInstance interface {
 	ResetDeletionProtection()
 	ResetEncryptionKeyName()
 	ResetId()
+	ResetMaintenanceVersion()
 	ResetMasterInstanceName()
 	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -162,6 +167,16 @@ type GoogleSqlDatabaseInstance interface {
 // The jsii proxy struct for GoogleSqlDatabaseInstance
 type jsiiProxy_GoogleSqlDatabaseInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) AvailableMaintenanceVersions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"availableMaintenanceVersions",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) CdktfStack() cdktf.TerraformStack {
@@ -379,6 +394,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) Lifecycle() *cdktf.TerraformResour
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) MaintenanceVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) MaintenanceVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceVersionInput",
 		&returns,
 	)
 	return returns
@@ -804,6 +839,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance)SetLifecycle(val *cdktf.TerraformRe
 	)
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstance)SetMaintenanceVersion(val *string) {
+	if err := j.validateSetMaintenanceVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance)SetMasterInstanceName(val *string) {
 	if err := j.validateSetMasterInstanceNameParameters(val); err != nil {
 		panic(err)
@@ -1189,6 +1235,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) ResetMaintenanceVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenanceVersion",
 		nil, // no parameters
 	)
 }

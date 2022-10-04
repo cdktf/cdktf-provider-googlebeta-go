@@ -52,6 +52,8 @@ type GoogleStorageTransferJob interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	NotificationConfig() GoogleStorageTransferJobNotificationConfigOutputReference
+	NotificationConfigInput() *GoogleStorageTransferJobNotificationConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -103,9 +105,11 @@ type GoogleStorageTransferJob interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutNotificationConfig(value *GoogleStorageTransferJobNotificationConfig)
 	PutSchedule(value *GoogleStorageTransferJobSchedule)
 	PutTransferSpec(value *GoogleStorageTransferJobTransferSpec)
 	ResetId()
+	ResetNotificationConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -302,6 +306,26 @@ func (j *jsiiProxy_GoogleStorageTransferJob) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJob) NotificationConfig() GoogleStorageTransferJobNotificationConfigOutputReference {
+	var returns GoogleStorageTransferJobNotificationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"notificationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJob) NotificationConfigInput() *GoogleStorageTransferJobNotificationConfig {
+	var returns *GoogleStorageTransferJobNotificationConfig
+	_jsii_.Get(
+		j,
+		"notificationConfigInput",
 		&returns,
 	)
 	return returns
@@ -814,6 +838,17 @@ func (g *jsiiProxy_GoogleStorageTransferJob) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJob) PutNotificationConfig(value *GoogleStorageTransferJobNotificationConfig) {
+	if err := g.validatePutNotificationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNotificationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJob) PutSchedule(value *GoogleStorageTransferJobSchedule) {
 	if err := g.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -840,6 +875,14 @@ func (g *jsiiProxy_GoogleStorageTransferJob) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJob) ResetNotificationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNotificationConfig",
 		nil, // no parameters
 	)
 }

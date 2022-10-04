@@ -101,6 +101,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetMaintenanceVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetMasterInstanceNameParameters(val *string) error {
 	return nil
 }

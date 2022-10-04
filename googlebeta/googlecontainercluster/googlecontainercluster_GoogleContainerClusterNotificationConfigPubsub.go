@@ -6,6 +6,10 @@ type GoogleContainerClusterNotificationConfigPubsub struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#enabled GoogleContainerCluster#enabled}
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+	// filter block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#filter GoogleContainerCluster#filter}
+	Filter *GoogleContainerClusterNotificationConfigPubsubFilter `field:"optional" json:"filter" yaml:"filter"`
 	// The pubsub topic to push upgrade notifications to.
 	//
 	// Must be in the same project as the cluster. Must be in the format: projects/{project}/topics/{topic}.

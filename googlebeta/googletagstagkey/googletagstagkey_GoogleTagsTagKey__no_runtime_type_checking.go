@@ -85,6 +85,14 @@ func (j *jsiiProxy_GoogleTagsTagKey) validateSetProvisionersParameters(val *[]in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleTagsTagKey) validateSetPurposeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleTagsTagKey) validateSetPurposeDataParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTagsTagKey) validateSetShortNameParameters(val *string) error {
 	return nil
 }

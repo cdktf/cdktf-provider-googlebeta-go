@@ -28,6 +28,8 @@ type GoogleContainerClusterNotificationConfigPubsubOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	Filter() GoogleContainerClusterNotificationConfigPubsubFilterOutputReference
+	FilterInput() *GoogleContainerClusterNotificationConfigPubsubFilter
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterNotificationConfigPubsub
@@ -67,6 +69,8 @@ type GoogleContainerClusterNotificationConfigPubsubOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutFilter(value *GoogleContainerClusterNotificationConfigPubsubFilter)
+	ResetFilter()
 	ResetTopic()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) Filter() GoogleContainerClusterNotificationConfigPubsubFilterOutputReference {
+	var returns GoogleContainerClusterNotificationConfigPubsubFilterOutputReference
+	_jsii_.Get(
+		j,
+		"filter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) FilterInput() *GoogleContainerClusterNotificationConfigPubsubFilter {
+	var returns *GoogleContainerClusterNotificationConfigPubsubFilter
+	_jsii_.Get(
+		j,
+		"filterInput",
 		&returns,
 	)
 	return returns
@@ -482,6 +506,25 @@ func (g *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) PutFilter(value *GoogleContainerClusterNotificationConfigPubsubFilter) {
+	if err := g.validatePutFilterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFilter",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) ResetFilter() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFilter",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNotificationConfigPubsubOutputReference) ResetTopic() {

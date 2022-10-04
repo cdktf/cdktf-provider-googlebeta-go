@@ -57,6 +57,10 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutNotificationConfigParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutNotificationConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareFhirStore) validatePutStreamConfigsParameters(value interface{}) error {
 	return nil
 }

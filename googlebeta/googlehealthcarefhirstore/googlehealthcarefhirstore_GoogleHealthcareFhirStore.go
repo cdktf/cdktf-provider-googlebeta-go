@@ -68,6 +68,8 @@ type GoogleHealthcareFhirStore interface {
 	Node() constructs.Node
 	NotificationConfig() GoogleHealthcareFhirStoreNotificationConfigOutputReference
 	NotificationConfigInput() *GoogleHealthcareFhirStoreNotificationConfig
+	NotificationConfigs() GoogleHealthcareFhirStoreNotificationConfigsList
+	NotificationConfigsInput() interface{}
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -118,6 +120,7 @@ type GoogleHealthcareFhirStore interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutNotificationConfig(value *GoogleHealthcareFhirStoreNotificationConfig)
+	PutNotificationConfigs(value interface{})
 	PutStreamConfigs(value interface{})
 	PutTimeouts(value *GoogleHealthcareFhirStoreTimeouts)
 	ResetDisableReferentialIntegrity()
@@ -127,6 +130,7 @@ type GoogleHealthcareFhirStore interface {
 	ResetId()
 	ResetLabels()
 	ResetNotificationConfig()
+	ResetNotificationConfigs()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -423,6 +427,26 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) NotificationConfigInput() *GoogleH
 	_jsii_.Get(
 		j,
 		"notificationConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) NotificationConfigs() GoogleHealthcareFhirStoreNotificationConfigsList {
+	var returns GoogleHealthcareFhirStoreNotificationConfigsList
+	_jsii_.Get(
+		j,
+		"notificationConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) NotificationConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"notificationConfigsInput",
 		&returns,
 	)
 	return returns
@@ -991,6 +1015,17 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) PutNotificationConfig(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleHealthcareFhirStore) PutNotificationConfigs(value interface{}) {
+	if err := g.validatePutNotificationConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNotificationConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleHealthcareFhirStore) PutStreamConfigs(value interface{}) {
 	if err := g.validatePutStreamConfigsParameters(value); err != nil {
 		panic(err)
@@ -1065,6 +1100,14 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetNotificationConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNotificationConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetNotificationConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNotificationConfigs",
 		nil, // no parameters
 	)
 }

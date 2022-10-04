@@ -32,6 +32,12 @@ type GoogleCertificateManagerCertificateSelfManagedOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleCertificateManagerCertificateSelfManaged
 	SetInternalValue(val *GoogleCertificateManagerCertificateSelfManaged)
+	PemCertificate() *string
+	SetPemCertificate(val *string)
+	PemCertificateInput() *string
+	PemPrivateKey() *string
+	SetPemPrivateKey(val *string)
+	PemPrivateKeyInput() *string
 	PrivateKeyPem() *string
 	SetPrivateKeyPem(val *string)
 	PrivateKeyPemInput() *string
@@ -67,6 +73,10 @@ type GoogleCertificateManagerCertificateSelfManagedOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCertificatePem()
+	ResetPemCertificate()
+	ResetPemPrivateKey()
+	ResetPrivateKeyPem()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +157,46 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) PemCertificate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pemCertificate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) PemCertificateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pemCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) PemPrivateKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pemPrivateKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) PemPrivateKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pemPrivateKeyInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +310,28 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference)SetPemCertificate(val *string) {
+	if err := j.validateSetPemCertificateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pemCertificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference)SetPemPrivateKey(val *string) {
+	if err := j.validateSetPemPrivateKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pemPrivateKey",
 		val,
 	)
 }
@@ -481,6 +553,38 @@ func (g *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) ResetCertificatePem() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCertificatePem",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) ResetPemCertificate() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPemCertificate",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) ResetPemPrivateKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPemPrivateKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) ResetPrivateKeyPem() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateKeyPem",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleCertificateManagerCertificateSelfManagedOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
