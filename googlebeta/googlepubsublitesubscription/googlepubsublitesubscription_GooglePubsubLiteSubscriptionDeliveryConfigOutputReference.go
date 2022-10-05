@@ -2,9 +2,9 @@ package googlepubsublitesubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/hashicorp/cdktf-provider-googlebeta-go/googlebeta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/jsii"
 
-	"github.com/hashicorp/cdktf-provider-googlebeta-go/googlebeta/v3/googlepubsublitesubscription/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/googlepubsublitesubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
