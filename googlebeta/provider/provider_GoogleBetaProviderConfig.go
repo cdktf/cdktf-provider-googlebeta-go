@@ -36,6 +36,8 @@ type GoogleBetaProviderConfig struct {
 	BigqueryConnectionCustomEndpoint *string `field:"optional" json:"bigqueryConnectionCustomEndpoint" yaml:"bigqueryConnectionCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#big_query_custom_endpoint GoogleBetaProvider#big_query_custom_endpoint}.
 	BigQueryCustomEndpoint *string `field:"optional" json:"bigQueryCustomEndpoint" yaml:"bigQueryCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_datapolicy_custom_endpoint GoogleBetaProvider#bigquery_datapolicy_custom_endpoint}.
+	BigqueryDatapolicyCustomEndpoint *string `field:"optional" json:"bigqueryDatapolicyCustomEndpoint" yaml:"bigqueryDatapolicyCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_data_transfer_custom_endpoint GoogleBetaProvider#bigquery_data_transfer_custom_endpoint}.
 	BigqueryDataTransferCustomEndpoint *string `field:"optional" json:"bigqueryDataTransferCustomEndpoint" yaml:"bigqueryDataTransferCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_reservation_custom_endpoint GoogleBetaProvider#bigquery_reservation_custom_endpoint}.

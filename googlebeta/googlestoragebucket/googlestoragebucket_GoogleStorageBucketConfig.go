@@ -31,6 +31,10 @@ type GoogleStorageBucketConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket#cors GoogleStorageBucket#cors}
 	Cors interface{} `field:"optional" json:"cors" yaml:"cors"`
+	// custom_placement_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket#custom_placement_config GoogleStorageBucket#custom_placement_config}
+	CustomPlacementConfig *GoogleStorageBucketCustomPlacementConfig `field:"optional" json:"customPlacementConfig" yaml:"customPlacementConfig"`
 	// Whether or not to automatically apply an eventBasedHold to new objects added to the bucket.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket#default_event_based_hold GoogleStorageBucket#default_event_based_hold}

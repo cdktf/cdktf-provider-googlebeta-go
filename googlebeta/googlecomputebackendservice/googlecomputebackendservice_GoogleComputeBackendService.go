@@ -23,6 +23,9 @@ type GoogleComputeBackendService interface {
 	CdnPolicyInput() *GoogleComputeBackendServiceCdnPolicy
 	CircuitBreakers() GoogleComputeBackendServiceCircuitBreakersOutputReference
 	CircuitBreakersInput() *GoogleComputeBackendServiceCircuitBreakers
+	CompressionMode() *string
+	SetCompressionMode(val *string)
+	CompressionModeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -168,6 +171,7 @@ type GoogleComputeBackendService interface {
 	ResetBackend()
 	ResetCdnPolicy()
 	ResetCircuitBreakers()
+	ResetCompressionMode()
 	ResetConnectionDrainingTimeoutSec()
 	ResetConsistentHash()
 	ResetCustomRequestHeaders()
@@ -292,6 +296,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) CircuitBreakersInput() *GoogleCo
 	_jsii_.Get(
 		j,
 		"circuitBreakersInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) CompressionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) CompressionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionModeInput",
 		&returns,
 	)
 	return returns
@@ -958,6 +982,17 @@ func (j *jsiiProxy_GoogleComputeBackendService)SetAffinityCookieTtlSec(val *floa
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService)SetCompressionMode(val *string) {
+	if err := j.validateSetCompressionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compressionMode",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService)SetConnection(val interface{}) {
 	if err := j.validateSetConnectionParameters(val); err != nil {
 		panic(err)
@@ -1554,6 +1589,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetCircuitBreakers() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCircuitBreakers",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetCompressionMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCompressionMode",
 		nil, // no parameters
 	)
 }

@@ -97,6 +97,10 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetAffinityCookieTtlSecP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetCompressionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

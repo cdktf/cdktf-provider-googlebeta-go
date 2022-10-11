@@ -112,6 +112,17 @@ func (g *jsiiProxy_GoogleSqlUser) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlUser) validatePutPasswordPolicyParameters(value *GoogleSqlUserPasswordPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlUser) validatePutSqlServerUserDetailsParameters(value *GoogleSqlUserSqlServerUserDetails) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

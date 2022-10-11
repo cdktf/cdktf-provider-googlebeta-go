@@ -53,6 +53,10 @@ func (g *jsiiProxy_GoogleSqlUser) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlUser) validatePutPasswordPolicyParameters(value *GoogleSqlUserPasswordPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlUser) validatePutSqlServerUserDetailsParameters(value *GoogleSqlUserSqlServerUserDetails) error {
 	return nil
 }

@@ -57,6 +57,10 @@ func (g *jsiiProxy_GoogleStorageBucket) validatePutCorsParameters(value interfac
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) validatePutCustomPlacementConfigParameters(value *GoogleStorageBucketCustomPlacementConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) validatePutEncryptionParameters(value *GoogleStorageBucketEncryption) error {
 	return nil
 }

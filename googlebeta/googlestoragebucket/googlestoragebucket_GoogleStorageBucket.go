@@ -26,6 +26,8 @@ type GoogleStorageBucket interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	CustomPlacementConfig() GoogleStorageBucketCustomPlacementConfigOutputReference
+	CustomPlacementConfigInput() *GoogleStorageBucketCustomPlacementConfig
 	DefaultEventBasedHold() interface{}
 	SetDefaultEventBasedHold(val interface{})
 	DefaultEventBasedHoldInput() interface{}
@@ -135,6 +137,7 @@ type GoogleStorageBucket interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCors(value interface{})
+	PutCustomPlacementConfig(value *GoogleStorageBucketCustomPlacementConfig)
 	PutEncryption(value *GoogleStorageBucketEncryption)
 	PutLifecycleRule(value interface{})
 	PutLogging(value *GoogleStorageBucketLogging)
@@ -143,6 +146,7 @@ type GoogleStorageBucket interface {
 	PutVersioning(value *GoogleStorageBucketVersioning)
 	PutWebsite(value *GoogleStorageBucketWebsite)
 	ResetCors()
+	ResetCustomPlacementConfig()
 	ResetDefaultEventBasedHold()
 	ResetEncryption()
 	ResetForceDestroy()
@@ -232,6 +236,26 @@ func (j *jsiiProxy_GoogleStorageBucket) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) CustomPlacementConfig() GoogleStorageBucketCustomPlacementConfigOutputReference {
+	var returns GoogleStorageBucketCustomPlacementConfigOutputReference
+	_jsii_.Get(
+		j,
+		"customPlacementConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) CustomPlacementConfigInput() *GoogleStorageBucketCustomPlacementConfig {
+	var returns *GoogleStorageBucketCustomPlacementConfig
+	_jsii_.Get(
+		j,
+		"customPlacementConfigInput",
 		&returns,
 	)
 	return returns
@@ -1192,6 +1216,17 @@ func (g *jsiiProxy_GoogleStorageBucket) PutCors(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) PutCustomPlacementConfig(value *GoogleStorageBucketCustomPlacementConfig) {
+	if err := g.validatePutCustomPlacementConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomPlacementConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) PutEncryption(value *GoogleStorageBucketEncryption) {
 	if err := g.validatePutEncryptionParameters(value); err != nil {
 		panic(err)
@@ -1273,6 +1308,14 @@ func (g *jsiiProxy_GoogleStorageBucket) ResetCors() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCors",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) ResetCustomPlacementConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomPlacementConfig",
 		nil, // no parameters
 	)
 }

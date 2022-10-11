@@ -53,6 +53,10 @@ func (g *jsiiProxy_GoogleDnsManagedZone) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsManagedZone) validatePutCloudLoggingConfigParameters(value *GoogleDnsManagedZoneCloudLoggingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZone) validatePutDnssecConfigParameters(value *GoogleDnsManagedZoneDnssecConfig) error {
 	return nil
 }

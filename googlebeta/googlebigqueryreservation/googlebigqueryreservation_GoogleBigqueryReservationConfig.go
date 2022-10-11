@@ -30,6 +30,12 @@ type GoogleBigqueryReservationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_reservation#slot_capacity GoogleBigqueryReservation#slot_capacity}
 	SlotCapacity *float64 `field:"required" json:"slotCapacity" yaml:"slotCapacity"`
+	// Maximum number of queries that are allowed to run concurrently in this reservation.
+	//
+	// This is a soft limit due to asynchronous nature of the system and various optimizations for small queries. Default value is 0 which means that concurrency will be automatically set based on the reservation size.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_reservation#concurrency GoogleBigqueryReservation#concurrency}
+	Concurrency *float64 `field:"optional" json:"concurrency" yaml:"concurrency"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_reservation#id GoogleBigqueryReservation#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -46,6 +52,12 @@ type GoogleBigqueryReservationConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_reservation#location GoogleBigqueryReservation#location}
 	Location *string `field:"optional" json:"location" yaml:"location"`
+	// Applicable only for reservations located within one of the BigQuery multi-regions (US or EU).
+	//
+	// If set to true, this reservation is placed in the organization's secondary region which is designated for disaster recovery purposes. If false, this reservation is placed in the organization's default region.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_reservation#multi_region_auxiliary GoogleBigqueryReservation#multi_region_auxiliary}
+	MultiRegionAuxiliary interface{} `field:"optional" json:"multiRegionAuxiliary" yaml:"multiRegionAuxiliary"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_reservation#project GoogleBigqueryReservation#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.

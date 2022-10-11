@@ -27,6 +27,10 @@ type GoogleDnsManagedZoneConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_managed_zone#name GoogleDnsManagedZone#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// cloud_logging_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_managed_zone#cloud_logging_config GoogleDnsManagedZone#cloud_logging_config}
+	CloudLoggingConfig *GoogleDnsManagedZoneCloudLoggingConfig `field:"optional" json:"cloudLoggingConfig" yaml:"cloudLoggingConfig"`
 	// A textual description field. Defaults to 'Managed by Terraform'.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_managed_zone#description GoogleDnsManagedZone#description}

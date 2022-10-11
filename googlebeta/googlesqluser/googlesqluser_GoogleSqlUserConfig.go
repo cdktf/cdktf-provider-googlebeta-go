@@ -53,6 +53,10 @@ type GoogleSqlUserConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_user#password GoogleSqlUser#password}
 	Password *string `field:"optional" json:"password" yaml:"password"`
+	// password_policy block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_user#password_policy GoogleSqlUser#password_policy}
+	PasswordPolicy *GoogleSqlUserPasswordPolicy `field:"optional" json:"passwordPolicy" yaml:"passwordPolicy"`
 	// The ID of the project in which the resource belongs.
 	//
 	// If it is not provided, the provider project is used.

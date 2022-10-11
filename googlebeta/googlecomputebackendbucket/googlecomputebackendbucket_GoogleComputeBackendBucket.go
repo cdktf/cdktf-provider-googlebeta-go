@@ -19,6 +19,9 @@ type GoogleComputeBackendBucket interface {
 	CdktfStack() cdktf.TerraformStack
 	CdnPolicy() GoogleComputeBackendBucketCdnPolicyOutputReference
 	CdnPolicyInput() *GoogleComputeBackendBucketCdnPolicy
+	CompressionMode() *string
+	SetCompressionMode(val *string)
+	CompressionModeInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -116,6 +119,7 @@ type GoogleComputeBackendBucket interface {
 	PutCdnPolicy(value *GoogleComputeBackendBucketCdnPolicy)
 	PutTimeouts(value *GoogleComputeBackendBucketTimeouts)
 	ResetCdnPolicy()
+	ResetCompressionMode()
 	ResetCustomResponseHeaders()
 	ResetDescription()
 	ResetEdgeSecurityPolicy()
@@ -186,6 +190,26 @@ func (j *jsiiProxy_GoogleComputeBackendBucket) CdnPolicyInput() *GoogleComputeBa
 	_jsii_.Get(
 		j,
 		"cdnPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendBucket) CompressionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendBucket) CompressionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"compressionModeInput",
 		&returns,
 	)
 	return returns
@@ -558,6 +582,17 @@ func (j *jsiiProxy_GoogleComputeBackendBucket)SetBucketName(val *string) {
 	_jsii_.Set(
 		j,
 		"bucketName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendBucket)SetCompressionMode(val *string) {
+	if err := j.validateSetCompressionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"compressionMode",
 		val,
 	)
 }
@@ -958,6 +993,14 @@ func (g *jsiiProxy_GoogleComputeBackendBucket) ResetCdnPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCdnPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendBucket) ResetCompressionMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCompressionMode",
 		nil, // no parameters
 	)
 }

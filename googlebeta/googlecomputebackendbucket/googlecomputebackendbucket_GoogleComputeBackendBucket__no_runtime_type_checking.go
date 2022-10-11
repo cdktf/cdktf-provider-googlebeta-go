@@ -69,6 +69,10 @@ func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetBucketNameParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetCompressionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

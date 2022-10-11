@@ -60,6 +60,8 @@ type GoogleSqlUser interface {
 	Password() *string
 	SetPassword(val *string)
 	PasswordInput() *string
+	PasswordPolicy() GoogleSqlUserPasswordPolicyOutputReference
+	PasswordPolicyInput() *GoogleSqlUserPasswordPolicy
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -111,6 +113,7 @@ type GoogleSqlUser interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPasswordPolicy(value *GoogleSqlUserPasswordPolicy)
 	PutSqlServerUserDetails(value *GoogleSqlUserSqlServerUserDetails)
 	PutTimeouts(value *GoogleSqlUserTimeouts)
 	ResetDeletionPolicy()
@@ -120,6 +123,7 @@ type GoogleSqlUser interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPassword()
+	ResetPasswordPolicy()
 	ResetProject()
 	ResetSqlServerUserDetails()
 	ResetTimeouts()
@@ -354,6 +358,26 @@ func (j *jsiiProxy_GoogleSqlUser) PasswordInput() *string {
 	_jsii_.Get(
 		j,
 		"passwordInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlUser) PasswordPolicy() GoogleSqlUserPasswordPolicyOutputReference {
+	var returns GoogleSqlUserPasswordPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"passwordPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlUser) PasswordPolicyInput() *GoogleSqlUserPasswordPolicy {
+	var returns *GoogleSqlUserPasswordPolicy
+	_jsii_.Get(
+		j,
+		"passwordPolicyInput",
 		&returns,
 	)
 	return returns
@@ -910,6 +934,17 @@ func (g *jsiiProxy_GoogleSqlUser) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlUser) PutPasswordPolicy(value *GoogleSqlUserPasswordPolicy) {
+	if err := g.validatePutPasswordPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPasswordPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlUser) PutSqlServerUserDetails(value *GoogleSqlUserSqlServerUserDetails) {
 	if err := g.validatePutSqlServerUserDetailsParameters(value); err != nil {
 		panic(err)
@@ -968,6 +1003,14 @@ func (g *jsiiProxy_GoogleSqlUser) ResetPassword() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlUser) ResetPasswordPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPasswordPolicy",
 		nil, // no parameters
 	)
 }

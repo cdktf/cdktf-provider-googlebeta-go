@@ -53,6 +53,10 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateOverrideLogicalIdP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutBigqueryProfileParameters(value *GoogleDatastreamConnectionProfileBigqueryProfile) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutForwardSshConnectivityParameters(value *GoogleDatastreamConnectionProfileForwardSshConnectivity) error {
 	return nil
 }
