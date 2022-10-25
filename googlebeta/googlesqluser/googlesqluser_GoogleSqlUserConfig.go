@@ -63,10 +63,6 @@ type GoogleSqlUserConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_user#project GoogleSqlUser#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
-	// sql_server_user_details block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_user#sql_server_user_details GoogleSqlUser#sql_server_user_details}
-	SqlServerUserDetails *GoogleSqlUserSqlServerUserDetails `field:"optional" json:"sqlServerUserDetails" yaml:"sqlServerUserDetails"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_user#timeouts GoogleSqlUser#timeouts}

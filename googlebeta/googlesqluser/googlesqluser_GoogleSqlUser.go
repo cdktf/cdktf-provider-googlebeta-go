@@ -75,8 +75,7 @@ type GoogleSqlUser interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SqlServerUserDetails() GoogleSqlUserSqlServerUserDetailsOutputReference
-	SqlServerUserDetailsInput() *GoogleSqlUserSqlServerUserDetails
+	SqlServerUserDetails() GoogleSqlUserSqlServerUserDetailsList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -114,7 +113,6 @@ type GoogleSqlUser interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutPasswordPolicy(value *GoogleSqlUserPasswordPolicy)
-	PutSqlServerUserDetails(value *GoogleSqlUserSqlServerUserDetails)
 	PutTimeouts(value *GoogleSqlUserTimeouts)
 	ResetDeletionPolicy()
 	ResetHost()
@@ -125,7 +123,6 @@ type GoogleSqlUser interface {
 	ResetPassword()
 	ResetPasswordPolicy()
 	ResetProject()
-	ResetSqlServerUserDetails()
 	ResetTimeouts()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -433,21 +430,11 @@ func (j *jsiiProxy_GoogleSqlUser) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlUser) SqlServerUserDetails() GoogleSqlUserSqlServerUserDetailsOutputReference {
-	var returns GoogleSqlUserSqlServerUserDetailsOutputReference
+func (j *jsiiProxy_GoogleSqlUser) SqlServerUserDetails() GoogleSqlUserSqlServerUserDetailsList {
+	var returns GoogleSqlUserSqlServerUserDetailsList
 	_jsii_.Get(
 		j,
 		"sqlServerUserDetails",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleSqlUser) SqlServerUserDetailsInput() *GoogleSqlUserSqlServerUserDetails {
-	var returns *GoogleSqlUserSqlServerUserDetails
-	_jsii_.Get(
-		j,
-		"sqlServerUserDetailsInput",
 		&returns,
 	)
 	return returns
@@ -945,17 +932,6 @@ func (g *jsiiProxy_GoogleSqlUser) PutPasswordPolicy(value *GoogleSqlUserPassword
 	)
 }
 
-func (g *jsiiProxy_GoogleSqlUser) PutSqlServerUserDetails(value *GoogleSqlUserSqlServerUserDetails) {
-	if err := g.validatePutSqlServerUserDetailsParameters(value); err != nil {
-		panic(err)
-	}
-	_jsii_.InvokeVoid(
-		g,
-		"putSqlServerUserDetails",
-		[]interface{}{value},
-	)
-}
-
 func (g *jsiiProxy_GoogleSqlUser) PutTimeouts(value *GoogleSqlUserTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1019,14 +995,6 @@ func (g *jsiiProxy_GoogleSqlUser) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleSqlUser) ResetSqlServerUserDetails() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetSqlServerUserDetails",
 		nil, // no parameters
 	)
 }

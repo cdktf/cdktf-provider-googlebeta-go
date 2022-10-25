@@ -46,6 +46,8 @@ type GoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	PortsInput() interface{}
 	Resources() GoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference
 	ResourcesInput() *GoogleCloudRunServiceTemplateSpecContainersResources
+	StartupProbe() GoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference
+	StartupProbeInput() *GoogleCloudRunServiceTemplateSpecContainersStartupProbe
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -87,6 +89,7 @@ type GoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	PutEnvFrom(value interface{})
 	PutPorts(value interface{})
 	PutResources(value *GoogleCloudRunServiceTemplateSpecContainersResources)
+	PutStartupProbe(value *GoogleCloudRunServiceTemplateSpecContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
 	ResetCommand()
@@ -94,6 +97,7 @@ type GoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	ResetEnvFrom()
 	ResetPorts()
 	ResetResources()
+	ResetStartupProbe()
 	ResetVolumeMounts()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -296,6 +300,26 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) R
 	_jsii_.Get(
 		j,
 		"resourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) StartupProbe() GoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference {
+	var returns GoogleCloudRunServiceTemplateSpecContainersStartupProbeOutputReference
+	_jsii_.Get(
+		j,
+		"startupProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) StartupProbeInput() *GoogleCloudRunServiceTemplateSpecContainersStartupProbe {
+	var returns *GoogleCloudRunServiceTemplateSpecContainersStartupProbe
+	_jsii_.Get(
+		j,
+		"startupProbeInput",
 		&returns,
 	)
 	return returns
@@ -718,6 +742,17 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) P
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) PutStartupProbe(value *GoogleCloudRunServiceTemplateSpecContainersStartupProbe) {
+	if err := g.validatePutStartupProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStartupProbe",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) PutVolumeMounts(value interface{}) {
 	if err := g.validatePutVolumeMountsParameters(value); err != nil {
 		panic(err)
@@ -773,6 +808,14 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) ResetStartupProbe() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStartupProbe",
 		nil, // no parameters
 	)
 }

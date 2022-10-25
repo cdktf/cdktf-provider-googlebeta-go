@@ -38,6 +38,10 @@ type GoogleDataFusionInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#type GoogleDataFusionInstance#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
+	// crypto_key_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#crypto_key_config GoogleDataFusionInstance#crypto_key_config}
+	CryptoKeyConfig *GoogleDataFusionInstanceCryptoKeyConfig `field:"optional" json:"cryptoKeyConfig" yaml:"cryptoKeyConfig"`
 	// User-managed service account to set on Dataproc when Cloud Data Fusion creates Dataproc to run data processing pipelines.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#dataproc_service_account GoogleDataFusionInstance#dataproc_service_account}

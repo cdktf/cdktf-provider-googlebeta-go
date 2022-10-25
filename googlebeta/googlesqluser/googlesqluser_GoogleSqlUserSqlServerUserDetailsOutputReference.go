@@ -25,16 +25,12 @@ type GoogleSqlUserSqlServerUserDetailsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Disabled() interface{}
-	SetDisabled(val interface{})
-	DisabledInput() interface{}
+	Disabled() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleSqlUserSqlServerUserDetails
 	SetInternalValue(val *GoogleSqlUserSqlServerUserDetails)
 	ServerRoles() *[]*string
-	SetServerRoles(val *[]*string)
-	ServerRolesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,8 +63,6 @@ type GoogleSqlUserSqlServerUserDetailsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetDisabled()
-	ResetServerRoles()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -114,21 +108,11 @@ func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) CreationSta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) Disabled() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) Disabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
 	_jsii_.Get(
 		j,
 		"disabled",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) DisabledInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"disabledInput",
 		&returns,
 	)
 	return returns
@@ -164,16 +148,6 @@ func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) ServerRoles
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) ServerRolesInput() *[]*string {
-	var returns *[]*string
-	_jsii_.Get(
-		j,
-		"serverRolesInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -195,29 +169,29 @@ func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) TerraformRe
 }
 
 
-func NewGoogleSqlUserSqlServerUserDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSqlUserSqlServerUserDetailsOutputReference {
+func NewGoogleSqlUserSqlServerUserDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleSqlUserSqlServerUserDetailsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleSqlUserSqlServerUserDetailsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
+	if err := validateNewGoogleSqlUserSqlServerUserDetailsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleSqlUserSqlServerUserDetailsOutputReference_Override(g GoogleSqlUserSqlServerUserDetailsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleSqlUserSqlServerUserDetailsOutputReference_Override(g GoogleSqlUserSqlServerUserDetailsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleSqlUser.GoogleSqlUserSqlServerUserDetailsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute},
+		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
 }
@@ -244,17 +218,6 @@ func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference)SetComplexOb
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference)SetDisabled(val interface{}) {
-	if err := j.validateSetDisabledParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"disabled",
-		val,
-	)
-}
-
 func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference)SetInternalValue(val *GoogleSqlUserSqlServerUserDetails) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -262,17 +225,6 @@ func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference)SetInternalV
 	_jsii_.Set(
 		j,
 		"internalValue",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference)SetServerRoles(val *[]*string) {
-	if err := j.validateSetServerRolesParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"serverRoles",
 		val,
 	)
 }
@@ -483,22 +435,6 @@ func (g *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) Interpolati
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) ResetDisabled() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetDisabled",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) ResetServerRoles() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetServerRoles",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

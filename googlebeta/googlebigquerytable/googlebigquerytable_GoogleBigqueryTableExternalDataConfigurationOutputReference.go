@@ -13,6 +13,8 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	Autodetect() interface{}
 	SetAutodetect(val interface{})
 	AutodetectInput() interface{}
+	AvroOptions() GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference
+	AvroOptionsInput() *GoogleBigqueryTableExternalDataConfigurationAvroOptions
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -91,9 +93,11 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAvroOptions(value *GoogleBigqueryTableExternalDataConfigurationAvroOptions)
 	PutCsvOptions(value *GoogleBigqueryTableExternalDataConfigurationCsvOptions)
 	PutGoogleSheetsOptions(value *GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions)
 	PutHivePartitioningOptions(value *GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions)
+	ResetAvroOptions()
 	ResetCompression()
 	ResetConnectionId()
 	ResetCsvOptions()
@@ -132,6 +136,26 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	_jsii_.Get(
 		j,
 		"autodetectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) AvroOptions() GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference {
+	var returns GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"avroOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) AvroOptionsInput() *GoogleBigqueryTableExternalDataConfigurationAvroOptions {
+	var returns *GoogleBigqueryTableExternalDataConfigurationAvroOptions
+	_jsii_.Get(
+		j,
+		"avroOptionsInput",
 		&returns,
 	)
 	return returns
@@ -764,6 +788,17 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	return returns
 }
 
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) PutAvroOptions(value *GoogleBigqueryTableExternalDataConfigurationAvroOptions) {
+	if err := g.validatePutAvroOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAvroOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) PutCsvOptions(value *GoogleBigqueryTableExternalDataConfigurationCsvOptions) {
 	if err := g.validatePutCsvOptionsParameters(value); err != nil {
 		panic(err)
@@ -794,6 +829,14 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 		g,
 		"putHivePartitioningOptions",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) ResetAvroOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAvroOptions",
+		nil, // no parameters
 	)
 }
 

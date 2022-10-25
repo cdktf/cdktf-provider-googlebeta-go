@@ -25,6 +25,8 @@ type GoogleDataFusionInstance interface {
 	// Experimental.
 	SetCount(val *float64)
 	CreateTime() *string
+	CryptoKeyConfig() GoogleDataFusionInstanceCryptoKeyConfigOutputReference
+	CryptoKeyConfigInput() *GoogleDataFusionInstanceCryptoKeyConfig
 	DataprocServiceAccount() *string
 	SetDataprocServiceAccount(val *string)
 	DataprocServiceAccountInput() *string
@@ -134,8 +136,10 @@ type GoogleDataFusionInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCryptoKeyConfig(value *GoogleDataFusionInstanceCryptoKeyConfig)
 	PutNetworkConfig(value *GoogleDataFusionInstanceNetworkConfig)
 	PutTimeouts(value *GoogleDataFusionInstanceTimeouts)
+	ResetCryptoKeyConfig()
 	ResetDataprocServiceAccount()
 	ResetDescription()
 	ResetEnableStackdriverLogging()
@@ -212,6 +216,26 @@ func (j *jsiiProxy_GoogleDataFusionInstance) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) CryptoKeyConfig() GoogleDataFusionInstanceCryptoKeyConfigOutputReference {
+	var returns GoogleDataFusionInstanceCryptoKeyConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cryptoKeyConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) CryptoKeyConfigInput() *GoogleDataFusionInstanceCryptoKeyConfig {
+	var returns *GoogleDataFusionInstanceCryptoKeyConfig
+	_jsii_.Get(
+		j,
+		"cryptoKeyConfigInput",
 		&returns,
 	)
 	return returns
@@ -1173,6 +1197,17 @@ func (g *jsiiProxy_GoogleDataFusionInstance) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstance) PutCryptoKeyConfig(value *GoogleDataFusionInstanceCryptoKeyConfig) {
+	if err := g.validatePutCryptoKeyConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCryptoKeyConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstance) PutNetworkConfig(value *GoogleDataFusionInstanceNetworkConfig) {
 	if err := g.validatePutNetworkConfigParameters(value); err != nil {
 		panic(err)
@@ -1192,6 +1227,14 @@ func (g *jsiiProxy_GoogleDataFusionInstance) PutTimeouts(value *GoogleDataFusion
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstance) ResetCryptoKeyConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCryptoKeyConfig",
+		nil, // no parameters
 	)
 }
 

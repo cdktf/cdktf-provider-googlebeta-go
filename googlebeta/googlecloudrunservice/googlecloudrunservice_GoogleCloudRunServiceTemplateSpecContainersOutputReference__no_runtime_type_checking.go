@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package googlecloudrunservice
 
@@ -58,6 +57,10 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) v
 }
 
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) validatePutResourcesParameters(value *GoogleCloudRunServiceTemplateSpecContainersResources) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) validatePutStartupProbeParameters(value *GoogleCloudRunServiceTemplateSpecContainersStartupProbe) error {
 	return nil
 }
 

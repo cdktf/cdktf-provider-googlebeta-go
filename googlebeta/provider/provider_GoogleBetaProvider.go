@@ -107,6 +107,9 @@ type GoogleBetaProvider interface {
 	CloudIdentityCustomEndpoint() *string
 	SetCloudIdentityCustomEndpoint(val *string)
 	CloudIdentityCustomEndpointInput() *string
+	CloudIdsCustomEndpoint() *string
+	SetCloudIdsCustomEndpoint(val *string)
+	CloudIdsCustomEndpointInput() *string
 	CloudIotCustomEndpoint() *string
 	SetCloudIotCustomEndpoint(val *string)
 	CloudIotCustomEndpointInput() *string
@@ -428,6 +431,7 @@ type GoogleBetaProvider interface {
 	ResetCloudfunctions2CustomEndpoint()
 	ResetCloudFunctionsCustomEndpoint()
 	ResetCloudIdentityCustomEndpoint()
+	ResetCloudIdsCustomEndpoint()
 	ResetCloudIotCustomEndpoint()
 	ResetCloudResourceManagerCustomEndpoint()
 	ResetCloudRunCustomEndpoint()
@@ -1160,6 +1164,26 @@ func (j *jsiiProxy_GoogleBetaProvider) CloudIdentityCustomEndpointInput() *strin
 	_jsii_.Get(
 		j,
 		"cloudIdentityCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) CloudIdsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudIdsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) CloudIdsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudIdsCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3316,6 +3340,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetCloudIdentityCustomEndpoint(val *string
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetCloudIdsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"cloudIdsCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetCloudIotCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4343,6 +4375,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetCloudIdentityCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCloudIdentityCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetCloudIdsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudIdsCustomEndpoint",
 		nil, // no parameters
 	)
 }

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package googlesqluser
 
@@ -54,10 +53,6 @@ func (g *jsiiProxy_GoogleSqlUser) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (g *jsiiProxy_GoogleSqlUser) validatePutPasswordPolicyParameters(value *GoogleSqlUserPasswordPolicy) error {
-	return nil
-}
-
-func (g *jsiiProxy_GoogleSqlUser) validatePutSqlServerUserDetailsParameters(value *GoogleSqlUserSqlServerUserDetails) error {
 	return nil
 }
 

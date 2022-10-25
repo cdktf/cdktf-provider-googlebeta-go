@@ -1,5 +1,4 @@
 //go:build !no_runtime_type_checking
-// +build !no_runtime_type_checking
 
 package googleappenginestandardappversion
 
@@ -463,6 +462,14 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetRuntimeApiVersi
 }
 
 func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetServiceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetServiceAccountParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package googlesqluser
 
@@ -57,15 +56,7 @@ func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) validateSetDisabledParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) validateSetInternalValueParameters(val *GoogleSqlUserSqlServerUserDetails) error {
-	return nil
-}
-
-func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) validateSetServerRolesParameters(val *[]*string) error {
 	return nil
 }
 
@@ -77,7 +68,7 @@ func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsOutputReference) validateSet
 	return nil
 }
 
-func validateNewGoogleSqlUserSqlServerUserDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSqlUserSqlServerUserDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

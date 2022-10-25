@@ -33,6 +33,8 @@ type GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference int
 	GpuPartitionSize() *string
 	SetGpuPartitionSize(val *string)
 	GpuPartitionSizeInput() *string
+	GpuSharingConfig() GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList
+	GpuSharingConfigInput() interface{}
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	// Experimental.
@@ -70,8 +72,10 @@ type GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGpuSharingConfig(value interface{})
 	ResetCount()
 	ResetGpuPartitionSize()
+	ResetGpuSharingConfig()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -163,6 +167,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutpu
 	_jsii_.Get(
 		j,
 		"gpuPartitionSizeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) GpuSharingConfig() GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList {
+	var returns GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigList
+	_jsii_.Get(
+		j,
+		"gpuSharingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) GpuSharingConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gpuSharingConfigInput",
 		&returns,
 	)
 	return returns
@@ -520,6 +544,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutpu
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) PutGpuSharingConfig(value interface{}) {
+	if err := g.validatePutGpuSharingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGpuSharingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) ResetCount() {
 	_jsii_.InvokeVoid(
 		g,
@@ -532,6 +567,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"resetGpuPartitionSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference) ResetGpuSharingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGpuSharingConfig",
 		nil, // no parameters
 	)
 }

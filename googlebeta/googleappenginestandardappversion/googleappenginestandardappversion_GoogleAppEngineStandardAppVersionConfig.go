@@ -96,6 +96,12 @@ type GoogleAppEngineStandardAppVersionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_standard_app_version#runtime_api_version GoogleAppEngineStandardAppVersion#runtime_api_version}
 	RuntimeApiVersion *string `field:"optional" json:"runtimeApiVersion" yaml:"runtimeApiVersion"`
+	// The identity that the deployed version will run as.
+	//
+	// Admin API will use the App Engine Appspot service account as default if this field is neither provided in app.yaml file nor through CLI flag.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_standard_app_version#service_account GoogleAppEngineStandardAppVersion#service_account}
+	ServiceAccount *string `field:"optional" json:"serviceAccount" yaml:"serviceAccount"`
 	// Whether multiple requests can be dispatched to this version at once.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_standard_app_version#threadsafe GoogleAppEngineStandardAppVersion#threadsafe}

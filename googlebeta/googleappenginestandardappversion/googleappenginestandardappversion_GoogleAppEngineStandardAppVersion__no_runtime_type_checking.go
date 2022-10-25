@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package googleappenginestandardappversion
 
@@ -146,6 +145,10 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetRuntimeApiVersi
 }
 
 func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetServiceParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetServiceAccountParameters(val *string) error {
 	return nil
 }
 

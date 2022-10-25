@@ -53,6 +53,10 @@ type GoogleCloudRunServiceTemplateSpecContainers struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#resources GoogleCloudRunService#resources}
 	Resources *GoogleCloudRunServiceTemplateSpecContainersResources `field:"optional" json:"resources" yaml:"resources"`
+	// startup_probe block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#startup_probe GoogleCloudRunService#startup_probe}
+	StartupProbe *GoogleCloudRunServiceTemplateSpecContainersStartupProbe `field:"optional" json:"startupProbe" yaml:"startupProbe"`
 	// volume_mounts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#volume_mounts GoogleCloudRunService#volume_mounts}

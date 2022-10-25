@@ -1,5 +1,4 @@
 //go:build no_runtime_type_checking
-// +build no_runtime_type_checking
 
 package googledatafusioninstance
 
@@ -50,6 +49,10 @@ func (g *jsiiProxy_GoogleDataFusionInstance) validateInterpolationForAttributePa
 }
 
 func (g *jsiiProxy_GoogleDataFusionInstance) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstance) validatePutCryptoKeyConfigParameters(value *GoogleDataFusionInstanceCryptoKeyConfig) error {
 	return nil
 }
 
