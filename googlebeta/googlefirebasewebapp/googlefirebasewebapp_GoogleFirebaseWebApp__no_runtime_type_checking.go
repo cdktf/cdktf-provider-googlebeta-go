@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleFirebaseWebApp) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaseWebApp) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaseWebApp) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

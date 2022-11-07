@@ -98,6 +98,10 @@ type GoogleComputeDisk interface {
 	Snapshot() *string
 	SetSnapshot(val *string)
 	SnapshotInput() *string
+	SourceDisk() *string
+	SetSourceDisk(val *string)
+	SourceDiskId() *string
+	SourceDiskInput() *string
 	SourceImageEncryptionKey() GoogleComputeDiskSourceImageEncryptionKeyOutputReference
 	SourceImageEncryptionKeyInput() *GoogleComputeDiskSourceImageEncryptionKey
 	SourceImageId() *string
@@ -164,6 +168,7 @@ type GoogleComputeDisk interface {
 	ResetResourcePolicies()
 	ResetSize()
 	ResetSnapshot()
+	ResetSourceDisk()
 	ResetSourceImageEncryptionKey()
 	ResetSourceSnapshotEncryptionKey()
 	ResetTimeouts()
@@ -644,6 +649,36 @@ func (j *jsiiProxy_GoogleComputeDisk) SnapshotInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeDisk) SourceDisk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) SourceDiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) SourceDiskInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeDisk) SourceImageEncryptionKey() GoogleComputeDiskSourceImageEncryptionKeyOutputReference {
 	var returns GoogleComputeDiskSourceImageEncryptionKeyOutputReference
 	_jsii_.Get(
@@ -1038,6 +1073,17 @@ func (j *jsiiProxy_GoogleComputeDisk)SetSnapshot(val *string) {
 	_jsii_.Set(
 		j,
 		"snapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeDisk)SetSourceDisk(val *string) {
+	if err := j.validateSetSourceDiskParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceDisk",
 		val,
 	)
 }
@@ -1444,6 +1490,14 @@ func (g *jsiiProxy_GoogleComputeDisk) ResetSnapshot() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeDisk) ResetSourceDisk() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceDisk",
 		nil, // no parameters
 	)
 }

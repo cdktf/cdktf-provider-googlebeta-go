@@ -14,6 +14,8 @@ type GoogleBetaProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#alias GoogleBetaProvider#alias}
 	Alias *string `field:"optional" json:"alias" yaml:"alias"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#alloydb_custom_endpoint GoogleBetaProvider#alloydb_custom_endpoint}.
+	AlloydbCustomEndpoint *string `field:"optional" json:"alloydbCustomEndpoint" yaml:"alloydbCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#api_gateway_custom_endpoint GoogleBetaProvider#api_gateway_custom_endpoint}.
 	ApiGatewayCustomEndpoint *string `field:"optional" json:"apiGatewayCustomEndpoint" yaml:"apiGatewayCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#apigee_custom_endpoint GoogleBetaProvider#apigee_custom_endpoint}.
@@ -98,6 +100,8 @@ type GoogleBetaProviderConfig struct {
 	DataCatalogCustomEndpoint *string `field:"optional" json:"dataCatalogCustomEndpoint" yaml:"dataCatalogCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#dataflow_custom_endpoint GoogleBetaProvider#dataflow_custom_endpoint}.
 	DataflowCustomEndpoint *string `field:"optional" json:"dataflowCustomEndpoint" yaml:"dataflowCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#dataform_custom_endpoint GoogleBetaProvider#dataform_custom_endpoint}.
+	DataformCustomEndpoint *string `field:"optional" json:"dataformCustomEndpoint" yaml:"dataformCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#data_fusion_custom_endpoint GoogleBetaProvider#data_fusion_custom_endpoint}.
 	DataFusionCustomEndpoint *string `field:"optional" json:"dataFusionCustomEndpoint" yaml:"dataFusionCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#data_loss_prevention_custom_endpoint GoogleBetaProvider#data_loss_prevention_custom_endpoint}.
@@ -150,6 +154,8 @@ type GoogleBetaProviderConfig struct {
 	IamCredentialsCustomEndpoint *string `field:"optional" json:"iamCredentialsCustomEndpoint" yaml:"iamCredentialsCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#iam_custom_endpoint GoogleBetaProvider#iam_custom_endpoint}.
 	IamCustomEndpoint *string `field:"optional" json:"iamCustomEndpoint" yaml:"iamCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#iam_workforce_pool_custom_endpoint GoogleBetaProvider#iam_workforce_pool_custom_endpoint}.
+	IamWorkforcePoolCustomEndpoint *string `field:"optional" json:"iamWorkforcePoolCustomEndpoint" yaml:"iamWorkforcePoolCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#iap_custom_endpoint GoogleBetaProvider#iap_custom_endpoint}.
 	IapCustomEndpoint *string `field:"optional" json:"iapCustomEndpoint" yaml:"iapCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#identity_platform_custom_endpoint GoogleBetaProvider#identity_platform_custom_endpoint}.

@@ -27,6 +27,9 @@ type GoogleBetaProvider interface {
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
+	AlloydbCustomEndpoint() *string
+	SetAlloydbCustomEndpoint(val *string)
+	AlloydbCustomEndpointInput() *string
 	ApiGatewayCustomEndpoint() *string
 	SetApiGatewayCustomEndpoint(val *string)
 	ApiGatewayCustomEndpointInput() *string
@@ -154,6 +157,9 @@ type GoogleBetaProvider interface {
 	DataflowCustomEndpoint() *string
 	SetDataflowCustomEndpoint(val *string)
 	DataflowCustomEndpointInput() *string
+	DataformCustomEndpoint() *string
+	SetDataformCustomEndpoint(val *string)
+	DataformCustomEndpointInput() *string
 	DataFusionCustomEndpoint() *string
 	SetDataFusionCustomEndpoint(val *string)
 	DataFusionCustomEndpointInput() *string
@@ -236,6 +242,9 @@ type GoogleBetaProvider interface {
 	IamCustomEndpoint() *string
 	SetIamCustomEndpoint(val *string)
 	IamCustomEndpointInput() *string
+	IamWorkforcePoolCustomEndpoint() *string
+	SetIamWorkforcePoolCustomEndpoint(val *string)
+	IamWorkforcePoolCustomEndpointInput() *string
 	IapCustomEndpoint() *string
 	SetIapCustomEndpoint(val *string)
 	IapCustomEndpointInput() *string
@@ -405,6 +414,7 @@ type GoogleBetaProvider interface {
 	ResetAccessToken()
 	ResetActiveDirectoryCustomEndpoint()
 	ResetAlias()
+	ResetAlloydbCustomEndpoint()
 	ResetApiGatewayCustomEndpoint()
 	ResetApigeeCustomEndpoint()
 	ResetApikeysCustomEndpoint()
@@ -446,6 +456,7 @@ type GoogleBetaProvider interface {
 	ResetCredentials()
 	ResetDataCatalogCustomEndpoint()
 	ResetDataflowCustomEndpoint()
+	ResetDataformCustomEndpoint()
 	ResetDataFusionCustomEndpoint()
 	ResetDataLossPreventionCustomEndpoint()
 	ResetDataplexCustomEndpoint()
@@ -472,6 +483,7 @@ type GoogleBetaProvider interface {
 	ResetIamBetaCustomEndpoint()
 	ResetIamCredentialsCustomEndpoint()
 	ResetIamCustomEndpoint()
+	ResetIamWorkforcePoolCustomEndpoint()
 	ResetIapCustomEndpoint()
 	ResetIdentityPlatformCustomEndpoint()
 	ResetImpersonateServiceAccount()
@@ -634,6 +646,26 @@ func (j *jsiiProxy_GoogleBetaProvider) AliasInput() *string {
 	_jsii_.Get(
 		j,
 		"aliasInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) AlloydbCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alloydbCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) AlloydbCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alloydbCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1479,6 +1511,26 @@ func (j *jsiiProxy_GoogleBetaProvider) DataflowCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) DataformCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataformCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) DataformCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataformCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) DataFusionCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2014,6 +2066,26 @@ func (j *jsiiProxy_GoogleBetaProvider) IamCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"iamCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) IamWorkforcePoolCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamWorkforcePoolCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) IamWorkforcePoolCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"iamWorkforcePoolCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3129,6 +3201,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetAlias(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetAlloydbCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"alloydbCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetApiGatewayCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3460,6 +3540,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetDataflowCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetDataformCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"dataformCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetDataFusionCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3664,6 +3752,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetIamCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"iamCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetIamWorkforcePoolCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"iamWorkforcePoolCustomEndpoint",
 		val,
 	)
 }
@@ -4171,6 +4267,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetAlias() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetAlloydbCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAlloydbCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetApiGatewayCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4499,6 +4603,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetDataflowCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetDataformCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataformCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetDataFusionCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4703,6 +4815,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetIamCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIamCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetIamWorkforcePoolCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIamWorkforcePoolCustomEndpoint",
 		nil, // no parameters
 	)
 }

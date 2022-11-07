@@ -23,6 +23,13 @@ type GoogleFirebaseWebAppConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_web_app#display_name GoogleFirebaseWebApp#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
+	// Set to 'ABANDON' to allow the WebApp to be untracked from terraform state rather than deleted upon 'terraform destroy'.
+	//
+	// This is useful becaue the WebApp may be
+	// serving traffic. Set to 'DELETE' to delete the WebApp. Default to 'ABANDON'
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_web_app#deletion_policy GoogleFirebaseWebApp#deletion_policy}
+	DeletionPolicy *string `field:"optional" json:"deletionPolicy" yaml:"deletionPolicy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_web_app#id GoogleFirebaseWebApp#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

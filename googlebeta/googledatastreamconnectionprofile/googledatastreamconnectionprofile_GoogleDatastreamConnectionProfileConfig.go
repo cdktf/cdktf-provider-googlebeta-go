@@ -64,6 +64,10 @@ type GoogleDatastreamConnectionProfileConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#postgresql_profile GoogleDatastreamConnectionProfile#postgresql_profile}
 	PostgresqlProfile *GoogleDatastreamConnectionProfilePostgresqlProfile `field:"optional" json:"postgresqlProfile" yaml:"postgresqlProfile"`
+	// private_connectivity block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#private_connectivity GoogleDatastreamConnectionProfile#private_connectivity}
+	PrivateConnectivity *GoogleDatastreamConnectionProfilePrivateConnectivity `field:"optional" json:"privateConnectivity" yaml:"privateConnectivity"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#project GoogleDatastreamConnectionProfile#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.

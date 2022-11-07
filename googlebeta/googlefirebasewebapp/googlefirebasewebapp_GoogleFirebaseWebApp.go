@@ -13,6 +13,7 @@ import (
 type GoogleFirebaseWebApp interface {
 	cdktf.TerraformResource
 	AppId() *string
+	AppUrls() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -25,6 +26,9 @@ type GoogleFirebaseWebApp interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -97,6 +101,7 @@ type GoogleFirebaseWebApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleFirebaseWebAppTimeouts)
+	ResetDeletionPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -123,6 +128,16 @@ func (j *jsiiProxy_GoogleFirebaseWebApp) AppId() *string {
 	_jsii_.Get(
 		j,
 		"appId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseWebApp) AppUrls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"appUrls",
 		&returns,
 	)
 	return returns
@@ -163,6 +178,26 @@ func (j *jsiiProxy_GoogleFirebaseWebApp) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseWebApp) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseWebApp) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -423,6 +458,17 @@ func (j *jsiiProxy_GoogleFirebaseWebApp)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseWebApp)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -742,6 +788,14 @@ func (g *jsiiProxy_GoogleFirebaseWebApp) PutTimeouts(value *GoogleFirebaseWebApp
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseWebApp) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionPolicy",
+		nil, // no parameters
 	)
 }
 

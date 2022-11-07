@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validatePutGe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validatePutPrimaryBackupParameters(value *GoogleDnsRecordSetRoutingPolicyPrimaryBackup) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validatePutWrrParameters(value interface{}) error {
 	return nil
 }
@@ -61,6 +65,10 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetCo
 }
 
 func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetEnableGeoFencingParameters(val interface{}) error {
 	return nil
 }
 

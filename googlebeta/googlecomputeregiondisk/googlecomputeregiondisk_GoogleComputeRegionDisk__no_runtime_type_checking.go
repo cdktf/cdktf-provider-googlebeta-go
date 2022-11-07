@@ -124,6 +124,10 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetSnapshotParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetSourceDiskParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetTypeParameters(val *string) error {
 	return nil
 }

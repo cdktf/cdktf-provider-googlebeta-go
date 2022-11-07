@@ -92,6 +92,10 @@ type GoogleComputeRegionDisk interface {
 	Snapshot() *string
 	SetSnapshot(val *string)
 	SnapshotInput() *string
+	SourceDisk() *string
+	SetSourceDisk(val *string)
+	SourceDiskId() *string
+	SourceDiskInput() *string
 	SourceSnapshotEncryptionKey() GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference
 	SourceSnapshotEncryptionKeyInput() *GoogleComputeRegionDiskSourceSnapshotEncryptionKey
 	SourceSnapshotId() *string
@@ -148,6 +152,7 @@ type GoogleComputeRegionDisk interface {
 	ResetRegion()
 	ResetSize()
 	ResetSnapshot()
+	ResetSourceDisk()
 	ResetSourceSnapshotEncryptionKey()
 	ResetTimeouts()
 	ResetType()
@@ -586,6 +591,36 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) SnapshotInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) SourceDisk() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SourceDiskId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) SourceDiskInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceDiskInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) SourceSnapshotEncryptionKey() GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference {
 	var returns GoogleComputeRegionDiskSourceSnapshotEncryptionKeyOutputReference
 	_jsii_.Get(
@@ -908,6 +943,17 @@ func (j *jsiiProxy_GoogleComputeRegionDisk)SetSnapshot(val *string) {
 	_jsii_.Set(
 		j,
 		"snapshot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk)SetSourceDisk(val *string) {
+	if err := j.validateSetSourceDiskParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceDisk",
 		val,
 	)
 }
@@ -1268,6 +1314,14 @@ func (g *jsiiProxy_GoogleComputeRegionDisk) ResetSnapshot() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDisk) ResetSourceDisk() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceDisk",
 		nil, // no parameters
 	)
 }

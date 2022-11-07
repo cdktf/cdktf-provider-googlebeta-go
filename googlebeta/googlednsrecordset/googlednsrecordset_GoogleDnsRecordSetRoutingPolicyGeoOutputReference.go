@@ -27,6 +27,8 @@ type GoogleDnsRecordSetRoutingPolicyGeoOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HealthCheckedTargets() GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference
+	HealthCheckedTargetsInput() *GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Location() *string
@@ -67,6 +69,9 @@ type GoogleDnsRecordSetRoutingPolicyGeoOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHealthCheckedTargets(value *GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets)
+	ResetHealthCheckedTargets()
+	ResetRrdatas()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -117,6 +122,26 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) Fqn() *str
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) HealthCheckedTargets() GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference {
+	var returns GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargetsOutputReference
+	_jsii_.Get(
+		j,
+		"healthCheckedTargets",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) HealthCheckedTargetsInput() *GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets {
+	var returns *GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets
+	_jsii_.Get(
+		j,
+		"healthCheckedTargetsInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +506,33 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) PutHealthCheckedTargets(value *GoogleDnsRecordSetRoutingPolicyGeoHealthCheckedTargets) {
+	if err := g.validatePutHealthCheckedTargetsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHealthCheckedTargets",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) ResetHealthCheckedTargets() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHealthCheckedTargets",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) ResetRrdatas() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRrdatas",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

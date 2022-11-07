@@ -39,7 +39,9 @@ type GoogleDnsManagedZoneConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_managed_zone#dnssec_config GoogleDnsManagedZone#dnssec_config}
 	DnssecConfig *GoogleDnsManagedZoneDnssecConfig `field:"optional" json:"dnssecConfig" yaml:"dnssecConfig"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_managed_zone#force_destroy GoogleDnsManagedZone#force_destroy}.
+	// Set this true to delete all records in the zone.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_managed_zone#force_destroy GoogleDnsManagedZone#force_destroy}
 	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// forwarding_config block.
 	//

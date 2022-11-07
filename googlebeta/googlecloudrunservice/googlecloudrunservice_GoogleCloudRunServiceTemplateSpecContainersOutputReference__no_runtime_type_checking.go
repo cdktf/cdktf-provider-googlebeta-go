@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) validatePutLivenessProbeParameters(value *GoogleCloudRunServiceTemplateSpecContainersLivenessProbe) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) validatePutPortsParameters(value interface{}) error {
 	return nil
 }

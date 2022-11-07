@@ -15,6 +15,7 @@ type DataGoogleFirebaseWebApp interface {
 	AppId() *string
 	SetAppId(val *string)
 	AppIdInput() *string
+	AppUrls() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -23,6 +24,7 @@ type DataGoogleFirebaseWebApp interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeletionPolicy() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -123,6 +125,16 @@ func (j *jsiiProxy_DataGoogleFirebaseWebApp) AppIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFirebaseWebApp) AppUrls() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"appUrls",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFirebaseWebApp) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
@@ -148,6 +160,16 @@ func (j *jsiiProxy_DataGoogleFirebaseWebApp) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFirebaseWebApp) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
 		&returns,
 	)
 	return returns

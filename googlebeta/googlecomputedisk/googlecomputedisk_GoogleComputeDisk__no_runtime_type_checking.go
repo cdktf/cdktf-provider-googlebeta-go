@@ -136,6 +136,10 @@ func (j *jsiiProxy_GoogleComputeDisk) validateSetSnapshotParameters(val *string)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeDisk) validateSetSourceDiskParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeDisk) validateSetTypeParameters(val *string) error {
 	return nil
 }

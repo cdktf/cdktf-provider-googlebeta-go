@@ -47,6 +47,9 @@ type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	Script() *string
+	SetScript(val *string)
+	ScriptInput() *string
 	SecretEnv() *[]*string
 	SetSecretEnv(val *[]*string)
 	SecretEnvInput() *[]*string
@@ -99,6 +102,7 @@ type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 	ResetEntrypoint()
 	ResetEnv()
 	ResetId()
+	ResetScript()
 	ResetSecretEnv()
 	ResetTimeout()
 	ResetTiming()
@@ -284,6 +288,26 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) NameInput() 
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) Script() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"script",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ScriptInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"scriptInput",
 		&returns,
 	)
 	return returns
@@ -532,6 +556,17 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetName(val *
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetScript(val *string) {
+	if err := j.validateSetScriptParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"script",
 		val,
 	)
 }
@@ -835,6 +870,14 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ResetScript() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScript",
 		nil, // no parameters
 	)
 }

@@ -76,6 +76,10 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutPostgresqlProfi
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutPrivateConnectivityParameters(value *GoogleDatastreamConnectionProfilePrivateConnectivity) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutTimeoutsParameters(value *GoogleDatastreamConnectionProfileTimeouts) error {
 	return nil
 }

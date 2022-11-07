@@ -2,6 +2,13 @@ package googleredisinstance
 
 
 type GoogleRedisInstancePersistenceConfig struct {
+	// Optional. Controls whether Persistence features are enabled. If not provided, the existing value will be used.
+	//
+	// - DISABLED: 	Persistence is disabled for the instance, and any existing snapshots are deleted.
+	// - RDB: RDB based Persistence is enabled. Possible values: ["DISABLED", "RDB"]
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_redis_instance#persistence_mode GoogleRedisInstance#persistence_mode}
+	PersistenceMode *string `field:"optional" json:"persistenceMode" yaml:"persistenceMode"`
 	// Optional. Available snapshot periods for scheduling.
 	//
 	// - ONE_HOUR:	Snapshot every 1 hour.
@@ -10,14 +17,7 @@ type GoogleRedisInstancePersistenceConfig struct {
 	// - TWENTY_FOUR_HOURS:	Snapshot every 24 horus. Possible values: ["ONE_HOUR", "SIX_HOURS", "TWELVE_HOURS", "TWENTY_FOUR_HOURS"]
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_redis_instance#rdb_snapshot_period GoogleRedisInstance#rdb_snapshot_period}
-	RdbSnapshotPeriod *string `field:"required" json:"rdbSnapshotPeriod" yaml:"rdbSnapshotPeriod"`
-	// Optional. Controls whether Persistence features are enabled. If not provided, the existing value will be used.
-	//
-	// - DISABLED: 	Persistence is disabled for the instance, and any existing snapshots are deleted.
-	// - RDB: RDB based Persistence is enabled. Possible values: ["DISABLED", "RDB"]
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_redis_instance#persistence_mode GoogleRedisInstance#persistence_mode}
-	PersistenceMode *string `field:"optional" json:"persistenceMode" yaml:"persistenceMode"`
+	RdbSnapshotPeriod *string `field:"optional" json:"rdbSnapshotPeriod" yaml:"rdbSnapshotPeriod"`
 	// Optional.
 	//
 	// Date and time that the first snapshot was/will be attempted,

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference) validateIn
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference) validatePutHealthCheckedTargetsParameters(value *GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargets) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

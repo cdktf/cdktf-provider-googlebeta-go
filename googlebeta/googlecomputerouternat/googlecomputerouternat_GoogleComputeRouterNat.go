@@ -93,6 +93,8 @@ type GoogleComputeRouterNat interface {
 	Router() *string
 	SetRouter(val *string)
 	RouterInput() *string
+	Rules() GoogleComputeRouterNatRulesList
+	RulesInput() interface{}
 	SourceSubnetworkIpRangesToNat() *string
 	SetSourceSubnetworkIpRangesToNat(val *string)
 	SourceSubnetworkIpRangesToNatInput() *string
@@ -141,6 +143,7 @@ type GoogleComputeRouterNat interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutLogConfig(value *GoogleComputeRouterNatLogConfig)
+	PutRules(value interface{})
 	PutSubnetwork(value interface{})
 	PutTimeouts(value *GoogleComputeRouterNatTimeouts)
 	ResetDrainNatIps()
@@ -157,6 +160,7 @@ type GoogleComputeRouterNat interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetRules()
 	ResetSubnetwork()
 	ResetTcpEstablishedIdleTimeoutSec()
 	ResetTcpTransitoryIdleTimeoutSec()
@@ -582,6 +586,26 @@ func (j *jsiiProxy_GoogleComputeRouterNat) RouterInput() *string {
 	_jsii_.Get(
 		j,
 		"routerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) Rules() GoogleComputeRouterNatRulesList {
+	var returns GoogleComputeRouterNatRulesList
+	_jsii_.Get(
+		j,
+		"rules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) RulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rulesInput",
 		&returns,
 	)
 	return returns
@@ -1258,6 +1282,17 @@ func (g *jsiiProxy_GoogleComputeRouterNat) PutLogConfig(value *GoogleComputeRout
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterNat) PutRules(value interface{}) {
+	if err := g.validatePutRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRules",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterNat) PutSubnetwork(value interface{}) {
 	if err := g.validatePutSubnetworkParameters(value); err != nil {
 		panic(err)
@@ -1372,6 +1407,14 @@ func (g *jsiiProxy_GoogleComputeRouterNat) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterNat) ResetRules() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRules",
 		nil, // no parameters
 	)
 }

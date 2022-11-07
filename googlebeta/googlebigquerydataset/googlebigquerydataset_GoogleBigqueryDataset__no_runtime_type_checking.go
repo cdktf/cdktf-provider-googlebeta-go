@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleBigqueryDataset) validateSetLocationParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryDataset) validateSetMaxTimeTravelHoursParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDataset) validateSetProjectParameters(val *string) error {
 	return nil
 }

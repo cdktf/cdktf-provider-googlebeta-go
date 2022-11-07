@@ -34,6 +34,7 @@ type DataGoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	Image() *string
 	InternalValue() *DataGoogleCloudRunServiceTemplateSpecContainers
 	SetInternalValue(val *DataGoogleCloudRunServiceTemplateSpecContainers)
+	LivenessProbe() DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList
 	Ports() DataGoogleCloudRunServiceTemplateSpecContainersPortsList
 	Resources() DataGoogleCloudRunServiceTemplateSpecContainersResourcesList
 	StartupProbe() DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeList
@@ -181,6 +182,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersOutputReferenc
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersOutputReference) LivenessProbe() DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList {
+	var returns DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeList
+	_jsii_.Get(
+		j,
+		"livenessProbe",
 		&returns,
 	)
 	return returns

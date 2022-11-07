@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetN
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetScriptParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetSecretEnvParameters(val *[]*string) error {
 	return nil
 }

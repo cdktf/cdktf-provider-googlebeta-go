@@ -23,7 +23,9 @@ type GoogleVertexAiFeaturestoreConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#encryption_spec GoogleVertexAiFeaturestore#encryption_spec}
 	EncryptionSpec *GoogleVertexAiFeaturestoreEncryptionSpec `field:"optional" json:"encryptionSpec" yaml:"encryptionSpec"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#force_destroy GoogleVertexAiFeaturestore#force_destroy}.
+	// If set to true, any EntityTypes and Features for this Featurestore will also be deleted.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#force_destroy GoogleVertexAiFeaturestore#force_destroy}
 	ForceDestroy interface{} `field:"optional" json:"forceDestroy" yaml:"forceDestroy"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_featurestore#id GoogleVertexAiFeaturestore#id}.
 	//

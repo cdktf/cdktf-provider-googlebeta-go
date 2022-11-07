@@ -6,6 +6,14 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#boot_disk_kms_key GoogleContainerCluster#boot_disk_kms_key}
 	BootDiskKmsKey *string `field:"optional" json:"bootDiskKmsKey" yaml:"bootDiskKmsKey"`
+	// Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#disk_size GoogleContainerCluster#disk_size}
+	DiskSize *float64 `field:"optional" json:"diskSize" yaml:"diskSize"`
+	// Type of the disk attached to each node.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#disk_type GoogleContainerCluster#disk_type}
+	DiskType *string `field:"optional" json:"diskType" yaml:"diskType"`
 	// The default image type used by NAP once a new node pool is being created.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#image_type GoogleContainerCluster#image_type}

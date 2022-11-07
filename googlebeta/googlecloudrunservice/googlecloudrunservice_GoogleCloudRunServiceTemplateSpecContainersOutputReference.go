@@ -42,6 +42,8 @@ type GoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	ImageInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	LivenessProbe() GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference
+	LivenessProbeInput() *GoogleCloudRunServiceTemplateSpecContainersLivenessProbe
 	Ports() GoogleCloudRunServiceTemplateSpecContainersPortsList
 	PortsInput() interface{}
 	Resources() GoogleCloudRunServiceTemplateSpecContainersResourcesOutputReference
@@ -87,6 +89,7 @@ type GoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutEnv(value interface{})
 	PutEnvFrom(value interface{})
+	PutLivenessProbe(value *GoogleCloudRunServiceTemplateSpecContainersLivenessProbe)
 	PutPorts(value interface{})
 	PutResources(value *GoogleCloudRunServiceTemplateSpecContainersResources)
 	PutStartupProbe(value *GoogleCloudRunServiceTemplateSpecContainersStartupProbe)
@@ -95,6 +98,7 @@ type GoogleCloudRunServiceTemplateSpecContainersOutputReference interface {
 	ResetCommand()
 	ResetEnv()
 	ResetEnvFrom()
+	ResetLivenessProbe()
 	ResetPorts()
 	ResetResources()
 	ResetStartupProbe()
@@ -260,6 +264,26 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) LivenessProbe() GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference {
+	var returns GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference
+	_jsii_.Get(
+		j,
+		"livenessProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) LivenessProbeInput() *GoogleCloudRunServiceTemplateSpecContainersLivenessProbe {
+	var returns *GoogleCloudRunServiceTemplateSpecContainersLivenessProbe
+	_jsii_.Get(
+		j,
+		"livenessProbeInput",
 		&returns,
 	)
 	return returns
@@ -720,6 +744,17 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) P
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) PutLivenessProbe(value *GoogleCloudRunServiceTemplateSpecContainersLivenessProbe) {
+	if err := g.validatePutLivenessProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLivenessProbe",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) PutPorts(value interface{}) {
 	if err := g.validatePutPortsParameters(value); err != nil {
 		panic(err)
@@ -792,6 +827,14 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnvFrom",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersOutputReference) ResetLivenessProbe() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLivenessProbe",
 		nil, // no parameters
 	)
 }

@@ -25,12 +25,17 @@ type GoogleDnsRecordSetRoutingPolicyOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableGeoFencing() interface{}
+	SetEnableGeoFencing(val interface{})
+	EnableGeoFencingInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Geo() GoogleDnsRecordSetRoutingPolicyGeoList
 	GeoInput() interface{}
 	InternalValue() *GoogleDnsRecordSetRoutingPolicy
 	SetInternalValue(val *GoogleDnsRecordSetRoutingPolicy)
+	PrimaryBackup() GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference
+	PrimaryBackupInput() *GoogleDnsRecordSetRoutingPolicyPrimaryBackup
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -66,8 +71,11 @@ type GoogleDnsRecordSetRoutingPolicyOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGeo(value interface{})
+	PutPrimaryBackup(value *GoogleDnsRecordSetRoutingPolicyPrimaryBackup)
 	PutWrr(value interface{})
+	ResetEnableGeoFencing()
 	ResetGeo()
+	ResetPrimaryBackup()
 	ResetWrr()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -114,6 +122,26 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) CreationStack
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) EnableGeoFencing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGeoFencing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) EnableGeoFencingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGeoFencingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -149,6 +177,26 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PrimaryBackup() GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference {
+	var returns GoogleDnsRecordSetRoutingPolicyPrimaryBackupOutputReference
+	_jsii_.Get(
+		j,
+		"primaryBackup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PrimaryBackupInput() *GoogleDnsRecordSetRoutingPolicyPrimaryBackup {
+	var returns *GoogleDnsRecordSetRoutingPolicyPrimaryBackup
+	_jsii_.Get(
+		j,
+		"primaryBackupInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +288,17 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetComplexObje
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference)SetEnableGeoFencing(val interface{}) {
+	if err := j.validateSetEnableGeoFencingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableGeoFencing",
 		val,
 	)
 }
@@ -474,6 +533,17 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PutGeo(value 
 	)
 }
 
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PutPrimaryBackup(value *GoogleDnsRecordSetRoutingPolicyPrimaryBackup) {
+	if err := g.validatePutPrimaryBackupParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPrimaryBackup",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PutWrr(value interface{}) {
 	if err := g.validatePutWrrParameters(value); err != nil {
 		panic(err)
@@ -485,10 +555,26 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) PutWrr(value 
 	)
 }
 
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) ResetEnableGeoFencing() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableGeoFencing",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) ResetGeo() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGeo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) ResetPrimaryBackup() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrimaryBackup",
 		nil, // no parameters
 	)
 }

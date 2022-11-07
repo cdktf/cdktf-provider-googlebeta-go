@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetTimeZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validateSetUserLabelsParameters(val *map[string]*string) error {
 	return nil
 }

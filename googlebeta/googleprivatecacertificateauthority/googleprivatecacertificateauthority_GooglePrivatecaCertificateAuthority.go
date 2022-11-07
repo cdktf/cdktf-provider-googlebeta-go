@@ -96,6 +96,9 @@ type GooglePrivatecaCertificateAuthority interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipGracePeriod() interface{}
+	SetSkipGracePeriod(val interface{})
+	SkipGracePeriodInput() interface{}
 	State() *string
 	SubordinateConfig() GooglePrivatecaCertificateAuthoritySubordinateConfigOutputReference
 	SubordinateConfigInput() *GooglePrivatecaCertificateAuthoritySubordinateConfig
@@ -152,6 +155,7 @@ type GooglePrivatecaCertificateAuthority interface {
 	ResetOverrideLogicalId()
 	ResetPemCaCertificate()
 	ResetProject()
+	ResetSkipGracePeriod()
 	ResetSubordinateConfig()
 	ResetTimeouts()
 	ResetType()
@@ -620,6 +624,26 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) SkipGracePeriod() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGracePeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) SkipGracePeriodInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipGracePeriodInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -953,6 +977,17 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthority)SetProvisioners(val *[]in
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority)SetSkipGracePeriod(val interface{}) {
+	if err := j.validateSetSkipGracePeriodParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipGracePeriod",
 		val,
 	)
 }
@@ -1316,6 +1351,14 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthority) ResetSkipGracePeriod() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSkipGracePeriod",
 		nil, // no parameters
 	)
 }

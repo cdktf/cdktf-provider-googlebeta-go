@@ -104,6 +104,10 @@ type GoogleComputeRouterNatConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router_nat#region GoogleComputeRouterNat#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
+	// rules block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router_nat#rules GoogleComputeRouterNat#rules}
+	Rules interface{} `field:"optional" json:"rules" yaml:"rules"`
 	// subnetwork block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router_nat#subnetwork GoogleComputeRouterNat#subnetwork}

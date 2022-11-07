@@ -45,6 +45,10 @@ type GoogleCloudRunServiceTemplateSpecContainers struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#env_from GoogleCloudRunService#env_from}
 	EnvFrom interface{} `field:"optional" json:"envFrom" yaml:"envFrom"`
+	// liveness_probe block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#liveness_probe GoogleCloudRunService#liveness_probe}
+	LivenessProbe *GoogleCloudRunServiceTemplateSpecContainersLivenessProbe `field:"optional" json:"livenessProbe" yaml:"livenessProbe"`
 	// ports block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#ports GoogleCloudRunService#ports}
