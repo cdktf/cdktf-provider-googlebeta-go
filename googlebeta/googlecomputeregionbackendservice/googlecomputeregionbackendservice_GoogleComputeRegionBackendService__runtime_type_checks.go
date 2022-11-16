@@ -260,6 +260,22 @@ func validateGoogleComputeRegionBackendService_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleComputeRegionBackendService_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleComputeRegionBackendService_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendService) validateSetAffinityCookieTtlSecParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -68,6 +68,14 @@ func validateGoogleStorageTransferJob_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleStorageTransferJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleStorageTransferJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

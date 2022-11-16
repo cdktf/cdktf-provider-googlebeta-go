@@ -60,6 +60,14 @@ func validateGooglePubsubSubscriptionIamMember_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGooglePubsubSubscriptionIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGooglePubsubSubscriptionIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

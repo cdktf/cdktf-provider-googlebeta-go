@@ -2,10 +2,10 @@ package googleprivatecacertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/googleprivatecacertificate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googleprivatecacertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -867,6 +867,44 @@ func GooglePrivatecaCertificate_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GooglePrivatecaCertificate_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGooglePrivatecaCertificate_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GooglePrivatecaCertificate_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGooglePrivatecaCertificate_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googlePrivatecaCertificate.GooglePrivatecaCertificate",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

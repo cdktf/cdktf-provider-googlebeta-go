@@ -84,6 +84,14 @@ func validateGoogleDnsManagedZone_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleDnsManagedZone_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDnsManagedZone_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsManagedZone) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

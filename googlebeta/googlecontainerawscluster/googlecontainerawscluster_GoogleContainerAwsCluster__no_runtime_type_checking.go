@@ -80,6 +80,14 @@ func validateGoogleContainerAwsCluster_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleContainerAwsCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleContainerAwsCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAwsCluster) validateSetAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

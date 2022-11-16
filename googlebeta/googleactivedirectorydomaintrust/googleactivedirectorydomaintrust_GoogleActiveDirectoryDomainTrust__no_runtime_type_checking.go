@@ -60,6 +60,14 @@ func validateGoogleActiveDirectoryDomainTrust_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleActiveDirectoryDomainTrust_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleActiveDirectoryDomainTrust_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

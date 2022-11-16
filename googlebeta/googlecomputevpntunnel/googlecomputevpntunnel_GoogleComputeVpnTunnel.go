@@ -2,10 +2,10 @@ package googlecomputevpntunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/googlecomputevpntunnel/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlecomputevpntunnel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -1102,6 +1102,44 @@ func GoogleComputeVpnTunnel_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeVpnTunnel_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeVpnTunnel_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleComputeVpnTunnel_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeVpnTunnel_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleComputeVpnTunnel.GoogleComputeVpnTunnel",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

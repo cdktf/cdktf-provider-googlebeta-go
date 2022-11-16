@@ -72,6 +72,14 @@ func validateGoogleMonitoringAlertPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleMonitoringAlertPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleMonitoringAlertPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetCombinerParameters(val *string) error {
 	return nil
 }

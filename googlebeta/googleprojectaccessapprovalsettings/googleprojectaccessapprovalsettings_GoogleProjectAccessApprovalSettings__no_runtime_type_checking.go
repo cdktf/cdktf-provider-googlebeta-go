@@ -64,6 +64,14 @@ func validateGoogleProjectAccessApprovalSettings_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleProjectAccessApprovalSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleProjectAccessApprovalSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetActiveKeyVersionParameters(val *string) error {
 	return nil
 }

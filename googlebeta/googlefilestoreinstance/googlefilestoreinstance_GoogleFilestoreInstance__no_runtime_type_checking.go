@@ -68,6 +68,14 @@ func validateGoogleFilestoreInstance_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleFilestoreInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFilestoreInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

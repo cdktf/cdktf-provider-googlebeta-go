@@ -60,6 +60,14 @@ func validateGoogleStorageHmacKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleStorageHmacKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleStorageHmacKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageHmacKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

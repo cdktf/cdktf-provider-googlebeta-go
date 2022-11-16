@@ -64,6 +64,14 @@ func validateGoogleFolderAccessApprovalSettings_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleFolderAccessApprovalSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFolderAccessApprovalSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetActiveKeyVersionParameters(val *string) error {
 	return nil
 }

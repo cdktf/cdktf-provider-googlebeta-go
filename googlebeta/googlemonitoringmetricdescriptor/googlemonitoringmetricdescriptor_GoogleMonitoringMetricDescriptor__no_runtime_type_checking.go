@@ -68,6 +68,14 @@ func validateGoogleMonitoringMetricDescriptor_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleMonitoringMetricDescriptor_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleMonitoringMetricDescriptor_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

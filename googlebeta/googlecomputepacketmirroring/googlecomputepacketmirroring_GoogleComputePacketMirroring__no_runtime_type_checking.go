@@ -76,6 +76,14 @@ func validateGoogleComputePacketMirroring_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleComputePacketMirroring_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputePacketMirroring_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputePacketMirroring) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

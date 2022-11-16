@@ -56,6 +56,14 @@ func validateGoogleSecretManagerSecretIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleSecretManagerSecretIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSecretManagerSecretIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

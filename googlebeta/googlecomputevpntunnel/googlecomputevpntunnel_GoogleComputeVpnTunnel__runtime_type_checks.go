@@ -130,6 +130,22 @@ func validateGoogleComputeVpnTunnel_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleComputeVpnTunnel_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleComputeVpnTunnel_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeVpnTunnel) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

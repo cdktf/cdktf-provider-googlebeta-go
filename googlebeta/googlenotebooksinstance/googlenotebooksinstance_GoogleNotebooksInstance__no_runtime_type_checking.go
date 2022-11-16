@@ -80,6 +80,14 @@ func validateGoogleNotebooksInstance_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleNotebooksInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleNotebooksInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksInstance) validateSetBootDiskSizeGbParameters(val *float64) error {
 	return nil
 }

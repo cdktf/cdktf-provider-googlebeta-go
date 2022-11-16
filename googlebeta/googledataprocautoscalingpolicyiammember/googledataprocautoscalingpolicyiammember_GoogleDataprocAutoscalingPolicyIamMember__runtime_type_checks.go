@@ -130,6 +130,22 @@ func validateGoogleDataprocAutoscalingPolicyIamMember_IsConstructParameters(x in
 	return nil
 }
 
+func validateGoogleDataprocAutoscalingPolicyIamMember_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleDataprocAutoscalingPolicyIamMember_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

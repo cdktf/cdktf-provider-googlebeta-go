@@ -64,6 +64,14 @@ func validateGoogleDataLossPreventionDeidentifyTemplate_IsConstructParameters(x 
 	return nil
 }
 
+func validateGoogleDataLossPreventionDeidentifyTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataLossPreventionDeidentifyTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

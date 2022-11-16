@@ -119,6 +119,22 @@ func validateGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsConstructParamete
 	return nil
 }
 
+func validateGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleBigqueryAnalyticsHubDataExchangeIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

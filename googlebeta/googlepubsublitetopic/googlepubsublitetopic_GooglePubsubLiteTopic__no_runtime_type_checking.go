@@ -72,6 +72,14 @@ func validateGooglePubsubLiteTopic_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGooglePubsubLiteTopic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGooglePubsubLiteTopic_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubLiteTopic) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

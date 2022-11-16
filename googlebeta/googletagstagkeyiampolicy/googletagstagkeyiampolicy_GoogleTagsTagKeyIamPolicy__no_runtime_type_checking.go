@@ -56,6 +56,14 @@ func validateGoogleTagsTagKeyIamPolicy_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleTagsTagKeyIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleTagsTagKeyIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTagsTagKeyIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

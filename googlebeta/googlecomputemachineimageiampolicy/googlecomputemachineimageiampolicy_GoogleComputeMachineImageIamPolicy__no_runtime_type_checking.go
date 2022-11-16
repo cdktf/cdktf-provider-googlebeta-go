@@ -56,6 +56,14 @@ func validateGoogleComputeMachineImageIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleComputeMachineImageIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeMachineImageIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeMachineImageIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

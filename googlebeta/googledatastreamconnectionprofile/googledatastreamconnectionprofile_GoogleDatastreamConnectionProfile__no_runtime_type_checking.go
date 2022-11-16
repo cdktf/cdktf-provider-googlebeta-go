@@ -88,6 +88,14 @@ func validateGoogleDatastreamConnectionProfile_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleDatastreamConnectionProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDatastreamConnectionProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatastreamConnectionProfile) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

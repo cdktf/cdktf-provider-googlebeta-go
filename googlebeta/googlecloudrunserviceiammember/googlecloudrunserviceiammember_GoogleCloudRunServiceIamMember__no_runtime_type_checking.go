@@ -60,6 +60,14 @@ func validateGoogleCloudRunServiceIamMember_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleCloudRunServiceIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudRunServiceIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunServiceIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

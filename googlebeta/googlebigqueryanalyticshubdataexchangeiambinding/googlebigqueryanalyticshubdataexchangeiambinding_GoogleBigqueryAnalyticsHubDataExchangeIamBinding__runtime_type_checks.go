@@ -130,6 +130,22 @@ func validateGoogleBigqueryAnalyticsHubDataExchangeIamBinding_IsConstructParamet
 	return nil
 }
 
+func validateGoogleBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamBinding) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -64,6 +64,14 @@ func validateGoogleTpuNode_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleTpuNode_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleTpuNode_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTpuNode) validateSetAcceleratorTypeParameters(val *string) error {
 	return nil
 }

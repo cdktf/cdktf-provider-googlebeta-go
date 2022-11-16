@@ -60,6 +60,14 @@ func validateGoogleRuntimeconfigConfigIamMember_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleRuntimeconfigConfigIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleRuntimeconfigConfigIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleRuntimeconfigConfigIamMember) validateSetConfigParameters(val *string) error {
 	return nil
 }

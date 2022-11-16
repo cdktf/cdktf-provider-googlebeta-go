@@ -56,6 +56,14 @@ func validateGoogleHealthcareHl7V2StoreIamPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleHealthcareHl7V2StoreIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

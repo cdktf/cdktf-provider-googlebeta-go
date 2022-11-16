@@ -56,6 +56,14 @@ func validateGoogleSccSourceIamPolicy_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleSccSourceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSccSourceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSccSourceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

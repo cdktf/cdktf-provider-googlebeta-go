@@ -64,6 +64,14 @@ func validateGoogleComputeAutoscaler_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleComputeAutoscaler_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeAutoscaler_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeAutoscaler) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

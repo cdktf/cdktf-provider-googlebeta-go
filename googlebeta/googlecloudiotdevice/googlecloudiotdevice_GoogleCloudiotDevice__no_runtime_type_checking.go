@@ -68,6 +68,14 @@ func validateGoogleCloudiotDevice_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleCloudiotDevice_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudiotDevice_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudiotDevice) validateSetBlockedParameters(val interface{}) error {
 	return nil
 }

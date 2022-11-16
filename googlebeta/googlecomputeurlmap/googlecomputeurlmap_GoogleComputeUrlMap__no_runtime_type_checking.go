@@ -84,6 +84,14 @@ func validateGoogleComputeUrlMap_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleComputeUrlMap_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeUrlMap_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeUrlMap) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleEssentialContactsContact_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleEssentialContactsContact_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleEssentialContactsContact_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEssentialContactsContact) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

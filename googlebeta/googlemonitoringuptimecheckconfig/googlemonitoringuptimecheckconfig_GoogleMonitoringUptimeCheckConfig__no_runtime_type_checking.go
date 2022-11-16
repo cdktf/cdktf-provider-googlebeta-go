@@ -80,6 +80,14 @@ func validateGoogleMonitoringUptimeCheckConfig_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleMonitoringUptimeCheckConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleMonitoringUptimeCheckConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetCheckerTypeParameters(val *string) error {
 	return nil
 }

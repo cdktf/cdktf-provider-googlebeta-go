@@ -60,6 +60,14 @@ func validateGoogleCloudTasksQueueIamMember_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleCloudTasksQueueIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudTasksQueueIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudTasksQueueIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

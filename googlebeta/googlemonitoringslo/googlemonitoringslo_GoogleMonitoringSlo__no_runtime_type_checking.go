@@ -72,6 +72,14 @@ func validateGoogleMonitoringSlo_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleMonitoringSlo_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleMonitoringSlo_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringSlo) validateSetCalendarPeriodParameters(val *string) error {
 	return nil
 }

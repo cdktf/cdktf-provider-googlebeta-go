@@ -60,6 +60,14 @@ func validateGoogleFirestoreDocument_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleFirestoreDocument_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFirestoreDocument_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreDocument) validateSetCollectionParameters(val *string) error {
 	return nil
 }

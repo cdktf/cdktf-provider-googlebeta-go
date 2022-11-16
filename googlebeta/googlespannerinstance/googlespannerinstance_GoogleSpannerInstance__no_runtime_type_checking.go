@@ -60,6 +60,14 @@ func validateGoogleSpannerInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleSpannerInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSpannerInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstance) validateSetConfigParameters(val *string) error {
 	return nil
 }

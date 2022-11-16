@@ -64,6 +64,14 @@ func validateGoogleComputeServiceAttachment_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleComputeServiceAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeServiceAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

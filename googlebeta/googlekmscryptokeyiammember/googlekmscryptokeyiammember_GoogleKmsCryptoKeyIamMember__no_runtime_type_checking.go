@@ -60,6 +60,14 @@ func validateGoogleKmsCryptoKeyIamMember_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleKmsCryptoKeyIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleKmsCryptoKeyIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleKmsCryptoKeyIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleApigeeEnvgroup_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleApigeeEnvgroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleApigeeEnvgroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeEnvgroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGoogleDataflowFlexTemplateJob_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateGoogleDataflowFlexTemplateJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataflowFlexTemplateJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

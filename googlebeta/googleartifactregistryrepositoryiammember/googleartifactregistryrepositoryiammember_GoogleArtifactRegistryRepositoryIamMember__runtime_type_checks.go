@@ -130,6 +130,22 @@ func validateGoogleArtifactRegistryRepositoryIamMember_IsConstructParameters(x i
 	return nil
 }
 
+func validateGoogleArtifactRegistryRepositoryIamMember_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleArtifactRegistryRepositoryIamMember_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamMember) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

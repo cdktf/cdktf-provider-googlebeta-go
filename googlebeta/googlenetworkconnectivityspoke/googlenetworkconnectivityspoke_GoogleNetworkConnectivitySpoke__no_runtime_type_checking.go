@@ -72,6 +72,14 @@ func validateGoogleNetworkConnectivitySpoke_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleNetworkConnectivitySpoke_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleNetworkConnectivitySpoke_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

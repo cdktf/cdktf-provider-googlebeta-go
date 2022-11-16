@@ -130,6 +130,22 @@ func validateGoogleSpannerDatabaseIamMember_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleSpannerDatabaseIamMember_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleSpannerDatabaseIamMember_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

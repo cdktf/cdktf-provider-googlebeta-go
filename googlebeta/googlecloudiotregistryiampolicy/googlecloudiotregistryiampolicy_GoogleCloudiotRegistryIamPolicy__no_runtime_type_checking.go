@@ -56,6 +56,14 @@ func validateGoogleCloudiotRegistryIamPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleCloudiotRegistryIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudiotRegistryIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudiotRegistryIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

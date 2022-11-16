@@ -72,6 +72,14 @@ func validateGoogleCloudIdentityGroupMembership_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleCloudIdentityGroupMembership_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudIdentityGroupMembership_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

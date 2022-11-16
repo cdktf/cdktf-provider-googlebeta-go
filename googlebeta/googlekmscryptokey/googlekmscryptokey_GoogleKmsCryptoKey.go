@@ -2,10 +2,10 @@ package googlekmscryptokey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/googlekmscryptokey/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlekmscryptokey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -745,6 +745,44 @@ func GoogleKmsCryptoKey_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleKmsCryptoKey_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleKmsCryptoKey_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleKmsCryptoKey_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleKmsCryptoKey_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleKmsCryptoKey.GoogleKmsCryptoKey",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

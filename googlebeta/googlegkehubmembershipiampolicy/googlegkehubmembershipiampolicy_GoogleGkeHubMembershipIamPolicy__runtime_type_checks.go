@@ -119,6 +119,22 @@ func validateGoogleGkeHubMembershipIamPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleGkeHubMembershipIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleGkeHubMembershipIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubMembershipIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

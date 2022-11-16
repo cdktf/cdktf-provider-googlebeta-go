@@ -72,6 +72,14 @@ func validateGoogleRedisInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleRedisInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleRedisInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleRedisInstance) validateSetAlternativeLocationIdParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGoogleFirebaseWebApp_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateDataGoogleFirebaseWebApp_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleFirebaseWebApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleFirebaseWebApp) validateSetAppIdParameters(val *string) error {
 	return nil
 }

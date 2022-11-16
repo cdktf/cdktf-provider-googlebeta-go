@@ -68,6 +68,14 @@ func validateGoogleNetworkManagementConnectivityTest_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleNetworkManagementConnectivityTest_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleNetworkManagementConnectivityTest_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -72,6 +72,14 @@ func validateGoogleMemcacheInstance_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleMemcacheInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleMemcacheInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMemcacheInstance) validateSetAuthorizedNetworkParameters(val *string) error {
 	return nil
 }

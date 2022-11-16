@@ -108,6 +108,14 @@ func validateGoogleComputeInstanceFromTemplate_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleComputeInstanceFromTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeInstanceFromTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetAllowStoppingForUpdateParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGoogleLoggingFolderExclusion_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleLoggingFolderExclusion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingFolderExclusion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingFolderExclusion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

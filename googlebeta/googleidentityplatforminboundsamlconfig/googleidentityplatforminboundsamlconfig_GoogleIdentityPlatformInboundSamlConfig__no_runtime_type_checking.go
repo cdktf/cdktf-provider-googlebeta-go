@@ -68,6 +68,14 @@ func validateGoogleIdentityPlatformInboundSamlConfig_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleIdentityPlatformInboundSamlConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIdentityPlatformInboundSamlConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

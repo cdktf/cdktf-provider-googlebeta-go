@@ -64,6 +64,14 @@ func validateGoogleComputeForwardingRule_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleComputeForwardingRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeForwardingRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowGlobalAccessParameters(val interface{}) error {
 	return nil
 }

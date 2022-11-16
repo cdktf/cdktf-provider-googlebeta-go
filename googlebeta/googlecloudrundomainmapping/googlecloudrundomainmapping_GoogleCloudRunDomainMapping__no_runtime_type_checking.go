@@ -68,6 +68,14 @@ func validateGoogleCloudRunDomainMapping_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleCloudRunDomainMapping_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudRunDomainMapping_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunDomainMapping) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

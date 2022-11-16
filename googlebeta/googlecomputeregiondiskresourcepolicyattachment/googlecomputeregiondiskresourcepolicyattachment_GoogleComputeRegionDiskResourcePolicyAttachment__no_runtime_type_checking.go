@@ -60,6 +60,14 @@ func validateGoogleComputeRegionDiskResourcePolicyAttachment_IsConstructParamete
 	return nil
 }
 
+func validateGoogleComputeRegionDiskResourcePolicyAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionDiskResourcePolicyAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDiskResourcePolicyAttachment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGoogleIapAppEngineVersionIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleIapAppEngineVersionIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIapAppEngineVersionIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapAppEngineVersionIamPolicy) validateSetAppIdParameters(val *string) error {
 	return nil
 }

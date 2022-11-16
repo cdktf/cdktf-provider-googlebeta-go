@@ -16,6 +16,14 @@ func validateGoogleBetaProvider_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleBetaProvider_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBetaProvider_IsTerraformProviderParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) validateSetBatchingParameters(val *GoogleBetaProviderBatching) error {
 	return nil
 }

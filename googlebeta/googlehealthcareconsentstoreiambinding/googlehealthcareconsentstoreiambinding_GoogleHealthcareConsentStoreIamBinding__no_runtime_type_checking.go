@@ -60,6 +60,14 @@ func validateGoogleHealthcareConsentStoreIamBinding_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleHealthcareConsentStoreIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleHealthcareConsentStoreIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareConsentStoreIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

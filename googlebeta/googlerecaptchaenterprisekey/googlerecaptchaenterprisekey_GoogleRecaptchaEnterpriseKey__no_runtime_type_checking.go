@@ -76,6 +76,14 @@ func validateGoogleRecaptchaEnterpriseKey_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleRecaptchaEnterpriseKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleRecaptchaEnterpriseKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

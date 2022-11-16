@@ -56,6 +56,14 @@ func validateGooglePubsubTopicIamPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGooglePubsubTopicIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGooglePubsubTopicIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubTopicIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGooglePrivatecaCaPoolIamMember_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGooglePrivatecaCaPoolIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGooglePrivatecaCaPoolIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateSetCaPoolParameters(val *string) error {
 	return nil
 }

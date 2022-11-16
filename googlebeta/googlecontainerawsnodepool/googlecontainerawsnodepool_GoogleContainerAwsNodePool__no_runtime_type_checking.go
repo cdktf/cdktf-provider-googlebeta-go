@@ -72,6 +72,14 @@ func validateGoogleContainerAwsNodePool_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleContainerAwsNodePool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleContainerAwsNodePool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAwsNodePool) validateSetAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

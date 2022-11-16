@@ -60,6 +60,14 @@ func validateGoogleIapBrand_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleIapBrand_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIapBrand_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapBrand) validateSetApplicationTitleParameters(val *string) error {
 	return nil
 }

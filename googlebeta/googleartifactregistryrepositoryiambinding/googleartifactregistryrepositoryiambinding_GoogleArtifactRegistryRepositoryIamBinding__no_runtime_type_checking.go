@@ -60,6 +60,14 @@ func validateGoogleArtifactRegistryRepositoryIamBinding_IsConstructParameters(x 
 	return nil
 }
 
+func validateGoogleArtifactRegistryRepositoryIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleArtifactRegistryRepositoryIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

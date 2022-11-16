@@ -56,6 +56,14 @@ func validateGoogleCloudfunctions2FunctionIamPolicy_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleCloudfunctions2FunctionIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudfunctions2FunctionIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctions2FunctionIamPolicy) validateSetCloudFunctionParameters(val *string) error {
 	return nil
 }

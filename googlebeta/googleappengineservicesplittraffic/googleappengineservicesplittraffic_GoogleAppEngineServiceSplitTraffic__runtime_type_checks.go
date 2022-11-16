@@ -141,6 +141,22 @@ func validateGoogleAppEngineServiceSplitTraffic_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleAppEngineServiceSplitTraffic_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleAppEngineServiceSplitTraffic_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

@@ -60,6 +60,14 @@ func validateGoogleFolderIamBinding_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleFolderIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFolderIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFolderIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

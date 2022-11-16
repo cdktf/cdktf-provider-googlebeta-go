@@ -60,6 +60,14 @@ func validateGoogleApigeeNatAddress_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleApigeeNatAddress_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleApigeeNatAddress_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeNatAddress) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

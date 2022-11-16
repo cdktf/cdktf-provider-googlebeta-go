@@ -68,6 +68,14 @@ func validateGoogleComputeNodeTemplate_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleComputeNodeTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeNodeTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNodeTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleCloudiotRegistryIamMember_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleCloudiotRegistryIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudiotRegistryIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudiotRegistryIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

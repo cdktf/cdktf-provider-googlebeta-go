@@ -60,6 +60,14 @@ func validateGoogleDataCatalogEntryGroupIamMember_IsConstructParameters(x interf
 	return nil
 }
 
+func validateGoogleDataCatalogEntryGroupIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataCatalogEntryGroupIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogEntryGroupIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

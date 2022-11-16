@@ -64,6 +64,14 @@ func validateGoogleComputeRegionPerInstanceConfig_IsConstructParameters(x interf
 	return nil
 }
 
+func validateGoogleComputeRegionPerInstanceConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionPerInstanceConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

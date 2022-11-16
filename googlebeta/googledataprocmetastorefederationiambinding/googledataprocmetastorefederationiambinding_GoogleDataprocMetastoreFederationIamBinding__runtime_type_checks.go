@@ -130,6 +130,22 @@ func validateGoogleDataprocMetastoreFederationIamBinding_IsConstructParameters(x
 	return nil
 }
 
+func validateGoogleDataprocMetastoreFederationIamBinding_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleDataprocMetastoreFederationIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreFederationIamBinding) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

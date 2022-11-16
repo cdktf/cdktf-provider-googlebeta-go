@@ -60,6 +60,14 @@ func validateGoogleComputeMachineImageIamBinding_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleComputeMachineImageIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeMachineImageIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeMachineImageIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

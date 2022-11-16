@@ -60,6 +60,14 @@ func validateGoogleComputeSharedVpcServiceProject_IsConstructParameters(x interf
 	return nil
 }
 
+func validateGoogleComputeSharedVpcServiceProject_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeSharedVpcServiceProject_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

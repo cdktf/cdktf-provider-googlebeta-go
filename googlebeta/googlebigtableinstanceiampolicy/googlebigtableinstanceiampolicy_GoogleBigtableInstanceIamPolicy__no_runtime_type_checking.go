@@ -56,6 +56,14 @@ func validateGoogleBigtableInstanceIamPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleBigtableInstanceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBigtableInstanceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableInstanceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

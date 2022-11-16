@@ -56,6 +56,14 @@ func validateGoogleDataprocJobIamPolicy_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleDataprocJobIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataprocJobIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocJobIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

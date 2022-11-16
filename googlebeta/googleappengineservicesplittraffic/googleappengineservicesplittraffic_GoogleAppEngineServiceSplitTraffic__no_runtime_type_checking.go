@@ -64,6 +64,14 @@ func validateGoogleAppEngineServiceSplitTraffic_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleAppEngineServiceSplitTraffic_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleAppEngineServiceSplitTraffic_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

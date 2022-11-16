@@ -60,6 +60,14 @@ func validateGoogleSqlDatabase_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleSqlDatabase_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSqlDatabase_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabase) validateSetCharsetParameters(val *string) error {
 	return nil
 }

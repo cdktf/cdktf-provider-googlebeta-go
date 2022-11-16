@@ -60,6 +60,14 @@ func validateGoogleDocumentAiProcessorDefaultVersion_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleDocumentAiProcessorDefaultVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDocumentAiProcessorDefaultVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

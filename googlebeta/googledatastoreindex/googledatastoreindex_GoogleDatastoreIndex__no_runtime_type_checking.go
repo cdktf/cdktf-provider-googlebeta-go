@@ -64,6 +64,14 @@ func validateGoogleDatastoreIndex_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleDatastoreIndex_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDatastoreIndex_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatastoreIndex) validateSetAncestorParameters(val *string) error {
 	return nil
 }

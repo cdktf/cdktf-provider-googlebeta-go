@@ -60,6 +60,14 @@ func validateGoogleDataCatalogTagTemplateIamMember_IsConstructParameters(x inter
 	return nil
 }
 
+func validateGoogleDataCatalogTagTemplateIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataCatalogTagTemplateIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

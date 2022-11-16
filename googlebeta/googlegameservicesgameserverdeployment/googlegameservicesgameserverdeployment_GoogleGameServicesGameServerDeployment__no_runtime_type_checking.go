@@ -60,6 +60,14 @@ func validateGoogleGameServicesGameServerDeployment_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleGameServicesGameServerDeployment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleGameServicesGameServerDeployment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGameServicesGameServerDeployment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

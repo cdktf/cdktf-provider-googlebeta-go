@@ -64,6 +64,14 @@ func validateGoogleFirestoreIndex_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleFirestoreIndex_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFirestoreIndex_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreIndex) validateSetCollectionParameters(val *string) error {
 	return nil
 }

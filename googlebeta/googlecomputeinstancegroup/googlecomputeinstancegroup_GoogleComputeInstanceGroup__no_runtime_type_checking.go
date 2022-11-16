@@ -64,6 +64,14 @@ func validateGoogleComputeInstanceGroup_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleComputeInstanceGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeInstanceGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

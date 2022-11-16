@@ -60,6 +60,14 @@ func validateGoogleFirebaseAndroidApp_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleFirebaseAndroidApp_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFirebaseAndroidApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

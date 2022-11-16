@@ -56,6 +56,14 @@ func validateGoogleStorageBucketAcl_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleStorageBucketAcl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleStorageBucketAcl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketAcl) validateSetBucketParameters(val *string) error {
 	return nil
 }

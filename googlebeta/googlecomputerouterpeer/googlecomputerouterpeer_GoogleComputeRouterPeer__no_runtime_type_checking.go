@@ -68,6 +68,14 @@ func validateGoogleComputeRouterPeer_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleComputeRouterPeer_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRouterPeer_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetAdvertisedGroupsParameters(val *[]*string) error {
 	return nil
 }

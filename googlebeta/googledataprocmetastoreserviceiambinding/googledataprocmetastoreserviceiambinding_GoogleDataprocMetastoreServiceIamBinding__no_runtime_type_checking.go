@@ -60,6 +60,14 @@ func validateGoogleDataprocMetastoreServiceIamBinding_IsConstructParameters(x in
 	return nil
 }
 
+func validateGoogleDataprocMetastoreServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataprocMetastoreServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleServiceNetworkingPeeredDnsDomain_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleServiceNetworkingPeeredDnsDomain_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleServiceNetworkingPeeredDnsDomain_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleComputeRegionDiskIamMember_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleComputeRegionDiskIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionDiskIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDiskIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

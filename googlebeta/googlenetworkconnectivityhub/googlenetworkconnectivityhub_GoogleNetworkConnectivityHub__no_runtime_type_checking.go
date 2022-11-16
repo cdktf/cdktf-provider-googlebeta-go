@@ -60,6 +60,14 @@ func validateGoogleNetworkConnectivityHub_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleNetworkConnectivityHub_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleNetworkConnectivityHub_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivityHub) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

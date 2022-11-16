@@ -60,6 +60,14 @@ func validateGoogleComputeNetworkPeeringRoutesConfig_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleComputeNetworkPeeringRoutesConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeNetworkPeeringRoutesConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

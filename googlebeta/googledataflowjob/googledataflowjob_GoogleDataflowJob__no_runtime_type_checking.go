@@ -60,6 +60,14 @@ func validateGoogleDataflowJob_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleDataflowJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataflowJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowJob) validateSetAdditionalExperimentsParameters(val *[]*string) error {
 	return nil
 }

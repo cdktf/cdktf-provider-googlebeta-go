@@ -72,6 +72,14 @@ func validateGoogleCloudRunService_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleCloudRunService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudRunService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunService) validateSetAutogenerateRevisionNameParameters(val interface{}) error {
 	return nil
 }

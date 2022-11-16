@@ -60,6 +60,14 @@ func validateGoogleBigqueryReservation_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleBigqueryReservation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBigqueryReservation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryReservation) validateSetConcurrencyParameters(val *float64) error {
 	return nil
 }

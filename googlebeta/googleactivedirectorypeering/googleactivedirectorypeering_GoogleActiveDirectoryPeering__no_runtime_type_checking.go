@@ -60,6 +60,14 @@ func validateGoogleActiveDirectoryPeering_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleActiveDirectoryPeering_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleActiveDirectoryPeering_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleActiveDirectoryPeering) validateSetAuthorizedNetworkParameters(val *string) error {
 	return nil
 }

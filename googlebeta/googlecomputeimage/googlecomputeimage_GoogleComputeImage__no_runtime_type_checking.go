@@ -68,6 +68,14 @@ func validateGoogleComputeImage_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleComputeImage_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeImage_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeImage) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

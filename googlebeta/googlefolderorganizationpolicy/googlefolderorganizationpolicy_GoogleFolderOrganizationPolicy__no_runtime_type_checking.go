@@ -72,6 +72,14 @@ func validateGoogleFolderOrganizationPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleFolderOrganizationPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFolderOrganizationPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFolderOrganizationPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

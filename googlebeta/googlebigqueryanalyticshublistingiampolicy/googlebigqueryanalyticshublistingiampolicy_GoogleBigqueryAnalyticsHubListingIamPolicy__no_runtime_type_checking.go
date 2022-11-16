@@ -56,6 +56,14 @@ func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsConstructParameters(x 
 	return nil
 }
 
+func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBigqueryAnalyticsHubListingIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

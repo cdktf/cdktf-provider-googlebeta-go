@@ -60,6 +60,14 @@ func validateGoogleFirebaseProjectLocation_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateGoogleFirebaseProjectLocation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFirebaseProjectLocation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaseProjectLocation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

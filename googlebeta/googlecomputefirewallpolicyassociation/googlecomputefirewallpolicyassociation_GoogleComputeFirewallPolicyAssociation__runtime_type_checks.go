@@ -130,6 +130,22 @@ func validateGoogleComputeFirewallPolicyAssociation_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleComputeFirewallPolicyAssociation_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleComputeFirewallPolicyAssociation_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateSetAttachmentTargetParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

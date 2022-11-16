@@ -56,6 +56,14 @@ func validateGoogleArtifactRegistryRepositoryIamPolicy_IsConstructParameters(x i
 	return nil
 }
 
+func validateGoogleArtifactRegistryRepositoryIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleArtifactRegistryRepositoryIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -100,6 +100,14 @@ func validateGoogleComputeRegionBackendService_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleComputeRegionBackendService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionBackendService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendService) validateSetAffinityCookieTtlSecParameters(val *float64) error {
 	return nil
 }

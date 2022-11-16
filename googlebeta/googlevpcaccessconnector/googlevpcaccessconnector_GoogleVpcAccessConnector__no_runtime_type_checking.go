@@ -64,6 +64,14 @@ func validateGoogleVpcAccessConnector_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleVpcAccessConnector_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleVpcAccessConnector_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVpcAccessConnector) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

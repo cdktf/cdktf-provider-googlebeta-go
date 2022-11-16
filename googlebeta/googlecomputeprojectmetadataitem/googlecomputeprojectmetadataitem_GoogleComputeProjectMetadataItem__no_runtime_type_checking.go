@@ -60,6 +60,14 @@ func validateGoogleComputeProjectMetadataItem_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleComputeProjectMetadataItem_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeProjectMetadataItem_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeProjectMetadataItem) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

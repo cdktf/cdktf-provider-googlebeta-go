@@ -64,6 +64,14 @@ func validateGoogleVertexAiDataset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleVertexAiDataset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleVertexAiDataset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiDataset) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

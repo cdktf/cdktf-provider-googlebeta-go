@@ -56,6 +56,14 @@ func validateGoogleSourcerepoRepositoryIamPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleSourcerepoRepositoryIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSourcerepoRepositoryIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSourcerepoRepositoryIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleAccessContextManagerAccessPolicyIamBinding_IsConstructParamet
 	return nil
 }
 
+func validateGoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleAccessContextManagerAccessPolicyIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

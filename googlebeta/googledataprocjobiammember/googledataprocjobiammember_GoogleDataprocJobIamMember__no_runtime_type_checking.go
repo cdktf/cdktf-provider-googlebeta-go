@@ -60,6 +60,14 @@ func validateGoogleDataprocJobIamMember_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleDataprocJobIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataprocJobIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocJobIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

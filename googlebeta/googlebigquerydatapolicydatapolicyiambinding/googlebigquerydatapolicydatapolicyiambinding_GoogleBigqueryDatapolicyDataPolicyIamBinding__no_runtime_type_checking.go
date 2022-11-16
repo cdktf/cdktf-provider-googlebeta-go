@@ -60,6 +60,14 @@ func validateGoogleBigqueryDatapolicyDataPolicyIamBinding_IsConstructParameters(
 	return nil
 }
 
+func validateGoogleBigqueryDatapolicyDataPolicyIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBigqueryDatapolicyDataPolicyIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateGoogleIamDenyPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleIamDenyPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIamDenyPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIamDenyPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

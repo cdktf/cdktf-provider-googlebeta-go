@@ -60,6 +60,14 @@ func validateGoogleWorkflowsWorkflow_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleWorkflowsWorkflow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleWorkflowsWorkflow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

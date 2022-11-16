@@ -72,6 +72,14 @@ func validateGoogleComputeFirewall_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleComputeFirewall_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeFirewall_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeFirewall) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

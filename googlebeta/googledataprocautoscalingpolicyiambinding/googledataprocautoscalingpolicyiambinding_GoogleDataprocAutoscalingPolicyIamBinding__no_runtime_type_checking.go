@@ -60,6 +60,14 @@ func validateGoogleDataprocAutoscalingPolicyIamBinding_IsConstructParameters(x i
 	return nil
 }
 
+func validateGoogleDataprocAutoscalingPolicyIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataprocAutoscalingPolicyIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

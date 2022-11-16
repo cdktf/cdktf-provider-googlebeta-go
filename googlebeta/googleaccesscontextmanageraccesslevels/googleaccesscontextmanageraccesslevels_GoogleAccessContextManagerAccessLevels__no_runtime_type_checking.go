@@ -64,6 +64,14 @@ func validateGoogleAccessContextManagerAccessLevels_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleAccessContextManagerAccessLevels_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleAccessContextManagerAccessLevels_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerAccessLevels) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

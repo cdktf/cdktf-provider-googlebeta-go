@@ -68,6 +68,14 @@ func validateGoogleSecurityScannerScanConfig_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleSecurityScannerScanConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSecurityScannerScanConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecurityScannerScanConfig) validateSetBlacklistPatternsParameters(val *[]*string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGoogleVertexAiFeaturestoreIamPolicy_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleVertexAiFeaturestoreIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleVertexAiFeaturestoreIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

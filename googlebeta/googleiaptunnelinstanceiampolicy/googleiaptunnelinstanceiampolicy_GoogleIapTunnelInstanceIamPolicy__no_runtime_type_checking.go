@@ -56,6 +56,14 @@ func validateGoogleIapTunnelInstanceIamPolicy_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleIapTunnelInstanceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIapTunnelInstanceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapTunnelInstanceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGoogleStorageBucketIamPolicy_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleStorageBucketIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleStorageBucketIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketIamPolicy) validateSetBucketParameters(val *string) error {
 	return nil
 }

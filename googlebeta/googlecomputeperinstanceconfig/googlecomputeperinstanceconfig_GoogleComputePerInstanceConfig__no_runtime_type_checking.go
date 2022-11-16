@@ -64,6 +64,14 @@ func validateGoogleComputePerInstanceConfig_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleComputePerInstanceConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputePerInstanceConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputePerInstanceConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

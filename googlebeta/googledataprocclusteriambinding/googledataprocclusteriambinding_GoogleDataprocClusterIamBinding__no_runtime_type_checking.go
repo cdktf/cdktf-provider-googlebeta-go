@@ -60,6 +60,14 @@ func validateGoogleDataprocClusterIamBinding_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleDataprocClusterIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataprocClusterIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterIamBinding) validateSetClusterParameters(val *string) error {
 	return nil
 }

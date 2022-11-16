@@ -60,6 +60,14 @@ func validateGooglePubsubTopicIamBinding_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGooglePubsubTopicIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGooglePubsubTopicIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubTopicIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

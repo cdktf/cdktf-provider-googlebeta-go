@@ -60,6 +60,14 @@ func validateGoogleApiGatewayApiIamBinding_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateGoogleApiGatewayApiIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleApiGatewayApiIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApiGatewayApiIamBinding) validateSetApiParameters(val *string) error {
 	return nil
 }

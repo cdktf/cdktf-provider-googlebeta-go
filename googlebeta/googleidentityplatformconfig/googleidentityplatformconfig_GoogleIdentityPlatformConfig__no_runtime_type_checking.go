@@ -60,6 +60,14 @@ func validateGoogleIdentityPlatformConfig_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleIdentityPlatformConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIdentityPlatformConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformConfig) validateSetAutodeleteAnonymousUsersParameters(val interface{}) error {
 	return nil
 }

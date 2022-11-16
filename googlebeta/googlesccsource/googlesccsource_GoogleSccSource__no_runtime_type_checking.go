@@ -60,6 +60,14 @@ func validateGoogleSccSource_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleSccSource_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSccSource_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSccSource) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleIapAppEngineServiceIamBinding_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleIapAppEngineServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIapAppEngineServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapAppEngineServiceIamBinding) validateSetAppIdParameters(val *string) error {
 	return nil
 }

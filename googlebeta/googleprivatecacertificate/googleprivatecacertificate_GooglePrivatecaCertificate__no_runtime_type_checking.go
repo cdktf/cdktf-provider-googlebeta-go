@@ -64,6 +64,14 @@ func validateGooglePrivatecaCertificate_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGooglePrivatecaCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGooglePrivatecaCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificate) validateSetCertificateAuthorityParameters(val *string) error {
 	return nil
 }

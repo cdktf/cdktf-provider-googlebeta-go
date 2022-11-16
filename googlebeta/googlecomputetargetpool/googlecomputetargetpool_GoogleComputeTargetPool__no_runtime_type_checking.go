@@ -60,6 +60,14 @@ func validateGoogleComputeTargetPool_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleComputeTargetPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeTargetPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeTargetPool) validateSetBackupPoolParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,14 @@ func validateGoogleComputeRegionInstanceGroupManager_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleComputeRegionInstanceGroupManager_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionInstanceGroupManager_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetBaseInstanceNameParameters(val *string) error {
 	return nil
 }

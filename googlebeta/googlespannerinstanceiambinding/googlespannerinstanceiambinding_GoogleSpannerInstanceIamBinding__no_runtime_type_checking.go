@@ -60,6 +60,14 @@ func validateGoogleSpannerInstanceIamBinding_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleSpannerInstanceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSpannerInstanceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstanceIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleContainerAzureClient_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleContainerAzureClient_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleContainerAzureClient_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAzureClient) validateSetApplicationIdParameters(val *string) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateGoogleApigeeOrganization_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleApigeeOrganization_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleApigeeOrganization_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeOrganization) validateSetAnalyticsRegionParameters(val *string) error {
 	return nil
 }

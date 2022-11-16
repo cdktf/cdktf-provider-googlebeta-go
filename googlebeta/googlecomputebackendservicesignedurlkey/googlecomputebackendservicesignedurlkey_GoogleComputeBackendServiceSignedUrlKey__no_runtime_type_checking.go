@@ -60,6 +60,14 @@ func validateGoogleComputeBackendServiceSignedUrlKey_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleComputeBackendServiceSignedUrlKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeBackendServiceSignedUrlKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) validateSetBackendServiceParameters(val *string) error {
 	return nil
 }

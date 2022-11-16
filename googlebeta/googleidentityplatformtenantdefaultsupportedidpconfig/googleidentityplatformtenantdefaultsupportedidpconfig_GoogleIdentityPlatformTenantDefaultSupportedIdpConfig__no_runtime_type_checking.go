@@ -60,6 +60,14 @@ func validateGoogleIdentityPlatformTenantDefaultSupportedIdpConfig_IsConstructPa
 	return nil
 }
 
+func validateGoogleIdentityPlatformTenantDefaultSupportedIdpConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIdentityPlatformTenantDefaultSupportedIdpConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateSetClientIdParameters(val *string) error {
 	return nil
 }

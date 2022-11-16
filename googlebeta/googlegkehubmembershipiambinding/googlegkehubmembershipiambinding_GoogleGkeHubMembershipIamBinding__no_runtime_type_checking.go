@@ -60,6 +60,14 @@ func validateGoogleGkeHubMembershipIamBinding_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleGkeHubMembershipIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleGkeHubMembershipIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -130,6 +130,22 @@ func validateGoogleHealthcareHl7V2StoreIamBinding_IsConstructParameters(x interf
 	return nil
 }
 
+func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

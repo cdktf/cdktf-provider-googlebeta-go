@@ -60,6 +60,14 @@ func validateGoogleComputeBackendBucketSignedUrlKey_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleComputeBackendBucketSignedUrlKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeBackendBucketSignedUrlKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetBackendBucketParameters(val *string) error {
 	return nil
 }

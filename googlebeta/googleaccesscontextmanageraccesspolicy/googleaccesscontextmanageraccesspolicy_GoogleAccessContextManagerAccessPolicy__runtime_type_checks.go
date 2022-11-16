@@ -130,6 +130,22 @@ func validateGoogleAccessContextManagerAccessPolicy_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleAccessContextManagerAccessPolicy_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleAccessContextManagerAccessPolicy_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicy) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

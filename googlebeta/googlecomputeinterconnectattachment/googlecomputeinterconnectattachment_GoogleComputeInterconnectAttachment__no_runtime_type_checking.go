@@ -60,6 +60,14 @@ func validateGoogleComputeInterconnectAttachment_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleComputeInterconnectAttachment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeInterconnectAttachment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetAdminEnabledParameters(val interface{}) error {
 	return nil
 }

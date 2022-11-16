@@ -60,6 +60,14 @@ func validateGoogleArtifactRegistryRepositoryIamMember_IsConstructParameters(x i
 	return nil
 }
 
+func validateGoogleArtifactRegistryRepositoryIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleArtifactRegistryRepositoryIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

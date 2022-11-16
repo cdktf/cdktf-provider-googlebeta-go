@@ -68,6 +68,14 @@ func validateGoogleCloudAssetProjectFeed_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleCloudAssetProjectFeed_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudAssetProjectFeed_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudAssetProjectFeed) validateSetAssetNamesParameters(val *[]*string) error {
 	return nil
 }

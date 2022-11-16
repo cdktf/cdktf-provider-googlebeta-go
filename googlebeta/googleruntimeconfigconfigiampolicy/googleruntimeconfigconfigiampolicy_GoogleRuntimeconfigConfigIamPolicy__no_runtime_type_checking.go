@@ -56,6 +56,14 @@ func validateGoogleRuntimeconfigConfigIamPolicy_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleRuntimeconfigConfigIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleRuntimeconfigConfigIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleRuntimeconfigConfigIamPolicy) validateSetConfigParameters(val *string) error {
 	return nil
 }

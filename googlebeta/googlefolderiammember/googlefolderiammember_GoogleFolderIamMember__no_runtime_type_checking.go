@@ -60,6 +60,14 @@ func validateGoogleFolderIamMember_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleFolderIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFolderIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFolderIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

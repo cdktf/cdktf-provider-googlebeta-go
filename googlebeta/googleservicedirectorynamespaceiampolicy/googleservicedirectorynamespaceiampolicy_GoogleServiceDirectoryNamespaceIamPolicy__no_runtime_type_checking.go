@@ -56,6 +56,14 @@ func validateGoogleServiceDirectoryNamespaceIamPolicy_IsConstructParameters(x in
 	return nil
 }
 
+func validateGoogleServiceDirectoryNamespaceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleServiceDirectoryNamespaceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

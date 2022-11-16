@@ -119,6 +119,22 @@ func validateGoogleEndpointsServiceIamPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleEndpointsServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleEndpointsServiceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEndpointsServiceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

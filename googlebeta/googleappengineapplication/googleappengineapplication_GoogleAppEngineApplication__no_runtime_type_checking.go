@@ -68,6 +68,14 @@ func validateGoogleAppEngineApplication_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleAppEngineApplication_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleAppEngineApplication_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineApplication) validateSetAuthDomainParameters(val *string) error {
 	return nil
 }

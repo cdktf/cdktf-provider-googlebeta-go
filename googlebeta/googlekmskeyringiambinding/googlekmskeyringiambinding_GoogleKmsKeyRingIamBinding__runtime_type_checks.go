@@ -130,6 +130,22 @@ func validateGoogleKmsKeyRingIamBinding_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleKmsKeyRingIamBinding_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleKmsKeyRingIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleKmsKeyRingIamBinding) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

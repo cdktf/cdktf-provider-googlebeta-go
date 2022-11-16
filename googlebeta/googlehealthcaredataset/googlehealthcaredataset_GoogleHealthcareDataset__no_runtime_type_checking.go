@@ -60,6 +60,14 @@ func validateGoogleHealthcareDataset_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleHealthcareDataset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleHealthcareDataset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareDataset) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

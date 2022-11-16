@@ -64,6 +64,14 @@ func validateGoogleBigtableAppProfile_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleBigtableAppProfile_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBigtableAppProfile_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetAppProfileIdParameters(val *string) error {
 	return nil
 }

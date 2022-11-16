@@ -100,6 +100,14 @@ func validateGoogleComputeInstanceTemplate_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateGoogleComputeInstanceTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeInstanceTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplate) validateSetCanIpForwardParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleDataprocMetastoreFederationIamMember_IsConstructParameters(x 
 	return nil
 }
 
+func validateGoogleDataprocMetastoreFederationIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataprocMetastoreFederationIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

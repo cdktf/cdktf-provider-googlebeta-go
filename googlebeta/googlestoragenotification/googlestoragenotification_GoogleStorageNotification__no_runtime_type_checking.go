@@ -56,6 +56,14 @@ func validateGoogleStorageNotification_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleStorageNotification_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleStorageNotification_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageNotification) validateSetBucketParameters(val *string) error {
 	return nil
 }

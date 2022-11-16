@@ -64,6 +64,14 @@ func validateGoogleSccNotificationConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleSccNotificationConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSccNotificationConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSccNotificationConfig) validateSetConfigIdParameters(val *string) error {
 	return nil
 }

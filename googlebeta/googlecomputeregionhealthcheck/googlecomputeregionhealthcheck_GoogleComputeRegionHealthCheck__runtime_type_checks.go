@@ -207,6 +207,22 @@ func validateGoogleComputeRegionHealthCheck_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleComputeRegionHealthCheck_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleComputeRegionHealthCheck_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetCheckIntervalSecParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

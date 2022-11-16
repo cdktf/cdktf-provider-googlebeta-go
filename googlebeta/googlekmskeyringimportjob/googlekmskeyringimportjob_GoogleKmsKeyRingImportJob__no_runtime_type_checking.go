@@ -60,6 +60,14 @@ func validateGoogleKmsKeyRingImportJob_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleKmsKeyRingImportJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleKmsKeyRingImportJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

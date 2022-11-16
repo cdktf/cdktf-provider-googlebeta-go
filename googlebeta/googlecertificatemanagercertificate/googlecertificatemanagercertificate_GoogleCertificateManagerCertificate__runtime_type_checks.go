@@ -152,6 +152,22 @@ func validateGoogleCertificateManagerCertificate_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleCertificateManagerCertificate_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleCertificateManagerCertificate_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerCertificate) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

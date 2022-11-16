@@ -130,6 +130,22 @@ func validateGoogleCloudfunctions2FunctionIamMember_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleCloudfunctions2FunctionIamMember_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleCloudfunctions2FunctionIamMember_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctions2FunctionIamMember) validateSetCloudFunctionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -92,6 +92,14 @@ func validateGoogleStorageBucket_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleStorageBucket_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleStorageBucket_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucket) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

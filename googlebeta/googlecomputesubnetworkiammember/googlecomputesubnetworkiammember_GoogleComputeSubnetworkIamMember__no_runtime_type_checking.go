@@ -60,6 +60,14 @@ func validateGoogleComputeSubnetworkIamMember_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleComputeSubnetworkIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeSubnetworkIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetworkIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

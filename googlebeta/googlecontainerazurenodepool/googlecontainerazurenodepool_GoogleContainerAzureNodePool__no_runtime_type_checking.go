@@ -72,6 +72,14 @@ func validateGoogleContainerAzureNodePool_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleContainerAzureNodePool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleContainerAzureNodePool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAzureNodePool) validateSetAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

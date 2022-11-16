@@ -60,6 +60,14 @@ func validateGoogleIdentityPlatformTenant_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleIdentityPlatformTenant_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIdentityPlatformTenant_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformTenant) validateSetAllowPasswordSignupParameters(val interface{}) error {
 	return nil
 }

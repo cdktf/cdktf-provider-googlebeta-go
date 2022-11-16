@@ -68,6 +68,14 @@ func validateGoogleBigqueryDataset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleBigqueryDataset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBigqueryDataset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDataset) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

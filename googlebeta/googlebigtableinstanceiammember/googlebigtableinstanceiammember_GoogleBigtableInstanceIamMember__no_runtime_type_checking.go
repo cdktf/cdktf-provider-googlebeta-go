@@ -60,6 +60,14 @@ func validateGoogleBigtableInstanceIamMember_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleBigtableInstanceIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBigtableInstanceIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableInstanceIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

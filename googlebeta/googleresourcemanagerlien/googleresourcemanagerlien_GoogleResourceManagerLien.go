@@ -2,10 +2,10 @@ package googleresourcemanagerlien
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/googleresourcemanagerlien/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googleresourcemanagerlien/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -601,6 +601,44 @@ func GoogleResourceManagerLien_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleResourceManagerLien_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleResourceManagerLien_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
+		"isTerraformElement",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func GoogleResourceManagerLien_IsTerraformResource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateGoogleResourceManagerLien_IsTerraformResourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleResourceManagerLien.GoogleResourceManagerLien",
+		"isTerraformResource",
 		[]interface{}{x},
 		&returns,
 	)

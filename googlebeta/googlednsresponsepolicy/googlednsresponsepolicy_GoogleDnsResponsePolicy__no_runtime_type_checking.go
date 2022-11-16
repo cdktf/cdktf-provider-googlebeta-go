@@ -64,6 +64,14 @@ func validateGoogleDnsResponsePolicy_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleDnsResponsePolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDnsResponsePolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsResponsePolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

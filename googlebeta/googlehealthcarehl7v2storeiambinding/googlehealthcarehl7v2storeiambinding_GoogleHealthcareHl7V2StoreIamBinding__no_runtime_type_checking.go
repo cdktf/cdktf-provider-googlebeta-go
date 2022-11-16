@@ -60,6 +60,14 @@ func validateGoogleHealthcareHl7V2StoreIamBinding_IsConstructParameters(x interf
 	return nil
 }
 
+func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleHealthcareHl7V2StoreIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

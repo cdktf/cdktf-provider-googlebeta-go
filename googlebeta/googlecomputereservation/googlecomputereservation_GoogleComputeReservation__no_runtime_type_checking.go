@@ -68,6 +68,14 @@ func validateGoogleComputeReservation_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleComputeReservation_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeReservation_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeReservation) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

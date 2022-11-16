@@ -60,6 +60,14 @@ func validateGoogleServiceDirectoryNamespaceIamBinding_IsConstructParameters(x i
 	return nil
 }
 
+func validateGoogleServiceDirectoryNamespaceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleServiceDirectoryNamespaceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -163,6 +163,22 @@ func validateGoogleBigqueryDataTransferConfig_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleBigqueryDataTransferConfig_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleBigqueryDataTransferConfig_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDataTransferConfig) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

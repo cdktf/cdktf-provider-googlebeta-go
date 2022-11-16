@@ -56,6 +56,14 @@ func validateGoogleEndpointsServiceConsumersIamPolicy_IsConstructParameters(x in
 	return nil
 }
 
+func validateGoogleEndpointsServiceConsumersIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleEndpointsServiceConsumersIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

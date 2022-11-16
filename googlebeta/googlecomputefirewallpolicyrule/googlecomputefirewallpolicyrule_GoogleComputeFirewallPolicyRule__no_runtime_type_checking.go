@@ -64,6 +64,14 @@ func validateGoogleComputeFirewallPolicyRule_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleComputeFirewallPolicyRule_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeFirewallPolicyRule_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) validateSetActionParameters(val *string) error {
 	return nil
 }

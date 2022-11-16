@@ -60,6 +60,14 @@ func validateGoogleDataCatalogTaxonomyIamBinding_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleDataCatalogTaxonomyIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataCatalogTaxonomyIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

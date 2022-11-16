@@ -141,6 +141,22 @@ func validateGoogleMonitoringNotificationChannel_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleMonitoringNotificationChannel_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleMonitoringNotificationChannel_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

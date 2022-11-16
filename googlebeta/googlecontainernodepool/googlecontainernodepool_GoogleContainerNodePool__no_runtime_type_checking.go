@@ -84,6 +84,14 @@ func validateGoogleContainerNodePool_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleContainerNodePool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleContainerNodePool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePool) validateSetClusterParameters(val *string) error {
 	return nil
 }

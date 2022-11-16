@@ -64,6 +64,14 @@ func validateGoogleApikeysKey_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleApikeysKey_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleApikeysKey_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApikeysKey) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

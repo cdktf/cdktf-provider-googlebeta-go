@@ -92,6 +92,14 @@ func validateGoogleAppEngineStandardAppVersion_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleAppEngineStandardAppVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleAppEngineStandardAppVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetAppEngineApisParameters(val interface{}) error {
 	return nil
 }

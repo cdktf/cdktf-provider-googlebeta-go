@@ -60,6 +60,14 @@ func validateGoogleFirebaserulesRelease_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleFirebaserulesRelease_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleFirebaserulesRelease_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaserulesRelease) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -64,6 +64,14 @@ func validateGoogleDialogflowCxAgent_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleDialogflowCxAgent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDialogflowCxAgent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent) validateSetAvatarUriParameters(val *string) error {
 	return nil
 }

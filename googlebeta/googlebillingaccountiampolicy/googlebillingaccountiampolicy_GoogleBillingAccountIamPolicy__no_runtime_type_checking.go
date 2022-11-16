@@ -56,6 +56,14 @@ func validateGoogleBillingAccountIamPolicy_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateGoogleBillingAccountIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBillingAccountIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBillingAccountIamPolicy) validateSetBillingAccountIdParameters(val *string) error {
 	return nil
 }

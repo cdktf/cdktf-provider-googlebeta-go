@@ -60,6 +60,14 @@ func validateGoogleSqlSourceRepresentationInstance_IsConstructParameters(x inter
 	return nil
 }
 
+func validateGoogleSqlSourceRepresentationInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSqlSourceRepresentationInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

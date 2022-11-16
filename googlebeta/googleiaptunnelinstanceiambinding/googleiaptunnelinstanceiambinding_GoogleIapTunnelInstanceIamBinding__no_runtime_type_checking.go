@@ -60,6 +60,14 @@ func validateGoogleIapTunnelInstanceIamBinding_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleIapTunnelInstanceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIapTunnelInstanceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapTunnelInstanceIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

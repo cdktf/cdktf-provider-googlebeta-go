@@ -60,6 +60,14 @@ func validateGoogleCertificateManagerCertificateMap_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleCertificateManagerCertificateMap_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCertificateManagerCertificateMap_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerCertificateMap) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

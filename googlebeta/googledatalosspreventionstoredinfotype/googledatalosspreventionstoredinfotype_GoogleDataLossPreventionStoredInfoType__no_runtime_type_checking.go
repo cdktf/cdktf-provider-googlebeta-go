@@ -72,6 +72,14 @@ func validateGoogleDataLossPreventionStoredInfoType_IsConstructParameters(x inte
 	return nil
 }
 
+func validateGoogleDataLossPreventionStoredInfoType_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataLossPreventionStoredInfoType_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

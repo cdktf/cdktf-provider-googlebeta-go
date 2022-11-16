@@ -60,6 +60,14 @@ func validateGoogleVertexAiFeaturestoreIamMember_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGoogleVertexAiFeaturestoreIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleVertexAiFeaturestoreIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

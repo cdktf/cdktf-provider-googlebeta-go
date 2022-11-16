@@ -60,6 +60,14 @@ func validateGoogleSqlSslCert_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleSqlSslCert_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSqlSslCert_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlSslCert) validateSetCommonNameParameters(val *string) error {
 	return nil
 }

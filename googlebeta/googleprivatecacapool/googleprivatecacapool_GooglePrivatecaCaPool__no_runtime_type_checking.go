@@ -68,6 +68,14 @@ func validateGooglePrivatecaCaPool_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGooglePrivatecaCaPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGooglePrivatecaCaPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCaPool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

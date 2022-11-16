@@ -68,6 +68,14 @@ func validateGoogleAccessContextManagerServicePerimeter_IsConstructParameters(x 
 	return nil
 }
 
+func validateGoogleAccessContextManagerServicePerimeter_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleAccessContextManagerServicePerimeter_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

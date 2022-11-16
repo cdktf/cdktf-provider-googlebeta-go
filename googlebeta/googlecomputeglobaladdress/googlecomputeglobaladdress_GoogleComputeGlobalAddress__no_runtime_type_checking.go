@@ -60,6 +60,14 @@ func validateGoogleComputeGlobalAddress_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleComputeGlobalAddress_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeGlobalAddress_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalAddress) validateSetAddressParameters(val *string) error {
 	return nil
 }

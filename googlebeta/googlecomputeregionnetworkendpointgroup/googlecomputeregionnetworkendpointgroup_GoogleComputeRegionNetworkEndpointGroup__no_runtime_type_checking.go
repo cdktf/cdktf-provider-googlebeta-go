@@ -76,6 +76,14 @@ func validateGoogleComputeRegionNetworkEndpointGroup_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleComputeRegionNetworkEndpointGroup_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionNetworkEndpointGroup_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

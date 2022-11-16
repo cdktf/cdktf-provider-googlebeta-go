@@ -64,6 +64,14 @@ func validateGoogleOrganizationAccessApprovalSettings_IsConstructParameters(x in
 	return nil
 }
 
+func validateGoogleOrganizationAccessApprovalSettings_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleOrganizationAccessApprovalSettings_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateSetActiveKeyVersionParameters(val *string) error {
 	return nil
 }

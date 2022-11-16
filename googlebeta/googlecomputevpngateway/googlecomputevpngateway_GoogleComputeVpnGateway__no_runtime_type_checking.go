@@ -60,6 +60,14 @@ func validateGoogleComputeVpnGateway_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleComputeVpnGateway_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeVpnGateway_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeVpnGateway) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

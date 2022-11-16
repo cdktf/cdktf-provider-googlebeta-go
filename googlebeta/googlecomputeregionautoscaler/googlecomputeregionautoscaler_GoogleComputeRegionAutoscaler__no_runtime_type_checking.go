@@ -64,6 +64,14 @@ func validateGoogleComputeRegionAutoscaler_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateGoogleComputeRegionAutoscaler_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionAutoscaler_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

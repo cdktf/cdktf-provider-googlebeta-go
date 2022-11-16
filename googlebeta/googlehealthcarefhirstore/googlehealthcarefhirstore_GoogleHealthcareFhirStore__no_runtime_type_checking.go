@@ -72,6 +72,14 @@ func validateGoogleHealthcareFhirStore_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleHealthcareFhirStore_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleHealthcareFhirStore_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareFhirStore) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

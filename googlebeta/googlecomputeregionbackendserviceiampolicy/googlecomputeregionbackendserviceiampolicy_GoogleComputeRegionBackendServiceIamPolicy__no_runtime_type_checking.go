@@ -56,6 +56,14 @@ func validateGoogleComputeRegionBackendServiceIamPolicy_IsConstructParameters(x 
 	return nil
 }
 
+func validateGoogleComputeRegionBackendServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionBackendServiceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendServiceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

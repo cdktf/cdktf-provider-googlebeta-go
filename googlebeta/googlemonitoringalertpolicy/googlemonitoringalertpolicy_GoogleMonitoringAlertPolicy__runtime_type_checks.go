@@ -183,6 +183,22 @@ func validateGoogleMonitoringAlertPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleMonitoringAlertPolicy_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleMonitoringAlertPolicy_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringAlertPolicy) validateSetCombinerParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

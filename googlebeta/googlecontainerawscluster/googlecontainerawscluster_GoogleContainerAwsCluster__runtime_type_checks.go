@@ -185,6 +185,22 @@ func validateGoogleContainerAwsCluster_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleContainerAwsCluster_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleContainerAwsCluster_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAwsCluster) validateSetAnnotationsParameters(val *map[string]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

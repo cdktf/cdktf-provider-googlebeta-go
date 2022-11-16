@@ -60,6 +60,14 @@ func validateGoogleHealthcareDicomStoreIamBinding_IsConstructParameters(x interf
 	return nil
 }
 
+func validateGoogleHealthcareDicomStoreIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleHealthcareDicomStoreIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareDicomStoreIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

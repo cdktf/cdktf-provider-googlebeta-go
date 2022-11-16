@@ -68,6 +68,14 @@ func validateGoogleNotebooksEnvironment_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleNotebooksEnvironment_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleNotebooksEnvironment_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksEnvironment) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

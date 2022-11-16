@@ -60,6 +60,14 @@ func validateGoogleHealthcareConsentStoreIamMember_IsConstructParameters(x inter
 	return nil
 }
 
+func validateGoogleHealthcareConsentStoreIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleHealthcareConsentStoreIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareConsentStoreIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

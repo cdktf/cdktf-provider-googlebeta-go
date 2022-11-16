@@ -64,6 +64,14 @@ func validateGoogleLoggingProjectSink_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleLoggingProjectSink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingProjectSink_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingProjectSink) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

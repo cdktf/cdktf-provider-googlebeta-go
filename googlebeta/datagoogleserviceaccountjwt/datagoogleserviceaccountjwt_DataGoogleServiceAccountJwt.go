@@ -2,10 +2,10 @@ package datagoogleserviceaccountjwt
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v3/datagoogleserviceaccountjwt/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/datagoogleserviceaccountjwt/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -518,6 +518,44 @@ func DataGoogleServiceAccountJwt_IsConstruct(x interface{}) *bool {
 	_jsii_.StaticInvoke(
 		"@cdktf/provider-google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
 		"isConstruct",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGoogleServiceAccountJwt_IsTerraformDataSource(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGoogleServiceAccountJwt_IsTerraformDataSourceParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
+		"isTerraformDataSource",
+		[]interface{}{x},
+		&returns,
+	)
+
+	return returns
+}
+
+// Experimental.
+func DataGoogleServiceAccountJwt_IsTerraformElement(x interface{}) *bool {
+	_init_.Initialize()
+
+	if err := validateDataGoogleServiceAccountJwt_IsTerraformElementParameters(x); err != nil {
+		panic(err)
+	}
+	var returns *bool
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.dataGoogleServiceAccountJwt.DataGoogleServiceAccountJwt",
+		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
 	)

@@ -68,6 +68,14 @@ func validateGoogleDataplexAsset_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleDataplexAsset_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataplexAsset_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexAsset) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

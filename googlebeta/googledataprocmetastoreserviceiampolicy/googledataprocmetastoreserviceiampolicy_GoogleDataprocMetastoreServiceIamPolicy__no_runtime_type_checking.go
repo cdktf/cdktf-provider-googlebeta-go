@@ -56,6 +56,14 @@ func validateGoogleDataprocMetastoreServiceIamPolicy_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleDataprocMetastoreServiceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataprocMetastoreServiceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreServiceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

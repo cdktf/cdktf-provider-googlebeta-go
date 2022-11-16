@@ -56,6 +56,14 @@ func validateGoogleLoggingProjectExclusion_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateGoogleLoggingProjectExclusion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingProjectExclusion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingProjectExclusion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

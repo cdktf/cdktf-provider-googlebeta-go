@@ -64,6 +64,14 @@ func validateGoogleDataCatalogTag_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleDataCatalogTag_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataCatalogTag_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogTag) validateSetColumnParameters(val *string) error {
 	return nil
 }

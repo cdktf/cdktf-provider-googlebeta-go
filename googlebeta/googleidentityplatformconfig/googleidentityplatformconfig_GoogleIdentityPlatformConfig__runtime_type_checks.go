@@ -130,6 +130,22 @@ func validateGoogleIdentityPlatformConfig_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleIdentityPlatformConfig_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleIdentityPlatformConfig_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformConfig) validateSetAutodeleteAnonymousUsersParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

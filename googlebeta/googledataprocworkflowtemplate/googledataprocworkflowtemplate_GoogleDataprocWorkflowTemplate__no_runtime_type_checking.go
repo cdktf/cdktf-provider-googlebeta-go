@@ -72,6 +72,14 @@ func validateGoogleDataprocWorkflowTemplate_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleDataprocWorkflowTemplate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataprocWorkflowTemplate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocWorkflowTemplate) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

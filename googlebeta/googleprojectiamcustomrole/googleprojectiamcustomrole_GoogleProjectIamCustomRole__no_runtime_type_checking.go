@@ -56,6 +56,14 @@ func validateGoogleProjectIamCustomRole_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleProjectIamCustomRole_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleProjectIamCustomRole_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectIamCustomRole) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleIdentityPlatformOauthIdpConfig_IsConstructParameters(x interf
 	return nil
 }
 
+func validateGoogleIdentityPlatformOauthIdpConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIdentityPlatformOauthIdpConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) validateSetClientIdParameters(val *string) error {
 	return nil
 }

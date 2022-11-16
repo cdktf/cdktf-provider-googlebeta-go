@@ -60,6 +60,14 @@ func validateGoogleComputeAttachedDisk_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleComputeAttachedDisk_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeAttachedDisk_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeAttachedDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

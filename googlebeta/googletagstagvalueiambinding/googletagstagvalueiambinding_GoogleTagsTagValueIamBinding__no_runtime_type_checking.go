@@ -60,6 +60,14 @@ func validateGoogleTagsTagValueIamBinding_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleTagsTagValueIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleTagsTagValueIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTagsTagValueIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

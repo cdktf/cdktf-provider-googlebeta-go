@@ -119,6 +119,22 @@ func validateGoogleLoggingBillingAccountExclusion_IsConstructParameters(x interf
 	return nil
 }
 
+func validateGoogleLoggingBillingAccountExclusion_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleLoggingBillingAccountExclusion_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetBillingAccountParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

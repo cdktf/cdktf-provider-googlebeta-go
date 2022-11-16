@@ -60,6 +60,14 @@ func validateGoogleIamWorkloadIdentityPool_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateGoogleIamWorkloadIdentityPool_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIamWorkloadIdentityPool_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

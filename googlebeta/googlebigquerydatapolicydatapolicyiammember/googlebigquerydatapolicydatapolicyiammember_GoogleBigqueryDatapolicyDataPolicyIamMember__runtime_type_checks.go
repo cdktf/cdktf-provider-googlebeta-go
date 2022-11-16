@@ -130,6 +130,22 @@ func validateGoogleBigqueryDatapolicyDataPolicyIamMember_IsConstructParameters(x
 	return nil
 }
 
+func validateGoogleBigqueryDatapolicyDataPolicyIamMember_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleBigqueryDatapolicyDataPolicyIamMember_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMember) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

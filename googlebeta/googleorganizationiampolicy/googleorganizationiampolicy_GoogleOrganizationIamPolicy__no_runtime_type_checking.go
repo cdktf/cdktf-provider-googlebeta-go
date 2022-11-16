@@ -56,6 +56,14 @@ func validateGoogleOrganizationIamPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleOrganizationIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleOrganizationIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOrganizationIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleCloudfunctions2FunctionIamBinding_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleCloudfunctions2FunctionIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudfunctions2FunctionIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctions2FunctionIamBinding) validateSetCloudFunctionParameters(val *string) error {
 	return nil
 }

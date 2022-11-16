@@ -76,6 +76,14 @@ func validateGoogleCloudSchedulerJob_IsConstructParameters(x interface{}) error 
 	return nil
 }
 
+func validateGoogleCloudSchedulerJob_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudSchedulerJob_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudSchedulerJob) validateSetAttemptDeadlineParameters(val *string) error {
 	return nil
 }

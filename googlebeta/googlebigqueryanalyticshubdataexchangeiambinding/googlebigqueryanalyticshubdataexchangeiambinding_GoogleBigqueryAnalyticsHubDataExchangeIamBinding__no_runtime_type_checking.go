@@ -60,6 +60,14 @@ func validateGoogleBigqueryAnalyticsHubDataExchangeIamBinding_IsConstructParamet
 	return nil
 }
 
+func validateGoogleBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBigqueryAnalyticsHubDataExchangeIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

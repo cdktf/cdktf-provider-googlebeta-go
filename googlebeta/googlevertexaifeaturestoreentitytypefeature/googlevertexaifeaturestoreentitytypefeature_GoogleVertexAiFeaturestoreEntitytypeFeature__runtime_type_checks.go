@@ -130,6 +130,22 @@ func validateGoogleVertexAiFeaturestoreEntitytypeFeature_IsConstructParameters(x
 	return nil
 }
 
+func validateGoogleVertexAiFeaturestoreEntitytypeFeature_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleVertexAiFeaturestoreEntitytypeFeature_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeature) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

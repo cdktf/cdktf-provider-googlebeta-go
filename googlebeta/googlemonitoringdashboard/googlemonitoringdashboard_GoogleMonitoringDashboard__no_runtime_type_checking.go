@@ -60,6 +60,14 @@ func validateGoogleMonitoringDashboard_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleMonitoringDashboard_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleMonitoringDashboard_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringDashboard) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

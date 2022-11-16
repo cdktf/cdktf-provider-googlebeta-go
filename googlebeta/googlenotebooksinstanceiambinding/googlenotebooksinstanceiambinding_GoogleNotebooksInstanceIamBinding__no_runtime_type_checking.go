@@ -60,6 +60,14 @@ func validateGoogleNotebooksInstanceIamBinding_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleNotebooksInstanceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleNotebooksInstanceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

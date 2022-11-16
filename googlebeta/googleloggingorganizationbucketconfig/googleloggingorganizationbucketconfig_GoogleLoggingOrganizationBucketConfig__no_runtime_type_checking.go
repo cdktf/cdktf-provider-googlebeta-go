@@ -56,6 +56,14 @@ func validateGoogleLoggingOrganizationBucketConfig_IsConstructParameters(x inter
 	return nil
 }
 
+func validateGoogleLoggingOrganizationBucketConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingOrganizationBucketConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingOrganizationBucketConfig) validateSetBucketIdParameters(val *string) error {
 	return nil
 }

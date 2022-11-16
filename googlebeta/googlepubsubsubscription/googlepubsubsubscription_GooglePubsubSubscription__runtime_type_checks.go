@@ -185,6 +185,22 @@ func validateGooglePubsubSubscription_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGooglePubsubSubscription_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGooglePubsubSubscription_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscription) validateSetAckDeadlineSecondsParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

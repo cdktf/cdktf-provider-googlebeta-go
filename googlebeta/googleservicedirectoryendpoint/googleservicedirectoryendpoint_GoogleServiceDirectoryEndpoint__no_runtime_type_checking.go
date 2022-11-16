@@ -60,6 +60,14 @@ func validateGoogleServiceDirectoryEndpoint_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleServiceDirectoryEndpoint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleServiceDirectoryEndpoint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleServiceDirectoryEndpoint) validateSetAddressParameters(val *string) error {
 	return nil
 }

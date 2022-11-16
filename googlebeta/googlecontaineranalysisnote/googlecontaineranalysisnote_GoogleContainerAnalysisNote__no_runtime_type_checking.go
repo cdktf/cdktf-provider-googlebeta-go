@@ -68,6 +68,14 @@ func validateGoogleContainerAnalysisNote_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleContainerAnalysisNote_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleContainerAnalysisNote_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAnalysisNote) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

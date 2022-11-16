@@ -64,6 +64,14 @@ func validateGoogleDataplexLake_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleDataplexLake_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataplexLake_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexLake) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

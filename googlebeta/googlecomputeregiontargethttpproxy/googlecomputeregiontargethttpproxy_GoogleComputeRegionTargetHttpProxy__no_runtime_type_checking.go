@@ -60,6 +60,14 @@ func validateGoogleComputeRegionTargetHttpProxy_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleComputeRegionTargetHttpProxy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionTargetHttpProxy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionTargetHttpProxy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

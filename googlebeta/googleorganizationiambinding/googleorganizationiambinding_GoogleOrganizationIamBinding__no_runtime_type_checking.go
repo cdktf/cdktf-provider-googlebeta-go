@@ -60,6 +60,14 @@ func validateGoogleOrganizationIamBinding_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleOrganizationIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleOrganizationIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOrganizationIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

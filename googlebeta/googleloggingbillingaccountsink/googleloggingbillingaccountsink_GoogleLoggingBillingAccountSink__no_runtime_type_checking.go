@@ -64,6 +64,14 @@ func validateGoogleLoggingBillingAccountSink_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleLoggingBillingAccountSink_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingBillingAccountSink_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingBillingAccountSink) validateSetBillingAccountParameters(val *string) error {
 	return nil
 }

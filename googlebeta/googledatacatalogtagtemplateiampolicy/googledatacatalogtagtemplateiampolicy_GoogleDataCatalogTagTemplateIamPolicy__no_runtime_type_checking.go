@@ -56,6 +56,14 @@ func validateGoogleDataCatalogTagTemplateIamPolicy_IsConstructParameters(x inter
 	return nil
 }
 
+func validateGoogleDataCatalogTagTemplateIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataCatalogTagTemplateIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

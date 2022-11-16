@@ -60,6 +60,14 @@ func validateGoogleEndpointsServiceConsumersIamMember_IsConstructParameters(x in
 	return nil
 }
 
+func validateGoogleEndpointsServiceConsumersIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleEndpointsServiceConsumersIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

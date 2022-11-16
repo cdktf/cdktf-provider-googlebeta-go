@@ -56,6 +56,14 @@ func validateGoogleLoggingBillingAccountExclusion_IsConstructParameters(x interf
 	return nil
 }
 
+func validateGoogleLoggingBillingAccountExclusion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingBillingAccountExclusion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetBillingAccountParameters(val *string) error {
 	return nil
 }

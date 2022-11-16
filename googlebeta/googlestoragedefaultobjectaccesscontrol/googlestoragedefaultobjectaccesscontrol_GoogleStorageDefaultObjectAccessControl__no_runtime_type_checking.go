@@ -60,6 +60,14 @@ func validateGoogleStorageDefaultObjectAccessControl_IsConstructParameters(x int
 	return nil
 }
 
+func validateGoogleStorageDefaultObjectAccessControl_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleStorageDefaultObjectAccessControl_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateSetBucketParameters(val *string) error {
 	return nil
 }

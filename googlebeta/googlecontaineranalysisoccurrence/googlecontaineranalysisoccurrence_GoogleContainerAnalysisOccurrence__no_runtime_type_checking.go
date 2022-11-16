@@ -64,6 +64,14 @@ func validateGoogleContainerAnalysisOccurrence_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleContainerAnalysisOccurrence_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleContainerAnalysisOccurrence_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAnalysisOccurrence) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

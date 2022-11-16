@@ -60,6 +60,14 @@ func validateGoogleOrgPolicyCustomConstraint_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleOrgPolicyCustomConstraint_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleOrgPolicyCustomConstraint_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateSetActionTypeParameters(val *string) error {
 	return nil
 }

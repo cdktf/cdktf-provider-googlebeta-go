@@ -72,6 +72,14 @@ func validateGoogleDialogflowCxFlow_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleDialogflowCxFlow_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDialogflowCxFlow_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxFlow) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

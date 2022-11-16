@@ -92,6 +92,14 @@ func validateGoogleComputeBackendService_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleComputeBackendService_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeBackendService_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetAffinityCookieTtlSecParameters(val *float64) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGoogleSpannerDatabaseIamPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleSpannerDatabaseIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSpannerDatabaseIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerDatabaseIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateGoogleDataprocClusterIamPolicy_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleDataprocClusterIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataprocClusterIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterIamPolicy) validateSetClusterParameters(val *string) error {
 	return nil
 }

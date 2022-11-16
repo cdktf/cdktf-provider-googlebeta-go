@@ -60,6 +60,14 @@ func validateGoogleProjectServiceIdentity_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleProjectServiceIdentity_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleProjectServiceIdentity_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectServiceIdentity) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

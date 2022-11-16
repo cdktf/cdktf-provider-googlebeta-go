@@ -64,6 +64,14 @@ func validateGoogleComputeManagedSslCertificate_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleComputeManagedSslCertificate_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeManagedSslCertificate_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeManagedSslCertificate) validateSetCertificateIdParameters(val *float64) error {
 	return nil
 }

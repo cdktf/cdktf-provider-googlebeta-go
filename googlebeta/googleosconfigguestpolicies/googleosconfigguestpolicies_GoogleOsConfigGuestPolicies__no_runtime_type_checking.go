@@ -76,6 +76,14 @@ func validateGoogleOsConfigGuestPolicies_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleOsConfigGuestPolicies_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleOsConfigGuestPolicies_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

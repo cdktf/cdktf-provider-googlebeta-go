@@ -68,6 +68,14 @@ func validateGoogleAlloydbCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleAlloydbCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleAlloydbCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetClusterIdParameters(val *string) error {
 	return nil
 }

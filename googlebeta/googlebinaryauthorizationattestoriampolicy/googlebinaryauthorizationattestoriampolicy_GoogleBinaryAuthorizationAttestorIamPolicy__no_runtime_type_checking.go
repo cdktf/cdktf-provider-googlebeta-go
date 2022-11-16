@@ -56,6 +56,14 @@ func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsConstructParameters(x 
 	return nil
 }
 
+func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBinaryAuthorizationAttestorIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamPolicy) validateSetAttestorParameters(val *string) error {
 	return nil
 }

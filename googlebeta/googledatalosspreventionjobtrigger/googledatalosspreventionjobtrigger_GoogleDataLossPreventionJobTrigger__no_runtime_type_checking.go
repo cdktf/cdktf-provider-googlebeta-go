@@ -68,6 +68,14 @@ func validateGoogleDataLossPreventionJobTrigger_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleDataLossPreventionJobTrigger_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataLossPreventionJobTrigger_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

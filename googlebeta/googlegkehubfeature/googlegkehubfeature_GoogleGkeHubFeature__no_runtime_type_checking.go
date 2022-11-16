@@ -64,6 +64,14 @@ func validateGoogleGkeHubFeature_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleGkeHubFeature_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleGkeHubFeature_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeature) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

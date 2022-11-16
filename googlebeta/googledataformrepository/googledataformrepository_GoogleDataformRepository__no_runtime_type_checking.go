@@ -64,6 +64,14 @@ func validateGoogleDataformRepository_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleDataformRepository_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDataformRepository_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataformRepository) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

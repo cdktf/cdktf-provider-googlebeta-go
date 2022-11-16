@@ -88,6 +88,14 @@ func validateGoogleComputeHealthCheck_IsConstructParameters(x interface{}) error
 	return nil
 }
 
+func validateGoogleComputeHealthCheck_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeHealthCheck_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeHealthCheck) validateSetCheckIntervalSecParameters(val *float64) error {
 	return nil
 }

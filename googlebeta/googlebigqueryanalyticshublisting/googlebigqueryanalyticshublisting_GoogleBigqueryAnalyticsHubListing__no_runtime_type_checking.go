@@ -72,6 +72,14 @@ func validateGoogleBigqueryAnalyticsHubListing_IsConstructParameters(x interface
 	return nil
 }
 
+func validateGoogleBigqueryAnalyticsHubListing_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBigqueryAnalyticsHubListing_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetCategoriesParameters(val *[]*string) error {
 	return nil
 }

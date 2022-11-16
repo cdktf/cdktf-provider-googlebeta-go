@@ -119,6 +119,22 @@ func validateGoogleHealthcareConsentStoreIamPolicy_IsConstructParameters(x inter
 	return nil
 }
 
+func validateGoogleHealthcareConsentStoreIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleHealthcareConsentStoreIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareConsentStoreIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

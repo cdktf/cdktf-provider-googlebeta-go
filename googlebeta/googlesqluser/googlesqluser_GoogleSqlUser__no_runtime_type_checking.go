@@ -64,6 +64,14 @@ func validateGoogleSqlUser_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleSqlUser_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSqlUser_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlUser) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

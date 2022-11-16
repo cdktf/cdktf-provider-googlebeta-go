@@ -76,6 +76,14 @@ func validateGoogleApiGatewayApiConfigA_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleApiGatewayApiConfigA_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleApiGatewayApiConfigA_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApiGatewayApiConfigA) validateSetApiParameters(val *string) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleDialogflowIntent_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleDialogflowIntent_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleDialogflowIntent_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowIntent) validateSetActionParameters(val *string) error {
 	return nil
 }

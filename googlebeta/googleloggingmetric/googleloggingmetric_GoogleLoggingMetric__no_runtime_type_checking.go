@@ -68,6 +68,14 @@ func validateGoogleLoggingMetric_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleLoggingMetric_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingMetric_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingMetric) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

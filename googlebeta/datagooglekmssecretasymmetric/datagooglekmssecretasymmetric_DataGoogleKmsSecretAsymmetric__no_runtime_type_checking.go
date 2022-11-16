@@ -56,6 +56,14 @@ func validateDataGoogleKmsSecretAsymmetric_IsConstructParameters(x interface{}) 
 	return nil
 }
 
+func validateDataGoogleKmsSecretAsymmetric_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleKmsSecretAsymmetric_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleKmsSecretAsymmetric) validateSetCiphertextParameters(val *string) error {
 	return nil
 }

@@ -56,6 +56,14 @@ func validateDataGoogleRuntimeconfigVariable_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateDataGoogleRuntimeconfigVariable_IsTerraformDataSourceParameters(x interface{}) error {
+	return nil
+}
+
+func validateDataGoogleRuntimeconfigVariable_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleRuntimeconfigVariable) validateSetIdParameters(val *string) error {
 	return nil
 }

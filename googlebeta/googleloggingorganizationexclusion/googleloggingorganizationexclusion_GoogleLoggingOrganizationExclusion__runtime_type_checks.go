@@ -119,6 +119,22 @@ func validateGoogleLoggingOrganizationExclusion_IsConstructParameters(x interfac
 	return nil
 }
 
+func validateGoogleLoggingOrganizationExclusion_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleLoggingOrganizationExclusion_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingOrganizationExclusion) validateSetConnectionParameters(val interface{}) error {
 	switch val.(type) {
 	case *cdktf.SSHProvisionerConnection:

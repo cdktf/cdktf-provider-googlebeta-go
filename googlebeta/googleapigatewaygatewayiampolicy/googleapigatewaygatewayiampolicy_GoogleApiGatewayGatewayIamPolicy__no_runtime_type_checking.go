@@ -56,6 +56,14 @@ func validateGoogleApiGatewayGatewayIamPolicy_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleApiGatewayGatewayIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleApiGatewayGatewayIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApiGatewayGatewayIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

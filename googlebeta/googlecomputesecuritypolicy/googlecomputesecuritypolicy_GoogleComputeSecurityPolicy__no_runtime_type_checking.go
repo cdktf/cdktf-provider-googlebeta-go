@@ -72,6 +72,14 @@ func validateGoogleComputeSecurityPolicy_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleComputeSecurityPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeSecurityPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

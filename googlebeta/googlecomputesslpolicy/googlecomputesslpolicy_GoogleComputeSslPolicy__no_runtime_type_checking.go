@@ -60,6 +60,14 @@ func validateGoogleComputeSslPolicy_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleComputeSslPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeSslPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSslPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

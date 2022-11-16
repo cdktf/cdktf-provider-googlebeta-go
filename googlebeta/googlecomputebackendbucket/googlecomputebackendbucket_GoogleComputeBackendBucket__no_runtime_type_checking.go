@@ -64,6 +64,14 @@ func validateGoogleComputeBackendBucket_IsConstructParameters(x interface{}) err
 	return nil
 }
 
+func validateGoogleComputeBackendBucket_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeBackendBucket_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetBucketNameParameters(val *string) error {
 	return nil
 }

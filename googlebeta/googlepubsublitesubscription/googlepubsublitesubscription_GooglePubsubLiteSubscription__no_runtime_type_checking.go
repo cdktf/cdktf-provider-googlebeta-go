@@ -64,6 +64,14 @@ func validateGooglePubsubLiteSubscription_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGooglePubsubLiteSubscription_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGooglePubsubLiteSubscription_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubLiteSubscription) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -119,6 +119,22 @@ func validateGoogleStorageBucketIamPolicy_IsConstructParameters(x interface{}) e
 	return nil
 }
 
+func validateGoogleStorageBucketIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGoogleStorageBucketIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketIamPolicy) validateSetBucketParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

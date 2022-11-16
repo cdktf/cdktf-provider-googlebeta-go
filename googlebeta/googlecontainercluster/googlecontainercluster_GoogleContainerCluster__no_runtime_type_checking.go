@@ -188,6 +188,14 @@ func validateGoogleContainerCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleContainerCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleContainerCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetClusterIpv4CidrParameters(val *string) error {
 	return nil
 }

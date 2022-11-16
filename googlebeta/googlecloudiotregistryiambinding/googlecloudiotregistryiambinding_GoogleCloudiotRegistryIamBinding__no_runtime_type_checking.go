@@ -60,6 +60,14 @@ func validateGoogleCloudiotRegistryIamBinding_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleCloudiotRegistryIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleCloudiotRegistryIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudiotRegistryIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

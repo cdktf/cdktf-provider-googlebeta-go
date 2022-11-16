@@ -76,6 +76,14 @@ func validateGoogleSqlDatabaseInstance_IsConstructParameters(x interface{}) erro
 	return nil
 }
 
+func validateGoogleSqlDatabaseInstance_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSqlDatabaseInstance_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -60,6 +60,14 @@ func validateGoogleProjectIamAuditConfig_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleProjectIamAuditConfig_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleProjectIamAuditConfig_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectIamAuditConfig) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

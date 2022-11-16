@@ -163,6 +163,22 @@ func validateGooglePrivatecaCertificateAuthority_IsConstructParameters(x interfa
 	return nil
 }
 
+func validateGooglePrivatecaCertificateAuthority_IsTerraformElementParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func validateGooglePrivatecaCertificateAuthority_IsTerraformResourceParameters(x interface{}) error {
+	if x == nil {
+		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetCertificateAuthorityIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

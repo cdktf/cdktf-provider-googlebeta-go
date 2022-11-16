@@ -60,6 +60,14 @@ func validateGoogleComputeRegionBackendServiceIamBinding_IsConstructParameters(x
 	return nil
 }
 
+func validateGoogleComputeRegionBackendServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeRegionBackendServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

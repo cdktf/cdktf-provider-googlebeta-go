@@ -60,6 +60,14 @@ func validateGoogleBillingAccountIamBinding_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleBillingAccountIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleBillingAccountIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBillingAccountIamBinding) validateSetBillingAccountIdParameters(val *string) error {
 	return nil
 }

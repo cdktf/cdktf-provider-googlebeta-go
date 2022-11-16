@@ -56,6 +56,14 @@ func validateGoogleNotebooksInstanceIamPolicy_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleNotebooksInstanceIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleNotebooksInstanceIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksInstanceIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

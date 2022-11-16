@@ -60,6 +60,14 @@ func validateGoogleIapWebTypeComputeIamMember_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleIapWebTypeComputeIamMember_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleIapWebTypeComputeIamMember_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapWebTypeComputeIamMember) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -68,6 +68,14 @@ func validateGoogleComputeSnapshot_IsConstructParameters(x interface{}) error {
 	return nil
 }
 
+func validateGoogleComputeSnapshot_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeSnapshot_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSnapshot) validateSetChainNameParameters(val *string) error {
 	return nil
 }

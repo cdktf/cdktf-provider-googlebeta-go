@@ -60,6 +60,14 @@ func validateGoogleSecretManagerSecretVersion_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleSecretManagerSecretVersion_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleSecretManagerSecretVersion_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

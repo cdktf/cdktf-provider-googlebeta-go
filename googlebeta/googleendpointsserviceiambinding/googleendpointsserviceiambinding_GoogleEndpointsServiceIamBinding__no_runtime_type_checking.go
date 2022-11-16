@@ -60,6 +60,14 @@ func validateGoogleEndpointsServiceIamBinding_IsConstructParameters(x interface{
 	return nil
 }
 
+func validateGoogleEndpointsServiceIamBinding_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleEndpointsServiceIamBinding_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEndpointsServiceIamBinding) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

@@ -80,6 +80,14 @@ func validateGoogleContainerAzureCluster_IsConstructParameters(x interface{}) er
 	return nil
 }
 
+func validateGoogleContainerAzureCluster_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleContainerAzureCluster_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAzureCluster) validateSetAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

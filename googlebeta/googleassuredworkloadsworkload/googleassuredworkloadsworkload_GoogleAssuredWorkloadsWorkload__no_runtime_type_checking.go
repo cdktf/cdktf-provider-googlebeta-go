@@ -68,6 +68,14 @@ func validateGoogleAssuredWorkloadsWorkload_IsConstructParameters(x interface{})
 	return nil
 }
 
+func validateGoogleAssuredWorkloadsWorkload_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleAssuredWorkloadsWorkload_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateSetBillingAccountParameters(val *string) error {
 	return nil
 }

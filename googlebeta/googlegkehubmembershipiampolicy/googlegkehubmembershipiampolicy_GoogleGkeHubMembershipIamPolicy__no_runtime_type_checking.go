@@ -56,6 +56,14 @@ func validateGoogleGkeHubMembershipIamPolicy_IsConstructParameters(x interface{}
 	return nil
 }
 
+func validateGoogleGkeHubMembershipIamPolicy_IsTerraformElementParameters(x interface{}) error {
+	return nil
+}
+
+func validateGoogleGkeHubMembershipIamPolicy_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubMembershipIamPolicy) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
