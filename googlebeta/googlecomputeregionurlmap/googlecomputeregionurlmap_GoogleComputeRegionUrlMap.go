@@ -25,6 +25,8 @@ type GoogleComputeRegionUrlMap interface {
 	// Experimental.
 	SetCount(val *float64)
 	CreationTimestamp() *string
+	DefaultRouteAction() GoogleComputeRegionUrlMapDefaultRouteActionOutputReference
+	DefaultRouteActionInput() *GoogleComputeRegionUrlMapDefaultRouteAction
 	DefaultService() *string
 	SetDefaultService(val *string)
 	DefaultServiceInput() *string
@@ -115,11 +117,13 @@ type GoogleComputeRegionUrlMap interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDefaultRouteAction(value *GoogleComputeRegionUrlMapDefaultRouteAction)
 	PutDefaultUrlRedirect(value *GoogleComputeRegionUrlMapDefaultUrlRedirect)
 	PutHostRule(value interface{})
 	PutPathMatcher(value interface{})
 	PutTest(value interface{})
 	PutTimeouts(value *GoogleComputeRegionUrlMapTimeouts)
+	ResetDefaultRouteAction()
 	ResetDefaultService()
 	ResetDefaultUrlRedirect()
 	ResetDescription()
@@ -193,6 +197,26 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMap) CreationTimestamp() *string {
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMap) DefaultRouteAction() GoogleComputeRegionUrlMapDefaultRouteActionOutputReference {
+	var returns GoogleComputeRegionUrlMapDefaultRouteActionOutputReference
+	_jsii_.Get(
+		j,
+		"defaultRouteAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMap) DefaultRouteActionInput() *GoogleComputeRegionUrlMapDefaultRouteAction {
+	var returns *GoogleComputeRegionUrlMapDefaultRouteAction
+	_jsii_.Get(
+		j,
+		"defaultRouteActionInput",
 		&returns,
 	)
 	return returns
@@ -995,6 +1019,17 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMap) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMap) PutDefaultRouteAction(value *GoogleComputeRegionUrlMapDefaultRouteAction) {
+	if err := g.validatePutDefaultRouteActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDefaultRouteAction",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMap) PutDefaultUrlRedirect(value *GoogleComputeRegionUrlMapDefaultUrlRedirect) {
 	if err := g.validatePutDefaultUrlRedirectParameters(value); err != nil {
 		panic(err)
@@ -1047,6 +1082,14 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMap) PutTimeouts(value *GoogleComputeRe
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMap) ResetDefaultRouteAction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultRouteAction",
+		nil, // no parameters
 	)
 }
 

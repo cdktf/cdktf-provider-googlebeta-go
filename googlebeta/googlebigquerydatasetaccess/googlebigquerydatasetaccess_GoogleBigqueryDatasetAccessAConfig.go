@@ -62,6 +62,10 @@ type GoogleBigqueryDatasetAccessAConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset_access#role GoogleBigqueryDatasetAccessA#role}
 	Role *string `field:"optional" json:"role" yaml:"role"`
+	// routine block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset_access#routine GoogleBigqueryDatasetAccessA#routine}
+	Routine *GoogleBigqueryDatasetAccessRoutineA `field:"optional" json:"routine" yaml:"routine"`
 	// A special group to grant access to. Possible values include:.
 	//
 	// 'projectOwners': Owners of the enclosing project.

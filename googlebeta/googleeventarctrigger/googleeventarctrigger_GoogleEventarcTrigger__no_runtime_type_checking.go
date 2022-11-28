@@ -80,6 +80,10 @@ func validateGoogleEventarcTrigger_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleEventarcTrigger) validateSetChannelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEventarcTrigger) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

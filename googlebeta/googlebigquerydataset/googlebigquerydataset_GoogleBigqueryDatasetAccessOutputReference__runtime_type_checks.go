@@ -101,6 +101,17 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validatePutDatase
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validatePutRoutineParameters(value *GoogleBigqueryDatasetAccessRoutine) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) validatePutViewParameters(value *GoogleBigqueryDatasetAccessView) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetLoggingVariantParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

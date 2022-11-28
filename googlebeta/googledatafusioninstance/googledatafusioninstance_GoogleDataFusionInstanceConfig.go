@@ -50,6 +50,10 @@ type GoogleDataFusionInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#description GoogleDataFusionInstance#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Option to enable granular role-based access control.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#enable_rbac GoogleDataFusionInstance#enable_rbac}
+	EnableRbac interface{} `field:"optional" json:"enableRbac" yaml:"enableRbac"`
 	// Option to enable Stackdriver Logging.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#enable_stackdriver_logging GoogleDataFusionInstance#enable_stackdriver_logging}

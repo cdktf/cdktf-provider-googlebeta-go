@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutpu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) validatePutGrpcParameters(value *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpc) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) validatePutHttpGetParameters(value *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGet) error {
 	return nil
 }

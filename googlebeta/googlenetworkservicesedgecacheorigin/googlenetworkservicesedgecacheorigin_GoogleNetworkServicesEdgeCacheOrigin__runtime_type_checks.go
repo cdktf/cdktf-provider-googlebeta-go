@@ -111,6 +111,17 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validateOverrideLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validatePutAwsV4AuthenticationParameters(value *GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validatePutTimeoutParameters(value *GoogleNetworkServicesEdgeCacheOriginTimeout) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

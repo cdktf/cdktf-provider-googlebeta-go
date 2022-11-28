@@ -191,6 +191,14 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryPlansPerMinuteParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryStringLengthParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

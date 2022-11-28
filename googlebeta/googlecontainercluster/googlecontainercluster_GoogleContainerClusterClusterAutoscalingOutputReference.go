@@ -75,6 +75,7 @@ type GoogleContainerClusterClusterAutoscalingOutputReference interface {
 	PutResourceLimits(value interface{})
 	ResetAutoProvisioningDefaults()
 	ResetAutoscalingProfile()
+	ResetEnabled()
 	ResetResourceLimits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -566,6 +567,14 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutoscalingProfile",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnabled",
 		nil, // no parameters
 	)
 }

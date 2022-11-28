@@ -30,6 +30,8 @@ type GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference int
 	FailureThresholdInput() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference
+	GrpcInput() *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpc
 	HttpGet() GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference
 	HttpGetInput() *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGet
 	InitialDelaySeconds() *float64
@@ -75,8 +77,10 @@ type GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGrpc(value *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpc)
 	PutHttpGet(value *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGet)
 	ResetFailureThreshold()
+	ResetGrpc()
 	ResetHttpGet()
 	ResetInitialDelaySeconds()
 	ResetPeriodSeconds()
@@ -151,6 +155,26 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutpu
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) Grpc() GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference {
+	var returns GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcOutputReference
+	_jsii_.Get(
+		j,
+		"grpc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) GrpcInput() *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpc {
+	var returns *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpc
+	_jsii_.Get(
+		j,
+		"grpcInput",
 		&returns,
 	)
 	return returns
@@ -579,6 +603,17 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutpu
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) PutGrpc(value *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpc) {
+	if err := g.validatePutGrpcParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGrpc",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) PutHttpGet(value *GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGet) {
 	if err := g.validatePutHttpGetParameters(value); err != nil {
 		panic(err)
@@ -594,6 +629,14 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"resetFailureThreshold",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) ResetGrpc() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGrpc",
 		nil, // no parameters
 	)
 }

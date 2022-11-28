@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryPlansPerMinuteParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference) validateSetQueryStringLengthParameters(val *float64) error {
 	return nil
 }

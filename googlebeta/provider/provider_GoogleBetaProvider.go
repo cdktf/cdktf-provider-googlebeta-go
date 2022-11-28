@@ -51,6 +51,9 @@ type GoogleBetaProvider interface {
 	Batching() *GoogleBetaProviderBatching
 	SetBatching(val *GoogleBetaProviderBatching)
 	BatchingInput() *GoogleBetaProviderBatching
+	BeyondcorpCustomEndpoint() *string
+	SetBeyondcorpCustomEndpoint(val *string)
+	BeyondcorpCustomEndpointInput() *string
 	BigqueryAnalyticsHubCustomEndpoint() *string
 	SetBigqueryAnalyticsHubCustomEndpoint(val *string)
 	BigqueryAnalyticsHubCustomEndpointInput() *string
@@ -208,6 +211,9 @@ type GoogleBetaProvider interface {
 	FirebaseCustomEndpoint() *string
 	SetFirebaseCustomEndpoint(val *string)
 	FirebaseCustomEndpointInput() *string
+	FirebaseHostingCustomEndpoint() *string
+	SetFirebaseHostingCustomEndpoint(val *string)
+	FirebaseHostingCustomEndpointInput() *string
 	FirebaserulesCustomEndpoint() *string
 	SetFirebaserulesCustomEndpoint(val *string)
 	FirebaserulesCustomEndpointInput() *string
@@ -422,6 +428,7 @@ type GoogleBetaProvider interface {
 	ResetArtifactRegistryCustomEndpoint()
 	ResetAssuredWorkloadsCustomEndpoint()
 	ResetBatching()
+	ResetBeyondcorpCustomEndpoint()
 	ResetBigqueryAnalyticsHubCustomEndpoint()
 	ResetBigqueryConnectionCustomEndpoint()
 	ResetBigQueryCustomEndpoint()
@@ -473,6 +480,7 @@ type GoogleBetaProvider interface {
 	ResetEventarcCustomEndpoint()
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaseCustomEndpoint()
+	ResetFirebaseHostingCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
 	ResetGameServicesCustomEndpoint()
@@ -806,6 +814,26 @@ func (j *jsiiProxy_GoogleBetaProvider) BatchingInput() *GoogleBetaProviderBatchi
 	_jsii_.Get(
 		j,
 		"batchingInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) BeyondcorpCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"beyondcorpCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) BeyondcorpCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"beyondcorpCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1846,6 +1874,26 @@ func (j *jsiiProxy_GoogleBetaProvider) FirebaseCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"firebaseCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseHostingCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseHostingCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseHostingCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseHostingCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3268,6 +3316,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetBatching(val *GoogleBetaProviderBatchin
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetBeyondcorpCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"beyondcorpCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetBigqueryAnalyticsHubCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3672,6 +3728,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"firebaseCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseHostingCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseHostingCustomEndpoint",
 		val,
 	)
 }
@@ -4369,6 +4433,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetBatching() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetBeyondcorpCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBeyondcorpCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetBigqueryAnalyticsHubCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4773,6 +4845,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFirebaseCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseHostingCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseHostingCustomEndpoint",
 		nil, // no parameters
 	)
 }

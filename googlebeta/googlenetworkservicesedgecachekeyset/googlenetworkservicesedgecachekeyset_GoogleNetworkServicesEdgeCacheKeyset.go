@@ -77,6 +77,8 @@ type GoogleNetworkServicesEdgeCacheKeyset interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkServicesEdgeCacheKeysetTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	ValidationSharedKeys() GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList
+	ValidationSharedKeysInput() interface{}
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -104,6 +106,7 @@ type GoogleNetworkServicesEdgeCacheKeyset interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutPublicKey(value interface{})
 	PutTimeouts(value *GoogleNetworkServicesEdgeCacheKeysetTimeouts)
+	PutValidationSharedKeys(value interface{})
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -111,7 +114,9 @@ type GoogleNetworkServicesEdgeCacheKeyset interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPublicKey()
 	ResetTimeouts()
+	ResetValidationSharedKeys()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -422,6 +427,26 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) TimeoutsInput() interfa
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ValidationSharedKeys() GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList {
+	var returns GoogleNetworkServicesEdgeCacheKeysetValidationSharedKeysList
+	_jsii_.Get(
+		j,
+		"validationSharedKeys",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ValidationSharedKeysInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"validationSharedKeysInput",
 		&returns,
 	)
 	return returns
@@ -865,6 +890,17 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) PutTimeouts(value *Goog
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) PutValidationSharedKeys(value interface{}) {
+	if err := g.validatePutValidationSharedKeysParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putValidationSharedKeys",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -905,10 +941,26 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ResetProject() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ResetPublicKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPublicKey",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ResetValidationSharedKeys() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetValidationSharedKeys",
 		nil, // no parameters
 	)
 }

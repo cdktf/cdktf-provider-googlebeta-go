@@ -31,6 +31,10 @@ type GoogleComputeRegionUrlMapConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_url_map#name GoogleComputeRegionUrlMap#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// default_route_action block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_region_url_map#default_route_action GoogleComputeRegionUrlMap#default_route_action}
+	DefaultRouteAction *GoogleComputeRegionUrlMapDefaultRouteAction `field:"optional" json:"defaultRouteAction" yaml:"defaultRouteAction"`
 	// The full or partial URL of the defaultService resource to which traffic is directed if none of the hostRules match.
 	//
 	// If defaultRouteAction is additionally specified, advanced

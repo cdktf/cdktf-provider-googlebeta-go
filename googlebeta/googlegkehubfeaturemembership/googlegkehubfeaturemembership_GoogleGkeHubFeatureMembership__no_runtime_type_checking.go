@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validatePutConfigmanagementPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validatePutMeshParameters(value *GoogleGkeHubFeatureMembershipMesh) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validatePutTimeoutsParameters(value *GoogleGkeHubFeatureMembershipTimeouts) error {
 	return nil
 }

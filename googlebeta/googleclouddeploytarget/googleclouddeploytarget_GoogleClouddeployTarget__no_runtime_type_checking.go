@@ -64,6 +64,10 @@ func (g *jsiiProxy_GoogleClouddeployTarget) validatePutGkeParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployTarget) validatePutRunParameters(value *GoogleClouddeployTargetRun) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployTarget) validatePutTimeoutsParameters(value *GoogleClouddeployTargetTimeouts) error {
 	return nil
 }

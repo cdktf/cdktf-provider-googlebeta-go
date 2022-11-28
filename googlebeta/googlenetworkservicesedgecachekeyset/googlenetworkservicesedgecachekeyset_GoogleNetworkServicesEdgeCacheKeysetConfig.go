@@ -27,10 +27,6 @@ type GoogleNetworkServicesEdgeCacheKeysetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset#name GoogleNetworkServicesEdgeCacheKeyset#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
-	// public_key block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset#public_key GoogleNetworkServicesEdgeCacheKeyset#public_key}
-	PublicKey interface{} `field:"required" json:"publicKey" yaml:"publicKey"`
 	// A human-readable description of the resource.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset#description GoogleNetworkServicesEdgeCacheKeyset#description}
@@ -46,9 +42,17 @@ type GoogleNetworkServicesEdgeCacheKeysetConfig struct {
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset#project GoogleNetworkServicesEdgeCacheKeyset#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// public_key block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset#public_key GoogleNetworkServicesEdgeCacheKeyset#public_key}
+	PublicKey interface{} `field:"optional" json:"publicKey" yaml:"publicKey"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset#timeouts GoogleNetworkServicesEdgeCacheKeyset#timeouts}
 	Timeouts *GoogleNetworkServicesEdgeCacheKeysetTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// validation_shared_keys block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset#validation_shared_keys GoogleNetworkServicesEdgeCacheKeyset#validation_shared_keys}
+	ValidationSharedKeys interface{} `field:"optional" json:"validationSharedKeys" yaml:"validationSharedKeys"`
 }
 

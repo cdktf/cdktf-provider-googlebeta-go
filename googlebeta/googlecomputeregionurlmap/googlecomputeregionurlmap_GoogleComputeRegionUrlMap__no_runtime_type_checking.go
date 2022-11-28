@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMap) validatePutDefaultRouteActionParameters(value *GoogleComputeRegionUrlMapDefaultRouteAction) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMap) validatePutDefaultUrlRedirectParameters(value *GoogleComputeRegionUrlMapDefaultUrlRedirect) error {
 	return nil
 }

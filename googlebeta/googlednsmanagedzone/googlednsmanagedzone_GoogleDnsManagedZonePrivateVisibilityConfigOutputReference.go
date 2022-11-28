@@ -27,6 +27,8 @@ type GoogleDnsManagedZonePrivateVisibilityConfigOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GkeClusters() GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList
+	GkeClustersInput() interface{}
 	InternalValue() *GoogleDnsManagedZonePrivateVisibilityConfig
 	SetInternalValue(val *GoogleDnsManagedZonePrivateVisibilityConfig)
 	Networks() GoogleDnsManagedZonePrivateVisibilityConfigNetworksList
@@ -63,7 +65,9 @@ type GoogleDnsManagedZonePrivateVisibilityConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutGkeClusters(value interface{})
 	PutNetworks(value interface{})
+	ResetGkeClusters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -114,6 +118,26 @@ func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) F
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) GkeClusters() GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList {
+	var returns GoogleDnsManagedZonePrivateVisibilityConfigGkeClustersList
+	_jsii_.Get(
+		j,
+		"gkeClusters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) GkeClustersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gkeClustersInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +462,17 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) I
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) PutGkeClusters(value interface{}) {
+	if err := g.validatePutGkeClustersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGkeClusters",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) PutNetworks(value interface{}) {
 	if err := g.validatePutNetworksParameters(value); err != nil {
 		panic(err)
@@ -446,6 +481,14 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) P
 		g,
 		"putNetworks",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) ResetGkeClusters() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeClusters",
+		nil, // no parameters
 	)
 }
 

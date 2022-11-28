@@ -59,6 +59,9 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	LocalSsdCount() *float64
 	SetLocalSsdCount(val *float64)
 	LocalSsdCountInput() *float64
+	LoggingVariant() *string
+	SetLoggingVariant(val *string)
+	LoggingVariantInput() *string
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
@@ -151,6 +154,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetLabels()
 	ResetLinuxNodeConfig()
 	ResetLocalSsdCount()
+	ResetLoggingVariant()
 	ResetMachineType()
 	ResetMetadata()
 	ResetMinCpuPlatform()
@@ -465,6 +469,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) LocalSsdCoun
 	_jsii_.Get(
 		j,
 		"localSsdCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) LoggingVariant() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingVariant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) LoggingVariantInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingVariantInput",
 		&returns,
 	)
 	return returns
@@ -893,6 +917,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetLocalSsdCo
 	_jsii_.Set(
 		j,
 		"localSsdCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetLoggingVariant(val *string) {
+	if err := j.validateSetLoggingVariantParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loggingVariant",
 		val,
 	)
 }
@@ -1417,6 +1452,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetLocalSs
 	_jsii_.InvokeVoid(
 		g,
 		"resetLocalSsdCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetLoggingVariant() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoggingVariant",
 		nil, // no parameters
 	)
 }

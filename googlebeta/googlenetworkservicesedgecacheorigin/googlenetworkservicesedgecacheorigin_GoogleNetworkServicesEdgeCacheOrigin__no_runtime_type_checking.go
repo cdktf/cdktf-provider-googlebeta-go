@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validateOverrideLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validatePutAwsV4AuthenticationParameters(value *GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validatePutTimeoutParameters(value *GoogleNetworkServicesEdgeCacheOriginTimeout) error {
 	return nil
 }

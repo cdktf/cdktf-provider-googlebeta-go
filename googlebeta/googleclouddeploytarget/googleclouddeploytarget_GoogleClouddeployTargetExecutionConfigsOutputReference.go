@@ -28,6 +28,9 @@ type GoogleClouddeployTargetExecutionConfigsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	ExecutionTimeout() *string
+	SetExecutionTimeout(val *string)
+	ExecutionTimeoutInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -74,6 +77,7 @@ type GoogleClouddeployTargetExecutionConfigsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetArtifactStorage()
+	ResetExecutionTimeout()
 	ResetServiceAccount()
 	ResetWorkerPool()
 	// Produce the Token's value at resolution time.
@@ -136,6 +140,26 @@ func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) Creat
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) ExecutionTimeout() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) ExecutionTimeoutInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"executionTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -298,6 +322,17 @@ func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference)SetCom
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference)SetExecutionTimeout(val *string) {
+	if err := j.validateSetExecutionTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"executionTimeout",
 		val,
 	)
 }
@@ -558,6 +593,14 @@ func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) Reset
 	_jsii_.InvokeVoid(
 		g,
 		"resetArtifactStorage",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsOutputReference) ResetExecutionTimeout() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExecutionTimeout",
 		nil, // no parameters
 	)
 }

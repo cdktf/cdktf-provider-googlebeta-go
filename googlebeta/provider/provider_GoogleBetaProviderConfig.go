@@ -32,6 +32,8 @@ type GoogleBetaProviderConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#batching GoogleBetaProvider#batching}
 	Batching *GoogleBetaProviderBatching `field:"optional" json:"batching" yaml:"batching"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#beyondcorp_custom_endpoint GoogleBetaProvider#beyondcorp_custom_endpoint}.
+	BeyondcorpCustomEndpoint *string `field:"optional" json:"beyondcorpCustomEndpoint" yaml:"beyondcorpCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_analytics_hub_custom_endpoint GoogleBetaProvider#bigquery_analytics_hub_custom_endpoint}.
 	BigqueryAnalyticsHubCustomEndpoint *string `field:"optional" json:"bigqueryAnalyticsHubCustomEndpoint" yaml:"bigqueryAnalyticsHubCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#bigquery_connection_custom_endpoint GoogleBetaProvider#bigquery_connection_custom_endpoint}.
@@ -134,6 +136,8 @@ type GoogleBetaProviderConfig struct {
 	FilestoreCustomEndpoint *string `field:"optional" json:"filestoreCustomEndpoint" yaml:"filestoreCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_custom_endpoint GoogleBetaProvider#firebase_custom_endpoint}.
 	FirebaseCustomEndpoint *string `field:"optional" json:"firebaseCustomEndpoint" yaml:"firebaseCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_hosting_custom_endpoint GoogleBetaProvider#firebase_hosting_custom_endpoint}.
+	FirebaseHostingCustomEndpoint *string `field:"optional" json:"firebaseHostingCustomEndpoint" yaml:"firebaseHostingCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebaserules_custom_endpoint GoogleBetaProvider#firebaserules_custom_endpoint}.
 	FirebaserulesCustomEndpoint *string `field:"optional" json:"firebaserulesCustomEndpoint" yaml:"firebaserulesCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firestore_custom_endpoint GoogleBetaProvider#firestore_custom_endpoint}.

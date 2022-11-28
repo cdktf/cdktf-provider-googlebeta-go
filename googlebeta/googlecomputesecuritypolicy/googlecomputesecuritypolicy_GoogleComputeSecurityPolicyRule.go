@@ -20,6 +20,10 @@ type GoogleComputeSecurityPolicyRule struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#description GoogleComputeSecurityPolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// preconfigured_waf_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#preconfigured_waf_config GoogleComputeSecurityPolicy#preconfigured_waf_config}
+	PreconfiguredWafConfig *GoogleComputeSecurityPolicyRulePreconfiguredWafConfig `field:"optional" json:"preconfiguredWafConfig" yaml:"preconfiguredWafConfig"`
 	// When set to true, the action specified above is not enforced.
 	//
 	// Stackdriver logs for requests that trigger a preview action are annotated as such.

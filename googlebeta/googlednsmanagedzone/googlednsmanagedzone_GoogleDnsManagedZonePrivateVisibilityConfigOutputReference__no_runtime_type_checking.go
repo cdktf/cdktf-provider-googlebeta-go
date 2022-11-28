@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) validatePutGkeClustersParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZonePrivateVisibilityConfigOutputReference) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }

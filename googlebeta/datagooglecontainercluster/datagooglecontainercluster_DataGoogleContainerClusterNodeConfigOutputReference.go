@@ -41,6 +41,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	Labels() cdktf.StringMap
 	LinuxNodeConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigList
 	LocalSsdCount() *float64
+	LoggingVariant() *string
 	MachineType() *string
 	Metadata() cdktf.StringMap
 	MinCpuPlatform() *string
@@ -267,6 +268,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LocalSsd
 	_jsii_.Get(
 		j,
 		"localSsdCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LoggingVariant() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingVariant",
 		&returns,
 	)
 	return returns

@@ -18,6 +18,10 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#image_type GoogleContainerCluster#image_type}
 	ImageType *string `field:"optional" json:"imageType" yaml:"imageType"`
+	// management block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#management GoogleContainerCluster#management}
+	Management *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement `field:"optional" json:"management" yaml:"management"`
 	// Minimum CPU platform to be used by this instance.
 	//
 	// The instance may be scheduled on the specified or newer CPU platform. Applicable values are the friendly names of CPU platforms, such as Intel Haswell.
@@ -32,5 +36,9 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#service_account GoogleContainerCluster#service_account}
 	ServiceAccount *string `field:"optional" json:"serviceAccount" yaml:"serviceAccount"`
+	// shielded_instance_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#shielded_instance_config GoogleContainerCluster#shielded_instance_config}
+	ShieldedInstanceConfig *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig `field:"optional" json:"shieldedInstanceConfig" yaml:"shieldedInstanceConfig"`
 }
 

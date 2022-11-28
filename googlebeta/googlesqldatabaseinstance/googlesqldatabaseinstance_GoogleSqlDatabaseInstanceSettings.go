@@ -34,6 +34,10 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#collation GoogleSqlDatabaseInstance#collation}
 	Collation *string `field:"optional" json:"collation" yaml:"collation"`
+	// Specifies if connections must use Cloud SQL connectors.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#connector_enforcement GoogleSqlDatabaseInstance#connector_enforcement}
+	ConnectorEnforcement *string `field:"optional" json:"connectorEnforcement" yaml:"connectorEnforcement"`
 	// database_flags block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#database_flags GoogleSqlDatabaseInstance#database_flags}
@@ -86,7 +90,7 @@ type GoogleSqlDatabaseInstanceSettings struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#sql_server_audit_config GoogleSqlDatabaseInstance#sql_server_audit_config}
 	SqlServerAuditConfig *GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfig `field:"optional" json:"sqlServerAuditConfig" yaml:"sqlServerAuditConfig"`
-	// The timezone to be used by the database engine (supported only for SQL Server), in SQL Server timezone format.
+	// The time_zone to be used by the database engine (supported only for SQL Server), in SQL Server timezone format.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#time_zone GoogleSqlDatabaseInstance#time_zone}
 	TimeZone *string `field:"optional" json:"timeZone" yaml:"timeZone"`

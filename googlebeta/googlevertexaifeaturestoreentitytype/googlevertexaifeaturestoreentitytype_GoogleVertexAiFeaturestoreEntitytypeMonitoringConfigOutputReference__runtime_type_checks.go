@@ -90,6 +90,39 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validatePutCategoricalThresholdConfigParameters(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validatePutImportFeaturesAnalysisParameters(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validatePutNumericalThresholdConfigParameters(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) validatePutSnapshotAnalysisParameters(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

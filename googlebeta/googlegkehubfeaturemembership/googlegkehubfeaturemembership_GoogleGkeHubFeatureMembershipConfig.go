@@ -19,10 +19,6 @@ type GoogleGkeHubFeatureMembershipConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// configmanagement block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#configmanagement GoogleGkeHubFeatureMembership#configmanagement}
-	Configmanagement *GoogleGkeHubFeatureMembershipConfigmanagement `field:"required" json:"configmanagement" yaml:"configmanagement"`
 	// The name of the feature.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#feature GoogleGkeHubFeatureMembership#feature}
@@ -35,11 +31,19 @@ type GoogleGkeHubFeatureMembershipConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#membership GoogleGkeHubFeatureMembership#membership}
 	Membership *string `field:"required" json:"membership" yaml:"membership"`
+	// configmanagement block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#configmanagement GoogleGkeHubFeatureMembership#configmanagement}
+	Configmanagement *GoogleGkeHubFeatureMembershipConfigmanagement `field:"optional" json:"configmanagement" yaml:"configmanagement"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#id GoogleGkeHubFeatureMembership#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
+	// mesh block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#mesh GoogleGkeHubFeatureMembership#mesh}
+	Mesh *GoogleGkeHubFeatureMembershipMesh `field:"optional" json:"mesh" yaml:"mesh"`
 	// The project of the feature.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_hub_feature_membership#project GoogleGkeHubFeatureMembership#project}

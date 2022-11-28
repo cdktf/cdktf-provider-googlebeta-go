@@ -39,6 +39,8 @@ type GoogleDnsResponsePolicy interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GkeClusters() GoogleDnsResponsePolicyGkeClustersList
+	GkeClustersInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -99,9 +101,11 @@ type GoogleDnsResponsePolicy interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutGkeClusters(value interface{})
 	PutNetworks(value interface{})
 	PutTimeouts(value *GoogleDnsResponsePolicyTimeouts)
 	ResetDescription()
+	ResetGkeClusters()
 	ResetId()
 	ResetNetworks()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -219,6 +223,26 @@ func (j *jsiiProxy_GoogleDnsResponsePolicy) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsResponsePolicy) GkeClusters() GoogleDnsResponsePolicyGkeClustersList {
+	var returns GoogleDnsResponsePolicyGkeClustersList
+	_jsii_.Get(
+		j,
+		"gkeClusters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsResponsePolicy) GkeClustersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gkeClustersInput",
 		&returns,
 	)
 	return returns
@@ -809,6 +833,17 @@ func (g *jsiiProxy_GoogleDnsResponsePolicy) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (g *jsiiProxy_GoogleDnsResponsePolicy) PutGkeClusters(value interface{}) {
+	if err := g.validatePutGkeClustersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGkeClusters",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDnsResponsePolicy) PutNetworks(value interface{}) {
 	if err := g.validatePutNetworksParameters(value); err != nil {
 		panic(err)
@@ -835,6 +870,14 @@ func (g *jsiiProxy_GoogleDnsResponsePolicy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsResponsePolicy) ResetGkeClusters() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeClusters",
 		nil, // no parameters
 	)
 }

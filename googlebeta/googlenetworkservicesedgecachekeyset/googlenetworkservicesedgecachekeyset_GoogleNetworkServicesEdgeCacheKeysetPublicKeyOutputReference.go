@@ -32,6 +32,9 @@ type GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference interface {
 	IdInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Managed() interface{}
+	SetManaged(val interface{})
+	ManagedInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,8 @@ type GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetManaged()
+	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +152,26 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Managed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ManagedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"managedInput",
 		&returns,
 	)
 	return returns
@@ -260,6 +285,17 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference)
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference)SetManaged(val interface{}) {
+	if err := j.validateSetManagedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"managed",
 		val,
 	)
 }
@@ -481,6 +517,22 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference)
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ResetManaged() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManaged",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference) ResetValue() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetValue",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

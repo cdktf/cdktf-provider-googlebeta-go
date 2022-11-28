@@ -128,6 +128,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetL
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetLoggingVariantParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetMachineTypeParameters(val *string) error {
 	return nil
 }

@@ -68,6 +68,10 @@ type GoogleClouddeployTargetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#require_approval GoogleClouddeployTarget#require_approval}
 	RequireApproval interface{} `field:"optional" json:"requireApproval" yaml:"requireApproval"`
+	// run block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#run GoogleClouddeployTarget#run}
+	Run *GoogleClouddeployTargetRun `field:"optional" json:"run" yaml:"run"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#timeouts GoogleClouddeployTarget#timeouts}

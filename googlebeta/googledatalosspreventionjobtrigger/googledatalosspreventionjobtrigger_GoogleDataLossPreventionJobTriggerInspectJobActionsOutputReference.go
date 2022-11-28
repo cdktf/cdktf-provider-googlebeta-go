@@ -29,6 +29,8 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference interfac
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	PubSub() GoogleDataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference
+	PubSubInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub
 	SaveFindings() GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference
 	SaveFindingsInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings
 	// Experimental.
@@ -63,7 +65,10 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPubSub(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub)
 	PutSaveFindings(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings)
+	ResetPubSub()
+	ResetSaveFindings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -124,6 +129,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PubSub() GoogleDataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference
+	_jsii_.Get(
+		j,
+		"pubSub",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PubSubInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub {
+	var returns *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub
+	_jsii_.Get(
+		j,
+		"pubSubInput",
 		&returns,
 	)
 	return returns
@@ -438,6 +463,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPubSub(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub) {
+	if err := g.validatePutPubSubParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPubSub",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PutSaveFindings(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings) {
 	if err := g.validatePutSaveFindingsParameters(value); err != nil {
 		panic(err)
@@ -446,6 +482,22 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 		g,
 		"putSaveFindings",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetPubSub() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPubSub",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetSaveFindings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSaveFindings",
+		nil, // no parameters
 	)
 }
 

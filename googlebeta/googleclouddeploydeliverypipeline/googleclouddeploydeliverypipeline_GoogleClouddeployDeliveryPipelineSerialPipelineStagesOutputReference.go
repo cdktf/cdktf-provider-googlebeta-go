@@ -32,6 +32,8 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference interf
 	Profiles() *[]*string
 	SetProfiles(val *[]*string)
 	ProfilesInput() *[]*string
+	Strategy() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference
+	StrategyInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	TargetId() *string
 	SetTargetId(val *string)
 	TargetIdInput() *string
@@ -67,7 +69,9 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutStrategy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy)
 	ResetProfiles()
+	ResetStrategy()
 	ResetTargetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputRe
 	_jsii_.Get(
 		j,
 		"profilesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) Strategy() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference {
+	var returns GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference
+	_jsii_.Get(
+		j,
+		"strategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) StrategyInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy {
+	var returns *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
+	_jsii_.Get(
+		j,
+		"strategyInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +509,29 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputRe
 	return returns
 }
 
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) PutStrategy(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy) {
+	if err := g.validatePutStrategyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStrategy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) ResetProfiles() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProfiles",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesOutputReference) ResetStrategy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStrategy",
 		nil, // no parameters
 	)
 }

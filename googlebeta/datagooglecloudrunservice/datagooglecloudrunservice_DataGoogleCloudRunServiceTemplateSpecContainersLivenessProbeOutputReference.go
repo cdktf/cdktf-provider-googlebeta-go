@@ -28,6 +28,7 @@ type DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference
 	FailureThreshold() *float64
 	// Experimental.
 	Fqn() *string
+	Grpc() DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList
 	HttpGet() DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetList
 	InitialDelaySeconds() *float64
 	InternalValue() *DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbe
@@ -126,6 +127,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeO
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeOutputReference) Grpc() DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList {
+	var returns DataGoogleCloudRunServiceTemplateSpecContainersLivenessProbeGrpcList
+	_jsii_.Get(
+		j,
+		"grpc",
 		&returns,
 	)
 	return returns

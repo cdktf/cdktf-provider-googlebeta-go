@@ -30,6 +30,7 @@ type DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference
 	GcfsConfig() DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigList
 	InternalValue() *DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaults
 	SetInternalValue(val *DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaults)
+	LoggingVariant() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -132,6 +133,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsO
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) LoggingVariant() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingVariant",
 		&returns,
 	)
 	return returns

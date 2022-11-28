@@ -40,6 +40,8 @@ type GoogleBigqueryDatasetAccessOutputReference interface {
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
+	Routine() GoogleBigqueryDatasetAccessRoutineOutputReference
+	RoutineInput() *GoogleBigqueryDatasetAccessRoutine
 	SpecialGroup() *string
 	SetSpecialGroup(val *string)
 	SpecialGroupInput() *string
@@ -81,11 +83,13 @@ type GoogleBigqueryDatasetAccessOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDataset(value *GoogleBigqueryDatasetAccessDataset)
+	PutRoutine(value *GoogleBigqueryDatasetAccessRoutine)
 	PutView(value *GoogleBigqueryDatasetAccessView)
 	ResetDataset()
 	ResetDomain()
 	ResetGroupByEmail()
 	ResetRole()
+	ResetRoutine()
 	ResetSpecialGroup()
 	ResetUserByEmail()
 	ResetView()
@@ -229,6 +233,26 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) RoleInput() *stri
 	_jsii_.Get(
 		j,
 		"roleInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) Routine() GoogleBigqueryDatasetAccessRoutineOutputReference {
+	var returns GoogleBigqueryDatasetAccessRoutineOutputReference
+	_jsii_.Get(
+		j,
+		"routine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) RoutineInput() *GoogleBigqueryDatasetAccessRoutine {
+	var returns *GoogleBigqueryDatasetAccessRoutine
+	_jsii_.Get(
+		j,
+		"routineInput",
 		&returns,
 	)
 	return returns
@@ -649,6 +673,17 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) PutDataset(value 
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) PutRoutine(value *GoogleBigqueryDatasetAccessRoutine) {
+	if err := g.validatePutRoutineParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRoutine",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) PutView(value *GoogleBigqueryDatasetAccessView) {
 	if err := g.validatePutViewParameters(value); err != nil {
 		panic(err)
@@ -688,6 +723,14 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) ResetRole() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRole",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) ResetRoutine() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRoutine",
 		nil, // no parameters
 	)
 }

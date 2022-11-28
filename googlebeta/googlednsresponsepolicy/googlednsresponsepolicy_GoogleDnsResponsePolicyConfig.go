@@ -27,6 +27,10 @@ type GoogleDnsResponsePolicyConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#description GoogleDnsResponsePolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// gke_clusters block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#gke_clusters GoogleDnsResponsePolicy#gke_clusters}
+	GkeClusters interface{} `field:"optional" json:"gkeClusters" yaml:"gkeClusters"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_response_policy#id GoogleDnsResponsePolicy#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

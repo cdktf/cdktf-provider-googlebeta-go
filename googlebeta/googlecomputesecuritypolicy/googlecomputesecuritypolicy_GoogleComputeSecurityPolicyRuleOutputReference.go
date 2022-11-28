@@ -37,6 +37,8 @@ type GoogleComputeSecurityPolicyRuleOutputReference interface {
 	SetInternalValue(val interface{})
 	Match() GoogleComputeSecurityPolicyRuleMatchOutputReference
 	MatchInput() *GoogleComputeSecurityPolicyRuleMatch
+	PreconfiguredWafConfig() GoogleComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference
+	PreconfiguredWafConfigInput() *GoogleComputeSecurityPolicyRulePreconfiguredWafConfig
 	Preview() interface{}
 	SetPreview(val interface{})
 	PreviewInput() interface{}
@@ -80,9 +82,11 @@ type GoogleComputeSecurityPolicyRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutMatch(value *GoogleComputeSecurityPolicyRuleMatch)
+	PutPreconfiguredWafConfig(value *GoogleComputeSecurityPolicyRulePreconfiguredWafConfig)
 	PutRateLimitOptions(value *GoogleComputeSecurityPolicyRuleRateLimitOptions)
 	PutRedirectOptions(value *GoogleComputeSecurityPolicyRuleRedirectOptions)
 	ResetDescription()
+	ResetPreconfiguredWafConfig()
 	ResetPreview()
 	ResetRateLimitOptions()
 	ResetRedirectOptions()
@@ -206,6 +210,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) MatchInput() 
 	_jsii_.Get(
 		j,
 		"matchInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) PreconfiguredWafConfig() GoogleComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference {
+	var returns GoogleComputeSecurityPolicyRulePreconfiguredWafConfigOutputReference
+	_jsii_.Get(
+		j,
+		"preconfiguredWafConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) PreconfiguredWafConfigInput() *GoogleComputeSecurityPolicyRulePreconfiguredWafConfig {
+	var returns *GoogleComputeSecurityPolicyRulePreconfiguredWafConfig
+	_jsii_.Get(
+		j,
+		"preconfiguredWafConfigInput",
 		&returns,
 	)
 	return returns
@@ -635,6 +659,17 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) PutMatch(valu
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) PutPreconfiguredWafConfig(value *GoogleComputeSecurityPolicyRulePreconfiguredWafConfig) {
+	if err := g.validatePutPreconfiguredWafConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPreconfiguredWafConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) PutRateLimitOptions(value *GoogleComputeSecurityPolicyRuleRateLimitOptions) {
 	if err := g.validatePutRateLimitOptionsParameters(value); err != nil {
 		panic(err)
@@ -661,6 +696,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) ResetDescript
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) ResetPreconfiguredWafConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreconfiguredWafConfig",
 		nil, // no parameters
 	)
 }

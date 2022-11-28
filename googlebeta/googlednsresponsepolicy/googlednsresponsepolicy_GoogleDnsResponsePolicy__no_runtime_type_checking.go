@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleDnsResponsePolicy) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsResponsePolicy) validatePutGkeClustersParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsResponsePolicy) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }

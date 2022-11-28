@@ -10,6 +10,8 @@ import (
 
 type GoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface {
 	cdktf.ComplexObject
+	BlueGreenSettings() GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference
+	BlueGreenSettingsInput() *GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettings
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +37,9 @@ type GoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface {
 	MaxUnavailable() *float64
 	SetMaxUnavailable(val *float64)
 	MaxUnavailableInput() *float64
+	Strategy() *string
+	SetStrategy(val *string)
+	StrategyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +72,11 @@ type GoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBlueGreenSettings(value *GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettings)
+	ResetBlueGreenSettings()
+	ResetMaxSurge()
+	ResetMaxUnavailable()
+	ResetStrategy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +90,26 @@ type GoogleContainerClusterNodePoolUpgradeSettingsOutputReference interface {
 // The jsii proxy struct for GoogleContainerClusterNodePoolUpgradeSettingsOutputReference
 type jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) BlueGreenSettings() GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference {
+	var returns GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"blueGreenSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) BlueGreenSettingsInput() *GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettings {
+	var returns *GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettings
+	_jsii_.Get(
+		j,
+		"blueGreenSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -167,6 +197,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Get(
 		j,
 		"maxUnavailableInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) Strategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"strategy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) StrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"strategyInput",
 		&returns,
 	)
 	return returns
@@ -271,6 +321,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	_jsii_.Set(
 		j,
 		"maxUnavailable",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)SetStrategy(val *string) {
+	if err := j.validateSetStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"strategy",
 		val,
 	)
 }
@@ -481,6 +542,49 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) PutBlueGreenSettings(value *GoogleContainerClusterNodePoolUpgradeSettingsBlueGreenSettings) {
+	if err := g.validatePutBlueGreenSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBlueGreenSettings",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) ResetBlueGreenSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBlueGreenSettings",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) ResetMaxSurge() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxSurge",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) ResetMaxUnavailable() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxUnavailable",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) ResetStrategy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStrategy",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

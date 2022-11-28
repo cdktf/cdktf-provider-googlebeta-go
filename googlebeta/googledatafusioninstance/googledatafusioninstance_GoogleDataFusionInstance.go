@@ -37,6 +37,9 @@ type GoogleDataFusionInstance interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableRbac() interface{}
+	SetEnableRbac(val interface{})
+	EnableRbacInput() interface{}
 	EnableStackdriverLogging() interface{}
 	SetEnableStackdriverLogging(val interface{})
 	EnableStackdriverLoggingInput() interface{}
@@ -142,6 +145,7 @@ type GoogleDataFusionInstance interface {
 	ResetCryptoKeyConfig()
 	ResetDataprocServiceAccount()
 	ResetDescription()
+	ResetEnableRbac()
 	ResetEnableStackdriverLogging()
 	ResetEnableStackdriverMonitoring()
 	ResetId()
@@ -286,6 +290,26 @@ func (j *jsiiProxy_GoogleDataFusionInstance) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) EnableRbac() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRbac",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) EnableRbacInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableRbacInput",
 		&returns,
 	)
 	return returns
@@ -810,6 +834,17 @@ func (j *jsiiProxy_GoogleDataFusionInstance)SetDescription(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleDataFusionInstance)SetEnableRbac(val interface{}) {
+	if err := j.validateSetEnableRbacParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableRbac",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataFusionInstance)SetEnableStackdriverLogging(val interface{}) {
 	if err := j.validateSetEnableStackdriverLoggingParameters(val); err != nil {
 		panic(err)
@@ -1288,6 +1323,14 @@ func (g *jsiiProxy_GoogleDataFusionInstance) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstance) ResetEnableRbac() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableRbac",
 		nil, // no parameters
 	)
 }

@@ -84,6 +84,8 @@ type GoogleClouddeployTarget interface {
 	RequireApproval() interface{}
 	SetRequireApproval(val interface{})
 	RequireApprovalInput() interface{}
+	Run() GoogleClouddeployTargetRunOutputReference
+	RunInput() *GoogleClouddeployTargetRun
 	TargetId() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -123,6 +125,7 @@ type GoogleClouddeployTarget interface {
 	PutAnthosCluster(value *GoogleClouddeployTargetAnthosCluster)
 	PutExecutionConfigs(value interface{})
 	PutGke(value *GoogleClouddeployTargetGke)
+	PutRun(value *GoogleClouddeployTargetRun)
 	PutTimeouts(value *GoogleClouddeployTargetTimeouts)
 	ResetAnnotations()
 	ResetAnthosCluster()
@@ -136,6 +139,7 @@ type GoogleClouddeployTarget interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRequireApproval()
+	ResetRun()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -517,6 +521,26 @@ func (j *jsiiProxy_GoogleClouddeployTarget) RequireApprovalInput() interface{} {
 	_jsii_.Get(
 		j,
 		"requireApprovalInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTarget) Run() GoogleClouddeployTargetRunOutputReference {
+	var returns GoogleClouddeployTargetRunOutputReference
+	_jsii_.Get(
+		j,
+		"run",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTarget) RunInput() *GoogleClouddeployTargetRun {
+	var returns *GoogleClouddeployTargetRun
+	_jsii_.Get(
+		j,
+		"runInput",
 		&returns,
 	)
 	return returns
@@ -1084,6 +1108,17 @@ func (g *jsiiProxy_GoogleClouddeployTarget) PutGke(value *GoogleClouddeployTarge
 	)
 }
 
+func (g *jsiiProxy_GoogleClouddeployTarget) PutRun(value *GoogleClouddeployTargetRun) {
+	if err := g.validatePutRunParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRun",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployTarget) PutTimeouts(value *GoogleClouddeployTargetTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1171,6 +1206,14 @@ func (g *jsiiProxy_GoogleClouddeployTarget) ResetRequireApproval() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRequireApproval",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployTarget) ResetRun() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRun",
 		nil, // no parameters
 	)
 }

@@ -32,8 +32,8 @@ type GoogleCloudIdsEndpoint interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Endpoint() *string
 	EndpointForwardingRule() *string
+	EndpointIp() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -213,21 +213,21 @@ func (j *jsiiProxy_GoogleCloudIdsEndpoint) DescriptionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudIdsEndpoint) Endpoint() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"endpoint",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleCloudIdsEndpoint) EndpointForwardingRule() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"endpointForwardingRule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudIdsEndpoint) EndpointIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"endpointIp",
 		&returns,
 	)
 	return returns

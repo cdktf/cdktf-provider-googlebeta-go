@@ -33,6 +33,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectorEnforcement() *string
+	SetConnectorEnforcement(val *string)
+	ConnectorEnforcementInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -127,6 +130,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetAvailabilityType()
 	ResetBackupConfiguration()
 	ResetCollation()
+	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
 	ResetDiskAutoresize()
 	ResetDiskAutoresizeLimit()
@@ -271,6 +275,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ComplexObje
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectorEnforcement() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectorEnforcement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectorEnforcementInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectorEnforcementInput",
 		&returns,
 	)
 	return returns
@@ -719,6 +743,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetComplexOb
 	)
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetConnectorEnforcement(val *string) {
+	if err := j.validateSetConnectorEnforcementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectorEnforcement",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDiskAutoresize(val interface{}) {
 	if err := j.validateSetDiskAutoresizeParameters(val); err != nil {
 		panic(err)
@@ -1161,6 +1196,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetCollat
 	_jsii_.InvokeVoid(
 		g,
 		"resetCollation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetConnectorEnforcement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnectorEnforcement",
 		nil, // no parameters
 	)
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetDescriptionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableRbacParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataFusionInstance) validateSetEnableStackdriverLoggingParameters(val interface{}) error {
 	return nil
 }

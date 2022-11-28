@@ -41,6 +41,8 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputRefer
 	ImageTypeInput() *string
 	InternalValue() *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults
 	SetInternalValue(val *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults)
+	Management() GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference
+	ManagementInput() *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement
 	MinCpuPlatform() *string
 	SetMinCpuPlatform(val *string)
 	MinCpuPlatformInput() *string
@@ -50,6 +52,8 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputRefer
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	ShieldedInstanceConfig() GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference
+	ShieldedInstanceConfigInput() *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -82,13 +86,17 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutManagement(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement)
+	PutShieldedInstanceConfig(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig)
 	ResetBootDiskKmsKey()
 	ResetDiskSize()
 	ResetDiskType()
 	ResetImageType()
+	ResetManagement()
 	ResetMinCpuPlatform()
 	ResetOauthScopes()
 	ResetServiceAccount()
+	ResetShieldedInstanceConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -234,6 +242,26 @@ func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) Management() GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference {
+	var returns GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference
+	_jsii_.Get(
+		j,
+		"management",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ManagementInput() *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement {
+	var returns *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement
+	_jsii_.Get(
+		j,
+		"managementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) MinCpuPlatform() *string {
 	var returns *string
 	_jsii_.Get(
@@ -289,6 +317,26 @@ func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	_jsii_.Get(
 		j,
 		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ShieldedInstanceConfig() GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference {
+	var returns GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ShieldedInstanceConfigInput() *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig {
+	var returns *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -660,6 +708,28 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) PutManagement(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement) {
+	if err := g.validatePutManagementParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManagement",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) PutShieldedInstanceConfig(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig) {
+	if err := g.validatePutShieldedInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetBootDiskKmsKey() {
 	_jsii_.InvokeVoid(
 		g,
@@ -692,6 +762,14 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetManagement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagement",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetMinCpuPlatform() {
 	_jsii_.InvokeVoid(
 		g,
@@ -712,6 +790,14 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	_jsii_.InvokeVoid(
 		g,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetShieldedInstanceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetShieldedInstanceConfig",
 		nil, // no parameters
 	)
 }

@@ -67,6 +67,9 @@ type GoogleComputeRouterInterface interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RedundantInterface() *string
+	SetRedundantInterface(val *string)
+	RedundantInterfaceInput() *string
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -117,6 +120,7 @@ type GoogleComputeRouterInterface interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRedundantInterface()
 	ResetRegion()
 	ResetTimeouts()
 	ResetVpnTunnel()
@@ -360,6 +364,26 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface) RedundantInterface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redundantInterface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface) RedundantInterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"redundantInterfaceInput",
 		&returns,
 	)
 	return returns
@@ -621,6 +645,17 @@ func (j *jsiiProxy_GoogleComputeRouterInterface)SetProvisioners(val *[]interface
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface)SetRedundantInterface(val *string) {
+	if err := j.validateSetRedundantInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"redundantInterface",
 		val,
 	)
 }
@@ -971,6 +1006,14 @@ func (g *jsiiProxy_GoogleComputeRouterInterface) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterInterface) ResetRedundantInterface() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRedundantInterface",
 		nil, // no parameters
 	)
 }

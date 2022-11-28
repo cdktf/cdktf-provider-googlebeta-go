@@ -44,6 +44,14 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validatePutManagementParameters(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validatePutShieldedInstanceConfigParameters(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

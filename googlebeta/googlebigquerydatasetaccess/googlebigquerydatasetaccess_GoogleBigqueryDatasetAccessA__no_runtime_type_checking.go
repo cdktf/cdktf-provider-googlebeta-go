@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validatePutDatasetParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validatePutRoutineParameters(value *GoogleBigqueryDatasetAccessRoutineA) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) validatePutTimeoutsParameters(value *GoogleBigqueryDatasetAccessTimeouts) error {
 	return nil
 }

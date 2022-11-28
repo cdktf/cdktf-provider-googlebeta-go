@@ -68,6 +68,7 @@ type GoogleVertexAiFeaturestoreEntitytype interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -372,6 +373,16 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) RawOverrides() interfac
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytype) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
 		&returns,
 	)
 	return returns

@@ -54,6 +54,8 @@ type GoogleGkeHubFeatureMembership interface {
 	Membership() *string
 	SetMembership(val *string)
 	MembershipInput() *string
+	Mesh() GoogleGkeHubFeatureMembershipMeshOutputReference
+	MeshInput() *GoogleGkeHubFeatureMembershipMesh
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -103,8 +105,11 @@ type GoogleGkeHubFeatureMembership interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutConfigmanagement(value *GoogleGkeHubFeatureMembershipConfigmanagement)
+	PutMesh(value *GoogleGkeHubFeatureMembershipMesh)
 	PutTimeouts(value *GoogleGkeHubFeatureMembershipTimeouts)
+	ResetConfigmanagement()
 	ResetId()
+	ResetMesh()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -310,6 +315,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembership) MembershipInput() *string {
 	_jsii_.Get(
 		j,
 		"membershipInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembership) Mesh() GoogleGkeHubFeatureMembershipMeshOutputReference {
+	var returns GoogleGkeHubFeatureMembershipMeshOutputReference
+	_jsii_.Get(
+		j,
+		"mesh",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembership) MeshInput() *GoogleGkeHubFeatureMembershipMesh {
+	var returns *GoogleGkeHubFeatureMembershipMesh
+	_jsii_.Get(
+		j,
+		"meshInput",
 		&returns,
 	)
 	return returns
@@ -852,6 +877,17 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembership) PutConfigmanagement(value *Goo
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembership) PutMesh(value *GoogleGkeHubFeatureMembershipMesh) {
+	if err := g.validatePutMeshParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMesh",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembership) PutTimeouts(value *GoogleGkeHubFeatureMembershipTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -863,10 +899,26 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembership) PutTimeouts(value *GoogleGkeHu
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembership) ResetConfigmanagement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConfigmanagement",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembership) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureMembership) ResetMesh() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMesh",
 		nil, // no parameters
 	)
 }

@@ -68,6 +68,14 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotA
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference) validateSetMonitoringIntervalDaysParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference) validateSetStalenessDaysParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

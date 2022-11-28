@@ -14,6 +14,10 @@ type GoogleEventarcTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Channel() *string
+	SetChannel(val *string)
+	ChannelInput() *string
+	Conditions() cdktf.StringMap
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -117,6 +121,7 @@ type GoogleEventarcTrigger interface {
 	PutMatchingCriteria(value interface{})
 	PutTimeouts(value *GoogleEventarcTriggerTimeouts)
 	PutTransport(value *GoogleEventarcTriggerTransport)
+	ResetChannel()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -146,6 +151,36 @@ func (j *jsiiProxy_GoogleEventarcTrigger) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleEventarcTrigger) Channel() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channel",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleEventarcTrigger) ChannelInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"channelInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleEventarcTrigger) Conditions() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"conditions",
 		&returns,
 	)
 	return returns
@@ -568,6 +603,17 @@ func NewGoogleEventarcTrigger_Override(g GoogleEventarcTrigger, scope constructs
 		"@cdktf/provider-google-beta.googleEventarcTrigger.GoogleEventarcTrigger",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleEventarcTrigger)SetChannel(val *string) {
+	if err := j.validateSetChannelParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"channel",
+		val,
 	)
 }
 
@@ -1009,6 +1055,14 @@ func (g *jsiiProxy_GoogleEventarcTrigger) PutTransport(value *GoogleEventarcTrig
 		g,
 		"putTransport",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleEventarcTrigger) ResetChannel() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetChannel",
+		nil, // no parameters
 	)
 }
 

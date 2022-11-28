@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetProvisionersParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetRedundantInterfaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetRegionParameters(val *string) error {
 	return nil
 }

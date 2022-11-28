@@ -31,6 +31,9 @@ type GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference int
 	GcfsConfigInput() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig
 	InternalValue() *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults
 	SetInternalValue(val *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaults)
+	LoggingVariant() *string
+	SetLoggingVariant(val *string)
+	LoggingVariantInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,6 +68,7 @@ type GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference int
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGcfsConfig(value *GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig)
 	ResetGcfsConfig()
+	ResetLoggingVariant()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -150,6 +154,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) LoggingVariant() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingVariant",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) LoggingVariantInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"loggingVariantInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -227,6 +251,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference)SetLoggingVariant(val *string) {
+	if err := j.validateSetLoggingVariantParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"loggingVariant",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"resetGcfsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference) ResetLoggingVariant() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoggingVariant",
 		nil, // no parameters
 	)
 }

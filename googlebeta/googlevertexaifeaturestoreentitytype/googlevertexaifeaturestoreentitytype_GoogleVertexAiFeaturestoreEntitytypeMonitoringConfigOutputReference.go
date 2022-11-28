@@ -10,6 +10,8 @@ import (
 
 type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interface {
 	cdktf.ComplexObject
+	CategoricalThresholdConfig() GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference
+	CategoricalThresholdConfigInput() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -27,8 +29,12 @@ type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	ImportFeaturesAnalysis() GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference
+	ImportFeaturesAnalysisInput() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis
 	InternalValue() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfig
 	SetInternalValue(val *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfig)
+	NumericalThresholdConfig() GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference
+	NumericalThresholdConfigInput() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig
 	SnapshotAnalysis() GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysisOutputReference
 	SnapshotAnalysisInput() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis
 	// Experimental.
@@ -63,7 +69,13 @@ type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interfa
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCategoricalThresholdConfig(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig)
+	PutImportFeaturesAnalysis(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis)
+	PutNumericalThresholdConfig(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig)
 	PutSnapshotAnalysis(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis)
+	ResetCategoricalThresholdConfig()
+	ResetImportFeaturesAnalysis()
+	ResetNumericalThresholdConfig()
 	ResetSnapshotAnalysis()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -78,6 +90,26 @@ type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interfa
 // The jsii proxy struct for GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference
 type jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) CategoricalThresholdConfig() GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference {
+	var returns GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"categoricalThresholdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) CategoricalThresholdConfigInput() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig {
+	var returns *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig
+	_jsii_.Get(
+		j,
+		"categoricalThresholdConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -120,11 +152,51 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ImportFeaturesAnalysis() GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference {
+	var returns GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysisOutputReference
+	_jsii_.Get(
+		j,
+		"importFeaturesAnalysis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ImportFeaturesAnalysisInput() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis {
+	var returns *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis
+	_jsii_.Get(
+		j,
+		"importFeaturesAnalysisInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) InternalValue() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfig {
 	var returns *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) NumericalThresholdConfig() GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference {
+	var returns GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"numericalThresholdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) NumericalThresholdConfigInput() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig {
+	var returns *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig
+	_jsii_.Get(
+		j,
+		"numericalThresholdConfigInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +511,39 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	return returns
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) PutCategoricalThresholdConfig(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig) {
+	if err := g.validatePutCategoricalThresholdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCategoricalThresholdConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) PutImportFeaturesAnalysis(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis) {
+	if err := g.validatePutImportFeaturesAnalysisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putImportFeaturesAnalysis",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) PutNumericalThresholdConfig(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig) {
+	if err := g.validatePutNumericalThresholdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNumericalThresholdConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) PutSnapshotAnalysis(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigSnapshotAnalysis) {
 	if err := g.validatePutSnapshotAnalysisParameters(value); err != nil {
 		panic(err)
@@ -447,6 +552,30 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 		g,
 		"putSnapshotAnalysis",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ResetCategoricalThresholdConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCategoricalThresholdConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ResetImportFeaturesAnalysis() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetImportFeaturesAnalysis",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) ResetNumericalThresholdConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNumericalThresholdConfig",
+		nil, // no parameters
 	)
 }
 

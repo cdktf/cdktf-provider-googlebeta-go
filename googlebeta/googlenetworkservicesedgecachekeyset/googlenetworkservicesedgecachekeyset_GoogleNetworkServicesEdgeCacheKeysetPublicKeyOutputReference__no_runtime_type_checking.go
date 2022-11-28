@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference) validateSetManagedParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeysetPublicKeyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

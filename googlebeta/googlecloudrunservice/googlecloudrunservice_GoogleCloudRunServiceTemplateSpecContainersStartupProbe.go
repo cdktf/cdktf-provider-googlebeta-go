@@ -6,6 +6,10 @@ type GoogleCloudRunServiceTemplateSpecContainersStartupProbe struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#failure_threshold GoogleCloudRunService#failure_threshold}
 	FailureThreshold *float64 `field:"optional" json:"failureThreshold" yaml:"failureThreshold"`
+	// grpc block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#grpc GoogleCloudRunService#grpc}
+	Grpc *GoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpc `field:"optional" json:"grpc" yaml:"grpc"`
 	// http_get block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_service#http_get GoogleCloudRunService#http_get}

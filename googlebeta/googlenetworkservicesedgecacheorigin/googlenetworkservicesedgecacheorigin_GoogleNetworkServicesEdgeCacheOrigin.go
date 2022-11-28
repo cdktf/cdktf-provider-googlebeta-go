@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_origin google_network_services_edge_cache_origin}.
 type GoogleNetworkServicesEdgeCacheOrigin interface {
 	cdktf.TerraformResource
+	AwsV4Authentication() GoogleNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
+	AwsV4AuthenticationInput() *GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -120,8 +122,10 @@ type GoogleNetworkServicesEdgeCacheOrigin interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAwsV4Authentication(value *GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication)
 	PutTimeout(value *GoogleNetworkServicesEdgeCacheOriginTimeout)
 	PutTimeouts(value *GoogleNetworkServicesEdgeCacheOriginTimeouts)
+	ResetAwsV4Authentication()
 	ResetDescription()
 	ResetFailoverOrigin()
 	ResetId()
@@ -149,6 +153,26 @@ type GoogleNetworkServicesEdgeCacheOrigin interface {
 // The jsii proxy struct for GoogleNetworkServicesEdgeCacheOrigin
 type jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) AwsV4Authentication() GoogleNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference {
+	var returns GoogleNetworkServicesEdgeCacheOriginAwsV4AuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"awsV4Authentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) AwsV4AuthenticationInput() *GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication {
+	var returns *GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication
+	_jsii_.Get(
+		j,
+		"awsV4AuthenticationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) CdktfStack() cdktf.TerraformStack {
@@ -1053,6 +1077,17 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) OverrideLogicalId(newLo
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) PutAwsV4Authentication(value *GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication) {
+	if err := g.validatePutAwsV4AuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAwsV4Authentication",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) PutTimeout(value *GoogleNetworkServicesEdgeCacheOriginTimeout) {
 	if err := g.validatePutTimeoutParameters(value); err != nil {
 		panic(err)
@@ -1072,6 +1107,14 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) PutTimeouts(value *Goog
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) ResetAwsV4Authentication() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAwsV4Authentication",
+		nil, // no parameters
 	)
 }
 
