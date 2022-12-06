@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) validatePutCmekSettingsParameters(value *GoogleLoggingProjectBucketConfigCmekSettings) error {
+	return nil
+}
+
 func validateGoogleLoggingProjectBucketConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

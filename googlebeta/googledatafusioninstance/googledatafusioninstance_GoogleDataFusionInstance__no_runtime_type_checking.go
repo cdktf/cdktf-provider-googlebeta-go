@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataFusionInstance) validatePutCryptoKeyConfigParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstance) validatePutEventPublishConfigParameters(value *GoogleDataFusionInstanceEventPublishConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstance) validatePutNetworkConfigParameters(value *GoogleDataFusionInstanceNetworkConfig) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetDataprocServiceAccountPa
 }
 
 func (j *jsiiProxy_GoogleDataFusionInstance) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }
 
@@ -141,6 +149,10 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetTypeParameters(val *stri
 }
 
 func (j *jsiiProxy_GoogleDataFusionInstance) validateSetVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetZoneParameters(val *string) error {
 	return nil
 }
 

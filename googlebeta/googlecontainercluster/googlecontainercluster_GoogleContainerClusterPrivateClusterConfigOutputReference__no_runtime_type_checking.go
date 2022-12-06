@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetPrivateEndpointSubnetworkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

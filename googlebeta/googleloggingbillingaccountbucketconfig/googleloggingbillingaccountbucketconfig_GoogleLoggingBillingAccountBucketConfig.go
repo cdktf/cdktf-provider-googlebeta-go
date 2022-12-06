@@ -20,6 +20,8 @@ type GoogleLoggingBillingAccountBucketConfig interface {
 	BucketIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CmekSettings() GoogleLoggingBillingAccountBucketConfigCmekSettingsOutputReference
+	CmekSettingsInput() *GoogleLoggingBillingAccountBucketConfigCmekSettings
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -103,6 +105,8 @@ type GoogleLoggingBillingAccountBucketConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCmekSettings(value *GoogleLoggingBillingAccountBucketConfigCmekSettings)
+	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -169,6 +173,26 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) CdktfStack() cdktf.T
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) CmekSettings() GoogleLoggingBillingAccountBucketConfigCmekSettingsOutputReference {
+	var returns GoogleLoggingBillingAccountBucketConfigCmekSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"cmekSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) CmekSettingsInput() *GoogleLoggingBillingAccountBucketConfigCmekSettings {
+	var returns *GoogleLoggingBillingAccountBucketConfigCmekSettings
+	_jsii_.Get(
+		j,
+		"cmekSettingsInput",
 		&returns,
 	)
 	return returns
@@ -848,6 +872,25 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) OverrideLogicalId(ne
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) PutCmekSettings(value *GoogleLoggingBillingAccountBucketConfigCmekSettings) {
+	if err := g.validatePutCmekSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCmekSettings",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) ResetCmekSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCmekSettings",
+		nil, // no parameters
 	)
 }
 

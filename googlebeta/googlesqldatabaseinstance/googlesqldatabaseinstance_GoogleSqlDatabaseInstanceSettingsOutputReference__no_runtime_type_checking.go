@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutDenyMaintenancePeriodParameters(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) validatePutInsightsConfigParameters(value *GoogleSqlDatabaseInstanceSettingsInsightsConfig) error {
 	return nil
 }

@@ -230,6 +230,14 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetPrivateEndpointSubnetworkParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

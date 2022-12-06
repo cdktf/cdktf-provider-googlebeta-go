@@ -31,6 +31,10 @@ type GoogleLoggingBillingAccountBucketConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_billing_account_bucket_config#location GoogleLoggingBillingAccountBucketConfig#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
+	// cmek_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_billing_account_bucket_config#cmek_settings GoogleLoggingBillingAccountBucketConfig#cmek_settings}
+	CmekSettings *GoogleLoggingBillingAccountBucketConfigCmekSettings `field:"optional" json:"cmekSettings" yaml:"cmekSettings"`
 	// An optional description for this bucket.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_billing_account_bucket_config#description GoogleLoggingBillingAccountBucketConfig#description}

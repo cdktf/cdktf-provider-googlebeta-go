@@ -54,6 +54,9 @@ type GoogleComputeRouterInterface interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PrivateIpAddress() *string
+	SetPrivateIpAddress(val *string)
+	PrivateIpAddressInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -76,6 +79,9 @@ type GoogleComputeRouterInterface interface {
 	Router() *string
 	SetRouter(val *string)
 	RouterInput() *string
+	Subnetwork() *string
+	SetSubnetwork(val *string)
+	SubnetworkInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -119,9 +125,11 @@ type GoogleComputeRouterInterface interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateIpAddress()
 	ResetProject()
 	ResetRedundantInterface()
 	ResetRegion()
+	ResetSubnetwork()
 	ResetTimeouts()
 	ResetVpnTunnel()
 	SynthesizeAttributes() *map[string]interface{}
@@ -319,6 +327,26 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterInterface) PrivateIpAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface) PrivateIpAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privateIpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterInterface) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -424,6 +452,26 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) RouterInput() *string {
 	_jsii_.Get(
 		j,
 		"routerInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface) Subnetwork() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface) SubnetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"subnetworkInput",
 		&returns,
 	)
 	return returns
@@ -619,6 +667,17 @@ func (j *jsiiProxy_GoogleComputeRouterInterface)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRouterInterface)SetPrivateIpAddress(val *string) {
+	if err := j.validateSetPrivateIpAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateIpAddress",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRouterInterface)SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
@@ -678,6 +737,17 @@ func (j *jsiiProxy_GoogleComputeRouterInterface)SetRouter(val *string) {
 	_jsii_.Set(
 		j,
 		"router",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface)SetSubnetwork(val *string) {
+	if err := j.validateSetSubnetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subnetwork",
 		val,
 	)
 }
@@ -1002,6 +1072,14 @@ func (g *jsiiProxy_GoogleComputeRouterInterface) ResetOverrideLogicalId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterInterface) ResetPrivateIpAddress() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateIpAddress",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterInterface) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1022,6 +1100,14 @@ func (g *jsiiProxy_GoogleComputeRouterInterface) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterInterface) ResetSubnetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubnetwork",
 		nil, // no parameters
 	)
 }

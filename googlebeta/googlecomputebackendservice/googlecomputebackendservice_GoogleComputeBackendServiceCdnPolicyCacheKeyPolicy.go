@@ -6,6 +6,10 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#include_host GoogleComputeBackendService#include_host}
 	IncludeHost interface{} `field:"optional" json:"includeHost" yaml:"includeHost"`
+	// Allows HTTP request headers (by name) to be used in the cache key.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#include_http_headers GoogleComputeBackendService#include_http_headers}
+	IncludeHttpHeaders *[]*string `field:"optional" json:"includeHttpHeaders" yaml:"includeHttpHeaders"`
 	// Names of cookies to include in cache keys.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_backend_service#include_named_cookies GoogleComputeBackendService#include_named_cookies}

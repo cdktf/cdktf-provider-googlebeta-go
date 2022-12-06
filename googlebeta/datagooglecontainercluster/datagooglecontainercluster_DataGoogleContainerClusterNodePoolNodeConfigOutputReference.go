@@ -49,6 +49,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	OauthScopes() *[]*string
 	Preemptible() cdktf.IResolvable
 	ReservationAffinity() DataGoogleContainerClusterNodePoolNodeConfigReservationAffinityList
+	ResourceLabels() cdktf.StringMap
 	SandboxConfig() DataGoogleContainerClusterNodePoolNodeConfigSandboxConfigList
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList
@@ -348,6 +349,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"reservationAffinity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) ResourceLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"resourceLabels",
 		&returns,
 	)
 	return returns

@@ -50,6 +50,10 @@ type GoogleDataFusionInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#description GoogleDataFusionInstance#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Display name for an instance.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#display_name GoogleDataFusionInstance#display_name}
+	DisplayName *string `field:"optional" json:"displayName" yaml:"displayName"`
 	// Option to enable granular role-based access control.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#enable_rbac GoogleDataFusionInstance#enable_rbac}
@@ -62,6 +66,10 @@ type GoogleDataFusionInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#enable_stackdriver_monitoring GoogleDataFusionInstance#enable_stackdriver_monitoring}
 	EnableStackdriverMonitoring interface{} `field:"optional" json:"enableStackdriverMonitoring" yaml:"enableStackdriverMonitoring"`
+	// event_publish_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#event_publish_config GoogleDataFusionInstance#event_publish_config}
+	EventPublishConfig *GoogleDataFusionInstanceEventPublishConfig `field:"optional" json:"eventPublishConfig" yaml:"eventPublishConfig"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#id GoogleDataFusionInstance#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
@@ -101,5 +109,9 @@ type GoogleDataFusionInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#version GoogleDataFusionInstance#version}
 	Version *string `field:"optional" json:"version" yaml:"version"`
+	// Name of the zone in which the Data Fusion instance will be created. Only DEVELOPER instances use this field.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#zone GoogleDataFusionInstance#zone}
+	Zone *string `field:"optional" json:"zone" yaml:"zone"`
 }
 

@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validateSetEnablePrivateNodesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validateSetInternalValueParameters(val *GoogleContainerNodePoolNetworkConfig) error {
 	return nil
 }

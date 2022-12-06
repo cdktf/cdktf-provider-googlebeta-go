@@ -20,11 +20,15 @@ type GoogleComputeRegionUrlMapDefaultRouteActionOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	CorsPolicy() GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference
+	CorsPolicyInput() *GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FaultInjectionPolicy() GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference
+	FaultInjectionPolicyInput() *GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComputeRegionUrlMapDefaultRouteAction
@@ -41,6 +45,10 @@ type GoogleComputeRegionUrlMapDefaultRouteActionOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Timeout() GoogleComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference
+	TimeoutInput() *GoogleComputeRegionUrlMapDefaultRouteActionTimeout
+	UrlRewrite() GoogleComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference
+	UrlRewriteInput() *GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite
 	WeightedBackendServices() GoogleComputeRegionUrlMapDefaultRouteActionWeightedBackendServicesList
 	WeightedBackendServicesInput() interface{}
 	// Experimental.
@@ -67,11 +75,19 @@ type GoogleComputeRegionUrlMapDefaultRouteActionOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCorsPolicy(value *GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy)
+	PutFaultInjectionPolicy(value *GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy)
 	PutRequestMirrorPolicy(value *GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy)
 	PutRetryPolicy(value *GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicy)
+	PutTimeout(value *GoogleComputeRegionUrlMapDefaultRouteActionTimeout)
+	PutUrlRewrite(value *GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite)
 	PutWeightedBackendServices(value interface{})
+	ResetCorsPolicy()
+	ResetFaultInjectionPolicy()
 	ResetRequestMirrorPolicy()
 	ResetRetryPolicy()
+	ResetTimeout()
+	ResetUrlRewrite()
 	ResetWeightedBackendServices()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,11 +124,51 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) C
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) CorsPolicy() GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference {
+	var returns GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"corsPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) CorsPolicyInput() *GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy {
+	var returns *GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy
+	_jsii_.Get(
+		j,
+		"corsPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) FaultInjectionPolicy() GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference {
+	var returns GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"faultInjectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) FaultInjectionPolicyInput() *GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy {
+	var returns *GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy
+	_jsii_.Get(
+		j,
+		"faultInjectionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -193,6 +249,46 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) T
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) Timeout() GoogleComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference {
+	var returns GoogleComputeRegionUrlMapDefaultRouteActionTimeoutOutputReference
+	_jsii_.Get(
+		j,
+		"timeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) TimeoutInput() *GoogleComputeRegionUrlMapDefaultRouteActionTimeout {
+	var returns *GoogleComputeRegionUrlMapDefaultRouteActionTimeout
+	_jsii_.Get(
+		j,
+		"timeoutInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) UrlRewrite() GoogleComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference {
+	var returns GoogleComputeRegionUrlMapDefaultRouteActionUrlRewriteOutputReference
+	_jsii_.Get(
+		j,
+		"urlRewrite",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) UrlRewriteInput() *GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite {
+	var returns *GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite
+	_jsii_.Get(
+		j,
+		"urlRewriteInput",
 		&returns,
 	)
 	return returns
@@ -487,6 +583,28 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) I
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) PutCorsPolicy(value *GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy) {
+	if err := g.validatePutCorsPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCorsPolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) PutFaultInjectionPolicy(value *GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy) {
+	if err := g.validatePutFaultInjectionPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFaultInjectionPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) PutRequestMirrorPolicy(value *GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy) {
 	if err := g.validatePutRequestMirrorPolicyParameters(value); err != nil {
 		panic(err)
@@ -509,6 +627,28 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) P
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) PutTimeout(value *GoogleComputeRegionUrlMapDefaultRouteActionTimeout) {
+	if err := g.validatePutTimeoutParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTimeout",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) PutUrlRewrite(value *GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite) {
+	if err := g.validatePutUrlRewriteParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUrlRewrite",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) PutWeightedBackendServices(value interface{}) {
 	if err := g.validatePutWeightedBackendServicesParameters(value); err != nil {
 		panic(err)
@@ -517,6 +657,22 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) P
 		g,
 		"putWeightedBackendServices",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) ResetCorsPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCorsPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) ResetFaultInjectionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFaultInjectionPolicy",
+		nil, // no parameters
 	)
 }
 
@@ -532,6 +688,22 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetRetryPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) ResetTimeout() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimeout",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) ResetUrlRewrite() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUrlRewrite",
 		nil, // no parameters
 	)
 }

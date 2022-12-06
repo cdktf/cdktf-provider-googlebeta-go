@@ -92,6 +92,10 @@ type GoogleContainerClusterNodePoolNodeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#reservation_affinity GoogleContainerCluster#reservation_affinity}
 	ReservationAffinity *GoogleContainerClusterNodePoolNodeConfigReservationAffinity `field:"optional" json:"reservationAffinity" yaml:"reservationAffinity"`
+	// The GCE resource labels (a map of key/value pairs) to be applied to the node pool.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#resource_labels GoogleContainerCluster#resource_labels}
+	ResourceLabels *map[string]*string `field:"optional" json:"resourceLabels" yaml:"resourceLabels"`
 	// sandbox_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#sandbox_config GoogleContainerCluster#sandbox_config}

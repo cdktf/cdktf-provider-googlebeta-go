@@ -30,6 +30,9 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference interface
 	IncludeHost() interface{}
 	SetIncludeHost(val interface{})
 	IncludeHostInput() interface{}
+	IncludeHttpHeaders() *[]*string
+	SetIncludeHttpHeaders(val *[]*string)
+	IncludeHttpHeadersInput() *[]*string
 	IncludeNamedCookies() *[]*string
 	SetIncludeNamedCookies(val *[]*string)
 	IncludeNamedCookiesInput() *[]*string
@@ -80,6 +83,7 @@ type GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetIncludeHost()
+	ResetIncludeHttpHeaders()
 	ResetIncludeNamedCookies()
 	ResetIncludeProtocol()
 	ResetIncludeQueryString()
@@ -155,6 +159,26 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Get(
 		j,
 		"includeHostInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeHttpHeaders() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeHttpHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) IncludeHttpHeadersInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeHttpHeadersInput",
 		&returns,
 	)
 	return returns
@@ -347,6 +371,17 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.Set(
 		j,
 		"includeHost",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference)SetIncludeHttpHeaders(val *[]*string) {
+	if err := j.validateSetIncludeHttpHeadersParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeHttpHeaders",
 		val,
 	)
 }
@@ -629,6 +664,14 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"resetIncludeHost",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) ResetIncludeHttpHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIncludeHttpHeaders",
 		nil, // no parameters
 	)
 }

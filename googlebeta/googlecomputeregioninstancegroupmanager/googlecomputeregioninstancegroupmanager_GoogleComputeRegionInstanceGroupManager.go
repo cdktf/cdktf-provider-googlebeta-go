@@ -61,6 +61,9 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListManagedInstancesResults() *string
+	SetListManagedInstancesResults(val *string)
+	ListManagedInstancesResultsInput() *string
 	Name() *string
 	SetName(val *string)
 	NamedPort() GoogleComputeRegionInstanceGroupManagerNamedPortList
@@ -150,6 +153,7 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	ResetDistributionPolicyTargetShape()
 	ResetDistributionPolicyZones()
 	ResetId()
+	ResetListManagedInstancesResults()
 	ResetNamedPort()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -423,6 +427,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) Lifecycle() *cdktf.T
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ListManagedInstancesResults() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listManagedInstancesResults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ListManagedInstancesResultsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listManagedInstancesResultsInput",
 		&returns,
 	)
 	return returns
@@ -885,6 +909,17 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetLifecycle(val *cdk
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager)SetListManagedInstancesResults(val *string) {
+	if err := j.validateSetListManagedInstancesResultsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listManagedInstancesResults",
 		val,
 	)
 }
@@ -1372,6 +1407,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetListManagedInstancesResults() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetListManagedInstancesResults",
 		nil, // no parameters
 	)
 }

@@ -28,6 +28,9 @@ type GoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnablePrivateNodes() interface{}
+	SetEnablePrivateNodes(val interface{})
+	EnablePrivateNodesInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterNodePoolNetworkConfig
@@ -71,7 +74,9 @@ type GoogleContainerClusterNodePoolNetworkConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreatePodRange()
+	ResetEnablePrivateNodes()
 	ResetPodIpv4CidrBlock()
+	ResetPodRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -132,6 +137,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) C
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) EnablePrivateNodes() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) EnablePrivateNodesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateNodesInput",
 		&returns,
 	)
 	return returns
@@ -274,6 +299,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference)Se
 	_jsii_.Set(
 		j,
 		"createPodRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference)SetEnablePrivateNodes(val interface{}) {
+	if err := j.validateSetEnablePrivateNodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrivateNodes",
 		val,
 	)
 }
@@ -527,10 +563,26 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) R
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) ResetEnablePrivateNodes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnablePrivateNodes",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) ResetPodIpv4CidrBlock() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPodIpv4CidrBlock",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigOutputReference) ResetPodRange() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPodRange",
 		nil, // no parameters
 	)
 }

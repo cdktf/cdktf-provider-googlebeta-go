@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetLifecycle
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetListManagedInstancesResultsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateSetNameParameters(val *string) error {
 	return nil
 }

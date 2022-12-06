@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetGcpPublicCidrsAccessEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetInternalValueParameters(val *GoogleContainerClusterMasterAuthorizedNetworksConfig) error {
 	return nil
 }

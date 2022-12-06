@@ -12,6 +12,7 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance google_data_fusion_instance}.
 type GoogleDataFusionInstance interface {
 	cdktf.TerraformResource
+	ApiEndpoint() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -37,6 +38,9 @@ type GoogleDataFusionInstance interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
 	EnableRbac() interface{}
 	SetEnableRbac(val interface{})
 	EnableRbacInput() interface{}
@@ -46,6 +50,8 @@ type GoogleDataFusionInstance interface {
 	EnableStackdriverMonitoring() interface{}
 	SetEnableStackdriverMonitoring(val interface{})
 	EnableStackdriverMonitoringInput() interface{}
+	EventPublishConfig() GoogleDataFusionInstanceEventPublishConfigOutputReference
+	EventPublishConfigInput() *GoogleDataFusionInstanceEventPublishConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -75,6 +81,7 @@ type GoogleDataFusionInstance interface {
 	Options() *map[string]*string
 	SetOptions(val *map[string]*string)
 	OptionsInput() *map[string]*string
+	P4ServiceAccount() *string
 	PrivateInstance() interface{}
 	SetPrivateInstance(val interface{})
 	PrivateInstanceInput() interface{}
@@ -114,6 +121,9 @@ type GoogleDataFusionInstance interface {
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
+	Zone() *string
+	SetZone(val *string)
+	ZoneInput() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -140,14 +150,17 @@ type GoogleDataFusionInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutCryptoKeyConfig(value *GoogleDataFusionInstanceCryptoKeyConfig)
+	PutEventPublishConfig(value *GoogleDataFusionInstanceEventPublishConfig)
 	PutNetworkConfig(value *GoogleDataFusionInstanceNetworkConfig)
 	PutTimeouts(value *GoogleDataFusionInstanceTimeouts)
 	ResetCryptoKeyConfig()
 	ResetDataprocServiceAccount()
 	ResetDescription()
+	ResetDisplayName()
 	ResetEnableRbac()
 	ResetEnableStackdriverLogging()
 	ResetEnableStackdriverMonitoring()
+	ResetEventPublishConfig()
 	ResetId()
 	ResetLabels()
 	ResetNetworkConfig()
@@ -160,6 +173,7 @@ type GoogleDataFusionInstance interface {
 	ResetRegion()
 	ResetTimeouts()
 	ResetVersion()
+	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -173,6 +187,16 @@ type GoogleDataFusionInstance interface {
 // The jsii proxy struct for GoogleDataFusionInstance
 type jsiiProxy_GoogleDataFusionInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) ApiEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiEndpoint",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataFusionInstance) CdktfStack() cdktf.TerraformStack {
@@ -295,6 +319,26 @@ func (j *jsiiProxy_GoogleDataFusionInstance) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataFusionInstance) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataFusionInstance) EnableRbac() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -350,6 +394,26 @@ func (j *jsiiProxy_GoogleDataFusionInstance) EnableStackdriverMonitoringInput() 
 	_jsii_.Get(
 		j,
 		"enableStackdriverMonitoringInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) EventPublishConfig() GoogleDataFusionInstanceEventPublishConfigOutputReference {
+	var returns GoogleDataFusionInstanceEventPublishConfigOutputReference
+	_jsii_.Get(
+		j,
+		"eventPublishConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) EventPublishConfigInput() *GoogleDataFusionInstanceEventPublishConfig {
+	var returns *GoogleDataFusionInstanceEventPublishConfig
+	_jsii_.Get(
+		j,
+		"eventPublishConfigInput",
 		&returns,
 	)
 	return returns
@@ -510,6 +574,16 @@ func (j *jsiiProxy_GoogleDataFusionInstance) OptionsInput() *map[string]*string 
 	_jsii_.Get(
 		j,
 		"optionsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) P4ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"p4ServiceAccount",
 		&returns,
 	)
 	return returns
@@ -755,6 +829,26 @@ func (j *jsiiProxy_GoogleDataFusionInstance) VersionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataFusionInstance) Zone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) ZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"zoneInput",
+		&returns,
+	)
+	return returns
+}
+
 
 // Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance google_data_fusion_instance} Resource.
 func NewGoogleDataFusionInstance(scope constructs.Construct, id *string, config *GoogleDataFusionInstanceConfig) GoogleDataFusionInstance {
@@ -830,6 +924,17 @@ func (j *jsiiProxy_GoogleDataFusionInstance)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
 		val,
 	)
 }
@@ -1000,6 +1105,17 @@ func (j *jsiiProxy_GoogleDataFusionInstance)SetVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"version",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance)SetZone(val *string) {
+	if err := j.validateSetZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"zone",
 		val,
 	)
 }
@@ -1281,6 +1397,17 @@ func (g *jsiiProxy_GoogleDataFusionInstance) PutCryptoKeyConfig(value *GoogleDat
 	)
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstance) PutEventPublishConfig(value *GoogleDataFusionInstanceEventPublishConfig) {
+	if err := g.validatePutEventPublishConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEventPublishConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstance) PutNetworkConfig(value *GoogleDataFusionInstanceNetworkConfig) {
 	if err := g.validatePutNetworkConfigParameters(value); err != nil {
 		panic(err)
@@ -1327,6 +1454,14 @@ func (g *jsiiProxy_GoogleDataFusionInstance) ResetDescription() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstance) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstance) ResetEnableRbac() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1347,6 +1482,14 @@ func (g *jsiiProxy_GoogleDataFusionInstance) ResetEnableStackdriverMonitoring() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableStackdriverMonitoring",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstance) ResetEventPublishConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEventPublishConfig",
 		nil, // no parameters
 	)
 }
@@ -1427,6 +1570,14 @@ func (g *jsiiProxy_GoogleDataFusionInstance) ResetVersion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetVersion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstance) ResetZone() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetZone",
 		nil, // no parameters
 	)
 }

@@ -44,11 +44,27 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutCorsPolicyParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutFaultInjectionPolicyParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutRequestMirrorPolicyParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy) error {
 	return nil
 }
 
 func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutRetryPolicyParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicy) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutTimeoutParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionTimeout) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutUrlRewriteParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite) error {
 	return nil
 }
 

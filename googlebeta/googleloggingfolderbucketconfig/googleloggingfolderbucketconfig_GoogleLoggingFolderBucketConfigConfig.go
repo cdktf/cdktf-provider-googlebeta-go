@@ -31,6 +31,10 @@ type GoogleLoggingFolderBucketConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_folder_bucket_config#location GoogleLoggingFolderBucketConfig#location}
 	Location *string `field:"required" json:"location" yaml:"location"`
+	// cmek_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_folder_bucket_config#cmek_settings GoogleLoggingFolderBucketConfig#cmek_settings}
+	CmekSettings *GoogleLoggingFolderBucketConfigCmekSettings `field:"optional" json:"cmekSettings" yaml:"cmekSettings"`
 	// An optional description for this bucket.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_folder_bucket_config#description GoogleLoggingFolderBucketConfig#description}

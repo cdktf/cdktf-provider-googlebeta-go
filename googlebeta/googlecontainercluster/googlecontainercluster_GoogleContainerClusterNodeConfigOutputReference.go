@@ -82,6 +82,9 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	PreemptibleInput() interface{}
 	ReservationAffinity() GoogleContainerClusterNodeConfigReservationAffinityOutputReference
 	ReservationAffinityInput() *GoogleContainerClusterNodeConfigReservationAffinity
+	ResourceLabels() *map[string]*string
+	SetResourceLabels(val *map[string]*string)
+	ResourceLabelsInput() *map[string]*string
 	SandboxConfig() GoogleContainerClusterNodeConfigSandboxConfigOutputReference
 	SandboxConfigInput() *GoogleContainerClusterNodeConfigSandboxConfig
 	ServiceAccount() *string
@@ -162,6 +165,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetOauthScopes()
 	ResetPreemptible()
 	ResetReservationAffinity()
+	ResetResourceLabels()
 	ResetSandboxConfig()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
@@ -634,6 +638,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ReservationA
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResourceLabels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResourceLabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"resourceLabelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) SandboxConfig() GoogleContainerClusterNodeConfigSandboxConfigOutputReference {
 	var returns GoogleContainerClusterNodeConfigSandboxConfigOutputReference
 	_jsii_.Get(
@@ -994,6 +1018,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetPreemptibl
 	_jsii_.Set(
 		j,
 		"preemptible",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetResourceLabels(val *map[string]*string) {
+	if err := j.validateSetResourceLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"resourceLabels",
 		val,
 	)
 }
@@ -1516,6 +1551,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetReserva
 	_jsii_.InvokeVoid(
 		g,
 		"resetReservationAffinity",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetResourceLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourceLabels",
 		nil, // no parameters
 	)
 }

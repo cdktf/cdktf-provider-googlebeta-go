@@ -20,6 +20,9 @@ type GoogleGkeHubFeatureMembershipMeshOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ControlPlane() *string
+	SetControlPlane(val *string)
+	ControlPlaneInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -64,6 +67,7 @@ type GoogleGkeHubFeatureMembershipMeshOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetControlPlane()
 	ResetManagement()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -95,6 +99,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference) ComplexObje
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference) ControlPlane() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controlPlane",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference) ControlPlaneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controlPlaneInput",
 		&returns,
 	)
 	return returns
@@ -216,6 +240,17 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference)SetComplexOb
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference)SetControlPlane(val *string) {
+	if err := j.validateSetControlPlaneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"controlPlane",
 		val,
 	)
 }
@@ -448,6 +483,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference) Interpolati
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference) ResetControlPlane() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetControlPlane",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference) ResetManagement() {

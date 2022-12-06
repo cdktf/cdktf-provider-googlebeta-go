@@ -55,6 +55,9 @@ type GoogleComputeInstanceGroupManager interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	ListManagedInstancesResults() *string
+	SetListManagedInstancesResults(val *string)
+	ListManagedInstancesResultsInput() *string
 	Name() *string
 	SetName(val *string)
 	NamedPort() GoogleComputeInstanceGroupManagerNamedPortList
@@ -143,6 +146,7 @@ type GoogleComputeInstanceGroupManager interface {
 	ResetAutoHealingPolicies()
 	ResetDescription()
 	ResetId()
+	ResetListManagedInstancesResults()
 	ResetNamedPort()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -376,6 +380,26 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) Lifecycle() *cdktf.Terrafo
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ListManagedInstancesResults() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listManagedInstancesResults",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) ListManagedInstancesResultsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"listManagedInstancesResultsInput",
 		&returns,
 	)
 	return returns
@@ -826,6 +850,17 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetLifecycle(val *cdktf.Ter
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager)SetListManagedInstancesResults(val *string) {
+	if err := j.validateSetListManagedInstancesResultsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"listManagedInstancesResults",
 		val,
 	)
 }
@@ -1297,6 +1332,14 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetListManagedInstancesResults() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetListManagedInstancesResults",
 		nil, // no parameters
 	)
 }

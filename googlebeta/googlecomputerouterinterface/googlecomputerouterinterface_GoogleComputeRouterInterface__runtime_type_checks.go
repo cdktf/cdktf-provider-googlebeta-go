@@ -219,6 +219,14 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetPrivateIpAddressParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetProjectParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -290,6 +298,14 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetRegionParameters(val
 }
 
 func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetRouterParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetSubnetworkParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

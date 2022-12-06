@@ -17,6 +17,8 @@ type GoogleLoggingProjectBucketConfig interface {
 	BucketIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CmekSettings() GoogleLoggingProjectBucketConfigCmekSettingsOutputReference
+	CmekSettingsInput() *GoogleLoggingProjectBucketConfigCmekSettings
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -103,6 +105,8 @@ type GoogleLoggingProjectBucketConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCmekSettings(value *GoogleLoggingProjectBucketConfigCmekSettings)
+	ResetCmekSettings()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -149,6 +153,26 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) CdktfStack() cdktf.Terrafor
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) CmekSettings() GoogleLoggingProjectBucketConfigCmekSettingsOutputReference {
+	var returns GoogleLoggingProjectBucketConfigCmekSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"cmekSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) CmekSettingsInput() *GoogleLoggingProjectBucketConfigCmekSettings {
+	var returns *GoogleLoggingProjectBucketConfigCmekSettings
+	_jsii_.Get(
+		j,
+		"cmekSettingsInput",
 		&returns,
 	)
 	return returns
@@ -848,6 +872,25 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) OverrideLogicalId(newLogica
 		g,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) PutCmekSettings(value *GoogleLoggingProjectBucketConfigCmekSettings) {
+	if err := g.validatePutCmekSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCmekSettings",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ResetCmekSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCmekSettings",
+		nil, // no parameters
 	)
 }
 

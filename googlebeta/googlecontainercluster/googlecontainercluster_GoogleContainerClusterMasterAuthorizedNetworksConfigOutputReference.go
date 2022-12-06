@@ -29,6 +29,9 @@ type GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference interfa
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GcpPublicCidrsAccessEnabled() interface{}
+	SetGcpPublicCidrsAccessEnabled(val interface{})
+	GcpPublicCidrsAccessEnabledInput() interface{}
 	InternalValue() *GoogleContainerClusterMasterAuthorizedNetworksConfig
 	SetInternalValue(val *GoogleContainerClusterMasterAuthorizedNetworksConfig)
 	// Experimental.
@@ -65,6 +68,7 @@ type GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference interfa
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCidrBlocks(value interface{})
 	ResetCidrBlocks()
+	ResetGcpPublicCidrsAccessEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -135,6 +139,26 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) GcpPublicCidrsAccessEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gcpPublicCidrsAccessEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) GcpPublicCidrsAccessEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"gcpPublicCidrsAccessEnabledInput",
 		&returns,
 	)
 	return returns
@@ -216,6 +240,17 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference)SetGcpPublicCidrsAccessEnabled(val interface{}) {
+	if err := j.validateSetGcpPublicCidrsAccessEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gcpPublicCidrsAccessEnabled",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	_jsii_.InvokeVoid(
 		g,
 		"resetCidrBlocks",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) ResetGcpPublicCidrsAccessEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGcpPublicCidrsAccessEnabled",
 		nil, // no parameters
 	)
 }

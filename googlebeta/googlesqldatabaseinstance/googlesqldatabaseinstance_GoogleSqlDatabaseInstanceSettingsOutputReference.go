@@ -43,6 +43,8 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseFlags() GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
 	DatabaseFlagsInput() interface{}
+	DenyMaintenancePeriod() GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference
+	DenyMaintenancePeriodInput() *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod
 	DiskAutoresize() interface{}
 	SetDiskAutoresize(val interface{})
 	DiskAutoresizeInput() interface{}
@@ -119,6 +121,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	PutActiveDirectoryConfig(value *GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig)
 	PutBackupConfiguration(value *GoogleSqlDatabaseInstanceSettingsBackupConfiguration)
 	PutDatabaseFlags(value interface{})
+	PutDenyMaintenancePeriod(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod)
 	PutInsightsConfig(value *GoogleSqlDatabaseInstanceSettingsInsightsConfig)
 	PutIpConfiguration(value *GoogleSqlDatabaseInstanceSettingsIpConfiguration)
 	PutLocationPreference(value *GoogleSqlDatabaseInstanceSettingsLocationPreference)
@@ -132,6 +135,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetCollation()
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
+	ResetDenyMaintenancePeriod()
 	ResetDiskAutoresize()
 	ResetDiskAutoresizeLimit()
 	ResetDiskSize()
@@ -325,6 +329,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DatabaseFla
 	_jsii_.Get(
 		j,
 		"databaseFlagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DenyMaintenancePeriod() GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference {
+	var returns GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference
+	_jsii_.Get(
+		j,
+		"denyMaintenancePeriod",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DenyMaintenancePeriodInput() *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod {
+	var returns *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod
+	_jsii_.Get(
+		j,
+		"denyMaintenancePeriodInput",
 		&returns,
 	)
 	return returns
@@ -1094,6 +1118,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDatabase
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDenyMaintenancePeriod(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod) {
+	if err := g.validatePutDenyMaintenancePeriodParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDenyMaintenancePeriod",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutInsightsConfig(value *GoogleSqlDatabaseInstanceSettingsInsightsConfig) {
 	if err := g.validatePutInsightsConfigParameters(value); err != nil {
 		panic(err)
@@ -1212,6 +1247,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDataba
 	_jsii_.InvokeVoid(
 		g,
 		"resetDatabaseFlags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDenyMaintenancePeriod() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDenyMaintenancePeriod",
 		nil, // no parameters
 	)
 }

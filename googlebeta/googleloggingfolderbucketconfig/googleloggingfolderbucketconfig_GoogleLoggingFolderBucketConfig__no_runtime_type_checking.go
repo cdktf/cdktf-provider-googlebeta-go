@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingFolderBucketConfig) validatePutCmekSettingsParameters(value *GoogleLoggingFolderBucketConfigCmekSettings) error {
+	return nil
+}
+
 func validateGoogleLoggingFolderBucketConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

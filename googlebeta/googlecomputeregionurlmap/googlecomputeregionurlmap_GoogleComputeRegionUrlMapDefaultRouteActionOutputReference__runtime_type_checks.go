@@ -90,6 +90,28 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutCorsPolicyParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionCorsPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutFaultInjectionPolicyParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionFaultInjectionPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutRequestMirrorPolicyParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionRequestMirrorPolicy) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -102,6 +124,28 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) v
 }
 
 func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutRetryPolicyParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionRetryPolicy) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutTimeoutParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionTimeout) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapDefaultRouteActionOutputReference) validatePutUrlRewriteParameters(value *GoogleComputeRegionUrlMapDefaultRouteActionUrlRewrite) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

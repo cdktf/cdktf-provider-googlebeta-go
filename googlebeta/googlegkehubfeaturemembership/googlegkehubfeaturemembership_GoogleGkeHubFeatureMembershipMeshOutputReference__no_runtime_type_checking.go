@@ -56,6 +56,10 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference) validateSetControlPlaneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipMeshOutputReference) validateSetInternalValueParameters(val *GoogleGkeHubFeatureMembershipMesh) error {
 	return nil
 }

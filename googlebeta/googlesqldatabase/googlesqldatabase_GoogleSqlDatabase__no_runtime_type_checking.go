@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleSqlDatabase) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabase) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -27,6 +27,9 @@ type GoogleBigtableGcPolicy interface {
 	Count() *float64
 	// Experimental.
 	SetCount(val *float64)
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -110,6 +113,7 @@ type GoogleBigtableGcPolicy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMaxAge(value *GoogleBigtableGcPolicyMaxAge)
 	PutMaxVersion(value interface{})
+	ResetDeletionPolicy()
 	ResetGcRules()
 	ResetId()
 	ResetMaxAge()
@@ -189,6 +193,26 @@ func (j *jsiiProxy_GoogleBigtableGcPolicy) Count() *float64 {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableGcPolicy) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableGcPolicy) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -530,6 +554,17 @@ func (j *jsiiProxy_GoogleBigtableGcPolicy)SetCount(val *float64) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigtableGcPolicy)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -931,6 +966,14 @@ func (g *jsiiProxy_GoogleBigtableGcPolicy) PutMaxVersion(value interface{}) {
 		g,
 		"putMaxVersion",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigtableGcPolicy) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionPolicy",
+		nil, // no parameters
 	)
 }
 

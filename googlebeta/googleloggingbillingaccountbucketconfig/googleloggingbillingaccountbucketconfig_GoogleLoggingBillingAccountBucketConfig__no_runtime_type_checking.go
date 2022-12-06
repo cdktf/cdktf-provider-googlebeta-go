@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateOverrideLogi
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validatePutCmekSettingsParameters(value *GoogleLoggingBillingAccountBucketConfigCmekSettings) error {
+	return nil
+}
+
 func validateGoogleLoggingBillingAccountBucketConfig_IsConstructParameters(x interface{}) error {
 	return nil
 }

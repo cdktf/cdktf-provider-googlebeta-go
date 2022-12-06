@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetPrivateIpAddressParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetProjectParameters(val *string) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetRegionParameters(val
 }
 
 func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetRouterParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface) validateSetSubnetworkParameters(val *string) error {
 	return nil
 }
 

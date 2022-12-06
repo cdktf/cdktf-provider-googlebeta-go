@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetLifecycleParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetListManagedInstancesResultsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceGroupManager) validateSetNameParameters(val *string) error {
 	return nil
 }

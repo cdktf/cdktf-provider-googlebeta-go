@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputRefer
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeHttpHeadersParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference) validateSetIncludeNamedCookiesParameters(val *[]*string) error {
 	return nil
 }
