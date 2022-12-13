@@ -27,6 +27,10 @@ type GoogleStorageBucketConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket#name GoogleStorageBucket#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// autoclass block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket#autoclass GoogleStorageBucket#autoclass}
+	Autoclass *GoogleStorageBucketAutoclass `field:"optional" json:"autoclass" yaml:"autoclass"`
 	// cors block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket#cors GoogleStorageBucket#cors}

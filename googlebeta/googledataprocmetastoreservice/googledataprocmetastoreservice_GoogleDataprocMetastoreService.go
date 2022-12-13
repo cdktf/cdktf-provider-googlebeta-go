@@ -65,6 +65,8 @@ type GoogleDataprocMetastoreService interface {
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
+	NetworkConfig() GoogleDataprocMetastoreServiceNetworkConfigOutputReference
+	NetworkConfigInput() *GoogleDataprocMetastoreServiceNetworkConfig
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
@@ -133,6 +135,7 @@ type GoogleDataprocMetastoreService interface {
 	PutHiveMetastoreConfig(value *GoogleDataprocMetastoreServiceHiveMetastoreConfig)
 	PutMaintenanceWindow(value *GoogleDataprocMetastoreServiceMaintenanceWindow)
 	PutMetadataIntegration(value *GoogleDataprocMetastoreServiceMetadataIntegration)
+	PutNetworkConfig(value *GoogleDataprocMetastoreServiceNetworkConfig)
 	PutTimeouts(value *GoogleDataprocMetastoreServiceTimeouts)
 	ResetDatabaseType()
 	ResetEncryptionConfig()
@@ -143,6 +146,7 @@ type GoogleDataprocMetastoreService interface {
 	ResetMaintenanceWindow()
 	ResetMetadataIntegration()
 	ResetNetwork()
+	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -451,6 +455,26 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) Network() *string {
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) NetworkConfig() GoogleDataprocMetastoreServiceNetworkConfigOutputReference {
+	var returns GoogleDataprocMetastoreServiceNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) NetworkConfigInput() *GoogleDataprocMetastoreServiceNetworkConfig {
+	var returns *GoogleDataprocMetastoreServiceNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
 		&returns,
 	)
 	return returns
@@ -1201,6 +1225,17 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) PutMetadataIntegration(value 
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) PutNetworkConfig(value *GoogleDataprocMetastoreServiceNetworkConfig) {
+	if err := g.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreService) PutTimeouts(value *GoogleDataprocMetastoreServiceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1280,6 +1315,14 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetNetwork() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

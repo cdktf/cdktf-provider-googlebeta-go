@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleStorageBucket) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) validatePutAutoclassParameters(value *GoogleStorageBucketAutoclass) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) validatePutCorsParameters(value interface{}) error {
 	return nil
 }

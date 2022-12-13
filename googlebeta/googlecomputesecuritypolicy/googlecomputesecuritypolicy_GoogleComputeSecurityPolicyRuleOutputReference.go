@@ -33,6 +33,8 @@ type GoogleComputeSecurityPolicyRuleOutputReference interface {
 	DescriptionInput() *string
 	// Experimental.
 	Fqn() *string
+	HeaderAction() GoogleComputeSecurityPolicyRuleHeaderActionOutputReference
+	HeaderActionInput() *GoogleComputeSecurityPolicyRuleHeaderAction
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Match() GoogleComputeSecurityPolicyRuleMatchOutputReference
@@ -81,11 +83,13 @@ type GoogleComputeSecurityPolicyRuleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHeaderAction(value *GoogleComputeSecurityPolicyRuleHeaderAction)
 	PutMatch(value *GoogleComputeSecurityPolicyRuleMatch)
 	PutPreconfiguredWafConfig(value *GoogleComputeSecurityPolicyRulePreconfiguredWafConfig)
 	PutRateLimitOptions(value *GoogleComputeSecurityPolicyRuleRateLimitOptions)
 	PutRedirectOptions(value *GoogleComputeSecurityPolicyRuleRedirectOptions)
 	ResetDescription()
+	ResetHeaderAction()
 	ResetPreconfiguredWafConfig()
 	ResetPreview()
 	ResetRateLimitOptions()
@@ -180,6 +184,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) Fqn() *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) HeaderAction() GoogleComputeSecurityPolicyRuleHeaderActionOutputReference {
+	var returns GoogleComputeSecurityPolicyRuleHeaderActionOutputReference
+	_jsii_.Get(
+		j,
+		"headerAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) HeaderActionInput() *GoogleComputeSecurityPolicyRuleHeaderAction {
+	var returns *GoogleComputeSecurityPolicyRuleHeaderAction
+	_jsii_.Get(
+		j,
+		"headerActionInput",
 		&returns,
 	)
 	return returns
@@ -648,6 +672,17 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) Interpolation
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) PutHeaderAction(value *GoogleComputeSecurityPolicyRuleHeaderAction) {
+	if err := g.validatePutHeaderActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHeaderAction",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) PutMatch(value *GoogleComputeSecurityPolicyRuleMatch) {
 	if err := g.validatePutMatchParameters(value); err != nil {
 		panic(err)
@@ -696,6 +731,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) ResetDescript
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) ResetHeaderAction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHeaderAction",
 		nil, // no parameters
 	)
 }

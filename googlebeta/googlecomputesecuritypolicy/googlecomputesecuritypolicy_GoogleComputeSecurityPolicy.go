@@ -69,6 +69,8 @@ type GoogleComputeSecurityPolicy interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RecaptchaOptionsConfig() GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference
+	RecaptchaOptionsConfigInput() *GoogleComputeSecurityPolicyRecaptchaOptionsConfig
 	Rule() GoogleComputeSecurityPolicyRuleList
 	RuleInput() interface{}
 	SelfLink() *string
@@ -110,6 +112,7 @@ type GoogleComputeSecurityPolicy interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAdaptiveProtectionConfig(value *GoogleComputeSecurityPolicyAdaptiveProtectionConfig)
 	PutAdvancedOptionsConfig(value *GoogleComputeSecurityPolicyAdvancedOptionsConfig)
+	PutRecaptchaOptionsConfig(value *GoogleComputeSecurityPolicyRecaptchaOptionsConfig)
 	PutRule(value interface{})
 	PutTimeouts(value *GoogleComputeSecurityPolicyTimeouts)
 	ResetAdaptiveProtectionConfig()
@@ -120,6 +123,7 @@ type GoogleComputeSecurityPolicy interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRecaptchaOptionsConfig()
 	ResetRule()
 	ResetTimeouts()
 	ResetType()
@@ -393,6 +397,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicy) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicy) RecaptchaOptionsConfig() GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference {
+	var returns GoogleComputeSecurityPolicyRecaptchaOptionsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"recaptchaOptionsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicy) RecaptchaOptionsConfigInput() *GoogleComputeSecurityPolicyRecaptchaOptionsConfig {
+	var returns *GoogleComputeSecurityPolicyRecaptchaOptionsConfig
+	_jsii_.Get(
+		j,
+		"recaptchaOptionsConfigInput",
 		&returns,
 	)
 	return returns
@@ -936,6 +960,17 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicy) PutAdvancedOptionsConfig(value *
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicy) PutRecaptchaOptionsConfig(value *GoogleComputeSecurityPolicyRecaptchaOptionsConfig) {
+	if err := g.validatePutRecaptchaOptionsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRecaptchaOptionsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicy) PutRule(value interface{}) {
 	if err := g.validatePutRuleParameters(value); err != nil {
 		panic(err)
@@ -1002,6 +1037,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicy) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicy) ResetRecaptchaOptionsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRecaptchaOptionsConfig",
 		nil, // no parameters
 	)
 }

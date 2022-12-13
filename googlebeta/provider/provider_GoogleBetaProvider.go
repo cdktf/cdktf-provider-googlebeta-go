@@ -125,6 +125,9 @@ type GoogleBetaProvider interface {
 	CloudRunCustomEndpoint() *string
 	SetCloudRunCustomEndpoint(val *string)
 	CloudRunCustomEndpointInput() *string
+	CloudRunV2CustomEndpoint() *string
+	SetCloudRunV2CustomEndpoint(val *string)
+	CloudRunV2CustomEndpointInput() *string
 	CloudSchedulerCustomEndpoint() *string
 	SetCloudSchedulerCustomEndpoint(val *string)
 	CloudSchedulerCustomEndpointInput() *string
@@ -217,6 +220,9 @@ type GoogleBetaProvider interface {
 	FirebaserulesCustomEndpoint() *string
 	SetFirebaserulesCustomEndpoint(val *string)
 	FirebaserulesCustomEndpointInput() *string
+	FirebaseStorageCustomEndpoint() *string
+	SetFirebaseStorageCustomEndpoint(val *string)
+	FirebaseStorageCustomEndpointInput() *string
 	FirestoreCustomEndpoint() *string
 	SetFirestoreCustomEndpoint(val *string)
 	FirestoreCustomEndpointInput() *string
@@ -227,6 +233,9 @@ type GoogleBetaProvider interface {
 	GameServicesCustomEndpoint() *string
 	SetGameServicesCustomEndpoint(val *string)
 	GameServicesCustomEndpointInput() *string
+	GkeBackupCustomEndpoint() *string
+	SetGkeBackupCustomEndpoint(val *string)
+	GkeBackupCustomEndpointInput() *string
 	GkeHubCustomEndpoint() *string
 	SetGkeHubCustomEndpoint(val *string)
 	GkeHubCustomEndpointInput() *string
@@ -452,6 +461,7 @@ type GoogleBetaProvider interface {
 	ResetCloudIotCustomEndpoint()
 	ResetCloudResourceManagerCustomEndpoint()
 	ResetCloudRunCustomEndpoint()
+	ResetCloudRunV2CustomEndpoint()
 	ResetCloudSchedulerCustomEndpoint()
 	ResetCloudTasksCustomEndpoint()
 	ResetComposerCustomEndpoint()
@@ -482,8 +492,10 @@ type GoogleBetaProvider interface {
 	ResetFirebaseCustomEndpoint()
 	ResetFirebaseHostingCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
+	ResetFirebaseStorageCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
 	ResetGameServicesCustomEndpoint()
+	ResetGkeBackupCustomEndpoint()
 	ResetGkeHubCustomEndpoint()
 	ResetGkehubFeatureCustomEndpoint()
 	ResetHealthcareCustomEndpoint()
@@ -1309,6 +1321,26 @@ func (j *jsiiProxy_GoogleBetaProvider) CloudRunCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) CloudRunV2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudRunV2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) CloudRunV2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudRunV2CustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) CloudSchedulerCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1919,6 +1951,26 @@ func (j *jsiiProxy_GoogleBetaProvider) FirebaserulesCustomEndpointInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseStorageCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseStorageCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseStorageCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseStorageCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) FirestoreCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1974,6 +2026,26 @@ func (j *jsiiProxy_GoogleBetaProvider) GameServicesCustomEndpointInput() *string
 	_jsii_.Get(
 		j,
 		"gameServicesCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) GkeBackupCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeBackupCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) GkeBackupCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeBackupCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3508,6 +3580,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetCloudRunCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetCloudRunV2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"cloudRunV2CustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetCloudSchedulerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3748,6 +3828,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetFirebaserulesCustomEndpoint(val *string
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseStorageCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseStorageCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetFirestoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3760,6 +3848,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetGameServicesCustomEndpoint(val *string)
 	_jsii_.Set(
 		j,
 		"gameServicesCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetGkeBackupCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"gkeBackupCustomEndpoint",
 		val,
 	)
 }
@@ -4625,6 +4721,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetCloudRunCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetCloudRunV2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudRunV2CustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetCloudSchedulerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4865,6 +4969,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaserulesCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseStorageCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseStorageCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetFirestoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4877,6 +4989,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetGameServicesCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGameServicesCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetGkeBackupCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeBackupCustomEndpoint",
 		nil, // no parameters
 	)
 }

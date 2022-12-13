@@ -31,6 +31,7 @@ type GoogleDatastreamPrivateConnection interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	Error() GoogleDatastreamPrivateConnectionErrorList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -71,6 +72,7 @@ type GoogleDatastreamPrivateConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -195,6 +197,16 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) DisplayNameInput() *string
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) Error() GoogleDatastreamPrivateConnectionErrorList {
+	var returns GoogleDatastreamPrivateConnectionErrorList
+	_jsii_.Get(
+		j,
+		"error",
 		&returns,
 	)
 	return returns
@@ -385,6 +397,16 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) RawOverrides() interface{}
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns

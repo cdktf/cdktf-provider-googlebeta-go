@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateInter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validatePutHeaderActionParameters(value *GoogleComputeSecurityPolicyRuleHeaderAction) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validatePutMatchParameters(value *GoogleComputeSecurityPolicyRuleMatch) error {
 	return nil
 }

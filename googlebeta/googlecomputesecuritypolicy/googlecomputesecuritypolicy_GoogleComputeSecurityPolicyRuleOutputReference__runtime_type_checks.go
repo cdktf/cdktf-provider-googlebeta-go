@@ -90,6 +90,17 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validateInter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validatePutHeaderActionParameters(value *GoogleComputeSecurityPolicyRuleHeaderAction) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleOutputReference) validatePutMatchParameters(value *GoogleComputeSecurityPolicyRuleMatch) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

@@ -52,6 +52,7 @@ type DataGoogleDataprocMetastoreService interface {
 	MetadataIntegration() DataGoogleDataprocMetastoreServiceMetadataIntegrationList
 	Name() *string
 	Network() *string
+	NetworkConfig() DataGoogleDataprocMetastoreServiceNetworkConfigList
 	// The tree node.
 	Node() constructs.Node
 	Port() *float64
@@ -338,6 +339,16 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreService) Network() *string {
 	_jsii_.Get(
 		j,
 		"network",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleDataprocMetastoreService) NetworkConfig() DataGoogleDataprocMetastoreServiceNetworkConfigList {
+	var returns DataGoogleDataprocMetastoreServiceNetworkConfigList
+	_jsii_.Get(
+		j,
+		"networkConfig",
 		&returns,
 	)
 	return returns

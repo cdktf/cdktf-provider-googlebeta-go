@@ -65,6 +65,10 @@ type GoogleNetworkServicesEdgeCacheOrigin interface {
 	OriginAddress() *string
 	SetOriginAddress(val *string)
 	OriginAddressInput() *string
+	OriginOverrideAction() GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference
+	OriginOverrideActionInput() *GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction
+	OriginRedirect() GoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputReference
+	OriginRedirectInput() *GoogleNetworkServicesEdgeCacheOriginOriginRedirect
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
@@ -123,6 +127,8 @@ type GoogleNetworkServicesEdgeCacheOrigin interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAwsV4Authentication(value *GoogleNetworkServicesEdgeCacheOriginAwsV4Authentication)
+	PutOriginOverrideAction(value *GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction)
+	PutOriginRedirect(value *GoogleNetworkServicesEdgeCacheOriginOriginRedirect)
 	PutTimeout(value *GoogleNetworkServicesEdgeCacheOriginTimeout)
 	PutTimeouts(value *GoogleNetworkServicesEdgeCacheOriginTimeouts)
 	ResetAwsV4Authentication()
@@ -131,6 +137,8 @@ type GoogleNetworkServicesEdgeCacheOrigin interface {
 	ResetId()
 	ResetLabels()
 	ResetMaxAttempts()
+	ResetOriginOverrideAction()
+	ResetOriginRedirect()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -410,6 +418,46 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) OriginAddressInput() *s
 	_jsii_.Get(
 		j,
 		"originAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) OriginOverrideAction() GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference {
+	var returns GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference
+	_jsii_.Get(
+		j,
+		"originOverrideAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) OriginOverrideActionInput() *GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction {
+	var returns *GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction
+	_jsii_.Get(
+		j,
+		"originOverrideActionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) OriginRedirect() GoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputReference {
+	var returns GoogleNetworkServicesEdgeCacheOriginOriginRedirectOutputReference
+	_jsii_.Get(
+		j,
+		"originRedirect",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) OriginRedirectInput() *GoogleNetworkServicesEdgeCacheOriginOriginRedirect {
+	var returns *GoogleNetworkServicesEdgeCacheOriginOriginRedirect
+	_jsii_.Get(
+		j,
+		"originRedirectInput",
 		&returns,
 	)
 	return returns
@@ -1088,6 +1136,28 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) PutAwsV4Authentication(
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) PutOriginOverrideAction(value *GoogleNetworkServicesEdgeCacheOriginOriginOverrideAction) {
+	if err := g.validatePutOriginOverrideActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOriginOverrideAction",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) PutOriginRedirect(value *GoogleNetworkServicesEdgeCacheOriginOriginRedirect) {
+	if err := g.validatePutOriginRedirectParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOriginRedirect",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) PutTimeout(value *GoogleNetworkServicesEdgeCacheOriginTimeout) {
 	if err := g.validatePutTimeoutParameters(value); err != nil {
 		panic(err)
@@ -1154,6 +1224,22 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) ResetMaxAttempts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxAttempts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) ResetOriginOverrideAction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOriginOverrideAction",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) ResetOriginRedirect() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOriginRedirect",
 		nil, // no parameters
 	)
 }

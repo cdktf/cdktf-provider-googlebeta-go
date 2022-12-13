@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_bucket google_storage_bucket}.
 type GoogleStorageBucket interface {
 	cdktf.TerraformResource
+	Autoclass() GoogleStorageBucketAutoclassOutputReference
+	AutoclassInput() *GoogleStorageBucketAutoclass
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -136,6 +138,7 @@ type GoogleStorageBucket interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoclass(value *GoogleStorageBucketAutoclass)
 	PutCors(value interface{})
 	PutCustomPlacementConfig(value *GoogleStorageBucketCustomPlacementConfig)
 	PutEncryption(value *GoogleStorageBucketEncryption)
@@ -145,6 +148,7 @@ type GoogleStorageBucket interface {
 	PutTimeouts(value *GoogleStorageBucketTimeouts)
 	PutVersioning(value *GoogleStorageBucketVersioning)
 	PutWebsite(value *GoogleStorageBucketWebsite)
+	ResetAutoclass()
 	ResetCors()
 	ResetCustomPlacementConfig()
 	ResetDefaultEventBasedHold()
@@ -179,6 +183,26 @@ type GoogleStorageBucket interface {
 // The jsii proxy struct for GoogleStorageBucket
 type jsiiProxy_GoogleStorageBucket struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) Autoclass() GoogleStorageBucketAutoclassOutputReference {
+	var returns GoogleStorageBucketAutoclassOutputReference
+	_jsii_.Get(
+		j,
+		"autoclass",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) AutoclassInput() *GoogleStorageBucketAutoclass {
+	var returns *GoogleStorageBucketAutoclass
+	_jsii_.Get(
+		j,
+		"autoclassInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleStorageBucket) CdktfStack() cdktf.TerraformStack {
@@ -1243,6 +1267,17 @@ func (g *jsiiProxy_GoogleStorageBucket) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) PutAutoclass(value *GoogleStorageBucketAutoclass) {
+	if err := g.validatePutAutoclassParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoclass",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) PutCors(value interface{}) {
 	if err := g.validatePutCorsParameters(value); err != nil {
 		panic(err)
@@ -1339,6 +1374,14 @@ func (g *jsiiProxy_GoogleStorageBucket) PutWebsite(value *GoogleStorageBucketWeb
 		g,
 		"putWebsite",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) ResetAutoclass() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoclass",
+		nil, // no parameters
 	)
 }
 

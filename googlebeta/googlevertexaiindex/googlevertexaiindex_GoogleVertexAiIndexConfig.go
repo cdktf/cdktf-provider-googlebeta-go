@@ -52,7 +52,7 @@ type GoogleVertexAiIndexConfig struct {
 	Metadata *GoogleVertexAiIndexMetadata `field:"optional" json:"metadata" yaml:"metadata"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_index#project GoogleVertexAiIndex#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
-	// The region of the Metadata Store. eg us-central1.
+	// The region of the index. eg us-central1.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_index#region GoogleVertexAiIndex#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`

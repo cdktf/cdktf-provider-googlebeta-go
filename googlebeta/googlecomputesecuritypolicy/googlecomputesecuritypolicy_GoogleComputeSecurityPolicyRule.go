@@ -20,6 +20,10 @@ type GoogleComputeSecurityPolicyRule struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#description GoogleComputeSecurityPolicy#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// header_action block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#header_action GoogleComputeSecurityPolicy#header_action}
+	HeaderAction *GoogleComputeSecurityPolicyRuleHeaderAction `field:"optional" json:"headerAction" yaml:"headerAction"`
 	// preconfigured_waf_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_security_policy#preconfigured_waf_config GoogleComputeSecurityPolicy#preconfigured_waf_config}
