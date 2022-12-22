@@ -76,6 +76,10 @@ func validateGoogleLoggingMetric_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingMetric) validateSetBucketNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingMetric) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

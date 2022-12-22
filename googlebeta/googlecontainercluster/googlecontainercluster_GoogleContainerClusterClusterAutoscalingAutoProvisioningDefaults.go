@@ -40,5 +40,9 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaults struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#shielded_instance_config GoogleContainerCluster#shielded_instance_config}
 	ShieldedInstanceConfig *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig `field:"optional" json:"shieldedInstanceConfig" yaml:"shieldedInstanceConfig"`
+	// upgrade_settings block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#upgrade_settings GoogleContainerCluster#upgrade_settings}
+	UpgradeSettings *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings `field:"optional" json:"upgradeSettings" yaml:"upgradeSettings"`
 }
 

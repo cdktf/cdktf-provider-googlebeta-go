@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validatePutUpgradeSettingsParameters(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

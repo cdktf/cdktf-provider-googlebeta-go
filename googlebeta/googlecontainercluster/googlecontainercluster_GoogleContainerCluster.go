@@ -93,6 +93,8 @@ type GoogleContainerCluster interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GatewayApiConfig() GoogleContainerClusterGatewayApiConfigOutputReference
+	GatewayApiConfigInput() *GoogleContainerClusterGatewayApiConfig
 	Id() *string
 	SetId(val *string)
 	IdentityServiceConfig() GoogleContainerClusterIdentityServiceConfigOutputReference
@@ -250,6 +252,7 @@ type GoogleContainerCluster interface {
 	PutDatabaseEncryption(value *GoogleContainerClusterDatabaseEncryption)
 	PutDefaultSnatStatus(value *GoogleContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *GoogleContainerClusterDnsConfig)
+	PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig)
 	PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *GoogleContainerClusterIpAllocationPolicy)
 	PutLoggingConfig(value *GoogleContainerClusterLoggingConfig)
@@ -295,6 +298,7 @@ type GoogleContainerCluster interface {
 	ResetEnableLegacyAbac()
 	ResetEnableShieldedNodes()
 	ResetEnableTpu()
+	ResetGatewayApiConfig()
 	ResetId()
 	ResetIdentityServiceConfig()
 	ResetInitialNodeCount()
@@ -876,6 +880,26 @@ func (j *jsiiProxy_GoogleContainerCluster) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) GatewayApiConfig() GoogleContainerClusterGatewayApiConfigOutputReference {
+	var returns GoogleContainerClusterGatewayApiConfigOutputReference
+	_jsii_.Get(
+		j,
+		"gatewayApiConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) GatewayApiConfigInput() *GoogleContainerClusterGatewayApiConfig {
+	var returns *GoogleContainerClusterGatewayApiConfig
+	_jsii_.Get(
+		j,
+		"gatewayApiConfigInput",
 		&returns,
 	)
 	return returns
@@ -2580,6 +2604,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutDnsConfig(value *GoogleContainerCl
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig) {
+	if err := g.validatePutGatewayApiConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGatewayApiConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig) {
 	if err := g.validatePutIdentityServiceConfigParameters(value); err != nil {
 		panic(err)
@@ -3005,6 +3040,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetEnableTpu() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableTpu",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetGatewayApiConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGatewayApiConfig",
 		nil, // no parameters
 	)
 }

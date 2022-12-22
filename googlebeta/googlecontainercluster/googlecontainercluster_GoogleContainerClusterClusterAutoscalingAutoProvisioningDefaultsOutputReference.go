@@ -62,6 +62,8 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputRefer
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpgradeSettings() GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference
+	UpgradeSettingsInput() *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -88,6 +90,7 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputRefer
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutManagement(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement)
 	PutShieldedInstanceConfig(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig)
+	PutUpgradeSettings(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings)
 	ResetBootDiskKmsKey()
 	ResetDiskSize()
 	ResetDiskType()
@@ -97,6 +100,7 @@ type GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputRefer
 	ResetOauthScopes()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetUpgradeSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -357,6 +361,26 @@ func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) UpgradeSettings() GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference {
+	var returns GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"upgradeSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) UpgradeSettingsInput() *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings {
+	var returns *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings
+	_jsii_.Get(
+		j,
+		"upgradeSettingsInput",
 		&returns,
 	)
 	return returns
@@ -730,6 +754,17 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) PutUpgradeSettings(value *GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettings) {
+	if err := g.validatePutUpgradeSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUpgradeSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetBootDiskKmsKey() {
 	_jsii_.InvokeVoid(
 		g,
@@ -798,6 +833,14 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	_jsii_.InvokeVoid(
 		g,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) ResetUpgradeSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUpgradeSettings",
 		nil, // no parameters
 	)
 }

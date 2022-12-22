@@ -12,6 +12,9 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric google_logging_metric}.
 type GoogleLoggingMetric interface {
 	cdktf.TerraformResource
+	BucketName() *string
+	SetBucketName(val *string)
+	BucketNameInput() *string
 	BucketOptions() GoogleLoggingMetricBucketOptionsOutputReference
 	BucketOptionsInput() *GoogleLoggingMetricBucketOptions
 	// Experimental.
@@ -113,10 +116,12 @@ type GoogleLoggingMetric interface {
 	PutBucketOptions(value *GoogleLoggingMetricBucketOptions)
 	PutMetricDescriptor(value *GoogleLoggingMetricMetricDescriptor)
 	PutTimeouts(value *GoogleLoggingMetricTimeouts)
+	ResetBucketName()
 	ResetBucketOptions()
 	ResetDescription()
 	ResetId()
 	ResetLabelExtractors()
+	ResetMetricDescriptor()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -136,6 +141,26 @@ type GoogleLoggingMetric interface {
 // The jsii proxy struct for GoogleLoggingMetric
 type jsiiProxy_GoogleLoggingMetric struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleLoggingMetric) BucketName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingMetric) BucketNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bucketNameInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleLoggingMetric) BucketOptions() GoogleLoggingMetricBucketOptionsOutputReference {
@@ -525,6 +550,17 @@ func NewGoogleLoggingMetric_Override(g GoogleLoggingMetric, scope constructs.Con
 		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleLoggingMetric)SetBucketName(val *string) {
+	if err := j.validateSetBucketNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bucketName",
+		val,
 	)
 }
 
@@ -969,6 +1005,14 @@ func (g *jsiiProxy_GoogleLoggingMetric) PutTimeouts(value *GoogleLoggingMetricTi
 	)
 }
 
+func (g *jsiiProxy_GoogleLoggingMetric) ResetBucketName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBucketName",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleLoggingMetric) ResetBucketOptions() {
 	_jsii_.InvokeVoid(
 		g,
@@ -997,6 +1041,14 @@ func (g *jsiiProxy_GoogleLoggingMetric) ResetLabelExtractors() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabelExtractors",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingMetric) ResetMetricDescriptor() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMetricDescriptor",
 		nil, // no parameters
 	)
 }

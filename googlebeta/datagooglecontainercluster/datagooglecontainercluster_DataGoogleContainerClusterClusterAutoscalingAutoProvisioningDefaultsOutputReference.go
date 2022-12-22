@@ -46,6 +46,7 @@ type DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputR
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpgradeSettings() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -240,6 +241,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningD
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference) UpgradeSettings() DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList {
+	var returns DataGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsList
+	_jsii_.Get(
+		j,
+		"upgradeSettings",
 		&returns,
 	)
 	return returns

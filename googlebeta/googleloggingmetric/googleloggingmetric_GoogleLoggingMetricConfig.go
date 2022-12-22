@@ -23,10 +23,6 @@ type GoogleLoggingMetricConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#filter GoogleLoggingMetric#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
-	// metric_descriptor block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#metric_descriptor GoogleLoggingMetric#metric_descriptor}
-	MetricDescriptor *GoogleLoggingMetricMetricDescriptor `field:"required" json:"metricDescriptor" yaml:"metricDescriptor"`
 	// The client-assigned metric identifier.
 	//
 	// Examples - "error_count", "nginx/requests".
@@ -37,6 +33,13 @@ type GoogleLoggingMetricConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#name GoogleLoggingMetric#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
+	// The resource name of the Log Bucket that owns the Log Metric.
+	//
+	// Only Log Buckets in projects
+	// are supported. The bucket has to be in the same project as the metric.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#bucket_name GoogleLoggingMetric#bucket_name}
+	BucketName *string `field:"optional" json:"bucketName" yaml:"bucketName"`
 	// bucket_options block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#bucket_options GoogleLoggingMetric#bucket_options}
@@ -58,6 +61,10 @@ type GoogleLoggingMetricConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#label_extractors GoogleLoggingMetric#label_extractors}
 	LabelExtractors *map[string]*string `field:"optional" json:"labelExtractors" yaml:"labelExtractors"`
+	// metric_descriptor block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#metric_descriptor GoogleLoggingMetric#metric_descriptor}
+	MetricDescriptor *GoogleLoggingMetricMetricDescriptor `field:"optional" json:"metricDescriptor" yaml:"metricDescriptor"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_metric#project GoogleLoggingMetric#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
 	// timeouts block.

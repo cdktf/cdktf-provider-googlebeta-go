@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutDnsConfigParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutGatewayApiConfigParameters(value *GoogleContainerClusterGatewayApiConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutIdentityServiceConfigParameters(value *GoogleContainerClusterIdentityServiceConfig) error {
 	return nil
 }
