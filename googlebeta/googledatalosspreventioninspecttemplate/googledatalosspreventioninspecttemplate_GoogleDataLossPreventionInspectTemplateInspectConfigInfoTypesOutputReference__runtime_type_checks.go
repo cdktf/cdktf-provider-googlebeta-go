@@ -211,6 +211,14 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypes
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReference) validateSetVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleDataLossPreventionInspectTemplateInspectConfigInfoTypesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")

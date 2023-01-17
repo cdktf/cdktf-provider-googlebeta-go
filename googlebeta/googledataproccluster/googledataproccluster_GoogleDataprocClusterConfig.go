@@ -56,5 +56,9 @@ type GoogleDataprocClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#timeouts GoogleDataprocCluster#timeouts}
 	Timeouts *GoogleDataprocClusterTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// virtual_cluster_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#virtual_cluster_config GoogleDataprocCluster#virtual_cluster_config}
+	VirtualClusterConfig *GoogleDataprocClusterVirtualClusterConfig `field:"optional" json:"virtualClusterConfig" yaml:"virtualClusterConfig"`
 }
 

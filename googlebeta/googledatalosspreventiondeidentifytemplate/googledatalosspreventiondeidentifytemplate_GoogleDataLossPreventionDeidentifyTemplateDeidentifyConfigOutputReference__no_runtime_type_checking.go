@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) validatePutRecordTransformationsParameters(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

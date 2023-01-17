@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetAvailableCpuParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetAvailableMemoryParameters(val *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) va
 }
 
 func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetMaxInstanceCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionServiceConfigOutputReference) validateSetMaxInstanceRequestConcurrencyParameters(val *float64) error {
 	return nil
 }
 

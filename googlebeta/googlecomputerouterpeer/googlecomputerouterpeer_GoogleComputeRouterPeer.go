@@ -2,10 +2,10 @@ package googlecomputerouterpeer
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlecomputerouterpeer/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputerouterpeer/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -95,6 +95,9 @@ type GoogleComputeRouterPeer interface {
 	RegionInput() *string
 	Router() *string
 	SetRouter(val *string)
+	RouterApplianceInstance() *string
+	SetRouterApplianceInstance(val *string)
+	RouterApplianceInstanceInput() *string
 	RouterInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -145,6 +148,7 @@ type GoogleComputeRouterPeer interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetRouterApplianceInstance()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -591,6 +595,26 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) Router() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) RouterApplianceInstance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routerApplianceInstance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) RouterApplianceInstanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routerApplianceInstanceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) RouterInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -885,6 +909,17 @@ func (j *jsiiProxy_GoogleComputeRouterPeer)SetRouter(val *string) {
 	_jsii_.Set(
 		j,
 		"router",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer)SetRouterApplianceInstance(val *string) {
+	if err := j.validateSetRouterApplianceInstanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routerApplianceInstance",
 		val,
 	)
 }
@@ -1272,6 +1307,14 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetRouterApplianceInstance() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRouterApplianceInstance",
 		nil, // no parameters
 	)
 }

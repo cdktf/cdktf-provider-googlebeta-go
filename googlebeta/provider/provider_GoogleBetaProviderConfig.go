@@ -92,6 +92,8 @@ type GoogleBetaProviderConfig struct {
 	ComputeCustomEndpoint *string `field:"optional" json:"computeCustomEndpoint" yaml:"computeCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#container_analysis_custom_endpoint GoogleBetaProvider#container_analysis_custom_endpoint}.
 	ContainerAnalysisCustomEndpoint *string `field:"optional" json:"containerAnalysisCustomEndpoint" yaml:"containerAnalysisCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#container_attached_custom_endpoint GoogleBetaProvider#container_attached_custom_endpoint}.
+	ContainerAttachedCustomEndpoint *string `field:"optional" json:"containerAttachedCustomEndpoint" yaml:"containerAttachedCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#container_aws_custom_endpoint GoogleBetaProvider#container_aws_custom_endpoint}.
 	ContainerAwsCustomEndpoint *string `field:"optional" json:"containerAwsCustomEndpoint" yaml:"containerAwsCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#container_azure_custom_endpoint GoogleBetaProvider#container_azure_custom_endpoint}.
@@ -138,6 +140,8 @@ type GoogleBetaProviderConfig struct {
 	FilestoreCustomEndpoint *string `field:"optional" json:"filestoreCustomEndpoint" yaml:"filestoreCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_custom_endpoint GoogleBetaProvider#firebase_custom_endpoint}.
 	FirebaseCustomEndpoint *string `field:"optional" json:"firebaseCustomEndpoint" yaml:"firebaseCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_database_custom_endpoint GoogleBetaProvider#firebase_database_custom_endpoint}.
+	FirebaseDatabaseCustomEndpoint *string `field:"optional" json:"firebaseDatabaseCustomEndpoint" yaml:"firebaseDatabaseCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebase_hosting_custom_endpoint GoogleBetaProvider#firebase_hosting_custom_endpoint}.
 	FirebaseHostingCustomEndpoint *string `field:"optional" json:"firebaseHostingCustomEndpoint" yaml:"firebaseHostingCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#firebaserules_custom_endpoint GoogleBetaProvider#firebaserules_custom_endpoint}.

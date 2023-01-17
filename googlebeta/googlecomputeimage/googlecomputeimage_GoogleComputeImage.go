@@ -2,10 +2,10 @@ package googlecomputeimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlecomputeimage/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -52,6 +52,8 @@ type GoogleComputeImage interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	ImageEncryptionKey() GoogleComputeImageImageEncryptionKeyOutputReference
+	ImageEncryptionKeyInput() *GoogleComputeImageImageEncryptionKey
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -127,6 +129,7 @@ type GoogleComputeImage interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutGuestOsFeatures(value interface{})
+	PutImageEncryptionKey(value *GoogleComputeImageImageEncryptionKey)
 	PutRawDisk(value *GoogleComputeImageRawDisk)
 	PutTimeouts(value *GoogleComputeImageTimeouts)
 	ResetDescription()
@@ -134,6 +137,7 @@ type GoogleComputeImage interface {
 	ResetFamily()
 	ResetGuestOsFeatures()
 	ResetId()
+	ResetImageEncryptionKey()
 	ResetLabels()
 	ResetLicenses()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -355,6 +359,26 @@ func (j *jsiiProxy_GoogleComputeImage) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImage) ImageEncryptionKey() GoogleComputeImageImageEncryptionKeyOutputReference {
+	var returns GoogleComputeImageImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"imageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImage) ImageEncryptionKeyInput() *GoogleComputeImageImageEncryptionKey {
+	var returns *GoogleComputeImageImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"imageEncryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -1133,6 +1157,17 @@ func (g *jsiiProxy_GoogleComputeImage) PutGuestOsFeatures(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeImage) PutImageEncryptionKey(value *GoogleComputeImageImageEncryptionKey) {
+	if err := g.validatePutImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putImageEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeImage) PutRawDisk(value *GoogleComputeImageRawDisk) {
 	if err := g.validatePutRawDiskParameters(value); err != nil {
 		panic(err)
@@ -1191,6 +1226,14 @@ func (g *jsiiProxy_GoogleComputeImage) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeImage) ResetImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetImageEncryptionKey",
 		nil, // no parameters
 	)
 }

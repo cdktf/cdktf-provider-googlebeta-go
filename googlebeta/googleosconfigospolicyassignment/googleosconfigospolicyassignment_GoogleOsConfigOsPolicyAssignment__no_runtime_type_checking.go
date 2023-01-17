@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetProvisionersPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetSkipAwaitRolloutParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewGoogleOsConfigOsPolicyAssignmentParameters(scope constructs.Construct, id *string, config *GoogleOsConfigOsPolicyAssignmentConfig) error {
 	return nil
 }

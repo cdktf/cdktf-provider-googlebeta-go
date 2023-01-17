@@ -195,6 +195,68 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulDiskPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulExternalIpParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputeInstanceGroupManagerStatefulExternalIp:
+		value := value.(*[]*GoogleComputeInstanceGroupManagerStatefulExternalIp)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputeInstanceGroupManagerStatefulExternalIp:
+		value_ := value.([]*GoogleComputeInstanceGroupManagerStatefulExternalIp)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeInstanceGroupManagerStatefulExternalIp; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulInternalIpParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputeInstanceGroupManagerStatefulInternalIp:
+		value := value.(*[]*GoogleComputeInstanceGroupManagerStatefulInternalIp)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputeInstanceGroupManagerStatefulInternalIp:
+		value_ := value.([]*GoogleComputeInstanceGroupManagerStatefulInternalIp)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeInstanceGroupManagerStatefulInternalIp; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutTimeoutsParameters(value *GoogleComputeInstanceGroupManagerTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

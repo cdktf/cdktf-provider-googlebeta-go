@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleDataprocCluster) validatePutTimeoutsParameters(value *G
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocCluster) validatePutVirtualClusterConfigParameters(value *GoogleDataprocClusterVirtualClusterConfig) error {
+	return nil
+}
+
 func validateGoogleDataprocCluster_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -48,6 +48,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validatePutSourceImageEncryptionKeyParameters(value *GoogleComputeInstanceTemplateDiskSourceImageEncryptionKey) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validatePutSourceSnapshotEncryptionKeyParameters(value *GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -109,6 +117,10 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetSourceImageParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetSourceSnapshotParameters(val *string) error {
 	return nil
 }
 

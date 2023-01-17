@@ -2,10 +2,10 @@ package googleosconfigospolicyassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googleosconfigospolicyassignment/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleosconfigospolicyassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -80,6 +80,9 @@ type GoogleOsConfigOsPolicyAssignment interface {
 	Rollout() GoogleOsConfigOsPolicyAssignmentRolloutOutputReference
 	RolloutInput() *GoogleOsConfigOsPolicyAssignmentRollout
 	RolloutState() *string
+	SkipAwaitRollout() interface{}
+	SetSkipAwaitRollout(val interface{})
+	SkipAwaitRolloutInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -124,6 +127,7 @@ type GoogleOsConfigOsPolicyAssignment interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSkipAwaitRollout()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -500,6 +504,26 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) RolloutState() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) SkipAwaitRollout() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAwaitRollout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) SkipAwaitRolloutInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipAwaitRolloutInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -706,6 +730,17 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment)SetProvisioners(val *[]inter
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment)SetSkipAwaitRollout(val interface{}) {
+	if err := j.validateSetSkipAwaitRolloutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipAwaitRollout",
 		val,
 	)
 }
@@ -1048,6 +1083,14 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) ResetSkipAwaitRollout() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSkipAwaitRollout",
 		nil, // no parameters
 	)
 }

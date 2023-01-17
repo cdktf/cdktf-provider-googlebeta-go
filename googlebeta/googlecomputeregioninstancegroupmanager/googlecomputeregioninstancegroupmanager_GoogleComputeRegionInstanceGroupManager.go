@@ -2,10 +2,10 @@ package googlecomputeregioninstancegroupmanager
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlecomputeregioninstancegroupmanager/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeregioninstancegroupmanager/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -90,6 +90,10 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	SelfLink() *string
 	StatefulDisk() GoogleComputeRegionInstanceGroupManagerStatefulDiskList
 	StatefulDiskInput() interface{}
+	StatefulExternalIp() GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList
+	StatefulExternalIpInput() interface{}
+	StatefulInternalIp() GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList
+	StatefulInternalIpInput() interface{}
 	Status() GoogleComputeRegionInstanceGroupManagerStatusList
 	TargetPools() *[]*string
 	SetTargetPools(val *[]*string)
@@ -144,6 +148,8 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	PutAutoHealingPolicies(value *GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies)
 	PutNamedPort(value interface{})
 	PutStatefulDisk(value interface{})
+	PutStatefulExternalIp(value interface{})
+	PutStatefulInternalIp(value interface{})
 	PutTimeouts(value *GoogleComputeRegionInstanceGroupManagerTimeouts)
 	PutUpdatePolicy(value *GoogleComputeRegionInstanceGroupManagerUpdatePolicy)
 	PutVersion(value interface{})
@@ -161,6 +167,8 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	ResetProject()
 	ResetRegion()
 	ResetStatefulDisk()
+	ResetStatefulExternalIp()
+	ResetStatefulInternalIp()
 	ResetTargetPools()
 	ResetTargetSize()
 	ResetTimeouts()
@@ -597,6 +605,46 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulDiskInput() 
 	_jsii_.Get(
 		j,
 		"statefulDiskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulExternalIp() GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList {
+	var returns GoogleComputeRegionInstanceGroupManagerStatefulExternalIpList
+	_jsii_.Get(
+		j,
+		"statefulExternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulExternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulExternalIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulInternalIp() GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList {
+	var returns GoogleComputeRegionInstanceGroupManagerStatefulInternalIpList
+	_jsii_.Get(
+		j,
+		"statefulInternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) StatefulInternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulInternalIpInput",
 		&returns,
 	)
 	return returns
@@ -1330,6 +1378,28 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutStatefulDisk(valu
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutStatefulExternalIp(value interface{}) {
+	if err := g.validatePutStatefulExternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStatefulExternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutStatefulInternalIp(value interface{}) {
+	if err := g.validatePutStatefulInternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStatefulInternalIp",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutTimeouts(value *GoogleComputeRegionInstanceGroupManagerTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1455,6 +1525,22 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetStatefulDisk() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetStatefulDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetStatefulExternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatefulExternalIp",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetStatefulInternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatefulInternalIp",
 		nil, // no parameters
 	)
 }

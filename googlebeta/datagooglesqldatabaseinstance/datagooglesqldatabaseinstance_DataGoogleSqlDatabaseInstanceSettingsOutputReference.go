@@ -2,9 +2,9 @@ package datagooglesqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/datagooglesqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/datagooglesqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -32,6 +32,7 @@ type DataGoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DatabaseFlags() DataGoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
+	DeletionProtectionEnabled() cdktf.IResolvable
 	DenyMaintenancePeriod() DataGoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodList
 	DiskAutoresize() cdktf.IResolvable
 	DiskAutoresizeLimit() *float64
@@ -194,6 +195,16 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) Databas
 	_jsii_.Get(
 		j,
 		"databaseFlags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
 		&returns,
 	)
 	return returns

@@ -2,9 +2,9 @@ package googlesqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlesqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlesqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -43,6 +43,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	CreationStack() *[]*string
 	DatabaseFlags() GoogleSqlDatabaseInstanceSettingsDatabaseFlagsList
 	DatabaseFlagsInput() interface{}
+	DeletionProtectionEnabled() interface{}
+	SetDeletionProtectionEnabled(val interface{})
+	DeletionProtectionEnabledInput() interface{}
 	DenyMaintenancePeriod() GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference
 	DenyMaintenancePeriodInput() *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod
 	DiskAutoresize() interface{}
@@ -135,6 +138,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetCollation()
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
+	ResetDeletionProtectionEnabled()
 	ResetDenyMaintenancePeriod()
 	ResetDiskAutoresize()
 	ResetDiskAutoresizeLimit()
@@ -329,6 +333,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DatabaseFla
 	_jsii_.Get(
 		j,
 		"databaseFlagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) DeletionProtectionEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionEnabledInput",
 		&returns,
 	)
 	return returns
@@ -774,6 +798,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetConnector
 	_jsii_.Set(
 		j,
 		"connectorEnforcement",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetDeletionProtectionEnabled(val interface{}) {
+	if err := j.validateSetDeletionProtectionEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtectionEnabled",
 		val,
 	)
 }
@@ -1247,6 +1282,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDataba
 	_jsii_.InvokeVoid(
 		g,
 		"resetDatabaseFlags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetDeletionProtectionEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtectionEnabled",
 		nil, // no parameters
 	)
 }

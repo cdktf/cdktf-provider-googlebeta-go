@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validatePutOciParameters(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

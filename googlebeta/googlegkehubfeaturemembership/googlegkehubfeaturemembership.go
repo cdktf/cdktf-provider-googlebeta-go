@@ -186,6 +186,57 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci",
+		reflect.TypeOf((*GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference",
+		reflect.TypeOf((*GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberProperty{JsiiProperty: "gcpServiceAccountEmail", GoGetter: "GcpServiceAccountEmail"},
+			_jsii_.MemberProperty{JsiiProperty: "gcpServiceAccountEmailInput", GoGetter: "GcpServiceAccountEmailInput"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "policyDir", GoGetter: "PolicyDir"},
+			_jsii_.MemberProperty{JsiiProperty: "policyDirInput", GoGetter: "PolicyDirInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetGcpServiceAccountEmail", GoMethod: "ResetGcpServiceAccountEmail"},
+			_jsii_.MemberMethod{JsiiMethod: "resetPolicyDir", GoMethod: "ResetPolicyDir"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecretType", GoMethod: "ResetSecretType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSyncRepo", GoMethod: "ResetSyncRepo"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSyncWaitSecs", GoMethod: "ResetSyncWaitSecs"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "secretType", GoGetter: "SecretType"},
+			_jsii_.MemberProperty{JsiiProperty: "secretTypeInput", GoGetter: "SecretTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "syncRepo", GoGetter: "SyncRepo"},
+			_jsii_.MemberProperty{JsiiProperty: "syncRepoInput", GoGetter: "SyncRepoInput"},
+			_jsii_.MemberProperty{JsiiProperty: "syncWaitSecs", GoGetter: "SyncWaitSecs"},
+			_jsii_.MemberProperty{JsiiProperty: "syncWaitSecsInput", GoGetter: "SyncWaitSecsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google-beta.googleGkeHubFeatureMembership.GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference",
 		reflect.TypeOf((*GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference)(nil)).Elem(),
@@ -209,10 +260,14 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "oci", GoGetter: "Oci"},
+			_jsii_.MemberProperty{JsiiProperty: "ociInput", GoGetter: "OciInput"},
 			_jsii_.MemberProperty{JsiiProperty: "preventDrift", GoGetter: "PreventDrift"},
 			_jsii_.MemberProperty{JsiiProperty: "preventDriftInput", GoGetter: "PreventDriftInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putGit", GoMethod: "PutGit"},
+			_jsii_.MemberMethod{JsiiMethod: "putOci", GoMethod: "PutOci"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGit", GoMethod: "ResetGit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetOci", GoMethod: "ResetOci"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPreventDrift", GoMethod: "ResetPreventDrift"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSourceFormat", GoMethod: "ResetSourceFormat"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},

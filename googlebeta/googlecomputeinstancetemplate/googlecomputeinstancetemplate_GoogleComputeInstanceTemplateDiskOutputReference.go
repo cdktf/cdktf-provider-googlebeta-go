@@ -2,9 +2,9 @@ package googlecomputeinstancetemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlecomputeinstancetemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancetemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -65,8 +65,15 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	SetSource(val *string)
 	SourceImage() *string
 	SetSourceImage(val *string)
+	SourceImageEncryptionKey() GoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference
+	SourceImageEncryptionKeyInput() *GoogleComputeInstanceTemplateDiskSourceImageEncryptionKey
 	SourceImageInput() *string
 	SourceInput() *string
+	SourceSnapshot() *string
+	SetSourceSnapshot(val *string)
+	SourceSnapshotEncryptionKey() GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference
+	SourceSnapshotEncryptionKeyInput() *GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey
+	SourceSnapshotInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -103,6 +110,8 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDiskEncryptionKey(value *GoogleComputeInstanceTemplateDiskDiskEncryptionKey)
+	PutSourceImageEncryptionKey(value *GoogleComputeInstanceTemplateDiskSourceImageEncryptionKey)
+	PutSourceSnapshotEncryptionKey(value *GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey)
 	ResetAutoDelete()
 	ResetBoot()
 	ResetDeviceName()
@@ -116,6 +125,9 @@ type GoogleComputeInstanceTemplateDiskOutputReference interface {
 	ResetResourcePolicies()
 	ResetSource()
 	ResetSourceImage()
+	ResetSourceImageEncryptionKey()
+	ResetSourceSnapshot()
+	ResetSourceSnapshotEncryptionKey()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -422,6 +434,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceImage
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceImageEncryptionKey() GoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference {
+	var returns GoogleComputeInstanceTemplateDiskSourceImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceImageEncryptionKeyInput() *GoogleComputeInstanceTemplateDiskSourceImageEncryptionKey {
+	var returns *GoogleComputeInstanceTemplateDiskSourceImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceImageInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -437,6 +469,46 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceInput
 	_jsii_.Get(
 		j,
 		"sourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceSnapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceSnapshotEncryptionKey() GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference {
+	var returns GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceSnapshotEncryptionKeyInput() *GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey {
+	var returns *GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) SourceSnapshotInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceSnapshotInput",
 		&returns,
 	)
 	return returns
@@ -675,6 +747,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetSourceIma
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetSourceSnapshot(val *string) {
+	if err := j.validateSetSourceSnapshotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceSnapshot",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference)SetTerraformAttribute(val *string) {
 	if err := j.validateSetTerraformAttributeParameters(val); err != nil {
 		panic(err)
@@ -905,6 +988,28 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) PutDiskEncr
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) PutSourceImageEncryptionKey(value *GoogleComputeInstanceTemplateDiskSourceImageEncryptionKey) {
+	if err := g.validatePutSourceImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceImageEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) PutSourceSnapshotEncryptionKey(value *GoogleComputeInstanceTemplateDiskSourceSnapshotEncryptionKey) {
+	if err := g.validatePutSourceSnapshotEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceSnapshotEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetAutoDelete() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1005,6 +1110,30 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetSource
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceImage",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetSourceImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceImageEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetSourceSnapshot() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceSnapshot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) ResetSourceSnapshotEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceSnapshotEncryptionKey",
 		nil, // no parameters
 	)
 }

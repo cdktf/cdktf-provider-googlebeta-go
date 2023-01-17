@@ -2,10 +2,10 @@ package provider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/provider/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/provider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -145,6 +145,9 @@ type GoogleBetaProvider interface {
 	ContainerAnalysisCustomEndpoint() *string
 	SetContainerAnalysisCustomEndpoint(val *string)
 	ContainerAnalysisCustomEndpointInput() *string
+	ContainerAttachedCustomEndpoint() *string
+	SetContainerAttachedCustomEndpoint(val *string)
+	ContainerAttachedCustomEndpointInput() *string
 	ContainerAwsCustomEndpoint() *string
 	SetContainerAwsCustomEndpoint(val *string)
 	ContainerAwsCustomEndpointInput() *string
@@ -214,6 +217,9 @@ type GoogleBetaProvider interface {
 	FirebaseCustomEndpoint() *string
 	SetFirebaseCustomEndpoint(val *string)
 	FirebaseCustomEndpointInput() *string
+	FirebaseDatabaseCustomEndpoint() *string
+	SetFirebaseDatabaseCustomEndpoint(val *string)
+	FirebaseDatabaseCustomEndpointInput() *string
 	FirebaseHostingCustomEndpoint() *string
 	SetFirebaseHostingCustomEndpoint(val *string)
 	FirebaseHostingCustomEndpointInput() *string
@@ -467,6 +473,7 @@ type GoogleBetaProvider interface {
 	ResetComposerCustomEndpoint()
 	ResetComputeCustomEndpoint()
 	ResetContainerAnalysisCustomEndpoint()
+	ResetContainerAttachedCustomEndpoint()
 	ResetContainerAwsCustomEndpoint()
 	ResetContainerAzureCustomEndpoint()
 	ResetContainerCustomEndpoint()
@@ -490,6 +497,7 @@ type GoogleBetaProvider interface {
 	ResetEventarcCustomEndpoint()
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaseCustomEndpoint()
+	ResetFirebaseDatabaseCustomEndpoint()
 	ResetFirebaseHostingCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirebaseStorageCustomEndpoint()
@@ -1451,6 +1459,26 @@ func (j *jsiiProxy_GoogleBetaProvider) ContainerAnalysisCustomEndpointInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) ContainerAttachedCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerAttachedCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ContainerAttachedCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"containerAttachedCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) ContainerAwsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1906,6 +1934,26 @@ func (j *jsiiProxy_GoogleBetaProvider) FirebaseCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"firebaseCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseDatabaseCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseDatabaseCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseDatabaseCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseDatabaseCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3628,6 +3676,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetContainerAnalysisCustomEndpoint(val *st
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetContainerAttachedCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"containerAttachedCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetContainerAwsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -3808,6 +3864,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"firebaseCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseDatabaseCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseDatabaseCustomEndpoint",
 		val,
 	)
 }
@@ -4769,6 +4833,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetContainerAnalysisCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetContainerAttachedCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContainerAttachedCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetContainerAwsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -4949,6 +5021,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFirebaseCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseDatabaseCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseDatabaseCustomEndpoint",
 		nil, // no parameters
 	)
 }

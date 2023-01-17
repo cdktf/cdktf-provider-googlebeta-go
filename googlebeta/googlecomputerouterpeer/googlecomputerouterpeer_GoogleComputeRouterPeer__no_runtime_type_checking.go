@@ -140,6 +140,10 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetRouterParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetRouterApplianceInstanceParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleComputeRouterPeerParameters(scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) error {
 	return nil
 }

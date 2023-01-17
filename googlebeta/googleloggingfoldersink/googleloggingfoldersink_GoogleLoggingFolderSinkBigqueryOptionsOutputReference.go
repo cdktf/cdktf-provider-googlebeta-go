@@ -2,9 +2,9 @@ package googleloggingfoldersink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googleloggingfoldersink/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleloggingfoldersink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -2,10 +2,10 @@ package googlecomputeinstancegroupmanager
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlecomputeinstancegroupmanager/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputeinstancegroupmanager/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -82,6 +82,10 @@ type GoogleComputeInstanceGroupManager interface {
 	SelfLink() *string
 	StatefulDisk() GoogleComputeInstanceGroupManagerStatefulDiskList
 	StatefulDiskInput() interface{}
+	StatefulExternalIp() GoogleComputeInstanceGroupManagerStatefulExternalIpList
+	StatefulExternalIpInput() interface{}
+	StatefulInternalIp() GoogleComputeInstanceGroupManagerStatefulInternalIpList
+	StatefulInternalIpInput() interface{}
 	Status() GoogleComputeInstanceGroupManagerStatusList
 	TargetPools() *[]*string
 	SetTargetPools(val *[]*string)
@@ -139,6 +143,8 @@ type GoogleComputeInstanceGroupManager interface {
 	PutAutoHealingPolicies(value *GoogleComputeInstanceGroupManagerAutoHealingPolicies)
 	PutNamedPort(value interface{})
 	PutStatefulDisk(value interface{})
+	PutStatefulExternalIp(value interface{})
+	PutStatefulInternalIp(value interface{})
 	PutTimeouts(value *GoogleComputeInstanceGroupManagerTimeouts)
 	PutUpdatePolicy(value *GoogleComputeInstanceGroupManagerUpdatePolicy)
 	PutVersion(value interface{})
@@ -153,6 +159,8 @@ type GoogleComputeInstanceGroupManager interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetStatefulDisk()
+	ResetStatefulExternalIp()
+	ResetStatefulInternalIp()
 	ResetTargetPools()
 	ResetTargetSize()
 	ResetTimeouts()
@@ -540,6 +548,46 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulDiskInput() interf
 	_jsii_.Get(
 		j,
 		"statefulDiskInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulExternalIp() GoogleComputeInstanceGroupManagerStatefulExternalIpList {
+	var returns GoogleComputeInstanceGroupManagerStatefulExternalIpList
+	_jsii_.Get(
+		j,
+		"statefulExternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulExternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulExternalIpInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulInternalIp() GoogleComputeInstanceGroupManagerStatefulInternalIpList {
+	var returns GoogleComputeInstanceGroupManagerStatefulInternalIpList
+	_jsii_.Get(
+		j,
+		"statefulInternalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceGroupManager) StatefulInternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"statefulInternalIpInput",
 		&returns,
 	)
 	return returns
@@ -1271,6 +1319,28 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulDisk(value inte
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulExternalIp(value interface{}) {
+	if err := g.validatePutStatefulExternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStatefulExternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutStatefulInternalIp(value interface{}) {
+	if err := g.validatePutStatefulInternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStatefulInternalIp",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) PutTimeouts(value *GoogleComputeInstanceGroupManagerTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1372,6 +1442,22 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetStatefulDisk() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetStatefulDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetStatefulExternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatefulExternalIp",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) ResetStatefulInternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStatefulInternalIp",
 		nil, // no parameters
 	)
 }

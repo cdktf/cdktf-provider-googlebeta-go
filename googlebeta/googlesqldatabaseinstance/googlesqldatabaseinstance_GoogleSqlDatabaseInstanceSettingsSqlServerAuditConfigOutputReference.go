@@ -2,9 +2,9 @@ package googlesqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlesqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlesqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,6 +70,7 @@ type GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference interf
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetBucket()
 	ResetRetentionInterval()
 	ResetUploadInterval()
 	// Produce the Token's value at resolution time.
@@ -517,6 +518,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputRe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference) ResetBucket() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBucket",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsSqlServerAuditConfigOutputReference) ResetRetentionInterval() {

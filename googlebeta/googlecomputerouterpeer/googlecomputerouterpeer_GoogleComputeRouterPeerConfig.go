@@ -105,6 +105,13 @@ type GoogleComputeRouterPeerConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router_peer#region GoogleComputeRouterPeer#region}
 	Region *string `field:"optional" json:"region" yaml:"region"`
+	// The URI of the VM instance that is used as third-party router appliances such as Next Gen Firewalls, Virtual Routers, or Router Appliances.
+	//
+	// The VM instance must be located in zones contained in the same region as
+	// this Cloud Router. The VM instance is the peer side of the BGP session.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router_peer#router_appliance_instance GoogleComputeRouterPeer#router_appliance_instance}
+	RouterApplianceInstance *string `field:"optional" json:"routerApplianceInstance" yaml:"routerApplianceInstance"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_router_peer#timeouts GoogleComputeRouterPeer#timeouts}

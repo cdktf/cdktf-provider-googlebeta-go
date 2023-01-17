@@ -2,10 +2,10 @@ package googledataproccluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googledataproccluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledataproccluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -80,6 +80,8 @@ type GoogleDataprocCluster interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleDataprocClusterTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	VirtualClusterConfig() GoogleDataprocClusterVirtualClusterConfigOutputReference
+	VirtualClusterConfigInput() *GoogleDataprocClusterVirtualClusterConfig
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -107,6 +109,7 @@ type GoogleDataprocCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutClusterConfig(value *GoogleDataprocClusterClusterConfig)
 	PutTimeouts(value *GoogleDataprocClusterTimeouts)
+	PutVirtualClusterConfig(value *GoogleDataprocClusterVirtualClusterConfig)
 	ResetClusterConfig()
 	ResetGracefulDecommissionTimeout()
 	ResetId()
@@ -117,6 +120,7 @@ type GoogleDataprocCluster interface {
 	ResetProject()
 	ResetRegion()
 	ResetTimeouts()
+	ResetVirtualClusterConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -447,6 +451,26 @@ func (j *jsiiProxy_GoogleDataprocCluster) TimeoutsInput() interface{} {
 	_jsii_.Get(
 		j,
 		"timeoutsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocCluster) VirtualClusterConfig() GoogleDataprocClusterVirtualClusterConfigOutputReference {
+	var returns GoogleDataprocClusterVirtualClusterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"virtualClusterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocCluster) VirtualClusterConfigInput() *GoogleDataprocClusterVirtualClusterConfig {
+	var returns *GoogleDataprocClusterVirtualClusterConfig
+	_jsii_.Get(
+		j,
+		"virtualClusterConfigInput",
 		&returns,
 	)
 	return returns
@@ -901,6 +925,17 @@ func (g *jsiiProxy_GoogleDataprocCluster) PutTimeouts(value *GoogleDataprocClust
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocCluster) PutVirtualClusterConfig(value *GoogleDataprocClusterVirtualClusterConfig) {
+	if err := g.validatePutVirtualClusterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVirtualClusterConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocCluster) ResetClusterConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -961,6 +996,14 @@ func (g *jsiiProxy_GoogleDataprocCluster) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocCluster) ResetVirtualClusterConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVirtualClusterConfig",
 		nil, // no parameters
 	)
 }

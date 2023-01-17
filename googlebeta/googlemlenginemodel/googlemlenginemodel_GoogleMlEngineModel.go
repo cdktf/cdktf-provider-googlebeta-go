@@ -2,10 +2,10 @@ package googlemlenginemodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlemlenginemodel/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlemlenginemodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

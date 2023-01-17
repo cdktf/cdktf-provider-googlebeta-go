@@ -68,6 +68,14 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulDiskPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulExternalIpParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStatefulInternalIpParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutTimeoutsParameters(value *GoogleComputeInstanceGroupManagerTimeouts) error {
 	return nil
 }

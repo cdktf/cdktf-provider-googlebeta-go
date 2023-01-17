@@ -2,9 +2,9 @@ package googlegkehubfeaturemembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlegkehubfeaturemembership/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlegkehubfeaturemembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,8 @@ type GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference inte
 	GitInput() *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGit
 	InternalValue() *GoogleGkeHubFeatureMembershipConfigmanagementConfigSync
 	SetInternalValue(val *GoogleGkeHubFeatureMembershipConfigmanagementConfigSync)
+	Oci() GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference
+	OciInput() *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci
 	PreventDrift() interface{}
 	SetPreventDrift(val interface{})
 	PreventDriftInput() interface{}
@@ -70,7 +72,9 @@ type GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference inte
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGit(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGit)
+	PutOci(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci)
 	ResetGit()
+	ResetOci()
 	ResetPreventDrift()
 	ResetSourceFormat()
 	// Produce the Token's value at resolution time.
@@ -153,6 +157,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) Oci() GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference {
+	var returns GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOciOutputReference
+	_jsii_.Get(
+		j,
+		"oci",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) OciInput() *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci {
+	var returns *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci
+	_jsii_.Get(
+		j,
+		"ociInput",
 		&returns,
 	)
 	return returns
@@ -520,10 +544,29 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) PutOci(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci) {
+	if err := g.validatePutOciParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOci",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) ResetGit() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGit",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) ResetOci() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOci",
 		nil, // no parameters
 	)
 }

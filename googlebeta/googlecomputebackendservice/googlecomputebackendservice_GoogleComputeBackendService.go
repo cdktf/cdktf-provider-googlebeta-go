@@ -2,10 +2,10 @@ package googlecomputebackendservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googlecomputebackendservice/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputebackendservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -67,6 +67,7 @@ type GoogleComputeBackendService interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeneratedId() *float64
 	HealthChecks() *[]*string
 	SetHealthChecks(val *[]*string)
 	HealthChecksInput() *[]*string
@@ -526,6 +527,16 @@ func (j *jsiiProxy_GoogleComputeBackendService) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) GeneratedId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"generatedId",
 		&returns,
 	)
 	return returns

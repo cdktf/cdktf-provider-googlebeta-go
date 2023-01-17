@@ -72,6 +72,14 @@ type GoogleComputeInstanceGroupManagerConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#stateful_disk GoogleComputeInstanceGroupManager#stateful_disk}
 	StatefulDisk interface{} `field:"optional" json:"statefulDisk" yaml:"statefulDisk"`
+	// stateful_external_ip block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#stateful_external_ip GoogleComputeInstanceGroupManager#stateful_external_ip}
+	StatefulExternalIp interface{} `field:"optional" json:"statefulExternalIp" yaml:"statefulExternalIp"`
+	// stateful_internal_ip block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_group_manager#stateful_internal_ip GoogleComputeInstanceGroupManager#stateful_internal_ip}
+	StatefulInternalIp interface{} `field:"optional" json:"statefulInternalIp" yaml:"statefulInternalIp"`
 	// The full URL of all target pools to which new instances in the group are added.
 	//
 	// Updating the target pools attribute does not affect existing instances.

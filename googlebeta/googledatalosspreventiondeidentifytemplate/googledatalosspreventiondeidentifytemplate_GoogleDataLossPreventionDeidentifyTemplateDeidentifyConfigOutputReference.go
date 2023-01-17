@@ -2,9 +2,9 @@ package googledatalosspreventiondeidentifytemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v4/googledatalosspreventiondeidentifytemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googledatalosspreventiondeidentifytemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,8 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference i
 	InfoTypeTransformationsInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations
 	InternalValue() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfig
 	SetInternalValue(val *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfig)
+	RecordTransformations() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsOutputReference
+	RecordTransformationsInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +66,9 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference i
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInfoTypeTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations)
+	PutRecordTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations)
+	ResetInfoTypeTransformations()
+	ResetRecordTransformations()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +149,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOut
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) RecordTransformations() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsOutputReference {
+	var returns GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformationsOutputReference
+	_jsii_.Get(
+		j,
+		"recordTransformations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) RecordTransformationsInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations {
+	var returns *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations
+	_jsii_.Get(
+		j,
+		"recordTransformationsInput",
 		&returns,
 	)
 	return returns
@@ -446,6 +471,33 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOut
 		g,
 		"putInfoTypeTransformations",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) PutRecordTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations) {
+	if err := g.validatePutRecordTransformationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRecordTransformations",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) ResetInfoTypeTransformations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInfoTypeTransformations",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) ResetRecordTransformations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRecordTransformations",
+		nil, // no parameters
 	)
 }
 
