@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) validatePutTriggererParameters(value *GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) validatePutWebServerParameters(value *GoogleComposerEnvironmentConfigWorkloadsConfigWebServer) error {
 	return nil
 }

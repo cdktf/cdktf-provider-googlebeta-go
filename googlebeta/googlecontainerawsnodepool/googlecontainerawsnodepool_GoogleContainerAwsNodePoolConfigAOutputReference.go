@@ -10,6 +10,8 @@ import (
 
 type GoogleContainerAwsNodePoolConfigAOutputReference interface {
 	cdktf.ComplexObject
+	AutoscalingMetricsCollection() GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference
+	AutoscalingMetricsCollectionInput() *GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -91,12 +93,14 @@ type GoogleContainerAwsNodePoolConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutoscalingMetricsCollection(value *GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection)
 	PutConfigEncryption(value *GoogleContainerAwsNodePoolConfigConfigEncryption)
 	PutInstancePlacement(value *GoogleContainerAwsNodePoolConfigInstancePlacement)
 	PutProxyConfig(value *GoogleContainerAwsNodePoolConfigProxyConfig)
 	PutRootVolume(value *GoogleContainerAwsNodePoolConfigRootVolume)
 	PutSshConfig(value *GoogleContainerAwsNodePoolConfigSshConfig)
 	PutTaints(value interface{})
+	ResetAutoscalingMetricsCollection()
 	ResetImageType()
 	ResetInstancePlacement()
 	ResetInstanceType()
@@ -120,6 +124,26 @@ type GoogleContainerAwsNodePoolConfigAOutputReference interface {
 // The jsii proxy struct for GoogleContainerAwsNodePoolConfigAOutputReference
 type jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) AutoscalingMetricsCollection() GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference {
+	var returns GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingMetricsCollection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) AutoscalingMetricsCollectionInput() *GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection {
+	var returns *GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection
+	_jsii_.Get(
+		j,
+		"autoscalingMetricsCollectionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) ComplexObjectIndex() interface{} {
@@ -767,6 +791,17 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) Interpolati
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) PutAutoscalingMetricsCollection(value *GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection) {
+	if err := g.validatePutAutoscalingMetricsCollectionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoscalingMetricsCollection",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) PutConfigEncryption(value *GoogleContainerAwsNodePoolConfigConfigEncryption) {
 	if err := g.validatePutConfigEncryptionParameters(value); err != nil {
 		panic(err)
@@ -830,6 +865,14 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) PutTaints(v
 		g,
 		"putTaints",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) ResetAutoscalingMetricsCollection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoscalingMetricsCollection",
+		nil, // no parameters
 	)
 }
 

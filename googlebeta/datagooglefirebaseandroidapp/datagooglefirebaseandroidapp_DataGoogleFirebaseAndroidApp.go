@@ -29,6 +29,7 @@ type DataGoogleFirebaseAndroidApp interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	DisplayName() *string
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -55,6 +56,8 @@ type DataGoogleFirebaseAndroidApp interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	Sha1Hashes() *[]*string
+	Sha256Hashes() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -185,6 +188,16 @@ func (j *jsiiProxy_DataGoogleFirebaseAndroidApp) DisplayName() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFirebaseAndroidApp) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFirebaseAndroidApp) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -300,6 +313,26 @@ func (j *jsiiProxy_DataGoogleFirebaseAndroidApp) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFirebaseAndroidApp) Sha1Hashes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sha1Hashes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleFirebaseAndroidApp) Sha256Hashes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sha256Hashes",
 		&returns,
 	)
 	return returns

@@ -71,6 +71,7 @@ type DataGoogleDataprocMetastoreService interface {
 	ServiceIdInput() *string
 	State() *string
 	StateMessage() *string
+	TelemetryConfig() DataGoogleDataprocMetastoreServiceTelemetryConfigList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -459,6 +460,16 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreService) StateMessage() *string {
 	_jsii_.Get(
 		j,
 		"stateMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleDataprocMetastoreService) TelemetryConfig() DataGoogleDataprocMetastoreServiceTelemetryConfigList {
+	var returns DataGoogleDataprocMetastoreServiceTelemetryConfigList
+	_jsii_.Get(
+		j,
+		"telemetryConfig",
 		&returns,
 	)
 	return returns

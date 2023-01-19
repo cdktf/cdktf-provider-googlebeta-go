@@ -1,0 +1,10 @@
+package googledatastreamstream
+
+
+type GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets struct {
+	// dataset_template block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_stream#dataset_template GoogleDatastreamStream#dataset_template}
+	DatasetTemplate *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasetsDatasetTemplate `field:"required" json:"datasetTemplate" yaml:"datasetTemplate"`
+}
+

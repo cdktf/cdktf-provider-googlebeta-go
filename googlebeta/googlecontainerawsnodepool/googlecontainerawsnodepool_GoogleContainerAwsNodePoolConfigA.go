@@ -10,6 +10,10 @@ type GoogleContainerAwsNodePoolConfigA struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#iam_instance_profile GoogleContainerAwsNodePool#iam_instance_profile}
 	IamInstanceProfile *string `field:"required" json:"iamInstanceProfile" yaml:"iamInstanceProfile"`
+	// autoscaling_metrics_collection block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#autoscaling_metrics_collection GoogleContainerAwsNodePool#autoscaling_metrics_collection}
+	AutoscalingMetricsCollection *GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection `field:"optional" json:"autoscalingMetricsCollection" yaml:"autoscalingMetricsCollection"`
 	// The OS image type to use on node pool instances.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_aws_node_pool#image_type GoogleContainerAwsNodePool#image_type}

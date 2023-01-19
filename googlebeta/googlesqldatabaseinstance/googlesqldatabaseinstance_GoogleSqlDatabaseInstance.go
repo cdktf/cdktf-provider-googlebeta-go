@@ -53,6 +53,7 @@ type GoogleSqlDatabaseInstance interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstanceType() *string
 	IpAddress() GoogleSqlDatabaseInstanceIpAddressList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -374,6 +375,16 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) InstanceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceType",
 		&returns,
 	)
 	return returns

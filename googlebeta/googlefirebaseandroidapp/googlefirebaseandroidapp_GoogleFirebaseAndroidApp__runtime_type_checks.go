@@ -273,6 +273,22 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetSha1HashesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetSha256HashesParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleFirebaseAndroidAppParameters(scope constructs.Construct, id *string, config *GoogleFirebaseAndroidAppConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) validateInt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) validatePutAutoscalingMetricsCollectionParameters(value *GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollection) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) validatePutConfigEncryptionParameters(value *GoogleContainerAwsNodePoolConfigConfigEncryption) error {
 	return nil
 }

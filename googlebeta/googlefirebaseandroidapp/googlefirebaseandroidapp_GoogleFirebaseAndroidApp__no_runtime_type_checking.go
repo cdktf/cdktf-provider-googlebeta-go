@@ -100,6 +100,14 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetSha1HashesParameters(val *[]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetSha256HashesParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewGoogleFirebaseAndroidAppParameters(scope constructs.Construct, id *string, config *GoogleFirebaseAndroidAppConfig) error {
 	return nil
 }

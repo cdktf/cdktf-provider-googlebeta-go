@@ -39,6 +39,8 @@ type GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Triggerer() GoogleComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference
+	TriggererInput() *GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer
 	WebServer() GoogleComposerEnvironmentConfigWorkloadsConfigWebServerOutputReference
 	WebServerInput() *GoogleComposerEnvironmentConfigWorkloadsConfigWebServer
 	Worker() GoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference
@@ -68,9 +70,11 @@ type GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutScheduler(value *GoogleComposerEnvironmentConfigWorkloadsConfigScheduler)
+	PutTriggerer(value *GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer)
 	PutWebServer(value *GoogleComposerEnvironmentConfigWorkloadsConfigWebServer)
 	PutWorker(value *GoogleComposerEnvironmentConfigWorkloadsConfigWorker)
 	ResetScheduler()
+	ResetTriggerer()
 	ResetWebServer()
 	ResetWorker()
 	// Produce the Token's value at resolution time.
@@ -173,6 +177,26 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) Triggerer() GoogleComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference {
+	var returns GoogleComposerEnvironmentConfigWorkloadsConfigTriggererOutputReference
+	_jsii_.Get(
+		j,
+		"triggerer",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) TriggererInput() *GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer {
+	var returns *GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer
+	_jsii_.Get(
+		j,
+		"triggererInput",
 		&returns,
 	)
 	return returns
@@ -498,6 +522,17 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference
 	)
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) PutTriggerer(value *GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer) {
+	if err := g.validatePutTriggererParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTriggerer",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) PutWebServer(value *GoogleComposerEnvironmentConfigWorkloadsConfigWebServer) {
 	if err := g.validatePutWebServerParameters(value); err != nil {
 		panic(err)
@@ -524,6 +559,14 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference
 	_jsii_.InvokeVoid(
 		g,
 		"resetScheduler",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) ResetTriggerer() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTriggerer",
 		nil, // no parameters
 	)
 }

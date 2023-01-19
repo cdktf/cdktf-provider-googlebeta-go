@@ -27,7 +27,7 @@ type GoogleDatastreamConnectionProfileConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#display_name GoogleDatastreamConnectionProfile#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
-	// The name of the location this repository is located in.
+	// The name of the location this connection profile is located in.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_connection_profile#location GoogleDatastreamConnectionProfile#location}
 	Location *string `field:"required" json:"location" yaml:"location"`

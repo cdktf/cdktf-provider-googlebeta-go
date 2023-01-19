@@ -82,6 +82,9 @@ type GoogleCloudIdsEndpoint interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	ThreatExceptions() *[]*string
+	SetThreatExceptions(val *[]*string)
+	ThreatExceptionsInput() *[]*string
 	Timeouts() GoogleCloudIdsEndpointTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
@@ -117,6 +120,7 @@ type GoogleCloudIdsEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetThreatExceptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -463,6 +467,26 @@ func (j *jsiiProxy_GoogleCloudIdsEndpoint) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudIdsEndpoint) ThreatExceptions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"threatExceptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudIdsEndpoint) ThreatExceptionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"threatExceptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudIdsEndpoint) Timeouts() GoogleCloudIdsEndpointTimeoutsOutputReference {
 	var returns GoogleCloudIdsEndpointTimeoutsOutputReference
 	_jsii_.Get(
@@ -661,6 +685,17 @@ func (j *jsiiProxy_GoogleCloudIdsEndpoint)SetSeverity(val *string) {
 	_jsii_.Set(
 		j,
 		"severity",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudIdsEndpoint)SetThreatExceptions(val *[]*string) {
+	if err := j.validateSetThreatExceptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"threatExceptions",
 		val,
 	)
 }
@@ -970,6 +1005,14 @@ func (g *jsiiProxy_GoogleCloudIdsEndpoint) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudIdsEndpoint) ResetThreatExceptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetThreatExceptions",
 		nil, // no parameters
 	)
 }

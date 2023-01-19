@@ -94,6 +94,8 @@ type GoogleDataprocMetastoreService interface {
 	ServiceIdInput() *string
 	State() *string
 	StateMessage() *string
+	TelemetryConfig() GoogleDataprocMetastoreServiceTelemetryConfigOutputReference
+	TelemetryConfigInput() *GoogleDataprocMetastoreServiceTelemetryConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -136,6 +138,7 @@ type GoogleDataprocMetastoreService interface {
 	PutMaintenanceWindow(value *GoogleDataprocMetastoreServiceMaintenanceWindow)
 	PutMetadataIntegration(value *GoogleDataprocMetastoreServiceMetadataIntegration)
 	PutNetworkConfig(value *GoogleDataprocMetastoreServiceNetworkConfig)
+	PutTelemetryConfig(value *GoogleDataprocMetastoreServiceTelemetryConfig)
 	PutTimeouts(value *GoogleDataprocMetastoreServiceTimeouts)
 	ResetDatabaseType()
 	ResetEncryptionConfig()
@@ -153,6 +156,7 @@ type GoogleDataprocMetastoreService interface {
 	ResetPort()
 	ResetProject()
 	ResetReleaseChannel()
+	ResetTelemetryConfig()
 	ResetTier()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -625,6 +629,26 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) StateMessage() *string {
 	_jsii_.Get(
 		j,
 		"stateMessage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) TelemetryConfig() GoogleDataprocMetastoreServiceTelemetryConfigOutputReference {
+	var returns GoogleDataprocMetastoreServiceTelemetryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"telemetryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) TelemetryConfigInput() *GoogleDataprocMetastoreServiceTelemetryConfig {
+	var returns *GoogleDataprocMetastoreServiceTelemetryConfig
+	_jsii_.Get(
+		j,
+		"telemetryConfigInput",
 		&returns,
 	)
 	return returns
@@ -1236,6 +1260,17 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) PutNetworkConfig(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) PutTelemetryConfig(value *GoogleDataprocMetastoreServiceTelemetryConfig) {
+	if err := g.validatePutTelemetryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTelemetryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreService) PutTimeouts(value *GoogleDataprocMetastoreServiceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1355,6 +1390,14 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetTelemetryConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTelemetryConfig",
 		nil, // no parameters
 	)
 }

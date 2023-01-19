@@ -4,6 +4,8 @@ package googlebigtableinstance
 type GoogleBigtableInstanceCluster struct {
 	// The ID of the Cloud Bigtable cluster.
 	//
+	// Must be 6-30 characters and must only contain hyphens, lowercase letters and numbers.
+	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_instance#cluster_id GoogleBigtableInstance#cluster_id}
 	ClusterId *string `field:"required" json:"clusterId" yaml:"clusterId"`
 	// autoscaling_config block.
@@ -18,7 +20,7 @@ type GoogleBigtableInstanceCluster struct {
 	KmsKeyName *string `field:"optional" json:"kmsKeyName" yaml:"kmsKeyName"`
 	// The number of nodes in your Cloud Bigtable cluster.
 	//
-	// Required, with a minimum of 1 for a PRODUCTION instance. Must be left unset for a DEVELOPMENT instance.
+	// Required, with a minimum of 1 for each cluster in an instance.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigtable_instance#num_nodes GoogleBigtableInstance#num_nodes}
 	NumNodes *float64 `field:"optional" json:"numNodes" yaml:"numNodes"`

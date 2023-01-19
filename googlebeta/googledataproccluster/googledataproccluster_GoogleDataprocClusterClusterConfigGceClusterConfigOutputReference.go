@@ -38,6 +38,10 @@ type GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference interface
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	NodeGroupAffinity() GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference
+	NodeGroupAffinityInput() *GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity
+	ReservationAffinity() GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference
+	ReservationAffinityInput() *GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -87,10 +91,14 @@ type GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNodeGroupAffinity(value *GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity)
+	PutReservationAffinity(value *GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity)
 	PutShieldedInstanceConfig(value *GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig)
 	ResetInternalIpOnly()
 	ResetMetadata()
 	ResetNetwork()
+	ResetNodeGroupAffinity()
+	ResetReservationAffinity()
 	ResetServiceAccount()
 	ResetServiceAccountScopes()
 	ResetShieldedInstanceConfig()
@@ -217,6 +225,46 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputRefer
 	_jsii_.Get(
 		j,
 		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) NodeGroupAffinity() GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference {
+	var returns GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinityOutputReference
+	_jsii_.Get(
+		j,
+		"nodeGroupAffinity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) NodeGroupAffinityInput() *GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity {
+	var returns *GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity
+	_jsii_.Get(
+		j,
+		"nodeGroupAffinityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) ReservationAffinity() GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference {
+	var returns GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinityOutputReference
+	_jsii_.Get(
+		j,
+		"reservationAffinity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) ReservationAffinityInput() *GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity {
+	var returns *GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity
+	_jsii_.Get(
+		j,
+		"reservationAffinityInput",
 		&returns,
 	)
 	return returns
@@ -719,6 +767,28 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputRefer
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) PutNodeGroupAffinity(value *GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity) {
+	if err := g.validatePutNodeGroupAffinityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeGroupAffinity",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) PutReservationAffinity(value *GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity) {
+	if err := g.validatePutReservationAffinityParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReservationAffinity",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) PutShieldedInstanceConfig(value *GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig) {
 	if err := g.validatePutShieldedInstanceConfigParameters(value); err != nil {
 		panic(err)
@@ -750,6 +820,22 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) ResetNodeGroupAffinity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeGroupAffinity",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) ResetReservationAffinity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReservationAffinity",
 		nil, // no parameters
 	)
 }

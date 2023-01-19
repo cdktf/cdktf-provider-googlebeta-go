@@ -35,6 +35,7 @@ type GoogleFirebaseAndroidApp interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -69,6 +70,12 @@ type GoogleFirebaseAndroidApp interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Sha1Hashes() *[]*string
+	SetSha1Hashes(val *[]*string)
+	Sha1HashesInput() *[]*string
+	Sha256Hashes() *[]*string
+	SetSha256Hashes(val *[]*string)
+	Sha256HashesInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -110,6 +117,8 @@ type GoogleFirebaseAndroidApp interface {
 	ResetOverrideLogicalId()
 	ResetPackageName()
 	ResetProject()
+	ResetSha1Hashes()
+	ResetSha256Hashes()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -221,6 +230,16 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -371,6 +390,46 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) Sha1Hashes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sha1Hashes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) Sha1HashesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sha1HashesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) Sha256Hashes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sha256Hashes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) Sha256HashesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sha256HashesInput",
 		&returns,
 	)
 	return returns
@@ -572,6 +631,28 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp)SetSha1Hashes(val *[]*string) {
+	if err := j.validateSetSha1HashesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sha1Hashes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp)SetSha256Hashes(val *[]*string) {
+	if err := j.validateSetSha256HashesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sha256Hashes",
 		val,
 	)
 }
@@ -889,6 +970,22 @@ func (g *jsiiProxy_GoogleFirebaseAndroidApp) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseAndroidApp) ResetSha1Hashes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSha1Hashes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseAndroidApp) ResetSha256Hashes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSha256Hashes",
 		nil, // no parameters
 	)
 }

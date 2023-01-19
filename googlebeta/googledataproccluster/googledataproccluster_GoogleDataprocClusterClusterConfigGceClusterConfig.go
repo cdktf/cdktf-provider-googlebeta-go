@@ -18,6 +18,14 @@ type GoogleDataprocClusterClusterConfigGceClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#network GoogleDataprocCluster#network}
 	Network *string `field:"optional" json:"network" yaml:"network"`
+	// node_group_affinity block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#node_group_affinity GoogleDataprocCluster#node_group_affinity}
+	NodeGroupAffinity *GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity `field:"optional" json:"nodeGroupAffinity" yaml:"nodeGroupAffinity"`
+	// reservation_affinity block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#reservation_affinity GoogleDataprocCluster#reservation_affinity}
+	ReservationAffinity *GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity `field:"optional" json:"reservationAffinity" yaml:"reservationAffinity"`
 	// The service account to be used by the Node VMs. If not specified, the "default" service account is used.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_dataproc_cluster#service_account GoogleDataprocCluster#service_account}

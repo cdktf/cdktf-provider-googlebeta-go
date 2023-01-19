@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleCloudIdsEndpoint) validateSetSeverityParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudIdsEndpoint) validateSetThreatExceptionsParameters(val *[]*string) error {
+	return nil
+}
+
 func validateNewGoogleCloudIdsEndpointParameters(scope constructs.Construct, id *string, config *GoogleCloudIdsEndpointConfig) error {
 	return nil
 }

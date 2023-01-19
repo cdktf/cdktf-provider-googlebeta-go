@@ -23,7 +23,7 @@ type GoogleDatastreamPrivateConnectionConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_private_connection#display_name GoogleDatastreamPrivateConnection#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
-	// The name of the location this repository is located in.
+	// The name of the location this private connection is located in.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_datastream_private_connection#location GoogleDatastreamPrivateConnection#location}
 	Location *string `field:"required" json:"location" yaml:"location"`

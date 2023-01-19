@@ -289,6 +289,14 @@ func (j *jsiiProxy_GoogleCloudIdsEndpoint) validateSetSeverityParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudIdsEndpoint) validateSetThreatExceptionsParameters(val *[]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewGoogleCloudIdsEndpointParameters(scope constructs.Construct, id *string, config *GoogleCloudIdsEndpointConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

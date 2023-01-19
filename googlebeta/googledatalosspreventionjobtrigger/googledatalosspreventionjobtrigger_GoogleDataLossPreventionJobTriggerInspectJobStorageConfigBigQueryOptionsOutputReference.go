@@ -27,6 +27,8 @@ type GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOut
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentifyingFields() GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsList
+	IdentifyingFieldsInput() interface{}
 	InternalValue() *GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions
 	SetInternalValue(val *GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptions)
 	RowsLimit() *float64
@@ -72,7 +74,9 @@ type GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOut
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutIdentifyingFields(value interface{})
 	PutTableReference(value *GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference)
+	ResetIdentifyingFields()
 	ResetRowsLimit()
 	ResetRowsLimitPercent()
 	ResetSampleMethod()
@@ -126,6 +130,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQ
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) IdentifyingFields() GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsList {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsIdentifyingFieldsList
+	_jsii_.Get(
+		j,
+		"identifyingFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) IdentifyingFieldsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"identifyingFieldsInput",
 		&returns,
 	)
 	return returns
@@ -543,6 +567,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQ
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) PutIdentifyingFields(value interface{}) {
+	if err := g.validatePutIdentifyingFieldsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putIdentifyingFields",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) PutTableReference(value *GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsTableReference) {
 	if err := g.validatePutTableReferenceParameters(value); err != nil {
 		panic(err)
@@ -551,6 +586,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQ
 		g,
 		"putTableReference",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigBigQueryOptionsOutputReference) ResetIdentifyingFields() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentifyingFields",
+		nil, // no parameters
 	)
 }
 

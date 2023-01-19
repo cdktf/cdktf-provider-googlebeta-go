@@ -32,6 +32,8 @@ type GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleVertexAiFeaturestoreOnlineServingConfig
 	SetInternalValue(val *GoogleVertexAiFeaturestoreOnlineServingConfig)
+	Scaling() GoogleVertexAiFeaturestoreOnlineServingConfigScalingOutputReference
+	ScalingInput() *GoogleVertexAiFeaturestoreOnlineServingConfigScaling
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +66,9 @@ type GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutScaling(value *GoogleVertexAiFeaturestoreOnlineServingConfigScaling)
+	ResetFixedNodeCount()
+	ResetScaling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +149,26 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference)
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) Scaling() GoogleVertexAiFeaturestoreOnlineServingConfigScalingOutputReference {
+	var returns GoogleVertexAiFeaturestoreOnlineServingConfigScalingOutputReference
+	_jsii_.Get(
+		j,
+		"scaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) ScalingInput() *GoogleVertexAiFeaturestoreOnlineServingConfigScaling {
+	var returns *GoogleVertexAiFeaturestoreOnlineServingConfigScaling
+	_jsii_.Get(
+		j,
+		"scalingInput",
 		&returns,
 	)
 	return returns
@@ -447,6 +472,33 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference)
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) PutScaling(value *GoogleVertexAiFeaturestoreOnlineServingConfigScaling) {
+	if err := g.validatePutScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putScaling",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) ResetFixedNodeCount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFixedNodeCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) ResetScaling() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScaling",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

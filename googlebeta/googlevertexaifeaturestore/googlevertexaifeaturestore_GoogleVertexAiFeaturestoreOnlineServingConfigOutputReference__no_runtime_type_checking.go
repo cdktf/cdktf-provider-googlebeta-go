@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference)
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) validatePutScalingParameters(value *GoogleVertexAiFeaturestoreOnlineServingConfigScaling) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeaturestoreOnlineServingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

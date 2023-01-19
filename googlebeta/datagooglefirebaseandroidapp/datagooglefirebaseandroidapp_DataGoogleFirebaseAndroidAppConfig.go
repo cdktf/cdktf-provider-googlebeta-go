@@ -19,7 +19,7 @@ type DataGoogleFirebaseAndroidAppConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The globally unique, Firebase-assigned identifier of the App.
+	// The globally unique, Firebase-assigned identifier of the AndroidApp.
 	//
 	// This identifier should be treated as an opaque token, as the data format is not specified.
 	//

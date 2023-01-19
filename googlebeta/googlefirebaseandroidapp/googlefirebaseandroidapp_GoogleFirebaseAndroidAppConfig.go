@@ -19,7 +19,7 @@ type GoogleFirebaseAndroidAppConfig struct {
 	Provider cdktf.TerraformProvider `field:"optional" json:"provider" yaml:"provider"`
 	// Experimental.
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
-	// The user-assigned display name of the App.
+	// The user-assigned display name of the AndroidApp.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#display_name GoogleFirebaseAndroidApp#display_name}
 	DisplayName *string `field:"required" json:"displayName" yaml:"displayName"`
@@ -41,6 +41,14 @@ type GoogleFirebaseAndroidAppConfig struct {
 	PackageName *string `field:"optional" json:"packageName" yaml:"packageName"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#project GoogleFirebaseAndroidApp#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// The SHA1 certificate hashes for the AndroidApp.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#sha1_hashes GoogleFirebaseAndroidApp#sha1_hashes}
+	Sha1Hashes *[]*string `field:"optional" json:"sha1Hashes" yaml:"sha1Hashes"`
+	// The SHA256 certificate hashes for the AndroidApp.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#sha256_hashes GoogleFirebaseAndroidApp#sha256_hashes}
+	Sha256Hashes *[]*string `field:"optional" json:"sha256Hashes" yaml:"sha256Hashes"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app#timeouts GoogleFirebaseAndroidApp#timeouts}
