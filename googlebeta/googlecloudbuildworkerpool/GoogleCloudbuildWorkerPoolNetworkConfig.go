@@ -8,5 +8,11 @@ type GoogleCloudbuildWorkerPoolNetworkConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_worker_pool#peered_network GoogleCloudbuildWorkerPool#peered_network}
 	PeeredNetwork *string `field:"required" json:"peeredNetwork" yaml:"peeredNetwork"`
+	// Optional.
+	//
+	// Immutable. Subnet IP range within the peered network. This is specified in CIDR notation with a slash and the subnet prefix size. You can optionally specify an IP address before the subnet prefix value. e.g. `192.168.0.0/29` would specify an IP range starting at 192.168.0.0 with a prefix size of 29 bits. `/16` would specify a prefix size of 16 bits, with an automatically determined IP within the peered VPC. If unspecified, a value of `/24` will be used.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuild_worker_pool#peered_network_ip_range GoogleCloudbuildWorkerPool#peered_network_ip_range}
+	PeeredNetworkIpRange *string `field:"optional" json:"peeredNetworkIpRange" yaml:"peeredNetworkIpRange"`
 }
 

@@ -16,7 +16,7 @@ type GoogleAlloydbClusterAutomatedBackupPolicy struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#backup_window GoogleAlloydbCluster#backup_window}
 	BackupWindow *string `field:"optional" json:"backupWindow" yaml:"backupWindow"`
-	// Whether automated automated backups are enabled.
+	// Whether automated backups are enabled.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#enabled GoogleAlloydbCluster#enabled}
 	Enabled interface{} `field:"optional" json:"enabled" yaml:"enabled"`

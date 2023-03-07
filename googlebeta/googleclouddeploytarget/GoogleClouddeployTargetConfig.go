@@ -60,6 +60,10 @@ type GoogleClouddeployTargetConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#labels GoogleClouddeployTarget#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
+	// multi_target block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#multi_target GoogleClouddeployTarget#multi_target}
+	MultiTarget *GoogleClouddeployTargetMultiTarget `field:"optional" json:"multiTarget" yaml:"multiTarget"`
 	// The project for the resource.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_target#project GoogleClouddeployTarget#project}

@@ -8,6 +8,10 @@ type GoogleCloudRunV2ServiceTemplateContainersLivenessProbe struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#failure_threshold GoogleCloudRunV2Service#failure_threshold}
 	FailureThreshold *float64 `field:"optional" json:"failureThreshold" yaml:"failureThreshold"`
+	// grpc block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#grpc GoogleCloudRunV2Service#grpc}
+	Grpc *GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpc `field:"optional" json:"grpc" yaml:"grpc"`
 	// http_get block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloud_run_v2_service#http_get GoogleCloudRunV2Service#http_get}

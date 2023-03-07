@@ -17,6 +17,10 @@ type GoogleComputeResourcePolicyGroupPlacementPolicy struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#collocation GoogleComputeResourcePolicy#collocation}
 	Collocation *string `field:"optional" json:"collocation" yaml:"collocation"`
+	// Specifies the number of max logical switches.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#max_distance GoogleComputeResourcePolicy#max_distance}
+	MaxDistance *float64 `field:"optional" json:"maxDistance" yaml:"maxDistance"`
 	// Number of VMs in this placement group.
 	//
 	// Google does not recommend that you use this field

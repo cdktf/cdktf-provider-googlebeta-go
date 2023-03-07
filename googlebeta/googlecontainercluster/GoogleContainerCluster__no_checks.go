@@ -160,6 +160,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutPrivateClusterConfigParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutProtectConfigParameters(value *GoogleContainerClusterProtectConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutReleaseChannelParameters(value *GoogleContainerClusterReleaseChannel) error {
 	return nil
 }

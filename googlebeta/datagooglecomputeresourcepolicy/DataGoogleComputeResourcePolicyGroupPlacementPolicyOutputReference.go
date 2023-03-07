@@ -31,6 +31,7 @@ type DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interfac
 	Fqn() *string
 	InternalValue() *DataGoogleComputeResourcePolicyGroupPlacementPolicy
 	SetInternalValue(val *DataGoogleComputeResourcePolicyGroupPlacementPolicy)
+	MaxDistance() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -144,6 +145,16 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) MaxDistance() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDistance",
 		&returns,
 	)
 	return returns

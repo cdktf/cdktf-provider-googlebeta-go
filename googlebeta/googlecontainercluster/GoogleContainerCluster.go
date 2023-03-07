@@ -175,6 +175,8 @@ type GoogleContainerCluster interface {
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
+	ProtectConfig() GoogleContainerClusterProtectConfigOutputReference
+	ProtectConfigInput() *GoogleContainerClusterProtectConfig
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -269,6 +271,7 @@ type GoogleContainerCluster interface {
 	PutNotificationConfig(value *GoogleContainerClusterNotificationConfig)
 	PutPodSecurityPolicyConfig(value *GoogleContainerClusterPodSecurityPolicyConfig)
 	PutPrivateClusterConfig(value *GoogleContainerClusterPrivateClusterConfig)
+	PutProtectConfig(value *GoogleContainerClusterProtectConfig)
 	PutReleaseChannel(value *GoogleContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *GoogleContainerClusterResourceUsageExportConfig)
 	PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig)
@@ -330,6 +333,7 @@ type GoogleContainerCluster interface {
 	ResetPrivateClusterConfig()
 	ResetPrivateIpv6GoogleAccess()
 	ResetProject()
+	ResetProtectConfig()
 	ResetReleaseChannel()
 	ResetRemoveDefaultNodePool()
 	ResetResourceLabels()
@@ -1530,6 +1534,26 @@ func (j *jsiiProxy_GoogleContainerCluster) ProjectInput() *string {
 	_jsii_.Get(
 		j,
 		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ProtectConfig() GoogleContainerClusterProtectConfigOutputReference {
+	var returns GoogleContainerClusterProtectConfigOutputReference
+	_jsii_.Get(
+		j,
+		"protectConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ProtectConfigInput() *GoogleContainerClusterProtectConfig {
+	var returns *GoogleContainerClusterProtectConfig
+	_jsii_.Get(
+		j,
+		"protectConfigInput",
 		&returns,
 	)
 	return returns
@@ -2791,6 +2815,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutPrivateClusterConfig(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutProtectConfig(value *GoogleContainerClusterProtectConfig) {
+	if err := g.validatePutProtectConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putProtectConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutReleaseChannel(value *GoogleContainerClusterReleaseChannel) {
 	if err := g.validatePutReleaseChannelParameters(value); err != nil {
 		panic(err)
@@ -3280,6 +3315,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetProtectConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProtectConfig",
 		nil, // no parameters
 	)
 }

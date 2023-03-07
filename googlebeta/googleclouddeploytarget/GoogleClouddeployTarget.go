@@ -63,6 +63,8 @@ type GoogleClouddeployTarget interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MultiTarget() GoogleClouddeployTargetMultiTargetOutputReference
+	MultiTargetInput() *GoogleClouddeployTargetMultiTarget
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -125,6 +127,7 @@ type GoogleClouddeployTarget interface {
 	PutAnthosCluster(value *GoogleClouddeployTargetAnthosCluster)
 	PutExecutionConfigs(value interface{})
 	PutGke(value *GoogleClouddeployTargetGke)
+	PutMultiTarget(value *GoogleClouddeployTargetMultiTarget)
 	PutRun(value *GoogleClouddeployTargetRun)
 	PutTimeouts(value *GoogleClouddeployTargetTimeouts)
 	ResetAnnotations()
@@ -134,6 +137,7 @@ type GoogleClouddeployTarget interface {
 	ResetGke()
 	ResetId()
 	ResetLabels()
+	ResetMultiTarget()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -421,6 +425,26 @@ func (j *jsiiProxy_GoogleClouddeployTarget) LocationInput() *string {
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTarget) MultiTarget() GoogleClouddeployTargetMultiTargetOutputReference {
+	var returns GoogleClouddeployTargetMultiTargetOutputReference
+	_jsii_.Get(
+		j,
+		"multiTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTarget) MultiTargetInput() *GoogleClouddeployTargetMultiTarget {
+	var returns *GoogleClouddeployTargetMultiTarget
+	_jsii_.Get(
+		j,
+		"multiTargetInput",
 		&returns,
 	)
 	return returns
@@ -1108,6 +1132,17 @@ func (g *jsiiProxy_GoogleClouddeployTarget) PutGke(value *GoogleClouddeployTarge
 	)
 }
 
+func (g *jsiiProxy_GoogleClouddeployTarget) PutMultiTarget(value *GoogleClouddeployTargetMultiTarget) {
+	if err := g.validatePutMultiTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMultiTarget",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployTarget) PutRun(value *GoogleClouddeployTargetRun) {
 	if err := g.validatePutRunParameters(value); err != nil {
 		panic(err)
@@ -1182,6 +1217,14 @@ func (g *jsiiProxy_GoogleClouddeployTarget) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployTarget) ResetMultiTarget() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMultiTarget",
 		nil, // no parameters
 	)
 }

@@ -121,6 +121,68 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validatePutExternalIpParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputePerInstanceConfigPreservedStateExternalIp:
+		value := value.(*[]*GoogleComputePerInstanceConfigPreservedStateExternalIp)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputePerInstanceConfigPreservedStateExternalIp:
+		value_ := value.([]*GoogleComputePerInstanceConfigPreservedStateExternalIp)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputePerInstanceConfigPreservedStateExternalIp; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validatePutInternalIpParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleComputePerInstanceConfigPreservedStateInternalIp:
+		value := value.(*[]*GoogleComputePerInstanceConfigPreservedStateInternalIp)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleComputePerInstanceConfigPreservedStateInternalIp:
+		value_ := value.([]*GoogleComputePerInstanceConfigPreservedStateInternalIp)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputePerInstanceConfigPreservedStateInternalIp; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	if _context == nil {
 		return fmt.Errorf("parameter _context is required, but nil was provided")

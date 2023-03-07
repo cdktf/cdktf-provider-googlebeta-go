@@ -48,6 +48,14 @@ func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputRefer
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) validatePutExternalIpParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) validatePutInternalIpParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

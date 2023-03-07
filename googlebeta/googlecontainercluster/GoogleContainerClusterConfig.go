@@ -256,6 +256,10 @@ type GoogleContainerClusterConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#project GoogleContainerCluster#project}
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// protect_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#protect_config GoogleContainerCluster#protect_config}
+	ProtectConfig *GoogleContainerClusterProtectConfig `field:"optional" json:"protectConfig" yaml:"protectConfig"`
 	// release_channel block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#release_channel GoogleContainerCluster#release_channel}

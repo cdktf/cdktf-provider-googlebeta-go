@@ -27,8 +27,12 @@ type GoogleComputePerInstanceConfigPreservedStateOutputReference interface {
 	CreationStack() *[]*string
 	Disk() GoogleComputePerInstanceConfigPreservedStateDiskList
 	DiskInput() interface{}
+	ExternalIp() GoogleComputePerInstanceConfigPreservedStateExternalIpList
+	ExternalIpInput() interface{}
 	// Experimental.
 	Fqn() *string
+	InternalIp() GoogleComputePerInstanceConfigPreservedStateInternalIpList
+	InternalIpInput() interface{}
 	InternalValue() *GoogleComputePerInstanceConfigPreservedState
 	SetInternalValue(val *GoogleComputePerInstanceConfigPreservedState)
 	Metadata() *map[string]*string
@@ -67,7 +71,11 @@ type GoogleComputePerInstanceConfigPreservedStateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDisk(value interface{})
+	PutExternalIp(value interface{})
+	PutInternalIp(value interface{})
 	ResetDisk()
+	ResetExternalIp()
+	ResetInternalIp()
 	ResetMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -134,11 +142,51 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) ExternalIp() GoogleComputePerInstanceConfigPreservedStateExternalIpList {
+	var returns GoogleComputePerInstanceConfigPreservedStateExternalIpList
+	_jsii_.Get(
+		j,
+		"externalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) ExternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) InternalIp() GoogleComputePerInstanceConfigPreservedStateInternalIpList {
+	var returns GoogleComputePerInstanceConfigPreservedStateInternalIpList
+	_jsii_.Get(
+		j,
+		"internalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) InternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalIpInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +533,48 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) 
 	)
 }
 
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) PutExternalIp(value interface{}) {
+	if err := g.validatePutExternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) PutInternalIp(value interface{}) {
+	if err := g.validatePutInternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInternalIp",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) ResetDisk() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) ResetExternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalIp",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateOutputReference) ResetInternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInternalIp",
 		nil, // no parameters
 	)
 }

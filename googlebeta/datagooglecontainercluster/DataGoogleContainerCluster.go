@@ -102,6 +102,7 @@ type DataGoogleContainerCluster interface {
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
+	ProtectConfig() DataGoogleContainerClusterProtectConfigList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -857,6 +858,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) ProjectInput() *string {
 	_jsii_.Get(
 		j,
 		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) ProtectConfig() DataGoogleContainerClusterProtectConfigList {
+	var returns DataGoogleContainerClusterProtectConfigList
+	_jsii_.Get(
+		j,
+		"protectConfig",
 		&returns,
 	)
 	return returns

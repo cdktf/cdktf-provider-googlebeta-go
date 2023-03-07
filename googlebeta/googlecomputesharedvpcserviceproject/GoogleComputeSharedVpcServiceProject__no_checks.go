@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSharedVpcServiceProject) validateSetHostProjectParameters(val *string) error {
 	return nil
 }

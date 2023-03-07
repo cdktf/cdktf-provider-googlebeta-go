@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) validatePutAuthorizationParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAzureCluster) validatePutAzureServicesAuthenticationParameters(value *GoogleContainerAzureClusterAzureServicesAuthentication) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAzureCluster) validatePutControlPlaneParameters(value *GoogleContainerAzureClusterControlPlane) error {
 	return nil
 }

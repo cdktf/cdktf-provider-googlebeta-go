@@ -27,8 +27,12 @@ type GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference interface
 	CreationStack() *[]*string
 	Disk() GoogleComputeRegionPerInstanceConfigPreservedStateDiskList
 	DiskInput() interface{}
+	ExternalIp() GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList
+	ExternalIpInput() interface{}
 	// Experimental.
 	Fqn() *string
+	InternalIp() GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpList
+	InternalIpInput() interface{}
 	InternalValue() *GoogleComputeRegionPerInstanceConfigPreservedState
 	SetInternalValue(val *GoogleComputeRegionPerInstanceConfigPreservedState)
 	Metadata() *map[string]*string
@@ -67,7 +71,11 @@ type GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDisk(value interface{})
+	PutExternalIp(value interface{})
+	PutInternalIp(value interface{})
 	ResetDisk()
+	ResetExternalIp()
+	ResetInternalIp()
 	ResetMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -134,11 +142,51 @@ func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) ExternalIp() GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList {
+	var returns GoogleComputeRegionPerInstanceConfigPreservedStateExternalIpList
+	_jsii_.Get(
+		j,
+		"externalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) ExternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalIpInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) InternalIp() GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpList {
+	var returns GoogleComputeRegionPerInstanceConfigPreservedStateInternalIpList
+	_jsii_.Get(
+		j,
+		"internalIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) InternalIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"internalIpInput",
 		&returns,
 	)
 	return returns
@@ -485,10 +533,48 @@ func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputRefer
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) PutExternalIp(value interface{}) {
+	if err := g.validatePutExternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExternalIp",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) PutInternalIp(value interface{}) {
+	if err := g.validatePutInternalIpParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInternalIp",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) ResetDisk() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) ResetExternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalIp",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfigPreservedStateOutputReference) ResetInternalIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInternalIp",
 		nil, // no parameters
 	)
 }

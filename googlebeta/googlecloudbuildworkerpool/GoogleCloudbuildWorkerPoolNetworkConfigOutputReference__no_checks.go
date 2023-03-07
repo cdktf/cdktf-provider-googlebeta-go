@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference) validateSetPeeredNetworkIpRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

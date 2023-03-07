@@ -96,6 +96,14 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validateSetSinkAgentPoolNameParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validateSetSourceAgentPoolNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

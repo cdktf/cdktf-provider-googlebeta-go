@@ -20,6 +20,8 @@ type GoogleContainerAzureCluster interface {
 	AzureRegion() *string
 	SetAzureRegion(val *string)
 	AzureRegionInput() *string
+	AzureServicesAuthentication() GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference
+	AzureServicesAuthenticationInput() *GoogleContainerAzureClusterAzureServicesAuthentication
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Client() *string
@@ -131,12 +133,15 @@ type GoogleContainerAzureCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAuthorization(value *GoogleContainerAzureClusterAuthorization)
+	PutAzureServicesAuthentication(value *GoogleContainerAzureClusterAzureServicesAuthentication)
 	PutControlPlane(value *GoogleContainerAzureClusterControlPlane)
 	PutFleet(value *GoogleContainerAzureClusterFleet)
 	PutLoggingConfig(value *GoogleContainerAzureClusterLoggingConfig)
 	PutNetworking(value *GoogleContainerAzureClusterNetworking)
 	PutTimeouts(value *GoogleContainerAzureClusterTimeouts)
 	ResetAnnotations()
+	ResetAzureServicesAuthentication()
+	ResetClient()
 	ResetDescription()
 	ResetId()
 	ResetLoggingConfig()
@@ -215,6 +220,26 @@ func (j *jsiiProxy_GoogleContainerAzureCluster) AzureRegionInput() *string {
 	_jsii_.Get(
 		j,
 		"azureRegionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAzureCluster) AzureServicesAuthentication() GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference {
+	var returns GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference
+	_jsii_.Get(
+		j,
+		"azureServicesAuthentication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAzureCluster) AzureServicesAuthenticationInput() *GoogleContainerAzureClusterAzureServicesAuthentication {
+	var returns *GoogleContainerAzureClusterAzureServicesAuthentication
+	_jsii_.Get(
+		j,
+		"azureServicesAuthenticationInput",
 		&returns,
 	)
 	return returns
@@ -1171,6 +1196,17 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) PutAuthorization(value *GoogleCo
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerAzureCluster) PutAzureServicesAuthentication(value *GoogleContainerAzureClusterAzureServicesAuthentication) {
+	if err := g.validatePutAzureServicesAuthenticationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAzureServicesAuthentication",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAzureCluster) PutControlPlane(value *GoogleContainerAzureClusterControlPlane) {
 	if err := g.validatePutControlPlaneParameters(value); err != nil {
 		panic(err)
@@ -1230,6 +1266,22 @@ func (g *jsiiProxy_GoogleContainerAzureCluster) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAzureCluster) ResetAzureServicesAuthentication() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAzureServicesAuthentication",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAzureCluster) ResetClient() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClient",
 		nil, // no parameters
 	)
 }

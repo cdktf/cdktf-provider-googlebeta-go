@@ -32,6 +32,9 @@ type GoogleCloudbuildWorkerPoolNetworkConfigOutputReference interface {
 	PeeredNetwork() *string
 	SetPeeredNetwork(val *string)
 	PeeredNetworkInput() *string
+	PeeredNetworkIpRange() *string
+	SetPeeredNetworkIpRange(val *string)
+	PeeredNetworkIpRangeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -64,6 +67,7 @@ type GoogleCloudbuildWorkerPoolNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPeeredNetworkIpRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -144,6 +148,26 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference) Peere
 	_jsii_.Get(
 		j,
 		"peeredNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference) PeeredNetworkIpRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peeredNetworkIpRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference) PeeredNetworkIpRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peeredNetworkIpRangeInput",
 		&returns,
 	)
 	return returns
@@ -237,6 +261,17 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference)SetPee
 	_jsii_.Set(
 		j,
 		"peeredNetwork",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference)SetPeeredNetworkIpRange(val *string) {
+	if err := j.validateSetPeeredNetworkIpRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"peeredNetworkIpRange",
 		val,
 	)
 }
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference) Inter
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference) ResetPeeredNetworkIpRange() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPeeredNetworkIpRange",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleCloudbuildWorkerPoolNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

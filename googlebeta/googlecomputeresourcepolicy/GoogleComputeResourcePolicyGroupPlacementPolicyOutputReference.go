@@ -35,6 +35,9 @@ type GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleComputeResourcePolicyGroupPlacementPolicy
 	SetInternalValue(val *GoogleComputeResourcePolicyGroupPlacementPolicy)
+	MaxDistance() *float64
+	SetMaxDistance(val *float64)
+	MaxDistanceInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailabilityDomainCount()
 	ResetCollocation()
+	ResetMaxDistance()
 	ResetVmCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -173,6 +177,26 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) MaxDistance() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDistance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) MaxDistanceInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"maxDistanceInput",
 		&returns,
 	)
 	return returns
@@ -297,6 +321,17 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference)SetMaxDistance(val *float64) {
+	if err := j.validateSetMaxDistanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxDistance",
 		val,
 	)
 }
@@ -532,6 +567,14 @@ func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.InvokeVoid(
 		g,
 		"resetCollocation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) ResetMaxDistance() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxDistance",
 		nil, // no parameters
 	)
 }
