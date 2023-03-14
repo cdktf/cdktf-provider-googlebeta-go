@@ -35,6 +35,9 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	InstanceTerminationActionInput() *string
 	InternalValue() *GoogleComputeInstanceScheduling
 	SetInternalValue(val *GoogleComputeInstanceScheduling)
+	MaintenanceInterval() *string
+	SetMaintenanceInterval(val *string)
+	MaintenanceIntervalInput() *string
 	MaxRunDuration() GoogleComputeInstanceSchedulingMaxRunDurationOutputReference
 	MaxRunDurationInput() *GoogleComputeInstanceSchedulingMaxRunDuration
 	MinNodeCpus() *float64
@@ -87,6 +90,7 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	PutNodeAffinities(value interface{})
 	ResetAutomaticRestart()
 	ResetInstanceTerminationAction()
+	ResetMaintenanceInterval()
 	ResetMaxRunDuration()
 	ResetMinNodeCpus()
 	ResetNodeAffinities()
@@ -193,6 +197,26 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) InternalValue
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) MaintenanceInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) MaintenanceIntervalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceIntervalInput",
 		&returns,
 	)
 	return returns
@@ -417,6 +441,17 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference)SetInternalVal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference)SetMaintenanceInterval(val *string) {
+	if err := j.validateSetMaintenanceIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceInterval",
 		val,
 	)
 }
@@ -707,6 +742,14 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetInstance
 	_jsii_.InvokeVoid(
 		g,
 		"resetInstanceTerminationAction",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetMaintenanceInterval() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenanceInterval",
 		nil, // no parameters
 	)
 }

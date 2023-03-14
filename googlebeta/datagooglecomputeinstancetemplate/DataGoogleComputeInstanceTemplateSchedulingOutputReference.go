@@ -31,6 +31,7 @@ type DataGoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	InstanceTerminationAction() *string
 	InternalValue() *DataGoogleComputeInstanceTemplateScheduling
 	SetInternalValue(val *DataGoogleComputeInstanceTemplateScheduling)
+	MaintenanceInterval() *string
 	MaxRunDuration() DataGoogleComputeInstanceTemplateSchedulingMaxRunDurationList
 	MinNodeCpus() *float64
 	NodeAffinities() DataGoogleComputeInstanceTemplateSchedulingNodeAffinitiesList
@@ -149,6 +150,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) I
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingOutputReference) MaintenanceInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceInterval",
 		&returns,
 	)
 	return returns

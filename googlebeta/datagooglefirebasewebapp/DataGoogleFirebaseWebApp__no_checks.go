@@ -76,6 +76,10 @@ func (j *jsiiProxy_DataGoogleFirebaseWebApp) validateSetLifecycleParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleFirebaseWebApp) validateSetProjectParameters(val *string) error {
+	return nil
+}
+
 func validateNewDataGoogleFirebaseWebAppParameters(scope constructs.Construct, id *string, config *DataGoogleFirebaseWebAppConfig) error {
 	return nil
 }

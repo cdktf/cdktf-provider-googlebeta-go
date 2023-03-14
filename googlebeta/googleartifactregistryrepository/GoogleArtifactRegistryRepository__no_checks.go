@@ -56,7 +56,15 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutMavenConfigParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutRemoteRepositoryConfigParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutTimeoutsParameters(value *GoogleArtifactRegistryRepositoryTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutVirtualRepositoryConfigParameters(value *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig) error {
 	return nil
 }
 
@@ -101,6 +109,10 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) validateSetLifecycleParamet
 }
 
 func (j *jsiiProxy_GoogleArtifactRegistryRepository) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) validateSetModeParameters(val *string) error {
 	return nil
 }
 

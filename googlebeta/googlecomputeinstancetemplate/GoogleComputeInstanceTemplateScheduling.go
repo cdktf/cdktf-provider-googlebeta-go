@@ -12,6 +12,10 @@ type GoogleComputeInstanceTemplateScheduling struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_template#instance_termination_action GoogleComputeInstanceTemplate#instance_termination_action}
 	InstanceTerminationAction *string `field:"optional" json:"instanceTerminationAction" yaml:"instanceTerminationAction"`
+	// Specifies the frequency of planned maintenance events. The accepted values are: PERIODIC.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_template#maintenance_interval GoogleComputeInstanceTemplate#maintenance_interval}
+	MaintenanceInterval *string `field:"optional" json:"maintenanceInterval" yaml:"maintenanceInterval"`
 	// max_run_duration block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_instance_template#max_run_duration GoogleComputeInstanceTemplate#max_run_duration}

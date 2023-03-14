@@ -159,6 +159,14 @@ func (j *jsiiProxy_DataGoogleFirebaseAndroidApp) validateSetLifecycleParameters(
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleFirebaseAndroidApp) validateSetProjectParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func validateNewDataGoogleFirebaseAndroidAppParameters(scope constructs.Construct, id *string, config *DataGoogleFirebaseAndroidAppConfig) error {
 	if scope == nil {
 		return fmt.Errorf("parameter scope is required, but nil was provided")

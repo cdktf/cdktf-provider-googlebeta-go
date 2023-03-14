@@ -61,6 +61,9 @@ type GoogleArtifactRegistryRepository interface {
 	LocationInput() *string
 	MavenConfig() GoogleArtifactRegistryRepositoryMavenConfigOutputReference
 	MavenConfigInput() *GoogleArtifactRegistryRepositoryMavenConfig
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -77,6 +80,8 @@ type GoogleArtifactRegistryRepository interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteRepositoryConfig() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
+	RemoteRepositoryConfigInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig
 	RepositoryId() *string
 	SetRepositoryId(val *string)
 	RepositoryIdInput() *string
@@ -89,6 +94,8 @@ type GoogleArtifactRegistryRepository interface {
 	Timeouts() GoogleArtifactRegistryRepositoryTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	VirtualRepositoryConfig() GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference
+	VirtualRepositoryConfigInput() *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -115,18 +122,23 @@ type GoogleArtifactRegistryRepository interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMavenConfig(value *GoogleArtifactRegistryRepositoryMavenConfig)
+	PutRemoteRepositoryConfig(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig)
 	PutTimeouts(value *GoogleArtifactRegistryRepositoryTimeouts)
+	PutVirtualRepositoryConfig(value *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig)
 	ResetDescription()
 	ResetId()
 	ResetKmsKeyName()
 	ResetLabels()
 	ResetLocation()
 	ResetMavenConfig()
+	ResetMode()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRemoteRepositoryConfig()
 	ResetTimeouts()
+	ResetVirtualRepositoryConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -382,6 +394,26 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) MavenConfigInput() *GoogleA
 	return returns
 }
 
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepository) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -447,6 +479,26 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) RawOverrides() interface{} 
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) RemoteRepositoryConfig() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference {
+	var returns GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"remoteRepositoryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) RemoteRepositoryConfigInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig {
+	var returns *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig
+	_jsii_.Get(
+		j,
+		"remoteRepositoryConfigInput",
 		&returns,
 	)
 	return returns
@@ -527,6 +579,26 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) UpdateTime() *string {
 	_jsii_.Get(
 		j,
 		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) VirtualRepositoryConfig() GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference {
+	var returns GoogleArtifactRegistryRepositoryVirtualRepositoryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"virtualRepositoryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) VirtualRepositoryConfigInput() *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig {
+	var returns *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig
+	_jsii_.Get(
+		j,
+		"virtualRepositoryConfigInput",
 		&returns,
 	)
 	return returns
@@ -670,6 +742,17 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
 		val,
 	)
 }
@@ -992,6 +1075,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutMavenConfig(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutRemoteRepositoryConfig(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig) {
+	if err := g.validatePutRemoteRepositoryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRemoteRepositoryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutTimeouts(value *GoogleArtifactRegistryRepositoryTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -999,6 +1093,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutTimeouts(value *GoogleAr
 	_jsii_.InvokeVoid(
 		g,
 		"putTimeouts",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutVirtualRepositoryConfig(value *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig) {
+	if err := g.validatePutVirtualRepositoryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVirtualRepositoryConfig",
 		[]interface{}{value},
 	)
 }
@@ -1051,6 +1156,14 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetMavenConfig() {
 	)
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMode",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1067,10 +1180,26 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetProject() {
 	)
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetRemoteRepositoryConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRemoteRepositoryConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetVirtualRepositoryConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVirtualRepositoryConfig",
 		nil, // no parameters
 	)
 }

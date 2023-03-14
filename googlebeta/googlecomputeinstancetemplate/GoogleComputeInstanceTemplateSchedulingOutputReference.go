@@ -35,6 +35,9 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	InstanceTerminationActionInput() *string
 	InternalValue() *GoogleComputeInstanceTemplateScheduling
 	SetInternalValue(val *GoogleComputeInstanceTemplateScheduling)
+	MaintenanceInterval() *string
+	SetMaintenanceInterval(val *string)
+	MaintenanceIntervalInput() *string
 	MaxRunDuration() GoogleComputeInstanceTemplateSchedulingMaxRunDurationOutputReference
 	MaxRunDurationInput() *GoogleComputeInstanceTemplateSchedulingMaxRunDuration
 	MinNodeCpus() *float64
@@ -87,6 +90,7 @@ type GoogleComputeInstanceTemplateSchedulingOutputReference interface {
 	PutNodeAffinities(value interface{})
 	ResetAutomaticRestart()
 	ResetInstanceTerminationAction()
+	ResetMaintenanceInterval()
 	ResetMaxRunDuration()
 	ResetMinNodeCpus()
 	ResetNodeAffinities()
@@ -193,6 +197,26 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Inter
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) MaintenanceInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) MaintenanceIntervalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceIntervalInput",
 		&returns,
 	)
 	return returns
@@ -417,6 +441,17 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetInt
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference)SetMaintenanceInterval(val *string) {
+	if err := j.validateSetMaintenanceIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceInterval",
 		val,
 	)
 }
@@ -707,6 +742,14 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) Reset
 	_jsii_.InvokeVoid(
 		g,
 		"resetInstanceTerminationAction",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceTemplateSchedulingOutputReference) ResetMaintenanceInterval() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenanceInterval",
 		nil, // no parameters
 	)
 }

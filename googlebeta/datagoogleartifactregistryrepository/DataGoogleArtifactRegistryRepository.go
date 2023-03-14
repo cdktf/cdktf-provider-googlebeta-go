@@ -48,6 +48,7 @@ type DataGoogleArtifactRegistryRepository interface {
 	SetLocation(val *string)
 	LocationInput() *string
 	MavenConfig() DataGoogleArtifactRegistryRepositoryMavenConfigList
+	Mode() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -60,6 +61,7 @@ type DataGoogleArtifactRegistryRepository interface {
 	SetProvider(val cdktf.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
+	RemoteRepositoryConfig() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigList
 	RepositoryId() *string
 	SetRepositoryId(val *string)
 	RepositoryIdInput() *string
@@ -70,6 +72,7 @@ type DataGoogleArtifactRegistryRepository interface {
 	// Experimental.
 	TerraformResourceType() *string
 	UpdateTime() *string
+	VirtualRepositoryConfig() DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigList
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -295,6 +298,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) MavenConfig() DataGoogl
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -355,6 +368,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) RemoteRepositoryConfig() DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigList {
+	var returns DataGoogleArtifactRegistryRepositoryRemoteRepositoryConfigList
+	_jsii_.Get(
+		j,
+		"remoteRepositoryConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) RepositoryId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -410,6 +433,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) UpdateTime() *string {
 	_jsii_.Get(
 		j,
 		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) VirtualRepositoryConfig() DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigList {
+	var returns DataGoogleArtifactRegistryRepositoryVirtualRepositoryConfigList
+	_jsii_.Get(
+		j,
+		"virtualRepositoryConfig",
 		&returns,
 	)
 	return returns

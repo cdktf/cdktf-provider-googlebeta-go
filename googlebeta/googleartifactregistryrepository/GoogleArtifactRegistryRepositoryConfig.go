@@ -66,11 +66,23 @@ type GoogleArtifactRegistryRepositoryConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#maven_config GoogleArtifactRegistryRepository#maven_config}
 	MavenConfig *GoogleArtifactRegistryRepositoryMavenConfig `field:"optional" json:"mavenConfig" yaml:"mavenConfig"`
+	// The mode configures the repository to serve artifacts from different sources. Default value: "STANDARD_REPOSITORY" Possible values: ["STANDARD_REPOSITORY", "VIRTUAL_REPOSITORY", "REMOTE_REPOSITORY"].
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#mode GoogleArtifactRegistryRepository#mode}
+	Mode *string `field:"optional" json:"mode" yaml:"mode"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#project GoogleArtifactRegistryRepository#project}.
 	Project *string `field:"optional" json:"project" yaml:"project"`
+	// remote_repository_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#remote_repository_config GoogleArtifactRegistryRepository#remote_repository_config}
+	RemoteRepositoryConfig *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig `field:"optional" json:"remoteRepositoryConfig" yaml:"remoteRepositoryConfig"`
 	// timeouts block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#timeouts GoogleArtifactRegistryRepository#timeouts}
 	Timeouts *GoogleArtifactRegistryRepositoryTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
+	// virtual_repository_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#virtual_repository_config GoogleArtifactRegistryRepository#virtual_repository_config}
+	VirtualRepositoryConfig *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig `field:"optional" json:"virtualRepositoryConfig" yaml:"virtualRepositoryConfig"`
 }
 

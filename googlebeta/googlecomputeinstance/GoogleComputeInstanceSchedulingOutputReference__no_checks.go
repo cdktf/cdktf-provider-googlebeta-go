@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetIn
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetMaintenanceIntervalParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetMinNodeCpusParameters(val *float64) error {
 	return nil
 }

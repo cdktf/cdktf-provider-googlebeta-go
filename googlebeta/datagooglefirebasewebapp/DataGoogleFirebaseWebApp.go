@@ -49,6 +49,8 @@ type DataGoogleFirebaseWebApp interface {
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
+	SetProject(val *string)
+	ProjectInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -90,6 +92,7 @@ type DataGoogleFirebaseWebApp interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetProject()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -285,6 +288,16 @@ func (j *jsiiProxy_DataGoogleFirebaseWebApp) Project() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleFirebaseWebApp) ProjectInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"projectInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleFirebaseWebApp) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -418,6 +431,17 @@ func (j *jsiiProxy_DataGoogleFirebaseWebApp)SetLifecycle(val *cdktf.TerraformRes
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_DataGoogleFirebaseWebApp)SetProject(val *string) {
+	if err := j.validateSetProjectParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"project",
 		val,
 	)
 }
@@ -708,6 +732,14 @@ func (d *jsiiProxy_DataGoogleFirebaseWebApp) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		d,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (d *jsiiProxy_DataGoogleFirebaseWebApp) ResetProject() {
+	_jsii_.InvokeVoid(
+		d,
+		"resetProject",
 		nil, // no parameters
 	)
 }
