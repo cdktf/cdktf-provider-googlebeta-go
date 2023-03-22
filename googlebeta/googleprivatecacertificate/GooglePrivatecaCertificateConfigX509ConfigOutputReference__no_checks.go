@@ -56,6 +56,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigOutputReference) validatePutNameConstraintsParameters(value *GooglePrivatecaCertificateConfigX509ConfigNameConstraints) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateConfigX509ConfigOutputReference) validatePutPolicyIdsParameters(value interface{}) error {
 	return nil
 }

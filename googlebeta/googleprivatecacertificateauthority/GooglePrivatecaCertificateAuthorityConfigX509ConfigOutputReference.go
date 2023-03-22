@@ -38,6 +38,8 @@ type GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference interfac
 	SetInternalValue(val *GooglePrivatecaCertificateAuthorityConfigX509Config)
 	KeyUsage() GooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsageOutputReference
 	KeyUsageInput() *GooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsage
+	NameConstraints() GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference
+	NameConstraintsInput() *GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraints
 	PolicyIds() GooglePrivatecaCertificateAuthorityConfigX509ConfigPolicyIdsList
 	PolicyIdsInput() interface{}
 	// Experimental.
@@ -75,9 +77,11 @@ type GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference interfac
 	PutAdditionalExtensions(value interface{})
 	PutCaOptions(value *GooglePrivatecaCertificateAuthorityConfigX509ConfigCaOptions)
 	PutKeyUsage(value *GooglePrivatecaCertificateAuthorityConfigX509ConfigKeyUsage)
+	PutNameConstraints(value *GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraints)
 	PutPolicyIds(value interface{})
 	ResetAdditionalExtensions()
 	ResetAiaOcspServers()
+	ResetNameConstraints()
 	ResetPolicyIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -219,6 +223,26 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.Get(
 		j,
 		"keyUsageInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) NameConstraints() GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference {
+	var returns GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraintsOutputReference
+	_jsii_.Get(
+		j,
+		"nameConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) NameConstraintsInput() *GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraints {
+	var returns *GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraints
+	_jsii_.Get(
+		j,
+		"nameConstraintsInput",
 		&returns,
 	)
 	return returns
@@ -577,6 +601,17 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	)
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PutNameConstraints(value *GooglePrivatecaCertificateAuthorityConfigX509ConfigNameConstraints) {
+	if err := g.validatePutNameConstraintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNameConstraints",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) PutPolicyIds(value interface{}) {
 	if err := g.validatePutPolicyIdsParameters(value); err != nil {
 		panic(err)
@@ -600,6 +635,14 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetAiaOcspServers",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigX509ConfigOutputReference) ResetNameConstraints() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNameConstraints",
 		nil, // no parameters
 	)
 }

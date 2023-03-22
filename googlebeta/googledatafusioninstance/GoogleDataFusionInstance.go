@@ -12,6 +12,8 @@ import (
 // Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance google_data_fusion_instance}.
 type GoogleDataFusionInstance interface {
 	cdktf.TerraformResource
+	Accelerators() GoogleDataFusionInstanceAcceleratorsList
+	AcceleratorsInput() interface{}
 	ApiEndpoint() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
@@ -149,10 +151,12 @@ type GoogleDataFusionInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccelerators(value interface{})
 	PutCryptoKeyConfig(value *GoogleDataFusionInstanceCryptoKeyConfig)
 	PutEventPublishConfig(value *GoogleDataFusionInstanceEventPublishConfig)
 	PutNetworkConfig(value *GoogleDataFusionInstanceNetworkConfig)
 	PutTimeouts(value *GoogleDataFusionInstanceTimeouts)
+	ResetAccelerators()
 	ResetCryptoKeyConfig()
 	ResetDataprocServiceAccount()
 	ResetDescription()
@@ -187,6 +191,26 @@ type GoogleDataFusionInstance interface {
 // The jsii proxy struct for GoogleDataFusionInstance
 type jsiiProxy_GoogleDataFusionInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) Accelerators() GoogleDataFusionInstanceAcceleratorsList {
+	var returns GoogleDataFusionInstanceAcceleratorsList
+	_jsii_.Get(
+		j,
+		"accelerators",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstance) AcceleratorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratorsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataFusionInstance) ApiEndpoint() *string {
@@ -1386,6 +1410,17 @@ func (g *jsiiProxy_GoogleDataFusionInstance) OverrideLogicalId(newLogicalId *str
 	)
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstance) PutAccelerators(value interface{}) {
+	if err := g.validatePutAcceleratorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAccelerators",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstance) PutCryptoKeyConfig(value *GoogleDataFusionInstanceCryptoKeyConfig) {
 	if err := g.validatePutCryptoKeyConfigParameters(value); err != nil {
 		panic(err)
@@ -1427,6 +1462,14 @@ func (g *jsiiProxy_GoogleDataFusionInstance) PutTimeouts(value *GoogleDataFusion
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstance) ResetAccelerators() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccelerators",
+		nil, // no parameters
 	)
 }
 

@@ -88,6 +88,7 @@ type GoogleAlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	ResetLocation()
 	ResetQuantityBasedRetention()
 	ResetTimeBasedRetention()
+	ResetWeeklySchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -703,6 +704,14 @@ func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeBasedRetention",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) ResetWeeklySchedule() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWeeklySchedule",
 		nil, // no parameters
 	)
 }

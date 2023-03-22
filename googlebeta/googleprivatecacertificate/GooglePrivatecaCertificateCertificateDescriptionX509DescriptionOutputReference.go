@@ -33,6 +33,7 @@ type GooglePrivatecaCertificateCertificateDescriptionX509DescriptionOutputRefere
 	InternalValue() *GooglePrivatecaCertificateCertificateDescriptionX509Description
 	SetInternalValue(val *GooglePrivatecaCertificateCertificateDescriptionX509Description)
 	KeyUsage() GooglePrivatecaCertificateCertificateDescriptionX509DescriptionKeyUsageList
+	NameConstraints() GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList
 	PolicyIds() GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsList
 	// Experimental.
 	TerraformAttribute() *string
@@ -166,6 +167,16 @@ func (j *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509Descripti
 	_jsii_.Get(
 		j,
 		"keyUsage",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509DescriptionOutputReference) NameConstraints() GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList {
+	var returns GooglePrivatecaCertificateCertificateDescriptionX509DescriptionNameConstraintsList
+	_jsii_.Get(
+		j,
+		"nameConstraints",
 		&returns,
 	)
 	return returns

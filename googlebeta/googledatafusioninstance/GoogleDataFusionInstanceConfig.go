@@ -38,6 +38,10 @@ type GoogleDataFusionInstanceConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#type GoogleDataFusionInstance#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
+	// accelerators block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#accelerators GoogleDataFusionInstance#accelerators}
+	Accelerators interface{} `field:"optional" json:"accelerators" yaml:"accelerators"`
 	// crypto_key_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_fusion_instance#crypto_key_config GoogleDataFusionInstance#crypto_key_config}

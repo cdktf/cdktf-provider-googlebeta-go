@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleDataFusionInstance) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstance) validatePutAcceleratorsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstance) validatePutCryptoKeyConfigParameters(value *GoogleDataFusionInstanceCryptoKeyConfig) error {
 	return nil
 }

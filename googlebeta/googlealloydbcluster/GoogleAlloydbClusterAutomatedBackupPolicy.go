@@ -2,10 +2,6 @@ package googlealloydbcluster
 
 
 type GoogleAlloydbClusterAutomatedBackupPolicy struct {
-	// weekly_schedule block.
-	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#weekly_schedule GoogleAlloydbCluster#weekly_schedule}
-	WeeklySchedule *GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule `field:"required" json:"weeklySchedule" yaml:"weeklySchedule"`
 	// The length of the time window during which a backup can be taken.
 	//
 	// If a backup does not succeed within this time window, it will be canceled and considered failed.
@@ -38,5 +34,9 @@ type GoogleAlloydbClusterAutomatedBackupPolicy struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#time_based_retention GoogleAlloydbCluster#time_based_retention}
 	TimeBasedRetention *GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention `field:"optional" json:"timeBasedRetention" yaml:"timeBasedRetention"`
+	// weekly_schedule block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_alloydb_cluster#weekly_schedule GoogleAlloydbCluster#weekly_schedule}
+	WeeklySchedule *GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule `field:"optional" json:"weeklySchedule" yaml:"weeklySchedule"`
 }
 
