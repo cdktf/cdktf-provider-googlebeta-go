@@ -36,6 +36,9 @@ type GoogleLoggingProjectBucketConfig interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableAnalytics() interface{}
+	SetEnableAnalytics(val interface{})
+	EnableAnalyticsInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -108,6 +111,7 @@ type GoogleLoggingProjectBucketConfig interface {
 	PutCmekSettings(value *GoogleLoggingProjectBucketConfigCmekSettings)
 	ResetCmekSettings()
 	ResetDescription()
+	ResetEnableAnalytics()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -233,6 +237,26 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) DescriptionInput() *string 
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) EnableAnalytics() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAnalytics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) EnableAnalyticsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAnalyticsInput",
 		&returns,
 	)
 	return returns
@@ -523,6 +547,17 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetDescription(val *string) 
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig)SetEnableAnalytics(val interface{}) {
+	if err := j.validateSetEnableAnalyticsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAnalytics",
 		val,
 	)
 }
@@ -898,6 +933,14 @@ func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfig) ResetEnableAnalytics() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableAnalytics",
 		nil, // no parameters
 	)
 }

@@ -39,6 +39,10 @@ type GoogleLoggingProjectBucketConfigConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_project_bucket_config#description GoogleLoggingProjectBucketConfig#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// Enable log analytics for the bucket. Cannot be disabled once enabled.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_project_bucket_config#enable_analytics GoogleLoggingProjectBucketConfig#enable_analytics}
+	EnableAnalytics interface{} `field:"optional" json:"enableAnalytics" yaml:"enableAnalytics"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_project_bucket_config#id GoogleLoggingProjectBucketConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

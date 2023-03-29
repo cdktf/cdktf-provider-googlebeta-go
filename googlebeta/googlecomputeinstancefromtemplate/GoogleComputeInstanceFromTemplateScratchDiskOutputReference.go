@@ -32,6 +32,9 @@ type GoogleComputeInstanceFromTemplateScratchDiskOutputReference interface {
 	InterfaceInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Size() *float64
+	SetSize(val *float64)
+	SizeInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -65,6 +68,7 @@ type GoogleComputeInstanceFromTemplateScratchDiskOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetInterface()
+	ResetSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -145,6 +149,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) Size() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"size",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) SizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"sizeInput",
 		&returns,
 	)
 	return returns
@@ -238,6 +262,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference)S
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference)SetSize(val *float64) {
+	if err := j.validateSetSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"size",
 		val,
 	)
 }
@@ -454,6 +489,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetInterface",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) ResetSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSize",
 		nil, // no parameters
 	)
 }

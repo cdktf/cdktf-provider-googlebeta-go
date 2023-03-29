@@ -68,6 +68,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutLocalNvmeSsdBlockConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutReservationAffinityParameters(value *GoogleContainerClusterNodePoolNodeConfigReservationAffinity) error {
 	return nil
 }

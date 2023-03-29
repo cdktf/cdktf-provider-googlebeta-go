@@ -40,6 +40,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	KubeletConfig() DataGoogleContainerClusterNodeConfigKubeletConfigList
 	Labels() cdktf.StringMap
 	LinuxNodeConfig() DataGoogleContainerClusterNodeConfigLinuxNodeConfigList
+	LocalNvmeSsdBlockConfig() DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList
 	LocalSsdCount() *float64
 	LoggingVariant() *string
 	MachineType() *string
@@ -259,6 +260,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LinuxNod
 	_jsii_.Get(
 		j,
 		"linuxNodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) LocalNvmeSsdBlockConfig() DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList {
+	var returns DataGoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigList
+	_jsii_.Get(
+		j,
+		"localNvmeSsdBlockConfig",
 		&returns,
 	)
 	return returns

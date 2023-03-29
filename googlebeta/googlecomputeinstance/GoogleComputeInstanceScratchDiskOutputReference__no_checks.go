@@ -64,6 +64,10 @@ func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetI
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetSizeParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceScratchDiskOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

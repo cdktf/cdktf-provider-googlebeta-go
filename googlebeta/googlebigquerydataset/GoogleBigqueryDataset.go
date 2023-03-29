@@ -30,6 +30,9 @@ type GoogleBigqueryDataset interface {
 	DatasetId() *string
 	SetDatasetId(val *string)
 	DatasetIdInput() *string
+	DefaultCollation() *string
+	SetDefaultCollation(val *string)
+	DefaultCollationInput() *string
 	DefaultEncryptionConfiguration() GoogleBigqueryDatasetDefaultEncryptionConfigurationOutputReference
 	DefaultEncryptionConfigurationInput() *GoogleBigqueryDatasetDefaultEncryptionConfiguration
 	DefaultPartitionExpirationMs() *float64
@@ -63,6 +66,9 @@ type GoogleBigqueryDataset interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsCaseInsensitive() interface{}
+	SetIsCaseInsensitive(val interface{})
+	IsCaseInsensitiveInput() interface{}
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -130,6 +136,7 @@ type GoogleBigqueryDataset interface {
 	PutDefaultEncryptionConfiguration(value *GoogleBigqueryDatasetDefaultEncryptionConfiguration)
 	PutTimeouts(value *GoogleBigqueryDatasetTimeouts)
 	ResetAccess()
+	ResetDefaultCollation()
 	ResetDefaultEncryptionConfiguration()
 	ResetDefaultPartitionExpirationMs()
 	ResetDefaultTableExpirationMs()
@@ -137,6 +144,7 @@ type GoogleBigqueryDataset interface {
 	ResetDescription()
 	ResetFriendlyName()
 	ResetId()
+	ResetIsCaseInsensitive()
 	ResetLabels()
 	ResetLocation()
 	ResetMaxTimeTravelHours()
@@ -245,6 +253,26 @@ func (j *jsiiProxy_GoogleBigqueryDataset) DatasetIdInput() *string {
 	_jsii_.Get(
 		j,
 		"datasetIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultCollation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultCollation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) DefaultCollationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultCollationInput",
 		&returns,
 	)
 	return returns
@@ -435,6 +463,26 @@ func (j *jsiiProxy_GoogleBigqueryDataset) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) IsCaseInsensitive() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isCaseInsensitive",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) IsCaseInsensitiveInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isCaseInsensitiveInput",
 		&returns,
 	)
 	return returns
@@ -700,6 +748,17 @@ func (j *jsiiProxy_GoogleBigqueryDataset)SetDatasetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBigqueryDataset)SetDefaultCollation(val *string) {
+	if err := j.validateSetDefaultCollationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultCollation",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBigqueryDataset)SetDefaultPartitionExpirationMs(val *float64) {
 	if err := j.validateSetDefaultPartitionExpirationMsParameters(val); err != nil {
 		panic(err)
@@ -778,6 +837,17 @@ func (j *jsiiProxy_GoogleBigqueryDataset)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset)SetIsCaseInsensitive(val interface{}) {
+	if err := j.validateSetIsCaseInsensitiveParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isCaseInsensitive",
 		val,
 	)
 }
@@ -1163,6 +1233,14 @@ func (g *jsiiProxy_GoogleBigqueryDataset) ResetAccess() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetDefaultCollation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultCollation",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryDataset) ResetDefaultEncryptionConfiguration() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1215,6 +1293,14 @@ func (g *jsiiProxy_GoogleBigqueryDataset) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetIsCaseInsensitive() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIsCaseInsensitive",
 		nil, // no parameters
 	)
 }

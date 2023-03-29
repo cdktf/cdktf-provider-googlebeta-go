@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetDescriptionParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetEnableAnalyticsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingProjectBucketConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

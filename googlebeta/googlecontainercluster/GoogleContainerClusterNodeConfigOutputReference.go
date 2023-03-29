@@ -56,6 +56,8 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	LabelsInput() *map[string]*string
 	LinuxNodeConfig() GoogleContainerClusterNodeConfigLinuxNodeConfigOutputReference
 	LinuxNodeConfigInput() *GoogleContainerClusterNodeConfigLinuxNodeConfig
+	LocalNvmeSsdBlockConfig() GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference
+	LocalNvmeSsdBlockConfigInput() *GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig
 	LocalSsdCount() *float64
 	SetLocalSsdCount(val *float64)
 	LocalSsdCountInput() *float64
@@ -140,6 +142,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	PutGvnic(value *GoogleContainerClusterNodeConfigGvnic)
 	PutKubeletConfig(value *GoogleContainerClusterNodeConfigKubeletConfig)
 	PutLinuxNodeConfig(value *GoogleContainerClusterNodeConfigLinuxNodeConfig)
+	PutLocalNvmeSsdBlockConfig(value *GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *GoogleContainerClusterNodeConfigReservationAffinity)
 	PutSandboxConfig(value *GoogleContainerClusterNodeConfigSandboxConfig)
 	PutShieldedInstanceConfig(value *GoogleContainerClusterNodeConfigShieldedInstanceConfig)
@@ -156,6 +159,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetKubeletConfig()
 	ResetLabels()
 	ResetLinuxNodeConfig()
+	ResetLocalNvmeSsdBlockConfig()
 	ResetLocalSsdCount()
 	ResetLoggingVariant()
 	ResetMachineType()
@@ -453,6 +457,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) LinuxNodeCon
 	_jsii_.Get(
 		j,
 		"linuxNodeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) LocalNvmeSsdBlockConfig() GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference {
+	var returns GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference
+	_jsii_.Get(
+		j,
+		"localNvmeSsdBlockConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) LocalNvmeSsdBlockConfigInput() *GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig {
+	var returns *GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig
+	_jsii_.Get(
+		j,
+		"localNvmeSsdBlockConfigInput",
 		&returns,
 	)
 	return returns
@@ -1340,6 +1364,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutLinuxNode
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutLocalNvmeSsdBlockConfig(value *GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig) {
+	if err := g.validatePutLocalNvmeSsdBlockConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLocalNvmeSsdBlockConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutReservationAffinity(value *GoogleContainerClusterNodeConfigReservationAffinity) {
 	if err := g.validatePutReservationAffinityParameters(value); err != nil {
 		panic(err)
@@ -1479,6 +1514,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetLinuxNo
 	_jsii_.InvokeVoid(
 		g,
 		"resetLinuxNodeConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetLocalNvmeSsdBlockConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocalNvmeSsdBlockConfig",
 		nil, // no parameters
 	)
 }
