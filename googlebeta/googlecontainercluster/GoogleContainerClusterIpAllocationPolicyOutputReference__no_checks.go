@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) validateSetStackTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

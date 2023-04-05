@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateInte
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutAdvancedMachineFeaturesParameters(value *GoogleContainerClusterNodeConfigAdvancedMachineFeatures) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutEphemeralStorageConfigParameters(value *GoogleContainerClusterNodeConfigEphemeralStorageConfig) error {
 	return nil
 }

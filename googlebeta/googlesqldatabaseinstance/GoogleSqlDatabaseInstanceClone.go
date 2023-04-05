@@ -12,6 +12,12 @@ type GoogleSqlDatabaseInstanceClone struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#allocated_ip_range GoogleSqlDatabaseInstance#allocated_ip_range}
 	AllocatedIpRange *string `field:"optional" json:"allocatedIpRange" yaml:"allocatedIpRange"`
+	// (SQL Server only, use with point_in_time) clone only the specified databases from the source instance.
+	//
+	// Clone all databases if empty.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#database_names GoogleSqlDatabaseInstance#database_names}
+	DatabaseNames *[]*string `field:"optional" json:"databaseNames" yaml:"databaseNames"`
 	// The timestamp of the point in time that should be restored.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_database_instance#point_in_time GoogleSqlDatabaseInstance#point_in_time}

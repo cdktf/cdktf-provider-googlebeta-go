@@ -41,6 +41,9 @@ type GoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	ServicesSecondaryRangeName() *string
 	SetServicesSecondaryRangeName(val *string)
 	ServicesSecondaryRangeNameInput() *string
+	StackType() *string
+	SetStackType(val *string)
+	StackTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,6 +80,7 @@ type GoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	ResetClusterSecondaryRangeName()
 	ResetServicesIpv4CidrBlock()
 	ResetServicesSecondaryRangeName()
+	ResetStackType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -222,6 +226,26 @@ func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) Serv
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) StackType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) StackTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stackTypeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -343,6 +367,17 @@ func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference)SetSe
 	_jsii_.Set(
 		j,
 		"servicesSecondaryRangeName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference)SetStackType(val *string) {
+	if err := j.validateSetStackTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stackType",
 		val,
 	)
 }
@@ -583,6 +618,14 @@ func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetServicesSecondaryRangeName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) ResetStackType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStackType",
 		nil, // no parameters
 	)
 }

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutAdvancedMachineFeaturesParameters(value *GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutEphemeralStorageConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig) error {
 	return nil
 }

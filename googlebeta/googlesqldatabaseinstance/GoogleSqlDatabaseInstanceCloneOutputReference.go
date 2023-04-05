@@ -28,6 +28,9 @@ type GoogleSqlDatabaseInstanceCloneOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DatabaseNames() *[]*string
+	SetDatabaseNames(val *[]*string)
+	DatabaseNamesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleSqlDatabaseInstanceClone
@@ -71,6 +74,7 @@ type GoogleSqlDatabaseInstanceCloneOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAllocatedIpRange()
+	ResetDatabaseNames()
 	ResetPointInTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) DatabaseNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"databaseNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) DatabaseNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"databaseNamesInput",
 		&returns,
 	)
 	return returns
@@ -274,6 +298,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetComplexObjec
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetDatabaseNames(val *[]*string) {
+	if err := j.validateSetDatabaseNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"databaseNames",
 		val,
 	)
 }
@@ -523,6 +558,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ResetAllocated
 	_jsii_.InvokeVoid(
 		g,
 		"resetAllocatedIpRange",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ResetDatabaseNames() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatabaseNames",
 		nil, // no parameters
 	)
 }

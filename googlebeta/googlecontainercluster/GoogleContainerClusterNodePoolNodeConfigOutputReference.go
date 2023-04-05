@@ -10,6 +10,8 @@ import (
 
 type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	cdktf.ComplexObject
+	AdvancedMachineFeatures() GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference
+	AdvancedMachineFeaturesInput() *GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures
 	BootDiskKmsKey() *string
 	SetBootDiskKmsKey(val *string)
 	BootDiskKmsKeyInput() *string
@@ -136,6 +138,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdvancedMachineFeatures(value *GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures)
 	PutEphemeralStorageConfig(value *GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig)
 	PutGcfsConfig(value *GoogleContainerClusterNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
@@ -148,6 +151,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutShieldedInstanceConfig(value *GoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfig)
 	PutTaint(value interface{})
 	PutWorkloadMetadataConfig(value *GoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfig)
+	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
 	ResetDiskSizeGb()
 	ResetDiskType()
@@ -190,6 +194,26 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 // The jsii proxy struct for GoogleContainerClusterNodePoolNodeConfigOutputReference
 type jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) AdvancedMachineFeatures() GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference {
+	var returns GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference
+	_jsii_.Get(
+		j,
+		"advancedMachineFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) AdvancedMachineFeaturesInput() *GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures {
+	var returns *GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures
+	_jsii_.Get(
+		j,
+		"advancedMachineFeaturesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) BootDiskKmsKey() *string {
@@ -1298,6 +1322,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutAdvancedMachineFeatures(value *GoogleContainerClusterNodePoolNodeConfigAdvancedMachineFeatures) {
+	if err := g.validatePutAdvancedMachineFeaturesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdvancedMachineFeatures",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutEphemeralStorageConfig(value *GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig) {
 	if err := g.validatePutEphemeralStorageConfigParameters(value); err != nil {
 		panic(err)
@@ -1427,6 +1462,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutW
 		g,
 		"putWorkloadMetadataConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetAdvancedMachineFeatures() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdvancedMachineFeatures",
+		nil, // no parameters
 	)
 }
 

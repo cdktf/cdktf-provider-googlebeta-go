@@ -65,6 +65,9 @@ type GoogleComputeNetwork interface {
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkFirewallPolicyEnforcementOrder() *string
+	SetNetworkFirewallPolicyEnforcementOrder(val *string)
+	NetworkFirewallPolicyEnforcementOrderInput() *string
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -125,6 +128,7 @@ type GoogleComputeNetwork interface {
 	ResetId()
 	ResetInternalIpv6Range()
 	ResetMtu()
+	ResetNetworkFirewallPolicyEnforcementOrder()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -401,6 +405,26 @@ func (j *jsiiProxy_GoogleComputeNetwork) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) NetworkFirewallPolicyEnforcementOrder() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkFirewallPolicyEnforcementOrder",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) NetworkFirewallPolicyEnforcementOrderInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkFirewallPolicyEnforcementOrderInput",
 		&returns,
 	)
 	return returns
@@ -706,6 +730,17 @@ func (j *jsiiProxy_GoogleComputeNetwork)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork)SetNetworkFirewallPolicyEnforcementOrder(val *string) {
+	if err := j.validateSetNetworkFirewallPolicyEnforcementOrderParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkFirewallPolicyEnforcementOrder",
 		val,
 	)
 }
@@ -1080,6 +1115,14 @@ func (g *jsiiProxy_GoogleComputeNetwork) ResetMtu() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMtu",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNetwork) ResetNetworkFirewallPolicyEnforcementOrder() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkFirewallPolicyEnforcementOrder",
 		nil, // no parameters
 	)
 }

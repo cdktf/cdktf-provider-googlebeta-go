@@ -68,10 +68,6 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleAppConfigA) validateSetAppIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleAppConfigA) validateSetIdParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_DataGoogleFirebaseAppleAppConfigA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

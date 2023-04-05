@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetCom
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetDatabaseNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetInternalValueParameters(val *GoogleSqlDatabaseInstanceClone) error {
 	return nil
 }

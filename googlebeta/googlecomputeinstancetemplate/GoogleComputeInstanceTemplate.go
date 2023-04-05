@@ -115,6 +115,7 @@ type GoogleComputeInstanceTemplate interface {
 	Scheduling() GoogleComputeInstanceTemplateSchedulingOutputReference
 	SchedulingInput() *GoogleComputeInstanceTemplateScheduling
 	SelfLink() *string
+	SelfLinkUnique() *string
 	ServiceAccount() GoogleComputeInstanceTemplateServiceAccountOutputReference
 	ServiceAccountInput() *GoogleComputeInstanceTemplateServiceAccount
 	ShieldedInstanceConfig() GoogleComputeInstanceTemplateShieldedInstanceConfigOutputReference
@@ -815,6 +816,16 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) SelfLink() *string {
 	_jsii_.Get(
 		j,
 		"selfLink",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceTemplate) SelfLinkUnique() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"selfLinkUnique",
 		&returns,
 	)
 	return returns
