@@ -38,6 +38,8 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	DiskTypeInput() *string
 	EphemeralStorageConfig() GoogleContainerNodePoolNodeConfigEphemeralStorageConfigOutputReference
 	EphemeralStorageConfigInput() *GoogleContainerNodePoolNodeConfigEphemeralStorageConfig
+	EphemeralStorageLocalSsdConfig() GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
+	EphemeralStorageLocalSsdConfigInput() *GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() GoogleContainerNodePoolNodeConfigGcfsConfigOutputReference
@@ -140,6 +142,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *GoogleContainerNodePoolNodeConfigAdvancedMachineFeatures)
 	PutEphemeralStorageConfig(value *GoogleContainerNodePoolNodeConfigEphemeralStorageConfig)
+	PutEphemeralStorageLocalSsdConfig(value *GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
 	PutGcfsConfig(value *GoogleContainerNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *GoogleContainerNodePoolNodeConfigGvnic)
@@ -156,6 +159,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ResetDiskSizeGb()
 	ResetDiskType()
 	ResetEphemeralStorageConfig()
+	ResetEphemeralStorageLocalSsdConfig()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -321,6 +325,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) EphemeralSt
 	_jsii_.Get(
 		j,
 		"ephemeralStorageConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) EphemeralStorageLocalSsdConfig() GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"ephemeralStorageLocalSsdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) EphemeralStorageLocalSsdConfigInput() *GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig {
+	var returns *GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
+	_jsii_.Get(
+		j,
+		"ephemeralStorageLocalSsdConfigInput",
 		&returns,
 	)
 	return returns
@@ -1344,6 +1368,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutEphemera
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutEphemeralStorageLocalSsdConfig(value *GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig) {
+	if err := g.validatePutEphemeralStorageLocalSsdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEphemeralStorageLocalSsdConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutGcfsConfig(value *GoogleContainerNodePoolNodeConfigGcfsConfig) {
 	if err := g.validatePutGcfsConfigParameters(value); err != nil {
 		panic(err)
@@ -1501,6 +1536,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetEpheme
 	_jsii_.InvokeVoid(
 		g,
 		"resetEphemeralStorageConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetEphemeralStorageLocalSsdConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEphemeralStorageLocalSsdConfig",
 		nil, // no parameters
 	)
 }

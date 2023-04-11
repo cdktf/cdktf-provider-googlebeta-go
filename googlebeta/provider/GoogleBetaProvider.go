@@ -304,6 +304,9 @@ type GoogleBetaProvider interface {
 	NetworkManagementCustomEndpoint() *string
 	SetNetworkManagementCustomEndpoint(val *string)
 	NetworkManagementCustomEndpointInput() *string
+	NetworkSecurityCustomEndpoint() *string
+	SetNetworkSecurityCustomEndpoint(val *string)
+	NetworkSecurityCustomEndpointInput() *string
 	NetworkServicesCustomEndpoint() *string
 	SetNetworkServicesCustomEndpoint(val *string)
 	NetworkServicesCustomEndpointInput() *string
@@ -533,6 +536,7 @@ type GoogleBetaProvider interface {
 	ResetMonitoringCustomEndpoint()
 	ResetNetworkConnectivityCustomEndpoint()
 	ResetNetworkManagementCustomEndpoint()
+	ResetNetworkSecurityCustomEndpoint()
 	ResetNetworkServicesCustomEndpoint()
 	ResetNotebooksCustomEndpoint()
 	ResetOrgPolicyCustomEndpoint()
@@ -2521,6 +2525,26 @@ func (j *jsiiProxy_GoogleBetaProvider) NetworkManagementCustomEndpointInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) NetworkSecurityCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkSecurityCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) NetworkSecurityCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkSecurityCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) NetworkServicesCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4156,6 +4180,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetNetworkManagementCustomEndpoint(val *st
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetNetworkSecurityCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"networkSecurityCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetNetworkServicesCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5333,6 +5365,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetNetworkManagementCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetworkManagementCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetNetworkSecurityCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkSecurityCustomEndpoint",
 		nil, // no parameters
 	)
 }

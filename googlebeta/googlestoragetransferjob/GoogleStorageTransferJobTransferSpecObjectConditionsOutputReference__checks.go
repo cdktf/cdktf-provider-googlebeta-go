@@ -187,6 +187,22 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) validateSetLastModifiedBeforeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) validateSetLastModifiedSinceParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) validateSetMaxTimeElapsedSinceLastModificationParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

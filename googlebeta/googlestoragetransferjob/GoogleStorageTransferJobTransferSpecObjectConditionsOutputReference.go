@@ -35,6 +35,12 @@ type GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference interfa
 	IncludePrefixesInput() *[]*string
 	InternalValue() *GoogleStorageTransferJobTransferSpecObjectConditions
 	SetInternalValue(val *GoogleStorageTransferJobTransferSpecObjectConditions)
+	LastModifiedBefore() *string
+	SetLastModifiedBefore(val *string)
+	LastModifiedBeforeInput() *string
+	LastModifiedSince() *string
+	SetLastModifiedSince(val *string)
+	LastModifiedSinceInput() *string
 	MaxTimeElapsedSinceLastModification() *string
 	SetMaxTimeElapsedSinceLastModification(val *string)
 	MaxTimeElapsedSinceLastModificationInput() *string
@@ -75,6 +81,8 @@ type GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference interfa
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetExcludePrefixes()
 	ResetIncludePrefixes()
+	ResetLastModifiedBefore()
+	ResetLastModifiedSince()
 	ResetMaxTimeElapsedSinceLastModification()
 	ResetMinTimeElapsedSinceLastModification()
 	// Produce the Token's value at resolution time.
@@ -177,6 +185,46 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputRef
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) LastModifiedBefore() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedBefore",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) LastModifiedBeforeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedBeforeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) LastModifiedSince() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedSince",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) LastModifiedSinceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lastModifiedSinceInput",
 		&returns,
 	)
 	return returns
@@ -321,6 +369,28 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputRef
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference)SetLastModifiedBefore(val *string) {
+	if err := j.validateSetLastModifiedBeforeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lastModifiedBefore",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference)SetLastModifiedSince(val *string) {
+	if err := j.validateSetLastModifiedSinceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"lastModifiedSince",
 		val,
 	)
 }
@@ -567,6 +637,22 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputRef
 	_jsii_.InvokeVoid(
 		g,
 		"resetIncludePrefixes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) ResetLastModifiedBefore() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLastModifiedBefore",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) ResetLastModifiedSince() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLastModifiedSince",
 		nil, // no parameters
 	)
 }

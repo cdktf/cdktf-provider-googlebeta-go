@@ -26,6 +26,7 @@ type DataGoogleArtifactRegistryRepository interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
+	DockerConfig() DataGoogleArtifactRegistryRepositoryDockerConfigList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -173,6 +174,16 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) Description() *string {
 	_jsii_.Get(
 		j,
 		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepository) DockerConfig() DataGoogleArtifactRegistryRepositoryDockerConfigList {
+	var returns DataGoogleArtifactRegistryRepositoryDockerConfigList
+	_jsii_.Get(
+		j,
+		"dockerConfig",
 		&returns,
 	)
 	return returns

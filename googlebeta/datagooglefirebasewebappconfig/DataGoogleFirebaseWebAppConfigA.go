@@ -36,8 +36,6 @@ type DataGoogleFirebaseWebAppConfigA interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
-	SetId(val *string)
-	IdInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -91,7 +89,6 @@ type DataGoogleFirebaseWebAppConfigA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
-	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -216,16 +213,6 @@ func (j *jsiiProxy_DataGoogleFirebaseWebAppConfigA) Id() *string {
 	_jsii_.Get(
 		j,
 		"id",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_DataGoogleFirebaseWebAppConfigA) IdInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"idInput",
 		&returns,
 	)
 	return returns
@@ -431,17 +418,6 @@ func (j *jsiiProxy_DataGoogleFirebaseWebAppConfigA)SetForEach(val cdktf.ITerrafo
 	_jsii_.Set(
 		j,
 		"forEach",
-		val,
-	)
-}
-
-func (j *jsiiProxy_DataGoogleFirebaseWebAppConfigA)SetId(val *string) {
-	if err := j.validateSetIdParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"id",
 		val,
 	)
 }
@@ -750,14 +726,6 @@ func (d *jsiiProxy_DataGoogleFirebaseWebAppConfigA) OverrideLogicalId(newLogical
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
-	)
-}
-
-func (d *jsiiProxy_DataGoogleFirebaseWebAppConfigA) ResetId() {
-	_jsii_.InvokeVoid(
-		d,
-		"resetId",
-		nil, // no parameters
 	)
 }
 

@@ -68,6 +68,14 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputRef
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) validateSetLastModifiedBeforeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) validateSetLastModifiedSinceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecObjectConditionsOutputReference) validateSetMaxTimeElapsedSinceLastModificationParameters(val *string) error {
 	return nil
 }

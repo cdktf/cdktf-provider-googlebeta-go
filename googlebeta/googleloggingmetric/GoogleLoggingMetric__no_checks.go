@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleLoggingMetric) validateSetDescriptionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingMetric) validateSetDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingMetric) validateSetFilterParameters(val *string) error {
 	return nil
 }

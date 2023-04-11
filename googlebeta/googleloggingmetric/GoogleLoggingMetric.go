@@ -36,6 +36,9 @@ type GoogleLoggingMetric interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Disabled() interface{}
+	SetDisabled(val interface{})
+	DisabledInput() interface{}
 	Filter() *string
 	SetFilter(val *string)
 	FilterInput() *string
@@ -119,6 +122,7 @@ type GoogleLoggingMetric interface {
 	ResetBucketName()
 	ResetBucketOptions()
 	ResetDescription()
+	ResetDisabled()
 	ResetId()
 	ResetLabelExtractors()
 	ResetMetricDescriptor()
@@ -248,6 +252,26 @@ func (j *jsiiProxy_GoogleLoggingMetric) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingMetric) Disabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLoggingMetric) DisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabledInput",
 		&returns,
 	)
 	return returns
@@ -598,6 +622,17 @@ func (j *jsiiProxy_GoogleLoggingMetric)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleLoggingMetric)SetDisabled(val interface{}) {
+	if err := j.validateSetDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabled",
 		val,
 	)
 }
@@ -1025,6 +1060,14 @@ func (g *jsiiProxy_GoogleLoggingMetric) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLoggingMetric) ResetDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisabled",
 		nil, // no parameters
 	)
 }

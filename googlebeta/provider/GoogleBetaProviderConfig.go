@@ -194,6 +194,8 @@ type GoogleBetaProviderConfig struct {
 	NetworkConnectivityCustomEndpoint *string `field:"optional" json:"networkConnectivityCustomEndpoint" yaml:"networkConnectivityCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_management_custom_endpoint GoogleBetaProvider#network_management_custom_endpoint}.
 	NetworkManagementCustomEndpoint *string `field:"optional" json:"networkManagementCustomEndpoint" yaml:"networkManagementCustomEndpoint"`
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_security_custom_endpoint GoogleBetaProvider#network_security_custom_endpoint}.
+	NetworkSecurityCustomEndpoint *string `field:"optional" json:"networkSecurityCustomEndpoint" yaml:"networkSecurityCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#network_services_custom_endpoint GoogleBetaProvider#network_services_custom_endpoint}.
 	NetworkServicesCustomEndpoint *string `field:"optional" json:"networkServicesCustomEndpoint" yaml:"networkServicesCustomEndpoint"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta#notebooks_custom_endpoint GoogleBetaProvider#notebooks_custom_endpoint}.

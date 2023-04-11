@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutEphemeralStorageLocalSsdConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutGcfsConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigGcfsConfig) error {
 	return nil
 }

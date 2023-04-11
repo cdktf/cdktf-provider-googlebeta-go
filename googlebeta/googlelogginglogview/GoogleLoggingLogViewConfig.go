@@ -23,7 +23,7 @@ type GoogleLoggingLogViewConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_log_view#bucket GoogleLoggingLogView#bucket}
 	Bucket *string `field:"required" json:"bucket" yaml:"bucket"`
-	// The resource name of the view. For example: `projects/my-project/locations/global/buckets/my-bucket/views/my-view`.
+	// The resource name of the view. For example: \'projects/my-project/locations/global/buckets/my-bucket/views/my-view\'.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_log_view#name GoogleLoggingLogView#name}
 	Name *string `field:"required" json:"name" yaml:"name"`

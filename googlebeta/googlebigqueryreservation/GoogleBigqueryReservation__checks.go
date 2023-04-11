@@ -111,6 +111,17 @@ func (g *jsiiProxy_GoogleBigqueryReservation) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryReservation) validatePutAutoscaleParameters(value *GoogleBigqueryReservationAutoscale) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryReservation) validatePutTimeoutsParameters(value *GoogleBigqueryReservationTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -182,6 +193,14 @@ func (j *jsiiProxy_GoogleBigqueryReservation) validateSetConnectionParameters(va
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: *cdktf.SSHProvisionerConnection, *cdktf.WinrmProvisionerConnection; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) validateSetEditionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

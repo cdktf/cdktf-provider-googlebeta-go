@@ -22,6 +22,10 @@ type GoogleContainerClusterNodePoolNodeConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#ephemeral_storage_config GoogleContainerCluster#ephemeral_storage_config}
 	EphemeralStorageConfig *GoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfig `field:"optional" json:"ephemeralStorageConfig" yaml:"ephemeralStorageConfig"`
+	// ephemeral_storage_local_ssd_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#ephemeral_storage_local_ssd_config GoogleContainerCluster#ephemeral_storage_local_ssd_config}
+	EphemeralStorageLocalSsdConfig *GoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig `field:"optional" json:"ephemeralStorageLocalSsdConfig" yaml:"ephemeralStorageLocalSsdConfig"`
 	// gcfs_config block.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#gcfs_config GoogleContainerCluster#gcfs_config}

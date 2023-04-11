@@ -30,6 +30,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	DiskSizeGb() *float64
 	DiskType() *string
 	EphemeralStorageConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageConfigList
+	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() DataGoogleContainerClusterNodeConfigGcfsConfigList
@@ -181,6 +182,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Ephemera
 	_jsii_.Get(
 		j,
 		"ephemeralStorageConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList {
+	var returns DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList
+	_jsii_.Get(
+		j,
+		"ephemeralStorageLocalSsdConfig",
 		&returns,
 	)
 	return returns

@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutDockerConfigParameters(value *GoogleArtifactRegistryRepositoryDockerConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutMavenConfigParameters(value *GoogleArtifactRegistryRepositoryMavenConfig) error {
 	return nil
 }

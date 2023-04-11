@@ -23,11 +23,6 @@ type DataGoogleFirebaseWebAppConfigAConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app_config#web_app_id DataGoogleFirebaseWebAppConfigA#web_app_id}
 	WebAppId *string `field:"required" json:"webAppId" yaml:"webAppId"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app_config#id DataGoogleFirebaseWebAppConfigA#id}.
-	//
-	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-	Id *string `field:"optional" json:"id" yaml:"id"`
 	// The project id of the Firebase web App.
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/d/google_firebase_web_app_config#project DataGoogleFirebaseWebAppConfigA#project}

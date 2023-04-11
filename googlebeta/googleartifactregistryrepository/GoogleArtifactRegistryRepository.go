@@ -32,6 +32,8 @@ type GoogleArtifactRegistryRepository interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DockerConfig() GoogleArtifactRegistryRepositoryDockerConfigOutputReference
+	DockerConfigInput() *GoogleArtifactRegistryRepositoryDockerConfig
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -121,11 +123,13 @@ type GoogleArtifactRegistryRepository interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutDockerConfig(value *GoogleArtifactRegistryRepositoryDockerConfig)
 	PutMavenConfig(value *GoogleArtifactRegistryRepositoryMavenConfig)
 	PutRemoteRepositoryConfig(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig)
 	PutTimeouts(value *GoogleArtifactRegistryRepositoryTimeouts)
 	PutVirtualRepositoryConfig(value *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig)
 	ResetDescription()
+	ResetDockerConfig()
 	ResetId()
 	ResetKmsKeyName()
 	ResetLabels()
@@ -229,6 +233,26 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) DescriptionInput() *string 
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) DockerConfig() GoogleArtifactRegistryRepositoryDockerConfigOutputReference {
+	var returns GoogleArtifactRegistryRepositoryDockerConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dockerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) DockerConfigInput() *GoogleArtifactRegistryRepositoryDockerConfig {
+	var returns *GoogleArtifactRegistryRepositoryDockerConfig
+	_jsii_.Get(
+		j,
+		"dockerConfigInput",
 		&returns,
 	)
 	return returns
@@ -1064,6 +1088,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) OverrideLogicalId(newLogica
 	)
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutDockerConfig(value *GoogleArtifactRegistryRepositoryDockerConfig) {
+	if err := g.validatePutDockerConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDockerConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutMavenConfig(value *GoogleArtifactRegistryRepositoryMavenConfig) {
 	if err := g.validatePutMavenConfigParameters(value); err != nil {
 		panic(err)
@@ -1112,6 +1147,14 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetDockerConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDockerConfig",
 		nil, // no parameters
 	)
 }

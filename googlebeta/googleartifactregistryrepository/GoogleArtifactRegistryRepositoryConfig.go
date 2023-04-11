@@ -36,6 +36,10 @@ type GoogleArtifactRegistryRepositoryConfig struct {
 	//
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#description GoogleArtifactRegistryRepository#description}
 	Description *string `field:"optional" json:"description" yaml:"description"`
+	// docker_config block.
+	//
+	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#docker_config GoogleArtifactRegistryRepository#docker_config}
+	DockerConfig *GoogleArtifactRegistryRepositoryDockerConfig `field:"optional" json:"dockerConfig" yaml:"dockerConfig"`
 	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_artifact_registry_repository#id GoogleArtifactRegistryRepository#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

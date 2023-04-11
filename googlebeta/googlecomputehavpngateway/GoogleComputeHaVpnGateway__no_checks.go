@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleComputeHaVpnGateway) validateSetRegionParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeHaVpnGateway) validateSetStackTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleComputeHaVpnGatewayParameters(scope constructs.Construct, id *string, config *GoogleComputeHaVpnGatewayConfig) error {
 	return nil
 }
