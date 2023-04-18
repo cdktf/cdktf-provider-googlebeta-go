@@ -2,9 +2,9 @@ package googlecontainercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainercluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,8 @@ type GoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleContainerClusterIpAllocationPolicy
 	SetInternalValue(val *GoogleContainerClusterIpAllocationPolicy)
+	PodCidrOverprovisionConfig() GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference
+	PodCidrOverprovisionConfigInput() *GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig
 	ServicesIpv4CidrBlock() *string
 	SetServicesIpv4CidrBlock(val *string)
 	ServicesIpv4CidrBlockInput() *string
@@ -76,8 +78,10 @@ type GoogleContainerClusterIpAllocationPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPodCidrOverprovisionConfig(value *GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig)
 	ResetClusterIpv4CidrBlock()
 	ResetClusterSecondaryRangeName()
+	ResetPodCidrOverprovisionConfig()
 	ResetServicesIpv4CidrBlock()
 	ResetServicesSecondaryRangeName()
 	ResetStackType()
@@ -181,6 +185,26 @@ func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) PodCidrOverprovisionConfig() GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference {
+	var returns GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"podCidrOverprovisionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) PodCidrOverprovisionConfigInput() *GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig {
+	var returns *GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig
+	_jsii_.Get(
+		j,
+		"podCidrOverprovisionConfigInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) PutPodCidrOverprovisionConfig(value *GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig) {
+	if err := g.validatePutPodCidrOverprovisionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPodCidrOverprovisionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) ResetClusterIpv4CidrBlock() {
 	_jsii_.InvokeVoid(
 		g,
@@ -602,6 +637,14 @@ func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetClusterSecondaryRangeName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) ResetPodCidrOverprovisionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPodCidrOverprovisionConfig",
 		nil, // no parameters
 	)
 }

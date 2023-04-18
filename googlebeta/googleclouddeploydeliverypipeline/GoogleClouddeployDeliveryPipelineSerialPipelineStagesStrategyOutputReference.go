@@ -2,14 +2,16 @@ package googleclouddeploydeliverypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleclouddeploydeliverypipeline/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleclouddeploydeliverypipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference interface {
 	cdktf.ComplexObject
+	Canary() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference
+	CanaryInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -63,7 +65,9 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCanary(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary)
 	PutStandard(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard)
+	ResetCanary()
 	ResetStandard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -78,6 +82,26 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReferenc
 // The jsii proxy struct for GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference
 type jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) Canary() GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference {
+	var returns GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryOutputReference
+	_jsii_.Get(
+		j,
+		"canary",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) CanaryInput() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary {
+	var returns *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary
+	_jsii_.Get(
+		j,
+		"canaryInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) ComplexObjectIndex() interface{} {
@@ -439,6 +463,17 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	return returns
 }
 
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) PutCanary(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanary) {
+	if err := g.validatePutCanaryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCanary",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) PutStandard(value *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyStandard) {
 	if err := g.validatePutStandardParameters(value); err != nil {
 		panic(err)
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 		g,
 		"putStandard",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyOutputReference) ResetCanary() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCanary",
+		nil, // no parameters
 	)
 }
 

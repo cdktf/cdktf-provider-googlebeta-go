@@ -2,9 +2,9 @@ package googleclouddeploydeliverypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googleclouddeploydeliverypipeline/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleclouddeploydeliverypipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,7 @@ type GoogleClouddeployDeliveryPipelineConditionOutputReference interface {
 	SetInternalValue(val *GoogleClouddeployDeliveryPipelineCondition)
 	PipelineReadyCondition() GoogleClouddeployDeliveryPipelineConditionPipelineReadyConditionList
 	TargetsPresentCondition() GoogleClouddeployDeliveryPipelineConditionTargetsPresentConditionList
+	TargetsTypeCondition() GoogleClouddeployDeliveryPipelineConditionTargetsTypeConditionList
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,6 +144,16 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionOutputReference) Ta
 	_jsii_.Get(
 		j,
 		"targetsPresentCondition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionOutputReference) TargetsTypeCondition() GoogleClouddeployDeliveryPipelineConditionTargetsTypeConditionList {
+	var returns GoogleClouddeployDeliveryPipelineConditionTargetsTypeConditionList
+	_jsii_.Get(
+		j,
+		"targetsTypeCondition",
 		&returns,
 	)
 	return returns

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) validatePutPodCidrOverprovisionConfigParameters(value *GoogleContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

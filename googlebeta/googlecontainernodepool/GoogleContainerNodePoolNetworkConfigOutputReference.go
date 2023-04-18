@@ -2,9 +2,9 @@ package googlecontainernodepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecontainernodepool/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecontainernodepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,8 @@ type GoogleContainerNodePoolNetworkConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleContainerNodePoolNetworkConfig
 	SetInternalValue(val *GoogleContainerNodePoolNetworkConfig)
+	PodCidrOverprovisionConfig() GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference
+	PodCidrOverprovisionConfigInput() *GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfig
 	PodIpv4CidrBlock() *string
 	SetPodIpv4CidrBlock(val *string)
 	PodIpv4CidrBlockInput() *string
@@ -73,8 +75,10 @@ type GoogleContainerNodePoolNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPodCidrOverprovisionConfig(value *GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfig)
 	ResetCreatePodRange()
 	ResetEnablePrivateNodes()
+	ResetPodCidrOverprovisionConfig()
 	ResetPodIpv4CidrBlock()
 	ResetPodRange()
 	// Produce the Token's value at resolution time.
@@ -177,6 +181,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) Internal
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) PodCidrOverprovisionConfig() GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference {
+	var returns GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"podCidrOverprovisionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) PodCidrOverprovisionConfigInput() *GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfig {
+	var returns *GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfig
+	_jsii_.Get(
+		j,
+		"podCidrOverprovisionConfigInput",
 		&returns,
 	)
 	return returns
@@ -555,6 +579,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) Interpol
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) PutPodCidrOverprovisionConfig(value *GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfig) {
+	if err := g.validatePutPodCidrOverprovisionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPodCidrOverprovisionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) ResetCreatePodRange() {
 	_jsii_.InvokeVoid(
 		g,
@@ -567,6 +602,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) ResetEna
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnablePrivateNodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) ResetPodCidrOverprovisionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPodCidrOverprovisionConfig",
 		nil, // no parameters
 	)
 }

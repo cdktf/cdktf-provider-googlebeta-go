@@ -2,9 +2,9 @@ package googlecomputetargetsslproxy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v5/googlecomputetargetsslproxy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputetargetsslproxy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validatePutPodCidrOverprovisionConfigParameters(value *GoogleContainerNodePoolNetworkConfigPodCidrOverprovisionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
