@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

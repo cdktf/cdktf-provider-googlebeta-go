@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicy) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

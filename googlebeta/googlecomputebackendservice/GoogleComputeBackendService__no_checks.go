@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetConnectionDrainingTim
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetCustomRequestHeadersParameters(val *[]*string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevel) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerAccessLevel) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

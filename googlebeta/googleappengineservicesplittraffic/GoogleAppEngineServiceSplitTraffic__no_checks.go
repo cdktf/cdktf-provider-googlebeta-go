@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateSetIdParameters(val *string) error {
 	return nil
 }

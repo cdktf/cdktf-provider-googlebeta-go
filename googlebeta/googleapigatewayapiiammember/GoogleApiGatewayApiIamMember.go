@@ -2,14 +2,14 @@ package googleapigatewayapiiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigatewayapiiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigatewayapiiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_iam_member google_api_gateway_api_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_api_iam_member google_api_gateway_api_iam_member}.
 type GoogleApiGatewayApiIamMember interface {
 	cdktf.TerraformResource
 	Api() *string
@@ -26,9 +26,9 @@ type GoogleApiGatewayApiIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamMember) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleApiGatewayApiIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_iam_member google_api_gateway_api_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_api_iam_member google_api_gateway_api_iam_member} Resource.
 func NewGoogleApiGatewayApiIamMember(scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamMemberConfig) GoogleApiGatewayApiIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleApiGatewayApiIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_api_iam_member google_api_gateway_api_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_api_iam_member google_api_gateway_api_iam_member} Resource.
 func NewGoogleApiGatewayApiIamMember_Override(g GoogleApiGatewayApiIamMember, scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamMemberConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleApiGatewayApiIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

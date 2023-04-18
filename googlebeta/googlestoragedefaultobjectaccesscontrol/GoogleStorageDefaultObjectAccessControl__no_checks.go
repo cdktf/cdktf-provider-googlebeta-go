@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageDefaultObjectAccessControl) validateSetEntityParameters(val *string) error {
 	return nil
 }

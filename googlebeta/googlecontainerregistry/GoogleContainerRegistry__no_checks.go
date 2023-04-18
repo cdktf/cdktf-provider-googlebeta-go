@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleContainerRegistry) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerRegistry) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerRegistry) validateSetIdParameters(val *string) error {
 	return nil
 }

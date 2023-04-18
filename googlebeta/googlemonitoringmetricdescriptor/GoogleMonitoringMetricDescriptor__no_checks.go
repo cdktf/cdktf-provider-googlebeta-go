@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeHttpsHealthCheck) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeHttpsHealthCheck) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeHttpsHealthCheck) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

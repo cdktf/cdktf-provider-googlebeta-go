@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleHealthcareDicomStore) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleHealthcareDicomStore) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareDicomStore) validateSetDatasetParameters(val *string) error {
 	return nil
 }

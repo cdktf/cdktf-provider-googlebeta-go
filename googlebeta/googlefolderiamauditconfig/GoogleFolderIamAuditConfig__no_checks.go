@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleFolderIamAuditConfig) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFolderIamAuditConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFolderIamAuditConfig) validateSetFolderParameters(val *string) error {
 	return nil
 }

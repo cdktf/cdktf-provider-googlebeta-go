@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

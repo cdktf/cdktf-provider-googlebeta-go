@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleMemcacheInstance) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMemcacheInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMemcacheInstance) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

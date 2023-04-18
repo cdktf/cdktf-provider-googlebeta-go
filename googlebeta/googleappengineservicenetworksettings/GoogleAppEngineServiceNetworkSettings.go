@@ -2,14 +2,14 @@ package googleappengineservicenetworksettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineservicenetworksettings/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleappengineservicenetworksettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_service_network_settings google_app_engine_service_network_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_app_engine_service_network_settings google_app_engine_service_network_settings}.
 type GoogleAppEngineServiceNetworkSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleAppEngineServiceNetworkSettings interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -149,8 +149,8 @@ func (j *jsiiProxy_GoogleAppEngineServiceNetworkSettings) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAppEngineServiceNetworkSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleAppEngineServiceNetworkSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_GoogleAppEngineServiceNetworkSettings) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_service_network_settings google_app_engine_service_network_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_app_engine_service_network_settings google_app_engine_service_network_settings} Resource.
 func NewGoogleAppEngineServiceNetworkSettings(scope constructs.Construct, id *string, config *GoogleAppEngineServiceNetworkSettingsConfig) GoogleAppEngineServiceNetworkSettings {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewGoogleAppEngineServiceNetworkSettings(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_service_network_settings google_app_engine_service_network_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_app_engine_service_network_settings google_app_engine_service_network_settings} Resource.
 func NewGoogleAppEngineServiceNetworkSettings_Override(g GoogleAppEngineServiceNetworkSettings, scope constructs.Construct, id *string, config *GoogleAppEngineServiceNetworkSettingsConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_GoogleAppEngineServiceNetworkSettings)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleAppEngineServiceNetworkSettings)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleAppEngineServiceNetworkSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

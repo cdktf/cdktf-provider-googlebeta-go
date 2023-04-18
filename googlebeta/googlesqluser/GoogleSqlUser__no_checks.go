@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleSqlUser) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlUser) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlUser) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

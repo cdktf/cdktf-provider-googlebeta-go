@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleMonitoringSlo) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringSlo) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringSlo) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

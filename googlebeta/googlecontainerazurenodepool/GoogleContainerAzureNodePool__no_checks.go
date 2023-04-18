@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleContainerAzureNodePool) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAzureNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAzureNodePool) validateSetIdParameters(val *string) error {
 	return nil
 }

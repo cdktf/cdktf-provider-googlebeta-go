@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceIamMember) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreServiceIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

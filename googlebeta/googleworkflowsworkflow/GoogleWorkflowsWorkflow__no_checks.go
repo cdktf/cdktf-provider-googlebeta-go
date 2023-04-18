@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

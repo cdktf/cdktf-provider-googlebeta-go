@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIamWorkforcePoolProvider) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

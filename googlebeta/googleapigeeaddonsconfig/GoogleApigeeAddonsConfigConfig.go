@@ -8,7 +8,7 @@ type GoogleApigeeAddonsConfigConfig struct {
 	// Experimental.
 	Connection interface{} `field:"optional" json:"connection" yaml:"connection"`
 	// Experimental.
-	Count *float64 `field:"optional" json:"count" yaml:"count"`
+	Count interface{} `field:"optional" json:"count" yaml:"count"`
 	// Experimental.
 	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
@@ -21,20 +21,20 @@ type GoogleApigeeAddonsConfigConfig struct {
 	Provisioners *[]interface{} `field:"optional" json:"provisioners" yaml:"provisioners"`
 	// Name of the Apigee organization.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_addons_config#org GoogleApigeeAddonsConfig#org}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_addons_config#org GoogleApigeeAddonsConfig#org}
 	Org *string `field:"required" json:"org" yaml:"org"`
 	// addons_config block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_addons_config#addons_config GoogleApigeeAddonsConfig#addons_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_addons_config#addons_config GoogleApigeeAddonsConfig#addons_config}
 	AddonsConfig *GoogleApigeeAddonsConfigAddonsConfig `field:"optional" json:"addonsConfig" yaml:"addonsConfig"`
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_addons_config#id GoogleApigeeAddonsConfig#id}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_addons_config#id GoogleApigeeAddonsConfig#id}.
 	//
 	// Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 	// If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 	Id *string `field:"optional" json:"id" yaml:"id"`
 	// timeouts block.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_addons_config#timeouts GoogleApigeeAddonsConfig#timeouts}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_addons_config#timeouts GoogleApigeeAddonsConfig#timeouts}
 	Timeouts *GoogleApigeeAddonsConfigTimeouts `field:"optional" json:"timeouts" yaml:"timeouts"`
 }
 

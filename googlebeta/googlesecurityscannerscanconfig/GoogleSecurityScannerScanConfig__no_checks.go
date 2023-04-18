@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleSecurityScannerScanConfig) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecurityScannerScanConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecurityScannerScanConfig) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

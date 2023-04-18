@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleLoggingFolderExclusion) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingFolderExclusion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingFolderExclusion) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

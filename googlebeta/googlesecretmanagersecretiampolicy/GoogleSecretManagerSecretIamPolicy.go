@@ -2,14 +2,14 @@ package googlesecretmanagersecretiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlesecretmanagersecretiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlesecretmanagersecretiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy}.
 type GoogleSecretManagerSecretIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleSecretManagerSecretIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy} Resource.
 func NewGoogleSecretManagerSecretIamPolicy(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretIamPolicyConfig) GoogleSecretManagerSecretIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewGoogleSecretManagerSecretIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy} Resource.
 func NewGoogleSecretManagerSecretIamPolicy_Override(g GoogleSecretManagerSecretIamPolicy, scope constructs.Construct, id *string, config *GoogleSecretManagerSecretIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

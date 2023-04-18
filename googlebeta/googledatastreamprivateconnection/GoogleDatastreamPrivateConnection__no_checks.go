@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatastreamPrivateConnection) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetDetectMd5HashParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleApigeeEnvgroup) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeEnvgroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeEnvgroup) validateSetHostnamesParameters(val *[]*string) error {
 	return nil
 }

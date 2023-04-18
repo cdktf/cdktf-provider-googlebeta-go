@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDataprocMetastoreFederationIamBinding) validateSetConne
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreFederationIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreFederationIamBinding) validateSetFederationIdParameters(val *string) error {
 	return nil
 }

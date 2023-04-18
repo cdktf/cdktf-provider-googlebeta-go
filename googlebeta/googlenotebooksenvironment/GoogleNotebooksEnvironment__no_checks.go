@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleNotebooksEnvironment) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNotebooksEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksEnvironment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerSecret) validateSetExpireTimeParameters(val *string) error {
 	return nil
 }

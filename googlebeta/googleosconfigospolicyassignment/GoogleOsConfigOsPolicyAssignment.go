@@ -2,14 +2,14 @@ package googleosconfigospolicyassignment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleosconfigospolicyassignment/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleosconfigospolicyassignment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_os_config_os_policy_assignment google_os_config_os_policy_assignment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_os_config_os_policy_assignment google_os_config_os_policy_assignment}.
 type GoogleOsConfigOsPolicyAssignment interface {
 	cdktf.TerraformResource
 	Baseline() cdktf.IResolvable
@@ -22,9 +22,9 @@ type GoogleOsConfigOsPolicyAssignment interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	Deleted() cdktf.IResolvable
 	// Experimental.
 	DependsOn() *[]*string
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -585,7 +585,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) Uid() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_os_config_os_policy_assignment google_os_config_os_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_os_config_os_policy_assignment google_os_config_os_policy_assignment} Resource.
 func NewGoogleOsConfigOsPolicyAssignment(scope constructs.Construct, id *string, config *GoogleOsConfigOsPolicyAssignmentConfig) GoogleOsConfigOsPolicyAssignment {
 	_init_.Initialize()
 
@@ -603,7 +603,7 @@ func NewGoogleOsConfigOsPolicyAssignment(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_os_config_os_policy_assignment google_os_config_os_policy_assignment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_os_config_os_policy_assignment google_os_config_os_policy_assignment} Resource.
 func NewGoogleOsConfigOsPolicyAssignment_Override(g GoogleOsConfigOsPolicyAssignment, scope constructs.Construct, id *string, config *GoogleOsConfigOsPolicyAssignmentConfig) {
 	_init_.Initialize()
 
@@ -625,7 +625,10 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

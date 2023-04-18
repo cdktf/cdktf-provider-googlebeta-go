@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

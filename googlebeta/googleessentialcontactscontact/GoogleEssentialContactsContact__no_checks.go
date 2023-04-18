@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleEssentialContactsContact) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleEssentialContactsContact) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEssentialContactsContact) validateSetEmailParameters(val *string) error {
 	return nil
 }

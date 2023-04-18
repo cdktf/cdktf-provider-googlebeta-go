@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogPolicyTagIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

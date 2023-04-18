@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepository) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleVpcAccessConnector) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVpcAccessConnector) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVpcAccessConnector) validateSetIdParameters(val *string) error {
 	return nil
 }

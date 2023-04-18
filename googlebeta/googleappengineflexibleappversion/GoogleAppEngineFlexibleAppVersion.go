@@ -2,14 +2,14 @@ package googleappengineflexibleappversion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleappengineflexibleappversion/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleappengineflexibleappversion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version google_app_engine_flexible_app_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version}.
 type GoogleAppEngineFlexibleAppVersion interface {
 	cdktf.TerraformResource
 	ApiConfig() GoogleAppEngineFlexibleAppVersionApiConfigOutputReference
@@ -28,9 +28,9 @@ type GoogleAppEngineFlexibleAppVersion interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultExpiration() *string
 	SetDefaultExpiration(val *string)
 	DefaultExpirationInput() *string
@@ -312,8 +312,8 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -1013,7 +1013,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion) VpcAccessConnectorInput() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
 func NewGoogleAppEngineFlexibleAppVersion(scope constructs.Construct, id *string, config *GoogleAppEngineFlexibleAppVersionConfig) GoogleAppEngineFlexibleAppVersion {
 	_init_.Initialize()
 
@@ -1031,7 +1031,7 @@ func NewGoogleAppEngineFlexibleAppVersion(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_app_engine_flexible_app_version google_app_engine_flexible_app_version} Resource.
 func NewGoogleAppEngineFlexibleAppVersion_Override(g GoogleAppEngineFlexibleAppVersion, scope constructs.Construct, id *string, config *GoogleAppEngineFlexibleAppVersionConfig) {
 	_init_.Initialize()
 
@@ -1064,7 +1064,10 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersion)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

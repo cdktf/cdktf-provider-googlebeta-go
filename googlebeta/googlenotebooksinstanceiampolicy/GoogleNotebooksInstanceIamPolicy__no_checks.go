@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleNotebooksInstanceIamPolicy) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNotebooksInstanceIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksInstanceIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

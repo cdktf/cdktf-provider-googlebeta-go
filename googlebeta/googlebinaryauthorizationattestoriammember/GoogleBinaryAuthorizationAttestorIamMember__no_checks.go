@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

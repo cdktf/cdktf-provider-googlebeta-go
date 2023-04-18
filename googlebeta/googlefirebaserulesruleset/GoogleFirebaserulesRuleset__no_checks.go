@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleFirebaserulesRuleset) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaserulesRuleset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaserulesRuleset) validateSetIdParameters(val *string) error {
 	return nil
 }

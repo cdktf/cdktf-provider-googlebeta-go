@@ -80,6 +80,10 @@ func (j *jsiiProxy_GooglePubsubTopic) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubTopic) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubTopic) validateSetIdParameters(val *string) error {
 	return nil
 }

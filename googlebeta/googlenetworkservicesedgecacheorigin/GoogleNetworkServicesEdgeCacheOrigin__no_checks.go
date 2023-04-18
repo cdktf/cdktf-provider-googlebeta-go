@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOrigin) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

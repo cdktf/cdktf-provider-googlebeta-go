@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeProjectMetadataItem) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeProjectMetadataItem) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeProjectMetadataItem) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDataflowJob) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowJob) validateSetEnableStreamingEngineParameters(val interface{}) error {
 	return nil
 }

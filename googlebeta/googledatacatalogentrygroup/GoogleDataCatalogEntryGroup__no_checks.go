@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDataCatalogEntryGroup) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataCatalogEntryGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogEntryGroup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

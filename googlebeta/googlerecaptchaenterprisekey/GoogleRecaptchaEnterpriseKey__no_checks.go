@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

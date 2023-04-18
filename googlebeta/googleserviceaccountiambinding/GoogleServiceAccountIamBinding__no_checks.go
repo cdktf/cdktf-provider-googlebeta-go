@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleServiceAccountIamBinding) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleServiceAccountIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleServiceAccountIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package googlemonitoringuptimecheckconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlemonitoringuptimecheckconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringuptimecheckconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_uptime_check_config google_monitoring_uptime_check_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config}.
 type GoogleMonitoringUptimeCheckConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,9 +26,9 @@ type GoogleMonitoringUptimeCheckConfig interface {
 	ContentMatchers() GoogleMonitoringUptimeCheckConfigContentMatchersList
 	ContentMatchersInput() interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -223,8 +223,8 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ContentMatchersInput() int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -594,7 +594,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) UptimeCheckId() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewGoogleMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, config *GoogleMonitoringUptimeCheckConfigConfig) GoogleMonitoringUptimeCheckConfig {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewGoogleMonitoringUptimeCheckConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewGoogleMonitoringUptimeCheckConfig_Override(g GoogleMonitoringUptimeCheckConfig, scope constructs.Construct, id *string, config *GoogleMonitoringUptimeCheckConfigConfig) {
 	_init_.Initialize()
 
@@ -645,7 +645,10 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

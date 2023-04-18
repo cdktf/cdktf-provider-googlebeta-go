@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDataprocJobIamMember) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocJobIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocJobIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

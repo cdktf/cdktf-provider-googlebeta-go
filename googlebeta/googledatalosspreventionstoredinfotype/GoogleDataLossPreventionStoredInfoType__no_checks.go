@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

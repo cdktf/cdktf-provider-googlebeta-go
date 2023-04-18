@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDnsRecordSet) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDnsRecordSet) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsRecordSet) validateSetIdParameters(val *string) error {
 	return nil
 }

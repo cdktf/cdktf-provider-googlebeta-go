@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDataCatalogTag) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataCatalogTag) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogTag) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleFirestoreDocument) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreDocument) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreDocument) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package googlecomputetargetpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputetargetpool/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputetargetpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool google_compute_target_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_target_pool google_compute_target_pool}.
 type GoogleComputeTargetPool interface {
 	cdktf.TerraformResource
 	BackupPool() *string
@@ -24,9 +24,9 @@ type GoogleComputeTargetPool interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -195,8 +195,8 @@ func (j *jsiiProxy_GoogleComputeTargetPool) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeTargetPool) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleComputeTargetPool) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -536,7 +536,7 @@ func (j *jsiiProxy_GoogleComputeTargetPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool google_compute_target_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
 func NewGoogleComputeTargetPool(scope constructs.Construct, id *string, config *GoogleComputeTargetPoolConfig) GoogleComputeTargetPool {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewGoogleComputeTargetPool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_target_pool google_compute_target_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
 func NewGoogleComputeTargetPool_Override(g GoogleComputeTargetPool, scope constructs.Construct, id *string, config *GoogleComputeTargetPoolConfig) {
 	_init_.Initialize()
 
@@ -587,7 +587,10 @@ func (j *jsiiProxy_GoogleComputeTargetPool)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeTargetPool)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleComputeTargetPool)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

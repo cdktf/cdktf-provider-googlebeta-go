@@ -2,14 +2,14 @@ package googleorganizationaccessapprovalsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleorganizationaccessapprovalsettings/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorganizationaccessapprovalsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_organization_access_approval_settings google_organization_access_approval_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_organization_access_approval_settings google_organization_access_approval_settings}.
 type GoogleOrganizationAccessApprovalSettings interface {
 	cdktf.TerraformResource
 	ActiveKeyVersion() *string
@@ -25,9 +25,9 @@ type GoogleOrganizationAccessApprovalSettings interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings) ConstructNodeMetada
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_organization_access_approval_settings google_organization_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_organization_access_approval_settings google_organization_access_approval_settings} Resource.
 func NewGoogleOrganizationAccessApprovalSettings(scope constructs.Construct, id *string, config *GoogleOrganizationAccessApprovalSettingsConfig) GoogleOrganizationAccessApprovalSettings {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewGoogleOrganizationAccessApprovalSettings(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_organization_access_approval_settings google_organization_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_organization_access_approval_settings google_organization_access_approval_settings} Resource.
 func NewGoogleOrganizationAccessApprovalSettings_Override(g GoogleOrganizationAccessApprovalSettings, scope constructs.Construct, id *string, config *GoogleOrganizationAccessApprovalSettingsConfig) {
 	_init_.Initialize()
 
@@ -499,7 +499,10 @@ func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings)SetConnection(val in
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleOrganizationAccessApprovalSettings)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

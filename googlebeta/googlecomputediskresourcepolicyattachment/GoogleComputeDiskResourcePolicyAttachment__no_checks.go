@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateSetConnect
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeDiskResourcePolicyAttachment) validateSetDiskParameters(val *string) error {
 	return nil
 }

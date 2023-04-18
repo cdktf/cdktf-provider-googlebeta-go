@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetConsumerRejectList
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

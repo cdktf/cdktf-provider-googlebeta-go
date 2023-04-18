@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleComputePacketMirroring) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputePacketMirroring) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputePacketMirroring) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

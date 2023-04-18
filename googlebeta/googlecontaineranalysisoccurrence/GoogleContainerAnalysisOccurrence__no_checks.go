@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrence) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAnalysisOccurrence) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAnalysisOccurrence) validateSetIdParameters(val *string) error {
 	return nil
 }

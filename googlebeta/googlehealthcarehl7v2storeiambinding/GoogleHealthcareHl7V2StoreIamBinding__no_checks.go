@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateSetHl7V2StoreIdParameters(val *string) error {
 	return nil
 }

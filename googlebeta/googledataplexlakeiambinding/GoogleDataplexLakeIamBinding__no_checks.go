@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexLakeIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

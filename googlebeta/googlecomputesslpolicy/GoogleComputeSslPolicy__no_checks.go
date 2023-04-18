@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeSslPolicy) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSslPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSslPolicy) validateSetCustomFeaturesParameters(val *[]*string) error {
 	return nil
 }

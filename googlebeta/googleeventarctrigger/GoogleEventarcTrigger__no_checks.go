@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleEventarcTrigger) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleEventarcTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEventarcTrigger) validateSetIdParameters(val *string) error {
 	return nil
 }

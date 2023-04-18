@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeSyncAuthorization) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleBigqueryReservationAssignment) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryReservationAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryReservationAssignment) validateSetIdParameters(val *string) error {
 	return nil
 }

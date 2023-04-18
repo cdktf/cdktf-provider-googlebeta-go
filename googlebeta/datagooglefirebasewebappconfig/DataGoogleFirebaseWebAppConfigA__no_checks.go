@@ -64,6 +64,10 @@ func validateDataGoogleFirebaseWebAppConfigA_IsTerraformElementParameters(x inte
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleFirebaseWebAppConfigA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleFirebaseWebAppConfigA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateSetIdParameters(val *string) error {
 	return nil
 }

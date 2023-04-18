@@ -2,14 +2,14 @@ package googlesqlsourcerepresentationinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlesqlsourcerepresentationinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlesqlsourcerepresentationinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_source_representation_instance google_sql_source_representation_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_sql_source_representation_instance google_sql_source_representation_instance}.
 type GoogleSqlSourceRepresentationInstance interface {
 	cdktf.TerraformResource
 	CaCertificate() *string
@@ -30,9 +30,9 @@ type GoogleSqlSourceRepresentationInstance interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatabaseVersion() *string
 	SetDatabaseVersion(val *string)
 	DatabaseVersionInput() *string
@@ -244,8 +244,8 @@ func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -595,7 +595,7 @@ func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance) UsernameInput() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_source_representation_instance google_sql_source_representation_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_sql_source_representation_instance google_sql_source_representation_instance} Resource.
 func NewGoogleSqlSourceRepresentationInstance(scope constructs.Construct, id *string, config *GoogleSqlSourceRepresentationInstanceConfig) GoogleSqlSourceRepresentationInstance {
 	_init_.Initialize()
 
@@ -613,7 +613,7 @@ func NewGoogleSqlSourceRepresentationInstance(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_source_representation_instance google_sql_source_representation_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_sql_source_representation_instance google_sql_source_representation_instance} Resource.
 func NewGoogleSqlSourceRepresentationInstance_Override(g GoogleSqlSourceRepresentationInstance, scope constructs.Construct, id *string, config *GoogleSqlSourceRepresentationInstanceConfig) {
 	_init_.Initialize()
 
@@ -668,7 +668,10 @@ func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

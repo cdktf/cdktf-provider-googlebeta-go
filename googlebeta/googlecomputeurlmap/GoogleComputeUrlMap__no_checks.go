@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleComputeUrlMap) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeUrlMap) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeUrlMap) validateSetDefaultServiceParameters(val *string) error {
 	return nil
 }

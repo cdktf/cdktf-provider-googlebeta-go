@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleGameServicesGameServerConfig) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGameServicesGameServerConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGameServicesGameServerConfig) validateSetDeploymentIdParameters(val *string) error {
 	return nil
 }

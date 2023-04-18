@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleCloudTasksQueue) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudTasksQueue) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudTasksQueue) validateSetIdParameters(val *string) error {
 	return nil
 }

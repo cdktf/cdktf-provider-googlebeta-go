@@ -2,14 +2,14 @@ package googlefirebaseandroidapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefirebaseandroidapp/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlefirebaseandroidapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app google_firebase_android_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_android_app google_firebase_android_app}.
 type GoogleFirebaseAndroidApp interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -22,9 +22,9 @@ type GoogleFirebaseAndroidApp interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DeletionPolicy() *string
 	SetDeletionPolicy(val *string)
 	DeletionPolicyInput() *string
@@ -175,8 +175,8 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAndroidApp) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -486,7 +486,7 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app google_firebase_android_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
 func NewGoogleFirebaseAndroidApp(scope constructs.Construct, id *string, config *GoogleFirebaseAndroidAppConfig) GoogleFirebaseAndroidApp {
 	_init_.Initialize()
 
@@ -504,7 +504,7 @@ func NewGoogleFirebaseAndroidApp(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_android_app google_firebase_android_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_android_app google_firebase_android_app} Resource.
 func NewGoogleFirebaseAndroidApp_Override(g GoogleFirebaseAndroidApp, scope constructs.Construct, id *string, config *GoogleFirebaseAndroidAppConfig) {
 	_init_.Initialize()
 
@@ -526,7 +526,10 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAndroidApp)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleFirebaseAndroidApp)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

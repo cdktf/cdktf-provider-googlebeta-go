@@ -2,14 +2,14 @@ package googleserviceusageconsumerquotaoverride
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleserviceusageconsumerquotaoverride/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleserviceusageconsumerquotaoverride/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override}.
 type GoogleServiceUsageConsumerQuotaOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleServiceUsageConsumerQuotaOverride interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) ConstructNodeMetadat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
 func NewGoogleServiceUsageConsumerQuotaOverride(scope constructs.Construct, id *string, config *GoogleServiceUsageConsumerQuotaOverrideConfig) GoogleServiceUsageConsumerQuotaOverride {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewGoogleServiceUsageConsumerQuotaOverride(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
 func NewGoogleServiceUsageConsumerQuotaOverride_Override(g GoogleServiceUsageConsumerQuotaOverride, scope constructs.Construct, id *string, config *GoogleServiceUsageConsumerQuotaOverrideConfig) {
 	_init_.Initialize()
 
@@ -525,7 +525,10 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetConnection(val int
 	)
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleLoggingLogView) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingLogView) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingLogView) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

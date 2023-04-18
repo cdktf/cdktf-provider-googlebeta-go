@@ -2,14 +2,14 @@ package datagoogleruntimeconfigconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/datagoogleruntimeconfigconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleruntimeconfigconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/d/google_runtimeconfig_config google_runtimeconfig_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config}.
 type DataGoogleRuntimeconfigConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -17,9 +17,9 @@ type DataGoogleRuntimeconfigConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -125,8 +125,8 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) ConstructNodeMetadata() *map[s
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -316,7 +316,7 @@ func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/d/google_runtimeconfig_config google_runtimeconfig_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config} Data Source.
 func NewDataGoogleRuntimeconfigConfig(scope constructs.Construct, id *string, config *DataGoogleRuntimeconfigConfigConfig) DataGoogleRuntimeconfigConfig {
 	_init_.Initialize()
 
@@ -334,7 +334,7 @@ func NewDataGoogleRuntimeconfigConfig(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/d/google_runtimeconfig_config google_runtimeconfig_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/data-sources/google_runtimeconfig_config google_runtimeconfig_config} Data Source.
 func NewDataGoogleRuntimeconfigConfig_Override(d DataGoogleRuntimeconfigConfig, scope constructs.Construct, id *string, config *DataGoogleRuntimeconfigConfigConfig) {
 	_init_.Initialize()
 
@@ -345,7 +345,10 @@ func NewDataGoogleRuntimeconfigConfig_Override(d DataGoogleRuntimeconfigConfig, 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetCount(val *float64) {
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

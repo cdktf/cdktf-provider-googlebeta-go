@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleFirebaseAppleApp) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaseAppleApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaseAppleApp) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

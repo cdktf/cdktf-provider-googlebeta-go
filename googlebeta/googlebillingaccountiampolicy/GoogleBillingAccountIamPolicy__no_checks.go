@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleBillingAccountIamPolicy) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBillingAccountIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBillingAccountIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

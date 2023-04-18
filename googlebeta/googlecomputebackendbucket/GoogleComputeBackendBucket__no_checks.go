@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetCustomResponseHeadersParameters(val *[]*string) error {
 	return nil
 }

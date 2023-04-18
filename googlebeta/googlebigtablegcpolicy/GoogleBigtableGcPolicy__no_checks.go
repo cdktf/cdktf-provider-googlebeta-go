@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleBigtableGcPolicy) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigtableGcPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableGcPolicy) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

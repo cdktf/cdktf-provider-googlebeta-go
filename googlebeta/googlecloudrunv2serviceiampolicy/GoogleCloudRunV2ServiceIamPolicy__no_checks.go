@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceIamPolicy) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

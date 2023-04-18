@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplate) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataCatalogTagTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogTagTemplate) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

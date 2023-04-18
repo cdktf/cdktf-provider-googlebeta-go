@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudIdentityGroupMembership) validateSetGroupParameters(val *string) error {
 	return nil
 }

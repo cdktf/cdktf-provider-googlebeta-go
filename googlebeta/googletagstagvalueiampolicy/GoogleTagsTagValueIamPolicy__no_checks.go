@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleTagsTagValueIamPolicy) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleTagsTagValueIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTagsTagValueIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

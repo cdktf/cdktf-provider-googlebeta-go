@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOsConfigGuestPolicies) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

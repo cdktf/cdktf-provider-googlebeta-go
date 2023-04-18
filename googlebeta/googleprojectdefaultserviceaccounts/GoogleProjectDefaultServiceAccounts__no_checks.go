@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleProjectDefaultServiceAccounts) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProjectDefaultServiceAccounts) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectDefaultServiceAccounts) validateSetIdParameters(val *string) error {
 	return nil
 }

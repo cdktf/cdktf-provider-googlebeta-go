@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxWebhook) validateSetDisabledParameters(val interface{}) error {
 	return nil
 }

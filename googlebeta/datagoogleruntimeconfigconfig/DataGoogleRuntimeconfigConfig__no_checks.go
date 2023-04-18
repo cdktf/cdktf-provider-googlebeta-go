@@ -64,6 +64,10 @@ func validateDataGoogleRuntimeconfigConfig_IsTerraformElementParameters(x interf
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleRuntimeconfigConfig) validateSetIdParameters(val *string) error {
 	return nil
 }

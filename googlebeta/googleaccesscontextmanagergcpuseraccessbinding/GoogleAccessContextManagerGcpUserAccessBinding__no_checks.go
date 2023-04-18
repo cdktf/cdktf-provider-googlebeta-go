@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerGcpUserAccessBinding) validateSetGroupKeyParameters(val *string) error {
 	return nil
 }

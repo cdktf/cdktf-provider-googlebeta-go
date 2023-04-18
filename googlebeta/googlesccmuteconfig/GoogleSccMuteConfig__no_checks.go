@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleSccMuteConfig) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSccMuteConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSccMuteConfig) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

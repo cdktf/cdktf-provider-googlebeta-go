@@ -2,14 +2,14 @@ package googlebigquerydatatransferconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigquerydatatransferconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigquerydatatransferconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_data_transfer_config google_bigquery_data_transfer_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_data_transfer_config google_bigquery_data_transfer_config}.
 type GoogleBigqueryDataTransferConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleBigqueryDataTransferConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DataRefreshWindowDays() *float64
 	SetDataRefreshWindowDays(val *float64)
 	DataRefreshWindowDaysInput() *float64
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleBigqueryDataTransferConfig) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataTransferConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleBigqueryDataTransferConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -654,7 +654,7 @@ func (j *jsiiProxy_GoogleBigqueryDataTransferConfig) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
 func NewGoogleBigqueryDataTransferConfig(scope constructs.Construct, id *string, config *GoogleBigqueryDataTransferConfigConfig) GoogleBigqueryDataTransferConfig {
 	_init_.Initialize()
 
@@ -672,7 +672,7 @@ func NewGoogleBigqueryDataTransferConfig(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_data_transfer_config google_bigquery_data_transfer_config} Resource.
 func NewGoogleBigqueryDataTransferConfig_Override(g GoogleBigqueryDataTransferConfig, scope constructs.Construct, id *string, config *GoogleBigqueryDataTransferConfigConfig) {
 	_init_.Initialize()
 
@@ -694,7 +694,10 @@ func (j *jsiiProxy_GoogleBigqueryDataTransferConfig)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataTransferConfig)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleBigqueryDataTransferConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -2,14 +2,14 @@ package googlesqlsslcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlesqlsslcert/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlesqlsslcert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_ssl_cert google_sql_ssl_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_sql_ssl_cert google_sql_ssl_cert}.
 type GoogleSqlSslCert interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -26,9 +26,9 @@ type GoogleSqlSslCert interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -196,8 +196,8 @@ func (j *jsiiProxy_GoogleSqlSslCert) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlSslCert) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleSqlSslCert) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -457,7 +457,7 @@ func (j *jsiiProxy_GoogleSqlSslCert) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_ssl_cert google_sql_ssl_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_sql_ssl_cert google_sql_ssl_cert} Resource.
 func NewGoogleSqlSslCert(scope constructs.Construct, id *string, config *GoogleSqlSslCertConfig) GoogleSqlSslCert {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewGoogleSqlSslCert(scope constructs.Construct, id *string, config *GoogleS
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_sql_ssl_cert google_sql_ssl_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_sql_ssl_cert google_sql_ssl_cert} Resource.
 func NewGoogleSqlSslCert_Override(g GoogleSqlSslCert, scope constructs.Construct, id *string, config *GoogleSqlSslCertConfig) {
 	_init_.Initialize()
 
@@ -508,7 +508,10 @@ func (j *jsiiProxy_GoogleSqlSslCert)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSqlSslCert)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleSqlSslCert)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

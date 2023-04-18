@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeNetworkPeering) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNetworkPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNetworkPeering) validateSetExportCustomRoutesParameters(val interface{}) error {
 	return nil
 }

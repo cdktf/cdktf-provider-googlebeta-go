@@ -2,14 +2,14 @@ package googlecomputenetworkfirewallpolicyassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputenetworkfirewallpolicyassociation/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputenetworkfirewallpolicyassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_network_firewall_policy_association google_compute_network_firewall_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_network_firewall_policy_association google_compute_network_firewall_policy_association}.
 type GoogleComputeNetworkFirewallPolicyAssociation interface {
 	cdktf.TerraformResource
 	AttachmentTarget() *string
@@ -24,9 +24,9 @@ type GoogleComputeNetworkFirewallPolicyAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyAssociation) ConstructNodeM
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyAssociation) TimeoutsInput(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_network_firewall_policy_association google_compute_network_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_network_firewall_policy_association google_compute_network_firewall_policy_association} Resource.
 func NewGoogleComputeNetworkFirewallPolicyAssociation(scope constructs.Construct, id *string, config *GoogleComputeNetworkFirewallPolicyAssociationConfig) GoogleComputeNetworkFirewallPolicyAssociation {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleComputeNetworkFirewallPolicyAssociation(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_network_firewall_policy_association google_compute_network_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_network_firewall_policy_association google_compute_network_firewall_policy_association} Resource.
 func NewGoogleComputeNetworkFirewallPolicyAssociation_Override(g GoogleComputeNetworkFirewallPolicyAssociation, scope constructs.Construct, id *string, config *GoogleComputeNetworkFirewallPolicyAssociationConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyAssociation)SetConnection(v
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

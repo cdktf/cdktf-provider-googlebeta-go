@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeRouter) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouter) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeInstanceIamBinding) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleActiveDirectoryDomainTrust) validateSetDomainParameters(val *string) error {
 	return nil
 }

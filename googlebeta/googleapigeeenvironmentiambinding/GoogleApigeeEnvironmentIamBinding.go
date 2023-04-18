@@ -2,14 +2,14 @@ package googleapigeeenvironmentiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeenvironmentiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeeenvironmentiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_environment_iam_binding google_apigee_environment_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_environment_iam_binding google_apigee_environment_iam_binding}.
 type GoogleApigeeEnvironmentIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type GoogleApigeeEnvironmentIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -413,7 +413,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_environment_iam_binding google_apigee_environment_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_environment_iam_binding google_apigee_environment_iam_binding} Resource.
 func NewGoogleApigeeEnvironmentIamBinding(scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentIamBindingConfig) GoogleApigeeEnvironmentIamBinding {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewGoogleApigeeEnvironmentIamBinding(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_environment_iam_binding google_apigee_environment_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_environment_iam_binding google_apigee_environment_iam_binding} Resource.
 func NewGoogleApigeeEnvironmentIamBinding_Override(g GoogleApigeeEnvironmentIamBinding, scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentIamBindingConfig) {
 	_init_.Initialize()
 
@@ -453,7 +453,10 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

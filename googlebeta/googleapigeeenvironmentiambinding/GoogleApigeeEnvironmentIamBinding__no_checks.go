@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeEnvironmentIamBinding) validateSetEnvIdParameters(val *string) error {
 	return nil
 }

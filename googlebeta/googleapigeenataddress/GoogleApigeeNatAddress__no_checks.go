@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleApigeeNatAddress) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeNatAddress) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeNatAddress) validateSetIdParameters(val *string) error {
 	return nil
 }

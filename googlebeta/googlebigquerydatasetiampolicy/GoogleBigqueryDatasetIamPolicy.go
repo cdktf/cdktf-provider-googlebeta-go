@@ -2,14 +2,14 @@ package googlebigquerydatasetiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebigquerydatasetiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigquerydatasetiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy}.
 type GoogleBigqueryDatasetIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleBigqueryDatasetIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatasetId() *string
 	SetDatasetId(val *string)
 	DatasetIdInput() *string
@@ -146,8 +146,8 @@ func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy) ConstructNodeMetadata() *map[
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
 func NewGoogleBigqueryDatasetIamPolicy(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetIamPolicyConfig) GoogleBigqueryDatasetIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewGoogleBigqueryDatasetIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
 func NewGoogleBigqueryDatasetIamPolicy_Override(g GoogleBigqueryDatasetIamPolicy, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -407,7 +407,10 @@ func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy)SetConnection(val interface{})
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectAccessApprovalSettings) validateSetIdParameters(val *string) error {
 	return nil
 }

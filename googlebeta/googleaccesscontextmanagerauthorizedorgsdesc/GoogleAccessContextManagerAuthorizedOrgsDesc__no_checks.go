@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateSetConn
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerAuthorizedOrgsDesc) validateSetIdParameters(val *string) error {
 	return nil
 }

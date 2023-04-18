@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

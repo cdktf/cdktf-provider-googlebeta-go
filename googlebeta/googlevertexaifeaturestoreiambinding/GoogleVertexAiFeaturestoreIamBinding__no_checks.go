@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamBinding) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamBinding) validateSetFeaturestoreParameters(val *string) error {
 	return nil
 }

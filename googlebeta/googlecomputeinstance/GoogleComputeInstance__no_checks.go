@@ -128,6 +128,10 @@ func (j *jsiiProxy_GoogleComputeInstance) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstance) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }

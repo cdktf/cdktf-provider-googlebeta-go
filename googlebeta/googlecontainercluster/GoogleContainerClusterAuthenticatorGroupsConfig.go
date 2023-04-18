@@ -6,7 +6,7 @@ type GoogleContainerClusterAuthenticatorGroupsConfig struct {
 	//
 	// Group name must be in format gke-security-groups@yourdomain.com.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_container_cluster#security_group GoogleContainerCluster#security_group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_container_cluster#security_group GoogleContainerCluster#security_group}
 	SecurityGroup *string `field:"required" json:"securityGroup" yaml:"securityGroup"`
 }
 

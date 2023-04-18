@@ -4,7 +4,7 @@ package googlecomputeresourcepolicy
 type GoogleComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule struct {
 	// Specifies the frequency for the operation, using the unix-cron format.
 	//
-	// Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_resource_policy#schedule GoogleComputeResourcePolicy#schedule}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_resource_policy#schedule GoogleComputeResourcePolicy#schedule}
 	Schedule *string `field:"required" json:"schedule" yaml:"schedule"`
 }
 

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleProjectService) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProjectService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectService) validateSetDisableDependentServicesParameters(val interface{}) error {
 	return nil
 }

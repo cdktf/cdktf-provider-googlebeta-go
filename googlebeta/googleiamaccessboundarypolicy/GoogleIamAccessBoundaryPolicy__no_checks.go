@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleIamAccessBoundaryPolicy) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIamAccessBoundaryPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIamAccessBoundaryPolicy) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

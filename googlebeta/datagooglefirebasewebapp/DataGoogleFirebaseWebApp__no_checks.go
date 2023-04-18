@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleFirebaseWebApp) validateSetAppIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleFirebaseWebApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleFirebaseWebApp) validateSetIdParameters(val *string) error {
 	return nil
 }

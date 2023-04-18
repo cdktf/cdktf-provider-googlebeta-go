@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaseHostingVersion) validateSetIdParameters(val *string) error {
 	return nil
 }

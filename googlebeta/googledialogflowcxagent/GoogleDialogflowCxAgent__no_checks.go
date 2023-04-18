@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent) validateSetDefaultLanguageCodeParameters(val *string) error {
 	return nil
 }

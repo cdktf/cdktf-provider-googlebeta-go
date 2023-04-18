@@ -2,14 +2,14 @@ package googlepubsublitereservation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlepubsublitereservation/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlepubsublitereservation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_lite_reservation google_pubsub_lite_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_lite_reservation google_pubsub_lite_reservation}.
 type GooglePubsubLiteReservation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GooglePubsubLiteReservation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -153,8 +153,8 @@ func (j *jsiiProxy_GooglePubsubLiteReservation) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GooglePubsubLiteReservation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GooglePubsubLiteReservation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -404,7 +404,7 @@ func (j *jsiiProxy_GooglePubsubLiteReservation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_lite_reservation google_pubsub_lite_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_lite_reservation google_pubsub_lite_reservation} Resource.
 func NewGooglePubsubLiteReservation(scope constructs.Construct, id *string, config *GooglePubsubLiteReservationConfig) GooglePubsubLiteReservation {
 	_init_.Initialize()
 
@@ -422,7 +422,7 @@ func NewGooglePubsubLiteReservation(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_pubsub_lite_reservation google_pubsub_lite_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_pubsub_lite_reservation google_pubsub_lite_reservation} Resource.
 func NewGooglePubsubLiteReservation_Override(g GooglePubsubLiteReservation, scope constructs.Construct, id *string, config *GooglePubsubLiteReservationConfig) {
 	_init_.Initialize()
 
@@ -444,7 +444,10 @@ func (j *jsiiProxy_GooglePubsubLiteReservation)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GooglePubsubLiteReservation)SetCount(val *float64) {
+func (j *jsiiProxy_GooglePubsubLiteReservation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

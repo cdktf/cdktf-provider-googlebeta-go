@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleAlloydbCluster) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleBigtableInstance) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigtableInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableInstance) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }

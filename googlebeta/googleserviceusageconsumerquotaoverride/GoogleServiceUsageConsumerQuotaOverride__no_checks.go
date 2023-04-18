@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateSetDimensionsParameters(val *map[string]*string) error {
 	return nil
 }

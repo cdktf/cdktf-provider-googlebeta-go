@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleContainerAwsNodePool) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAwsNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAwsNodePool) validateSetIdParameters(val *string) error {
 	return nil
 }

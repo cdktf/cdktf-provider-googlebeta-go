@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleDataFusionInstance) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataFusionInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataFusionInstance) validateSetDataprocServiceAccountParameters(val *string) error {
 	return nil
 }

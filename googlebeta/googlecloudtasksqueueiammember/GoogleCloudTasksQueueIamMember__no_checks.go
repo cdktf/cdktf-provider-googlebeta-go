@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleCloudTasksQueueIamMember) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudTasksQueueIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudTasksQueueIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

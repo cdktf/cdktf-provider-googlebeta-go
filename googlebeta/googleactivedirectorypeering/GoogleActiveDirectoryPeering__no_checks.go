@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleActiveDirectoryPeering) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleActiveDirectoryPeering) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleActiveDirectoryPeering) validateSetDomainResourceParameters(val *string) error {
 	return nil
 }

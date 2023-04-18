@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

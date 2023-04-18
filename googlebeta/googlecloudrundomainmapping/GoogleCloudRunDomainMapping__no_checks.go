@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleCloudRunDomainMapping) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunDomainMapping) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunDomainMapping) validateSetIdParameters(val *string) error {
 	return nil
 }

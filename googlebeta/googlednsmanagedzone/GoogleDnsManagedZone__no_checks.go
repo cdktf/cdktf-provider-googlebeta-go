@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleDnsManagedZone) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDnsManagedZone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsManagedZone) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

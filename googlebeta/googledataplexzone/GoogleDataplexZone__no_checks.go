@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDataplexZone) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataplexZone) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexZone) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

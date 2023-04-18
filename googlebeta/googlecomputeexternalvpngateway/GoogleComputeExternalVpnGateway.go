@@ -2,14 +2,14 @@ package googlecomputeexternalvpngateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeexternalvpngateway/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeexternalvpngateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_external_vpn_gateway google_compute_external_vpn_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_external_vpn_gateway google_compute_external_vpn_gateway}.
 type GoogleComputeExternalVpnGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleComputeExternalVpnGateway interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -163,8 +163,8 @@ func (j *jsiiProxy_GoogleComputeExternalVpnGateway) ConstructNodeMetadata() *map
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeExternalVpnGateway) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleComputeExternalVpnGateway) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -464,7 +464,7 @@ func (j *jsiiProxy_GoogleComputeExternalVpnGateway) TimeoutsInput() interface{} 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
 func NewGoogleComputeExternalVpnGateway(scope constructs.Construct, id *string, config *GoogleComputeExternalVpnGatewayConfig) GoogleComputeExternalVpnGateway {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewGoogleComputeExternalVpnGateway(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_external_vpn_gateway google_compute_external_vpn_gateway} Resource.
 func NewGoogleComputeExternalVpnGateway_Override(g GoogleComputeExternalVpnGateway, scope constructs.Construct, id *string, config *GoogleComputeExternalVpnGatewayConfig) {
 	_init_.Initialize()
 
@@ -504,7 +504,10 @@ func (j *jsiiProxy_GoogleComputeExternalVpnGateway)SetConnection(val interface{}
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeExternalVpnGateway)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleComputeExternalVpnGateway)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

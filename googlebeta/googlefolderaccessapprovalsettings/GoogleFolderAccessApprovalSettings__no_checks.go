@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) validateSetFolderIdParameters(val *string) error {
 	return nil
 }

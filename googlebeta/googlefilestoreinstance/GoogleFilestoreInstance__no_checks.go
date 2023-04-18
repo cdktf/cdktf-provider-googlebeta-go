@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstance) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

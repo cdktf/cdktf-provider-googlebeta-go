@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceIamMember) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendServiceIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

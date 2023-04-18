@@ -64,6 +64,10 @@ func validateDataGoogleIamWorkloadIdentityPoolProvider_IsTerraformElementParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProvider) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPoolProvider) validateSetIdParameters(val *string) error {
 	return nil
 }

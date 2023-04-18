@@ -2,14 +2,14 @@ package googledialogflowcxentitytype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googledialogflowcxentitytype/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledialogflowcxentitytype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type}.
 type GoogleDialogflowCxEntityType interface {
 	cdktf.TerraformResource
 	AutoExpansionMode() *string
@@ -24,9 +24,9 @@ type GoogleDialogflowCxEntityType interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleDialogflowCxEntityType) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEntityType) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleDialogflowCxEntityType) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -534,7 +534,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEntityType) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type} Resource.
 func NewGoogleDialogflowCxEntityType(scope constructs.Construct, id *string, config *GoogleDialogflowCxEntityTypeConfig) GoogleDialogflowCxEntityType {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewGoogleDialogflowCxEntityType(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type} Resource.
 func NewGoogleDialogflowCxEntityType_Override(g GoogleDialogflowCxEntityType, scope constructs.Construct, id *string, config *GoogleDialogflowCxEntityTypeConfig) {
 	_init_.Initialize()
 
@@ -585,7 +585,10 @@ func (j *jsiiProxy_GoogleDialogflowCxEntityType)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEntityType)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleDialogflowCxEntityType)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

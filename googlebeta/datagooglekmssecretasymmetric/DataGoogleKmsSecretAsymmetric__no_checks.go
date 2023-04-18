@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleKmsSecretAsymmetric) validateSetCiphertextParameter
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleKmsSecretAsymmetric) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleKmsSecretAsymmetric) validateSetCrc32Parameters(val *string) error {
 	return nil
 }

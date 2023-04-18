@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDataCatalogTaxonomy) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataCatalogTaxonomy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogTaxonomy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

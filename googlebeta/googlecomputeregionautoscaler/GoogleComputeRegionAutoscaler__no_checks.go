@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionAutoscaler) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

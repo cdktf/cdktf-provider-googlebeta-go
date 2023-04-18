@@ -2,14 +2,14 @@ package googleiapwebbackendserviceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiapwebbackendserviceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiapwebbackendserviceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding}.
 type GoogleIapWebBackendServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type GoogleIapWebBackendServiceIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleIapWebBackendServiceIamBinding) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapWebBackendServiceIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleIapWebBackendServiceIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleIapWebBackendServiceIamBinding) WebBackendServiceInput(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
 func NewGoogleIapWebBackendServiceIamBinding(scope constructs.Construct, id *string, config *GoogleIapWebBackendServiceIamBindingConfig) GoogleIapWebBackendServiceIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleIapWebBackendServiceIamBinding(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
 func NewGoogleIapWebBackendServiceIamBinding_Override(g GoogleIapWebBackendServiceIamBinding, scope constructs.Construct, id *string, config *GoogleIapWebBackendServiceIamBindingConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_GoogleIapWebBackendServiceIamBinding)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleIapWebBackendServiceIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleIapWebBackendServiceIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

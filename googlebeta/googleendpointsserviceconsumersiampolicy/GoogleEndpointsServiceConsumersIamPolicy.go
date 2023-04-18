@@ -2,14 +2,14 @@ package googleendpointsserviceconsumersiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleendpointsserviceconsumersiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleendpointsserviceconsumersiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy}.
 type GoogleEndpointsServiceConsumersIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type GoogleEndpointsServiceConsumersIamPolicy interface {
 	SetConsumerProject(val *string)
 	ConsumerProjectInput() *string
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -165,8 +165,8 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) ConsumerProjectInpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -366,7 +366,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) TerraformResourceTy
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy} Resource.
 func NewGoogleEndpointsServiceConsumersIamPolicy(scope constructs.Construct, id *string, config *GoogleEndpointsServiceConsumersIamPolicyConfig) GoogleEndpointsServiceConsumersIamPolicy {
 	_init_.Initialize()
 
@@ -384,7 +384,7 @@ func NewGoogleEndpointsServiceConsumersIamPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy} Resource.
 func NewGoogleEndpointsServiceConsumersIamPolicy_Override(g GoogleEndpointsServiceConsumersIamPolicy, scope constructs.Construct, id *string, config *GoogleEndpointsServiceConsumersIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -417,7 +417,10 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy)SetConsumerProject(v
 	)
 }
 
-func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

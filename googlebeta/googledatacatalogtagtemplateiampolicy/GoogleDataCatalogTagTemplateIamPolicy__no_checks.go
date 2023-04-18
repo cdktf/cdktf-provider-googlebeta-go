@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

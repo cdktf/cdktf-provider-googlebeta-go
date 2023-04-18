@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamMember) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerAccessPolicyIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

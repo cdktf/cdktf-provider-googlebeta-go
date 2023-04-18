@@ -68,6 +68,10 @@ func (j *jsiiProxy_GooglePubsubSubscriptionIamPolicy) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscriptionIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

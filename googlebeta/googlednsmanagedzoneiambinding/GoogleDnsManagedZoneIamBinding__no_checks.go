@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDnsManagedZoneIamBinding) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDnsManagedZoneIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsManagedZoneIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

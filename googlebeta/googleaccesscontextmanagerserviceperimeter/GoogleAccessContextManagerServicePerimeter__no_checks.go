@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeter) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

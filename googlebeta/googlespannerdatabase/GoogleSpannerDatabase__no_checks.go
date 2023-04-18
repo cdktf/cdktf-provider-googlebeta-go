@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleSpannerDatabase) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerDatabase) validateSetDatabaseDialectParameters(val *string) error {
 	return nil
 }

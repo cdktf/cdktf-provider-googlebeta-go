@@ -2,14 +2,14 @@ package googlebinaryauthorizationattestoriambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlebinaryauthorizationattestoriambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebinaryauthorizationattestoriambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding}.
 type GoogleBinaryAuthorizationAttestorIamBinding interface {
 	cdktf.TerraformResource
 	Attestor() *string
@@ -26,9 +26,9 @@ type GoogleBinaryAuthorizationAttestorIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -193,8 +193,8 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBinding) ConstructNodeMet
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBinding) TerraformResourc
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding} Resource.
 func NewGoogleBinaryAuthorizationAttestorIamBinding(scope constructs.Construct, id *string, config *GoogleBinaryAuthorizationAttestorIamBindingConfig) GoogleBinaryAuthorizationAttestorIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleBinaryAuthorizationAttestorIamBinding(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_binary_authorization_attestor_iam_binding google_binary_authorization_attestor_iam_binding} Resource.
 func NewGoogleBinaryAuthorizationAttestorIamBinding_Override(g GoogleBinaryAuthorizationAttestorIamBinding, scope constructs.Construct, id *string, config *GoogleBinaryAuthorizationAttestorIamBindingConfig) {
 	_init_.Initialize()
 
@@ -465,7 +465,10 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBinding)SetConnection(val
 	)
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

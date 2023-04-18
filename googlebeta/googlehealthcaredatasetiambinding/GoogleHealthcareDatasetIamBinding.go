@@ -2,14 +2,14 @@ package googlehealthcaredatasetiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlehealthcaredatasetiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlehealthcaredatasetiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_dataset_iam_binding google_healthcare_dataset_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_dataset_iam_binding google_healthcare_dataset_iam_binding}.
 type GoogleHealthcareDatasetIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type GoogleHealthcareDatasetIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DatasetId() *string
 	SetDatasetId(val *string)
 	DatasetIdInput() *string
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleHealthcareDatasetIamBinding) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareDatasetIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleHealthcareDatasetIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleHealthcareDatasetIamBinding) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_dataset_iam_binding google_healthcare_dataset_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_dataset_iam_binding google_healthcare_dataset_iam_binding} Resource.
 func NewGoogleHealthcareDatasetIamBinding(scope constructs.Construct, id *string, config *GoogleHealthcareDatasetIamBindingConfig) GoogleHealthcareDatasetIamBinding {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleHealthcareDatasetIamBinding(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_healthcare_dataset_iam_binding google_healthcare_dataset_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_healthcare_dataset_iam_binding google_healthcare_dataset_iam_binding} Resource.
 func NewGoogleHealthcareDatasetIamBinding_Override(g GoogleHealthcareDatasetIamBinding, scope constructs.Construct, id *string, config *GoogleHealthcareDatasetIamBindingConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_GoogleHealthcareDatasetIamBinding)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareDatasetIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleHealthcareDatasetIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

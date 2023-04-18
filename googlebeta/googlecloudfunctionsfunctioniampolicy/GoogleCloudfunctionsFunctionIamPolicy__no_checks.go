@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

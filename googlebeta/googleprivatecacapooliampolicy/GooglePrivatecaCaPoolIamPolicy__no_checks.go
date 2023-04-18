@@ -72,6 +72,10 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

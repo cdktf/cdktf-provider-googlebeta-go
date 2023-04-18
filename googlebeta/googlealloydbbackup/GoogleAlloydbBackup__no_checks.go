@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleAlloydbBackup) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbBackup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbBackup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

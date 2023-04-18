@@ -76,6 +76,10 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateSetConn
 	return nil
 }
 
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

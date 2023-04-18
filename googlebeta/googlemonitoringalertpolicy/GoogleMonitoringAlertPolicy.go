@@ -2,14 +2,14 @@ package googlemonitoringalertpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlemonitoringalertpolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringalertpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_alert_policy google_monitoring_alert_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy}.
 type GoogleMonitoringAlertPolicy interface {
 	cdktf.TerraformResource
 	AlertStrategy() GoogleMonitoringAlertPolicyAlertStrategyOutputReference
@@ -28,9 +28,9 @@ type GoogleMonitoringAlertPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreationRecord() GoogleMonitoringAlertPolicyCreationRecordList
 	// Experimental.
 	DependsOn() *[]*string
@@ -234,8 +234,8 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicy) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -545,7 +545,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicy) UserLabelsInput() *map[string]*s
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_alert_policy google_monitoring_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy} Resource.
 func NewGoogleMonitoringAlertPolicy(scope constructs.Construct, id *string, config *GoogleMonitoringAlertPolicyConfig) GoogleMonitoringAlertPolicy {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewGoogleMonitoringAlertPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_alert_policy google_monitoring_alert_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_alert_policy google_monitoring_alert_policy} Resource.
 func NewGoogleMonitoringAlertPolicy_Override(g GoogleMonitoringAlertPolicy, scope constructs.Construct, id *string, config *GoogleMonitoringAlertPolicyConfig) {
 	_init_.Initialize()
 
@@ -596,7 +596,10 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

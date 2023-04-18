@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDataprocCluster) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocCluster) validateSetGracefulDecommissionTimeoutParameters(val *string) error {
 	return nil
 }

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) validateSetConsumer
 	return nil
 }
 
+func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

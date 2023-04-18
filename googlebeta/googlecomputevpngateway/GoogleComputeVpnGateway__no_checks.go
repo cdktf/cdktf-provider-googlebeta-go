@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeVpnGateway) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeVpnGateway) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeVpnGateway) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

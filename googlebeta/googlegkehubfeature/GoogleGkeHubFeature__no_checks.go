@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleGkeHubFeature) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeature) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeature) validateSetIdParameters(val *string) error {
 	return nil
 }

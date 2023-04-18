@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDataformRepository) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataformRepository) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

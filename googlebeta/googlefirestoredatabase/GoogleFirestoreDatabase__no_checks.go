@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

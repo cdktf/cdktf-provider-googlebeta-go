@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleContainerAnalysisNote) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAnalysisNote) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAnalysisNote) validateSetExpirationTimeParameters(val *string) error {
 	return nil
 }

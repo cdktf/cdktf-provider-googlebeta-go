@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleAlloydbInstance) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstance) validateSetDatabaseFlagsParameters(val *map[string]*string) error {
 	return nil
 }

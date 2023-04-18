@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

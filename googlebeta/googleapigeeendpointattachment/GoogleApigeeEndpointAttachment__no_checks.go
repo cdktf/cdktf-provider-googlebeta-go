@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleApigeeEndpointAttachment) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeEndpointAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeEndpointAttachment) validateSetEndpointAttachmentIdParameters(val *string) error {
 	return nil
 }

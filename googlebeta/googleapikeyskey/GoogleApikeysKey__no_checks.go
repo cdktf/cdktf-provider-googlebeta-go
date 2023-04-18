@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleApikeysKey) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApikeysKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApikeysKey) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

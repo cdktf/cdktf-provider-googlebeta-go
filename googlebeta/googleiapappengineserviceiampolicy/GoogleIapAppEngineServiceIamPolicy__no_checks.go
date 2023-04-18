@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleIapAppEngineServiceIamPolicy) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIapAppEngineServiceIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapAppEngineServiceIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

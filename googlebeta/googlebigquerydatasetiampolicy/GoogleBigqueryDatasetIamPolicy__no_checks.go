@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy) validateSetDatasetIdParameters(val *string) error {
 	return nil
 }

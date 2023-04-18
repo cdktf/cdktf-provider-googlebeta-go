@@ -2,14 +2,14 @@ package googleapigeekeystoresaliasesselfsignedcert
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeekeystoresaliasesselfsignedcert/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeekeystoresaliasesselfsignedcert/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert}.
 type GoogleApigeeKeystoresAliasesSelfSignedCert interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -28,9 +28,9 @@ type GoogleApigeeKeystoresAliasesSelfSignedCert interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -221,8 +221,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert) ConstructNodeMeta
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -542,7 +542,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert) Type() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
 func NewGoogleApigeeKeystoresAliasesSelfSignedCert(scope constructs.Construct, id *string, config *GoogleApigeeKeystoresAliasesSelfSignedCertConfig) GoogleApigeeKeystoresAliasesSelfSignedCert {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewGoogleApigeeKeystoresAliasesSelfSignedCert(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_keystores_aliases_self_signed_cert google_apigee_keystores_aliases_self_signed_cert} Resource.
 func NewGoogleApigeeKeystoresAliasesSelfSignedCert_Override(g GoogleApigeeKeystoresAliasesSelfSignedCert, scope constructs.Construct, id *string, config *GoogleApigeeKeystoresAliasesSelfSignedCertConfig) {
 	_init_.Initialize()
 
@@ -604,7 +604,10 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert)SetConnection(val 
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

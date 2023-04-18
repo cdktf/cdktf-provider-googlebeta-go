@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleProjectOrganizationPolicy) validateSetConstraintParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProjectOrganizationPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectOrganizationPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

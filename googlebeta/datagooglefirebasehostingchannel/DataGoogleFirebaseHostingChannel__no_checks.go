@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleFirebaseHostingChannel) validateSetChannelIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleFirebaseHostingChannel) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleFirebaseHostingChannel) validateSetIdParameters(val *string) error {
 	return nil
 }

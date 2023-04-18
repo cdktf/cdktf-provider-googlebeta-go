@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }

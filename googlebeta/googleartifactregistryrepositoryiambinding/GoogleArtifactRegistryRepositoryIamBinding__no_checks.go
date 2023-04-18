@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

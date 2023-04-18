@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOsLoginSshPublicKey) validateSetExpirationTimeUsecParameters(val *string) error {
 	return nil
 }

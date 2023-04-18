@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetDrainNatIpsParameters(val *[]*string) error {
 	return nil
 }

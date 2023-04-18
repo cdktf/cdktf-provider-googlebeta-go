@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleContainerAwsCluster) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAwsCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAwsCluster) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

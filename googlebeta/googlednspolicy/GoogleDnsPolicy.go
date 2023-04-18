@@ -2,14 +2,14 @@ package googlednspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlednspolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlednspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_policy google_dns_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dns_policy google_dns_policy}.
 type GoogleDnsPolicy interface {
 	cdktf.TerraformResource
 	AlternativeNameServerConfig() GoogleDnsPolicyAlternativeNameServerConfigOutputReference
@@ -23,9 +23,9 @@ type GoogleDnsPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -186,8 +186,8 @@ func (j *jsiiProxy_GoogleDnsPolicy) ConstructNodeMetadata() *map[string]interfac
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDnsPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleDnsPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -477,7 +477,7 @@ func (j *jsiiProxy_GoogleDnsPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_policy google_dns_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dns_policy google_dns_policy} Resource.
 func NewGoogleDnsPolicy(scope constructs.Construct, id *string, config *GoogleDnsPolicyConfig) GoogleDnsPolicy {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewGoogleDnsPolicy(scope constructs.Construct, id *string, config *GoogleDn
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_dns_policy google_dns_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dns_policy google_dns_policy} Resource.
 func NewGoogleDnsPolicy_Override(g GoogleDnsPolicy, scope constructs.Construct, id *string, config *GoogleDnsPolicyConfig) {
 	_init_.Initialize()
 
@@ -517,7 +517,10 @@ func (j *jsiiProxy_GoogleDnsPolicy)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDnsPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleDnsPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

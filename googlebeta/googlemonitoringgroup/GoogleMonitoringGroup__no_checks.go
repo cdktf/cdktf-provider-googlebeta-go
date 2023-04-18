@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleMonitoringGroup) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringGroup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringGroup) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

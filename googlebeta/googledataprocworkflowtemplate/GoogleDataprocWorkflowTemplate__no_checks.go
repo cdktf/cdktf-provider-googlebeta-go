@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplate) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocWorkflowTemplate) validateSetDagTimeoutParameters(val *string) error {
 	return nil
 }

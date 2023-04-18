@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

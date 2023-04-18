@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

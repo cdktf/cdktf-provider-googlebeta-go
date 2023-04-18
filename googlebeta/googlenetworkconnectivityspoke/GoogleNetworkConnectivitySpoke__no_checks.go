@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

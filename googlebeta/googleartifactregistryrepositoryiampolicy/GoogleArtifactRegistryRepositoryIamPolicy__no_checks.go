@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetConnect
 	return nil
 }
 
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

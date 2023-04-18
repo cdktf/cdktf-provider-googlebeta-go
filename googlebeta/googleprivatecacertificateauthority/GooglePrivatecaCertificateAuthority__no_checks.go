@@ -88,6 +88,10 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePrivatecaCertificateAuthority) validateSetDeletionProtectionParameters(val interface{}) error {
 	return nil
 }

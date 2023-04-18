@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

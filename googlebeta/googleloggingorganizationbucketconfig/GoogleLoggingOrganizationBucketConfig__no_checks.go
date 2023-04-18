@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleLoggingOrganizationBucketConfig) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingOrganizationBucketConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingOrganizationBucketConfig) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

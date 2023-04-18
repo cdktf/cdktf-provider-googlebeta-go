@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamBinding) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapWebTypeAppEngineIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

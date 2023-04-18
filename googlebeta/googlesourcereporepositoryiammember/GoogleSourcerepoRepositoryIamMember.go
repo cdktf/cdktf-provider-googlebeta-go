@@ -2,14 +2,14 @@ package googlesourcereporepositoryiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlesourcereporepositoryiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlesourcereporepositoryiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member}.
 type GoogleSourcerepoRepositoryIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type GoogleSourcerepoRepositoryIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member} Resource.
 func NewGoogleSourcerepoRepositoryIamMember(scope constructs.Construct, id *string, config *GoogleSourcerepoRepositoryIamMemberConfig) GoogleSourcerepoRepositoryIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleSourcerepoRepositoryIamMember(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member} Resource.
 func NewGoogleSourcerepoRepositoryIamMember_Override(g GoogleSourcerepoRepositoryIamMember, scope constructs.Construct, id *string, config *GoogleSourcerepoRepositoryIamMemberConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

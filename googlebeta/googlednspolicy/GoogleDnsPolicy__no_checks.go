@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDnsPolicy) validateSetConnectionParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDnsPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

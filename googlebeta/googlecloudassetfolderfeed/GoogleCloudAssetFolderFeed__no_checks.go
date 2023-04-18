@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleCloudAssetFolderFeed) validateSetContentTypeParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudAssetFolderFeed) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudAssetFolderFeed) validateSetFeedIdParameters(val *string) error {
 	return nil
 }

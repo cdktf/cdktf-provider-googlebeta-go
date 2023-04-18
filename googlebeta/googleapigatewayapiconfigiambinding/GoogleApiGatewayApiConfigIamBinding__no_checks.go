@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

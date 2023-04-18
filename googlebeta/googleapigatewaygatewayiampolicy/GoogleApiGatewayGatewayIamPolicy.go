@@ -2,14 +2,14 @@ package googleapigatewaygatewayiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigatewaygatewayiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigatewaygatewayiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy}.
 type GoogleApiGatewayGatewayIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleApiGatewayGatewayIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_GoogleApiGatewayGatewayIamPolicy) ConstructNodeMetadata() *ma
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApiGatewayGatewayIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleApiGatewayGatewayIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleApiGatewayGatewayIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy} Resource.
 func NewGoogleApiGatewayGatewayIamPolicy(scope constructs.Construct, id *string, config *GoogleApiGatewayGatewayIamPolicyConfig) GoogleApiGatewayGatewayIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleApiGatewayGatewayIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy} Resource.
 func NewGoogleApiGatewayGatewayIamPolicy_Override(g GoogleApiGatewayGatewayIamPolicy, scope constructs.Construct, id *string, config *GoogleApiGatewayGatewayIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_GoogleApiGatewayGatewayIamPolicy)SetConnection(val interface{
 	)
 }
 
-func (j *jsiiProxy_GoogleApiGatewayGatewayIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleApiGatewayGatewayIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

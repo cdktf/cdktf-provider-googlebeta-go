@@ -2,14 +2,14 @@ package googlenetworksecuritygatewaysecuritypolicyrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenetworksecuritygatewaysecuritypolicyrule/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlenetworksecuritygatewaysecuritypolicyrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule}.
 type GoogleNetworkSecurityGatewaySecurityPolicyRule interface {
 	cdktf.TerraformResource
 	ApplicationMatcher() *string
@@ -27,9 +27,9 @@ type GoogleNetworkSecurityGatewaySecurityPolicyRule interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -219,8 +219,8 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) ConstructNode
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -600,7 +600,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) UpdateTime() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
 func NewGoogleNetworkSecurityGatewaySecurityPolicyRule(scope constructs.Construct, id *string, config *GoogleNetworkSecurityGatewaySecurityPolicyRuleConfig) GoogleNetworkSecurityGatewaySecurityPolicyRule {
 	_init_.Initialize()
 
@@ -618,7 +618,7 @@ func NewGoogleNetworkSecurityGatewaySecurityPolicyRule(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_network_security_gateway_security_policy_rule google_network_security_gateway_security_policy_rule} Resource.
 func NewGoogleNetworkSecurityGatewaySecurityPolicyRule_Override(g GoogleNetworkSecurityGatewaySecurityPolicyRule, scope constructs.Construct, id *string, config *GoogleNetworkSecurityGatewaySecurityPolicyRuleConfig) {
 	_init_.Initialize()
 
@@ -662,7 +662,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetConnection(
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleDatastreamStream) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatastreamStream) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatastreamStream) validateSetCustomerManagedEncryptionKeyParameters(val *string) error {
 	return nil
 }

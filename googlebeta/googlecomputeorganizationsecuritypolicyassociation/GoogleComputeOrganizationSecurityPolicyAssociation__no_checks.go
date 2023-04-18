@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) validateS
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) validateSetIdParameters(val *string) error {
 	return nil
 }

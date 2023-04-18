@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

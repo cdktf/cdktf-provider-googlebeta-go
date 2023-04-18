@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleAppEngineFirewallRule) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAppEngineFirewallRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineFirewallRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

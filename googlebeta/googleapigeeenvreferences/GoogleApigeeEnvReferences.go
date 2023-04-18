@@ -2,14 +2,14 @@ package googleapigeeenvreferences
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeenvreferences/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeeenvreferences/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_env_references google_apigee_env_references}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_env_references google_apigee_env_references}.
 type GoogleApigeeEnvReferences interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleApigeeEnvReferences interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -155,8 +155,8 @@ func (j *jsiiProxy_GoogleApigeeEnvReferences) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvReferences) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleApigeeEnvReferences) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -426,7 +426,7 @@ func (j *jsiiProxy_GoogleApigeeEnvReferences) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_env_references google_apigee_env_references} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_env_references google_apigee_env_references} Resource.
 func NewGoogleApigeeEnvReferences(scope constructs.Construct, id *string, config *GoogleApigeeEnvReferencesConfig) GoogleApigeeEnvReferences {
 	_init_.Initialize()
 
@@ -444,7 +444,7 @@ func NewGoogleApigeeEnvReferences(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_env_references google_apigee_env_references} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_env_references google_apigee_env_references} Resource.
 func NewGoogleApigeeEnvReferences_Override(g GoogleApigeeEnvReferences, scope constructs.Construct, id *string, config *GoogleApigeeEnvReferencesConfig) {
 	_init_.Initialize()
 
@@ -466,7 +466,10 @@ func (j *jsiiProxy_GoogleApigeeEnvReferences)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvReferences)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleApigeeEnvReferences)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

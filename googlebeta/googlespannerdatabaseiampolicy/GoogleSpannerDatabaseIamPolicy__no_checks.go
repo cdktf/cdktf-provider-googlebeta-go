@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleSpannerDatabaseIamPolicy) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerDatabaseIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerDatabaseIamPolicy) validateSetDatabaseParameters(val *string) error {
 	return nil
 }

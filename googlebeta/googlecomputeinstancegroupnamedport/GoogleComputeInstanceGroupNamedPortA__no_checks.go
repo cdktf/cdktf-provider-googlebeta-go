@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateSetGroupParameters(val *string) error {
 	return nil
 }

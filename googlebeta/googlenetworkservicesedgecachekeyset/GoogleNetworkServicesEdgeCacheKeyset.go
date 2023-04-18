@@ -2,14 +2,14 @@ package googlenetworkservicesedgecachekeyset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlenetworkservicesedgecachekeyset/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlenetworkservicesedgecachekeyset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset}.
 type GoogleNetworkServicesEdgeCacheKeyset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleNetworkServicesEdgeCacheKeyset interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,8 +162,8 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -453,7 +453,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ValidationSharedKeysInp
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
 func NewGoogleNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheKeysetConfig) GoogleNetworkServicesEdgeCacheKeyset {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewGoogleNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
 func NewGoogleNetworkServicesEdgeCacheKeyset_Override(g GoogleNetworkServicesEdgeCacheKeyset, scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheKeysetConfig) {
 	_init_.Initialize()
 
@@ -493,7 +493,10 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

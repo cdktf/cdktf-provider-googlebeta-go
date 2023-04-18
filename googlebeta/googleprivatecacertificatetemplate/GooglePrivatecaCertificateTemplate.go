@@ -2,14 +2,14 @@ package googleprivatecacertificatetemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleprivatecacertificatetemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleprivatecacertificatetemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template google_privateca_certificate_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_privateca_certificate_template google_privateca_certificate_template}.
 type GooglePrivatecaCertificateTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GooglePrivatecaCertificateTemplate interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -171,8 +171,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) ConstructNodeMetadata() *
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -522,7 +522,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplate) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template google_privateca_certificate_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_privateca_certificate_template google_privateca_certificate_template} Resource.
 func NewGooglePrivatecaCertificateTemplate(scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateConfig) GooglePrivatecaCertificateTemplate {
 	_init_.Initialize()
 
@@ -540,7 +540,7 @@ func NewGooglePrivatecaCertificateTemplate(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_privateca_certificate_template google_privateca_certificate_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_privateca_certificate_template google_privateca_certificate_template} Resource.
 func NewGooglePrivatecaCertificateTemplate_Override(g GooglePrivatecaCertificateTemplate, scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateConfig) {
 	_init_.Initialize()
 
@@ -562,7 +562,10 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplate)SetConnection(val interfac
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplate)SetCount(val *float64) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplate)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

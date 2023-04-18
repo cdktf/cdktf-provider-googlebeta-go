@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleApigeeFlowhook) validateSetContinueOnErrorParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeFlowhook) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeFlowhook) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

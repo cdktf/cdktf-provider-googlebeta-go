@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) validateSetAssetTypes
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleCloudAssetResourcesSearchAll) validateSetIdParameters(val *string) error {
 	return nil
 }

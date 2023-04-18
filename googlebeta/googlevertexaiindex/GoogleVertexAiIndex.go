@@ -2,14 +2,14 @@ package googlevertexaiindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlevertexaiindex/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlevertexaiindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_index google_vertex_ai_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vertex_ai_index google_vertex_ai_index}.
 type GoogleVertexAiIndex interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleVertexAiIndex interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -173,8 +173,8 @@ func (j *jsiiProxy_GoogleVertexAiIndex) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndex) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleVertexAiIndex) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -554,7 +554,7 @@ func (j *jsiiProxy_GoogleVertexAiIndex) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_index google_vertex_ai_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vertex_ai_index google_vertex_ai_index} Resource.
 func NewGoogleVertexAiIndex(scope constructs.Construct, id *string, config *GoogleVertexAiIndexConfig) GoogleVertexAiIndex {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewGoogleVertexAiIndex(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_vertex_ai_index google_vertex_ai_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_vertex_ai_index google_vertex_ai_index} Resource.
 func NewGoogleVertexAiIndex_Override(g GoogleVertexAiIndex, scope constructs.Construct, id *string, config *GoogleVertexAiIndexConfig) {
 	_init_.Initialize()
 
@@ -594,7 +594,10 @@ func (j *jsiiProxy_GoogleVertexAiIndex)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiIndex)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleVertexAiIndex)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

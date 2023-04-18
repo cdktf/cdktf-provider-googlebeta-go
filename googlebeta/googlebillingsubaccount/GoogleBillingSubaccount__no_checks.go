@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleBillingSubaccount) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBillingSubaccount) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBillingSubaccount) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

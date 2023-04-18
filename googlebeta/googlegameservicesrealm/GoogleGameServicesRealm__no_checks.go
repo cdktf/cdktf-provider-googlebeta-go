@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleGameServicesRealm) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGameServicesRealm) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGameServicesRealm) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -2,14 +2,14 @@ package googleiaptunneliambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleiaptunneliambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleiaptunneliambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding}.
 type GoogleIapTunnelIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type GoogleIapTunnelIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -170,8 +170,8 @@ func (j *jsiiProxy_GoogleIapTunnelIamBinding) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapTunnelIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleIapTunnelIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleIapTunnelIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding} Resource.
 func NewGoogleIapTunnelIamBinding(scope constructs.Construct, id *string, config *GoogleIapTunnelIamBindingConfig) GoogleIapTunnelIamBinding {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleIapTunnelIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding} Resource.
 func NewGoogleIapTunnelIamBinding_Override(g GoogleIapTunnelIamBinding, scope constructs.Construct, id *string, config *GoogleIapTunnelIamBindingConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_GoogleIapTunnelIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleIapTunnelIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleIapTunnelIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDatastoreIndex) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatastoreIndex) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatastoreIndex) validateSetIdParameters(val *string) error {
 	return nil
 }

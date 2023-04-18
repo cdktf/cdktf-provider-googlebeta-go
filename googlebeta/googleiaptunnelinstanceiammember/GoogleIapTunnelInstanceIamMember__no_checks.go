@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

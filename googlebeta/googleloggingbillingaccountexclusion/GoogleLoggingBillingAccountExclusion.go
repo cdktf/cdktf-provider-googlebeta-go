@@ -2,14 +2,14 @@ package googleloggingbillingaccountexclusion
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggingbillingaccountexclusion/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleloggingbillingaccountexclusion/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_billing_account_exclusion google_logging_billing_account_exclusion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion}.
 type GoogleLoggingBillingAccountExclusion interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -24,9 +24,9 @@ type GoogleLoggingBillingAccountExclusion interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -172,8 +172,8 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) ConstructNodeMetadata()
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -403,7 +403,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) TerraformResourceType()
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
 func NewGoogleLoggingBillingAccountExclusion(scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountExclusionConfig) GoogleLoggingBillingAccountExclusion {
 	_init_.Initialize()
 
@@ -421,7 +421,7 @@ func NewGoogleLoggingBillingAccountExclusion(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
 func NewGoogleLoggingBillingAccountExclusion_Override(g GoogleLoggingBillingAccountExclusion, scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountExclusionConfig) {
 	_init_.Initialize()
 
@@ -454,7 +454,10 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion)SetConnection(val interf
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

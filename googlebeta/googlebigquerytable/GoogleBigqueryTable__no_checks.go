@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleBigqueryTable) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryTable) validateSetDatasetIdParameters(val *string) error {
 	return nil
 }

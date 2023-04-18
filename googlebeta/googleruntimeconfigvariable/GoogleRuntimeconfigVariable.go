@@ -2,14 +2,14 @@ package googleruntimeconfigvariable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleruntimeconfigvariable/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleruntimeconfigvariable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_runtimeconfig_variable google_runtimeconfig_variable}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_runtimeconfig_variable google_runtimeconfig_variable}.
 type GoogleRuntimeconfigVariable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleRuntimeconfigVariable interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -154,8 +154,8 @@ func (j *jsiiProxy_GoogleRuntimeconfigVariable) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRuntimeconfigVariable) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleRuntimeconfigVariable) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleRuntimeconfigVariable) ValueInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_runtimeconfig_variable google_runtimeconfig_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_runtimeconfig_variable google_runtimeconfig_variable} Resource.
 func NewGoogleRuntimeconfigVariable(scope constructs.Construct, id *string, config *GoogleRuntimeconfigVariableConfig) GoogleRuntimeconfigVariable {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleRuntimeconfigVariable(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_runtimeconfig_variable google_runtimeconfig_variable} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_runtimeconfig_variable google_runtimeconfig_variable} Resource.
 func NewGoogleRuntimeconfigVariable_Override(g GoogleRuntimeconfigVariable, scope constructs.Construct, id *string, config *GoogleRuntimeconfigVariableConfig) {
 	_init_.Initialize()
 
@@ -455,7 +455,10 @@ func (j *jsiiProxy_GoogleRuntimeconfigVariable)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleRuntimeconfigVariable)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleRuntimeconfigVariable)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

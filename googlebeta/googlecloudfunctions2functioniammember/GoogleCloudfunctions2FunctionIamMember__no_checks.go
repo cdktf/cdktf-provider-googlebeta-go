@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionIamMember) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudfunctions2FunctionIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

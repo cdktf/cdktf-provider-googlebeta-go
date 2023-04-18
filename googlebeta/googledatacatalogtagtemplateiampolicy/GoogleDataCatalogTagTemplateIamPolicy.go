@@ -2,14 +2,14 @@ package googledatacatalogtagtemplateiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googledatacatalogtagtemplateiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledatacatalogtagtemplateiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy}.
 type GoogleDataCatalogTagTemplateIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleDataCatalogTagTemplateIamPolicy interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -150,8 +150,8 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) ConstructNodeMetadata(
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
 func NewGoogleDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamPolicyConfig) GoogleDataCatalogTagTemplateIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
 func NewGoogleDataCatalogTagTemplateIamPolicy_Override(g GoogleDataCatalogTagTemplateIamPolicy, scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy)SetConnection(val inter
 	)
 }
 
-func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMap) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionUrlMap) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionUrlMap) validateSetDefaultServiceParameters(val *string) error {
 	return nil
 }

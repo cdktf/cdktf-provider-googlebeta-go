@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeMachineImageIamMember) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeMachineImageIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeMachineImageIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

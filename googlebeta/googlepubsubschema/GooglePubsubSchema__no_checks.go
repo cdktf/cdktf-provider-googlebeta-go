@@ -72,6 +72,10 @@ func (j *jsiiProxy_GooglePubsubSchema) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSchema) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSchema) validateSetDefinitionParameters(val *string) error {
 	return nil
 }

@@ -116,6 +116,10 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

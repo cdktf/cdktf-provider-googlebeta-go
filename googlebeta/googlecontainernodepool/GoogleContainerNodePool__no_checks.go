@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleContainerNodePool) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePool) validateSetIdParameters(val *string) error {
 	return nil
 }

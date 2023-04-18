@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDataplexLake) validateSetConnectionParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataplexLake) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexLake) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

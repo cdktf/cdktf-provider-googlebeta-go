@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountSink) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingBillingAccountSink) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingBillingAccountSink) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

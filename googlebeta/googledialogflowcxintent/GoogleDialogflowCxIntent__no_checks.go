@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxIntent) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxIntent) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

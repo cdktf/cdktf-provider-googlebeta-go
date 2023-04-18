@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

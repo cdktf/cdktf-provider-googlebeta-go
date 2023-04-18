@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

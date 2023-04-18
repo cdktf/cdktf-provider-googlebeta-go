@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleComputeTargetSslProxy) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeTargetSslProxy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeTargetSslProxy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

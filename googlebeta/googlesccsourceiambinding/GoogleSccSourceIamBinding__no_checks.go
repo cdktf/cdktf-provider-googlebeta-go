@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSccSourceIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSccSourceIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

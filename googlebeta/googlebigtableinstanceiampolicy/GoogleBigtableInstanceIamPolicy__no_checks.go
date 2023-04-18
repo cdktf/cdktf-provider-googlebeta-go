@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleBigtableInstanceIamPolicy) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigtableInstanceIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigtableInstanceIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

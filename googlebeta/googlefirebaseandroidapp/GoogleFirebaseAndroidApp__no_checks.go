@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

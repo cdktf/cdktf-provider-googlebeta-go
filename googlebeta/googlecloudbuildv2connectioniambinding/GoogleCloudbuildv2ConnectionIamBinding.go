@@ -2,14 +2,14 @@ package googlecloudbuildv2connectioniambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecloudbuildv2connectioniambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecloudbuildv2connectioniambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding}.
 type GoogleCloudbuildv2ConnectionIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type GoogleCloudbuildv2ConnectionIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionIamBinding) ConstructNodeMetadata
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionIamBinding) TerraformResourceType
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
 func NewGoogleCloudbuildv2ConnectionIamBinding(scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionIamBindingConfig) GoogleCloudbuildv2ConnectionIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleCloudbuildv2ConnectionIamBinding(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloudbuildv2_connection_iam_binding google_cloudbuildv2_connection_iam_binding} Resource.
 func NewGoogleCloudbuildv2ConnectionIamBinding_Override(g GoogleCloudbuildv2ConnectionIamBinding, scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionIamBindingConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionIamBinding)SetConnection(val inte
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

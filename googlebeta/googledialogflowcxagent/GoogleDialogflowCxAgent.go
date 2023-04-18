@@ -2,14 +2,14 @@ package googledialogflowcxagent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googledialogflowcxagent/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googledialogflowcxagent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
 type GoogleDialogflowCxAgent interface {
 	cdktf.TerraformResource
 	AvatarUri() *string
@@ -24,9 +24,9 @@ type GoogleDialogflowCxAgent interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	DefaultLanguageCode() *string
 	SetDefaultLanguageCode(val *string)
 	DefaultLanguageCodeInput() *string
@@ -205,8 +205,8 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgent) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleDialogflowCxAgent) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -616,7 +616,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) GoogleDialogflowCxAgent {
 	_init_.Initialize()
 
@@ -634,7 +634,7 @@ func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent_Override(g GoogleDialogflowCxAgent, scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) {
 	_init_.Initialize()
 
@@ -667,7 +667,10 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgent)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleDialogflowCxAgent)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

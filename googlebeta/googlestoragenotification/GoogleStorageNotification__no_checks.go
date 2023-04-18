@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleStorageNotification) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageNotification) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageNotification) validateSetCustomAttributesParameters(val *map[string]*string) error {
 	return nil
 }

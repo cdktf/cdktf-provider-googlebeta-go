@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleProjectUsageExportBucket) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProjectUsageExportBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectUsageExportBucket) validateSetIdParameters(val *string) error {
 	return nil
 }

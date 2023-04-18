@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleStorageBucket) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucket) validateSetDefaultEventBasedHoldParameters(val interface{}) error {
 	return nil
 }

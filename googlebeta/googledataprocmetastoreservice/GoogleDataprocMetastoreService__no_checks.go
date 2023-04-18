@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreService) validateSetDatabaseTypeParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleCloudiotDevice) validateSetConnectionParameters(val int
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudiotDevice) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudiotDevice) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleSpannerInstanceIamMember) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerInstanceIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstanceIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

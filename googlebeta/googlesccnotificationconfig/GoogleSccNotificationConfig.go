@@ -2,14 +2,14 @@ package googlesccnotificationconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlesccnotificationconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlesccnotificationconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config google_scc_notification_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config google_scc_notification_config}.
 type GoogleSccNotificationConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -24,9 +24,9 @@ type GoogleSccNotificationConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GoogleSccNotificationConfig) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccNotificationConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleSccNotificationConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GoogleSccNotificationConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config google_scc_notification_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config google_scc_notification_config} Resource.
 func NewGoogleSccNotificationConfig(scope constructs.Construct, id *string, config *GoogleSccNotificationConfigConfig) GoogleSccNotificationConfig {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewGoogleSccNotificationConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_scc_notification_config google_scc_notification_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_scc_notification_config google_scc_notification_config} Resource.
 func NewGoogleSccNotificationConfig_Override(g GoogleSccNotificationConfig, scope constructs.Construct, id *string, config *GoogleSccNotificationConfigConfig) {
 	_init_.Initialize()
 
@@ -499,7 +499,10 @@ func (j *jsiiProxy_GoogleSccNotificationConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleSccNotificationConfig)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleSccNotificationConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamMember) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApiGatewayApiIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApiGatewayApiIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

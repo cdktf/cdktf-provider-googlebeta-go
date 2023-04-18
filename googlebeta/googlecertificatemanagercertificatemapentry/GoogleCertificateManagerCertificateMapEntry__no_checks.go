@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateMapEntry) validateSetConne
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerCertificateMapEntry) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerCertificateMapEntry) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

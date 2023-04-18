@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleComputeRegionDiskIamPolicy) validateSetConnectionParame
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDiskIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDiskIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

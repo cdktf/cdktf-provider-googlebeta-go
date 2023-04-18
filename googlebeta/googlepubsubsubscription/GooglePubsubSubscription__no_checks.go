@@ -96,6 +96,10 @@ func (j *jsiiProxy_GooglePubsubSubscription) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscription) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscription) validateSetEnableExactlyOnceDeliveryParameters(val interface{}) error {
 	return nil
 }

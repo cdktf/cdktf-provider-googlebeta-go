@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleComputeNodeTemplate) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNodeTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNodeTemplate) validateSetCpuOvercommitTypeParameters(val *string) error {
 	return nil
 }

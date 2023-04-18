@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleStorageTransferAgentPool) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageTransferAgentPool) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferAgentPool) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

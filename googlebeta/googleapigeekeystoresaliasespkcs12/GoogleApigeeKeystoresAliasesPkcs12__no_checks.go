@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12) validateSetEnvironmentParameters(val *string) error {
 	return nil
 }

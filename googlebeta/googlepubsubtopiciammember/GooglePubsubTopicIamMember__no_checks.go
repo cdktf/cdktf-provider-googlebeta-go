@@ -72,6 +72,10 @@ func (j *jsiiProxy_GooglePubsubTopicIamMember) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubTopicIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubTopicIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

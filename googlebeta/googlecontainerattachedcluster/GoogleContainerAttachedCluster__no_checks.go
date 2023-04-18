@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAttachedCluster) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }

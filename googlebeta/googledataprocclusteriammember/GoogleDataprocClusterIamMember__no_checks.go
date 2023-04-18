@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocClusterIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

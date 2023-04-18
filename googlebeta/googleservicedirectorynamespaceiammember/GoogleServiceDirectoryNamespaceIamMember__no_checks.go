@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamMember) validateSetConnecti
 	return nil
 }
 
+func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

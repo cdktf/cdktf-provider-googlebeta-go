@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDialogflowCxEnvironment) validateSetConnectionParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxEnvironment) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

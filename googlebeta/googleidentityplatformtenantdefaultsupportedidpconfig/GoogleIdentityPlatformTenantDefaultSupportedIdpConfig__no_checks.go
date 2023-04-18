@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) valida
 	return nil
 }
 
+func (j *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformTenantDefaultSupportedIdpConfig) validateSetEnabledParameters(val interface{}) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleStorageTransferJob) validateSetConnectionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJob) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

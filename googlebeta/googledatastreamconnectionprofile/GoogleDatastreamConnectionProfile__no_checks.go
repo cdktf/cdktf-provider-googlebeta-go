@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfile) validateSetConnectionProfi
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatastreamConnectionProfile) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatastreamConnectionProfile) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

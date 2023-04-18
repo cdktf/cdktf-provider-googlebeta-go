@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeRegionSslCertificate) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionSslCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionSslCertificate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

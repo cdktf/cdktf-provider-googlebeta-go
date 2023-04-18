@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetConnectionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionHealthCheck) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

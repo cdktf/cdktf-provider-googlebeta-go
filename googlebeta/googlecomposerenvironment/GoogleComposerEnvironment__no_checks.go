@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComposerEnvironment) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironment) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComposerEnvironment) validateSetIdParameters(val *string) error {
 	return nil
 }

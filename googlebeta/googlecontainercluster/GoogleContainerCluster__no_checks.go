@@ -212,6 +212,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetDatapathProviderParameters(val *string) error {
 	return nil
 }

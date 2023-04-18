@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeAutoscaler) validateSetConnectionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeAutoscaler) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeAutoscaler) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

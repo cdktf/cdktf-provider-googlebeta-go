@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirebaseStorageBucket) validateSetIdParameters(val *string) error {
 	return nil
 }

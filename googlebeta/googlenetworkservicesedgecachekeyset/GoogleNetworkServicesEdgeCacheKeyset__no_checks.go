@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetConnectionPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

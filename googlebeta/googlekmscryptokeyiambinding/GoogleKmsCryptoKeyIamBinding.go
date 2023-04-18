@@ -2,14 +2,14 @@ package googlekmscryptokeyiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlekmscryptokeyiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlekmscryptokeyiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding}.
 type GoogleKmsCryptoKeyIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type GoogleKmsCryptoKeyIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CryptoKeyId() *string
 	SetCryptoKeyId(val *string)
 	CryptoKeyIdInput() *string
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) ConstructNodeMetadata() *map[st
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding} Resource.
 func NewGoogleKmsCryptoKeyIamBinding(scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyIamBindingConfig) GoogleKmsCryptoKeyIamBinding {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleKmsCryptoKeyIamBinding(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_kms_crypto_key_iam_binding google_kms_crypto_key_iam_binding} Resource.
 func NewGoogleKmsCryptoKeyIamBinding_Override(g GoogleKmsCryptoKeyIamBinding, scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyIamBindingConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleKmsCryptoKeyIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

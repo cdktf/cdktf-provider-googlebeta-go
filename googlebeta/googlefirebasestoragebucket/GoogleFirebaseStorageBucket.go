@@ -2,14 +2,14 @@ package googlefirebasestoragebucket
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlefirebasestoragebucket/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlefirebasestoragebucket/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_storage_bucket google_firebase_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_storage_bucket google_firebase_storage_bucket}.
 type GoogleFirebaseStorageBucket interface {
 	cdktf.TerraformResource
 	BucketId() *string
@@ -24,9 +24,9 @@ type GoogleFirebaseStorageBucket interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleFirebaseStorageBucket) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_storage_bucket google_firebase_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_storage_bucket google_firebase_storage_bucket} Resource.
 func NewGoogleFirebaseStorageBucket(scope constructs.Construct, id *string, config *GoogleFirebaseStorageBucketConfig) GoogleFirebaseStorageBucket {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewGoogleFirebaseStorageBucket(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_firebase_storage_bucket google_firebase_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_firebase_storage_bucket google_firebase_storage_bucket} Resource.
 func NewGoogleFirebaseStorageBucket_Override(g GoogleFirebaseStorageBucket, scope constructs.Construct, id *string, config *GoogleFirebaseStorageBucketConfig) {
 	_init_.Initialize()
 
@@ -420,7 +420,10 @@ func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleFirebaseStorageBucket)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

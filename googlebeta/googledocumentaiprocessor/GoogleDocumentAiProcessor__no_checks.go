@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDocumentAiProcessor) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDocumentAiProcessor) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDocumentAiProcessor) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

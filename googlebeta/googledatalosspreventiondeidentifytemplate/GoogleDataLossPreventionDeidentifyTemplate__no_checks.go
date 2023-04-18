@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetConnec
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

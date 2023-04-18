@@ -2,14 +2,14 @@ package googlestoragenotification
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlestoragenotification/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlestoragenotification/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_notification google_storage_notification}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_notification google_storage_notification}.
 type GoogleStorageNotification interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type GoogleStorageNotification interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CustomAttributes() *map[string]*string
 	SetCustomAttributes(val *map[string]*string)
 	CustomAttributesInput() *map[string]*string
@@ -178,8 +178,8 @@ func (j *jsiiProxy_GoogleStorageNotification) ConstructNodeMetadata() *map[strin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageNotification) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleStorageNotification) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -449,7 +449,7 @@ func (j *jsiiProxy_GoogleStorageNotification) TopicInput() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_notification google_storage_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_notification google_storage_notification} Resource.
 func NewGoogleStorageNotification(scope constructs.Construct, id *string, config *GoogleStorageNotificationConfig) GoogleStorageNotification {
 	_init_.Initialize()
 
@@ -467,7 +467,7 @@ func NewGoogleStorageNotification(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_notification google_storage_notification} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_notification google_storage_notification} Resource.
 func NewGoogleStorageNotification_Override(g GoogleStorageNotification, scope constructs.Construct, id *string, config *GoogleStorageNotificationConfig) {
 	_init_.Initialize()
 
@@ -500,7 +500,10 @@ func (j *jsiiProxy_GoogleStorageNotification)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageNotification)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleStorageNotification)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

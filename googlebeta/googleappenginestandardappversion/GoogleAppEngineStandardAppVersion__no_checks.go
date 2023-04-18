@@ -108,6 +108,10 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetDeleteServiceOnDestroyParameters(val interface{}) error {
 	return nil
 }

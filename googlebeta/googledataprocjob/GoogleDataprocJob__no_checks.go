@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleDataprocJob) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocJob) validateSetForceDeleteParameters(val interface{}) error {
 	return nil
 }

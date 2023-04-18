@@ -2,14 +2,14 @@ package googleloggingfoldersink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleloggingfoldersink/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleloggingfoldersink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_folder_sink google_logging_folder_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_logging_folder_sink google_logging_folder_sink}.
 type GoogleLoggingFolderSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() GoogleLoggingFolderSinkBigqueryOptionsOutputReference
@@ -23,9 +23,9 @@ type GoogleLoggingFolderSink interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -189,8 +189,8 @@ func (j *jsiiProxy_GoogleLoggingFolderSink) ConstructNodeMetadata() *map[string]
 	return returns
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSink) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleLoggingFolderSink) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -510,7 +510,7 @@ func (j *jsiiProxy_GoogleLoggingFolderSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_folder_sink google_logging_folder_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_logging_folder_sink google_logging_folder_sink} Resource.
 func NewGoogleLoggingFolderSink(scope constructs.Construct, id *string, config *GoogleLoggingFolderSinkConfig) GoogleLoggingFolderSink {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewGoogleLoggingFolderSink(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_logging_folder_sink google_logging_folder_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_logging_folder_sink google_logging_folder_sink} Resource.
 func NewGoogleLoggingFolderSink_Override(g GoogleLoggingFolderSink, scope constructs.Construct, id *string, config *GoogleLoggingFolderSinkConfig) {
 	_init_.Initialize()
 
@@ -550,7 +550,10 @@ func (j *jsiiProxy_GoogleLoggingFolderSink)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleLoggingFolderSink)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleLoggingFolderSink)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

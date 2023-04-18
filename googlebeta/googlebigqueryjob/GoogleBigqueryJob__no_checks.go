@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleBigqueryJob) validateSetConnectionParameters(val interf
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryJob) validateSetIdParameters(val *string) error {
 	return nil
 }

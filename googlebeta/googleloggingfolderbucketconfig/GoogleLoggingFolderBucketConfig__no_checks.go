@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetConnectionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingFolderBucketConfig) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

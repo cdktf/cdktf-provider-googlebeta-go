@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleTagsTagKey) validateSetConnectionParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleTagsTagKey) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTagsTagKey) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

@@ -84,6 +84,10 @@ func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateSetConnectionP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateSetDatabaseVersionParameters(val *string) error {
 	return nil
 }

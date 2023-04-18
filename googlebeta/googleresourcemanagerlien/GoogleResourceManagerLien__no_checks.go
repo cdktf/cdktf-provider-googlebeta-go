@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleResourceManagerLien) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleResourceManagerLien) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleResourceManagerLien) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleProject) validateSetConnectionParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProject) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProject) validateSetFolderIdParameters(val *string) error {
 	return nil
 }

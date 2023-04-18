@@ -2,14 +2,14 @@ package googlestorageobjectacl
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlestorageobjectacl/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlestorageobjectacl/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_object_acl google_storage_object_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_object_acl google_storage_object_acl}.
 type GoogleStorageObjectAcl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -24,9 +24,9 @@ type GoogleStorageObjectAcl interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleStorageObjectAcl) ConstructNodeMetadata() *map[string]i
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageObjectAcl) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleStorageObjectAcl) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -380,7 +380,7 @@ func (j *jsiiProxy_GoogleStorageObjectAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_object_acl google_storage_object_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_object_acl google_storage_object_acl} Resource.
 func NewGoogleStorageObjectAcl(scope constructs.Construct, id *string, config *GoogleStorageObjectAclConfig) GoogleStorageObjectAcl {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewGoogleStorageObjectAcl(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_storage_object_acl google_storage_object_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_storage_object_acl google_storage_object_acl} Resource.
 func NewGoogleStorageObjectAcl_Override(g GoogleStorageObjectAcl, scope constructs.Construct, id *string, config *GoogleStorageObjectAclConfig) {
 	_init_.Initialize()
 
@@ -431,7 +431,10 @@ func (j *jsiiProxy_GoogleStorageObjectAcl)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageObjectAcl)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleStorageObjectAcl)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

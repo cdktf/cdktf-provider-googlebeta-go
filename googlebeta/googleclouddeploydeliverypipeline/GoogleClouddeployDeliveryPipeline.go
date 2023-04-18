@@ -2,14 +2,14 @@ package googleclouddeploydeliverypipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleclouddeploydeliverypipeline/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleclouddeploydeliverypipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline}.
 type GoogleClouddeployDeliveryPipeline interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -25,9 +25,9 @@ type GoogleClouddeployDeliveryPipeline interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -204,8 +204,8 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) ConstructNodeMetadata() *m
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -555,7 +555,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
 func NewGoogleClouddeployDeliveryPipeline(scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineConfig) GoogleClouddeployDeliveryPipeline {
 	_init_.Initialize()
 
@@ -573,7 +573,7 @@ func NewGoogleClouddeployDeliveryPipeline(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
 func NewGoogleClouddeployDeliveryPipeline_Override(g GoogleClouddeployDeliveryPipeline, scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineConfig) {
 	_init_.Initialize()
 
@@ -606,7 +606,10 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetConnection(val interface
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

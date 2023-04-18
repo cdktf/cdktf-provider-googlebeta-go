@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleDataCatalogTaxonomyIamPolicy) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataCatalogTaxonomyIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataCatalogTaxonomyIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

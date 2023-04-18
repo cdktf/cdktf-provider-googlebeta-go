@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

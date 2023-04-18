@@ -2,14 +2,14 @@ package googlecomputeorganizationsecuritypolicyassociation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlecomputeorganizationsecuritypolicyassociation/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlecomputeorganizationsecuritypolicyassociation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_organization_security_policy_association google_compute_organization_security_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association}.
 type GoogleComputeOrganizationSecurityPolicyAssociation interface {
 	cdktf.TerraformResource
 	AttachmentId() *string
@@ -24,9 +24,9 @@ type GoogleComputeOrganizationSecurityPolicyAssociation interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) Construct
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) TimeoutsI
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
 func NewGoogleComputeOrganizationSecurityPolicyAssociation(scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyAssociationConfig) GoogleComputeOrganizationSecurityPolicyAssociation {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleComputeOrganizationSecurityPolicyAssociation(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
 func NewGoogleComputeOrganizationSecurityPolicyAssociation_Override(g GoogleComputeOrganizationSecurityPolicyAssociation, scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyAssociationConfig) {
 	_init_.Initialize()
 
@@ -441,7 +441,10 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation)SetConnect
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

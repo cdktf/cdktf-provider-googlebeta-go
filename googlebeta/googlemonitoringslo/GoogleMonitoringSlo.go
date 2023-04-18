@@ -2,14 +2,14 @@ package googlemonitoringslo
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlemonitoringslo/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringslo/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo google_monitoring_slo}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_slo google_monitoring_slo}.
 type GoogleMonitoringSlo interface {
 	cdktf.TerraformResource
 	BasicSli() GoogleMonitoringSloBasicSliOutputReference
@@ -26,9 +26,9 @@ type GoogleMonitoringSlo interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -222,8 +222,8 @@ func (j *jsiiProxy_GoogleMonitoringSlo) ConstructNodeMetadata() *map[string]inte
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringSlo) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleMonitoringSlo) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -583,7 +583,7 @@ func (j *jsiiProxy_GoogleMonitoringSlo) WindowsBasedSliInput() *GoogleMonitoring
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo google_monitoring_slo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_slo google_monitoring_slo} Resource.
 func NewGoogleMonitoringSlo(scope constructs.Construct, id *string, config *GoogleMonitoringSloConfig) GoogleMonitoringSlo {
 	_init_.Initialize()
 
@@ -601,7 +601,7 @@ func NewGoogleMonitoringSlo(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_slo google_monitoring_slo} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_slo google_monitoring_slo} Resource.
 func NewGoogleMonitoringSlo_Override(g GoogleMonitoringSlo, scope constructs.Construct, id *string, config *GoogleMonitoringSloConfig) {
 	_init_.Initialize()
 
@@ -634,7 +634,10 @@ func (j *jsiiProxy_GoogleMonitoringSlo)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringSlo)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleMonitoringSlo)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

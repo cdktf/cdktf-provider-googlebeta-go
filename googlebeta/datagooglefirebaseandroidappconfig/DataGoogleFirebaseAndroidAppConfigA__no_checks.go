@@ -68,6 +68,10 @@ func (j *jsiiProxy_DataGoogleFirebaseAndroidAppConfigA) validateSetAppIdParamete
 	return nil
 }
 
+func (j *jsiiProxy_DataGoogleFirebaseAndroidAppConfigA) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_DataGoogleFirebaseAndroidAppConfigA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateSetConnection
 	return nil
 }
 
+func (j *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateSetDnsSuffixParameters(val *string) error {
 	return nil
 }

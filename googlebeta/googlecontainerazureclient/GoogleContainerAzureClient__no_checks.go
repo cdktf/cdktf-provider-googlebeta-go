@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleContainerAzureClient) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerAzureClient) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerAzureClient) validateSetIdParameters(val *string) error {
 	return nil
 }

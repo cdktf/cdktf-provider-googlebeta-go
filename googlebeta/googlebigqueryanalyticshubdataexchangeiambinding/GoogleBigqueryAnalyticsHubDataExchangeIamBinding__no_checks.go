@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamBinding) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamBinding) validateSetDataExchangeIdParameters(val *string) error {
 	return nil
 }

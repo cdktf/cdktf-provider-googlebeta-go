@@ -96,6 +96,10 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

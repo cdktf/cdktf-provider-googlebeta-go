@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificate) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerCertificate) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerCertificate) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

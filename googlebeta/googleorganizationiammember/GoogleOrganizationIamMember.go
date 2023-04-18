@@ -2,14 +2,14 @@ package googleorganizationiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleorganizationiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleorganizationiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_organization_iam_member google_organization_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_organization_iam_member google_organization_iam_member}.
 type GoogleOrganizationIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type GoogleOrganizationIamMember interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleOrganizationIamMember) ConstructNodeMetadata() *map[str
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamMember) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleOrganizationIamMember) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleOrganizationIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_organization_iam_member google_organization_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_organization_iam_member google_organization_iam_member} Resource.
 func NewGoogleOrganizationIamMember(scope constructs.Construct, id *string, config *GoogleOrganizationIamMemberConfig) GoogleOrganizationIamMember {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleOrganizationIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_organization_iam_member google_organization_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_organization_iam_member google_organization_iam_member} Resource.
 func NewGoogleOrganizationIamMember_Override(g GoogleOrganizationIamMember, scope constructs.Construct, id *string, config *GoogleOrganizationIamMemberConfig) {
 	_init_.Initialize()
 
@@ -430,7 +430,10 @@ func (j *jsiiProxy_GoogleOrganizationIamMember)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleOrganizationIamMember)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleOrganizationIamMember)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

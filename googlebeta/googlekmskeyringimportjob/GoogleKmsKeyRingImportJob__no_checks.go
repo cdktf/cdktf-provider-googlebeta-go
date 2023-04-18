@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleKmsKeyRingImportJob) validateSetIdParameters(val *string) error {
 	return nil
 }

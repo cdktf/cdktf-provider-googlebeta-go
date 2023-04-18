@@ -2,14 +2,14 @@ package googletagstagkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googletagstagkey/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googletagstagkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_tags_tag_key google_tags_tag_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_tags_tag_key google_tags_tag_key}.
 type GoogleTagsTagKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleTagsTagKey interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	CreateTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -161,8 +161,8 @@ func (j *jsiiProxy_GoogleTagsTagKey) ConstructNodeMetadata() *map[string]interfa
 	return returns
 }
 
-func (j *jsiiProxy_GoogleTagsTagKey) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleTagsTagKey) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleTagsTagKey) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_tags_tag_key google_tags_tag_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_tags_tag_key google_tags_tag_key} Resource.
 func NewGoogleTagsTagKey(scope constructs.Construct, id *string, config *GoogleTagsTagKeyConfig) GoogleTagsTagKey {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewGoogleTagsTagKey(scope constructs.Construct, id *string, config *GoogleT
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_tags_tag_key google_tags_tag_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_tags_tag_key google_tags_tag_key} Resource.
 func NewGoogleTagsTagKey_Override(g GoogleTagsTagKey, scope constructs.Construct, id *string, config *GoogleTagsTagKeyConfig) {
 	_init_.Initialize()
 
@@ -512,7 +512,10 @@ func (j *jsiiProxy_GoogleTagsTagKey)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleTagsTagKey)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleTagsTagKey)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

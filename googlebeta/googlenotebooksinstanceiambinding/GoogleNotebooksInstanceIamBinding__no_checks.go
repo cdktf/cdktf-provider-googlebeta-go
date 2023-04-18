@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateSetConnectionParam
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNotebooksInstanceIamBinding) validateSetIdParameters(val *string) error {
 	return nil
 }

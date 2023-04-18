@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleFilestoreBackup) validateSetConnectionParameters(val in
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFilestoreBackup) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFilestoreBackup) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

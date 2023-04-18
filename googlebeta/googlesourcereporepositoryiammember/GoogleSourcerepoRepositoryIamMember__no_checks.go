@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

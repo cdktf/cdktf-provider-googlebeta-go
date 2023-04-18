@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetConnectionParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareConsentStore) validateSetDatasetParameters(val *string) error {
 	return nil
 }

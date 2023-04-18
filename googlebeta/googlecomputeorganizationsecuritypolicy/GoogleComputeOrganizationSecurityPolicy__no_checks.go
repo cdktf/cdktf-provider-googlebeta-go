@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

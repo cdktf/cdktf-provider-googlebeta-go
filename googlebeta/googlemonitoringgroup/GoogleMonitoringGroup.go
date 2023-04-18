@@ -2,14 +2,14 @@ package googlemonitoringgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlemonitoringgroup/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlemonitoringgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_group google_monitoring_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_group google_monitoring_group}.
 type GoogleMonitoringGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -21,9 +21,9 @@ type GoogleMonitoringGroup interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleMonitoringGroup) ConstructNodeMetadata() *map[string]in
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleMonitoringGroup) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -439,7 +439,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_group google_monitoring_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_group google_monitoring_group} Resource.
 func NewGoogleMonitoringGroup(scope constructs.Construct, id *string, config *GoogleMonitoringGroupConfig) GoogleMonitoringGroup {
 	_init_.Initialize()
 
@@ -457,7 +457,7 @@ func NewGoogleMonitoringGroup(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_monitoring_group google_monitoring_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_monitoring_group google_monitoring_group} Resource.
 func NewGoogleMonitoringGroup_Override(g GoogleMonitoringGroup, scope constructs.Construct, id *string, config *GoogleMonitoringGroupConfig) {
 	_init_.Initialize()
 
@@ -479,7 +479,10 @@ func (j *jsiiProxy_GoogleMonitoringGroup)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringGroup)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleMonitoringGroup)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

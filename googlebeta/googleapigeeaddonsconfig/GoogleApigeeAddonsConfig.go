@@ -2,14 +2,14 @@ package googleapigeeaddonsconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googleapigeeaddonsconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googleapigeeaddonsconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_addons_config google_apigee_addons_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_addons_config google_apigee_addons_config}.
 type GoogleApigeeAddonsConfig interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleApigeeAddonsConfigAddonsConfigOutputReference
@@ -23,9 +23,9 @@ type GoogleApigeeAddonsConfig interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -166,8 +166,8 @@ func (j *jsiiProxy_GoogleApigeeAddonsConfig) ConstructNodeMetadata() *map[string
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeAddonsConfig) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleApigeeAddonsConfig) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -357,7 +357,7 @@ func (j *jsiiProxy_GoogleApigeeAddonsConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_addons_config google_apigee_addons_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_addons_config google_apigee_addons_config} Resource.
 func NewGoogleApigeeAddonsConfig(scope constructs.Construct, id *string, config *GoogleApigeeAddonsConfigConfig) GoogleApigeeAddonsConfig {
 	_init_.Initialize()
 
@@ -375,7 +375,7 @@ func NewGoogleApigeeAddonsConfig(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_apigee_addons_config google_apigee_addons_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_apigee_addons_config google_apigee_addons_config} Resource.
 func NewGoogleApigeeAddonsConfig_Override(g GoogleApigeeAddonsConfig, scope constructs.Construct, id *string, config *GoogleApigeeAddonsConfigConfig) {
 	_init_.Initialize()
 
@@ -397,7 +397,10 @@ func (j *jsiiProxy_GoogleApigeeAddonsConfig)SetConnection(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeAddonsConfig)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleApigeeAddonsConfig)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

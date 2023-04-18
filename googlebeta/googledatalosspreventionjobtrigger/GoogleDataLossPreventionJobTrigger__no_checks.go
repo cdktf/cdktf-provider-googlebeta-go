@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionJobTrigger) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

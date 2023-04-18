@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleLoggingLinkedDataset) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingLinkedDataset) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingLinkedDataset) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

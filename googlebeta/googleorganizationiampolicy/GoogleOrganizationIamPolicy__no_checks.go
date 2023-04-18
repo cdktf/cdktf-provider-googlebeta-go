@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleOrganizationIamPolicy) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOrganizationIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOrganizationIamPolicy) validateSetIdParameters(val *string) error {
 	return nil
 }

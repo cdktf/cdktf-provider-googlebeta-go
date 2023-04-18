@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicyRule) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

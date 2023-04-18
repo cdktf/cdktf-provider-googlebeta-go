@@ -2,14 +2,14 @@ package googlegkebackupbackupplaniambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v6/googlegkebackupbackupplaniambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlegkebackupbackupplaniambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding}.
 type GoogleGkeBackupBackupPlanIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -23,9 +23,9 @@ type GoogleGkeBackupBackupPlanIamBinding interface {
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
-	Count() *float64
+	Count() interface{}
 	// Experimental.
-	SetCount(val *float64)
+	SetCount(val interface{})
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -177,8 +177,8 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) ConstructNodeMetadata() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) Count() *float64 {
-	var returns *float64
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) Count() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"count",
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding} Resource.
 func NewGoogleGkeBackupBackupPlanIamBinding(scope constructs.Construct, id *string, config *GoogleGkeBackupBackupPlanIamBindingConfig) GoogleGkeBackupBackupPlanIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleGkeBackupBackupPlanIamBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://www.terraform.io/docs/providers/google-beta/r/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding} Resource.
 func NewGoogleGkeBackupBackupPlanIamBinding_Override(g GoogleGkeBackupBackupPlanIamBinding, scope constructs.Construct, id *string, config *GoogleGkeBackupBackupPlanIamBindingConfig) {
 	_init_.Initialize()
 
@@ -478,7 +478,10 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding)SetConnection(val interfa
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding)SetCount(val *float64) {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding)SetCount(val interface{}) {
+	if err := j.validateSetCountParameters(val); err != nil {
+		panic(err)
+	}
 	_jsii_.Set(
 		j,
 		"count",

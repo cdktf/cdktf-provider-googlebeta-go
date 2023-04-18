@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleComputeDiskIamMember) validateSetConnectionParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeDiskIamMember) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeDiskIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }

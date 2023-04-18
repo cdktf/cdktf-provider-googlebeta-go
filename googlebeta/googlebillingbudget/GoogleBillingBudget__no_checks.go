@@ -92,6 +92,10 @@ func (j *jsiiProxy_GoogleBillingBudget) validateSetConnectionParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBillingBudget) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBillingBudget) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

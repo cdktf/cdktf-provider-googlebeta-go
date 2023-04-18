@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy) validateSetConnectionPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy) validateSetFeaturestoreParameters(val *string) error {
 	return nil
 }

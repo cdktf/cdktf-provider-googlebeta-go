@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreIamPolicy) validateSetConnectionPara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleHealthcareFhirStoreIamPolicy) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleHealthcareFhirStoreIamPolicy) validateSetFhirStoreIdParameters(val *string) error {
 	return nil
 }

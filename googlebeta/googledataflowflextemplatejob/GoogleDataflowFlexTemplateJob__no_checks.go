@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetContainerSpecGcsPat
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetIdParameters(val *string) error {
 	return nil
 }

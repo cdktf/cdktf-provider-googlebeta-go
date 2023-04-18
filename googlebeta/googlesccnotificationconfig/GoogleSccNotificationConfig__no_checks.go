@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleSccNotificationConfig) validateSetConnectionParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSccNotificationConfig) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSccNotificationConfig) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

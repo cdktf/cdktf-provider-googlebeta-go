@@ -80,6 +80,10 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetConnectio
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkManagementConnectivityTest) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

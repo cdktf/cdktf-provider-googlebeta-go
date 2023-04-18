@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleEndpointsService) validateSetConnectionParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleEndpointsService) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleEndpointsService) validateSetGrpcConfigParameters(val *string) error {
 	return nil
 }

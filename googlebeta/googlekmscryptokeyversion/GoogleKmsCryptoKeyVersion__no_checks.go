@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyVersion) validateSetConnectionParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleKmsCryptoKeyVersion) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleKmsCryptoKeyVersion) validateSetCryptoKeyParameters(val *string) error {
 	return nil
 }
