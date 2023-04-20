@@ -16,18 +16,18 @@ type GoogleCloudRunServiceMetadata struct {
 	// - 'run.googleapis.com/ingress' sets the [ingress settings](https://cloud.google.com/sdk/gcloud/reference/run/deploy#--ingress)
 	// for the Service. For example, '"run.googleapis.com/ingress" = "all"'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_run_service#annotations GoogleCloudRunService#annotations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/resources/google_cloud_run_service#annotations GoogleCloudRunService#annotations}
 	Annotations *map[string]*string `field:"optional" json:"annotations" yaml:"annotations"`
 	// Map of string keys and values that can be used to organize and categorize (scope and select) objects.
 	//
 	// May match selectors of replication controllers
 	// and routes.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_run_service#labels GoogleCloudRunService#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/resources/google_cloud_run_service#labels GoogleCloudRunService#labels}
 	Labels *map[string]*string `field:"optional" json:"labels" yaml:"labels"`
 	// In Cloud Run the namespace must be equal to either the project ID or project number.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.0/docs/resources/google_cloud_run_service#namespace GoogleCloudRunService#namespace}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/resources/google_cloud_run_service#namespace GoogleCloudRunService#namespace}
 	Namespace *string `field:"optional" json:"namespace" yaml:"namespace"`
 }
 
