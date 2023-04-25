@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) validatePutManualParameters(value *GoogleDataLossPreventionJobTriggerTriggersManual) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) validatePutScheduleParameters(value *GoogleDataLossPreventionJobTriggerTriggersSchedule) error {
 	return nil
 }

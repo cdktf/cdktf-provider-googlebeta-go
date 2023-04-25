@@ -29,6 +29,8 @@ type GoogleDataLossPreventionJobTriggerTriggersOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Manual() GoogleDataLossPreventionJobTriggerTriggersManualOutputReference
+	ManualInput() *GoogleDataLossPreventionJobTriggerTriggersManual
 	Schedule() GoogleDataLossPreventionJobTriggerTriggersScheduleOutputReference
 	ScheduleInput() *GoogleDataLossPreventionJobTriggerTriggersSchedule
 	// Experimental.
@@ -63,7 +65,9 @@ type GoogleDataLossPreventionJobTriggerTriggersOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutManual(value *GoogleDataLossPreventionJobTriggerTriggersManual)
 	PutSchedule(value *GoogleDataLossPreventionJobTriggerTriggersSchedule)
+	ResetManual()
 	ResetSchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -125,6 +129,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) Manual() GoogleDataLossPreventionJobTriggerTriggersManualOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerTriggersManualOutputReference
+	_jsii_.Get(
+		j,
+		"manual",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) ManualInput() *GoogleDataLossPreventionJobTriggerTriggersManual {
+	var returns *GoogleDataLossPreventionJobTriggerTriggersManual
+	_jsii_.Get(
+		j,
+		"manualInput",
 		&returns,
 	)
 	return returns
@@ -439,6 +463,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) In
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) PutManual(value *GoogleDataLossPreventionJobTriggerTriggersManual) {
+	if err := g.validatePutManualParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManual",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) PutSchedule(value *GoogleDataLossPreventionJobTriggerTriggersSchedule) {
 	if err := g.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -447,6 +482,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) Pu
 		g,
 		"putSchedule",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerTriggersOutputReference) ResetManual() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManual",
+		nil, // no parameters
 	)
 }
 

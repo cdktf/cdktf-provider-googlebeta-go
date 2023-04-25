@@ -25,10 +25,14 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Deidentify() GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyOutputReference
+	DeidentifyInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentify
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	JobNotificationEmails() GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmailsOutputReference
+	JobNotificationEmailsInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails
 	PublishFindingsToCloudDataCatalog() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalogOutputReference
 	PublishFindingsToCloudDataCatalogInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog
 	PublishSummaryToCscc() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference
@@ -69,10 +73,14 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference interfac
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDeidentify(value *GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentify)
+	PutJobNotificationEmails(value *GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails)
 	PutPublishFindingsToCloudDataCatalog(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog)
 	PutPublishSummaryToCscc(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc)
 	PutPubSub(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub)
 	PutSaveFindings(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings)
+	ResetDeidentify()
+	ResetJobNotificationEmails()
 	ResetPublishFindingsToCloudDataCatalog()
 	ResetPublishSummaryToCscc()
 	ResetPubSub()
@@ -122,6 +130,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) Deidentify() GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentifyOutputReference
+	_jsii_.Get(
+		j,
+		"deidentify",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) DeidentifyInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentify {
+	var returns *GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentify
+	_jsii_.Get(
+		j,
+		"deidentifyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -137,6 +165,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) JobNotificationEmails() GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmailsOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmailsOutputReference
+	_jsii_.Get(
+		j,
+		"jobNotificationEmails",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) JobNotificationEmailsInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails {
+	var returns *GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails
+	_jsii_.Get(
+		j,
+		"jobNotificationEmailsInput",
 		&returns,
 	)
 	return returns
@@ -511,6 +559,28 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PutDeidentify(value *GoogleDataLossPreventionJobTriggerInspectJobActionsDeidentify) {
+	if err := g.validatePutDeidentifyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDeidentify",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PutJobNotificationEmails(value *GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails) {
+	if err := g.validatePutJobNotificationEmailsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putJobNotificationEmails",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPublishFindingsToCloudDataCatalog(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog) {
 	if err := g.validatePutPublishFindingsToCloudDataCatalogParameters(value); err != nil {
 		panic(err)
@@ -552,6 +622,22 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 		g,
 		"putSaveFindings",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetDeidentify() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeidentify",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetJobNotificationEmails() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetJobNotificationEmails",
+		nil, // no parameters
 	)
 }
 

@@ -43,6 +43,8 @@ type GoogleIamWorkforcePoolProviderOidcOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WebSsoConfig() GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference
+	WebSsoConfigInput() *GoogleIamWorkforcePoolProviderOidcWebSsoConfig
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +69,8 @@ type GoogleIamWorkforcePoolProviderOidcOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutWebSsoConfig(value *GoogleIamWorkforcePoolProviderOidcWebSsoConfig)
+	ResetWebSsoConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -187,6 +191,26 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) TerraformR
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) WebSsoConfig() GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference {
+	var returns GoogleIamWorkforcePoolProviderOidcWebSsoConfigOutputReference
+	_jsii_.Get(
+		j,
+		"webSsoConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) WebSsoConfigInput() *GoogleIamWorkforcePoolProviderOidcWebSsoConfig {
+	var returns *GoogleIamWorkforcePoolProviderOidcWebSsoConfig
+	_jsii_.Get(
+		j,
+		"webSsoConfigInput",
 		&returns,
 	)
 	return returns
@@ -481,6 +505,25 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) Interpolat
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) PutWebSsoConfig(value *GoogleIamWorkforcePoolProviderOidcWebSsoConfig) {
+	if err := g.validatePutWebSsoConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWebSsoConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) ResetWebSsoConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWebSsoConfig",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

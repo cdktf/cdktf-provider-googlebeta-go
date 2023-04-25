@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/resources/google_alloydb_backup google_alloydb_backup}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/resources/google_alloydb_backup google_alloydb_backup}.
 type GoogleAlloydbBackup interface {
 	cdktf.TerraformResource
 	BackupId() *string
@@ -117,7 +117,6 @@ type GoogleAlloydbBackup interface {
 	ResetDescription()
 	ResetId()
 	ResetLabels()
-	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -529,7 +528,7 @@ func (j *jsiiProxy_GoogleAlloydbBackup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/resources/google_alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/resources/google_alloydb_backup google_alloydb_backup} Resource.
 func NewGoogleAlloydbBackup(scope constructs.Construct, id *string, config *GoogleAlloydbBackupConfig) GoogleAlloydbBackup {
 	_init_.Initialize()
 
@@ -547,7 +546,7 @@ func NewGoogleAlloydbBackup(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.62.1/docs/resources/google_alloydb_backup google_alloydb_backup} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/resources/google_alloydb_backup google_alloydb_backup} Resource.
 func NewGoogleAlloydbBackup_Override(g GoogleAlloydbBackup, scope constructs.Construct, id *string, config *GoogleAlloydbBackupConfig) {
 	_init_.Initialize()
 
@@ -1000,14 +999,6 @@ func (g *jsiiProxy_GoogleAlloydbBackup) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleAlloydbBackup) ResetLocation() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetLocation",
 		nil, // no parameters
 	)
 }

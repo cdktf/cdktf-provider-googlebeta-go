@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigOutp
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigOutputReference) validatePutHybridOptionsParameters(value *GoogleDataLossPreventionJobTriggerInspectJobStorageConfigHybridOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigOutputReference) validatePutTimespanConfigParameters(value *GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfig) error {
 	return nil
 }
