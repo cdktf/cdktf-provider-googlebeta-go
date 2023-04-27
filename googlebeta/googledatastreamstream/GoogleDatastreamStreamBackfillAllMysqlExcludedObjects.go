@@ -4,7 +4,7 @@ package googledatastreamstream
 type GoogleDatastreamStreamBackfillAllMysqlExcludedObjects struct {
 	// mysql_databases block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.0/docs/resources/google_datastream_stream#mysql_databases GoogleDatastreamStream#mysql_databases}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_datastream_stream#mysql_databases GoogleDatastreamStream#mysql_databases}
 	MysqlDatabases interface{} `field:"required" json:"mysqlDatabases" yaml:"mysqlDatabases"`
 }
 
