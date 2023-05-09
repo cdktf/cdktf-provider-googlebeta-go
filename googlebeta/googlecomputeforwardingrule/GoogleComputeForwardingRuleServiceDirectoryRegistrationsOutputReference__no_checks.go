@@ -56,7 +56,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetInternalValueParameters(val *GoogleComputeForwardingRuleServiceDirectoryRegistrations) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutpu
 	return nil
 }
 
-func validateNewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

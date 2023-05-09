@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleComputeDisk) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeDisk) validatePutAsyncPrimaryDiskParameters(value *GoogleComputeDiskAsyncPrimaryDisk) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDisk) validatePutDiskEncryptionKeyParameters(value *GoogleComputeDiskDiskEncryptionKey) error {
 	return nil
 }

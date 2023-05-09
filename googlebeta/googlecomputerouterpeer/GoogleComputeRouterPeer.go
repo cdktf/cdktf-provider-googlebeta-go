@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_compute_router_peer google_compute_router_peer}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_compute_router_peer google_compute_router_peer}.
 type GoogleComputeRouterPeer interface {
 	cdktf.TerraformResource
 	AdvertisedGroups() *[]*string
@@ -44,6 +44,9 @@ type GoogleComputeRouterPeer interface {
 	Enable() interface{}
 	SetEnable(val interface{})
 	EnableInput() interface{}
+	EnableIpv6() interface{}
+	SetEnableIpv6(val interface{})
+	EnableIpv6Input() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -61,6 +64,9 @@ type GoogleComputeRouterPeer interface {
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
+	Ipv6NexthopAddress() *string
+	SetIpv6NexthopAddress(val *string)
+	Ipv6NexthopAddressInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -77,6 +83,9 @@ type GoogleComputeRouterPeer interface {
 	PeerIpAddress() *string
 	SetPeerIpAddress(val *string)
 	PeerIpAddressInput() *string
+	PeerIpv6NexthopAddress() *string
+	SetPeerIpv6NexthopAddress(val *string)
+	PeerIpv6NexthopAddressInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -141,11 +150,14 @@ type GoogleComputeRouterPeer interface {
 	ResetAdvertiseMode()
 	ResetBfd()
 	ResetEnable()
+	ResetEnableIpv6()
 	ResetId()
 	ResetIpAddress()
+	ResetIpv6NexthopAddress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPeerIpv6NexthopAddress()
 	ResetProject()
 	ResetRegion()
 	ResetRouterApplianceInstance()
@@ -335,6 +347,26 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) EnableInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) EnableIpv6() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIpv6",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) EnableIpv6Input() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableIpv6Input",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) ForEach() cdktf.ITerraformIterator {
 	var returns cdktf.ITerraformIterator
 	_jsii_.Get(
@@ -425,6 +457,26 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) IpAddressInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) Ipv6NexthopAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6NexthopAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) Ipv6NexthopAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6NexthopAddressInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -510,6 +562,26 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) PeerIpAddressInput() *string {
 	_jsii_.Get(
 		j,
 		"peerIpAddressInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) PeerIpv6NexthopAddress() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peerIpv6NexthopAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer) PeerIpv6NexthopAddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"peerIpv6NexthopAddressInput",
 		&returns,
 	)
 	return returns
@@ -676,7 +748,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) GoogleComputeRouterPeer {
 	_init_.Initialize()
 
@@ -694,7 +766,7 @@ func NewGoogleComputeRouterPeer(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_compute_router_peer google_compute_router_peer} Resource.
 func NewGoogleComputeRouterPeer_Override(g GoogleComputeRouterPeer, scope constructs.Construct, id *string, config *GoogleComputeRouterPeerConfig) {
 	_init_.Initialize()
 
@@ -779,6 +851,17 @@ func (j *jsiiProxy_GoogleComputeRouterPeer)SetEnable(val interface{}) {
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer)SetEnableIpv6(val interface{}) {
+	if err := j.validateSetEnableIpv6Parameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableIpv6",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -816,6 +899,17 @@ func (j *jsiiProxy_GoogleComputeRouterPeer)SetIpAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"ipAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer)SetIpv6NexthopAddress(val *string) {
+	if err := j.validateSetIpv6NexthopAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6NexthopAddress",
 		val,
 	)
 }
@@ -860,6 +954,17 @@ func (j *jsiiProxy_GoogleComputeRouterPeer)SetPeerIpAddress(val *string) {
 	_jsii_.Set(
 		j,
 		"peerIpAddress",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterPeer)SetPeerIpv6NexthopAddress(val *string) {
+	if err := j.validateSetPeerIpv6NexthopAddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"peerIpv6NexthopAddress",
 		val,
 	)
 }
@@ -1274,6 +1379,14 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) ResetEnable() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetEnableIpv6() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableIpv6",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1290,10 +1403,26 @@ func (g *jsiiProxy_GoogleComputeRouterPeer) ResetIpAddress() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetIpv6NexthopAddress() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpv6NexthopAddress",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRouterPeer) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterPeer) ResetPeerIpv6NexthopAddress() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPeerIpv6NexthopAddress",
 		nil, // no parameters
 	)
 }

@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) validatePutEncryptionConfigParameters(value *GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) validatePutQuantityBasedRetentionParameters(value *GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention) error {
 	return nil
 }

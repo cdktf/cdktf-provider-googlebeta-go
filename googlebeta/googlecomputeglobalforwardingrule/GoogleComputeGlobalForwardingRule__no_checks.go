@@ -72,6 +72,10 @@ func validateGoogleComputeGlobalForwardingRule_IsTerraformResourceParameters(x i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetAllowPscGlobalAccessParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -129,6 +133,10 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetProjectParamete
 }
 
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetSourceIpRangesParameters(val *[]*string) error {
 	return nil
 }
 

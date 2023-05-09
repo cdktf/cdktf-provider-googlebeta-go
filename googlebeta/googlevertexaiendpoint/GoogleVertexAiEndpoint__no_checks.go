@@ -120,6 +120,10 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetProvisionersParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleVertexAiEndpointParameters(scope constructs.Construct, id *string, config *GoogleVertexAiEndpointConfig) error {
 	return nil
 }

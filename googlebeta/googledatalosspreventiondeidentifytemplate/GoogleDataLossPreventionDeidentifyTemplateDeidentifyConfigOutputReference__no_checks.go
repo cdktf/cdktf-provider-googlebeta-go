@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) validatePutImageTransformationsParameters(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformations) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) validatePutInfoTypeTransformationsParameters(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations) error {
 	return nil
 }

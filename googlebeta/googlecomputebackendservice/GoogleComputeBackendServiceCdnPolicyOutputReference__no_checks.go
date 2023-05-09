@@ -44,6 +44,10 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) validatePutBypassCacheOnRequestHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) validatePutCacheKeyPolicyParameters(value *GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy) error {
 	return nil
 }

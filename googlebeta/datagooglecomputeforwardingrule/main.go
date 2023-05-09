@@ -13,8 +13,10 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowGlobalAccess", GoGetter: "AllowGlobalAccess"},
+			_jsii_.MemberProperty{JsiiProperty: "allowPscGlobalAccess", GoGetter: "AllowPscGlobalAccess"},
 			_jsii_.MemberProperty{JsiiProperty: "allPorts", GoGetter: "AllPorts"},
 			_jsii_.MemberProperty{JsiiProperty: "backendService", GoGetter: "BackendService"},
+			_jsii_.MemberProperty{JsiiProperty: "baseForwardingRule", GoGetter: "BaseForwardingRule"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},
 			_jsii_.MemberProperty{JsiiProperty: "count", GoGetter: "Count"},
@@ -67,6 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "serviceDirectoryRegistrations", GoGetter: "ServiceDirectoryRegistrations"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceLabel", GoGetter: "ServiceLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceName", GoGetter: "ServiceName"},
+			_jsii_.MemberProperty{JsiiProperty: "sourceIpRanges", GoGetter: "SourceIpRanges"},
 			_jsii_.MemberProperty{JsiiProperty: "subnetwork", GoGetter: "Subnetwork"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "target", GoGetter: "Target"},

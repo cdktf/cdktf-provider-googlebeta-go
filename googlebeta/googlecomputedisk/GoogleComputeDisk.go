@@ -9,9 +9,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_compute_disk google_compute_disk}.
 type GoogleComputeDisk interface {
 	cdktf.TerraformResource
+	AsyncPrimaryDisk() GoogleComputeDiskAsyncPrimaryDiskOutputReference
+	AsyncPrimaryDiskInput() *GoogleComputeDiskAsyncPrimaryDisk
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -148,10 +150,12 @@ type GoogleComputeDisk interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAsyncPrimaryDisk(value *GoogleComputeDiskAsyncPrimaryDisk)
 	PutDiskEncryptionKey(value *GoogleComputeDiskDiskEncryptionKey)
 	PutSourceImageEncryptionKey(value *GoogleComputeDiskSourceImageEncryptionKey)
 	PutSourceSnapshotEncryptionKey(value *GoogleComputeDiskSourceSnapshotEncryptionKey)
 	PutTimeouts(value *GoogleComputeDiskTimeouts)
+	ResetAsyncPrimaryDisk()
 	ResetDescription()
 	ResetDiskEncryptionKey()
 	ResetId()
@@ -187,6 +191,26 @@ type GoogleComputeDisk interface {
 // The jsii proxy struct for GoogleComputeDisk
 type jsiiProxy_GoogleComputeDisk struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) AsyncPrimaryDisk() GoogleComputeDiskAsyncPrimaryDiskOutputReference {
+	var returns GoogleComputeDiskAsyncPrimaryDiskOutputReference
+	_jsii_.Get(
+		j,
+		"asyncPrimaryDisk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) AsyncPrimaryDiskInput() *GoogleComputeDiskAsyncPrimaryDisk {
+	var returns *GoogleComputeDiskAsyncPrimaryDisk
+	_jsii_.Get(
+		j,
+		"asyncPrimaryDiskInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeDisk) CdktfStack() cdktf.TerraformStack {
@@ -840,7 +864,7 @@ func (j *jsiiProxy_GoogleComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_compute_disk google_compute_disk} Resource.
 func NewGoogleComputeDisk(scope constructs.Construct, id *string, config *GoogleComputeDiskConfig) GoogleComputeDisk {
 	_init_.Initialize()
 
@@ -858,7 +882,7 @@ func NewGoogleComputeDisk(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_compute_disk google_compute_disk} Resource.
 func NewGoogleComputeDisk_Override(g GoogleComputeDisk, scope constructs.Construct, id *string, config *GoogleComputeDiskConfig) {
 	_init_.Initialize()
 
@@ -1379,6 +1403,17 @@ func (g *jsiiProxy_GoogleComputeDisk) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeDisk) PutAsyncPrimaryDisk(value *GoogleComputeDiskAsyncPrimaryDisk) {
+	if err := g.validatePutAsyncPrimaryDiskParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAsyncPrimaryDisk",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeDisk) PutDiskEncryptionKey(value *GoogleComputeDiskDiskEncryptionKey) {
 	if err := g.validatePutDiskEncryptionKeyParameters(value); err != nil {
 		panic(err)
@@ -1420,6 +1455,14 @@ func (g *jsiiProxy_GoogleComputeDisk) PutTimeouts(value *GoogleComputeDiskTimeou
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeDisk) ResetAsyncPrimaryDisk() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAsyncPrimaryDisk",
+		nil, // no parameters
 	)
 }
 

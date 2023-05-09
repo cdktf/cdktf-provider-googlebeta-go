@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleComputeResourcePolicy) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeResourcePolicy) validatePutDiskConsistencyGroupPolicyParameters(value *GoogleComputeResourcePolicyDiskConsistencyGroupPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeResourcePolicy) validatePutGroupPlacementPolicyParameters(value *GoogleComputeResourcePolicyGroupPlacementPolicy) error {
 	return nil
 }

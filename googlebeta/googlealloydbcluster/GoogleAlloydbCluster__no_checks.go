@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleAlloydbCluster) validatePutAutomatedBackupPolicyParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) validatePutEncryptionConfigParameters(value *GoogleAlloydbClusterEncryptionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) validatePutInitialUserParameters(value *GoogleAlloydbClusterInitialUser) error {
 	return nil
 }

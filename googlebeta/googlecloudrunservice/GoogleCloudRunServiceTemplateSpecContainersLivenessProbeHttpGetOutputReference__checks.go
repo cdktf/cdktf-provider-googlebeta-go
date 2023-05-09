@@ -210,6 +210,14 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpG
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validateSetPortParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

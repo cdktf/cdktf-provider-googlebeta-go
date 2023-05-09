@@ -72,6 +72,10 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMax
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReference) validateSetVersionParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleDataLossPreventionInspectTemplateInspectConfigLimitsMaxFindingsPerInfoTypeInfoTypeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

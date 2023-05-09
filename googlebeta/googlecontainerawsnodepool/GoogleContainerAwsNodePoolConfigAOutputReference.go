@@ -54,6 +54,8 @@ type GoogleContainerAwsNodePoolConfigAOutputReference interface {
 	SecurityGroupIds() *[]*string
 	SetSecurityGroupIds(val *[]*string)
 	SecurityGroupIdsInput() *[]*string
+	SpotConfig() GoogleContainerAwsNodePoolConfigSpotConfigOutputReference
+	SpotConfigInput() *GoogleContainerAwsNodePoolConfigSpotConfig
 	SshConfig() GoogleContainerAwsNodePoolConfigSshConfigOutputReference
 	SshConfigInput() *GoogleContainerAwsNodePoolConfigSshConfig
 	Tags() *map[string]*string
@@ -98,6 +100,7 @@ type GoogleContainerAwsNodePoolConfigAOutputReference interface {
 	PutInstancePlacement(value *GoogleContainerAwsNodePoolConfigInstancePlacement)
 	PutProxyConfig(value *GoogleContainerAwsNodePoolConfigProxyConfig)
 	PutRootVolume(value *GoogleContainerAwsNodePoolConfigRootVolume)
+	PutSpotConfig(value *GoogleContainerAwsNodePoolConfigSpotConfig)
 	PutSshConfig(value *GoogleContainerAwsNodePoolConfigSshConfig)
 	PutTaints(value interface{})
 	ResetAutoscalingMetricsCollection()
@@ -108,6 +111,7 @@ type GoogleContainerAwsNodePoolConfigAOutputReference interface {
 	ResetProxyConfig()
 	ResetRootVolume()
 	ResetSecurityGroupIds()
+	ResetSpotConfig()
 	ResetSshConfig()
 	ResetTags()
 	ResetTaints()
@@ -371,6 +375,26 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) SecurityGro
 	_jsii_.Get(
 		j,
 		"securityGroupIdsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) SpotConfig() GoogleContainerAwsNodePoolConfigSpotConfigOutputReference {
+	var returns GoogleContainerAwsNodePoolConfigSpotConfigOutputReference
+	_jsii_.Get(
+		j,
+		"spotConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) SpotConfigInput() *GoogleContainerAwsNodePoolConfigSpotConfig {
+	var returns *GoogleContainerAwsNodePoolConfigSpotConfig
+	_jsii_.Get(
+		j,
+		"spotConfigInput",
 		&returns,
 	)
 	return returns
@@ -846,6 +870,17 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) PutRootVolu
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) PutSpotConfig(value *GoogleContainerAwsNodePoolConfigSpotConfig) {
+	if err := g.validatePutSpotConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSpotConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) PutSshConfig(value *GoogleContainerAwsNodePoolConfigSshConfig) {
 	if err := g.validatePutSshConfigParameters(value); err != nil {
 		panic(err)
@@ -928,6 +963,14 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) ResetSecuri
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecurityGroupIds",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) ResetSpotConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSpotConfig",
 		nil, // no parameters
 	)
 }

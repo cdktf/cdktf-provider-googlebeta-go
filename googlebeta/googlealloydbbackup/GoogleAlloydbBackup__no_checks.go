@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleAlloydbBackup) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbBackup) validatePutEncryptionConfigParameters(value *GoogleAlloydbBackupEncryptionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbBackup) validatePutTimeoutsParameters(value *GoogleAlloydbBackupTimeouts) error {
 	return nil
 }

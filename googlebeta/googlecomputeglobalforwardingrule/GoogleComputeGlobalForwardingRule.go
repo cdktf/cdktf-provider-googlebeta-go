@@ -9,9 +9,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type GoogleComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
+	AllowPscGlobalAccess() interface{}
+	SetAllowPscGlobalAccess(val interface{})
+	AllowPscGlobalAccessInput() interface{}
+	BaseForwardingRule() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -91,6 +95,9 @@ type GoogleComputeGlobalForwardingRule interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	SourceIpRanges() *[]*string
+	SetSourceIpRanges(val *[]*string)
+	SourceIpRangesInput() *[]*string
 	Target() *string
 	SetTarget(val *string)
 	TargetInput() *string
@@ -129,6 +136,7 @@ type GoogleComputeGlobalForwardingRule interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMetadataFilters(value interface{})
 	PutTimeouts(value *GoogleComputeGlobalForwardingRuleTimeouts)
+	ResetAllowPscGlobalAccess()
 	ResetDescription()
 	ResetId()
 	ResetIpAddress()
@@ -143,6 +151,7 @@ type GoogleComputeGlobalForwardingRule interface {
 	ResetOverrideLogicalId()
 	ResetPortRange()
 	ResetProject()
+	ResetSourceIpRanges()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -157,6 +166,36 @@ type GoogleComputeGlobalForwardingRule interface {
 // The jsii proxy struct for GoogleComputeGlobalForwardingRule
 type jsiiProxy_GoogleComputeGlobalForwardingRule struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) AllowPscGlobalAccess() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPscGlobalAccess",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) AllowPscGlobalAccessInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowPscGlobalAccessInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) BaseForwardingRule() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"baseForwardingRule",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) CdktfStack() cdktf.TerraformStack {
@@ -569,6 +608,26 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) SourceIpRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceIpRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) SourceIpRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) Target() *string {
 	var returns *string
 	_jsii_.Get(
@@ -640,7 +699,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) GoogleComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -658,7 +717,7 @@ func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule_Override(g GoogleComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -666,6 +725,17 @@ func NewGoogleComputeGlobalForwardingRule_Override(g GoogleComputeGlobalForwardi
 		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRule",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetAllowPscGlobalAccess(val interface{}) {
+	if err := j.validateSetAllowPscGlobalAccessParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowPscGlobalAccess",
+		val,
 	)
 }
 
@@ -854,6 +924,17 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetProvisioners(val *[]inte
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetSourceIpRanges(val *[]*string) {
+	if err := j.validateSetSourceIpRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceIpRanges",
 		val,
 	)
 }
@@ -1157,6 +1238,14 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) PutTimeouts(value *GoogleC
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetAllowPscGlobalAccess() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowPscGlobalAccess",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1249,6 +1338,14 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetSourceIpRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceIpRanges",
 		nil, // no parameters
 	)
 }

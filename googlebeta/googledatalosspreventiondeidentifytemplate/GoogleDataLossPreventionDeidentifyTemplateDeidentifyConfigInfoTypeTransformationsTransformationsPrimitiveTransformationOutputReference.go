@@ -37,6 +37,8 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransform
 	SetInternalValue(val *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation)
 	ReplaceConfig() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigOutputReference
 	ReplaceConfigInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfig
+	ReplaceDictionaryConfig() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceDictionaryConfigOutputReference
+	ReplaceDictionaryConfigInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceDictionaryConfig
 	ReplaceWithInfoTypeConfig() interface{}
 	SetReplaceWithInfoTypeConfig(val interface{})
 	ReplaceWithInfoTypeConfigInput() interface{}
@@ -76,10 +78,12 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransform
 	PutCryptoDeterministicConfig(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoDeterministicConfig)
 	PutCryptoReplaceFfxFpeConfig(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCryptoReplaceFfxFpeConfig)
 	PutReplaceConfig(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfig)
+	PutReplaceDictionaryConfig(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceDictionaryConfig)
 	ResetCharacterMaskConfig()
 	ResetCryptoDeterministicConfig()
 	ResetCryptoReplaceFfxFpeConfig()
 	ResetReplaceConfig()
+	ResetReplaceDictionaryConfig()
 	ResetReplaceWithInfoTypeConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -221,6 +225,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInf
 	_jsii_.Get(
 		j,
 		"replaceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationOutputReference) ReplaceDictionaryConfig() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceDictionaryConfigOutputReference {
+	var returns GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceDictionaryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"replaceDictionaryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationOutputReference) ReplaceDictionaryConfigInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceDictionaryConfig {
+	var returns *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceDictionaryConfig
+	_jsii_.Get(
+		j,
+		"replaceDictionaryConfigInput",
 		&returns,
 	)
 	return returns
@@ -590,6 +614,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInf
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationOutputReference) PutReplaceDictionaryConfig(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceDictionaryConfig) {
+	if err := g.validatePutReplaceDictionaryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReplaceDictionaryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationOutputReference) ResetCharacterMaskConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -618,6 +653,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInf
 	_jsii_.InvokeVoid(
 		g,
 		"resetReplaceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationOutputReference) ResetReplaceDictionaryConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplaceDictionaryConfig",
 		nil, // no parameters
 	)
 }

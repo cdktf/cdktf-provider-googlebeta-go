@@ -34,6 +34,9 @@ type GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputRefere
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputRefere
 	PutHttpHeaders(value interface{})
 	ResetHttpHeaders()
 	ResetPath()
+	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpG
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -262,6 +286,17 @@ func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpG
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpG
 	_jsii_.InvokeVoid(
 		g,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPort",
 		nil, // no parameters
 	)
 }

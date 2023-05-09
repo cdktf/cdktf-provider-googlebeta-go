@@ -27,6 +27,8 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRu
 	CreationStack() *[]*string
 	Dictionary() GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionaryOutputReference
 	DictionaryInput() *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionary
+	ExcludeByHotword() GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference
+	ExcludeByHotwordInput() *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
 	ExcludeInfoTypes() GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypesOutputReference
 	ExcludeInfoTypesInput() *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes
 	// Experimental.
@@ -71,9 +73,11 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRu
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDictionary(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleDictionary)
+	PutExcludeByHotword(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword)
 	PutExcludeInfoTypes(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes)
 	PutRegex(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleRegex)
 	ResetDictionary()
+	ResetExcludeByHotword()
 	ResetExcludeInfoTypes()
 	ResetRegex()
 	// Produce the Token's value at resolution time.
@@ -136,6 +140,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRu
 	_jsii_.Get(
 		j,
 		"dictionaryInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) ExcludeByHotword() GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference {
+	var returns GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotwordOutputReference
+	_jsii_.Get(
+		j,
+		"excludeByHotword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) ExcludeByHotwordInput() *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword {
+	var returns *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword
+	_jsii_.Get(
+		j,
+		"excludeByHotwordInput",
 		&returns,
 	)
 	return returns
@@ -532,6 +556,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRu
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) PutExcludeByHotword(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword) {
+	if err := g.validatePutExcludeByHotwordParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExcludeByHotword",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) PutExcludeInfoTypes(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes) {
 	if err := g.validatePutExcludeInfoTypesParameters(value); err != nil {
 		panic(err)
@@ -558,6 +593,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRu
 	_jsii_.InvokeVoid(
 		g,
 		"resetDictionary",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) ResetExcludeByHotword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExcludeByHotword",
 		nil, // no parameters
 	)
 }

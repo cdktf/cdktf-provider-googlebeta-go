@@ -34,6 +34,9 @@ type GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference
 	Path() *string
 	SetPath(val *string)
 	PathInput() *string
+	Port() *float64
+	SetPort(val *float64)
+	PortInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference
 	PutHttpHeaders(value interface{})
 	ResetHttpHeaders()
 	ResetPath()
+	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +178,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetO
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference) PortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"portInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -262,6 +286,17 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetO
 	_jsii_.Set(
 		j,
 		"path",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference)SetPort(val *float64) {
+	if err := j.validateSetPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"port",
 		val,
 	)
 }
@@ -497,6 +532,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetO
 	_jsii_.InvokeVoid(
 		g,
 		"resetPath",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersStartupProbeHttpGetOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPort",
 		nil, // no parameters
 	)
 }

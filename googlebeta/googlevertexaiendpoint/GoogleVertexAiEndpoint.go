@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint}.
 type GoogleVertexAiEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -82,6 +82,9 @@ type GoogleVertexAiEndpoint interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -127,6 +130,7 @@ type GoogleVertexAiEndpoint interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRegion()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -493,6 +497,26 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVertexAiEndpoint) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiEndpoint) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleVertexAiEndpoint) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -554,7 +578,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
 func NewGoogleVertexAiEndpoint(scope constructs.Construct, id *string, config *GoogleVertexAiEndpointConfig) GoogleVertexAiEndpoint {
 	_init_.Initialize()
 
@@ -572,7 +596,7 @@ func NewGoogleVertexAiEndpoint(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_vertex_ai_endpoint google_vertex_ai_endpoint} Resource.
 func NewGoogleVertexAiEndpoint_Override(g GoogleVertexAiEndpoint, scope constructs.Construct, id *string, config *GoogleVertexAiEndpointConfig) {
 	_init_.Initialize()
 
@@ -735,6 +759,17 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleVertexAiEndpoint)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1079,6 +1114,14 @@ func (g *jsiiProxy_GoogleVertexAiEndpoint) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiEndpoint) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

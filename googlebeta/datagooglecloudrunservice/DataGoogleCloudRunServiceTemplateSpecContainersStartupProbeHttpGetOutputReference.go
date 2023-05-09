@@ -31,6 +31,7 @@ type DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputRef
 	InternalValue() *DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet
 	SetInternalValue(val *DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGet)
 	Path() *string
+	Port() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -143,6 +144,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHt
 	_jsii_.Get(
 		j,
 		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeHttpGetOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
 		&returns,
 	)
 	return returns

@@ -111,6 +111,17 @@ func (g *jsiiProxy_GoogleComputeDisk) validateOverrideLogicalIdParameters(newLog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeDisk) validatePutAsyncPrimaryDiskParameters(value *GoogleComputeDiskAsyncPrimaryDisk) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDisk) validatePutDiskEncryptionKeyParameters(value *GoogleComputeDiskDiskEncryptionKey) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

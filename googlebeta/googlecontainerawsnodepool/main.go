@@ -179,6 +179,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putInstancePlacement", GoMethod: "PutInstancePlacement"},
 			_jsii_.MemberMethod{JsiiMethod: "putProxyConfig", GoMethod: "PutProxyConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putRootVolume", GoMethod: "PutRootVolume"},
+			_jsii_.MemberMethod{JsiiMethod: "putSpotConfig", GoMethod: "PutSpotConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putSshConfig", GoMethod: "PutSshConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTaints", GoMethod: "PutTaints"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscalingMetricsCollection", GoMethod: "ResetAutoscalingMetricsCollection"},
@@ -189,6 +190,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetProxyConfig", GoMethod: "ResetProxyConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRootVolume", GoMethod: "ResetRootVolume"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSecurityGroupIds", GoMethod: "ResetSecurityGroupIds"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSpotConfig", GoMethod: "ResetSpotConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSshConfig", GoMethod: "ResetSshConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTaints", GoMethod: "ResetTaints"},
@@ -197,6 +199,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rootVolumeInput", GoGetter: "RootVolumeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupIds", GoGetter: "SecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "securityGroupIdsInput", GoGetter: "SecurityGroupIdsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "spotConfig", GoGetter: "SpotConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "spotConfigInput", GoGetter: "SpotConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "sshConfig", GoGetter: "SshConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "sshConfigInput", GoGetter: "SshConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "tags", GoGetter: "Tags"},
@@ -415,6 +419,44 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleContainerAwsNodePoolConfigRootVolumeOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSpotConfig",
+		reflect.TypeOf((*GoogleContainerAwsNodePoolConfigSpotConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerAwsNodePool.GoogleContainerAwsNodePoolConfigSpotConfigOutputReference",
+		reflect.TypeOf((*GoogleContainerAwsNodePoolConfigSpotConfigOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceTypes", GoGetter: "InstanceTypes"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceTypesInput", GoGetter: "InstanceTypesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerAwsNodePoolConfigSpotConfigOutputReference{}
 			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
 			return &j
 		},

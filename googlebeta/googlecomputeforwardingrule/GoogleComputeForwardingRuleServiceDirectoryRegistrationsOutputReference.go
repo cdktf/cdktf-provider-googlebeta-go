@@ -27,8 +27,8 @@ type GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference int
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *GoogleComputeForwardingRuleServiceDirectoryRegistrations
+	SetInternalValue(val *GoogleComputeForwardingRuleServiceDirectoryRegistrations)
 	Namespace() *string
 	SetNamespace(val *string)
 	NamespaceInput() *string
@@ -124,8 +124,8 @@ func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) InternalValue() *GoogleComputeForwardingRuleServiceDirectoryRegistrations {
+	var returns *GoogleComputeForwardingRuleServiceDirectoryRegistrations
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -195,29 +195,29 @@ func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutpu
 }
 
 
-func NewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference {
+func NewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference_Override(g GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference_Override(g GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleComputeForwardingRule.GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
 }
@@ -244,7 +244,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComputeForwardingRuleServiceDirectoryRegistrationsOutputReference)SetInternalValue(val *GoogleComputeForwardingRuleServiceDirectoryRegistrations) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

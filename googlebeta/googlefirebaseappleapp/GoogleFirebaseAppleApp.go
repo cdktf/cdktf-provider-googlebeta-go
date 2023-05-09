@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_firebase_apple_app google_firebase_apple_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_firebase_apple_app google_firebase_apple_app}.
 type GoogleFirebaseAppleApp interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -110,7 +110,6 @@ type GoogleFirebaseAppleApp interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleFirebaseAppleAppTimeouts)
 	ResetAppStoreId()
-	ResetBundleId()
 	ResetDeletionPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -475,7 +474,7 @@ func (j *jsiiProxy_GoogleFirebaseAppleApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
 func NewGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *GoogleFirebaseAppleAppConfig) GoogleFirebaseAppleApp {
 	_init_.Initialize()
 
@@ -493,7 +492,7 @@ func NewGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_firebase_apple_app google_firebase_apple_app} Resource.
 func NewGoogleFirebaseAppleApp_Override(g GoogleFirebaseAppleApp, scope constructs.Construct, id *string, config *GoogleFirebaseAppleAppConfig) {
 	_init_.Initialize()
 
@@ -930,14 +929,6 @@ func (g *jsiiProxy_GoogleFirebaseAppleApp) ResetAppStoreId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAppStoreId",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleFirebaseAppleApp) ResetBundleId() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetBundleId",
 		nil, // no parameters
 	)
 }

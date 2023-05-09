@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) validatePutInspectConfigParameters(value *GoogleDataLossPreventionJobTriggerInspectJobInspectConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) validatePutStorageConfigParameters(value *GoogleDataLossPreventionJobTriggerInspectJobStorageConfig) error {
 	return nil
 }

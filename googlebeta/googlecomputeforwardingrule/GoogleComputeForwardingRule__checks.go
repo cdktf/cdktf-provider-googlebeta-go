@@ -111,32 +111,12 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value *GoogleComputeForwardingRuleServiceDirectoryRegistrations) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
-	switch value.(type) {
-	case cdktf.IResolvable:
-		// ok
-	case *[]*GoogleComputeForwardingRuleServiceDirectoryRegistrations:
-		value := value.(*[]*GoogleComputeForwardingRuleServiceDirectoryRegistrations)
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	case []*GoogleComputeForwardingRuleServiceDirectoryRegistrations:
-		value_ := value.([]*GoogleComputeForwardingRuleServiceDirectoryRegistrations)
-		value := &value_
-		for idx_cd4240, v := range *value {
-			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
-				return err
-			}
-		}
-	default:
-		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeForwardingRuleServiceDirectoryRegistrations; received %#v (a %T)", value, value)
-		}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil
@@ -178,6 +158,26 @@ func validateGoogleComputeForwardingRule_IsTerraformResourceParameters(x interfa
 }
 
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowGlobalAccessParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowPscGlobalAccessParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -494,6 +494,14 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetRegionParameters(val 
 }
 
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetServiceLabelParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetSourceIpRangesParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

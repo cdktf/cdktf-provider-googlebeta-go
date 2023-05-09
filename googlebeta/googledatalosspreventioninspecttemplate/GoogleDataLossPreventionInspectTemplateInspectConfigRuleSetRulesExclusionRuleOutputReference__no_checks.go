@@ -48,6 +48,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) validatePutExcludeByHotwordParameters(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeByHotword) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleOutputReference) validatePutExcludeInfoTypesParameters(value *GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRuleExcludeInfoTypes) error {
 	return nil
 }

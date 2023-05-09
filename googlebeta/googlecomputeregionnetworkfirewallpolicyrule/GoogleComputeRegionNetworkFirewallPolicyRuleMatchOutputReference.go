@@ -25,20 +25,44 @@ type GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference interface 
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DestAddressGroups() *[]*string
+	SetDestAddressGroups(val *[]*string)
+	DestAddressGroupsInput() *[]*string
+	DestFqdns() *[]*string
+	SetDestFqdns(val *[]*string)
+	DestFqdnsInput() *[]*string
 	DestIpRanges() *[]*string
 	SetDestIpRanges(val *[]*string)
 	DestIpRangesInput() *[]*string
+	DestRegionCodes() *[]*string
+	SetDestRegionCodes(val *[]*string)
+	DestRegionCodesInput() *[]*string
+	DestThreatIntelligences() *[]*string
+	SetDestThreatIntelligences(val *[]*string)
+	DestThreatIntelligencesInput() *[]*string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComputeRegionNetworkFirewallPolicyRuleMatch
 	SetInternalValue(val *GoogleComputeRegionNetworkFirewallPolicyRuleMatch)
 	Layer4Configs() GoogleComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList
 	Layer4ConfigsInput() interface{}
+	SrcAddressGroups() *[]*string
+	SetSrcAddressGroups(val *[]*string)
+	SrcAddressGroupsInput() *[]*string
+	SrcFqdns() *[]*string
+	SetSrcFqdns(val *[]*string)
+	SrcFqdnsInput() *[]*string
 	SrcIpRanges() *[]*string
 	SetSrcIpRanges(val *[]*string)
 	SrcIpRangesInput() *[]*string
+	SrcRegionCodes() *[]*string
+	SetSrcRegionCodes(val *[]*string)
+	SrcRegionCodesInput() *[]*string
 	SrcSecureTags() GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTagsList
 	SrcSecureTagsInput() interface{}
+	SrcThreatIntelligences() *[]*string
+	SetSrcThreatIntelligences(val *[]*string)
+	SrcThreatIntelligencesInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -73,9 +97,17 @@ type GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference interface 
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutLayer4Configs(value interface{})
 	PutSrcSecureTags(value interface{})
+	ResetDestAddressGroups()
+	ResetDestFqdns()
 	ResetDestIpRanges()
+	ResetDestRegionCodes()
+	ResetDestThreatIntelligences()
+	ResetSrcAddressGroups()
+	ResetSrcFqdns()
 	ResetSrcIpRanges()
+	ResetSrcRegionCodes()
 	ResetSrcSecureTags()
+	ResetSrcThreatIntelligences()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -121,6 +153,46 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestAddressGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destAddressGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestAddressGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destAddressGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestFqdns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destFqdns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestFqdnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destFqdnsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestIpRanges() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -136,6 +208,46 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	_jsii_.Get(
 		j,
 		"destIpRangesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestRegionCodes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destRegionCodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestRegionCodesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destRegionCodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestThreatIntelligences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destThreatIntelligences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) DestThreatIntelligencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"destThreatIntelligencesInput",
 		&returns,
 	)
 	return returns
@@ -181,6 +293,46 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcAddressGroups() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcAddressGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcAddressGroupsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcAddressGroupsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcFqdns() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcFqdns",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcFqdnsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcFqdnsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcIpRanges() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -201,6 +353,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcRegionCodes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcRegionCodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcRegionCodesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcRegionCodesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcSecureTags() GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTagsList {
 	var returns GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTagsList
 	_jsii_.Get(
@@ -216,6 +388,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	_jsii_.Get(
 		j,
 		"srcSecureTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcThreatIntelligences() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcThreatIntelligences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) SrcThreatIntelligencesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"srcThreatIntelligencesInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +483,28 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestAddressGroups(val *[]*string) {
+	if err := j.validateSetDestAddressGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destAddressGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestFqdns(val *[]*string) {
+	if err := j.validateSetDestFqdnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destFqdns",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestIpRanges(val *[]*string) {
 	if err := j.validateSetDestIpRangesParameters(val); err != nil {
 		panic(err)
@@ -298,6 +512,28 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	_jsii_.Set(
 		j,
 		"destIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestRegionCodes(val *[]*string) {
+	if err := j.validateSetDestRegionCodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destRegionCodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetDestThreatIntelligences(val *[]*string) {
+	if err := j.validateSetDestThreatIntelligencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"destThreatIntelligences",
 		val,
 	)
 }
@@ -313,6 +549,28 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcAddressGroups(val *[]*string) {
+	if err := j.validateSetSrcAddressGroupsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcAddressGroups",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcFqdns(val *[]*string) {
+	if err := j.validateSetSrcFqdnsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcFqdns",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcIpRanges(val *[]*string) {
 	if err := j.validateSetSrcIpRangesParameters(val); err != nil {
 		panic(err)
@@ -320,6 +578,28 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	_jsii_.Set(
 		j,
 		"srcIpRanges",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcRegionCodes(val *[]*string) {
+	if err := j.validateSetSrcRegionCodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcRegionCodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference)SetSrcThreatIntelligences(val *[]*string) {
+	if err := j.validateSetSrcThreatIntelligencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"srcThreatIntelligences",
 		val,
 	)
 }
@@ -554,10 +834,58 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestAddressGroups() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDestAddressGroups",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestFqdns() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDestFqdns",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestIpRanges() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDestIpRanges",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestRegionCodes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDestRegionCodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetDestThreatIntelligences() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDestThreatIntelligences",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcAddressGroups() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSrcAddressGroups",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcFqdns() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSrcFqdns",
 		nil, // no parameters
 	)
 }
@@ -570,10 +898,26 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputRefere
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcRegionCodes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSrcRegionCodes",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcSecureTags() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSrcSecureTags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchOutputReference) ResetSrcThreatIntelligences() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSrcThreatIntelligences",
 		nil, // no parameters
 	)
 }

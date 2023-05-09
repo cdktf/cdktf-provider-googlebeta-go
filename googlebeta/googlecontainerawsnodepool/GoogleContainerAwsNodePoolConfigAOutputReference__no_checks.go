@@ -64,6 +64,10 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) validatePutSpotConfigParameters(value *GoogleContainerAwsNodePoolConfigSpotConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAOutputReference) validatePutSshConfigParameters(value *GoogleContainerAwsNodePoolConfigSshConfig) error {
 	return nil
 }

@@ -100,6 +100,10 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificate) validateSetLifecyclePara
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerCertificate) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerCertificate) validateSetNameParameters(val *string) error {
 	return nil
 }

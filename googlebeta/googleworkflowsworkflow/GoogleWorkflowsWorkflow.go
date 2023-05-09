@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_workflows_workflow google_workflows_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_workflows_workflow google_workflows_workflow}.
 type GoogleWorkflowsWorkflow interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -25,6 +25,9 @@ type GoogleWorkflowsWorkflow interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CryptoKeyName() *string
+	SetCryptoKeyName(val *string)
+	CryptoKeyNameInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -117,6 +120,7 @@ type GoogleWorkflowsWorkflow interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleWorkflowsWorkflowTimeouts)
+	ResetCryptoKeyName()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -190,6 +194,26 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) CryptoKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cryptoKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) CryptoKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cryptoKeyNameInput",
 		&returns,
 	)
 	return returns
@@ -546,7 +570,7 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_workflows_workflow google_workflows_workflow} Resource.
 func NewGoogleWorkflowsWorkflow(scope constructs.Construct, id *string, config *GoogleWorkflowsWorkflowConfig) GoogleWorkflowsWorkflow {
 	_init_.Initialize()
 
@@ -564,7 +588,7 @@ func NewGoogleWorkflowsWorkflow(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_workflows_workflow google_workflows_workflow} Resource.
 func NewGoogleWorkflowsWorkflow_Override(g GoogleWorkflowsWorkflow, scope constructs.Construct, id *string, config *GoogleWorkflowsWorkflowConfig) {
 	_init_.Initialize()
 
@@ -593,6 +617,17 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetCryptoKeyName(val *string) {
+	if err := j.validateSetCryptoKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cryptoKeyName",
 		val,
 	)
 }
@@ -1016,6 +1051,14 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) PutTimeouts(value *GoogleWorkflowsWo
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) ResetCryptoKeyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCryptoKeyName",
+		nil, // no parameters
 	)
 }
 

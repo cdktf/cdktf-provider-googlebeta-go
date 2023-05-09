@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -163,6 +163,9 @@ type GoogleBetaProvider interface {
 	Credentials() *string
 	SetCredentials(val *string)
 	CredentialsInput() *string
+	DatabaseMigrationServiceCustomEndpoint() *string
+	SetDatabaseMigrationServiceCustomEndpoint(val *string)
+	DatabaseMigrationServiceCustomEndpointInput() *string
 	DataCatalogCustomEndpoint() *string
 	SetDataCatalogCustomEndpoint(val *string)
 	DataCatalogCustomEndpointInput() *string
@@ -251,6 +254,9 @@ type GoogleBetaProvider interface {
 	GkehubFeatureCustomEndpoint() *string
 	SetGkehubFeatureCustomEndpoint(val *string)
 	GkehubFeatureCustomEndpointInput() *string
+	GkeonpremCustomEndpoint() *string
+	SetGkeonpremCustomEndpoint(val *string)
+	GkeonpremCustomEndpointInput() *string
 	HealthcareCustomEndpoint() *string
 	SetHealthcareCustomEndpoint(val *string)
 	HealthcareCustomEndpointInput() *string
@@ -491,6 +497,7 @@ type GoogleBetaProvider interface {
 	ResetContainerAzureCustomEndpoint()
 	ResetContainerCustomEndpoint()
 	ResetCredentials()
+	ResetDatabaseMigrationServiceCustomEndpoint()
 	ResetDataCatalogCustomEndpoint()
 	ResetDataflowCustomEndpoint()
 	ResetDataformCustomEndpoint()
@@ -519,6 +526,7 @@ type GoogleBetaProvider interface {
 	ResetGkeBackupCustomEndpoint()
 	ResetGkeHubCustomEndpoint()
 	ResetGkehubFeatureCustomEndpoint()
+	ResetGkeonpremCustomEndpoint()
 	ResetHealthcareCustomEndpoint()
 	ResetIam2CustomEndpoint()
 	ResetIamBetaCustomEndpoint()
@@ -1595,6 +1603,26 @@ func (j *jsiiProxy_GoogleBetaProvider) CredentialsInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) DatabaseMigrationServiceCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseMigrationServiceCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) DatabaseMigrationServiceCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"databaseMigrationServiceCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) DataCatalogCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2170,6 +2198,26 @@ func (j *jsiiProxy_GoogleBetaProvider) GkehubFeatureCustomEndpointInput() *strin
 	_jsii_.Get(
 		j,
 		"gkehubFeatureCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) GkeonpremCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeonpremCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) GkeonpremCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gkeonpremCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3396,7 +3444,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3414,7 +3462,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -3820,6 +3868,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetCredentials(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetDatabaseMigrationServiceCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"databaseMigrationServiceCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetDataCatalogCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4040,6 +4096,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetGkehubFeatureCustomEndpoint(val *string
 	_jsii_.Set(
 		j,
 		"gkehubFeatureCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetGkeonpremCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"gkeonpremCustomEndpoint",
 		val,
 	)
 }
@@ -5009,6 +5073,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetCredentials() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetDatabaseMigrationServiceCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDatabaseMigrationServiceCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetDataCatalogCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5229,6 +5301,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetGkehubFeatureCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetGkehubFeatureCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetGkeonpremCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGkeonpremCustomEndpoint",
 		nil, // no parameters
 	)
 }

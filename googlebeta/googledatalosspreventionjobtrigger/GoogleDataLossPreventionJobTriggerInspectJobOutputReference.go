@@ -29,6 +29,8 @@ type GoogleDataLossPreventionJobTriggerInspectJobOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InspectConfig() GoogleDataLossPreventionJobTriggerInspectJobInspectConfigOutputReference
+	InspectConfigInput() *GoogleDataLossPreventionJobTriggerInspectJobInspectConfig
 	InspectTemplateName() *string
 	SetInspectTemplateName(val *string)
 	InspectTemplateNameInput() *string
@@ -69,7 +71,9 @@ type GoogleDataLossPreventionJobTriggerInspectJobOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutActions(value interface{})
+	PutInspectConfig(value *GoogleDataLossPreventionJobTriggerInspectJobInspectConfig)
 	PutStorageConfig(value *GoogleDataLossPreventionJobTriggerInspectJobStorageConfig)
+	ResetInspectConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -140,6 +144,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) 
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) InspectConfig() GoogleDataLossPreventionJobTriggerInspectJobInspectConfigOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobInspectConfigOutputReference
+	_jsii_.Get(
+		j,
+		"inspectConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) InspectConfigInput() *GoogleDataLossPreventionJobTriggerInspectJobInspectConfig {
+	var returns *GoogleDataLossPreventionJobTriggerInspectJobInspectConfig
+	_jsii_.Get(
+		j,
+		"inspectConfigInput",
 		&returns,
 	)
 	return returns
@@ -506,6 +530,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) 
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) PutInspectConfig(value *GoogleDataLossPreventionJobTriggerInspectJobInspectConfig) {
+	if err := g.validatePutInspectConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInspectConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) PutStorageConfig(value *GoogleDataLossPreventionJobTriggerInspectJobStorageConfig) {
 	if err := g.validatePutStorageConfigParameters(value); err != nil {
 		panic(err)
@@ -514,6 +549,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) 
 		g,
 		"putStorageConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobOutputReference) ResetInspectConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInspectConfig",
+		nil, // no parameters
 	)
 }
 

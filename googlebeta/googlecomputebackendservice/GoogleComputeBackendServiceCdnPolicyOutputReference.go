@@ -10,6 +10,8 @@ import (
 
 type GoogleComputeBackendServiceCdnPolicyOutputReference interface {
 	cdktf.ComplexObject
+	BypassCacheOnRequestHeaders() GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList
+	BypassCacheOnRequestHeadersInput() interface{}
 	CacheKeyPolicy() GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference
 	CacheKeyPolicyInput() *GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy
 	CacheMode() *string
@@ -86,8 +88,10 @@ type GoogleComputeBackendServiceCdnPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutBypassCacheOnRequestHeaders(value interface{})
 	PutCacheKeyPolicy(value *GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy)
 	PutNegativeCachingPolicy(value interface{})
+	ResetBypassCacheOnRequestHeaders()
 	ResetCacheKeyPolicy()
 	ResetCacheMode()
 	ResetClientTtl()
@@ -110,6 +114,26 @@ type GoogleComputeBackendServiceCdnPolicyOutputReference interface {
 // The jsii proxy struct for GoogleComputeBackendServiceCdnPolicyOutputReference
 type jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) BypassCacheOnRequestHeaders() GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList {
+	var returns GoogleComputeBackendServiceCdnPolicyBypassCacheOnRequestHeadersList
+	_jsii_.Get(
+		j,
+		"bypassCacheOnRequestHeaders",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) BypassCacheOnRequestHeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bypassCacheOnRequestHeadersInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) CacheKeyPolicy() GoogleComputeBackendServiceCdnPolicyCacheKeyPolicyOutputReference {
@@ -708,6 +732,17 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) Interpol
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) PutBypassCacheOnRequestHeaders(value interface{}) {
+	if err := g.validatePutBypassCacheOnRequestHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBypassCacheOnRequestHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) PutCacheKeyPolicy(value *GoogleComputeBackendServiceCdnPolicyCacheKeyPolicy) {
 	if err := g.validatePutCacheKeyPolicyParameters(value); err != nil {
 		panic(err)
@@ -727,6 +762,14 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) PutNegat
 		g,
 		"putNegativeCachingPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceCdnPolicyOutputReference) ResetBypassCacheOnRequestHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBypassCacheOnRequestHeaders",
+		nil, // no parameters
 	)
 }
 

@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) validateOverrideLogicalIdParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value *GoogleComputeForwardingRuleServiceDirectoryRegistrations) error {
 	return nil
 }
 
@@ -73,6 +73,10 @@ func validateGoogleComputeForwardingRule_IsTerraformResourceParameters(x interfa
 }
 
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowGlobalAccessParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetAllowPscGlobalAccessParameters(val interface{}) error {
 	return nil
 }
 
@@ -157,6 +161,10 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetRegionParameters(val 
 }
 
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetServiceLabelParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetSourceIpRangesParameters(val *[]*string) error {
 	return nil
 }
 

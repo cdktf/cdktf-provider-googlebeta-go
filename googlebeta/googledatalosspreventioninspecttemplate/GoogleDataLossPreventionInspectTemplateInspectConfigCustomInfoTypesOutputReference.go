@@ -43,6 +43,8 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputRe
 	RegexInput() *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegex
 	StoredType() GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredTypeOutputReference
 	StoredTypeInput() *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredType
+	SurrogateType() GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference
+	SurrogateTypeInput() *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,11 +81,13 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputRe
 	PutInfoType(value *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesInfoType)
 	PutRegex(value *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesRegex)
 	PutStoredType(value *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesStoredType)
+	PutSurrogateType(value *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType)
 	ResetDictionary()
 	ResetExclusionType()
 	ResetLikelihood()
 	ResetRegex()
 	ResetStoredType()
+	ResetSurrogateType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -264,6 +268,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInf
 	_jsii_.Get(
 		j,
 		"storedTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) SurrogateType() GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference {
+	var returns GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateTypeOutputReference
+	_jsii_.Get(
+		j,
+		"surrogateType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) SurrogateTypeInput() *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType {
+	var returns *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType
+	_jsii_.Get(
+		j,
+		"surrogateTypeInput",
 		&returns,
 	)
 	return returns
@@ -624,6 +648,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInf
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) PutSurrogateType(value *GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesSurrogateType) {
+	if err := g.validatePutSurrogateTypeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSurrogateType",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) ResetDictionary() {
 	_jsii_.InvokeVoid(
 		g,
@@ -660,6 +695,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInf
 	_jsii_.InvokeVoid(
 		g,
 		"resetStoredType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionInspectTemplateInspectConfigCustomInfoTypesOutputReference) ResetSurrogateType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSurrogateType",
 		nil, // no parameters
 	)
 }

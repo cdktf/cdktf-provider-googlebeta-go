@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
 type GoogleAlloydbCluster interface {
 	cdktf.TerraformResource
 	AutomatedBackupPolicy() GoogleAlloydbClusterAutomatedBackupPolicyOutputReference
@@ -38,6 +38,9 @@ type GoogleAlloydbCluster interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EncryptionConfig() GoogleAlloydbClusterEncryptionConfigOutputReference
+	EncryptionConfigInput() *GoogleAlloydbClusterEncryptionConfig
+	EncryptionInfo() GoogleAlloydbClusterEncryptionInfoList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -116,10 +119,12 @@ type GoogleAlloydbCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAutomatedBackupPolicy(value *GoogleAlloydbClusterAutomatedBackupPolicy)
+	PutEncryptionConfig(value *GoogleAlloydbClusterEncryptionConfig)
 	PutInitialUser(value *GoogleAlloydbClusterInitialUser)
 	PutTimeouts(value *GoogleAlloydbClusterTimeouts)
 	ResetAutomatedBackupPolicy()
 	ResetDisplayName()
+	ResetEncryptionConfig()
 	ResetId()
 	ResetInitialUser()
 	ResetLabels()
@@ -268,6 +273,36 @@ func (j *jsiiProxy_GoogleAlloydbCluster) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) EncryptionConfig() GoogleAlloydbClusterEncryptionConfigOutputReference {
+	var returns GoogleAlloydbClusterEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) EncryptionConfigInput() *GoogleAlloydbClusterEncryptionConfig {
+	var returns *GoogleAlloydbClusterEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) EncryptionInfo() GoogleAlloydbClusterEncryptionInfoList {
+	var returns GoogleAlloydbClusterEncryptionInfoList
+	_jsii_.Get(
+		j,
+		"encryptionInfo",
 		&returns,
 	)
 	return returns
@@ -554,7 +589,7 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) GoogleAlloydbCluster {
 	_init_.Initialize()
 
@@ -572,7 +607,7 @@ func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.63.1/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.64.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster_Override(g GoogleAlloydbCluster, scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1005,6 +1040,17 @@ func (g *jsiiProxy_GoogleAlloydbCluster) PutAutomatedBackupPolicy(value *GoogleA
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) PutEncryptionConfig(value *GoogleAlloydbClusterEncryptionConfig) {
+	if err := g.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) PutInitialUser(value *GoogleAlloydbClusterInitialUser) {
 	if err := g.validatePutInitialUserParameters(value); err != nil {
 		panic(err)
@@ -1039,6 +1085,14 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEncryptionConfig",
 		nil, // no parameters
 	)
 }

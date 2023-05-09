@@ -31,6 +31,8 @@ type GoogleAlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
+	EncryptionConfig() GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference
+	EncryptionConfigInput() *GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleAlloydbClusterAutomatedBackupPolicy
@@ -79,11 +81,13 @@ type GoogleAlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutEncryptionConfig(value *GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig)
 	PutQuantityBasedRetention(value *GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention)
 	PutTimeBasedRetention(value *GoogleAlloydbClusterAutomatedBackupPolicyTimeBasedRetention)
 	PutWeeklySchedule(value *GoogleAlloydbClusterAutomatedBackupPolicyWeeklySchedule)
 	ResetBackupWindow()
 	ResetEnabled()
+	ResetEncryptionConfig()
 	ResetLabels()
 	ResetLocation()
 	ResetQuantityBasedRetention()
@@ -169,6 +173,26 @@ func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) Ena
 	_jsii_.Get(
 		j,
 		"enabledInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) EncryptionConfig() GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference {
+	var returns GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"encryptionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) EncryptionConfigInput() *GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig {
+	var returns *GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig
+	_jsii_.Get(
+		j,
+		"encryptionConfigInput",
 		&returns,
 	)
 	return returns
@@ -627,6 +651,17 @@ func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) Int
 	return returns
 }
 
+func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) PutEncryptionConfig(value *GoogleAlloydbClusterAutomatedBackupPolicyEncryptionConfig) {
+	if err := g.validatePutEncryptionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEncryptionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) PutQuantityBasedRetention(value *GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetention) {
 	if err := g.validatePutQuantityBasedRetentionParameters(value); err != nil {
 		panic(err)
@@ -672,6 +707,14 @@ func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyOutputReference) ResetEncryptionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEncryptionConfig",
 		nil, // no parameters
 	)
 }

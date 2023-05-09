@@ -27,6 +27,8 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference i
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	ImageTransformations() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsOutputReference
+	ImageTransformationsInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformations
 	InfoTypeTransformations() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformationsOutputReference
 	InfoTypeTransformationsInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations
 	InternalValue() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfig
@@ -65,8 +67,10 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference i
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutImageTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformations)
 	PutInfoTypeTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations)
 	PutRecordTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigRecordTransformations)
+	ResetImageTransformations()
 	ResetInfoTypeTransformations()
 	ResetRecordTransformations()
 	// Produce the Token's value at resolution time.
@@ -119,6 +123,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOut
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) ImageTransformations() GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsOutputReference {
+	var returns GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformationsOutputReference
+	_jsii_.Get(
+		j,
+		"imageTransformations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) ImageTransformationsInput() *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformations {
+	var returns *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformations
+	_jsii_.Get(
+		j,
+		"imageTransformationsInput",
 		&returns,
 	)
 	return returns
@@ -463,6 +487,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOut
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) PutImageTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigImageTransformations) {
+	if err := g.validatePutImageTransformationsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putImageTransformations",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) PutInfoTypeTransformations(value *GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransformations) {
 	if err := g.validatePutInfoTypeTransformationsParameters(value); err != nil {
 		panic(err)
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOut
 		g,
 		"putRecordTransformations",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigOutputReference) ResetImageTransformations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetImageTransformations",
+		nil, // no parameters
 	)
 }
 

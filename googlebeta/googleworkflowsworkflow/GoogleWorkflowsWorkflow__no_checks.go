@@ -76,6 +76,10 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetCryptoKeyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

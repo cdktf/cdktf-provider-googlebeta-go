@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetSe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetSessionAffinityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }
