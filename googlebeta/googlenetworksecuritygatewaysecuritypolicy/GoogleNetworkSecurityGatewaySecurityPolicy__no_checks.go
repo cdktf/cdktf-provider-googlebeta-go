@@ -104,6 +104,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetProvis
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityGatewaySecurityPolicy) validateSetTlsInspectionPolicyParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleNetworkSecurityGatewaySecurityPolicyParameters(scope constructs.Construct, id *string, config *GoogleNetworkSecurityGatewaySecurityPolicyConfig) error {
 	return nil
 }

@@ -35,6 +35,9 @@ type GoogleCloudbuildTriggerSourceToBuildOutputReference interface {
 	Ref() *string
 	SetRef(val *string)
 	RefInput() *string
+	Repository() *string
+	SetRepository(val *string)
+	RepositoryInput() *string
 	RepoType() *string
 	SetRepoType(val *string)
 	RepoTypeInput() *string
@@ -74,6 +77,8 @@ type GoogleCloudbuildTriggerSourceToBuildOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetGithubEnterpriseConfig()
+	ResetRepository()
+	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -174,6 +179,26 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) RefInput
 	_jsii_.Get(
 		j,
 		"refInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) Repository() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) RepositoryInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"repositoryInput",
 		&returns,
 	)
 	return returns
@@ -318,6 +343,17 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference)SetRef(va
 	_jsii_.Set(
 		j,
 		"ref",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference)SetRepository(val *string) {
+	if err := j.validateSetRepositoryParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"repository",
 		val,
 	)
 }
@@ -556,6 +592,22 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) ResetGit
 	_jsii_.InvokeVoid(
 		g,
 		"resetGithubEnterpriseConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) ResetRepository() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRepository",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) ResetUri() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUri",
 		nil, // no parameters
 	)
 }

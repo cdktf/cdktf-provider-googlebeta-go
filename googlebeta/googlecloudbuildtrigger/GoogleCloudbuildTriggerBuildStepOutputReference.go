@@ -10,6 +10,12 @@ import (
 
 type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 	cdktf.ComplexObject
+	AllowExitCodes() *[]*float64
+	SetAllowExitCodes(val *[]*float64)
+	AllowExitCodesInput() *[]*float64
+	AllowFailure() interface{}
+	SetAllowFailure(val interface{})
+	AllowFailureInput() interface{}
 	Args() *[]*string
 	SetArgs(val *[]*string)
 	ArgsInput() *[]*string
@@ -97,6 +103,8 @@ type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutVolumes(value interface{})
+	ResetAllowExitCodes()
+	ResetAllowFailure()
 	ResetArgs()
 	ResetDir()
 	ResetEntrypoint()
@@ -121,6 +129,46 @@ type GoogleCloudbuildTriggerBuildStepOutputReference interface {
 // The jsii proxy struct for GoogleCloudbuildTriggerBuildStepOutputReference
 type jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowExitCodes() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"allowExitCodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowExitCodesInput() *[]*float64 {
+	var returns *[]*float64
+	_jsii_.Get(
+		j,
+		"allowExitCodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowFailure() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowFailure",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) AllowFailureInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowFailureInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) Args() *[]*string {
@@ -458,6 +506,28 @@ func NewGoogleCloudbuildTriggerBuildStepOutputReference_Override(g GoogleCloudbu
 		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildStepOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetAllowExitCodes(val *[]*float64) {
+	if err := j.validateSetAllowExitCodesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowExitCodes",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference)SetAllowFailure(val interface{}) {
+	if err := j.validateSetAllowFailureParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowFailure",
+		val,
 	)
 }
 
@@ -831,6 +901,22 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) PutVolumes(v
 		g,
 		"putVolumes",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ResetAllowExitCodes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowExitCodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) ResetAllowFailure() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowFailure",
+		nil, // no parameters
 	)
 }
 

@@ -68,6 +68,10 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) validateSetRepositoryParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildTriggerSourceToBuildOutputReference) validateSetRepoTypeParameters(val *string) error {
 	return nil
 }

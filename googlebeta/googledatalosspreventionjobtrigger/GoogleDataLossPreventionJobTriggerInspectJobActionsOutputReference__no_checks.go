@@ -60,6 +60,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutPublishToStackdriverParameters(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) validatePutPubSubParameters(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub) error {
 	return nil
 }

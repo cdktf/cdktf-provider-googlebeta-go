@@ -64,6 +64,10 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutGcsFuseCsiDriverConfigParameters(value *GoogleContainerClusterAddonsConfigGcsFuseCsiDriverConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterAddonsConfigOutputReference) validatePutGkeBackupAgentConfigParameters(value *GoogleContainerClusterAddonsConfigGkeBackupAgentConfig) error {
 	return nil
 }

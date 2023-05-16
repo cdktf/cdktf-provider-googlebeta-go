@@ -52,6 +52,14 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateReso
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetAllowExitCodesParameters(val *[]*float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetAllowFailureParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudbuildTriggerBuildStepOutputReference) validateSetArgsParameters(val *[]*string) error {
 	return nil
 }

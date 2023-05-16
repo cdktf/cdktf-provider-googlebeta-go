@@ -31,6 +31,9 @@ type GoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DependsOn() *[]*string
+	SetDependsOn(val *[]*string)
+	DependsOnInput() *[]*string
 	Env() GoogleCloudRunV2ServiceTemplateContainersEnvList
 	EnvInput() interface{}
 	// Experimental.
@@ -96,6 +99,7 @@ type GoogleCloudRunV2ServiceTemplateContainersOutputReference interface {
 	PutVolumeMounts(value interface{})
 	ResetArgs()
 	ResetCommand()
+	ResetDependsOn()
 	ResetEnv()
 	ResetLivenessProbe()
 	ResetName()
@@ -184,6 +188,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Cre
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) DependsOnInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOnInput",
 		&returns,
 	)
 	return returns
@@ -477,6 +501,17 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference)SetC
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference)SetDependsOn(val *[]*string) {
+	if err := j.validateSetDependsOnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dependsOn",
 		val,
 	)
 }
@@ -811,6 +846,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetCommand",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) ResetDependsOn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDependsOn",
 		nil, // no parameters
 	)
 }

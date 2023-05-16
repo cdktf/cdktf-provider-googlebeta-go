@@ -88,6 +88,10 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateSetDependsOnParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateSetImageParameters(val *string) error {
 	return nil
 }

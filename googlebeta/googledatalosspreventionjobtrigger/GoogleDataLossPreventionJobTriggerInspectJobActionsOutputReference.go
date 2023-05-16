@@ -37,6 +37,8 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference interfac
 	PublishFindingsToCloudDataCatalogInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog
 	PublishSummaryToCscc() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCsccOutputReference
 	PublishSummaryToCsccInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc
+	PublishToStackdriver() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference
+	PublishToStackdriverInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver
 	PubSub() GoogleDataLossPreventionJobTriggerInspectJobActionsPubSubOutputReference
 	PubSubInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub
 	SaveFindings() GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindingsOutputReference
@@ -77,12 +79,14 @@ type GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference interfac
 	PutJobNotificationEmails(value *GoogleDataLossPreventionJobTriggerInspectJobActionsJobNotificationEmails)
 	PutPublishFindingsToCloudDataCatalog(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishFindingsToCloudDataCatalog)
 	PutPublishSummaryToCscc(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishSummaryToCscc)
+	PutPublishToStackdriver(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver)
 	PutPubSub(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub)
 	PutSaveFindings(value *GoogleDataLossPreventionJobTriggerInspectJobActionsSaveFindings)
 	ResetDeidentify()
 	ResetJobNotificationEmails()
 	ResetPublishFindingsToCloudDataCatalog()
 	ResetPublishSummaryToCscc()
+	ResetPublishToStackdriver()
 	ResetPubSub()
 	ResetSaveFindings()
 	// Produce the Token's value at resolution time.
@@ -225,6 +229,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	_jsii_.Get(
 		j,
 		"publishSummaryToCsccInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishToStackdriver() GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference {
+	var returns GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriverOutputReference
+	_jsii_.Get(
+		j,
+		"publishToStackdriver",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PublishToStackdriverInput() *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver {
+	var returns *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver
+	_jsii_.Get(
+		j,
+		"publishToStackdriverInput",
 		&returns,
 	)
 	return returns
@@ -603,6 +627,17 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPublishToStackdriver(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPublishToStackdriver) {
+	if err := g.validatePutPublishToStackdriverParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPublishToStackdriver",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) PutPubSub(value *GoogleDataLossPreventionJobTriggerInspectJobActionsPubSub) {
 	if err := g.validatePutPubSubParameters(value); err != nil {
 		panic(err)
@@ -653,6 +688,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputRefe
 	_jsii_.InvokeVoid(
 		g,
 		"resetPublishSummaryToCscc",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobActionsOutputReference) ResetPublishToStackdriver() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPublishToStackdriver",
 		nil, // no parameters
 	)
 }

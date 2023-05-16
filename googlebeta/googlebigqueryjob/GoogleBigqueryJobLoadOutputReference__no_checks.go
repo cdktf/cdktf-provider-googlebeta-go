@@ -52,6 +52,10 @@ func (g *jsiiProxy_GoogleBigqueryJobLoadOutputReference) validatePutDestinationT
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryJobLoadOutputReference) validatePutParquetOptionsParameters(value *GoogleBigqueryJobLoadParquetOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryJobLoadOutputReference) validatePutTimePartitioningParameters(value *GoogleBigqueryJobLoadTimePartitioning) error {
 	return nil
 }
