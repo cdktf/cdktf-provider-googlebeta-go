@@ -23,7 +23,7 @@ type GoogleDataprocWorkflowTemplateJobsSparkSqlJob struct {
 	// query_list block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_dataproc_workflow_template#query_list GoogleDataprocWorkflowTemplate#query_list}
-	QueryList *GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryList `field:"optional" json:"queryList" yaml:"queryList"`
+	QueryList *GoogleDataprocWorkflowTemplateJobsSparkSqlJobQueryListStruct `field:"optional" json:"queryList" yaml:"queryList"`
 	// Optional. Mapping of query variable names to values (equivalent to the Spark SQL command: SET `name="value";`).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_dataproc_workflow_template#script_variables GoogleDataprocWorkflowTemplate#script_variables}

@@ -33,6 +33,6 @@ type GoogleDataprocWorkflowTemplateJobsPrestoJob struct {
 	// query_list block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_dataproc_workflow_template#query_list GoogleDataprocWorkflowTemplate#query_list}
-	QueryList *GoogleDataprocWorkflowTemplateJobsPrestoJobQueryList `field:"optional" json:"queryList" yaml:"queryList"`
+	QueryList *GoogleDataprocWorkflowTemplateJobsPrestoJobQueryListStruct `field:"optional" json:"queryList" yaml:"queryList"`
 }
 

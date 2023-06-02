@@ -27,7 +27,7 @@ type GoogleDataprocWorkflowTemplateJobsHiveJob struct {
 	// query_list block.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_dataproc_workflow_template#query_list GoogleDataprocWorkflowTemplate#query_list}
-	QueryList *GoogleDataprocWorkflowTemplateJobsHiveJobQueryList `field:"optional" json:"queryList" yaml:"queryList"`
+	QueryList *GoogleDataprocWorkflowTemplateJobsHiveJobQueryListStruct `field:"optional" json:"queryList" yaml:"queryList"`
 	// Optional. Mapping of query variable names to values (equivalent to the Hive command: `SET name="value";`).
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.67.0/docs/resources/google_dataproc_workflow_template#script_variables GoogleDataprocWorkflowTemplate#script_variables}
