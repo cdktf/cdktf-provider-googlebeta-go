@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteTimeoutsOutputReference) validat
 
 func (j *jsiiProxy_GoogleNetworkServicesTcpRouteTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleNetworkServicesTcpRouteTimeouts:
 		val := val.(*GoogleNetworkServicesTcpRouteTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteTimeoutsOutputReference) validat
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleNetworkServicesTcpRouteTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleNetworkServicesTcpRouteTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

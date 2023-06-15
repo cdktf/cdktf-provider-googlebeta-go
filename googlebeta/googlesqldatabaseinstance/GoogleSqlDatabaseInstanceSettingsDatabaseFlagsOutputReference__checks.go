@@ -165,6 +165,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference
 
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleSqlDatabaseInstanceSettingsDatabaseFlags:
 		val := val.(*GoogleSqlDatabaseInstanceSettingsDatabaseFlags)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsDatabaseFlagsOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleSqlDatabaseInstanceSettingsDatabaseFlags, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleSqlDatabaseInstanceSettingsDatabaseFlags; received %#v (a %T)", val, val)
 		}
 	}
 

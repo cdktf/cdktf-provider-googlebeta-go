@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleDialogflowEntityTypeTimeoutsOutputReference) validateSe
 
 func (j *jsiiProxy_GoogleDialogflowEntityTypeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleDialogflowEntityTypeTimeouts:
 		val := val.(*GoogleDialogflowEntityTypeTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleDialogflowEntityTypeTimeoutsOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleDialogflowEntityTypeTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleDialogflowEntityTypeTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

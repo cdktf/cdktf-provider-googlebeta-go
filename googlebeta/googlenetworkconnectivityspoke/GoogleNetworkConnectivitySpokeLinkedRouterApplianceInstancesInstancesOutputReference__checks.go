@@ -165,6 +165,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesI
 
 func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances:
 		val := val.(*GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesI
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstances; received %#v (a %T)", val, val)
 		}
 	}
 

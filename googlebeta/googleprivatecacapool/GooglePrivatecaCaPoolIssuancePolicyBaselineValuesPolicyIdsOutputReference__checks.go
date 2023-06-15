@@ -165,6 +165,8 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOut
 
 func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds:
 		val := val.(*GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIdsOut
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GooglePrivatecaCaPoolIssuancePolicyBaselineValuesPolicyIds; received %#v (a %T)", val, val)
 		}
 	}
 

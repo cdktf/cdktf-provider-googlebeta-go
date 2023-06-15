@@ -207,6 +207,8 @@ func (j *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesOutputReference) validateS
 
 func (j *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleNetworkServicesGrpcRouteRules:
 		val := val.(*GoogleNetworkServicesGrpcRouteRules)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -218,11 +220,9 @@ func (j *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesOutputReference) validateS
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleNetworkServicesGrpcRouteRules, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleNetworkServicesGrpcRouteRules; received %#v (a %T)", val, val)
 		}
 	}
 

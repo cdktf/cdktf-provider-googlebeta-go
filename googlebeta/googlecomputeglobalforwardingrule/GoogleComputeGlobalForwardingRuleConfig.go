@@ -47,8 +47,8 @@ type GoogleComputeGlobalForwardingRuleConfig struct {
 	// The forwarded traffic must be of a type appropriate to the target object.
 	// For load balancers, see the "Target" column in [Port specifications](https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#ip_address_specifications).
 	// For Private Service Connect forwarding rules that forward traffic to Google APIs, provide the name of a supported Google API bundle:
-	//   'vpc-sc' - [ APIs that support VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/supported-products).
-	//   'all-apis' - [All supported Google APIs](https://cloud.google.com/vpc/docs/private-service-connect#supported-apis).
+	//  'vpc-sc' - [ APIs that support VPC Service Controls](https://cloud.google.com/vpc-service-controls/docs/supported-products).
+	//  'all-apis' - [All supported Google APIs](https://cloud.google.com/vpc/docs/private-service-connect#supported-apis).
 	//
 	//
 	// For Private Service Connect forwarding rules that forward traffic to managed services, the target must be a service attachment.
@@ -172,9 +172,9 @@ type GoogleComputeGlobalForwardingRuleConfig struct {
 	// TargetHttpProxy: 80, 8080
 	// TargetHttpsProxy: 443
 	// TargetTcpProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
-	//                1883, 5222
+	//               1883, 5222
 	// TargetSslProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
-	//                1883, 5222
+	//               1883, 5222
 	// TargetVpnGateway: 500, 4500
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_compute_global_forwarding_rule#port_range GoogleComputeGlobalForwardingRule#port_range}

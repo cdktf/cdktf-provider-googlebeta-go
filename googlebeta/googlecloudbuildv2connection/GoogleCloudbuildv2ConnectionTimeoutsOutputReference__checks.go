@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionTimeoutsOutputReference) validate
 
 func (j *jsiiProxy_GoogleCloudbuildv2ConnectionTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleCloudbuildv2ConnectionTimeouts:
 		val := val.(*GoogleCloudbuildv2ConnectionTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionTimeoutsOutputReference) validate
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleCloudbuildv2ConnectionTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleCloudbuildv2ConnectionTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

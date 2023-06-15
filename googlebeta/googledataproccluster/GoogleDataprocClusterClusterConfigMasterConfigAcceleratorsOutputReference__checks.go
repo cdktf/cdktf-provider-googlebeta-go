@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOut
 
 func (j *jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleDataprocClusterClusterConfigMasterConfigAccelerators:
 		val := val.(*GoogleDataprocClusterClusterConfigMasterConfigAccelerators)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigMasterConfigAcceleratorsOut
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleDataprocClusterClusterConfigMasterConfigAccelerators, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleDataprocClusterClusterConfigMasterConfigAccelerators; received %#v (a %T)", val, val)
 		}
 	}
 

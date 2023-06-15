@@ -176,6 +176,8 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) validateSe
 
 func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleDnsRecordSetRoutingPolicyGeo:
 		val := val.(*GoogleDnsRecordSetRoutingPolicyGeo)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -187,11 +189,9 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyGeoOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleDnsRecordSetRoutingPolicyGeo, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleDnsRecordSetRoutingPolicyGeo; received %#v (a %T)", val, val)
 		}
 	}
 

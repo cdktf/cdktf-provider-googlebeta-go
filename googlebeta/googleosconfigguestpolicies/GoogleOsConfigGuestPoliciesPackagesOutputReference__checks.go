@@ -173,6 +173,8 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference) validateS
 
 func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleOsConfigGuestPoliciesPackages:
 		val := val.(*GoogleOsConfigGuestPoliciesPackages)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackagesOutputReference) validateS
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleOsConfigGuestPoliciesPackages, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleOsConfigGuestPoliciesPackages; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -173,6 +173,8 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetImportsOutputReference
 
 func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetImportsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleDeploymentManagerDeploymentTargetImports:
 		val := val.(*GoogleDeploymentManagerDeploymentTargetImports)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetImportsOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleDeploymentManagerDeploymentTargetImports, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleDeploymentManagerDeploymentTargetImports; received %#v (a %T)", val, val)
 		}
 	}
 

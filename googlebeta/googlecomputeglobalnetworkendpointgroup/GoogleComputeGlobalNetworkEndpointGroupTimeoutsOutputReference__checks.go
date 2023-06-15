@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReferenc
 
 func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleComputeGlobalNetworkEndpointGroupTimeouts:
 		val := val.(*GoogleComputeGlobalNetworkEndpointGroupTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpointGroupTimeoutsOutputReferenc
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleComputeGlobalNetworkEndpointGroupTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleComputeGlobalNetworkEndpointGroupTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateMapEntryTimeoutsOutputRefe
 
 func (j *jsiiProxy_GoogleCertificateManagerCertificateMapEntryTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleCertificateManagerCertificateMapEntryTimeouts:
 		val := val.(*GoogleCertificateManagerCertificateMapEntryTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateMapEntryTimeoutsOutputRefe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleCertificateManagerCertificateMapEntryTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleCertificateManagerCertificateMapEntryTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

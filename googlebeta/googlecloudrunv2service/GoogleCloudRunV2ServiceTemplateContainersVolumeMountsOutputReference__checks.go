@@ -165,6 +165,8 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputRe
 
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleCloudRunV2ServiceTemplateContainersVolumeMounts:
 		val := val.(*GoogleCloudRunV2ServiceTemplateContainersVolumeMounts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersVolumeMountsOutputRe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleCloudRunV2ServiceTemplateContainersVolumeMounts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleCloudRunV2ServiceTemplateContainersVolumeMounts; received %#v (a %T)", val, val)
 		}
 	}
 

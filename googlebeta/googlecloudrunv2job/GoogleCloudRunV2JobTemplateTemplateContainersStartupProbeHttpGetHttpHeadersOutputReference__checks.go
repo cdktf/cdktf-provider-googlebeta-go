@@ -165,6 +165,8 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttp
 
 func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeadersOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeaders:
 		val := val.(*GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeaders)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttp
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeaders, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGetHttpHeaders; received %#v (a %T)", val, val)
 		}
 	}
 

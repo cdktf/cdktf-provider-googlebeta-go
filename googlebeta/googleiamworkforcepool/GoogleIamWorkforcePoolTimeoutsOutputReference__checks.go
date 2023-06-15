@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateSetDel
 
 func (j *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleIamWorkforcePoolTimeouts:
 		val := val.(*GoogleIamWorkforcePoolTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleIamWorkforcePoolTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleIamWorkforcePoolTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

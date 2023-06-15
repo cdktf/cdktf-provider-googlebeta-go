@@ -173,6 +173,8 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingCo
 
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig:
 		val := val.(*GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingCo
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleContainerNodePoolNodeConfigGuestAcceleratorGpuSharingConfig; received %#v (a %T)", val, val)
 		}
 	}
 

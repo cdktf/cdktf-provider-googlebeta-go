@@ -173,6 +173,8 @@ func (j *jsiiProxy_GoogleStorageBucketTimeoutsOutputReference) validateSetCreate
 
 func (j *jsiiProxy_GoogleStorageBucketTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleStorageBucketTimeouts:
 		val := val.(*GoogleStorageBucketTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_GoogleStorageBucketTimeoutsOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleStorageBucketTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleStorageBucketTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

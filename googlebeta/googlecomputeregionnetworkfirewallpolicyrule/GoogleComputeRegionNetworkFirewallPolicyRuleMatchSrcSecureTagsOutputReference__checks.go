@@ -165,6 +165,8 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTag
 
 func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTagsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTags:
 		val := val.(*GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTags)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTag
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTags, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleComputeRegionNetworkFirewallPolicyRuleMatchSrcSecureTags; received %#v (a %T)", val, val)
 		}
 	}
 

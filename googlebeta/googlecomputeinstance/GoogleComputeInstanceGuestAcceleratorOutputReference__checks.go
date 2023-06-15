@@ -173,6 +173,8 @@ func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorOutputReference) validat
 
 func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleComputeInstanceGuestAccelerator:
 		val := val.(*GoogleComputeInstanceGuestAccelerator)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -184,11 +186,9 @@ func (j *jsiiProxy_GoogleComputeInstanceGuestAcceleratorOutputReference) validat
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleComputeInstanceGuestAccelerator, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleComputeInstanceGuestAccelerator; received %#v (a %T)", val, val)
 		}
 	}
 

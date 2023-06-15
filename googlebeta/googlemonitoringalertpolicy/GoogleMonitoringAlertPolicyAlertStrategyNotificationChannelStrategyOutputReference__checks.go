@@ -165,6 +165,8 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelSt
 
 func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategyOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy:
 		val := val.(*GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelSt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleMonitoringAlertPolicyAlertStrategyNotificationChannelStrategy; received %#v (a %T)", val, val)
 		}
 	}
 

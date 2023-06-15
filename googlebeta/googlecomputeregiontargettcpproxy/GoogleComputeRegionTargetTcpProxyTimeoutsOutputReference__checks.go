@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleComputeRegionTargetTcpProxyTimeoutsOutputReference) val
 
 func (j *jsiiProxy_GoogleComputeRegionTargetTcpProxyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleComputeRegionTargetTcpProxyTimeouts:
 		val := val.(*GoogleComputeRegionTargetTcpProxyTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleComputeRegionTargetTcpProxyTimeoutsOutputReference) val
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleComputeRegionTargetTcpProxyTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleComputeRegionTargetTcpProxyTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

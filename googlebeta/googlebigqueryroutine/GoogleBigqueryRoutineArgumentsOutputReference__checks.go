@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleBigqueryRoutineArgumentsOutputReference) validateSetDat
 
 func (j *jsiiProxy_GoogleBigqueryRoutineArgumentsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleBigqueryRoutineArguments:
 		val := val.(*GoogleBigqueryRoutineArguments)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleBigqueryRoutineArgumentsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleBigqueryRoutineArguments, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleBigqueryRoutineArguments; received %#v (a %T)", val, val)
 		}
 	}
 

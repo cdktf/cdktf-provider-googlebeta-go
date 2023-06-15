@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleApigeeEnvKeystoreTimeoutsOutputReference) validateSetDe
 
 func (j *jsiiProxy_GoogleApigeeEnvKeystoreTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleApigeeEnvKeystoreTimeouts:
 		val := val.(*GoogleApigeeEnvKeystoreTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleApigeeEnvKeystoreTimeoutsOutputReference) validateSetIn
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleApigeeEnvKeystoreTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleApigeeEnvKeystoreTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

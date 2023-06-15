@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference) validateSetDel
 
 func (j *jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleNotebooksRuntimeTimeouts:
 		val := val.(*GoogleNotebooksRuntimeTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeTimeoutsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleNotebooksRuntimeTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleNotebooksRuntimeTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

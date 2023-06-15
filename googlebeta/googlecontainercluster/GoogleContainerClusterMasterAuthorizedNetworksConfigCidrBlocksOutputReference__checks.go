@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlock
 
 func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks:
 		val := val.(*GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlock
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleContainerClusterMasterAuthorizedNetworksConfigCidrBlocks; received %#v (a %T)", val, val)
 		}
 	}
 

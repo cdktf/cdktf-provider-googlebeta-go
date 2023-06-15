@@ -2,9 +2,9 @@ package datagoogleiamworkloadidentitypoolprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/datagoogleiamworkloadidentitypoolprovider/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagoogleiamworkloadidentitypoolprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

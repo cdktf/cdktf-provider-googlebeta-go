@@ -278,6 +278,8 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 
 func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleComputeInstanceTemplateDisk:
 		val := val.(*GoogleComputeInstanceTemplateDisk)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -289,11 +291,9 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateDiskOutputReference) validateSet
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleComputeInstanceTemplateDisk, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleComputeInstanceTemplateDisk; received %#v (a %T)", val, val)
 		}
 	}
 

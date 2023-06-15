@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputRefer
 
 func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleApigeeKeystoresAliasesSelfSignedCertTimeouts:
 		val := val.(*GoogleApigeeKeystoresAliasesSelfSignedCertTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputRefer
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleApigeeKeystoresAliasesSelfSignedCertTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleApigeeKeystoresAliasesSelfSignedCertTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

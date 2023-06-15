@@ -165,6 +165,8 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRan
 
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRange:
 		val := val.(*GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRange)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRan
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRange, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRange; received %#v (a %T)", val, val)
 		}
 	}
 

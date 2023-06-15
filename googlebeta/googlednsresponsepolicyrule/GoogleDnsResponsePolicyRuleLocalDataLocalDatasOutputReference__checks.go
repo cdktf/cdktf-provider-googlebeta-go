@@ -165,6 +165,8 @@ func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataLocalDatasOutputReference
 
 func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataLocalDatasOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleDnsResponsePolicyRuleLocalDataLocalDatas:
 		val := val.(*GoogleDnsResponsePolicyRuleLocalDataLocalDatas)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -176,11 +178,9 @@ func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataLocalDatasOutputReference
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleDnsResponsePolicyRuleLocalDataLocalDatas, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleDnsResponsePolicyRuleLocalDataLocalDatas; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateSetFieldPa
 
 func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleFirestoreIndexFields:
 		val := val.(*GoogleFirestoreIndexFields)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateSetInterna
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleFirestoreIndexFields, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleFirestoreIndexFields; received %#v (a %T)", val, val)
 		}
 	}
 

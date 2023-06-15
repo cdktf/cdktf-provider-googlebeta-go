@@ -192,6 +192,8 @@ func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOu
 
 func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleContainerClusterMaintenancePolicyMaintenanceExclusion:
 		val := val.(*GoogleContainerClusterMaintenancePolicyMaintenanceExclusion)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -203,11 +205,9 @@ func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyMaintenanceExclusionOu
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleContainerClusterMaintenancePolicyMaintenanceExclusion, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleContainerClusterMaintenancePolicyMaintenanceExclusion; received %#v (a %T)", val, val)
 		}
 	}
 

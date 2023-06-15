@@ -201,6 +201,8 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) validateSe
 
 func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleLoggingProjectSinkExclusions:
 		val := val.(*GoogleLoggingProjectSinkExclusions)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -212,11 +214,9 @@ func (j *jsiiProxy_GoogleLoggingProjectSinkExclusionsOutputReference) validateSe
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleLoggingProjectSinkExclusions, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleLoggingProjectSinkExclusions; received %#v (a %T)", val, val)
 		}
 	}
 

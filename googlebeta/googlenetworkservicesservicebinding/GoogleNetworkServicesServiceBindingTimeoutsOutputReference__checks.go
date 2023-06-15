@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleNetworkServicesServiceBindingTimeoutsOutputReference) v
 
 func (j *jsiiProxy_GoogleNetworkServicesServiceBindingTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleNetworkServicesServiceBindingTimeouts:
 		val := val.(*GoogleNetworkServicesServiceBindingTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleNetworkServicesServiceBindingTimeoutsOutputReference) v
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleNetworkServicesServiceBindingTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleNetworkServicesServiceBindingTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleComputeUrlMapHostRuleOutputReference) validateSetHostsP
 
 func (j *jsiiProxy_GoogleComputeUrlMapHostRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleComputeUrlMapHostRule:
 		val := val.(*GoogleComputeUrlMapHostRule)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleComputeUrlMapHostRuleOutputReference) validateSetIntern
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleComputeUrlMapHostRule, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleComputeUrlMapHostRule; received %#v (a %T)", val, val)
 		}
 	}
 

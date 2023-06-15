@@ -2,9 +2,9 @@ package googlebigtableinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v7/googlebigtableinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigtableinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

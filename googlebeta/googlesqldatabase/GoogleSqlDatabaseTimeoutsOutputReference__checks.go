@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleSqlDatabaseTimeoutsOutputReference) validateSetDeletePa
 
 func (j *jsiiProxy_GoogleSqlDatabaseTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleSqlDatabaseTimeouts:
 		val := val.(*GoogleSqlDatabaseTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleSqlDatabaseTimeoutsOutputReference) validateSetInternal
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleSqlDatabaseTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleSqlDatabaseTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 

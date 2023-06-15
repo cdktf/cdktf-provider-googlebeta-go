@@ -212,6 +212,8 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputRefere
 
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleContainerNodePoolNodeConfigGuestAccelerator:
 		val := val.(*GoogleContainerNodePoolNodeConfigGuestAccelerator)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -223,11 +225,9 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigGuestAcceleratorOutputRefere
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleContainerNodePoolNodeConfigGuestAccelerator, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleContainerNodePoolNodeConfigGuestAccelerator; received %#v (a %T)", val, val)
 		}
 	}
 

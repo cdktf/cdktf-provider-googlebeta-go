@@ -49,7 +49,7 @@ type GoogleSqlUserConfig struct {
 	// The password for the user.
 	//
 	// Can be updated. For Postgres instances this is a Required field, unless type is set to
-	//              either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
+	//             either CLOUD_IAM_USER or CLOUD_IAM_SERVICE_ACCOUNT.
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_sql_user#password GoogleSqlUser#password}
 	Password *string `field:"optional" json:"password" yaml:"password"`
@@ -70,7 +70,7 @@ type GoogleSqlUserConfig struct {
 	// The user type.
 	//
 	// It determines the method to authenticate the user during login.
-	//              The default is the database's built-in user type. Flags include "BUILT_IN", "CLOUD_IAM_USER", or "CLOUD_IAM_SERVICE_ACCOUNT".
+	//             The default is the database's built-in user type. Flags include "BUILT_IN", "CLOUD_IAM_USER", or "CLOUD_IAM_SERVICE_ACCOUNT".
 	//
 	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.69.1/docs/resources/google_sql_user#type GoogleSqlUser#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`

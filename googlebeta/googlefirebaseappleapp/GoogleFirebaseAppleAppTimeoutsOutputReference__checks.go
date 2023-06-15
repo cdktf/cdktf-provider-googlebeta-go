@@ -181,6 +181,8 @@ func (j *jsiiProxy_GoogleFirebaseAppleAppTimeoutsOutputReference) validateSetDel
 
 func (j *jsiiProxy_GoogleFirebaseAppleAppTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
+	case cdktf.IResolvable:
+		// ok
 	case *GoogleFirebaseAppleAppTimeouts:
 		val := val.(*GoogleFirebaseAppleAppTimeouts)
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
@@ -192,11 +194,9 @@ func (j *jsiiProxy_GoogleFirebaseAppleAppTimeoutsOutputReference) validateSetInt
 		if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 			return err
 		}
-	case cdktf.IResolvable:
-		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *GoogleFirebaseAppleAppTimeouts, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleFirebaseAppleAppTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 
