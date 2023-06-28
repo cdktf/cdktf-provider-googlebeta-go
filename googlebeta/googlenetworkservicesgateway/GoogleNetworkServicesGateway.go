@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_gateway google_network_services_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_gateway google_network_services_gateway}.
 type GoogleNetworkServicesGateway interface {
 	cdktf.TerraformResource
 	Addresses() *[]*string
@@ -699,7 +699,7 @@ func (j *jsiiProxy_GoogleNetworkServicesGateway) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
 func NewGoogleNetworkServicesGateway(scope constructs.Construct, id *string, config *GoogleNetworkServicesGatewayConfig) GoogleNetworkServicesGateway {
 	_init_.Initialize()
 
@@ -717,7 +717,7 @@ func NewGoogleNetworkServicesGateway(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.70.0/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_network_services_gateway google_network_services_gateway} Resource.
 func NewGoogleNetworkServicesGateway_Override(g GoogleNetworkServicesGateway, scope constructs.Construct, id *string, config *GoogleNetworkServicesGatewayConfig) {
 	_init_.Initialize()
 
