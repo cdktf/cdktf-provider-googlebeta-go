@@ -144,6 +144,10 @@ func (j *jsiiProxy_GoogleComputeDisk) validateSetProvisionedIopsParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeDisk) validateSetProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeDisk) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

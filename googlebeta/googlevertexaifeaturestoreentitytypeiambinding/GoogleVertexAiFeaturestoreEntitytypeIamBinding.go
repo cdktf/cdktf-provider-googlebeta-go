@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_binding google_vertex_ai_featurestore_entitytype_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_binding google_vertex_ai_featurestore_entitytype_iam_binding}.
 type GoogleVertexAiFeaturestoreEntitytypeIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -413,7 +413,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeIamBinding) TerraformReso
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_binding google_vertex_ai_featurestore_entitytype_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_binding google_vertex_ai_featurestore_entitytype_iam_binding} Resource.
 func NewGoogleVertexAiFeaturestoreEntitytypeIamBinding(scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreEntitytypeIamBindingConfig) GoogleVertexAiFeaturestoreEntitytypeIamBinding {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewGoogleVertexAiFeaturestoreEntitytypeIamBinding(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.71.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_binding google_vertex_ai_featurestore_entitytype_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.0/docs/resources/google_vertex_ai_featurestore_entitytype_iam_binding google_vertex_ai_featurestore_entitytype_iam_binding} Resource.
 func NewGoogleVertexAiFeaturestoreEntitytypeIamBinding_Override(g GoogleVertexAiFeaturestoreEntitytypeIamBinding, scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreEntitytypeIamBindingConfig) {
 	_init_.Initialize()
 
