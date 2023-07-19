@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -226,6 +226,9 @@ type GoogleBetaProvider interface {
 	FirebaseDatabaseCustomEndpoint() *string
 	SetFirebaseDatabaseCustomEndpoint(val *string)
 	FirebaseDatabaseCustomEndpointInput() *string
+	FirebaseExtensionsCustomEndpoint() *string
+	SetFirebaseExtensionsCustomEndpoint(val *string)
+	FirebaseExtensionsCustomEndpointInput() *string
 	FirebaseHostingCustomEndpoint() *string
 	SetFirebaseHostingCustomEndpoint(val *string)
 	FirebaseHostingCustomEndpointInput() *string
@@ -527,6 +530,7 @@ type GoogleBetaProvider interface {
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaseCustomEndpoint()
 	ResetFirebaseDatabaseCustomEndpoint()
+	ResetFirebaseExtensionsCustomEndpoint()
 	ResetFirebaseHostingCustomEndpoint()
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirebaseStorageCustomEndpoint()
@@ -2035,6 +2039,26 @@ func (j *jsiiProxy_GoogleBetaProvider) FirebaseDatabaseCustomEndpointInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseExtensionsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseExtensionsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) FirebaseExtensionsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"firebaseExtensionsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) FirebaseHostingCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3516,7 +3540,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3534,7 +3558,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.72.1/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4104,6 +4128,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseDatabaseCustomEndpoint(val *str
 	_jsii_.Set(
 		j,
 		"firebaseDatabaseCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetFirebaseExtensionsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"firebaseExtensionsCustomEndpoint",
 		val,
 	)
 }
@@ -5333,6 +5365,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseDatabaseCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFirebaseDatabaseCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetFirebaseExtensionsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFirebaseExtensionsCustomEndpoint",
 		nil, // no parameters
 	)
 }
