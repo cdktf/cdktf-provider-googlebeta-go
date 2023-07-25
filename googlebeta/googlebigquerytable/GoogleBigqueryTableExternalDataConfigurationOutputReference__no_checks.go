@@ -60,6 +60,14 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validatePutJsonOptionsParameters(value *GoogleBigqueryTableExternalDataConfigurationJsonOptions) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validatePutParquetOptionsParameters(value *GoogleBigqueryTableExternalDataConfigurationParquetOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

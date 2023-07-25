@@ -49,6 +49,8 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	IgnoreUnknownValuesInput() interface{}
 	InternalValue() *GoogleBigqueryTableExternalDataConfiguration
 	SetInternalValue(val *GoogleBigqueryTableExternalDataConfiguration)
+	JsonOptions() GoogleBigqueryTableExternalDataConfigurationJsonOptionsOutputReference
+	JsonOptionsInput() *GoogleBigqueryTableExternalDataConfigurationJsonOptions
 	MaxBadRecords() *float64
 	SetMaxBadRecords(val *float64)
 	MaxBadRecordsInput() *float64
@@ -58,6 +60,8 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	ObjectMetadata() *string
 	SetObjectMetadata(val *string)
 	ObjectMetadataInput() *string
+	ParquetOptions() GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference
+	ParquetOptionsInput() *GoogleBigqueryTableExternalDataConfigurationParquetOptions
 	ReferenceFileSchemaUri() *string
 	SetReferenceFileSchemaUri(val *string)
 	ReferenceFileSchemaUriInput() *string
@@ -106,6 +110,8 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	PutCsvOptions(value *GoogleBigqueryTableExternalDataConfigurationCsvOptions)
 	PutGoogleSheetsOptions(value *GoogleBigqueryTableExternalDataConfigurationGoogleSheetsOptions)
 	PutHivePartitioningOptions(value *GoogleBigqueryTableExternalDataConfigurationHivePartitioningOptions)
+	PutJsonOptions(value *GoogleBigqueryTableExternalDataConfigurationJsonOptions)
+	PutParquetOptions(value *GoogleBigqueryTableExternalDataConfigurationParquetOptions)
 	ResetAvroOptions()
 	ResetCompression()
 	ResetConnectionId()
@@ -113,9 +119,11 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	ResetGoogleSheetsOptions()
 	ResetHivePartitioningOptions()
 	ResetIgnoreUnknownValues()
+	ResetJsonOptions()
 	ResetMaxBadRecords()
 	ResetMetadataCacheMode()
 	ResetObjectMetadata()
+	ResetParquetOptions()
 	ResetReferenceFileSchemaUri()
 	ResetSchema()
 	ResetSourceFormat()
@@ -344,6 +352,26 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) JsonOptions() GoogleBigqueryTableExternalDataConfigurationJsonOptionsOutputReference {
+	var returns GoogleBigqueryTableExternalDataConfigurationJsonOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"jsonOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) JsonOptionsInput() *GoogleBigqueryTableExternalDataConfigurationJsonOptions {
+	var returns *GoogleBigqueryTableExternalDataConfigurationJsonOptions
+	_jsii_.Get(
+		j,
+		"jsonOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) MaxBadRecords() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -399,6 +427,26 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	_jsii_.Get(
 		j,
 		"objectMetadataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) ParquetOptions() GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference {
+	var returns GoogleBigqueryTableExternalDataConfigurationParquetOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"parquetOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) ParquetOptionsInput() *GoogleBigqueryTableExternalDataConfigurationParquetOptions {
+	var returns *GoogleBigqueryTableExternalDataConfigurationParquetOptions
+	_jsii_.Get(
+		j,
+		"parquetOptionsInput",
 		&returns,
 	)
 	return returns
@@ -938,6 +986,28 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) PutJsonOptions(value *GoogleBigqueryTableExternalDataConfigurationJsonOptions) {
+	if err := g.validatePutJsonOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putJsonOptions",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) PutParquetOptions(value *GoogleBigqueryTableExternalDataConfigurationParquetOptions) {
+	if err := g.validatePutParquetOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParquetOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) ResetAvroOptions() {
 	_jsii_.InvokeVoid(
 		g,
@@ -994,6 +1064,14 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) ResetJsonOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetJsonOptions",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) ResetMaxBadRecords() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1014,6 +1092,14 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetObjectMetadata",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) ResetParquetOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParquetOptions",
 		nil, // no parameters
 	)
 }

@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_compute_disk google_compute_disk}.
 type GoogleComputeDisk interface {
 	cdktf.TerraformResource
 	AsyncPrimaryDisk() GoogleComputeDiskAsyncPrimaryDiskOutputReference
@@ -36,6 +36,9 @@ type GoogleComputeDisk interface {
 	DescriptionInput() *string
 	DiskEncryptionKey() GoogleComputeDiskDiskEncryptionKeyOutputReference
 	DiskEncryptionKeyInput() *GoogleComputeDiskDiskEncryptionKey
+	EnableConfidentialCompute() interface{}
+	SetEnableConfidentialCompute(val interface{})
+	EnableConfidentialComputeInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -167,6 +170,7 @@ type GoogleComputeDisk interface {
 	ResetAsyncPrimaryDisk()
 	ResetDescription()
 	ResetDiskEncryptionKey()
+	ResetEnableConfidentialCompute()
 	ResetGuestOsFeatures()
 	ResetId()
 	ResetImage()
@@ -320,6 +324,26 @@ func (j *jsiiProxy_GoogleComputeDisk) DiskEncryptionKeyInput() *GoogleComputeDis
 	_jsii_.Get(
 		j,
 		"diskEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) EnableConfidentialCompute() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableConfidentialCompute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeDisk) EnableConfidentialComputeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableConfidentialComputeInput",
 		&returns,
 	)
 	return returns
@@ -936,7 +960,7 @@ func (j *jsiiProxy_GoogleComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_compute_disk google_compute_disk} Resource.
 func NewGoogleComputeDisk(scope constructs.Construct, id *string, config *GoogleComputeDiskConfig) GoogleComputeDisk {
 	_init_.Initialize()
 
@@ -954,7 +978,7 @@ func NewGoogleComputeDisk(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.74.0/docs/resources/google_compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.0/docs/resources/google_compute_disk google_compute_disk} Resource.
 func NewGoogleComputeDisk_Override(g GoogleComputeDisk, scope constructs.Construct, id *string, config *GoogleComputeDiskConfig) {
 	_init_.Initialize()
 
@@ -1002,6 +1026,17 @@ func (j *jsiiProxy_GoogleComputeDisk)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeDisk)SetEnableConfidentialCompute(val interface{}) {
+	if err := j.validateSetEnableConfidentialComputeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableConfidentialCompute",
 		val,
 	)
 }
@@ -1583,6 +1618,14 @@ func (g *jsiiProxy_GoogleComputeDisk) ResetDiskEncryptionKey() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDiskEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeDisk) ResetEnableConfidentialCompute() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableConfidentialCompute",
 		nil, // no parameters
 	)
 }
