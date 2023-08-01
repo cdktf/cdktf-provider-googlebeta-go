@@ -9,11 +9,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
 	AddonsConfigInput() *GoogleContainerClusterAddonsConfig
+	AllowNetAdmin() interface{}
+	SetAllowNetAdmin(val interface{})
+	AllowNetAdminInput() interface{}
 	AuthenticatorGroupsConfig() GoogleContainerClusterAuthenticatorGroupsConfigOutputReference
 	AuthenticatorGroupsConfigInput() *GoogleContainerClusterAuthenticatorGroupsConfig
 	BinaryAuthorization() GoogleContainerClusterBinaryAuthorizationOutputReference
@@ -78,6 +81,9 @@ type GoogleContainerCluster interface {
 	EnableLegacyAbac() interface{}
 	SetEnableLegacyAbac(val interface{})
 	EnableLegacyAbacInput() interface{}
+	EnableMultiNetworking() interface{}
+	SetEnableMultiNetworking(val interface{})
+	EnableMultiNetworkingInput() interface{}
 	EnableShieldedNodes() interface{}
 	SetEnableShieldedNodes(val interface{})
 	EnableShieldedNodesInput() interface{}
@@ -283,6 +289,7 @@ type GoogleContainerCluster interface {
 	PutVerticalPodAutoscaling(value *GoogleContainerClusterVerticalPodAutoscaling)
 	PutWorkloadIdentityConfig(value *GoogleContainerClusterWorkloadIdentityConfig)
 	ResetAddonsConfig()
+	ResetAllowNetAdmin()
 	ResetAuthenticatorGroupsConfig()
 	ResetBinaryAuthorization()
 	ResetClusterAutoscaling()
@@ -302,6 +309,7 @@ type GoogleContainerCluster interface {
 	ResetEnableKubernetesAlpha()
 	ResetEnableL4IlbSubsetting()
 	ResetEnableLegacyAbac()
+	ResetEnableMultiNetworking()
 	ResetEnableShieldedNodes()
 	ResetEnableTpu()
 	ResetGatewayApiConfig()
@@ -378,6 +386,26 @@ func (j *jsiiProxy_GoogleContainerCluster) AddonsConfigInput() *GoogleContainerC
 	_jsii_.Get(
 		j,
 		"addonsConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdmin() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdmin",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdminInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowNetAdminInput",
 		&returns,
 	)
 	return returns
@@ -808,6 +836,26 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableLegacyAbacInput() interface{} {
 	_jsii_.Get(
 		j,
 		"enableLegacyAbacInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableMultiNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableMultiNetworkingInput",
 		&returns,
 	)
 	return returns
@@ -1874,7 +1922,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1892,7 +1940,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.75.1/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -1900,6 +1948,17 @@ func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope construc
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerCluster",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetAllowNetAdmin(val interface{}) {
+	if err := j.validateSetAllowNetAdminParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowNetAdmin",
+		val,
 	)
 }
 
@@ -2039,6 +2098,17 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableLegacyAbac(val interface{}) {
 	_jsii_.Set(
 		j,
 		"enableLegacyAbac",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableMultiNetworking(val interface{}) {
+	if err := j.validateSetEnableMultiNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableMultiNetworking",
 		val,
 	)
 }
@@ -2949,6 +3019,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetAddonsConfig() {
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) ResetAllowNetAdmin() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowNetAdmin",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) ResetAuthenticatorGroupsConfig() {
 	_jsii_.InvokeVoid(
 		g,
@@ -3097,6 +3175,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetEnableLegacyAbac() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableLegacyAbac",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableMultiNetworking() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableMultiNetworking",
 		nil, // no parameters
 	)
 }
