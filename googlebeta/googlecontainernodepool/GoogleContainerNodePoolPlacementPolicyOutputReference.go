@@ -29,6 +29,9 @@ type GoogleContainerNodePoolPlacementPolicyOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleContainerNodePoolPlacementPolicy
 	SetInternalValue(val *GoogleContainerNodePoolPlacementPolicy)
+	PolicyName() *string
+	SetPolicyName(val *string)
+	PolicyNameInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type GoogleContainerNodePoolPlacementPolicyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPolicyName()
 	ResetTpuTopology()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) Intern
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) PolicyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) PolicyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"policyNameInput",
 		&returns,
 	)
 	return returns
@@ -250,6 +274,17 @@ func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference)SetInte
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference)SetPolicyName(val *string) {
+	if err := j.validateSetPolicyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"policyName",
 		val,
 	)
 }
@@ -482,6 +517,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) Interp
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) ResetPolicyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPolicyName",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) ResetTpuTopology() {

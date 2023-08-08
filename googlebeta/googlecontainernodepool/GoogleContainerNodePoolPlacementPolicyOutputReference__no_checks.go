@@ -60,6 +60,10 @@ func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) validateSetPolicyNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolPlacementPolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

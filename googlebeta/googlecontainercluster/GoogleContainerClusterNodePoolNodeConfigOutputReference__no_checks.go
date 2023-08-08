@@ -68,6 +68,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutHostMaintenancePolicyParameters(value *GoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutKubeletConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigKubeletConfig) error {
 	return nil
 }

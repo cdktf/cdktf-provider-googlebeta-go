@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -211,6 +211,9 @@ type GoogleBetaProvider interface {
 	DocumentAiCustomEndpoint() *string
 	SetDocumentAiCustomEndpoint(val *string)
 	DocumentAiCustomEndpointInput() *string
+	DocumentAiWarehouseCustomEndpoint() *string
+	SetDocumentAiWarehouseCustomEndpoint(val *string)
+	DocumentAiWarehouseCustomEndpointInput() *string
 	EssentialContactsCustomEndpoint() *string
 	SetEssentialContactsCustomEndpoint(val *string)
 	EssentialContactsCustomEndpointInput() *string
@@ -528,6 +531,7 @@ type GoogleBetaProvider interface {
 	ResetDialogflowCxCustomEndpoint()
 	ResetDnsCustomEndpoint()
 	ResetDocumentAiCustomEndpoint()
+	ResetDocumentAiWarehouseCustomEndpoint()
 	ResetEssentialContactsCustomEndpoint()
 	ResetEventarcCustomEndpoint()
 	ResetFilestoreCustomEndpoint()
@@ -1938,6 +1942,26 @@ func (j *jsiiProxy_GoogleBetaProvider) DocumentAiCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"documentAiCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) DocumentAiWarehouseCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"documentAiWarehouseCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) DocumentAiWarehouseCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"documentAiWarehouseCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3564,7 +3588,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3582,7 +3606,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4112,6 +4136,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetDocumentAiCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"documentAiCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetDocumentAiWarehouseCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"documentAiWarehouseCustomEndpoint",
 		val,
 	)
 }
@@ -5357,6 +5389,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetDocumentAiCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDocumentAiCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetDocumentAiWarehouseCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDocumentAiWarehouseCustomEndpoint",
 		nil, // no parameters
 	)
 }

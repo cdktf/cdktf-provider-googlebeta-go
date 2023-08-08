@@ -92,6 +92,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutDnsConfigParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutEnableK8SBetaApisParameters(value *GoogleContainerClusterEnableK8SBetaApis) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutGatewayApiConfigParameters(value *GoogleContainerClusterGatewayApiConfig) error {
 	return nil
 }

@@ -48,6 +48,8 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	GuestAcceleratorInput() interface{}
 	Gvnic() GoogleContainerClusterNodeConfigGvnicOutputReference
 	GvnicInput() *GoogleContainerClusterNodeConfigGvnic
+	HostMaintenancePolicy() GoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference
+	HostMaintenancePolicyInput() *GoogleContainerClusterNodeConfigHostMaintenancePolicy
 	ImageType() *string
 	SetImageType(val *string)
 	ImageTypeInput() *string
@@ -148,6 +150,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	PutGcfsConfig(value *GoogleContainerClusterNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *GoogleContainerClusterNodeConfigGvnic)
+	PutHostMaintenancePolicy(value *GoogleContainerClusterNodeConfigHostMaintenancePolicy)
 	PutKubeletConfig(value *GoogleContainerClusterNodeConfigKubeletConfig)
 	PutLinuxNodeConfig(value *GoogleContainerClusterNodeConfigLinuxNodeConfig)
 	PutLocalNvmeSsdBlockConfig(value *GoogleContainerClusterNodeConfigLocalNvmeSsdBlockConfig)
@@ -166,6 +169,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
+	ResetHostMaintenancePolicy()
 	ResetImageType()
 	ResetKubeletConfig()
 	ResetLabels()
@@ -419,6 +423,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) GvnicInput()
 	_jsii_.Get(
 		j,
 		"gvnicInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) HostMaintenancePolicy() GoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference {
+	var returns GoogleContainerClusterNodeConfigHostMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) HostMaintenancePolicyInput() *GoogleContainerClusterNodeConfigHostMaintenancePolicy {
+	var returns *GoogleContainerClusterNodeConfigHostMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"hostMaintenancePolicyInput",
 		&returns,
 	)
 	return returns
@@ -1436,6 +1460,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutGvnic(val
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutHostMaintenancePolicy(value *GoogleContainerClusterNodeConfigHostMaintenancePolicy) {
+	if err := g.validatePutHostMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHostMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) PutKubeletConfig(value *GoogleContainerClusterNodeConfigKubeletConfig) {
 	if err := g.validatePutKubeletConfigParameters(value); err != nil {
 		panic(err)
@@ -1603,6 +1638,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetGvnic()
 	_jsii_.InvokeVoid(
 		g,
 		"resetGvnic",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetHostMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHostMaintenancePolicy",
 		nil, // no parameters
 	)
 }

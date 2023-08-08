@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -72,6 +72,8 @@ type GoogleContainerCluster interface {
 	EnableIntranodeVisibility() interface{}
 	SetEnableIntranodeVisibility(val interface{})
 	EnableIntranodeVisibilityInput() interface{}
+	EnableK8SBetaApis() GoogleContainerClusterEnableK8SBetaApisOutputReference
+	EnableK8SBetaApisInput() *GoogleContainerClusterEnableK8SBetaApis
 	EnableKubernetesAlpha() interface{}
 	SetEnableKubernetesAlpha(val interface{})
 	EnableKubernetesAlphaInput() interface{}
@@ -262,6 +264,7 @@ type GoogleContainerCluster interface {
 	PutDatabaseEncryption(value *GoogleContainerClusterDatabaseEncryption)
 	PutDefaultSnatStatus(value *GoogleContainerClusterDefaultSnatStatus)
 	PutDnsConfig(value *GoogleContainerClusterDnsConfig)
+	PutEnableK8SBetaApis(value *GoogleContainerClusterEnableK8SBetaApis)
 	PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig)
 	PutIdentityServiceConfig(value *GoogleContainerClusterIdentityServiceConfig)
 	PutIpAllocationPolicy(value *GoogleContainerClusterIpAllocationPolicy)
@@ -306,6 +309,7 @@ type GoogleContainerCluster interface {
 	ResetEnableAutopilot()
 	ResetEnableBinaryAuthorization()
 	ResetEnableIntranodeVisibility()
+	ResetEnableK8SBetaApis()
 	ResetEnableKubernetesAlpha()
 	ResetEnableL4IlbSubsetting()
 	ResetEnableLegacyAbac()
@@ -776,6 +780,26 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableIntranodeVisibilityInput() inte
 	_jsii_.Get(
 		j,
 		"enableIntranodeVisibilityInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableK8SBetaApis() GoogleContainerClusterEnableK8SBetaApisOutputReference {
+	var returns GoogleContainerClusterEnableK8SBetaApisOutputReference
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApis",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableK8SBetaApisInput() *GoogleContainerClusterEnableK8SBetaApis {
+	var returns *GoogleContainerClusterEnableK8SBetaApis
+	_jsii_.Get(
+		j,
+		"enableK8SBetaApisInput",
 		&returns,
 	)
 	return returns
@@ -1922,7 +1946,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1940,7 +1964,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.76.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2725,6 +2749,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutDnsConfig(value *GoogleContainerCl
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutEnableK8SBetaApis(value *GoogleContainerClusterEnableK8SBetaApis) {
+	if err := g.validatePutEnableK8SBetaApisParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEnableK8SBetaApis",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutGatewayApiConfig(value *GoogleContainerClusterGatewayApiConfig) {
 	if err := g.validatePutGatewayApiConfigParameters(value); err != nil {
 		panic(err)
@@ -3151,6 +3186,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetEnableIntranodeVisibility() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableIntranodeVisibility",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableK8SBetaApis() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableK8SBetaApis",
 		nil, // no parameters
 	)
 }
