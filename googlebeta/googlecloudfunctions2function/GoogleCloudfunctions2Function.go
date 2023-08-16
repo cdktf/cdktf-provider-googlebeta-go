@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function}.
 type GoogleCloudfunctions2Function interface {
 	cdktf.TerraformResource
 	BuildConfig() GoogleCloudfunctions2FunctionBuildConfigOutputReference
@@ -47,6 +47,9 @@ type GoogleCloudfunctions2Function interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyName() *string
+	SetKmsKeyName(val *string)
+	KmsKeyNameInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -121,6 +124,7 @@ type GoogleCloudfunctions2Function interface {
 	ResetDescription()
 	ResetEventTrigger()
 	ResetId()
+	ResetKmsKeyName()
 	ResetLabels()
 	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -309,6 +313,26 @@ func (j *jsiiProxy_GoogleCloudfunctions2Function) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2Function) KmsKeyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2Function) KmsKeyNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyNameInput",
 		&returns,
 	)
 	return returns
@@ -545,7 +569,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2Function) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewGoogleCloudfunctions2Function(scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionConfig) GoogleCloudfunctions2Function {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewGoogleCloudfunctions2Function(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewGoogleCloudfunctions2Function_Override(g GoogleCloudfunctions2Function, scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionConfig) {
 	_init_.Initialize()
 
@@ -630,6 +654,17 @@ func (j *jsiiProxy_GoogleCloudfunctions2Function)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2Function)SetKmsKeyName(val *string) {
+	if err := j.validateSetKmsKeyNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKeyName",
 		val,
 	)
 }
@@ -1046,6 +1081,14 @@ func (g *jsiiProxy_GoogleCloudfunctions2Function) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2Function) ResetKmsKeyName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKeyName",
 		nil, // no parameters
 	)
 }

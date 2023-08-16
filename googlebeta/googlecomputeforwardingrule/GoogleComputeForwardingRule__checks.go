@@ -347,6 +347,14 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIpProtocolParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIpVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIsMirroringCollectorParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

@@ -112,6 +112,10 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIpProtocolParameters(
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIpVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) validateSetIsMirroringCollectorParameters(val interface{}) error {
 	return nil
 }

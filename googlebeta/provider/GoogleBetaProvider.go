@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -160,6 +160,9 @@ type GoogleBetaProvider interface {
 	ContainerCustomEndpoint() *string
 	SetContainerCustomEndpoint(val *string)
 	ContainerCustomEndpointInput() *string
+	CoreBillingCustomEndpoint() *string
+	SetCoreBillingCustomEndpoint(val *string)
+	CoreBillingCustomEndpointInput() *string
 	Credentials() *string
 	SetCredentials(val *string)
 	CredentialsInput() *string
@@ -514,6 +517,7 @@ type GoogleBetaProvider interface {
 	ResetContainerAwsCustomEndpoint()
 	ResetContainerAzureCustomEndpoint()
 	ResetContainerCustomEndpoint()
+	ResetCoreBillingCustomEndpoint()
 	ResetCredentials()
 	ResetDatabaseMigrationServiceCustomEndpoint()
 	ResetDataCatalogCustomEndpoint()
@@ -1602,6 +1606,26 @@ func (j *jsiiProxy_GoogleBetaProvider) ContainerCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"containerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) CoreBillingCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coreBillingCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) CoreBillingCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"coreBillingCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3588,7 +3612,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3606,7 +3630,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4000,6 +4024,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetContainerCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"containerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetCoreBillingCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"coreBillingCustomEndpoint",
 		val,
 	)
 }
@@ -5253,6 +5285,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetContainerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetContainerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetCoreBillingCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCoreBillingCustomEndpoint",
 		nil, // no parameters
 	)
 }

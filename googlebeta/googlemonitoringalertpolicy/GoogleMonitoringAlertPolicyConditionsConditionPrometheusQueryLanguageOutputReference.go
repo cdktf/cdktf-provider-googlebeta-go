@@ -81,6 +81,7 @@ type GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutput
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAlertRule()
 	ResetDuration()
+	ResetEvaluationInterval()
 	ResetLabels()
 	ResetRuleGroup()
 	// Produce the Token's value at resolution time.
@@ -635,6 +636,14 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQuery
 	_jsii_.InvokeVoid(
 		g,
 		"resetDuration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) ResetEvaluationInterval() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEvaluationInterval",
 		nil, // no parameters
 	)
 }

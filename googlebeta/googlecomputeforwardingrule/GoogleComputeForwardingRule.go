@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule}.
 type GoogleComputeForwardingRule interface {
 	cdktf.TerraformResource
 	AllowGlobalAccess() interface{}
@@ -62,6 +62,9 @@ type GoogleComputeForwardingRule interface {
 	IpProtocol() *string
 	SetIpProtocol(val *string)
 	IpProtocolInput() *string
+	IpVersion() *string
+	SetIpVersion(val *string)
+	IpVersionInput() *string
 	IsMirroringCollector() interface{}
 	SetIsMirroringCollector(val interface{})
 	IsMirroringCollectorInput() interface{}
@@ -173,6 +176,7 @@ type GoogleComputeForwardingRule interface {
 	ResetId()
 	ResetIpAddress()
 	ResetIpProtocol()
+	ResetIpVersion()
 	ResetIsMirroringCollector()
 	ResetLabels()
 	ResetLoadBalancingScheme()
@@ -462,6 +466,26 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) IpProtocolInput() *string {
 	_jsii_.Get(
 		j,
 		"ipProtocolInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule) IpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule) IpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersionInput",
 		&returns,
 	)
 	return returns
@@ -938,7 +962,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewGoogleComputeForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeForwardingRuleConfig) GoogleComputeForwardingRule {
 	_init_.Initialize()
 
@@ -956,7 +980,7 @@ func NewGoogleComputeForwardingRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.77.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewGoogleComputeForwardingRule_Override(g GoogleComputeForwardingRule, scope constructs.Construct, id *string, config *GoogleComputeForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -1089,6 +1113,17 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpProtocol(val *string) {
 	_jsii_.Set(
 		j,
 		"ipProtocol",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule)SetIpVersion(val *string) {
+	if err := j.validateSetIpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipVersion",
 		val,
 	)
 }
@@ -1636,6 +1671,14 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) ResetIpProtocol() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpProtocol",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeForwardingRule) ResetIpVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpVersion",
 		nil, // no parameters
 	)
 }

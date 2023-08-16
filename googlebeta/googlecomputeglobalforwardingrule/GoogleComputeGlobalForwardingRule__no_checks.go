@@ -144,6 +144,10 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetSourceIpRangesP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetSubnetworkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) validateSetTargetParameters(val *string) error {
 	return nil
 }
