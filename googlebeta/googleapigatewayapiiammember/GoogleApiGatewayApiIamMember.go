@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api_iam_member google_api_gateway_api_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_iam_member google_api_gateway_api_iam_member}.
 type GoogleApiGatewayApiIamMember interface {
 	cdktf.TerraformResource
 	Api() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api_iam_member google_api_gateway_api_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_iam_member google_api_gateway_api_iam_member} Resource.
 func NewGoogleApiGatewayApiIamMember(scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamMemberConfig) GoogleApiGatewayApiIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleApiGatewayApiIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_api_gateway_api_iam_member google_api_gateway_api_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_iam_member google_api_gateway_api_iam_member} Resource.
 func NewGoogleApiGatewayApiIamMember_Override(g GoogleApiGatewayApiIamMember, scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamMemberConfig) {
 	_init_.Initialize()
 

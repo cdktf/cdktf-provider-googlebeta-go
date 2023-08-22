@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
 type GoogleDataprocMetastoreService interface {
 	cdktf.TerraformResource
 	ArtifactGcsUri() *string
@@ -89,6 +89,8 @@ type GoogleDataprocMetastoreService interface {
 	ReleaseChannel() *string
 	SetReleaseChannel(val *string)
 	ReleaseChannelInput() *string
+	ScalingConfig() GoogleDataprocMetastoreServiceScalingConfigOutputReference
+	ScalingConfigInput() *GoogleDataprocMetastoreServiceScalingConfig
 	ServiceId() *string
 	SetServiceId(val *string)
 	ServiceIdInput() *string
@@ -138,6 +140,7 @@ type GoogleDataprocMetastoreService interface {
 	PutMaintenanceWindow(value *GoogleDataprocMetastoreServiceMaintenanceWindow)
 	PutMetadataIntegration(value *GoogleDataprocMetastoreServiceMetadataIntegration)
 	PutNetworkConfig(value *GoogleDataprocMetastoreServiceNetworkConfig)
+	PutScalingConfig(value *GoogleDataprocMetastoreServiceScalingConfig)
 	PutTelemetryConfig(value *GoogleDataprocMetastoreServiceTelemetryConfig)
 	PutTimeouts(value *GoogleDataprocMetastoreServiceTimeouts)
 	ResetDatabaseType()
@@ -156,6 +159,7 @@ type GoogleDataprocMetastoreService interface {
 	ResetPort()
 	ResetProject()
 	ResetReleaseChannel()
+	ResetScalingConfig()
 	ResetTelemetryConfig()
 	ResetTier()
 	ResetTimeouts()
@@ -594,6 +598,26 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) ReleaseChannelInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreService) ScalingConfig() GoogleDataprocMetastoreServiceScalingConfigOutputReference {
+	var returns GoogleDataprocMetastoreServiceScalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"scalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) ScalingConfigInput() *GoogleDataprocMetastoreServiceScalingConfig {
+	var returns *GoogleDataprocMetastoreServiceScalingConfig
+	_jsii_.Get(
+		j,
+		"scalingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreService) ServiceId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -735,7 +759,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) GoogleDataprocMetastoreService {
 	_init_.Initialize()
 
@@ -753,7 +777,7 @@ func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService_Override(g GoogleDataprocMetastoreService, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) {
 	_init_.Initialize()
 
@@ -1263,6 +1287,17 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) PutNetworkConfig(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) PutScalingConfig(value *GoogleDataprocMetastoreServiceScalingConfig) {
+	if err := g.validatePutScalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putScalingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreService) PutTelemetryConfig(value *GoogleDataprocMetastoreServiceTelemetryConfig) {
 	if err := g.validatePutTelemetryConfigParameters(value); err != nil {
 		panic(err)
@@ -1393,6 +1428,14 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetReleaseChannel() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetReleaseChannel",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetScalingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScalingConfig",
 		nil, // no parameters
 	)
 }

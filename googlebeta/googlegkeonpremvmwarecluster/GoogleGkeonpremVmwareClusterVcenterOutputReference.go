@@ -36,6 +36,7 @@ type GoogleGkeonpremVmwareClusterVcenterOutputReference interface {
 	InternalValue() *GoogleGkeonpremVmwareClusterVcenter
 	SetInternalValue(val *GoogleGkeonpremVmwareClusterVcenter)
 	ResourcePool() *string
+	StoragePolicyName() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -198,6 +199,16 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) ResourceP
 	_jsii_.Get(
 		j,
 		"resourcePool",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterVcenterOutputReference) StoragePolicyName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePolicyName",
 		&returns,
 	)
 	return returns

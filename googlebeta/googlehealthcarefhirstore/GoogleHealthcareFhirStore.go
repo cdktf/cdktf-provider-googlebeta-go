@@ -9,7 +9,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
 type GoogleHealthcareFhirStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -30,6 +30,9 @@ type GoogleHealthcareFhirStore interface {
 	Dataset() *string
 	SetDataset(val *string)
 	DatasetInput() *string
+	DefaultSearchHandlingStrict() interface{}
+	SetDefaultSearchHandlingStrict(val interface{})
+	DefaultSearchHandlingStrictInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -127,6 +130,7 @@ type GoogleHealthcareFhirStore interface {
 	PutStreamConfigs(value interface{})
 	PutTimeouts(value *GoogleHealthcareFhirStoreTimeouts)
 	ResetComplexDataTypeReferenceParsing()
+	ResetDefaultSearchHandlingStrict()
 	ResetDisableReferentialIntegrity()
 	ResetDisableResourceVersioning()
 	ResetEnableHistoryImport()
@@ -231,6 +235,26 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) DatasetInput() *string {
 	_jsii_.Get(
 		j,
 		"datasetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) DefaultSearchHandlingStrict() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultSearchHandlingStrict",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) DefaultSearchHandlingStrictInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultSearchHandlingStrictInput",
 		&returns,
 	)
 	return returns
@@ -607,7 +631,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) GoogleHealthcareFhirStore {
 	_init_.Initialize()
 
@@ -625,7 +649,7 @@ func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.78.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore_Override(g GoogleHealthcareFhirStore, scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) {
 	_init_.Initialize()
 
@@ -676,6 +700,17 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore)SetDataset(val *string) {
 	_jsii_.Set(
 		j,
 		"dataset",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore)SetDefaultSearchHandlingStrict(val interface{}) {
+	if err := j.validateSetDefaultSearchHandlingStrictParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultSearchHandlingStrict",
 		val,
 	)
 }
@@ -1128,6 +1163,14 @@ func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetComplexDataTypeReferenceParsi
 	_jsii_.InvokeVoid(
 		g,
 		"resetComplexDataTypeReferenceParsing",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStore) ResetDefaultSearchHandlingStrict() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultSearchHandlingStrict",
 		nil, // no parameters
 	)
 }
