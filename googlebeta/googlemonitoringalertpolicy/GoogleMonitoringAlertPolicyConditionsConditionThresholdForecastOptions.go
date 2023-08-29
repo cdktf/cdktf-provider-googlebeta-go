@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlemonitoringalertpolicy
 
 
@@ -9,7 +12,7 @@ type GoogleMonitoringAlertPolicyConditionsConditionThresholdForecastOptions stru
 	// forecasts made for the Configured 'duration',
 	// then the timeseries is considered to be failing.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_monitoring_alert_policy#forecast_horizon GoogleMonitoringAlertPolicy#forecast_horizon}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_monitoring_alert_policy#forecast_horizon GoogleMonitoringAlertPolicy#forecast_horizon}
 	ForecastHorizon *string `field:"required" json:"forecastHorizon" yaml:"forecastHorizon"`
 }
 

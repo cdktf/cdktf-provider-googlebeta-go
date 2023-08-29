@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlebigqueryanalyticshubdataexchange
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebigqueryanalyticshubdataexchange/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebigqueryanalyticshubdataexchange/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
 type GoogleBigqueryAnalyticsHubDataExchange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +524,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) GoogleBigqueryAnalyticsHubDataExchange {
 	_init_.Initialize()
 
@@ -539,7 +542,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange_Override(g GoogleBigqueryAnalyticsHubDataExchange, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) {
 	_init_.Initialize()
 

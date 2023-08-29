@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlegameservicesgameserverconfig
 
 
@@ -13,11 +16,11 @@ type GoogleGameServicesGameServerConfigFleetConfigs struct {
 	// The format of the spec can be found :
 	// 'https://agones.dev/site/docs/reference/fleet/'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_game_services_game_server_config#fleet_spec GoogleGameServicesGameServerConfig#fleet_spec}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_game_services_game_server_config#fleet_spec GoogleGameServicesGameServerConfig#fleet_spec}
 	FleetSpec *string `field:"required" json:"fleetSpec" yaml:"fleetSpec"`
 	// The name of the FleetConfig.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_game_services_game_server_config#name GoogleGameServicesGameServerConfig#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_game_services_game_server_config#name GoogleGameServicesGameServerConfig#name}
 	Name *string `field:"optional" json:"name" yaml:"name"`
 }
 

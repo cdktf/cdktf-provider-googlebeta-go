@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputeregioncommitment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputeregioncommitment/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputeregioncommitment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment google_compute_region_commitment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_region_commitment google_compute_region_commitment}.
 type GoogleComputeRegionCommitment interface {
 	cdktf.TerraformResource
 	AutoRenew() interface{}
@@ -625,7 +628,7 @@ func (j *jsiiProxy_GoogleComputeRegionCommitment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment google_compute_region_commitment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_region_commitment google_compute_region_commitment} Resource.
 func NewGoogleComputeRegionCommitment(scope constructs.Construct, id *string, config *GoogleComputeRegionCommitmentConfig) GoogleComputeRegionCommitment {
 	_init_.Initialize()
 
@@ -643,7 +646,7 @@ func NewGoogleComputeRegionCommitment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_region_commitment google_compute_region_commitment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_region_commitment google_compute_region_commitment} Resource.
 func NewGoogleComputeRegionCommitment_Override(g GoogleComputeRegionCommitment, scope constructs.Construct, id *string, config *GoogleComputeRegionCommitmentConfig) {
 	_init_.Initialize()
 

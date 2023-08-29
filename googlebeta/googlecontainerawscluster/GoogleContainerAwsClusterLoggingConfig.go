@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecontainerawscluster
 
 
 type GoogleContainerAwsClusterLoggingConfig struct {
 	// component_config block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_aws_cluster#component_config GoogleContainerAwsCluster#component_config}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_aws_cluster#component_config GoogleContainerAwsCluster#component_config}
 	ComponentConfig *GoogleContainerAwsClusterLoggingConfigComponentConfig `field:"optional" json:"componentConfig" yaml:"componentConfig"`
 }
 

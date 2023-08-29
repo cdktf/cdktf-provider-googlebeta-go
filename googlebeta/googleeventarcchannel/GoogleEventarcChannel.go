@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleeventarcchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleeventarcchannel/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleeventarcchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_eventarc_channel google_eventarc_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_eventarc_channel google_eventarc_channel}.
 type GoogleEventarcChannel interface {
 	cdktf.TerraformResource
 	ActivationToken() *string
@@ -494,7 +497,7 @@ func (j *jsiiProxy_GoogleEventarcChannel) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_eventarc_channel google_eventarc_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_eventarc_channel google_eventarc_channel} Resource.
 func NewGoogleEventarcChannel(scope constructs.Construct, id *string, config *GoogleEventarcChannelConfig) GoogleEventarcChannel {
 	_init_.Initialize()
 
@@ -512,7 +515,7 @@ func NewGoogleEventarcChannel(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_eventarc_channel google_eventarc_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_eventarc_channel google_eventarc_channel} Resource.
 func NewGoogleEventarcChannel_Override(g GoogleEventarcChannel, scope constructs.Construct, id *string, config *GoogleEventarcChannelConfig) {
 	_init_.Initialize()
 

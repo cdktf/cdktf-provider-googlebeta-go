@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package googlecomputetargetinstance
@@ -73,6 +76,10 @@ func (j *jsiiProxy_GoogleComputeTargetInstanceTimeoutsOutputReference) validateS
 }
 
 func (j *jsiiProxy_GoogleComputeTargetInstanceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeTargetInstanceTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
 	return nil
 }
 

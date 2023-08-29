@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledataprocworkflowtemplate
 
 
 type GoogleDataprocWorkflowTemplateParametersValidationValues struct {
 	// Required. List of allowed values for the parameter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_workflow_template#values GoogleDataprocWorkflowTemplate#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataproc_workflow_template#values GoogleDataprocWorkflowTemplate#values}
 	Values *[]*string `field:"required" json:"values" yaml:"values"`
 }
 

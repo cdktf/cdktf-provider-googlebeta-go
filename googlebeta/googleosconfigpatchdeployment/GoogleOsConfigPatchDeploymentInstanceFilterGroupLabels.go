@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleosconfigpatchdeployment
 
 
 type GoogleOsConfigPatchDeploymentInstanceFilterGroupLabels struct {
 	// Compute Engine instance labels that must be present for a VM instance to be targeted by this filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_os_config_patch_deployment#labels GoogleOsConfigPatchDeployment#labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_os_config_patch_deployment#labels GoogleOsConfigPatchDeployment#labels}
 	Labels *map[string]*string `field:"required" json:"labels" yaml:"labels"`
 }
 

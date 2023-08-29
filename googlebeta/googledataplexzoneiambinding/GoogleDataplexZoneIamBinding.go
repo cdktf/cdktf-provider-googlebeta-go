@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledataplexzoneiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googledataplexzoneiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataplexzoneiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataplex_zone_iam_binding google_dataplex_zone_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_zone_iam_binding google_dataplex_zone_iam_binding}.
 type GoogleDataplexZoneIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +464,7 @@ func (j *jsiiProxy_GoogleDataplexZoneIamBinding) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataplex_zone_iam_binding google_dataplex_zone_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_zone_iam_binding google_dataplex_zone_iam_binding} Resource.
 func NewGoogleDataplexZoneIamBinding(scope constructs.Construct, id *string, config *GoogleDataplexZoneIamBindingConfig) GoogleDataplexZoneIamBinding {
 	_init_.Initialize()
 
@@ -479,7 +482,7 @@ func NewGoogleDataplexZoneIamBinding(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataplex_zone_iam_binding google_dataplex_zone_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_zone_iam_binding google_dataplex_zone_iam_binding} Resource.
 func NewGoogleDataplexZoneIamBinding_Override(g GoogleDataplexZoneIamBinding, scope constructs.Construct, id *string, config *GoogleDataplexZoneIamBindingConfig) {
 	_init_.Initialize()
 

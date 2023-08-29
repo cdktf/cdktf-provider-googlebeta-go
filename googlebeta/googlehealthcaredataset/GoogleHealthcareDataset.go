@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlehealthcaredataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlehealthcaredataset/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlehealthcaredataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dataset google_healthcare_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_dataset google_healthcare_dataset}.
 type GoogleHealthcareDataset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +418,7 @@ func (j *jsiiProxy_GoogleHealthcareDataset) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
 func NewGoogleHealthcareDataset(scope constructs.Construct, id *string, config *GoogleHealthcareDatasetConfig) GoogleHealthcareDataset {
 	_init_.Initialize()
 
@@ -433,7 +436,7 @@ func NewGoogleHealthcareDataset(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_healthcare_dataset google_healthcare_dataset} Resource.
 func NewGoogleHealthcareDataset_Override(g GoogleHealthcareDataset, scope constructs.Construct, id *string, config *GoogleHealthcareDatasetConfig) {
 	_init_.Initialize()
 

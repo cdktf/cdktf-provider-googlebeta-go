@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledatastoreindex
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googledatastoreindex/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledatastoreindex/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastore_index google_datastore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_datastore_index google_datastore_index}.
 type GoogleDatastoreIndex interface {
 	cdktf.TerraformResource
 	Ancestor() *string
@@ -416,7 +419,7 @@ func (j *jsiiProxy_GoogleDatastoreIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastore_index google_datastore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_datastore_index google_datastore_index} Resource.
 func NewGoogleDatastoreIndex(scope constructs.Construct, id *string, config *GoogleDatastoreIndexConfig) GoogleDatastoreIndex {
 	_init_.Initialize()
 
@@ -434,7 +437,7 @@ func NewGoogleDatastoreIndex(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_datastore_index google_datastore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_datastore_index google_datastore_index} Resource.
 func NewGoogleDatastoreIndex_Override(g GoogleDatastoreIndex, scope constructs.Construct, id *string, config *GoogleDatastoreIndexConfig) {
 	_init_.Initialize()
 

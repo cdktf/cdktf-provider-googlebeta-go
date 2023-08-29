@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlekmskeyring
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlekmskeyring/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlekmskeyring/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_key_ring google_kms_key_ring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_kms_key_ring google_kms_key_ring}.
 type GoogleKmsKeyRing interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +383,7 @@ func (j *jsiiProxy_GoogleKmsKeyRing) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_key_ring google_kms_key_ring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_kms_key_ring google_kms_key_ring} Resource.
 func NewGoogleKmsKeyRing(scope constructs.Construct, id *string, config *GoogleKmsKeyRingConfig) GoogleKmsKeyRing {
 	_init_.Initialize()
 
@@ -398,7 +401,7 @@ func NewGoogleKmsKeyRing(scope constructs.Construct, id *string, config *GoogleK
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_key_ring google_kms_key_ring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_kms_key_ring google_kms_key_ring} Resource.
 func NewGoogleKmsKeyRing_Override(g GoogleKmsKeyRing, scope constructs.Construct, id *string, config *GoogleKmsKeyRingConfig) {
 	_init_.Initialize()
 

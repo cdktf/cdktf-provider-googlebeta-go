@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecontaineranalysisoccurrence
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecontaineranalysisoccurrence/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecontaineranalysisoccurrence/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence}.
 type GoogleContainerAnalysisOccurrence interface {
 	cdktf.TerraformResource
 	Attestation() GoogleContainerAnalysisOccurrenceAttestationOutputReference
@@ -471,7 +474,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisOccurrence) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence} Resource.
 func NewGoogleContainerAnalysisOccurrence(scope constructs.Construct, id *string, config *GoogleContainerAnalysisOccurrenceConfig) GoogleContainerAnalysisOccurrence {
 	_init_.Initialize()
 
@@ -489,7 +492,7 @@ func NewGoogleContainerAnalysisOccurrence(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_analysis_occurrence google_container_analysis_occurrence} Resource.
 func NewGoogleContainerAnalysisOccurrence_Override(g GoogleContainerAnalysisOccurrence, scope constructs.Construct, id *string, config *GoogleContainerAnalysisOccurrenceConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputerouter
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputerouter/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputerouter/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_router google_compute_router}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_router google_compute_router}.
 type GoogleComputeRouter interface {
 	cdktf.TerraformResource
 	Bgp() GoogleComputeRouterBgpOutputReference
@@ -498,7 +501,7 @@ func (j *jsiiProxy_GoogleComputeRouter) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_router google_compute_router} Resource.
 func NewGoogleComputeRouter(scope constructs.Construct, id *string, config *GoogleComputeRouterConfig) GoogleComputeRouter {
 	_init_.Initialize()
 
@@ -516,7 +519,7 @@ func NewGoogleComputeRouter(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_router google_compute_router} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_router google_compute_router} Resource.
 func NewGoogleComputeRouter_Override(g GoogleComputeRouter, scope constructs.Construct, id *string, config *GoogleComputeRouterConfig) {
 	_init_.Initialize()
 

@@ -1,14 +1,17 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleprojectorganizationpolicy
 
 
 type GoogleProjectOrganizationPolicyListPolicyAllow struct {
 	// The policy allows or denies all values.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project_organization_policy#all GoogleProjectOrganizationPolicy#all}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_project_organization_policy#all GoogleProjectOrganizationPolicy#all}
 	All interface{} `field:"optional" json:"all" yaml:"all"`
 	// The policy can define specific values that are allowed or denied.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_project_organization_policy#values GoogleProjectOrganizationPolicy#values}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_project_organization_policy#values GoogleProjectOrganizationPolicy#values}
 	Values *[]*string `field:"optional" json:"values" yaml:"values"`
 }
 

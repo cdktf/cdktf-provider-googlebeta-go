@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputeglobalforwardingrule
 
 
 type GoogleComputeGlobalForwardingRuleMetadataFilters struct {
 	// filter_labels block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_global_forwarding_rule#filter_labels GoogleComputeGlobalForwardingRule#filter_labels}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_global_forwarding_rule#filter_labels GoogleComputeGlobalForwardingRule#filter_labels}
 	FilterLabels interface{} `field:"required" json:"filterLabels" yaml:"filterLabels"`
 	// Specifies how individual filterLabel matches within the list of filterLabels contribute towards the overall metadataFilter match.
 	//
@@ -13,7 +16,7 @@ type GoogleComputeGlobalForwardingRuleMetadataFilters struct {
 	// MATCH_ALL - All filterLabels must have matching labels in the
 	// provided metadata. Possible values: ["MATCH_ANY", "MATCH_ALL"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_global_forwarding_rule#filter_match_criteria GoogleComputeGlobalForwardingRule#filter_match_criteria}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_global_forwarding_rule#filter_match_criteria GoogleComputeGlobalForwardingRule#filter_match_criteria}
 	FilterMatchCriteria *string `field:"required" json:"filterMatchCriteria" yaml:"filterMatchCriteria"`
 }
 

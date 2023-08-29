@@ -1,14 +1,17 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledeploymentmanagerdeployment
 
 
 type GoogleDeploymentManagerDeploymentLabels struct {
 	// Key for label.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_deployment_manager_deployment#key GoogleDeploymentManagerDeployment#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_deployment_manager_deployment#key GoogleDeploymentManagerDeployment#key}
 	Key *string `field:"optional" json:"key" yaml:"key"`
 	// Value of label.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_deployment_manager_deployment#value GoogleDeploymentManagerDeployment#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_deployment_manager_deployment#value GoogleDeploymentManagerDeployment#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

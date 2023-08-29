@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleendpointsservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleendpointsservice/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleendpointsservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_endpoints_service google_endpoints_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_endpoints_service google_endpoints_service}.
 type GoogleEndpointsService interface {
 	cdktf.TerraformResource
 	Apis() GoogleEndpointsServiceApisList
@@ -473,7 +476,7 @@ func (j *jsiiProxy_GoogleEndpointsService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_endpoints_service google_endpoints_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_endpoints_service google_endpoints_service} Resource.
 func NewGoogleEndpointsService(scope constructs.Construct, id *string, config *GoogleEndpointsServiceConfig) GoogleEndpointsService {
 	_init_.Initialize()
 
@@ -491,7 +494,7 @@ func NewGoogleEndpointsService(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_endpoints_service google_endpoints_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_endpoints_service google_endpoints_service} Resource.
 func NewGoogleEndpointsService_Override(g GoogleEndpointsService, scope constructs.Construct, id *string, config *GoogleEndpointsServiceConfig) {
 	_init_.Initialize()
 

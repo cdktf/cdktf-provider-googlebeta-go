@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputesnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputesnapshot/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputesnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_snapshot google_compute_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_snapshot google_compute_snapshot}.
 type GoogleComputeSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -625,7 +628,7 @@ func (j *jsiiProxy_GoogleComputeSnapshot) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_snapshot google_compute_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_snapshot google_compute_snapshot} Resource.
 func NewGoogleComputeSnapshot(scope constructs.Construct, id *string, config *GoogleComputeSnapshotConfig) GoogleComputeSnapshot {
 	_init_.Initialize()
 
@@ -643,7 +646,7 @@ func NewGoogleComputeSnapshot(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_snapshot google_compute_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_snapshot google_compute_snapshot} Resource.
 func NewGoogleComputeSnapshot_Override(g GoogleComputeSnapshot, scope constructs.Construct, id *string, config *GoogleComputeSnapshotConfig) {
 	_init_.Initialize()
 

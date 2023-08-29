@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlefolderaccessapprovalsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefolderaccessapprovalsettings/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefolderaccessapprovalsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings}.
 type GoogleFolderAccessApprovalSettings interface {
 	cdktf.TerraformResource
 	ActiveKeyVersion() *string
@@ -448,7 +451,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings} Resource.
 func NewGoogleFolderAccessApprovalSettings(scope constructs.Construct, id *string, config *GoogleFolderAccessApprovalSettingsConfig) GoogleFolderAccessApprovalSettings {
 	_init_.Initialize()
 
@@ -466,7 +469,7 @@ func NewGoogleFolderAccessApprovalSettings(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings} Resource.
 func NewGoogleFolderAccessApprovalSettings_Override(g GoogleFolderAccessApprovalSettings, scope constructs.Construct, id *string, config *GoogleFolderAccessApprovalSettingsConfig) {
 	_init_.Initialize()
 

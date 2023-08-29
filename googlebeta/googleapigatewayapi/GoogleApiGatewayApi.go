@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleapigatewayapi
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigatewayapi/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigatewayapi/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api google_api_gateway_api}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_api_gateway_api google_api_gateway_api}.
 type GoogleApiGatewayApi interface {
 	cdktf.TerraformResource
 	ApiId() *string
@@ -451,7 +454,7 @@ func (j *jsiiProxy_GoogleApiGatewayApi) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api google_api_gateway_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_api_gateway_api google_api_gateway_api} Resource.
 func NewGoogleApiGatewayApi(scope constructs.Construct, id *string, config *GoogleApiGatewayApiConfig) GoogleApiGatewayApi {
 	_init_.Initialize()
 
@@ -469,7 +472,7 @@ func NewGoogleApiGatewayApi(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api google_api_gateway_api} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_api_gateway_api google_api_gateway_api} Resource.
 func NewGoogleApiGatewayApi_Override(g GoogleApiGatewayApi, scope constructs.Construct, id *string, config *GoogleApiGatewayApiConfig) {
 	_init_.Initialize()
 

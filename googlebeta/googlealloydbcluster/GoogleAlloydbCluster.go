@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlealloydbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlealloydbcluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlealloydbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
 type GoogleAlloydbCluster interface {
 	cdktf.TerraformResource
 	AutomatedBackupPolicy() GoogleAlloydbClusterAutomatedBackupPolicyOutputReference
@@ -87,6 +90,10 @@ type GoogleAlloydbCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RestoreBackupSource() GoogleAlloydbClusterRestoreBackupSourceOutputReference
+	RestoreBackupSourceInput() *GoogleAlloydbClusterRestoreBackupSource
+	RestoreContinuousBackupSource() GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference
+	RestoreContinuousBackupSourceInput() *GoogleAlloydbClusterRestoreContinuousBackupSource
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -125,6 +132,8 @@ type GoogleAlloydbCluster interface {
 	PutContinuousBackupConfig(value *GoogleAlloydbClusterContinuousBackupConfig)
 	PutEncryptionConfig(value *GoogleAlloydbClusterEncryptionConfig)
 	PutInitialUser(value *GoogleAlloydbClusterInitialUser)
+	PutRestoreBackupSource(value *GoogleAlloydbClusterRestoreBackupSource)
+	PutRestoreContinuousBackupSource(value *GoogleAlloydbClusterRestoreContinuousBackupSource)
 	PutTimeouts(value *GoogleAlloydbClusterTimeouts)
 	ResetAutomatedBackupPolicy()
 	ResetContinuousBackupConfig()
@@ -137,6 +146,8 @@ type GoogleAlloydbCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRestoreBackupSource()
+	ResetRestoreContinuousBackupSource()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -563,6 +574,46 @@ func (j *jsiiProxy_GoogleAlloydbCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) RestoreBackupSource() GoogleAlloydbClusterRestoreBackupSourceOutputReference {
+	var returns GoogleAlloydbClusterRestoreBackupSourceOutputReference
+	_jsii_.Get(
+		j,
+		"restoreBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) RestoreBackupSourceInput() *GoogleAlloydbClusterRestoreBackupSource {
+	var returns *GoogleAlloydbClusterRestoreBackupSource
+	_jsii_.Get(
+		j,
+		"restoreBackupSourceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) RestoreContinuousBackupSource() GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference {
+	var returns GoogleAlloydbClusterRestoreContinuousBackupSourceOutputReference
+	_jsii_.Get(
+		j,
+		"restoreContinuousBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) RestoreContinuousBackupSourceInput() *GoogleAlloydbClusterRestoreContinuousBackupSource {
+	var returns *GoogleAlloydbClusterRestoreContinuousBackupSource
+	_jsii_.Get(
+		j,
+		"restoreContinuousBackupSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -624,7 +675,7 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) GoogleAlloydbCluster {
 	_init_.Initialize()
 
@@ -642,7 +693,7 @@ func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster_Override(g GoogleAlloydbCluster, scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1108,6 +1159,28 @@ func (g *jsiiProxy_GoogleAlloydbCluster) PutInitialUser(value *GoogleAlloydbClus
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) PutRestoreBackupSource(value *GoogleAlloydbClusterRestoreBackupSource) {
+	if err := g.validatePutRestoreBackupSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRestoreBackupSource",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) PutRestoreContinuousBackupSource(value *GoogleAlloydbClusterRestoreContinuousBackupSource) {
+	if err := g.validatePutRestoreContinuousBackupSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRestoreContinuousBackupSource",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) PutTimeouts(value *GoogleAlloydbClusterTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1187,6 +1260,22 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetRestoreBackupSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRestoreBackupSource",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetRestoreContinuousBackupSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRestoreContinuousBackupSource",
 		nil, // no parameters
 	)
 }

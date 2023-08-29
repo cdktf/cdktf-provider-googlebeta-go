@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package googledataplexdatascan
@@ -41,6 +44,10 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validat
 }
 
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecOutputReference) validatePutPostScanActionsParameters(value *GoogleDataplexDatascanDataQualitySpecPostScanActions) error {
 	return nil
 }
 

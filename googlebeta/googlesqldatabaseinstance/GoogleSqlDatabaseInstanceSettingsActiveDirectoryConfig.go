@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlesqldatabaseinstance
 
 
 type GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig struct {
 	// Domain name of the Active Directory for SQL Server (e.g., mydomain.com).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_database_instance#domain GoogleSqlDatabaseInstance#domain}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_sql_database_instance#domain GoogleSqlDatabaseInstance#domain}
 	Domain *string `field:"required" json:"domain" yaml:"domain"`
 }
 

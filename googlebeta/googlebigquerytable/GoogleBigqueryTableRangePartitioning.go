@@ -1,14 +1,17 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlebigquerytable
 
 
 type GoogleBigqueryTableRangePartitioning struct {
 	// The field used to determine how to create a range-based partition.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_bigquery_table#field GoogleBigqueryTable#field}
 	Field *string `field:"required" json:"field" yaml:"field"`
 	// range block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_bigquery_table#range GoogleBigqueryTable#range}
 	Range *GoogleBigqueryTableRangePartitioningRange `field:"required" json:"range" yaml:"range"`
 }
 

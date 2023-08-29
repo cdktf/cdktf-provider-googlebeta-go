@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlemonitoringgroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlemonitoringgroup/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlemonitoringgroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_monitoring_group google_monitoring_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_monitoring_group google_monitoring_group}.
 type GoogleMonitoringGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -439,7 +442,7 @@ func (j *jsiiProxy_GoogleMonitoringGroup) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_monitoring_group google_monitoring_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_monitoring_group google_monitoring_group} Resource.
 func NewGoogleMonitoringGroup(scope constructs.Construct, id *string, config *GoogleMonitoringGroupConfig) GoogleMonitoringGroup {
 	_init_.Initialize()
 
@@ -457,7 +460,7 @@ func NewGoogleMonitoringGroup(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_monitoring_group google_monitoring_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_monitoring_group google_monitoring_group} Resource.
 func NewGoogleMonitoringGroup_Override(g GoogleMonitoringGroup, scope constructs.Construct, id *string, config *GoogleMonitoringGroupConfig) {
 	_init_.Initialize()
 

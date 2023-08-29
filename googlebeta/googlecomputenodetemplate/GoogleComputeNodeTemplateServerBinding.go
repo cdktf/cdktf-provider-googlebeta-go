@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputenodetemplate
 
 
@@ -13,7 +16,7 @@ type GoogleComputeNodeTemplateServerBinding struct {
 	// additional licenses when maintenance occurs. However, VMs on such
 	// nodes will experience outages while maintenance is applied. Possible values: ["RESTART_NODE_ON_ANY_SERVER", "RESTART_NODE_ON_MINIMAL_SERVERS"]
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_node_template#type GoogleComputeNodeTemplate#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_node_template#type GoogleComputeNodeTemplate#type}
 	Type *string `field:"required" json:"type" yaml:"type"`
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleapigatewayapiconfigiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigatewayapiconfigiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigatewayapiconfigiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member}.
 type GoogleApiGatewayApiConfigIamMember interface {
 	cdktf.TerraformResource
 	Api() *string
@@ -437,7 +440,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigIamMember) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member} Resource.
 func NewGoogleApiGatewayApiConfigIamMember(scope constructs.Construct, id *string, config *GoogleApiGatewayApiConfigIamMemberConfig) GoogleApiGatewayApiConfigIamMember {
 	_init_.Initialize()
 
@@ -455,7 +458,7 @@ func NewGoogleApiGatewayApiConfigIamMember(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_api_gateway_api_config_iam_member google_api_gateway_api_config_iam_member} Resource.
 func NewGoogleApiGatewayApiConfigIamMember_Override(g GoogleApiGatewayApiConfigIamMember, scope constructs.Construct, id *string, config *GoogleApiGatewayApiConfigIamMemberConfig) {
 	_init_.Initialize()
 

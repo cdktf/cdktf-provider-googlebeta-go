@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputemanagedsslcertificate
 
 
@@ -7,7 +10,7 @@ type GoogleComputeManagedSslCertificateManaged struct {
 	// Currently,
 	// there can be up to 100 domains in this list.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_managed_ssl_certificate#domains GoogleComputeManagedSslCertificate#domains}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_managed_ssl_certificate#domains GoogleComputeManagedSslCertificate#domains}
 	Domains *[]*string `field:"required" json:"domains" yaml:"domains"`
 }
 

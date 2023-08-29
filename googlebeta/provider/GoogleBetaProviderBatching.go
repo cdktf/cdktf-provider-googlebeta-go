@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package provider
 
 
 type GoogleBetaProviderBatching struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs#enable_batching GoogleBetaProvider#enable_batching}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs#enable_batching GoogleBetaProvider#enable_batching}.
 	EnableBatching interface{} `field:"optional" json:"enableBatching" yaml:"enableBatching"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs#send_after GoogleBetaProvider#send_after}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs#send_after GoogleBetaProvider#send_after}.
 	SendAfter *string `field:"optional" json:"sendAfter" yaml:"sendAfter"`
 }
 

@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlebinaryauthorizationpolicy
 
 
@@ -8,7 +11,7 @@ type GoogleBinaryAuthorizationPolicyAdmissionWhitelistPatterns struct {
 	// wildcard, but this is allowed only in text after the registry/
 	// part.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_binary_authorization_policy#name_pattern GoogleBinaryAuthorizationPolicy#name_pattern}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_binary_authorization_policy#name_pattern GoogleBinaryAuthorizationPolicy#name_pattern}
 	NamePattern *string `field:"required" json:"namePattern" yaml:"namePattern"`
 }
 

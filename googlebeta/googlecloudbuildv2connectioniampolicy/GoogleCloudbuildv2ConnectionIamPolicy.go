@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecloudbuildv2connectioniampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudbuildv2connectioniampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudbuildv2connectioniampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy}.
 type GoogleCloudbuildv2ConnectionIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +394,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy} Resource.
 func NewGoogleCloudbuildv2ConnectionIamPolicy(scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionIamPolicyConfig) GoogleCloudbuildv2ConnectionIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewGoogleCloudbuildv2ConnectionIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloudbuildv2_connection_iam_policy google_cloudbuildv2_connection_iam_policy} Resource.
 func NewGoogleCloudbuildv2ConnectionIamPolicy_Override(g GoogleCloudbuildv2ConnectionIamPolicy, scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionIamPolicyConfig) {
 	_init_.Initialize()
 

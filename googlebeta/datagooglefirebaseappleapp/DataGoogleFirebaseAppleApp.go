@@ -1,17 +1,21 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglefirebaseappleapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefirebaseappleapp/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglefirebaseappleapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app}.
 type DataGoogleFirebaseAppleApp interface {
 	cdktf.TerraformDataSource
+	ApiKeyId() *string
 	AppId() *string
 	SetAppId(val *string)
 	AppIdInput() *string
@@ -108,6 +112,16 @@ type DataGoogleFirebaseAppleApp interface {
 // The jsii proxy struct for DataGoogleFirebaseAppleApp
 type jsiiProxy_DataGoogleFirebaseAppleApp struct {
 	internal.Type__cdktfTerraformDataSource
+}
+
+func (j *jsiiProxy_DataGoogleFirebaseAppleApp) ApiKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyId",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_DataGoogleFirebaseAppleApp) AppId() *string {
@@ -371,7 +385,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleApp) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source.
 func NewDataGoogleFirebaseAppleApp(scope constructs.Construct, id *string, config *DataGoogleFirebaseAppleAppConfig) DataGoogleFirebaseAppleApp {
 	_init_.Initialize()
 
@@ -389,7 +403,7 @@ func NewDataGoogleFirebaseAppleApp(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_firebase_apple_app google_firebase_apple_app} Data Source.
 func NewDataGoogleFirebaseAppleApp_Override(d DataGoogleFirebaseAppleApp, scope constructs.Construct, id *string, config *DataGoogleFirebaseAppleAppConfig) {
 	_init_.Initialize()
 

@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package googleworkstationsworkstationconfig
@@ -225,6 +228,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisablePublicIpAddressesParameters(val interface{}) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+	switch val.(type) {
+	case *bool:
+		// ok
+	case bool:
+		// ok
+	case cdktf.IResolvable:
+		// ok
+	default:
+		if !_jsii_.IsAnonymousProxy(val) {
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -1,14 +1,17 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlenotebooksenvironment
 
 
 type GoogleNotebooksEnvironmentContainerImage struct {
 	// The path to the container image repository. For example: gcr.io/{project_id}/{imageName}.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_notebooks_environment#repository GoogleNotebooksEnvironment#repository}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_notebooks_environment#repository GoogleNotebooksEnvironment#repository}
 	Repository *string `field:"required" json:"repository" yaml:"repository"`
 	// The tag of the container image. If not specified, this defaults to the latest tag.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_notebooks_environment#tag GoogleNotebooksEnvironment#tag}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_notebooks_environment#tag GoogleNotebooksEnvironment#tag}
 	Tag *string `field:"optional" json:"tag" yaml:"tag"`
 }
 

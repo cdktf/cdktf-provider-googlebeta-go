@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package googlefirebasewebapp
@@ -65,6 +68,10 @@ func validateGoogleFirebaseWebApp_IsTerraformElementParameters(x interface{}) er
 }
 
 func validateGoogleFirebaseWebApp_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirebaseWebApp) validateSetApiKeyIdParameters(val *string) error {
 	return nil
 }
 

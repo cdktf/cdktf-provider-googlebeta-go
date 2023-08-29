@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleloggingbillingaccountsink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleloggingbillingaccountsink/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleloggingbillingaccountsink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink google_logging_billing_account_sink}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_logging_billing_account_sink google_logging_billing_account_sink}.
 type GoogleLoggingBillingAccountSink interface {
 	cdktf.TerraformResource
 	BigqueryOptions() GoogleLoggingBillingAccountSinkBigqueryOptionsOutputReference
@@ -486,7 +489,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountSink) WriterIdentity() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink google_logging_billing_account_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_logging_billing_account_sink google_logging_billing_account_sink} Resource.
 func NewGoogleLoggingBillingAccountSink(scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountSinkConfig) GoogleLoggingBillingAccountSink {
 	_init_.Initialize()
 
@@ -504,7 +507,7 @@ func NewGoogleLoggingBillingAccountSink(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_billing_account_sink google_logging_billing_account_sink} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_logging_billing_account_sink google_logging_billing_account_sink} Resource.
 func NewGoogleLoggingBillingAccountSink_Override(g GoogleLoggingBillingAccountSink, scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountSinkConfig) {
 	_init_.Initialize()
 

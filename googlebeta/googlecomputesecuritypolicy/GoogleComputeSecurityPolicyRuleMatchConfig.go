@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputesecuritypolicy
 
 
@@ -6,7 +9,7 @@ type GoogleComputeSecurityPolicyRuleMatchConfig struct {
 	//
 	// There is a limit of 10 IP ranges per rule. A value of '*' matches all IPs (can be used to override the default behavior).
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_security_policy#src_ip_ranges GoogleComputeSecurityPolicy#src_ip_ranges}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_security_policy#src_ip_ranges GoogleComputeSecurityPolicy#src_ip_ranges}
 	SrcIpRanges *[]*string `field:"required" json:"srcIpRanges" yaml:"srcIpRanges"`
 }
 

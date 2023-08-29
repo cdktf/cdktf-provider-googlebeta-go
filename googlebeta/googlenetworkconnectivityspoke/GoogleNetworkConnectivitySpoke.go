@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlenetworkconnectivityspoke
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworkconnectivityspoke/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkconnectivityspoke/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke}.
 type GoogleNetworkConnectivitySpoke interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -567,7 +570,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewGoogleNetworkConnectivitySpoke(scope constructs.Construct, id *string, config *GoogleNetworkConnectivitySpokeConfig) GoogleNetworkConnectivitySpoke {
 	_init_.Initialize()
 
@@ -585,7 +588,7 @@ func NewGoogleNetworkConnectivitySpoke(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_connectivity_spoke google_network_connectivity_spoke} Resource.
 func NewGoogleNetworkConnectivitySpoke_Override(g GoogleNetworkConnectivitySpoke, scope constructs.Construct, id *string, config *GoogleNetworkConnectivitySpokeConfig) {
 	_init_.Initialize()
 

@@ -1,14 +1,17 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecontaineranalysisnote
 
 
 type GoogleContainerAnalysisNoteRelatedUrl struct {
 	// Specific URL associated with the resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#url GoogleContainerAnalysisNote#url}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_analysis_note#url GoogleContainerAnalysisNote#url}
 	Url *string `field:"required" json:"url" yaml:"url"`
 	// Label to describe usage of the URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_analysis_note#label GoogleContainerAnalysisNote#label}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_analysis_note#label GoogleContainerAnalysisNote#label}
 	Label *string `field:"optional" json:"label" yaml:"label"`
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecloudassetorganizationfeed
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudassetorganizationfeed/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudassetorganizationfeed/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_asset_organization_feed google_cloud_asset_organization_feed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloud_asset_organization_feed google_cloud_asset_organization_feed}.
 type GoogleCloudAssetOrganizationFeed interface {
 	cdktf.TerraformResource
 	AssetNames() *[]*string
@@ -509,7 +512,7 @@ func (j *jsiiProxy_GoogleCloudAssetOrganizationFeed) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_asset_organization_feed google_cloud_asset_organization_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloud_asset_organization_feed google_cloud_asset_organization_feed} Resource.
 func NewGoogleCloudAssetOrganizationFeed(scope constructs.Construct, id *string, config *GoogleCloudAssetOrganizationFeedConfig) GoogleCloudAssetOrganizationFeed {
 	_init_.Initialize()
 
@@ -527,7 +530,7 @@ func NewGoogleCloudAssetOrganizationFeed(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_asset_organization_feed google_cloud_asset_organization_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloud_asset_organization_feed google_cloud_asset_organization_feed} Resource.
 func NewGoogleCloudAssetOrganizationFeed_Override(g GoogleCloudAssetOrganizationFeed, scope constructs.Construct, id *string, config *GoogleCloudAssetOrganizationFeedConfig) {
 	_init_.Initialize()
 

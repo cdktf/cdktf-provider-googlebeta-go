@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecertificatemanagercertificateissuanceconfig
 
 
@@ -7,7 +10,7 @@ type GoogleCertificateManagerCertificateIssuanceConfigCertificateAuthorityConfig
 	// The CA pool string has a relative resource path following the form
 	// "projects/{project}/locations/{location}/caPools/{caPool}".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_certificate_manager_certificate_issuance_config#ca_pool GoogleCertificateManagerCertificateIssuanceConfig#ca_pool}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_certificate_manager_certificate_issuance_config#ca_pool GoogleCertificateManagerCertificateIssuanceConfig#ca_pool}
 	CaPool *string `field:"required" json:"caPool" yaml:"caPool"`
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlefolderorganizationpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefolderorganizationpolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefolderorganizationpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_folder_organization_policy google_folder_organization_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_folder_organization_policy google_folder_organization_policy}.
 type GoogleFolderOrganizationPolicy interface {
 	cdktf.TerraformResource
 	BooleanPolicy() GoogleFolderOrganizationPolicyBooleanPolicyOutputReference
@@ -474,7 +477,7 @@ func (j *jsiiProxy_GoogleFolderOrganizationPolicy) VersionInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource.
 func NewGoogleFolderOrganizationPolicy(scope constructs.Construct, id *string, config *GoogleFolderOrganizationPolicyConfig) GoogleFolderOrganizationPolicy {
 	_init_.Initialize()
 
@@ -492,7 +495,7 @@ func NewGoogleFolderOrganizationPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_folder_organization_policy google_folder_organization_policy} Resource.
 func NewGoogleFolderOrganizationPolicy_Override(g GoogleFolderOrganizationPolicy, scope constructs.Construct, id *string, config *GoogleFolderOrganizationPolicyConfig) {
 	_init_.Initialize()
 

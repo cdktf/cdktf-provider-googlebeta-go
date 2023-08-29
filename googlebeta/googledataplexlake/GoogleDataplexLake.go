@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledataplexlake
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googledataplexlake/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataplexlake/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataplex_lake google_dataplex_lake}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_lake google_dataplex_lake}.
 type GoogleDataplexLake interface {
 	cdktf.TerraformResource
 	AssetStatus() GoogleDataplexLakeAssetStatusList
@@ -553,7 +556,7 @@ func (j *jsiiProxy_GoogleDataplexLake) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource.
 func NewGoogleDataplexLake(scope constructs.Construct, id *string, config *GoogleDataplexLakeConfig) GoogleDataplexLake {
 	_init_.Initialize()
 
@@ -571,7 +574,7 @@ func NewGoogleDataplexLake(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource.
 func NewGoogleDataplexLake_Override(g GoogleDataplexLake, scope constructs.Construct, id *string, config *GoogleDataplexLakeConfig) {
 	_init_.Initialize()
 

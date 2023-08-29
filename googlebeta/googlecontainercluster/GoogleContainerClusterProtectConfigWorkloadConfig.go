@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecontainercluster
 
 
 type GoogleContainerClusterProtectConfigWorkloadConfig struct {
 	// Sets which mode of auditing should be used for the cluster's workloads. Accepted values are DISABLED, BASIC.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_cluster#audit_mode GoogleContainerCluster#audit_mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_cluster#audit_mode GoogleContainerCluster#audit_mode}
 	AuditMode *string `field:"required" json:"auditMode" yaml:"auditMode"`
 }
 

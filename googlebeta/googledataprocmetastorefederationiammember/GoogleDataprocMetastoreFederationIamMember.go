@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledataprocmetastorefederationiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googledataprocmetastorefederationiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataprocmetastorefederationiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation_iam_member google_dataproc_metastore_federation_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataproc_metastore_federation_iam_member google_dataproc_metastore_federation_iam_member}.
 type GoogleDataprocMetastoreFederationIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +441,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation_iam_member google_dataproc_metastore_federation_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataproc_metastore_federation_iam_member google_dataproc_metastore_federation_iam_member} Resource.
 func NewGoogleDataprocMetastoreFederationIamMember(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreFederationIamMemberConfig) GoogleDataprocMetastoreFederationIamMember {
 	_init_.Initialize()
 
@@ -456,7 +459,7 @@ func NewGoogleDataprocMetastoreFederationIamMember(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataproc_metastore_federation_iam_member google_dataproc_metastore_federation_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataproc_metastore_federation_iam_member google_dataproc_metastore_federation_iam_member} Resource.
 func NewGoogleDataprocMetastoreFederationIamMember_Override(g GoogleDataprocMetastoreFederationIamMember, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreFederationIamMemberConfig) {
 	_init_.Initialize()
 

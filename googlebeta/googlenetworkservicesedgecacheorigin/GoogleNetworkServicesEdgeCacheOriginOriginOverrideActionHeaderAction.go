@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlenetworkservicesedgecacheorigin
 
 
 type GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction struct {
 	// request_headers_to_add block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_edge_cache_origin#request_headers_to_add GoogleNetworkServicesEdgeCacheOrigin#request_headers_to_add}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_services_edge_cache_origin#request_headers_to_add GoogleNetworkServicesEdgeCacheOrigin#request_headers_to_add}
 	RequestHeadersToAdd interface{} `field:"optional" json:"requestHeadersToAdd" yaml:"requestHeadersToAdd"`
 }
 

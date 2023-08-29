@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlenetworksecurityservertlspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworksecurityservertlspolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworksecurityservertlspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy}.
 type GoogleNetworkSecurityServerTlsPolicy interface {
 	cdktf.TerraformResource
 	AllowOpen() interface{}
@@ -523,7 +526,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityServerTlsPolicy) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy} Resource.
 func NewGoogleNetworkSecurityServerTlsPolicy(scope constructs.Construct, id *string, config *GoogleNetworkSecurityServerTlsPolicyConfig) GoogleNetworkSecurityServerTlsPolicy {
 	_init_.Initialize()
 
@@ -541,7 +544,7 @@ func NewGoogleNetworkSecurityServerTlsPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_security_server_tls_policy google_network_security_server_tls_policy} Resource.
 func NewGoogleNetworkSecurityServerTlsPolicy_Override(g GoogleNetworkSecurityServerTlsPolicy, scope constructs.Construct, id *string, config *GoogleNetworkSecurityServerTlsPolicyConfig) {
 	_init_.Initialize()
 

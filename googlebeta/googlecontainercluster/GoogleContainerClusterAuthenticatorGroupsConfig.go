@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecontainercluster
 
 
@@ -6,7 +9,7 @@ type GoogleContainerClusterAuthenticatorGroupsConfig struct {
 	//
 	// Group name must be in format gke-security-groups@yourdomain.com.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_cluster#security_group GoogleContainerCluster#security_group}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_cluster#security_group GoogleContainerCluster#security_group}
 	SecurityGroup *string `field:"required" json:"securityGroup" yaml:"securityGroup"`
 }
 

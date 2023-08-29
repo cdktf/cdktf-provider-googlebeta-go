@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlegameservicesgameservercluster
 
 
@@ -12,7 +15,7 @@ type GoogleGameServicesGameServerClusterConnectionInfoGkeClusterReference struct
 	// GameServerCluster resource are used to generate the full name of the
 	// GKE cluster.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_game_services_game_server_cluster#cluster GoogleGameServicesGameServerCluster#cluster}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_game_services_game_server_cluster#cluster GoogleGameServicesGameServerCluster#cluster}
 	Cluster *string `field:"required" json:"cluster" yaml:"cluster"`
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputevpntunnel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputevpntunnel/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputevpntunnel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel}.
 type GoogleComputeVpnTunnel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -782,7 +785,7 @@ func (j *jsiiProxy_GoogleComputeVpnTunnel) VpnGatewayInterfaceInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewGoogleComputeVpnTunnel(scope constructs.Construct, id *string, config *GoogleComputeVpnTunnelConfig) GoogleComputeVpnTunnel {
 	_init_.Initialize()
 
@@ -800,7 +803,7 @@ func NewGoogleComputeVpnTunnel(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_vpn_tunnel google_compute_vpn_tunnel} Resource.
 func NewGoogleComputeVpnTunnel_Override(g GoogleComputeVpnTunnel, scope constructs.Construct, id *string, config *GoogleComputeVpnTunnelConfig) {
 	_init_.Initialize()
 

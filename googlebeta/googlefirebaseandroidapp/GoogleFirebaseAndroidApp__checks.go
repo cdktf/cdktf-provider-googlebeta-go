@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package googlefirebaseandroidapp
@@ -141,6 +144,14 @@ func validateGoogleFirebaseAndroidApp_IsTerraformElementParameters(x interface{}
 func validateGoogleFirebaseAndroidApp_IsTerraformResourceParameters(x interface{}) error {
 	if x == nil {
 		return fmt.Errorf("parameter x is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirebaseAndroidApp) validateSetApiKeyIdParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

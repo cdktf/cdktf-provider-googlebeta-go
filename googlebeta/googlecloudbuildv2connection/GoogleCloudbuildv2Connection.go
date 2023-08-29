@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecloudbuildv2connection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudbuildv2connection/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudbuildv2connection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}.
 type GoogleCloudbuildv2Connection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -555,7 +558,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionConfig) GoogleCloudbuildv2Connection {
 	_init_.Initialize()
 
@@ -573,7 +576,7 @@ func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewGoogleCloudbuildv2Connection_Override(g GoogleCloudbuildv2Connection, scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlekmscryptokey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlekmscryptokey/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlekmscryptokey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}.
 type GoogleKmsCryptoKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -524,7 +527,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) VersionTemplateInput() *GoogleKmsCryptoKe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
 func NewGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyConfig) GoogleKmsCryptoKey {
 	_init_.Initialize()
 
@@ -542,7 +545,7 @@ func NewGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
 func NewGoogleKmsCryptoKey_Override(g GoogleKmsCryptoKey, scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyConfig) {
 	_init_.Initialize()
 

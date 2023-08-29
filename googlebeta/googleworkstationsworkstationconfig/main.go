@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleworkstationsworkstationconfig
 
 import (
@@ -385,6 +388,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "disablePublicIpAddresses", GoGetter: "DisablePublicIpAddresses"},
 			_jsii_.MemberProperty{JsiiProperty: "disablePublicIpAddressesInput", GoGetter: "DisablePublicIpAddressesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "enableNestedVirtualization", GoGetter: "EnableNestedVirtualization"},
+			_jsii_.MemberProperty{JsiiProperty: "enableNestedVirtualizationInput", GoGetter: "EnableNestedVirtualizationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
@@ -409,6 +414,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetBootDiskSizeGb", GoMethod: "ResetBootDiskSizeGb"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfidentialInstanceConfig", GoMethod: "ResetConfidentialInstanceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisablePublicIpAddresses", GoMethod: "ResetDisablePublicIpAddresses"},
+			_jsii_.MemberMethod{JsiiMethod: "resetEnableNestedVirtualization", GoMethod: "ResetEnableNestedVirtualization"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMachineType", GoMethod: "ResetMachineType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPoolSize", GoMethod: "ResetPoolSize"},
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccount", GoMethod: "ResetServiceAccount"},

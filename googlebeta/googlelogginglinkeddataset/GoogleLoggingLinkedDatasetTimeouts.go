@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlelogginglinkeddataset
 
 
 type GoogleLoggingLinkedDatasetTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset#create GoogleLoggingLinkedDataset#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_logging_linked_dataset#create GoogleLoggingLinkedDataset#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_logging_linked_dataset#delete GoogleLoggingLinkedDataset#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_logging_linked_dataset#delete GoogleLoggingLinkedDataset#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
 }
 

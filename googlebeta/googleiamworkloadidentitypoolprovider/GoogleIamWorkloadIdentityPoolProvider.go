@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleiamworkloadidentitypoolprovider
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleiamworkloadidentitypoolprovider/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleiamworkloadidentitypoolprovider/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
 type GoogleIamWorkloadIdentityPoolProvider interface {
 	cdktf.TerraformResource
 	AttributeCondition() *string
@@ -570,7 +573,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) WorkloadIdentityPoolPr
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewGoogleIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolProviderConfig) GoogleIamWorkloadIdentityPoolProvider {
 	_init_.Initialize()
 
@@ -588,7 +591,7 @@ func NewGoogleIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewGoogleIamWorkloadIdentityPoolProvider_Override(g GoogleIamWorkloadIdentityPoolProvider, scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolProviderConfig) {
 	_init_.Initialize()
 

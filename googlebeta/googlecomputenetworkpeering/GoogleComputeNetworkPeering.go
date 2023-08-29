@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputenetworkpeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputenetworkpeering/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputenetworkpeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_peering google_compute_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_network_peering google_compute_network_peering}.
 type GoogleComputeNetworkPeering interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +524,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_peering google_compute_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_network_peering google_compute_network_peering} Resource.
 func NewGoogleComputeNetworkPeering(scope constructs.Construct, id *string, config *GoogleComputeNetworkPeeringConfig) GoogleComputeNetworkPeering {
 	_init_.Initialize()
 
@@ -539,7 +542,7 @@ func NewGoogleComputeNetworkPeering(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_peering google_compute_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_network_peering google_compute_network_peering} Resource.
 func NewGoogleComputeNetworkPeering_Override(g GoogleComputeNetworkPeering, scope constructs.Construct, id *string, config *GoogleComputeNetworkPeeringConfig) {
 	_init_.Initialize()
 

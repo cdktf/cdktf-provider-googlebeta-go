@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlebeyondcorpappgateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebeyondcorpappgateway/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebeyondcorpappgateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_gateway google_beyondcorp_app_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_beyondcorp_app_gateway google_beyondcorp_app_gateway}.
 type GoogleBeyondcorpAppGateway interface {
 	cdktf.TerraformResource
 	AllocatedConnections() GoogleBeyondcorpAppGatewayAllocatedConnectionsList
@@ -510,7 +513,7 @@ func (j *jsiiProxy_GoogleBeyondcorpAppGateway) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
 func NewGoogleBeyondcorpAppGateway(scope constructs.Construct, id *string, config *GoogleBeyondcorpAppGatewayConfig) GoogleBeyondcorpAppGateway {
 	_init_.Initialize()
 
@@ -528,7 +531,7 @@ func NewGoogleBeyondcorpAppGateway(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_beyondcorp_app_gateway google_beyondcorp_app_gateway} Resource.
 func NewGoogleBeyondcorpAppGateway_Override(g GoogleBeyondcorpAppGateway, scope constructs.Construct, id *string, config *GoogleBeyondcorpAppGatewayConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlenetworkservicestcproute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlenetworkservicestcproute/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkservicestcproute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route}.
 type GoogleNetworkServicesTcpRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +512,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRoute) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route} Resource.
 func NewGoogleNetworkServicesTcpRoute(scope constructs.Construct, id *string, config *GoogleNetworkServicesTcpRouteConfig) GoogleNetworkServicesTcpRoute {
 	_init_.Initialize()
 
@@ -527,7 +530,7 @@ func NewGoogleNetworkServicesTcpRoute(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_services_tcp_route google_network_services_tcp_route} Resource.
 func NewGoogleNetworkServicesTcpRoute_Override(g GoogleNetworkServicesTcpRoute, scope constructs.Construct, id *string, config *GoogleNetworkServicesTcpRouteConfig) {
 	_init_.Initialize()
 

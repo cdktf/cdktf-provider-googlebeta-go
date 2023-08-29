@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledialogflowcxpage
 
 
 type GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessages struct {
 	// text block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_page#text GoogleDialogflowCxPage#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dialogflow_cx_page#text GoogleDialogflowCxPage#text}
 	Text *GoogleDialogflowCxPageFormParametersFillBehaviorInitialPromptFulfillmentMessagesText `field:"optional" json:"text" yaml:"text"`
 }
 

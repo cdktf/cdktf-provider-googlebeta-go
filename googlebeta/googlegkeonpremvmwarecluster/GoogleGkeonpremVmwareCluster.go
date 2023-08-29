@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlegkeonpremvmwarecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlegkeonpremvmwarecluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkeonpremvmwarecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
 type GoogleGkeonpremVmwareCluster interface {
 	cdktf.TerraformResource
 	AdminClusterMembership() *string
@@ -856,7 +859,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) VmTrackingEnabledInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGoogleGkeonpremVmwareCluster(scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareClusterConfig) GoogleGkeonpremVmwareCluster {
 	_init_.Initialize()
 
@@ -874,7 +877,7 @@ func NewGoogleGkeonpremVmwareCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGoogleGkeonpremVmwareCluster_Override(g GoogleGkeonpremVmwareCluster, scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareClusterConfig) {
 	_init_.Initialize()
 

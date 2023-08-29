@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglevmwareenginecluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglevmwareenginecluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglevmwareenginecluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vmwareengine_cluster google_vmwareengine_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_vmwareengine_cluster google_vmwareengine_cluster}.
 type DataGoogleVmwareengineCluster interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -348,7 +351,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vmwareengine_cluster google_vmwareengine_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_vmwareengine_cluster google_vmwareengine_cluster} Data Source.
 func NewDataGoogleVmwareengineCluster(scope constructs.Construct, id *string, config *DataGoogleVmwareengineClusterConfig) DataGoogleVmwareengineCluster {
 	_init_.Initialize()
 
@@ -366,7 +369,7 @@ func NewDataGoogleVmwareengineCluster(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_vmwareengine_cluster google_vmwareengine_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_vmwareengine_cluster google_vmwareengine_cluster} Data Source.
 func NewDataGoogleVmwareengineCluster_Override(d DataGoogleVmwareengineCluster, scope constructs.Construct, id *string, config *DataGoogleVmwareengineClusterConfig) {
 	_init_.Initialize()
 

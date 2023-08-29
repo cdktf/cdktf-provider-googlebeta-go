@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputetargetpool
 
 import (
@@ -64,8 +67,11 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRegion", GoMethod: "ResetRegion"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSecurityPolicy", GoMethod: "ResetSecurityPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSessionAffinity", GoMethod: "ResetSessionAffinity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
+			_jsii_.MemberProperty{JsiiProperty: "securityPolicy", GoGetter: "SecurityPolicy"},
+			_jsii_.MemberProperty{JsiiProperty: "securityPolicyInput", GoGetter: "SecurityPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "selfLink", GoGetter: "SelfLink"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionAffinity", GoGetter: "SessionAffinity"},
 			_jsii_.MemberProperty{JsiiProperty: "sessionAffinityInput", GoGetter: "SessionAffinityInput"},

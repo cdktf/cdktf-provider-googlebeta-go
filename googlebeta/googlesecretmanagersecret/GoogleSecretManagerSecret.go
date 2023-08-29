@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlesecretmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesecretmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}.
 type GoogleSecretManagerSecret interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -570,7 +573,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) VersionAliasesInput() *map[string]
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
 func NewGoogleSecretManagerSecret(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretConfig) GoogleSecretManagerSecret {
 	_init_.Initialize()
 
@@ -588,7 +591,7 @@ func NewGoogleSecretManagerSecret(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
 func NewGoogleSecretManagerSecret_Override(g GoogleSecretManagerSecret, scope constructs.Construct, id *string, config *GoogleSecretManagerSecretConfig) {
 	_init_.Initialize()
 

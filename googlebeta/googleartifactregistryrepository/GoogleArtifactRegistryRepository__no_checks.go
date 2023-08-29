@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package googleartifactregistryrepository
@@ -52,6 +55,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutCleanupPoliciesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepository) validatePutDockerConfigParameters(value *GoogleArtifactRegistryRepositoryDockerConfig) error {
 	return nil
 }
@@ -81,6 +88,10 @@ func validateGoogleArtifactRegistryRepository_IsTerraformElementParameters(x int
 }
 
 func validateGoogleArtifactRegistryRepository_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) validateSetCleanupPolicyDryRunParameters(val interface{}) error {
 	return nil
 }
 

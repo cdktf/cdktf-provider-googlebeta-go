@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build !no_runtime_type_checking
 
 package googledataplexdatascan
@@ -259,6 +262,14 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetDimensionParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -306,6 +317,14 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) va
 		if !_jsii_.IsAnonymousProxy(val) {
 			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleDataplexDatascanDataQualitySpecRules; received %#v (a %T)", val, val)
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesOutputReference) validateSetNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

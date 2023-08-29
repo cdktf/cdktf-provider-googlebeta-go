@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package googleworkstationsworkstationconfig
@@ -73,6 +76,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetDisablePublicIpAddressesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) validateSetEnableNestedVirtualizationParameters(val interface{}) error {
 	return nil
 }
 

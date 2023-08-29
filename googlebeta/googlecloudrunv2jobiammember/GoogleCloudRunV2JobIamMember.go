@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecloudrunv2jobiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecloudrunv2jobiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudrunv2jobiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member}.
 type GoogleCloudRunV2JobIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +441,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
 func NewGoogleCloudRunV2JobIamMember(scope constructs.Construct, id *string, config *GoogleCloudRunV2JobIamMemberConfig) GoogleCloudRunV2JobIamMember {
 	_init_.Initialize()
 
@@ -456,7 +459,7 @@ func NewGoogleCloudRunV2JobIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloud_run_v2_job_iam_member google_cloud_run_v2_job_iam_member} Resource.
 func NewGoogleCloudRunV2JobIamMember_Override(g GoogleCloudRunV2JobIamMember, scope constructs.Construct, id *string, config *GoogleCloudRunV2JobIamMemberConfig) {
 	_init_.Initialize()
 

@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledialogflowcxflow
 
 
 type GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentMessagesText struct {
 	// A collection of text responses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dialogflow_cx_flow#text GoogleDialogflowCxFlow#text}
 	Text *[]*string `field:"optional" json:"text" yaml:"text"`
 }
 

@@ -1,17 +1,23 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlefirebasewebapp
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefirebasewebapp/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefirebasewebapp/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app google_firebase_web_app}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app google_firebase_web_app}.
 type GoogleFirebaseWebApp interface {
 	cdktf.TerraformResource
+	ApiKeyId() *string
+	SetApiKeyId(val *string)
+	ApiKeyIdInput() *string
 	AppId() *string
 	AppUrls() *[]*string
 	// Experimental.
@@ -101,6 +107,7 @@ type GoogleFirebaseWebApp interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleFirebaseWebAppTimeouts)
+	ResetApiKeyId()
 	ResetDeletionPolicy()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -121,6 +128,26 @@ type GoogleFirebaseWebApp interface {
 // The jsii proxy struct for GoogleFirebaseWebApp
 type jsiiProxy_GoogleFirebaseWebApp struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleFirebaseWebApp) ApiKeyId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseWebApp) ApiKeyIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiKeyIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleFirebaseWebApp) AppId() *string {
@@ -414,7 +441,7 @@ func (j *jsiiProxy_GoogleFirebaseWebApp) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app google_firebase_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app google_firebase_web_app} Resource.
 func NewGoogleFirebaseWebApp(scope constructs.Construct, id *string, config *GoogleFirebaseWebAppConfig) GoogleFirebaseWebApp {
 	_init_.Initialize()
 
@@ -432,7 +459,7 @@ func NewGoogleFirebaseWebApp(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_firebase_web_app google_firebase_web_app} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_firebase_web_app google_firebase_web_app} Resource.
 func NewGoogleFirebaseWebApp_Override(g GoogleFirebaseWebApp, scope constructs.Construct, id *string, config *GoogleFirebaseWebAppConfig) {
 	_init_.Initialize()
 
@@ -440,6 +467,17 @@ func NewGoogleFirebaseWebApp_Override(g GoogleFirebaseWebApp, scope constructs.C
 		"@cdktf/provider-google-beta.googleFirebaseWebApp.GoogleFirebaseWebApp",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseWebApp)SetApiKeyId(val *string) {
+	if err := j.validateSetApiKeyIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"apiKeyId",
+		val,
 	)
 }
 
@@ -829,6 +867,14 @@ func (g *jsiiProxy_GoogleFirebaseWebApp) PutTimeouts(value *GoogleFirebaseWebApp
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseWebApp) ResetApiKeyId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApiKeyId",
+		nil, // no parameters
 	)
 }
 

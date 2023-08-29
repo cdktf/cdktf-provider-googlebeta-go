@@ -1,19 +1,27 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleartifactregistryrepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleartifactregistryrepository/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleartifactregistryrepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository}.
 type GoogleArtifactRegistryRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CleanupPolicies() GoogleArtifactRegistryRepositoryCleanupPoliciesList
+	CleanupPoliciesInput() interface{}
+	CleanupPolicyDryRun() interface{}
+	SetCleanupPolicyDryRun(val interface{})
+	CleanupPolicyDryRunInput() interface{}
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -123,11 +131,14 @@ type GoogleArtifactRegistryRepository interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCleanupPolicies(value interface{})
 	PutDockerConfig(value *GoogleArtifactRegistryRepositoryDockerConfig)
 	PutMavenConfig(value *GoogleArtifactRegistryRepositoryMavenConfig)
 	PutRemoteRepositoryConfig(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfig)
 	PutTimeouts(value *GoogleArtifactRegistryRepositoryTimeouts)
 	PutVirtualRepositoryConfig(value *GoogleArtifactRegistryRepositoryVirtualRepositoryConfig)
+	ResetCleanupPolicies()
+	ResetCleanupPolicyDryRun()
 	ResetDescription()
 	ResetDockerConfig()
 	ResetId()
@@ -163,6 +174,46 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) CdktfStack() cdktf.Terrafor
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) CleanupPolicies() GoogleArtifactRegistryRepositoryCleanupPoliciesList {
+	var returns GoogleArtifactRegistryRepositoryCleanupPoliciesList
+	_jsii_.Get(
+		j,
+		"cleanupPolicies",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) CleanupPoliciesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cleanupPoliciesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) CleanupPolicyDryRun() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cleanupPolicyDryRun",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository) CleanupPolicyDryRunInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cleanupPolicyDryRunInput",
 		&returns,
 	)
 	return returns
@@ -629,7 +680,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepository) VirtualRepositoryConfigInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository} Resource.
 func NewGoogleArtifactRegistryRepository(scope constructs.Construct, id *string, config *GoogleArtifactRegistryRepositoryConfig) GoogleArtifactRegistryRepository {
 	_init_.Initialize()
 
@@ -647,7 +698,7 @@ func NewGoogleArtifactRegistryRepository(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_artifact_registry_repository google_artifact_registry_repository} Resource.
 func NewGoogleArtifactRegistryRepository_Override(g GoogleArtifactRegistryRepository, scope constructs.Construct, id *string, config *GoogleArtifactRegistryRepositoryConfig) {
 	_init_.Initialize()
 
@@ -655,6 +706,17 @@ func NewGoogleArtifactRegistryRepository_Override(g GoogleArtifactRegistryReposi
 		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepository",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepository)SetCleanupPolicyDryRun(val interface{}) {
+	if err := j.validateSetCleanupPolicyDryRunParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cleanupPolicyDryRun",
+		val,
 	)
 }
 
@@ -1091,6 +1153,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) OverrideLogicalId(newLogica
 	)
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutCleanupPolicies(value interface{}) {
+	if err := g.validatePutCleanupPoliciesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCleanupPolicies",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutDockerConfig(value *GoogleArtifactRegistryRepositoryDockerConfig) {
 	if err := g.validatePutDockerConfigParameters(value); err != nil {
 		panic(err)
@@ -1143,6 +1216,22 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepository) PutVirtualRepositoryConfig(
 		g,
 		"putVirtualRepositoryConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetCleanupPolicies() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCleanupPolicies",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepository) ResetCleanupPolicyDryRun() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCleanupPolicyDryRun",
+		nil, // no parameters
 	)
 }
 

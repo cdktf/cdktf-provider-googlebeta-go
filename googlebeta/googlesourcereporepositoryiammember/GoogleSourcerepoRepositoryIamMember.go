@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlesourcereporepositoryiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesourcereporepositoryiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesourcereporepositoryiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member}.
 type GoogleSourcerepoRepositoryIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +417,7 @@ func (j *jsiiProxy_GoogleSourcerepoRepositoryIamMember) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member} Resource.
 func NewGoogleSourcerepoRepositoryIamMember(scope constructs.Construct, id *string, config *GoogleSourcerepoRepositoryIamMemberConfig) GoogleSourcerepoRepositoryIamMember {
 	_init_.Initialize()
 
@@ -432,7 +435,7 @@ func NewGoogleSourcerepoRepositoryIamMember(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_sourcerepo_repository_iam_member google_sourcerepo_repository_iam_member} Resource.
 func NewGoogleSourcerepoRepositoryIamMember_Override(g GoogleSourcerepoRepositoryIamMember, scope constructs.Construct, id *string, config *GoogleSourcerepoRepositoryIamMemberConfig) {
 	_init_.Initialize()
 

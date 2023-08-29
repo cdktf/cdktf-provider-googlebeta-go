@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlesqldatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlesqldatabase/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesqldatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_database google_sql_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_sql_database google_sql_database}.
 type GoogleSqlDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +466,7 @@ func (j *jsiiProxy_GoogleSqlDatabase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_database google_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_sql_database google_sql_database} Resource.
 func NewGoogleSqlDatabase(scope constructs.Construct, id *string, config *GoogleSqlDatabaseConfig) GoogleSqlDatabase {
 	_init_.Initialize()
 
@@ -481,7 +484,7 @@ func NewGoogleSqlDatabase(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_sql_database google_sql_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_sql_database google_sql_database} Resource.
 func NewGoogleSqlDatabase_Override(g GoogleSqlDatabase, scope constructs.Construct, id *string, config *GoogleSqlDatabaseConfig) {
 	_init_.Initialize()
 

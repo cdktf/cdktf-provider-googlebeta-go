@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputenetworkedgesecurityservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlecomputenetworkedgesecurityservice/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputenetworkedgesecurityservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service}.
 type GoogleComputeNetworkEdgeSecurityService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +487,7 @@ func (j *jsiiProxy_GoogleComputeNetworkEdgeSecurityService) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service} Resource.
 func NewGoogleComputeNetworkEdgeSecurityService(scope constructs.Construct, id *string, config *GoogleComputeNetworkEdgeSecurityServiceConfig) GoogleComputeNetworkEdgeSecurityService {
 	_init_.Initialize()
 
@@ -502,7 +505,7 @@ func NewGoogleComputeNetworkEdgeSecurityService(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_network_edge_security_service google_compute_network_edge_security_service} Resource.
 func NewGoogleComputeNetworkEdgeSecurityService_Override(g GoogleComputeNetworkEdgeSecurityService, scope constructs.Construct, id *string, config *GoogleComputeNetworkEdgeSecurityServiceConfig) {
 	_init_.Initialize()
 

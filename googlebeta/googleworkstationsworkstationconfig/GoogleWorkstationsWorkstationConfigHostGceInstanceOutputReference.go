@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleworkstationsworkstationconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleworkstationsworkstationconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleworkstationsworkstationconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +38,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	DisablePublicIpAddresses() interface{}
 	SetDisablePublicIpAddresses(val interface{})
 	DisablePublicIpAddressesInput() interface{}
+	EnableNestedVirtualization() interface{}
+	SetEnableNestedVirtualization(val interface{})
+	EnableNestedVirtualizationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleWorkstationsWorkstationConfigHostGceInstance
@@ -92,6 +98,7 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	ResetBootDiskSizeGb()
 	ResetConfidentialInstanceConfig()
 	ResetDisablePublicIpAddresses()
+	ResetEnableNestedVirtualization()
 	ResetMachineType()
 	ResetPoolSize()
 	ResetServiceAccount()
@@ -217,6 +224,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Get(
 		j,
 		"disablePublicIpAddressesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) EnableNestedVirtualization() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualization",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) EnableNestedVirtualizationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableNestedVirtualizationInput",
 		&returns,
 	)
 	return returns
@@ -430,6 +457,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Set(
 		j,
 		"disablePublicIpAddresses",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetEnableNestedVirtualization(val interface{}) {
+	if err := j.validateSetEnableNestedVirtualizationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableNestedVirtualization",
 		val,
 	)
 }
@@ -758,6 +796,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisablePublicIpAddresses",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetEnableNestedVirtualization() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableNestedVirtualization",
 		nil, // no parameters
 	)
 }

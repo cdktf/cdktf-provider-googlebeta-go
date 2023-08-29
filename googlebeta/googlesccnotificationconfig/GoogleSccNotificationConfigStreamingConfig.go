@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlesccnotificationconfig
 
 
@@ -29,7 +32,7 @@ type GoogleSccNotificationConfigStreamingConfig struct {
 	// [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 	// for information on how to write a filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_scc_notification_config#filter GoogleSccNotificationConfig#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_scc_notification_config#filter GoogleSccNotificationConfig#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 }
 

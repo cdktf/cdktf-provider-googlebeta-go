@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglekmssecretasymmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglekmssecretasymmetric/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglekmssecretasymmetric/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_kms_secret_asymmetric google_kms_secret_asymmetric}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_kms_secret_asymmetric google_kms_secret_asymmetric}.
 type DataGoogleKmsSecretAsymmetric interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -339,7 +342,7 @@ func (j *jsiiProxy_DataGoogleKmsSecretAsymmetric) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_kms_secret_asymmetric google_kms_secret_asymmetric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_kms_secret_asymmetric google_kms_secret_asymmetric} Data Source.
 func NewDataGoogleKmsSecretAsymmetric(scope constructs.Construct, id *string, config *DataGoogleKmsSecretAsymmetricConfig) DataGoogleKmsSecretAsymmetric {
 	_init_.Initialize()
 
@@ -357,7 +360,7 @@ func NewDataGoogleKmsSecretAsymmetric(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_kms_secret_asymmetric google_kms_secret_asymmetric} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_kms_secret_asymmetric google_kms_secret_asymmetric} Data Source.
 func NewDataGoogleKmsSecretAsymmetric_Override(d DataGoogleKmsSecretAsymmetric, scope constructs.Construct, id *string, config *DataGoogleKmsSecretAsymmetricConfig) {
 	_init_.Initialize()
 

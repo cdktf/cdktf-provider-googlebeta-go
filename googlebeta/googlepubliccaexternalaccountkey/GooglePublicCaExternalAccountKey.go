@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlepubliccaexternalaccountkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlepubliccaexternalaccountkey/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlepubliccaexternalaccountkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_public_ca_external_account_key google_public_ca_external_account_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_public_ca_external_account_key google_public_ca_external_account_key}.
 type GooglePublicCaExternalAccountKey interface {
 	cdktf.TerraformResource
 	B64MacKey() *string
@@ -391,7 +394,7 @@ func (j *jsiiProxy_GooglePublicCaExternalAccountKey) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_public_ca_external_account_key google_public_ca_external_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_public_ca_external_account_key google_public_ca_external_account_key} Resource.
 func NewGooglePublicCaExternalAccountKey(scope constructs.Construct, id *string, config *GooglePublicCaExternalAccountKeyConfig) GooglePublicCaExternalAccountKey {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewGooglePublicCaExternalAccountKey(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_public_ca_external_account_key google_public_ca_external_account_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_public_ca_external_account_key google_public_ca_external_account_key} Resource.
 func NewGooglePublicCaExternalAccountKey_Override(g GooglePublicCaExternalAccountKey, scope constructs.Construct, id *string, config *GooglePublicCaExternalAccountKeyConfig) {
 	_init_.Initialize()
 

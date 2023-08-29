@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleapigeeorganization
 
 
 type GoogleApigeeOrganizationProperties struct {
 	// property block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization#property GoogleApigeeOrganization#property}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_organization#property GoogleApigeeOrganization#property}
 	Property interface{} `field:"optional" json:"property" yaml:"property"`
 }
 

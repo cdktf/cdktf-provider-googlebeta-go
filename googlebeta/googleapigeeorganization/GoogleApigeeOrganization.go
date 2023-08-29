@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleapigeeorganization
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleapigeeorganization/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeeorganization/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization google_apigee_organization}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_organization google_apigee_organization}.
 type GoogleApigeeOrganization interface {
 	cdktf.TerraformResource
 	AnalyticsRegion() *string
@@ -617,7 +620,7 @@ func (j *jsiiProxy_GoogleApigeeOrganization) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
 func NewGoogleApigeeOrganization(scope constructs.Construct, id *string, config *GoogleApigeeOrganizationConfig) GoogleApigeeOrganization {
 	_init_.Initialize()
 
@@ -635,7 +638,7 @@ func NewGoogleApigeeOrganization(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_apigee_organization google_apigee_organization} Resource.
 func NewGoogleApigeeOrganization_Override(g GoogleApigeeOrganization, scope constructs.Construct, id *string, config *GoogleApigeeOrganizationConfig) {
 	_init_.Initialize()
 

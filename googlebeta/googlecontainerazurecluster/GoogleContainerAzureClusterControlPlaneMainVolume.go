@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecontainerazurecluster
 
 
@@ -6,7 +9,7 @@ type GoogleContainerAzureClusterControlPlaneMainVolume struct {
 	//
 	// The size of the disk, in GiBs. When unspecified, a default value is provided. See the specific reference in the parent resource.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_container_azure_cluster#size_gib GoogleContainerAzureCluster#size_gib}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_azure_cluster#size_gib GoogleContainerAzureCluster#size_gib}
 	SizeGib *float64 `field:"optional" json:"sizeGib" yaml:"sizeGib"`
 }
 

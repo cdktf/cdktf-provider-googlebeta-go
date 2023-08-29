@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglefirebaseappleapp
 
 import (
@@ -12,6 +15,7 @@ func init() {
 		reflect.TypeOf((*DataGoogleFirebaseAppleApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "apiKeyId", GoGetter: "ApiKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "appId", GoGetter: "AppId"},
 			_jsii_.MemberProperty{JsiiProperty: "appIdInput", GoGetter: "AppIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "appStoreId", GoGetter: "AppStoreId"},

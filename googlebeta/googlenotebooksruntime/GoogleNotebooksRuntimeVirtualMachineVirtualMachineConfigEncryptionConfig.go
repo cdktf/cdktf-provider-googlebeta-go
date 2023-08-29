@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlenotebooksruntime
 
 
@@ -8,7 +11,7 @@ type GoogleNotebooksRuntimeVirtualMachineVirtualMachineConfigEncryptionConfig st
 	// 'projects/{PROJECT_ID}/locations/{REGION}/keyRings/
 	// {KEY_RING_NAME}/cryptoKeys/{KEY_NAME}'
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_notebooks_runtime#kms_key GoogleNotebooksRuntime#kms_key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_notebooks_runtime#kms_key GoogleNotebooksRuntime#kms_key}
 	KmsKey *string `field:"optional" json:"kmsKey" yaml:"kmsKey"`
 }
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlegkehubfeature
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlegkehubfeature/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkehubfeature/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature google_gke_hub_feature}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_gke_hub_feature google_gke_hub_feature}.
 type GoogleGkeHubFeature interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -484,7 +487,7 @@ func (j *jsiiProxy_GoogleGkeHubFeature) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource.
 func NewGoogleGkeHubFeature(scope constructs.Construct, id *string, config *GoogleGkeHubFeatureConfig) GoogleGkeHubFeature {
 	_init_.Initialize()
 
@@ -502,7 +505,7 @@ func NewGoogleGkeHubFeature(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_gke_hub_feature google_gke_hub_feature} Resource.
 func NewGoogleGkeHubFeature_Override(g GoogleGkeHubFeature, scope constructs.Construct, id *string, config *GoogleGkeHubFeatureConfig) {
 	_init_.Initialize()
 

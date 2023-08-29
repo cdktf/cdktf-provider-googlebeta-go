@@ -1,14 +1,17 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlenetworkservicesgrpcroute
 
 
 type GoogleNetworkServicesGrpcRouteRules struct {
 	// action block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_grpc_route#action GoogleNetworkServicesGrpcRoute#action}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_services_grpc_route#action GoogleNetworkServicesGrpcRoute#action}
 	Action *GoogleNetworkServicesGrpcRouteRulesAction `field:"optional" json:"action" yaml:"action"`
 	// matches block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_network_services_grpc_route#matches GoogleNetworkServicesGrpcRoute#matches}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_network_services_grpc_route#matches GoogleNetworkServicesGrpcRoute#matches}
 	Matches interface{} `field:"optional" json:"matches" yaml:"matches"`
 }
 

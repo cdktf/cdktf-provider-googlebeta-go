@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleaccesscontextmanageringresspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleaccesscontextmanageringresspolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleaccesscontextmanageringresspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy}.
 type GoogleAccessContextManagerIngressPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -356,7 +359,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerIngressPolicy) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource.
 func NewGoogleAccessContextManagerIngressPolicy(scope constructs.Construct, id *string, config *GoogleAccessContextManagerIngressPolicyConfig) GoogleAccessContextManagerIngressPolicy {
 	_init_.Initialize()
 
@@ -374,7 +377,7 @@ func NewGoogleAccessContextManagerIngressPolicy(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_access_context_manager_ingress_policy google_access_context_manager_ingress_policy} Resource.
 func NewGoogleAccessContextManagerIngressPolicy_Override(g GoogleAccessContextManagerIngressPolicy, scope constructs.Construct, id *string, config *GoogleAccessContextManagerIngressPolicyConfig) {
 	_init_.Initialize()
 

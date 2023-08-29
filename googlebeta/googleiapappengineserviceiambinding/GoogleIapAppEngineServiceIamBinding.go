@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleiapappengineserviceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleiapappengineserviceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleiapappengineserviceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding}.
 type GoogleIapAppEngineServiceIamBinding interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -437,7 +440,7 @@ func (j *jsiiProxy_GoogleIapAppEngineServiceIamBinding) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
 func NewGoogleIapAppEngineServiceIamBinding(scope constructs.Construct, id *string, config *GoogleIapAppEngineServiceIamBindingConfig) GoogleIapAppEngineServiceIamBinding {
 	_init_.Initialize()
 
@@ -455,7 +458,7 @@ func NewGoogleIapAppEngineServiceIamBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_iap_app_engine_service_iam_binding google_iap_app_engine_service_iam_binding} Resource.
 func NewGoogleIapAppEngineServiceIamBinding_Override(g GoogleIapAppEngineServiceIamBinding, scope constructs.Construct, id *string, config *GoogleIapAppEngineServiceIamBindingConfig) {
 	_init_.Initialize()
 

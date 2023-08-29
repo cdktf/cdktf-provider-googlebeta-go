@@ -1,14 +1,17 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecloudrunservice
 
 
 type GoogleCloudRunServiceTemplateSpecContainersLivenessProbeHttpGetHttpHeaders struct {
 	// The header field name.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_run_service#name GoogleCloudRunService#name}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloud_run_service#name GoogleCloudRunService#name}
 	Name *string `field:"required" json:"name" yaml:"name"`
 	// The header field value.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_cloud_run_service#value GoogleCloudRunService#value}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_cloud_run_service#value GoogleCloudRunService#value}
 	Value *string `field:"optional" json:"value" yaml:"value"`
 }
 

@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledatalosspreventioninspecttemplate
 
 
@@ -7,7 +10,7 @@ type GoogleDataLossPreventionInspectTemplateInspectConfigRuleSetRulesExclusionRu
 	// The dictionary must contain at least one
 	// phrase and every phrase must contain at least 2 characters that are letters or digits.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_inspect_template#words GoogleDataLossPreventionInspectTemplate#words}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_data_loss_prevention_inspect_template#words GoogleDataLossPreventionInspectTemplate#words}
 	Words *[]*string `field:"required" json:"words" yaml:"words"`
 }
 

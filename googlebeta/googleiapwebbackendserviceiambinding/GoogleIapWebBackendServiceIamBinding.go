@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googleiapwebbackendserviceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googleiapwebbackendserviceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleiapwebbackendserviceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding}.
 type GoogleIapWebBackendServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +417,7 @@ func (j *jsiiProxy_GoogleIapWebBackendServiceIamBinding) WebBackendServiceInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
 func NewGoogleIapWebBackendServiceIamBinding(scope constructs.Construct, id *string, config *GoogleIapWebBackendServiceIamBindingConfig) GoogleIapWebBackendServiceIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +435,7 @@ func NewGoogleIapWebBackendServiceIamBinding(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_iap_web_backend_service_iam_binding google_iap_web_backend_service_iam_binding} Resource.
 func NewGoogleIapWebBackendServiceIamBinding_Override(g GoogleIapWebBackendServiceIamBinding, scope constructs.Construct, id *string, config *GoogleIapWebBackendServiceIamBindingConfig) {
 	_init_.Initialize()
 

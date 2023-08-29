@@ -1,10 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledataplexdatascan
 
 
 type GoogleDataplexDatascanDataQualitySpecRulesRegexExpectation struct {
 	// A regular expression the column value is expected to match.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataplex_datascan#regex GoogleDataplexDatascan#regex}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_datascan#regex GoogleDataplexDatascan#regex}
 	Regex *string `field:"required" json:"regex" yaml:"regex"`
 }
 

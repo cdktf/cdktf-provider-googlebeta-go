@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlefolderiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlefolderiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefolderiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_folder_iam_binding google_folder_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_folder_iam_binding google_folder_iam_binding}.
 type GoogleFolderIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +393,7 @@ func (j *jsiiProxy_GoogleFolderIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_folder_iam_binding google_folder_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_folder_iam_binding google_folder_iam_binding} Resource.
 func NewGoogleFolderIamBinding(scope constructs.Construct, id *string, config *GoogleFolderIamBindingConfig) GoogleFolderIamBinding {
 	_init_.Initialize()
 
@@ -408,7 +411,7 @@ func NewGoogleFolderIamBinding(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_folder_iam_binding google_folder_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_folder_iam_binding google_folder_iam_binding} Resource.
 func NewGoogleFolderIamBinding_Override(g GoogleFolderIamBinding, scope constructs.Construct, id *string, config *GoogleFolderIamBindingConfig) {
 	_init_.Initialize()
 

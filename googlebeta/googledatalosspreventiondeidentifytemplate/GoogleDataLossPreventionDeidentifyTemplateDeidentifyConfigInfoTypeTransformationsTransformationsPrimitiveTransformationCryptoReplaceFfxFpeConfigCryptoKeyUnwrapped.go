@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledatalosspreventiondeidentifytemplate
 
 
@@ -6,7 +9,7 @@ type GoogleDataLossPreventionDeidentifyTemplateDeidentifyConfigInfoTypeTransform
 	//
 	// A base64-encoded string.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_data_loss_prevention_deidentify_template#key GoogleDataLossPreventionDeidentifyTemplate#key}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_data_loss_prevention_deidentify_template#key GoogleDataLossPreventionDeidentifyTemplate#key}
 	Key *string `field:"required" json:"key" yaml:"key"`
 }
 

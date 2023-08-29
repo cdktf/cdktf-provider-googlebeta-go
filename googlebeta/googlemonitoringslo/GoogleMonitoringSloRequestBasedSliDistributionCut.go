@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlemonitoringslo
 
 
@@ -7,11 +10,11 @@ type GoogleMonitoringSloRequestBasedSliDistributionCut struct {
 	// Must have ValueType = DISTRIBUTION and
 	// MetricKind = DELTA or MetricKind = CUMULATIVE.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_monitoring_slo#distribution_filter GoogleMonitoringSlo#distribution_filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_monitoring_slo#distribution_filter GoogleMonitoringSlo#distribution_filter}
 	DistributionFilter *string `field:"required" json:"distributionFilter" yaml:"distributionFilter"`
 	// range block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_monitoring_slo#range GoogleMonitoringSlo#range}
 	Range *GoogleMonitoringSloRequestBasedSliDistributionCutRange `field:"required" json:"range" yaml:"range"`
 }
 

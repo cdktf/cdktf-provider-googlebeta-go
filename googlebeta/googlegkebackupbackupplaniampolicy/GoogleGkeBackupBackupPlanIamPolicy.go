@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlegkebackupbackupplaniampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlegkebackupbackupplaniampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkebackupbackupplaniampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy}.
 type GoogleGkeBackupBackupPlanIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +394,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Resource.
 func NewGoogleGkeBackupBackupPlanIamPolicy(scope constructs.Construct, id *string, config *GoogleGkeBackupBackupPlanIamPolicyConfig) GoogleGkeBackupBackupPlanIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +412,7 @@ func NewGoogleGkeBackupBackupPlanIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_gke_backup_backup_plan_iam_policy google_gke_backup_backup_plan_iam_policy} Resource.
 func NewGoogleGkeBackupBackupPlanIamPolicy_Override(g GoogleGkeBackupBackupPlanIamPolicy, scope constructs.Construct, id *string, config *GoogleGkeBackupBackupPlanIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package datagooglefolders
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/datagooglefolders/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglefolders/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_folders google_folders}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_folders google_folders}.
 type DataGoogleFolders interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -292,7 +295,7 @@ func (j *jsiiProxy_DataGoogleFolders) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_folders google_folders} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_folders google_folders} Data Source.
 func NewDataGoogleFolders(scope constructs.Construct, id *string, config *DataGoogleFoldersConfig) DataGoogleFolders {
 	_init_.Initialize()
 
@@ -310,7 +313,7 @@ func NewDataGoogleFolders(scope constructs.Construct, id *string, config *DataGo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/data-sources/google_folders google_folders} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_folders google_folders} Data Source.
 func NewDataGoogleFolders_Override(d DataGoogleFolders, scope constructs.Construct, id *string, config *DataGoogleFoldersConfig) {
 	_init_.Initialize()
 

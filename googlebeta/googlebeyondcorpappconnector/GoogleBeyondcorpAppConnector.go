@@ -1,15 +1,18 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlebeyondcorpappconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v8/googlebeyondcorpappconnector/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebeyondcorpappconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector google_beyondcorp_app_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_beyondcorp_app_connector google_beyondcorp_app_connector}.
 type GoogleBeyondcorpAppConnector interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -463,7 +466,7 @@ func (j *jsiiProxy_GoogleBeyondcorpAppConnector) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector google_beyondcorp_app_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_beyondcorp_app_connector google_beyondcorp_app_connector} Resource.
 func NewGoogleBeyondcorpAppConnector(scope constructs.Construct, id *string, config *GoogleBeyondcorpAppConnectorConfig) GoogleBeyondcorpAppConnector {
 	_init_.Initialize()
 
@@ -481,7 +484,7 @@ func NewGoogleBeyondcorpAppConnector(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_beyondcorp_app_connector google_beyondcorp_app_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_beyondcorp_app_connector google_beyondcorp_app_connector} Resource.
 func NewGoogleBeyondcorpAppConnector_Override(g GoogleBeyondcorpAppConnector, scope constructs.Construct, id *string, config *GoogleBeyondcorpAppConnectorConfig) {
 	_init_.Initialize()
 

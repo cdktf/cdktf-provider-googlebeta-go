@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 //go:build no_runtime_type_checking
 
 package googlecomputetargetpool
@@ -117,6 +120,10 @@ func (j *jsiiProxy_GoogleComputeTargetPool) validateSetProvisionersParameters(va
 }
 
 func (j *jsiiProxy_GoogleComputeTargetPool) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeTargetPool) validateSetSecurityPolicyParameters(val *string) error {
 	return nil
 }
 

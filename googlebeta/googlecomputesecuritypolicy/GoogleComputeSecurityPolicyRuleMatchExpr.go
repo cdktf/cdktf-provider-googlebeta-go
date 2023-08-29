@@ -1,3 +1,6 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googlecomputesecuritypolicy
 
 
@@ -6,7 +9,7 @@ type GoogleComputeSecurityPolicyRuleMatchExpr struct {
 	//
 	// The application context of the containing message determines which well-known feature set of CEL is supported.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_compute_security_policy#expression GoogleComputeSecurityPolicy#expression}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_compute_security_policy#expression GoogleComputeSecurityPolicy#expression}
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
 }
 

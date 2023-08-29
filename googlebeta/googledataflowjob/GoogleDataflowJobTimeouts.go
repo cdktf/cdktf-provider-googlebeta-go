@@ -1,8 +1,11 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
 package googledataflowjob
 
 
 type GoogleDataflowJobTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.79.0/docs/resources/google_dataflow_job#update GoogleDataflowJob#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataflow_job#update GoogleDataflowJob#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 
