@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy}.
 type DataGoogleServiceDirectoryNamespaceIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataGoogleServiceDirectoryNamespaceIamPolicy) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy} Data Source.
 func NewDataGoogleServiceDirectoryNamespaceIamPolicy(scope constructs.Construct, id *string, config *DataGoogleServiceDirectoryNamespaceIamPolicyConfig) DataGoogleServiceDirectoryNamespaceIamPolicy {
 	_init_.Initialize()
 
@@ -324,7 +324,7 @@ func NewDataGoogleServiceDirectoryNamespaceIamPolicy(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/data-sources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/data-sources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy} Data Source.
 func NewDataGoogleServiceDirectoryNamespaceIamPolicy_Override(d DataGoogleServiceDirectoryNamespaceIamPolicy, scope constructs.Construct, id *string, config *DataGoogleServiceDirectoryNamespaceIamPolicyConfig) {
 	_init_.Initialize()
 

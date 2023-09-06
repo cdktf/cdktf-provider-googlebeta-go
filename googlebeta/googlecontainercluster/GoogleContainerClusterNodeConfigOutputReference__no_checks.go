@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *GoogleContainerClusterNodeConfigConfidentialNodes) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutEphemeralStorageConfigParameters(value *GoogleContainerClusterNodeConfigEphemeralStorageConfig) error {
 	return nil
 }

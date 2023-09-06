@@ -1,0 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package googlecontainernodepool
+
+
+type GoogleContainerNodePoolNodeConfigConfidentialNodes struct {
+	// Whether Confidential Nodes feature is enabled for all nodes in this pool.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_container_node_pool#enabled GoogleContainerNodePool#enabled}
+	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
+}
+

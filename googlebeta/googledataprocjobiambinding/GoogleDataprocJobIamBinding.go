@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataproc_job_iam_binding google_dataproc_job_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_dataproc_job_iam_binding google_dataproc_job_iam_binding}.
 type GoogleDataprocJobIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleDataprocJobIamBinding) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataproc_job_iam_binding google_dataproc_job_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_dataproc_job_iam_binding google_dataproc_job_iam_binding} Resource.
 func NewGoogleDataprocJobIamBinding(scope constructs.Construct, id *string, config *GoogleDataprocJobIamBindingConfig) GoogleDataprocJobIamBinding {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewGoogleDataprocJobIamBinding(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataproc_job_iam_binding google_dataproc_job_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_dataproc_job_iam_binding google_dataproc_job_iam_binding} Resource.
 func NewGoogleDataprocJobIamBinding_Override(g GoogleDataprocJobIamBinding, scope constructs.Construct, id *string, config *GoogleDataprocJobIamBindingConfig) {
 	_init_.Initialize()
 

@@ -251,6 +251,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableBinaryAuthorizationP
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableFqdnNetworkPolicyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableIntranodeVisibilityParameters(val interface{}) error {
 	return nil
 }

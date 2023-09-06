@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard}.
 type GoogleMonitoringDashboard interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -360,7 +360,7 @@ func (j *jsiiProxy_GoogleMonitoringDashboard) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard} Resource.
 func NewGoogleMonitoringDashboard(scope constructs.Construct, id *string, config *GoogleMonitoringDashboardConfig) GoogleMonitoringDashboard {
 	_init_.Initialize()
 
@@ -378,7 +378,7 @@ func NewGoogleMonitoringDashboard(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_monitoring_dashboard google_monitoring_dashboard} Resource.
 func NewGoogleMonitoringDashboard_Override(g GoogleMonitoringDashboard, scope constructs.Construct, id *string, config *GoogleMonitoringDashboardConfig) {
 	_init_.Initialize()
 

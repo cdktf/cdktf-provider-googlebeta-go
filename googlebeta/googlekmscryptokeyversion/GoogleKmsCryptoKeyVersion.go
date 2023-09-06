@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_kms_crypto_key_version google_kms_crypto_key_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_kms_crypto_key_version google_kms_crypto_key_version}.
 type GoogleKmsCryptoKeyVersion interface {
 	cdktf.TerraformResource
 	Algorithm() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyVersion) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_kms_crypto_key_version google_kms_crypto_key_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_kms_crypto_key_version google_kms_crypto_key_version} Resource.
 func NewGoogleKmsCryptoKeyVersion(scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyVersionConfig) GoogleKmsCryptoKeyVersion {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleKmsCryptoKeyVersion(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_kms_crypto_key_version google_kms_crypto_key_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_kms_crypto_key_version google_kms_crypto_key_version} Resource.
 func NewGoogleKmsCryptoKeyVersion_Override(g GoogleKmsCryptoKeyVersion, scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyVersionConfig) {
 	_init_.Initialize()
 

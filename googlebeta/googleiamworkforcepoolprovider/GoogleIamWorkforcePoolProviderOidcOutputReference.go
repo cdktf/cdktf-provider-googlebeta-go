@@ -40,6 +40,9 @@ type GoogleIamWorkforcePoolProviderOidcOutputReference interface {
 	IssuerUri() *string
 	SetIssuerUri(val *string)
 	IssuerUriInput() *string
+	JwksJson() *string
+	SetJwksJson(val *string)
+	JwksJsonInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,6 +80,7 @@ type GoogleIamWorkforcePoolProviderOidcOutputReference interface {
 	PutClientSecret(value *GoogleIamWorkforcePoolProviderOidcClientSecret)
 	PutWebSsoConfig(value *GoogleIamWorkforcePoolProviderOidcWebSsoConfig)
 	ResetClientSecret()
+	ResetJwksJson()
 	ResetWebSsoConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -203,6 +207,26 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) IssuerUriI
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) JwksJson() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksJson",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) JwksJsonInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jwksJsonInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -322,6 +346,17 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference)SetIssuerUr
 	_jsii_.Set(
 		j,
 		"issuerUri",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference)SetJwksJson(val *string) {
+	if err := j.validateSetJwksJsonParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jwksJson",
 		val,
 	)
 }
@@ -560,6 +595,14 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) ResetClien
 	_jsii_.InvokeVoid(
 		g,
 		"resetClientSecret",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcOutputReference) ResetJwksJson() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetJwksJson",
 		nil, // no parameters
 	)
 }

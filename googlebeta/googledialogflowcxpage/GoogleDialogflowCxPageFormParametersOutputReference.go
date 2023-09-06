@@ -28,6 +28,9 @@ type GoogleDialogflowCxPageFormParametersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultValue() *string
+	SetDefaultValue(val *string)
+	DefaultValueInput() *string
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -82,6 +85,7 @@ type GoogleDialogflowCxPageFormParametersOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutFillBehavior(value *GoogleDialogflowCxPageFormParametersFillBehavior)
+	ResetDefaultValue()
 	ResetDisplayName()
 	ResetEntityType()
 	ResetFillBehavior()
@@ -128,6 +132,26 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) DefaultValue() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) DefaultValueInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"defaultValueInput",
 		&returns,
 	)
 	return returns
@@ -339,6 +363,17 @@ func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference)SetDefaultValue(val *string) {
+	if err := j.validateSetDefaultValueParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultValue",
 		val,
 	)
 }
@@ -625,6 +660,14 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) PutFillB
 		g,
 		"putFillBehavior",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) ResetDefaultValue() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultValue",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding}.
 type GoogleBigqueryAnalyticsHubDataExchangeIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamBinding) TerraformRe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchangeIamBinding(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig) GoogleBigqueryAnalyticsHubDataExchangeIamBinding {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchangeIamBinding(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_bigquery_analytics_hub_data_exchange_iam_binding google_bigquery_analytics_hub_data_exchange_iam_binding} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchangeIamBinding_Override(g GoogleBigqueryAnalyticsHubDataExchangeIamBinding, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeIamBindingConfig) {
 	_init_.Initialize()
 

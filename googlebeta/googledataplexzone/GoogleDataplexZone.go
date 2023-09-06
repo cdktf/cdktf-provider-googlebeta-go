@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_zone google_dataplex_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_dataplex_zone google_dataplex_zone}.
 type GoogleDataplexZone interface {
 	cdktf.TerraformResource
 	AssetStatus() GoogleDataplexZoneAssetStatusList
@@ -602,7 +602,7 @@ func (j *jsiiProxy_GoogleDataplexZone) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
 func NewGoogleDataplexZone(scope constructs.Construct, id *string, config *GoogleDataplexZoneConfig) GoogleDataplexZone {
 	_init_.Initialize()
 
@@ -620,7 +620,7 @@ func NewGoogleDataplexZone(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
 func NewGoogleDataplexZone_Override(g GoogleDataplexZone, scope constructs.Construct, id *string, config *GoogleDataplexZoneConfig) {
 	_init_.Initialize()
 

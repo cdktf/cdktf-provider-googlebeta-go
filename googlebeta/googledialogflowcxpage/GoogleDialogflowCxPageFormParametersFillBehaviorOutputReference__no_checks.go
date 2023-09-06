@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReferen
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReference) validatePutRepromptEventHandlersParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersFillBehaviorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

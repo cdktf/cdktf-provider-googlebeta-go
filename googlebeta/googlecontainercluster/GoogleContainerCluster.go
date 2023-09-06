@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -72,6 +72,9 @@ type GoogleContainerCluster interface {
 	EnableBinaryAuthorization() interface{}
 	SetEnableBinaryAuthorization(val interface{})
 	EnableBinaryAuthorizationInput() interface{}
+	EnableFqdnNetworkPolicy() interface{}
+	SetEnableFqdnNetworkPolicy(val interface{})
+	EnableFqdnNetworkPolicyInput() interface{}
 	EnableIntranodeVisibility() interface{}
 	SetEnableIntranodeVisibility(val interface{})
 	EnableIntranodeVisibilityInput() interface{}
@@ -311,6 +314,7 @@ type GoogleContainerCluster interface {
 	ResetDnsConfig()
 	ResetEnableAutopilot()
 	ResetEnableBinaryAuthorization()
+	ResetEnableFqdnNetworkPolicy()
 	ResetEnableIntranodeVisibility()
 	ResetEnableK8SBetaApis()
 	ResetEnableKubernetesAlpha()
@@ -763,6 +767,26 @@ func (j *jsiiProxy_GoogleContainerCluster) EnableBinaryAuthorizationInput() inte
 	_jsii_.Get(
 		j,
 		"enableBinaryAuthorizationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFqdnNetworkPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) EnableFqdnNetworkPolicyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFqdnNetworkPolicyInput",
 		&returns,
 	)
 	return returns
@@ -1949,7 +1973,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1967,7 +1991,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2081,6 +2105,17 @@ func (j *jsiiProxy_GoogleContainerCluster)SetEnableBinaryAuthorization(val inter
 	_jsii_.Set(
 		j,
 		"enableBinaryAuthorization",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerCluster)SetEnableFqdnNetworkPolicy(val interface{}) {
+	if err := j.validateSetEnableFqdnNetworkPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFqdnNetworkPolicy",
 		val,
 	)
 }
@@ -3181,6 +3216,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetEnableBinaryAuthorization() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableBinaryAuthorization",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetEnableFqdnNetworkPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableFqdnNetworkPolicy",
 		nil, // no parameters
 	)
 }

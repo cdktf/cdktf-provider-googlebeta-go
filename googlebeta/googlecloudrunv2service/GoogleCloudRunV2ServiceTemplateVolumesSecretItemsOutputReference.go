@@ -73,6 +73,7 @@ type GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface 
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMode()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -519,6 +520,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) ResetMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMode",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) ResetVersion() {

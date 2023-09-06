@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy}.
 type GoogleDataCatalogTaxonomy interface {
 	cdktf.TerraformResource
 	ActivatedPolicyTypes() *[]*string
@@ -443,7 +443,7 @@ func (j *jsiiProxy_GoogleDataCatalogTaxonomy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy} Resource.
 func NewGoogleDataCatalogTaxonomy(scope constructs.Construct, id *string, config *GoogleDataCatalogTaxonomyConfig) GoogleDataCatalogTaxonomy {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewGoogleDataCatalogTaxonomy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_data_catalog_taxonomy google_data_catalog_taxonomy} Resource.
 func NewGoogleDataCatalogTaxonomy_Override(g GoogleDataCatalogTaxonomy, scope constructs.Construct, id *string, config *GoogleDataCatalogTaxonomyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dialogflow_agent google_dialogflow_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_dialogflow_agent google_dialogflow_agent}.
 type GoogleDialogflowAgent interface {
 	cdktf.TerraformResource
 	ApiVersion() *string
@@ -609,7 +609,7 @@ func (j *jsiiProxy_GoogleDialogflowAgent) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dialogflow_agent google_dialogflow_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_dialogflow_agent google_dialogflow_agent} Resource.
 func NewGoogleDialogflowAgent(scope constructs.Construct, id *string, config *GoogleDialogflowAgentConfig) GoogleDialogflowAgent {
 	_init_.Initialize()
 
@@ -627,7 +627,7 @@ func NewGoogleDialogflowAgent(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.80.0/docs/resources/google_dialogflow_agent google_dialogflow_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_dialogflow_agent google_dialogflow_agent} Resource.
 func NewGoogleDialogflowAgent_Override(g GoogleDialogflowAgent, scope constructs.Construct, id *string, config *GoogleDialogflowAgentConfig) {
 	_init_.Initialize()
 
