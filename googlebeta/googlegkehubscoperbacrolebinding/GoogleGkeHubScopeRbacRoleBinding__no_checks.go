@@ -91,6 +91,10 @@ func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBinding) validateSetIdParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBinding) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

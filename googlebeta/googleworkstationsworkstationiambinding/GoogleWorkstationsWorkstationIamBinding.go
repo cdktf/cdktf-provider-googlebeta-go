@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_workstations_workstation_iam_binding google_workstations_workstation_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_workstations_workstation_iam_binding google_workstations_workstation_iam_binding}.
 type GoogleWorkstationsWorkstationIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -487,7 +487,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationIamBinding) WorkstationIdInput()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_workstations_workstation_iam_binding google_workstations_workstation_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_workstations_workstation_iam_binding google_workstations_workstation_iam_binding} Resource.
 func NewGoogleWorkstationsWorkstationIamBinding(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationIamBindingConfig) GoogleWorkstationsWorkstationIamBinding {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewGoogleWorkstationsWorkstationIamBinding(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_workstations_workstation_iam_binding google_workstations_workstation_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_workstations_workstation_iam_binding google_workstations_workstation_iam_binding} Resource.
 func NewGoogleWorkstationsWorkstationIamBinding_Override(g GoogleWorkstationsWorkstationIamBinding, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationIamBindingConfig) {
 	_init_.Initialize()
 

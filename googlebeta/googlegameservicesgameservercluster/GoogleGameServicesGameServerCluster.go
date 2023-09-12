@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_game_services_game_server_cluster google_game_services_game_server_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_game_services_game_server_cluster google_game_services_game_server_cluster}.
 type GoogleGameServicesGameServerCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -489,7 +489,7 @@ func (j *jsiiProxy_GoogleGameServicesGameServerCluster) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_game_services_game_server_cluster google_game_services_game_server_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_game_services_game_server_cluster google_game_services_game_server_cluster} Resource.
 func NewGoogleGameServicesGameServerCluster(scope constructs.Construct, id *string, config *GoogleGameServicesGameServerClusterConfig) GoogleGameServicesGameServerCluster {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewGoogleGameServicesGameServerCluster(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_game_services_game_server_cluster google_game_services_game_server_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_game_services_game_server_cluster google_game_services_game_server_cluster} Resource.
 func NewGoogleGameServicesGameServerCluster_Override(g GoogleGameServicesGameServerCluster, scope constructs.Construct, id *string, config *GoogleGameServicesGameServerClusterConfig) {
 	_init_.Initialize()
 

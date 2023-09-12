@@ -29,6 +29,7 @@ type GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputRe
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Details() cdktf.StringMapList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsError
@@ -116,6 +117,16 @@ func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnection
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference) Details() cdktf.StringMapList {
+	var returns cdktf.StringMapList
+	_jsii_.Get(
+		j,
+		"details",
 		&returns,
 	)
 	return returns

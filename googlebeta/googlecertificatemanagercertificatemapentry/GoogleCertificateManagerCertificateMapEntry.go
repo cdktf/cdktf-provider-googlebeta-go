@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_certificate_manager_certificate_map_entry google_certificate_manager_certificate_map_entry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_certificate_manager_certificate_map_entry google_certificate_manager_certificate_map_entry}.
 type GoogleCertificateManagerCertificateMapEntry interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -535,7 +535,7 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificateMapEntry) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_certificate_manager_certificate_map_entry google_certificate_manager_certificate_map_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_certificate_manager_certificate_map_entry google_certificate_manager_certificate_map_entry} Resource.
 func NewGoogleCertificateManagerCertificateMapEntry(scope constructs.Construct, id *string, config *GoogleCertificateManagerCertificateMapEntryConfig) GoogleCertificateManagerCertificateMapEntry {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewGoogleCertificateManagerCertificateMapEntry(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_certificate_manager_certificate_map_entry google_certificate_manager_certificate_map_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_certificate_manager_certificate_map_entry google_certificate_manager_certificate_map_entry} Resource.
 func NewGoogleCertificateManagerCertificateMapEntry_Override(g GoogleCertificateManagerCertificateMapEntry, scope constructs.Construct, id *string, config *GoogleCertificateManagerCertificateMapEntryConfig) {
 	_init_.Initialize()
 

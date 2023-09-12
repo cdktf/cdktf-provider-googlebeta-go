@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_bigquery_table_iam_member google_bigquery_table_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table_iam_member google_bigquery_table_iam_member}.
 type GoogleBigqueryTableIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -440,7 +440,7 @@ func (j *jsiiProxy_GoogleBigqueryTableIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_bigquery_table_iam_member google_bigquery_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table_iam_member google_bigquery_table_iam_member} Resource.
 func NewGoogleBigqueryTableIamMember(scope constructs.Construct, id *string, config *GoogleBigqueryTableIamMemberConfig) GoogleBigqueryTableIamMember {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewGoogleBigqueryTableIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_bigquery_table_iam_member google_bigquery_table_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table_iam_member google_bigquery_table_iam_member} Resource.
 func NewGoogleBigqueryTableIamMember_Override(g GoogleBigqueryTableIamMember, scope constructs.Construct, id *string, config *GoogleBigqueryTableIamMemberConfig) {
 	_init_.Initialize()
 

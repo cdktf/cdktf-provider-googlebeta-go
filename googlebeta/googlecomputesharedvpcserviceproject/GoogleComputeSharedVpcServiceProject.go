@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_compute_shared_vpc_service_project google_compute_shared_vpc_service_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_compute_shared_vpc_service_project google_compute_shared_vpc_service_project}.
 type GoogleComputeSharedVpcServiceProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -383,7 +383,7 @@ func (j *jsiiProxy_GoogleComputeSharedVpcServiceProject) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_compute_shared_vpc_service_project google_compute_shared_vpc_service_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_compute_shared_vpc_service_project google_compute_shared_vpc_service_project} Resource.
 func NewGoogleComputeSharedVpcServiceProject(scope constructs.Construct, id *string, config *GoogleComputeSharedVpcServiceProjectConfig) GoogleComputeSharedVpcServiceProject {
 	_init_.Initialize()
 
@@ -401,7 +401,7 @@ func NewGoogleComputeSharedVpcServiceProject(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.81.0/docs/resources/google_compute_shared_vpc_service_project google_compute_shared_vpc_service_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_compute_shared_vpc_service_project google_compute_shared_vpc_service_project} Resource.
 func NewGoogleComputeSharedVpcServiceProject_Override(g GoogleComputeSharedVpcServiceProject, scope constructs.Construct, id *string, config *GoogleComputeSharedVpcServiceProjectConfig) {
 	_init_.Initialize()
 
