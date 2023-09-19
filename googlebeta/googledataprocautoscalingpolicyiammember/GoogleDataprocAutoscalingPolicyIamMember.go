@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member}.
 type GoogleDataprocAutoscalingPolicyIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member} Resource.
 func NewGoogleDataprocAutoscalingPolicyIamMember(scope constructs.Construct, id *string, config *GoogleDataprocAutoscalingPolicyIamMemberConfig) GoogleDataprocAutoscalingPolicyIamMember {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewGoogleDataprocAutoscalingPolicyIamMember(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_dataproc_autoscaling_policy_iam_member google_dataproc_autoscaling_policy_iam_member} Resource.
 func NewGoogleDataprocAutoscalingPolicyIamMember_Override(g GoogleDataprocAutoscalingPolicyIamMember, scope constructs.Construct, id *string, config *GoogleDataprocAutoscalingPolicyIamMemberConfig) {
 	_init_.Initialize()
 

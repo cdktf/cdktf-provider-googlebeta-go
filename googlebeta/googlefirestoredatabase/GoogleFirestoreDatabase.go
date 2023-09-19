@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database google_firestore_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database google_firestore_database}.
 type GoogleFirestoreDatabase interface {
 	cdktf.TerraformResource
 	AppEngineIntegrationMode() *string
@@ -38,6 +38,7 @@ type GoogleFirestoreDatabase interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EarliestVersionTime() *string
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -63,6 +64,9 @@ type GoogleFirestoreDatabase interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	PointInTimeRecoveryEnablement() *string
+	SetPointInTimeRecoveryEnablement(val *string)
+	PointInTimeRecoveryEnablementInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -87,6 +91,9 @@ type GoogleFirestoreDatabase interface {
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
+	Uid() *string
+	UpdateTime() *string
+	VersionRetentionPeriod() *string
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -119,6 +126,7 @@ type GoogleFirestoreDatabase interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPointInTimeRecoveryEnablement()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -231,6 +239,16 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) EarliestVersionTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"earliestVersionTime",
 		&returns,
 	)
 	return returns
@@ -366,6 +384,26 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFirestoreDatabase) PointInTimeRecoveryEnablement() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pointInTimeRecoveryEnablement",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) PointInTimeRecoveryEnablementInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pointInTimeRecoveryEnablementInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFirestoreDatabase) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -486,8 +524,38 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) TypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFirestoreDatabase) Uid() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"uid",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+func (j *jsiiProxy_GoogleFirestoreDatabase) UpdateTime() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) VersionRetentionPeriod() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"versionRetentionPeriod",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) GoogleFirestoreDatabase {
 	_init_.Initialize()
 
@@ -505,7 +573,7 @@ func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase_Override(g GoogleFirestoreDatabase, scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) {
 	_init_.Initialize()
 
@@ -616,6 +684,17 @@ func (j *jsiiProxy_GoogleFirestoreDatabase)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase)SetPointInTimeRecoveryEnablement(val *string) {
+	if err := j.validateSetPointInTimeRecoveryEnablementParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"pointInTimeRecoveryEnablement",
 		val,
 	)
 }
@@ -966,6 +1045,14 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFirestoreDatabase) ResetPointInTimeRecoveryEnablement() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPointInTimeRecoveryEnablement",
 		nil, // no parameters
 	)
 }

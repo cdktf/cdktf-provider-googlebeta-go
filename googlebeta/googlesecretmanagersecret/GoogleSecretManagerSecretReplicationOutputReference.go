@@ -13,6 +13,8 @@ import (
 
 type GoogleSecretManagerSecretReplicationOutputReference interface {
 	cdktf.ComplexObject
+	Auto() GoogleSecretManagerSecretReplicationAutoOutputReference
+	AutoInput() *GoogleSecretManagerSecretReplicationAuto
 	Automatic() interface{}
 	SetAutomatic(val interface{})
 	AutomaticInput() interface{}
@@ -69,7 +71,9 @@ type GoogleSecretManagerSecretReplicationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuto(value *GoogleSecretManagerSecretReplicationAuto)
 	PutUserManaged(value *GoogleSecretManagerSecretReplicationUserManaged)
+	ResetAuto()
 	ResetAutomatic()
 	ResetUserManaged()
 	// Produce the Token's value at resolution time.
@@ -85,6 +89,26 @@ type GoogleSecretManagerSecretReplicationOutputReference interface {
 // The jsii proxy struct for GoogleSecretManagerSecretReplicationOutputReference
 type jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Auto() GoogleSecretManagerSecretReplicationAutoOutputReference {
+	var returns GoogleSecretManagerSecretReplicationAutoOutputReference
+	_jsii_.Get(
+		j,
+		"auto",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) AutoInput() *GoogleSecretManagerSecretReplicationAuto {
+	var returns *GoogleSecretManagerSecretReplicationAuto
+	_jsii_.Get(
+		j,
+		"autoInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Automatic() interface{} {
@@ -477,6 +501,17 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Interpol
 	return returns
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) PutAuto(value *GoogleSecretManagerSecretReplicationAuto) {
+	if err := g.validatePutAutoParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAuto",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) PutUserManaged(value *GoogleSecretManagerSecretReplicationUserManaged) {
 	if err := g.validatePutUserManagedParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) PutUserM
 		g,
 		"putUserManaged",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ResetAuto() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuto",
+		nil, // no parameters
 	)
 }
 

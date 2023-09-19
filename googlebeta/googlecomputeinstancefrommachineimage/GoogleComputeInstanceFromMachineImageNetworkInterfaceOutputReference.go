@@ -34,11 +34,17 @@ type GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference interf
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	InternalIpv6PrefixLength() *float64
+	SetInternalIpv6PrefixLength(val *float64)
+	InternalIpv6PrefixLengthInput() *float64
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Ipv6AccessConfig() GoogleComputeInstanceFromMachineImageNetworkInterfaceIpv6AccessConfigList
 	Ipv6AccessConfigInput() interface{}
 	Ipv6AccessType() *string
+	Ipv6Address() *string
+	SetIpv6Address(val *string)
+	Ipv6AddressInput() *string
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
@@ -98,7 +104,9 @@ type GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference interf
 	PutIpv6AccessConfig(value interface{})
 	ResetAccessConfig()
 	ResetAliasIpRange()
+	ResetInternalIpv6PrefixLength()
 	ResetIpv6AccessConfig()
+	ResetIpv6Address()
 	ResetNetwork()
 	ResetNetworkIp()
 	ResetNicType()
@@ -201,6 +209,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) InternalIpv6PrefixLength() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"internalIpv6PrefixLength",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) InternalIpv6PrefixLengthInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"internalIpv6PrefixLengthInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) InternalValue() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -236,6 +264,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	_jsii_.Get(
 		j,
 		"ipv6AccessType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) Ipv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6Address",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) Ipv6AddressInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipv6AddressInput",
 		&returns,
 	)
 	return returns
@@ -461,6 +509,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference)SetInternalIpv6PrefixLength(val *float64) {
+	if err := j.validateSetInternalIpv6PrefixLengthParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"internalIpv6PrefixLength",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference)SetInternalValue(val interface{}) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -468,6 +527,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference)SetIpv6Address(val *string) {
+	if err := j.validateSetIpv6AddressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipv6Address",
 		val,
 	)
 }
@@ -806,10 +876,26 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) ResetInternalIpv6PrefixLength() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInternalIpv6PrefixLength",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) ResetIpv6AccessConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpv6AccessConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) ResetIpv6Address() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpv6Address",
 		nil, // no parameters
 	)
 }

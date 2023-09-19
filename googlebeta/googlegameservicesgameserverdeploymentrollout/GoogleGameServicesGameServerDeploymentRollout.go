@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout}.
 type GoogleGameServicesGameServerDeploymentRollout interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -418,7 +418,7 @@ func (j *jsiiProxy_GoogleGameServicesGameServerDeploymentRollout) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
 func NewGoogleGameServicesGameServerDeploymentRollout(scope constructs.Construct, id *string, config *GoogleGameServicesGameServerDeploymentRolloutConfig) GoogleGameServicesGameServerDeploymentRollout {
 	_init_.Initialize()
 
@@ -436,7 +436,7 @@ func NewGoogleGameServicesGameServerDeploymentRollout(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_game_services_game_server_deployment_rollout google_game_services_game_server_deployment_rollout} Resource.
 func NewGoogleGameServicesGameServerDeploymentRollout_Override(g GoogleGameServicesGameServerDeploymentRollout, scope constructs.Construct, id *string, config *GoogleGameServicesGameServerDeploymentRolloutConfig) {
 	_init_.Initialize()
 

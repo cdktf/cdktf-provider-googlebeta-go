@@ -247,9 +247,25 @@ func (j *jsiiProxy_GoogleGkeHubNamespace) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubNamespace) validateSetLabelsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubNamespace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeHubNamespace) validateSetNamespaceLabelsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

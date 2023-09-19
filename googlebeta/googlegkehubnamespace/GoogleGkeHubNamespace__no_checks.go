@@ -83,7 +83,15 @@ func (j *jsiiProxy_GoogleGkeHubNamespace) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubNamespace) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubNamespace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeHubNamespace) validateSetNamespaceLabelsParameters(val *map[string]*string) error {
 	return nil
 }
 

@@ -79,6 +79,10 @@ func (j *jsiiProxy_GoogleGkeHubScopeTimeoutsOutputReference) validateSetTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubScopeTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleGkeHubScopeTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

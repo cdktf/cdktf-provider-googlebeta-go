@@ -55,6 +55,10 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateOverrideLogicalIdPar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutBinaryAuthorizationParameters(value *GoogleGkeonpremBareMetalClusterBinaryAuthorization) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutClusterOperationsParameters(value *GoogleGkeonpremBareMetalClusterClusterOperations) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutStorageParameters
 }
 
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutTimeoutsParameters(value *GoogleGkeonpremBareMetalClusterTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validatePutUpgradePolicyParameters(value *GoogleGkeonpremBareMetalClusterUpgradePolicy) error {
 	return nil
 }
 

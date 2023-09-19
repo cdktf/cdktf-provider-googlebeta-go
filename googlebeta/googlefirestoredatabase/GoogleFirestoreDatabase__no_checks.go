@@ -103,6 +103,10 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetNameParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetPointInTimeRecoveryEnablementParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetProjectParameters(val *string) error {
 	return nil
 }

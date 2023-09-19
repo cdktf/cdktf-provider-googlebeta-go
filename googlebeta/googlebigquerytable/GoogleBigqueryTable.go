@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table google_bigquery_table}.
 type GoogleBigqueryTable interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -104,6 +104,8 @@ type GoogleBigqueryTable interface {
 	SetSchema(val *string)
 	SchemaInput() *string
 	SelfLink() *string
+	TableConstraints() GoogleBigqueryTableTableConstraintsOutputReference
+	TableConstraintsInput() *GoogleBigqueryTableTableConstraints
 	TableId() *string
 	SetTableId(val *string)
 	TableIdInput() *string
@@ -147,6 +149,7 @@ type GoogleBigqueryTable interface {
 	PutExternalDataConfiguration(value *GoogleBigqueryTableExternalDataConfiguration)
 	PutMaterializedView(value *GoogleBigqueryTableMaterializedView)
 	PutRangePartitioning(value *GoogleBigqueryTableRangePartitioning)
+	PutTableConstraints(value *GoogleBigqueryTableTableConstraints)
 	PutTimePartitioning(value *GoogleBigqueryTableTimePartitioning)
 	PutView(value *GoogleBigqueryTableView)
 	ResetClustering()
@@ -166,6 +169,7 @@ type GoogleBigqueryTable interface {
 	ResetProject()
 	ResetRangePartitioning()
 	ResetSchema()
+	ResetTableConstraints()
 	ResetTimePartitioning()
 	ResetView()
 	SynthesizeAttributes() *map[string]interface{}
@@ -693,6 +697,26 @@ func (j *jsiiProxy_GoogleBigqueryTable) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) TableConstraints() GoogleBigqueryTableTableConstraintsOutputReference {
+	var returns GoogleBigqueryTableTableConstraintsOutputReference
+	_jsii_.Get(
+		j,
+		"tableConstraints",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) TableConstraintsInput() *GoogleBigqueryTableTableConstraints {
+	var returns *GoogleBigqueryTableTableConstraints
+	_jsii_.Get(
+		j,
+		"tableConstraintsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryTable) TableId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -794,7 +818,7 @@ func (j *jsiiProxy_GoogleBigqueryTable) ViewInput() *GoogleBigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) GoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -812,7 +836,7 @@ func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1333,6 +1357,17 @@ func (g *jsiiProxy_GoogleBigqueryTable) PutRangePartitioning(value *GoogleBigque
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) PutTableConstraints(value *GoogleBigqueryTableTableConstraints) {
+	if err := g.validatePutTableConstraintsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTableConstraints",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) PutTimePartitioning(value *GoogleBigqueryTableTimePartitioning) {
 	if err := g.validatePutTimePartitioningParameters(value); err != nil {
 		panic(err)
@@ -1471,6 +1506,14 @@ func (g *jsiiProxy_GoogleBigqueryTable) ResetSchema() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSchema",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) ResetTableConstraints() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTableConstraints",
 		nil, // no parameters
 	)
 }

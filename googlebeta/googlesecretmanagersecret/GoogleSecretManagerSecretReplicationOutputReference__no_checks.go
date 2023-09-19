@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validatePutAutoParameters(value *GoogleSecretManagerSecretReplicationAuto) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validatePutUserManagedParameters(value *GoogleSecretManagerSecretReplicationUserManaged) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member}.
 type GoogleArtifactRegistryRepositoryIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryIamMember) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
 func NewGoogleArtifactRegistryRepositoryIamMember(scope constructs.Construct, id *string, config *GoogleArtifactRegistryRepositoryIamMemberConfig) GoogleArtifactRegistryRepositoryIamMember {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewGoogleArtifactRegistryRepositoryIamMember(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_artifact_registry_repository_iam_member google_artifact_registry_repository_iam_member} Resource.
 func NewGoogleArtifactRegistryRepositoryIamMember_Override(g GoogleArtifactRegistryRepositoryIamMember, scope constructs.Construct, id *string, config *GoogleArtifactRegistryRepositoryIamMemberConfig) {
 	_init_.Initialize()
 

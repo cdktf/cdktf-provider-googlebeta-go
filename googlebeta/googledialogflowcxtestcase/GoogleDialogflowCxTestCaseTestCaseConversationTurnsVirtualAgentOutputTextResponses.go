@@ -1,0 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package googledialogflowcxtestcase
+
+
+type GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputTextResponses struct {
+	// A collection of text responses.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_dialogflow_cx_test_case#text GoogleDialogflowCxTestCase#text}
+	Text *[]*string `field:"optional" json:"text" yaml:"text"`
+}
+

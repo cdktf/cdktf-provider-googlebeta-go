@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateR
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateSetAllowNonIncrementalDefinitionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryTableMaterializedViewOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

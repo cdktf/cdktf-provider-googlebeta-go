@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding}.
 type GoogleIapTunnelIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_GoogleIapTunnelIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding} Resource.
 func NewGoogleIapTunnelIamBinding(scope constructs.Construct, id *string, config *GoogleIapTunnelIamBindingConfig) GoogleIapTunnelIamBinding {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewGoogleIapTunnelIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.82.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_iap_tunnel_iam_binding google_iap_tunnel_iam_binding} Resource.
 func NewGoogleIapTunnelIamBinding_Override(g GoogleIapTunnelIamBinding, scope constructs.Construct, id *string, config *GoogleIapTunnelIamBindingConfig) {
 	_init_.Initialize()
 
