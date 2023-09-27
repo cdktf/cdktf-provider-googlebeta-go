@@ -87,6 +87,10 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetCountParameters(val inter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetDeleteProtectionStateParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetIdParameters(val *string) error {
 	return nil
 }

@@ -63,6 +63,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutFastSocketParameters(value *GoogleContainerClusterNodePoolNodeConfigFastSocket) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutGcfsConfigParameters(value *GoogleContainerClusterNodePoolNodeConfigGcfsConfig) error {
 	return nil
 }

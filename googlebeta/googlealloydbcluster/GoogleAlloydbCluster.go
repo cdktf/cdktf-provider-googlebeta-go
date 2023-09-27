@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
 type GoogleAlloydbCluster interface {
 	cdktf.TerraformResource
 	AutomatedBackupPolicy() GoogleAlloydbClusterAutomatedBackupPolicyOutputReference
@@ -74,6 +74,8 @@ type GoogleAlloydbCluster interface {
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
+	NetworkConfig() GoogleAlloydbClusterNetworkConfigOutputReference
+	NetworkConfigInput() *GoogleAlloydbClusterNetworkConfig
 	NetworkInput() *string
 	// The tree node.
 	Node() constructs.Node
@@ -132,6 +134,7 @@ type GoogleAlloydbCluster interface {
 	PutContinuousBackupConfig(value *GoogleAlloydbClusterContinuousBackupConfig)
 	PutEncryptionConfig(value *GoogleAlloydbClusterEncryptionConfig)
 	PutInitialUser(value *GoogleAlloydbClusterInitialUser)
+	PutNetworkConfig(value *GoogleAlloydbClusterNetworkConfig)
 	PutRestoreBackupSource(value *GoogleAlloydbClusterRestoreBackupSource)
 	PutRestoreContinuousBackupSource(value *GoogleAlloydbClusterRestoreContinuousBackupSource)
 	PutTimeouts(value *GoogleAlloydbClusterTimeouts)
@@ -142,6 +145,8 @@ type GoogleAlloydbCluster interface {
 	ResetId()
 	ResetInitialUser()
 	ResetLabels()
+	ResetNetwork()
+	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -504,6 +509,26 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Network() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbCluster) NetworkConfig() GoogleAlloydbClusterNetworkConfigOutputReference {
+	var returns GoogleAlloydbClusterNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) NetworkConfigInput() *GoogleAlloydbClusterNetworkConfig {
+	var returns *GoogleAlloydbClusterNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbCluster) NetworkInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -675,7 +700,7 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) GoogleAlloydbCluster {
 	_init_.Initialize()
 
@@ -693,7 +718,7 @@ func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster_Override(g GoogleAlloydbCluster, scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) {
 	_init_.Initialize()
 
@@ -1159,6 +1184,17 @@ func (g *jsiiProxy_GoogleAlloydbCluster) PutInitialUser(value *GoogleAlloydbClus
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) PutNetworkConfig(value *GoogleAlloydbClusterNetworkConfig) {
+	if err := g.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) PutRestoreBackupSource(value *GoogleAlloydbClusterRestoreBackupSource) {
 	if err := g.validatePutRestoreBackupSourceParameters(value); err != nil {
 		panic(err)
@@ -1244,6 +1280,22 @@ func (g *jsiiProxy_GoogleAlloydbCluster) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

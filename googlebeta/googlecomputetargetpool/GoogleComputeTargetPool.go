@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_compute_target_pool google_compute_target_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_target_pool google_compute_target_pool}.
 type GoogleComputeTargetPool interface {
 	cdktf.TerraformResource
 	BackupPool() *string
@@ -563,7 +563,7 @@ func (j *jsiiProxy_GoogleComputeTargetPool) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
 func NewGoogleComputeTargetPool(scope constructs.Construct, id *string, config *GoogleComputeTargetPoolConfig) GoogleComputeTargetPool {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewGoogleComputeTargetPool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_target_pool google_compute_target_pool} Resource.
 func NewGoogleComputeTargetPool_Override(g GoogleComputeTargetPool, scope constructs.Construct, id *string, config *GoogleComputeTargetPoolConfig) {
 	_init_.Initialize()
 

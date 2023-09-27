@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_identity_platform_config google_identity_platform_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config google_identity_platform_config}.
 type GoogleIdentityPlatformConfig interface {
 	cdktf.TerraformResource
 	AuthorizedDomains() *[]*string
@@ -72,6 +72,8 @@ type GoogleIdentityPlatformConfig interface {
 	QuotaInput() *GoogleIdentityPlatformConfigQuota
 	// Experimental.
 	RawOverrides() interface{}
+	SignIn() GoogleIdentityPlatformConfigSignInOutputReference
+	SignInInput() *GoogleIdentityPlatformConfigSignIn
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -107,6 +109,7 @@ type GoogleIdentityPlatformConfig interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBlockingFunctions(value *GoogleIdentityPlatformConfigBlockingFunctions)
 	PutQuota(value *GoogleIdentityPlatformConfigQuota)
+	PutSignIn(value *GoogleIdentityPlatformConfigSignIn)
 	PutTimeouts(value *GoogleIdentityPlatformConfigTimeouts)
 	ResetAuthorizedDomains()
 	ResetAutodeleteAnonymousUsers()
@@ -117,6 +120,7 @@ type GoogleIdentityPlatformConfig interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetQuota()
+	ResetSignIn()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -393,6 +397,26 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SignIn() GoogleIdentityPlatformConfigSignInOutputReference {
+	var returns GoogleIdentityPlatformConfigSignInOutputReference
+	_jsii_.Get(
+		j,
+		"signIn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIdentityPlatformConfig) SignInInput() *GoogleIdentityPlatformConfigSignIn {
+	var returns *GoogleIdentityPlatformConfigSignIn
+	_jsii_.Get(
+		j,
+		"signInInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleIdentityPlatformConfig) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -444,7 +468,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
 func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformConfigConfig) GoogleIdentityPlatformConfig {
 	_init_.Initialize()
 
@@ -462,7 +486,7 @@ func NewGoogleIdentityPlatformConfig(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_identity_platform_config google_identity_platform_config} Resource.
 func NewGoogleIdentityPlatformConfig_Override(g GoogleIdentityPlatformConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformConfigConfig) {
 	_init_.Initialize()
 
@@ -873,6 +897,17 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutQuota(value *GoogleIdentityP
 	)
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutSignIn(value *GoogleIdentityPlatformConfigSignIn) {
+	if err := g.validatePutSignInParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSignIn",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformConfig) PutTimeouts(value *GoogleIdentityPlatformConfigTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -936,6 +971,14 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetQuota() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetQuota",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformConfig) ResetSignIn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSignIn",
 		nil, // no parameters
 	)
 }

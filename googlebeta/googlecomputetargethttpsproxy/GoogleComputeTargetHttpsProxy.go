@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy}.
 type GoogleComputeTargetHttpsProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -82,6 +82,9 @@ type GoogleComputeTargetHttpsProxy interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	ServerTlsPolicy() *string
+	SetServerTlsPolicy(val *string)
+	ServerTlsPolicyInput() *string
 	SslCertificates() *[]*string
 	SetSslCertificates(val *[]*string)
 	SslCertificatesInput() *[]*string
@@ -135,6 +138,7 @@ type GoogleComputeTargetHttpsProxy interface {
 	ResetProject()
 	ResetProxyBind()
 	ResetQuicOverride()
+	ResetServerTlsPolicy()
 	ResetSslCertificates()
 	ResetSslPolicy()
 	ResetTimeouts()
@@ -473,6 +477,26 @@ func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) ServerTlsPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverTlsPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) ServerTlsPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverTlsPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) SslCertificates() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -584,7 +608,7 @@ func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy} Resource.
 func NewGoogleComputeTargetHttpsProxy(scope constructs.Construct, id *string, config *GoogleComputeTargetHttpsProxyConfig) GoogleComputeTargetHttpsProxy {
 	_init_.Initialize()
 
@@ -602,7 +626,7 @@ func NewGoogleComputeTargetHttpsProxy(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_target_https_proxy google_compute_target_https_proxy} Resource.
 func NewGoogleComputeTargetHttpsProxy_Override(g GoogleComputeTargetHttpsProxy, scope constructs.Construct, id *string, config *GoogleComputeTargetHttpsProxyConfig) {
 	_init_.Initialize()
 
@@ -765,6 +789,17 @@ func (j *jsiiProxy_GoogleComputeTargetHttpsProxy)SetQuicOverride(val *string) {
 	_jsii_.Set(
 		j,
 		"quicOverride",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeTargetHttpsProxy)SetServerTlsPolicy(val *string) {
+	if err := j.validateSetServerTlsPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverTlsPolicy",
 		val,
 	)
 }
@@ -1139,6 +1174,14 @@ func (g *jsiiProxy_GoogleComputeTargetHttpsProxy) ResetQuicOverride() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetQuicOverride",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeTargetHttpsProxy) ResetServerTlsPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServerTlsPolicy",
 		nil, // no parameters
 	)
 }

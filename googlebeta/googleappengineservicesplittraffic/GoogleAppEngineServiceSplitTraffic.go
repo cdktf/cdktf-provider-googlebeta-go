@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_app_engine_service_split_traffic google_app_engine_service_split_traffic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_app_engine_service_split_traffic google_app_engine_service_split_traffic}.
 type GoogleAppEngineServiceSplitTraffic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -407,7 +407,7 @@ func (j *jsiiProxy_GoogleAppEngineServiceSplitTraffic) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
 func NewGoogleAppEngineServiceSplitTraffic(scope constructs.Construct, id *string, config *GoogleAppEngineServiceSplitTrafficConfig) GoogleAppEngineServiceSplitTraffic {
 	_init_.Initialize()
 
@@ -425,7 +425,7 @@ func NewGoogleAppEngineServiceSplitTraffic(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_app_engine_service_split_traffic google_app_engine_service_split_traffic} Resource.
 func NewGoogleAppEngineServiceSplitTraffic_Override(g GoogleAppEngineServiceSplitTraffic, scope constructs.Construct, id *string, config *GoogleAppEngineServiceSplitTrafficConfig) {
 	_init_.Initialize()
 

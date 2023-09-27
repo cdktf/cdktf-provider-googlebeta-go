@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -229,6 +229,9 @@ type GoogleBetaProvider interface {
 	DocumentAiWarehouseCustomEndpoint() *string
 	SetDocumentAiWarehouseCustomEndpoint(val *string)
 	DocumentAiWarehouseCustomEndpointInput() *string
+	EdgenetworkCustomEndpoint() *string
+	SetEdgenetworkCustomEndpoint(val *string)
+	EdgenetworkCustomEndpointInput() *string
 	EssentialContactsCustomEndpoint() *string
 	SetEssentialContactsCustomEndpoint(val *string)
 	EssentialContactsCustomEndpointInput() *string
@@ -458,6 +461,9 @@ type GoogleBetaProvider interface {
 	TpuCustomEndpoint() *string
 	SetTpuCustomEndpoint(val *string)
 	TpuCustomEndpointInput() *string
+	TpuV2CustomEndpoint() *string
+	SetTpuV2CustomEndpoint(val *string)
+	TpuV2CustomEndpointInput() *string
 	UserProjectOverride() interface{}
 	SetUserProjectOverride(val interface{})
 	UserProjectOverrideInput() interface{}
@@ -554,6 +560,7 @@ type GoogleBetaProvider interface {
 	ResetDnsCustomEndpoint()
 	ResetDocumentAiCustomEndpoint()
 	ResetDocumentAiWarehouseCustomEndpoint()
+	ResetEdgenetworkCustomEndpoint()
 	ResetEssentialContactsCustomEndpoint()
 	ResetEventarcCustomEndpoint()
 	ResetFilestoreCustomEndpoint()
@@ -628,6 +635,7 @@ type GoogleBetaProvider interface {
 	ResetTagsCustomEndpoint()
 	ResetTagsLocationCustomEndpoint()
 	ResetTpuCustomEndpoint()
+	ResetTpuV2CustomEndpoint()
 	ResetUserProjectOverride()
 	ResetVertexAiCustomEndpoint()
 	ResetVmwareengineCustomEndpoint()
@@ -2065,6 +2073,26 @@ func (j *jsiiProxy_GoogleBetaProvider) DocumentAiWarehouseCustomEndpointInput() 
 	_jsii_.Get(
 		j,
 		"documentAiWarehouseCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) EdgenetworkCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgenetworkCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) EdgenetworkCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"edgenetworkCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3570,6 +3598,26 @@ func (j *jsiiProxy_GoogleBetaProvider) TpuCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) TpuV2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuV2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) TpuV2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuV2CustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) UserProjectOverride() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -3711,7 +3759,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3729,7 +3777,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4303,6 +4351,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetDocumentAiWarehouseCustomEndpoint(val *
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetEdgenetworkCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"edgenetworkCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetEssentialContactsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -4867,6 +4923,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetTpuCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"tpuCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetTpuV2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"tpuV2CustomEndpoint",
 		val,
 	)
 }
@@ -5596,6 +5660,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetDocumentAiWarehouseCustomEndpoint() 
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetEdgenetworkCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEdgenetworkCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetEssentialContactsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6168,6 +6240,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetTpuCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTpuCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetTpuV2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTpuV2CustomEndpoint",
 		nil, // no parameters
 	)
 }

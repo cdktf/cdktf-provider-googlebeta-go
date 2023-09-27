@@ -2723,6 +2723,44 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigFastSocket",
+		reflect.TypeOf((*GoogleContainerClusterNodeConfigFastSocket)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigFastSocketOutputReference",
+		reflect.TypeOf((*GoogleContainerClusterNodeConfigFastSocketOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerClusterNodeConfigFastSocketOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGcfsConfig",
 		reflect.TypeOf((*GoogleContainerClusterNodeConfigGcfsConfig)(nil)).Elem(),
 	)
@@ -3178,6 +3216,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ephemeralStorageConfigInput", GoGetter: "EphemeralStorageConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ephemeralStorageLocalSsdConfig", GoGetter: "EphemeralStorageLocalSsdConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "ephemeralStorageLocalSsdConfigInput", GoGetter: "EphemeralStorageLocalSsdConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fastSocket", GoGetter: "FastSocket"},
+			_jsii_.MemberProperty{JsiiProperty: "fastSocketInput", GoGetter: "FastSocketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "gcfsConfig", GoGetter: "GcfsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "gcfsConfigInput", GoGetter: "GcfsConfigInput"},
@@ -3229,6 +3269,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putConfidentialNodes", GoMethod: "PutConfidentialNodes"},
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorageConfig", GoMethod: "PutEphemeralStorageConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorageLocalSsdConfig", GoMethod: "PutEphemeralStorageLocalSsdConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putFastSocket", GoMethod: "PutFastSocket"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcfsConfig", GoMethod: "PutGcfsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putGuestAccelerator", GoMethod: "PutGuestAccelerator"},
 			_jsii_.MemberMethod{JsiiMethod: "putGvnic", GoMethod: "PutGvnic"},
@@ -3251,6 +3292,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskType", GoMethod: "ResetDiskType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEphemeralStorageConfig", GoMethod: "ResetEphemeralStorageConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEphemeralStorageLocalSsdConfig", GoMethod: "ResetEphemeralStorageLocalSsdConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFastSocket", GoMethod: "ResetFastSocket"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcfsConfig", GoMethod: "ResetGcfsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGuestAccelerator", GoMethod: "ResetGuestAccelerator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGvnic", GoMethod: "ResetGvnic"},
@@ -4339,6 +4381,44 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigFastSocket",
+		reflect.TypeOf((*GoogleContainerClusterNodePoolNodeConfigFastSocket)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference",
+		reflect.TypeOf((*GoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "enabled", GoGetter: "Enabled"},
+			_jsii_.MemberProperty{JsiiProperty: "enabledInput", GoGetter: "EnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerClusterNodePoolNodeConfigFastSocketOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigGcfsConfig",
 		reflect.TypeOf((*GoogleContainerClusterNodePoolNodeConfigGcfsConfig)(nil)).Elem(),
 	)
@@ -4794,6 +4874,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ephemeralStorageConfigInput", GoGetter: "EphemeralStorageConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "ephemeralStorageLocalSsdConfig", GoGetter: "EphemeralStorageLocalSsdConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "ephemeralStorageLocalSsdConfigInput", GoGetter: "EphemeralStorageLocalSsdConfigInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fastSocket", GoGetter: "FastSocket"},
+			_jsii_.MemberProperty{JsiiProperty: "fastSocketInput", GoGetter: "FastSocketInput"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
 			_jsii_.MemberProperty{JsiiProperty: "gcfsConfig", GoGetter: "GcfsConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "gcfsConfigInput", GoGetter: "GcfsConfigInput"},
@@ -4845,6 +4927,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putConfidentialNodes", GoMethod: "PutConfidentialNodes"},
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorageConfig", GoMethod: "PutEphemeralStorageConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorageLocalSsdConfig", GoMethod: "PutEphemeralStorageLocalSsdConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "putFastSocket", GoMethod: "PutFastSocket"},
 			_jsii_.MemberMethod{JsiiMethod: "putGcfsConfig", GoMethod: "PutGcfsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putGuestAccelerator", GoMethod: "PutGuestAccelerator"},
 			_jsii_.MemberMethod{JsiiMethod: "putGvnic", GoMethod: "PutGvnic"},
@@ -4867,6 +4950,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskType", GoMethod: "ResetDiskType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEphemeralStorageConfig", GoMethod: "ResetEphemeralStorageConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEphemeralStorageLocalSsdConfig", GoMethod: "ResetEphemeralStorageLocalSsdConfig"},
+			_jsii_.MemberMethod{JsiiMethod: "resetFastSocket", GoMethod: "ResetFastSocket"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGcfsConfig", GoMethod: "ResetGcfsConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGuestAccelerator", GoMethod: "ResetGuestAccelerator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGvnic", GoMethod: "ResetGvnic"},

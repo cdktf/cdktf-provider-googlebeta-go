@@ -35,6 +35,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	DiskType() *string
 	EphemeralStorageConfig() DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigList
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigList
+	FastSocket() DataGoogleContainerClusterNodePoolNodeConfigFastSocketList
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() DataGoogleContainerClusterNodePoolNodeConfigGcfsConfigList
@@ -208,6 +209,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"ephemeralStorageLocalSsdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) FastSocket() DataGoogleContainerClusterNodePoolNodeConfigFastSocketList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigFastSocketList
+	_jsii_.Get(
+		j,
+		"fastSocket",
 		&returns,
 	)
 	return returns

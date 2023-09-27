@@ -119,6 +119,10 @@ func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetQuicOverrideParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetServerTlsPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeTargetHttpsProxy) validateSetSslCertificatesParameters(val *[]*string) error {
 	return nil
 }

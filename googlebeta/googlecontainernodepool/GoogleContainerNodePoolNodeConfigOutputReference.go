@@ -45,6 +45,8 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	EphemeralStorageConfigInput() *GoogleContainerNodePoolNodeConfigEphemeralStorageConfig
 	EphemeralStorageLocalSsdConfig() GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference
 	EphemeralStorageLocalSsdConfigInput() *GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig
+	FastSocket() GoogleContainerNodePoolNodeConfigFastSocketOutputReference
+	FastSocketInput() *GoogleContainerNodePoolNodeConfigFastSocket
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() GoogleContainerNodePoolNodeConfigGcfsConfigOutputReference
@@ -153,6 +155,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	PutConfidentialNodes(value *GoogleContainerNodePoolNodeConfigConfidentialNodes)
 	PutEphemeralStorageConfig(value *GoogleContainerNodePoolNodeConfigEphemeralStorageConfig)
 	PutEphemeralStorageLocalSsdConfig(value *GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
+	PutFastSocket(value *GoogleContainerNodePoolNodeConfigFastSocket)
 	PutGcfsConfig(value *GoogleContainerNodePoolNodeConfigGcfsConfig)
 	PutGuestAccelerator(value interface{})
 	PutGvnic(value *GoogleContainerNodePoolNodeConfigGvnic)
@@ -173,6 +176,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ResetDiskType()
 	ResetEphemeralStorageConfig()
 	ResetEphemeralStorageLocalSsdConfig()
+	ResetFastSocket()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -380,6 +384,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) EphemeralSt
 	_jsii_.Get(
 		j,
 		"ephemeralStorageLocalSsdConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) FastSocket() GoogleContainerNodePoolNodeConfigFastSocketOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigFastSocketOutputReference
+	_jsii_.Get(
+		j,
+		"fastSocket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) FastSocketInput() *GoogleContainerNodePoolNodeConfigFastSocket {
+	var returns *GoogleContainerNodePoolNodeConfigFastSocket
+	_jsii_.Get(
+		j,
+		"fastSocketInput",
 		&returns,
 	)
 	return returns
@@ -1465,6 +1489,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutEphemera
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutFastSocket(value *GoogleContainerNodePoolNodeConfigFastSocket) {
+	if err := g.validatePutFastSocketParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putFastSocket",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutGcfsConfig(value *GoogleContainerNodePoolNodeConfigGcfsConfig) {
 	if err := g.validatePutGcfsConfigParameters(value); err != nil {
 		panic(err)
@@ -1660,6 +1695,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetEpheme
 	_jsii_.InvokeVoid(
 		g,
 		"resetEphemeralStorageLocalSsdConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetFastSocket() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFastSocket",
 		nil, // no parameters
 	)
 }

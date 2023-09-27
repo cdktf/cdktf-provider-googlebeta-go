@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
 type GoogleComputeSubnetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,7 @@ type GoogleComputeSubnetwork interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InternalIpv6Prefix() *string
 	IpCidrRange() *string
 	SetIpCidrRange(val *string)
 	IpCidrRangeInput() *string
@@ -326,6 +327,16 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) InternalIpv6Prefix() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"internalIpv6Prefix",
 		&returns,
 	)
 	return returns
@@ -712,7 +723,7 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -730,7 +741,7 @@ func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset}.
 type GoogleLoggingLinkedDataset interface {
 	cdktf.TerraformResource
 	BigqueryDataset() GoogleLoggingLinkedDatasetBigqueryDatasetList
@@ -488,7 +488,7 @@ func (j *jsiiProxy_GoogleLoggingLinkedDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset} Resource.
 func NewGoogleLoggingLinkedDataset(scope constructs.Construct, id *string, config *GoogleLoggingLinkedDatasetConfig) GoogleLoggingLinkedDataset {
 	_init_.Initialize()
 
@@ -506,7 +506,7 @@ func NewGoogleLoggingLinkedDataset(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset} Resource.
 func NewGoogleLoggingLinkedDataset_Override(g GoogleLoggingLinkedDataset, scope constructs.Construct, id *string, config *GoogleLoggingLinkedDatasetConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_datastream_stream google_datastream_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_datastream_stream google_datastream_stream}.
 type GoogleDatastreamStream interface {
 	cdktf.TerraformResource
 	BackfillAll() GoogleDatastreamStreamBackfillAllOutputReference
@@ -594,7 +594,7 @@ func (j *jsiiProxy_GoogleDatastreamStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
 func NewGoogleDatastreamStream(scope constructs.Construct, id *string, config *GoogleDatastreamStreamConfig) GoogleDatastreamStream {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewGoogleDatastreamStream(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
 func NewGoogleDatastreamStream_Override(g GoogleDatastreamStream, scope constructs.Construct, id *string, config *GoogleDatastreamStreamConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic_iam_member google_pubsub_topic_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic_iam_member google_pubsub_topic_iam_member}.
 type GooglePubsubTopicIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_GooglePubsubTopicIamMember) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic_iam_member google_pubsub_topic_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic_iam_member google_pubsub_topic_iam_member} Resource.
 func NewGooglePubsubTopicIamMember(scope constructs.Construct, id *string, config *GooglePubsubTopicIamMemberConfig) GooglePubsubTopicIamMember {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewGooglePubsubTopicIamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.83.0/docs/resources/google_pubsub_topic_iam_member google_pubsub_topic_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_pubsub_topic_iam_member google_pubsub_topic_iam_member} Resource.
 func NewGooglePubsubTopicIamMember_Override(g GooglePubsubTopicIamMember, scope constructs.Construct, id *string, config *GooglePubsubTopicIamMemberConfig) {
 	_init_.Initialize()
 
