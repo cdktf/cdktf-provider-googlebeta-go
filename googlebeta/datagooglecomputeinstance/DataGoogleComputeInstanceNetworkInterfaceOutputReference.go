@@ -5,9 +5,9 @@ package datagooglecomputeinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecomputeinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglecomputeinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -40,9 +40,11 @@ type DataGoogleComputeInstanceNetworkInterfaceOutputReference interface {
 	Ipv6Address() *string
 	Name() *string
 	Network() *string
+	NetworkAttachment() *string
 	NetworkIp() *string
 	NicType() *string
 	QueueCount() *float64
+	SecurityPolicy() *string
 	StackType() *string
 	Subnetwork() *string
 	SubnetworkProject() *string
@@ -223,6 +225,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) Net
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) NetworkAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachment",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) NetworkIp() *string {
 	var returns *string
 	_jsii_.Get(
@@ -248,6 +260,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) Que
 	_jsii_.Get(
 		j,
 		"queueCount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceOutputReference) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
 		&returns,
 	)
 	return returns

@@ -5,14 +5,14 @@ package googleapigeesharedflowdeployment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigeesharedflowdeployment/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleapigeesharedflowdeployment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_sharedflow_deployment google_apigee_sharedflow_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_sharedflow_deployment google_apigee_sharedflow_deployment}.
 type GoogleApigeeSharedflowDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -429,7 +429,7 @@ func (j *jsiiProxy_GoogleApigeeSharedflowDeployment) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource.
 func NewGoogleApigeeSharedflowDeployment(scope constructs.Construct, id *string, config *GoogleApigeeSharedflowDeploymentConfig) GoogleApigeeSharedflowDeployment {
 	_init_.Initialize()
 
@@ -447,7 +447,7 @@ func NewGoogleApigeeSharedflowDeployment(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_apigee_sharedflow_deployment google_apigee_sharedflow_deployment} Resource.
 func NewGoogleApigeeSharedflowDeployment_Override(g GoogleApigeeSharedflowDeployment, scope constructs.Construct, id *string, config *GoogleApigeeSharedflowDeploymentConfig) {
 	_init_.Initialize()
 

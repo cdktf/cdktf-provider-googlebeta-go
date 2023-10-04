@@ -5,14 +5,14 @@ package googlebillingbudget
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebillingbudget/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlebillingbudget/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_billing_budget google_billing_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_billing_budget google_billing_budget}.
 type GoogleBillingBudget interface {
 	cdktf.TerraformResource
 	AllUpdatesRule() GoogleBillingBudgetAllUpdatesRuleOutputReference
@@ -466,7 +466,7 @@ func (j *jsiiProxy_GoogleBillingBudget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_billing_budget google_billing_budget} Resource.
 func NewGoogleBillingBudget(scope constructs.Construct, id *string, config *GoogleBillingBudgetConfig) GoogleBillingBudget {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewGoogleBillingBudget(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_billing_budget google_billing_budget} Resource.
 func NewGoogleBillingBudget_Override(g GoogleBillingBudget, scope constructs.Construct, id *string, config *GoogleBillingBudgetConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlecloudrundomainmapping
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudrundomainmapping/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecloudrundomainmapping/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloud_run_domain_mapping google_cloud_run_domain_mapping}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_run_domain_mapping google_cloud_run_domain_mapping}.
 type GoogleCloudRunDomainMapping interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -109,6 +109,7 @@ type GoogleCloudRunDomainMapping interface {
 	PutSpec(value *GoogleCloudRunDomainMappingSpec)
 	PutTimeouts(value *GoogleCloudRunDomainMappingTimeouts)
 	ResetId()
+	ResetMetadata()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -440,7 +441,7 @@ func (j *jsiiProxy_GoogleCloudRunDomainMapping) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
 func NewGoogleCloudRunDomainMapping(scope constructs.Construct, id *string, config *GoogleCloudRunDomainMappingConfig) GoogleCloudRunDomainMapping {
 	_init_.Initialize()
 
@@ -458,7 +459,7 @@ func NewGoogleCloudRunDomainMapping(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_run_domain_mapping google_cloud_run_domain_mapping} Resource.
 func NewGoogleCloudRunDomainMapping_Override(g GoogleCloudRunDomainMapping, scope constructs.Construct, id *string, config *GoogleCloudRunDomainMappingConfig) {
 	_init_.Initialize()
 
@@ -884,6 +885,14 @@ func (g *jsiiProxy_GoogleCloudRunDomainMapping) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunDomainMapping) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMetadata",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package googlebigtableinstanceiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebigtableinstanceiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlebigtableinstanceiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_bigtable_instance_iam_policy google_bigtable_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigtable_instance_iam_policy google_bigtable_instance_iam_policy}.
 type GoogleBigtableInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_bigtable_instance_iam_policy google_bigtable_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigtable_instance_iam_policy google_bigtable_instance_iam_policy} Resource.
 func NewGoogleBigtableInstanceIamPolicy(scope constructs.Construct, id *string, config *GoogleBigtableInstanceIamPolicyConfig) GoogleBigtableInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewGoogleBigtableInstanceIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_bigtable_instance_iam_policy google_bigtable_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigtable_instance_iam_policy google_bigtable_instance_iam_policy} Resource.
 func NewGoogleBigtableInstanceIamPolicy_Override(g GoogleBigtableInstanceIamPolicy, scope constructs.Construct, id *string, config *GoogleBigtableInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

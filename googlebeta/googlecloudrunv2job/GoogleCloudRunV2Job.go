@@ -5,14 +5,14 @@ package googlecloudrunv2job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudrunv2job/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecloudrunv2job/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
 type GoogleCloudRunV2Job interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -46,6 +46,8 @@ type GoogleCloudRunV2Job interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	ExecutionCount() *float64
 	ExpireTime() *string
@@ -101,6 +103,7 @@ type GoogleCloudRunV2Job interface {
 	TerminalCondition() GoogleCloudRunV2JobTerminalConditionList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -330,6 +333,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -655,6 +678,16 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Job) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Job) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -716,7 +749,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) GoogleCloudRunV2Job {
 	_init_.Initialize()
 
@@ -734,7 +767,7 @@ func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job_Override(g GoogleCloudRunV2Job, scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) {
 	_init_.Initialize()
 

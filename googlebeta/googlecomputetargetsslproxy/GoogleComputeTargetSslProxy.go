@@ -5,14 +5,14 @@ package googlecomputetargetsslproxy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputetargetsslproxy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputetargetsslproxy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_target_ssl_proxy google_compute_target_ssl_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_target_ssl_proxy google_compute_target_ssl_proxy}.
 type GoogleComputeTargetSslProxy interface {
 	cdktf.TerraformResource
 	BackendService() *string
@@ -536,7 +536,7 @@ func (j *jsiiProxy_GoogleComputeTargetSslProxy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
 func NewGoogleComputeTargetSslProxy(scope constructs.Construct, id *string, config *GoogleComputeTargetSslProxyConfig) GoogleComputeTargetSslProxy {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewGoogleComputeTargetSslProxy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_target_ssl_proxy google_compute_target_ssl_proxy} Resource.
 func NewGoogleComputeTargetSslProxy_Override(g GoogleComputeTargetSslProxy, scope constructs.Construct, id *string, config *GoogleComputeTargetSslProxyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googledataplexassetiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataplexassetiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexassetiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member}.
 type GoogleDataplexAssetIamMember interface {
 	cdktf.TerraformResource
 	Asset() *string
@@ -487,7 +487,7 @@ func (j *jsiiProxy_GoogleDataplexAssetIamMember) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member} Resource.
 func NewGoogleDataplexAssetIamMember(scope constructs.Construct, id *string, config *GoogleDataplexAssetIamMemberConfig) GoogleDataplexAssetIamMember {
 	_init_.Initialize()
 
@@ -505,7 +505,7 @@ func NewGoogleDataplexAssetIamMember(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_asset_iam_member google_dataplex_asset_iam_member} Resource.
 func NewGoogleDataplexAssetIamMember_Override(g GoogleDataplexAssetIamMember, scope constructs.Construct, id *string, config *GoogleDataplexAssetIamMemberConfig) {
 	_init_.Initialize()
 

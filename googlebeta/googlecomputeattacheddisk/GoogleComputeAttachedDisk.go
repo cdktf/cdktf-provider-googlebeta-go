@@ -5,14 +5,14 @@ package googlecomputeattacheddisk
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputeattacheddisk/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeattacheddisk/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_attached_disk google_compute_attached_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_attached_disk google_compute_attached_disk}.
 type GoogleComputeAttachedDisk interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -455,7 +455,7 @@ func (j *jsiiProxy_GoogleComputeAttachedDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_attached_disk google_compute_attached_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_attached_disk google_compute_attached_disk} Resource.
 func NewGoogleComputeAttachedDisk(scope constructs.Construct, id *string, config *GoogleComputeAttachedDiskConfig) GoogleComputeAttachedDisk {
 	_init_.Initialize()
 
@@ -473,7 +473,7 @@ func NewGoogleComputeAttachedDisk(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_attached_disk google_compute_attached_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_attached_disk google_compute_attached_disk} Resource.
 func NewGoogleComputeAttachedDisk_Override(g GoogleComputeAttachedDisk, scope constructs.Construct, id *string, config *GoogleComputeAttachedDiskConfig) {
 	_init_.Initialize()
 

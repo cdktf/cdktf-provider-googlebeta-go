@@ -5,14 +5,14 @@ package googlevertexaifeaturestore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaifeaturestore/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevertexaifeaturestore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_featurestore google_vertex_ai_featurestore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_featurestore google_vertex_ai_featurestore}.
 type GoogleVertexAiFeaturestore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,7 @@ type GoogleVertexAiFeaturestore interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	EncryptionSpec() GoogleVertexAiFeaturestoreEncryptionSpecOutputReference
 	EncryptionSpecInput() *GoogleVertexAiFeaturestoreEncryptionSpec
 	Etag() *string
@@ -84,6 +85,7 @@ type GoogleVertexAiFeaturestore interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -202,6 +204,16 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestore) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiFeaturestore) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -487,6 +499,16 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestore) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVertexAiFeaturestore) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleVertexAiFeaturestore) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -538,7 +560,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestore) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
 func NewGoogleVertexAiFeaturestore(scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreConfig) GoogleVertexAiFeaturestore {
 	_init_.Initialize()
 
@@ -556,7 +578,7 @@ func NewGoogleVertexAiFeaturestore(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_featurestore google_vertex_ai_featurestore} Resource.
 func NewGoogleVertexAiFeaturestore_Override(g GoogleVertexAiFeaturestore, scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreConfig) {
 	_init_.Initialize()
 

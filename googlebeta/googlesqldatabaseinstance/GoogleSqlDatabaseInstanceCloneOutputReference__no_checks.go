@@ -75,6 +75,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetPoi
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetPreferredZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) validateSetSourceInstanceNameParameters(val *string) error {
 	return nil
 }

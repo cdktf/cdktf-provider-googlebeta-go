@@ -5,14 +5,14 @@ package googlecertificatemanagercertificate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecertificatemanagercertificate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecertificatemanagercertificate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate}.
 type GoogleCertificateManagerCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type GoogleCertificateManagerCertificate interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -82,6 +83,7 @@ type GoogleCertificateManagerCertificate interface {
 	SelfManagedInput() *GoogleCertificateManagerCertificateSelfManaged
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -208,6 +210,16 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificate) DescriptionInput() *stri
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerCertificate) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -463,6 +475,16 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificate) TerraformGeneratorMetada
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerCertificate) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerCertificate) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -504,7 +526,7 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificate) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewGoogleCertificateManagerCertificate(scope constructs.Construct, id *string, config *GoogleCertificateManagerCertificateConfig) GoogleCertificateManagerCertificate {
 	_init_.Initialize()
 
@@ -522,7 +544,7 @@ func NewGoogleCertificateManagerCertificate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewGoogleCertificateManagerCertificate_Override(g GoogleCertificateManagerCertificate, scope constructs.Construct, id *string, config *GoogleCertificateManagerCertificateConfig) {
 	_init_.Initialize()
 

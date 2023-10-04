@@ -5,14 +5,14 @@ package googlebigquerydataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebigquerydataset/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlebigquerydataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_bigquery_dataset google_bigquery_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigquery_dataset google_bigquery_dataset}.
 type GoogleBigqueryDataset interface {
 	cdktf.TerraformResource
 	Access() GoogleBigqueryDatasetAccessList
@@ -54,6 +54,7 @@ type GoogleBigqueryDataset interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -107,6 +108,7 @@ type GoogleBigqueryDataset interface {
 	StorageBillingModelInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -395,6 +397,16 @@ func (j *jsiiProxy_GoogleBigqueryDataset) DescriptionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryDataset) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryDataset) Etag() *string {
 	var returns *string
 	_jsii_.Get(
@@ -675,6 +687,16 @@ func (j *jsiiProxy_GoogleBigqueryDataset) TerraformGeneratorMetadata() *cdktf.Te
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryDataset) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryDataset) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -716,7 +738,7 @@ func (j *jsiiProxy_GoogleBigqueryDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
 func NewGoogleBigqueryDataset(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetConfig) GoogleBigqueryDataset {
 	_init_.Initialize()
 
@@ -734,7 +756,7 @@ func NewGoogleBigqueryDataset(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
 func NewGoogleBigqueryDataset_Override(g GoogleBigqueryDataset, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetConfig) {
 	_init_.Initialize()
 

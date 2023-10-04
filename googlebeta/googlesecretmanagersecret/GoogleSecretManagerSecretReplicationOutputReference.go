@@ -5,9 +5,9 @@ package googlesecretmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlesecretmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -15,9 +15,6 @@ type GoogleSecretManagerSecretReplicationOutputReference interface {
 	cdktf.ComplexObject
 	Auto() GoogleSecretManagerSecretReplicationAutoOutputReference
 	AutoInput() *GoogleSecretManagerSecretReplicationAuto
-	Automatic() interface{}
-	SetAutomatic(val interface{})
-	AutomaticInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74,7 +71,6 @@ type GoogleSecretManagerSecretReplicationOutputReference interface {
 	PutAuto(value *GoogleSecretManagerSecretReplicationAuto)
 	PutUserManaged(value *GoogleSecretManagerSecretReplicationUserManaged)
 	ResetAuto()
-	ResetAutomatic()
 	ResetUserManaged()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -106,26 +102,6 @@ func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) AutoInpu
 	_jsii_.Get(
 		j,
 		"autoInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) Automatic() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"automatic",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) AutomaticInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"automaticInput",
 		&returns,
 	)
 	return returns
@@ -246,17 +222,6 @@ func NewGoogleSecretManagerSecretReplicationOutputReference_Override(g GoogleSec
 		"@cdktf/provider-google-beta.googleSecretManagerSecret.GoogleSecretManagerSecretReplicationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
-	)
-}
-
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference)SetAutomatic(val interface{}) {
-	if err := j.validateSetAutomaticParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"automatic",
-		val,
 	)
 }
 
@@ -527,14 +492,6 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ResetAut
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuto",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) ResetAutomatic() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetAutomatic",
 		nil, // no parameters
 	)
 }

@@ -5,14 +5,14 @@ package googlecomputepublicadvertisedprefix
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputepublicadvertisedprefix/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputepublicadvertisedprefix/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix}.
 type GoogleComputePublicAdvertisedPrefix interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleComputePublicAdvertisedPrefix) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewGoogleComputePublicAdvertisedPrefix(scope constructs.Construct, id *string, config *GoogleComputePublicAdvertisedPrefixConfig) GoogleComputePublicAdvertisedPrefix {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewGoogleComputePublicAdvertisedPrefix(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_public_advertised_prefix google_compute_public_advertised_prefix} Resource.
 func NewGoogleComputePublicAdvertisedPrefix_Override(g GoogleComputePublicAdvertisedPrefix, scope constructs.Construct, id *string, config *GoogleComputePublicAdvertisedPrefixConfig) {
 	_init_.Initialize()
 

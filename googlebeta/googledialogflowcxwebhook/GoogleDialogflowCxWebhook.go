@@ -5,14 +5,14 @@ package googledialogflowcxwebhook
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledialogflowcxwebhook/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxwebhook/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook}.
 type GoogleDialogflowCxWebhook interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -550,7 +550,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhook) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource.
 func NewGoogleDialogflowCxWebhook(scope constructs.Construct, id *string, config *GoogleDialogflowCxWebhookConfig) GoogleDialogflowCxWebhook {
 	_init_.Initialize()
 
@@ -568,7 +568,7 @@ func NewGoogleDialogflowCxWebhook(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dialogflow_cx_webhook google_dialogflow_cx_webhook} Resource.
 func NewGoogleDialogflowCxWebhook_Override(g GoogleDialogflowCxWebhook, scope constructs.Construct, id *string, config *GoogleDialogflowCxWebhookConfig) {
 	_init_.Initialize()
 

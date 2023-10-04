@@ -5,14 +5,14 @@ package googledatalosspreventioninspecttemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledatalosspreventioninspecttemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatalosspreventioninspecttemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template}.
 type GoogleDataLossPreventionInspectTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -443,7 +443,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionInspectTemplate) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
 func NewGoogleDataLossPreventionInspectTemplate(scope constructs.Construct, id *string, config *GoogleDataLossPreventionInspectTemplateConfig) GoogleDataLossPreventionInspectTemplate {
 	_init_.Initialize()
 
@@ -461,7 +461,7 @@ func NewGoogleDataLossPreventionInspectTemplate(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_data_loss_prevention_inspect_template google_data_loss_prevention_inspect_template} Resource.
 func NewGoogleDataLossPreventionInspectTemplate_Override(g GoogleDataLossPreventionInspectTemplate, scope constructs.Construct, id *string, config *GoogleDataLossPreventionInspectTemplateConfig) {
 	_init_.Initialize()
 

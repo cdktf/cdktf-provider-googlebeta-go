@@ -5,14 +5,14 @@ package googledataprocjob
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataprocjob/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataprocjob/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job google_dataproc_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job google_dataproc_job}.
 type GoogleDataprocJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -33,6 +33,7 @@ type GoogleDataprocJob interface {
 	SetDependsOn(val *[]*string)
 	DriverControlsFilesUri() *string
 	DriverOutputResourceUri() *string
+	EffectiveLabels() cdktf.StringMap
 	ForceDelete() interface{}
 	SetForceDelete(val interface{})
 	ForceDeleteInput() interface{}
@@ -95,6 +96,7 @@ type GoogleDataprocJob interface {
 	Status() GoogleDataprocJobStatusList
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -235,6 +237,16 @@ func (j *jsiiProxy_GoogleDataprocJob) DriverOutputResourceUri() *string {
 	_jsii_.Get(
 		j,
 		"driverOutputResourceUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocJob) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -640,6 +652,16 @@ func (j *jsiiProxy_GoogleDataprocJob) TerraformGeneratorMetadata() *cdktf.Terraf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocJob) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataprocJob) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -681,7 +703,7 @@ func (j *jsiiProxy_GoogleDataprocJob) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
 func NewGoogleDataprocJob(scope constructs.Construct, id *string, config *GoogleDataprocJobConfig) GoogleDataprocJob {
 	_init_.Initialize()
 
@@ -699,7 +721,7 @@ func NewGoogleDataprocJob(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_job google_dataproc_job} Resource.
 func NewGoogleDataprocJob_Override(g GoogleDataprocJob, scope constructs.Construct, id *string, config *GoogleDataprocJobConfig) {
 	_init_.Initialize()
 

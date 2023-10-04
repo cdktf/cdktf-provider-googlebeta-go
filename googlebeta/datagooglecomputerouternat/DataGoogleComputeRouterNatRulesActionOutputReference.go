@@ -5,9 +5,9 @@ package datagooglecomputerouternat
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecomputerouternat/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglecomputerouternat/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,7 +33,9 @@ type DataGoogleComputeRouterNatRulesActionOutputReference interface {
 	InternalValue() *DataGoogleComputeRouterNatRulesAction
 	SetInternalValue(val *DataGoogleComputeRouterNatRulesAction)
 	SourceNatActiveIps() *[]*string
+	SourceNatActiveRanges() *[]*string
 	SourceNatDrainIps() *[]*string
+	SourceNatDrainRanges() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -141,11 +143,31 @@ func (j *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) SourceN
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) SourceNatActiveRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceNatActiveRanges",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) SourceNatDrainIps() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"sourceNatDrainIps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRouterNatRulesActionOutputReference) SourceNatDrainRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sourceNatDrainRanges",
 		&returns,
 	)
 	return returns

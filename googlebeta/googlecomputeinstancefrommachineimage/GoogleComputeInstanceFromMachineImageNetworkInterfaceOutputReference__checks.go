@@ -307,6 +307,14 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetNetworkAttachmentParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetNetworkIpParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -324,6 +332,14 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetQueueCountParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetSecurityPolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

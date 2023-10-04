@@ -55,6 +55,10 @@ func (g *jsiiProxy_GoogleStorageTransferJob) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJob) validatePutEventStreamParameters(value *GoogleStorageTransferJobEventStream) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJob) validatePutNotificationConfigParameters(value *GoogleStorageTransferJobNotificationConfig) error {
 	return nil
 }

@@ -5,14 +5,14 @@ package datagooglecomputeinstancetemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecomputeinstancetemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglecomputeinstancetemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_instance_template google_compute_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_instance_template google_compute_instance_template}.
 type DataGoogleComputeInstanceTemplate interface {
 	cdktf.TerraformDataSource
 	AdvancedMachineFeatures() DataGoogleComputeInstanceTemplateAdvancedMachineFeaturesList
@@ -32,6 +32,7 @@ type DataGoogleComputeInstanceTemplate interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	Disk() DataGoogleComputeInstanceTemplateDiskList
+	EffectiveLabels() cdktf.StringMap
 	EnableDisplay() cdktf.IResolvable
 	Filter() *string
 	SetFilter(val *string)
@@ -93,6 +94,7 @@ type DataGoogleComputeInstanceTemplate interface {
 	TagsFingerprint() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -231,6 +233,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) Disk() DataGoogleComputeIn
 	_jsii_.Get(
 		j,
 		"disk",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -646,6 +658,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) TerraformGeneratorMetadata
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -667,7 +689,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplate) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_instance_template google_compute_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_instance_template google_compute_instance_template} Data Source.
 func NewDataGoogleComputeInstanceTemplate(scope constructs.Construct, id *string, config *DataGoogleComputeInstanceTemplateConfig) DataGoogleComputeInstanceTemplate {
 	_init_.Initialize()
 
@@ -685,7 +707,7 @@ func NewDataGoogleComputeInstanceTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_compute_instance_template google_compute_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_compute_instance_template google_compute_instance_template} Data Source.
 func NewDataGoogleComputeInstanceTemplate_Override(d DataGoogleComputeInstanceTemplate, scope constructs.Construct, id *string, config *DataGoogleComputeInstanceTemplateConfig) {
 	_init_.Initialize()
 

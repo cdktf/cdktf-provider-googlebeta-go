@@ -5,14 +5,14 @@ package googlebackupdrmanagementserver
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebackupdrmanagementserver/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlebackupdrmanagementserver/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server}.
 type GoogleBackupDrManagementServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_GoogleBackupDrManagementServer) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource.
 func NewGoogleBackupDrManagementServer(scope constructs.Construct, id *string, config *GoogleBackupDrManagementServerConfig) GoogleBackupDrManagementServer {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewGoogleBackupDrManagementServer(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource.
 func NewGoogleBackupDrManagementServer_Override(g GoogleBackupDrManagementServer, scope constructs.Construct, id *string, config *GoogleBackupDrManagementServerConfig) {
 	_init_.Initialize()
 

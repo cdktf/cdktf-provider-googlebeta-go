@@ -5,14 +5,14 @@ package googlebinaryauthorizationattestoriammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebinaryauthorizationattestoriammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlebinaryauthorizationattestoriammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_binary_authorization_attestor_iam_member google_binary_authorization_attestor_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_binary_authorization_attestor_iam_member google_binary_authorization_attestor_iam_member}.
 type GoogleBinaryAuthorizationAttestorIamMember interface {
 	cdktf.TerraformResource
 	Attestor() *string
@@ -417,7 +417,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_binary_authorization_attestor_iam_member google_binary_authorization_attestor_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_binary_authorization_attestor_iam_member google_binary_authorization_attestor_iam_member} Resource.
 func NewGoogleBinaryAuthorizationAttestorIamMember(scope constructs.Construct, id *string, config *GoogleBinaryAuthorizationAttestorIamMemberConfig) GoogleBinaryAuthorizationAttestorIamMember {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewGoogleBinaryAuthorizationAttestorIamMember(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_binary_authorization_attestor_iam_member google_binary_authorization_attestor_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_binary_authorization_attestor_iam_member google_binary_authorization_attestor_iam_member} Resource.
 func NewGoogleBinaryAuthorizationAttestorIamMember_Override(g GoogleBinaryAuthorizationAttestorIamMember, scope constructs.Construct, id *string, config *GoogleBinaryAuthorizationAttestorIamMemberConfig) {
 	_init_.Initialize()
 

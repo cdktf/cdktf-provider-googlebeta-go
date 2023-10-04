@@ -5,14 +5,14 @@ package googlefolderiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefolderiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_folder_iam_policy google_folder_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_folder_iam_policy google_folder_iam_policy}.
 type GoogleFolderIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_GoogleFolderIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_folder_iam_policy google_folder_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_folder_iam_policy google_folder_iam_policy} Resource.
 func NewGoogleFolderIamPolicy(scope constructs.Construct, id *string, config *GoogleFolderIamPolicyConfig) GoogleFolderIamPolicy {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewGoogleFolderIamPolicy(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_folder_iam_policy google_folder_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_folder_iam_policy google_folder_iam_policy} Resource.
 func NewGoogleFolderIamPolicy_Override(g GoogleFolderIamPolicy, scope constructs.Construct, id *string, config *GoogleFolderIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlevpcaccessconnector
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevpcaccessconnector/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevpcaccessconnector/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vpc_access_connector google_vpc_access_connector}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vpc_access_connector google_vpc_access_connector}.
 type GoogleVpcAccessConnector interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -609,7 +609,7 @@ func (j *jsiiProxy_GoogleVpcAccessConnector) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vpc_access_connector google_vpc_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vpc_access_connector google_vpc_access_connector} Resource.
 func NewGoogleVpcAccessConnector(scope constructs.Construct, id *string, config *GoogleVpcAccessConnectorConfig) GoogleVpcAccessConnector {
 	_init_.Initialize()
 
@@ -627,7 +627,7 @@ func NewGoogleVpcAccessConnector(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vpc_access_connector google_vpc_access_connector} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vpc_access_connector google_vpc_access_connector} Resource.
 func NewGoogleVpcAccessConnector_Override(g GoogleVpcAccessConnector, scope constructs.Construct, id *string, config *GoogleVpcAccessConnectorConfig) {
 	_init_.Initialize()
 

@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutTimeoutsParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutUpdateSettingsParameters(value *GoogleContainerAwsNodePoolUpdateSettings) error {
+	return nil
+}
+
 func validateGoogleContainerAwsNodePool_IsConstructParameters(x interface{}) error {
 	return nil
 }

@@ -5,9 +5,9 @@ package googleworkstationsworkstationconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleworkstationsworkstationconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleworkstationsworkstationconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -54,6 +54,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	ServiceAccountScopes() *[]*string
+	SetServiceAccountScopes(val *[]*string)
+	ServiceAccountScopesInput() *[]*string
 	ShieldedInstanceConfig() GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig
 	Tags() *[]*string
@@ -102,6 +105,7 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	ResetMachineType()
 	ResetPoolSize()
 	ResetServiceAccount()
+	ResetServiceAccountScopes()
 	ResetShieldedInstanceConfig()
 	ResetTags()
 	// Produce the Token's value at resolution time.
@@ -329,6 +333,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ServiceAccountScopes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceAccountScopes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ServiceAccountScopesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"serviceAccountScopesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ShieldedInstanceConfig() GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference {
 	var returns GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference
 	_jsii_.Get(
@@ -512,6 +536,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Set(
 		j,
 		"serviceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetServiceAccountScopes(val *[]*string) {
+	if err := j.validateSetServiceAccountScopesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountScopes",
 		val,
 	)
 }
@@ -828,6 +863,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetServiceAccountScopes() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccountScopes",
 		nil, // no parameters
 	)
 }

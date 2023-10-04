@@ -5,14 +5,14 @@ package googlevertexaimetadatastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlevertexaimetadatastore/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlevertexaimetadatastore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store}.
 type GoogleVertexAiMetadataStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -466,7 +466,7 @@ func (j *jsiiProxy_GoogleVertexAiMetadataStore) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource.
 func NewGoogleVertexAiMetadataStore(scope constructs.Construct, id *string, config *GoogleVertexAiMetadataStoreConfig) GoogleVertexAiMetadataStore {
 	_init_.Initialize()
 
@@ -484,7 +484,7 @@ func NewGoogleVertexAiMetadataStore(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_vertex_ai_metadata_store google_vertex_ai_metadata_store} Resource.
 func NewGoogleVertexAiMetadataStore_Override(g GoogleVertexAiMetadataStore, scope constructs.Construct, id *string, config *GoogleVertexAiMetadataStoreConfig) {
 	_init_.Initialize()
 

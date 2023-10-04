@@ -5,9 +5,9 @@ package googlestoragebucketiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlestoragebucketiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlestoragebucketiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

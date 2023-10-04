@@ -127,10 +127,6 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetProvisionersParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetSizeParameters(val *float64) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetZoneParameters(val *string) error {
 	return nil
 }

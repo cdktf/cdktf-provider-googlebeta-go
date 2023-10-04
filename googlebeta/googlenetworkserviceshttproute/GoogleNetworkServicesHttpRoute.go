@@ -5,14 +5,14 @@ package googlenetworkserviceshttproute
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlenetworkserviceshttproute/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkserviceshttproute/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_services_http_route google_network_services_http_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_http_route google_network_services_http_route}.
 type GoogleNetworkServicesHttpRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type GoogleNetworkServicesHttpRoute interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -85,6 +86,7 @@ type GoogleNetworkServicesHttpRoute interface {
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -219,6 +221,16 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRoute) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesHttpRoute) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -484,6 +496,16 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRoute) TerraformGeneratorMetadata() 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesHttpRoute) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesHttpRoute) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -535,7 +557,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRoute) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_services_http_route google_network_services_http_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_http_route google_network_services_http_route} Resource.
 func NewGoogleNetworkServicesHttpRoute(scope constructs.Construct, id *string, config *GoogleNetworkServicesHttpRouteConfig) GoogleNetworkServicesHttpRoute {
 	_init_.Initialize()
 
@@ -553,7 +575,7 @@ func NewGoogleNetworkServicesHttpRoute(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_network_services_http_route google_network_services_http_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_http_route google_network_services_http_route} Resource.
 func NewGoogleNetworkServicesHttpRoute_Override(g GoogleNetworkServicesHttpRoute, scope constructs.Construct, id *string, config *GoogleNetworkServicesHttpRouteConfig) {
 	_init_.Initialize()
 

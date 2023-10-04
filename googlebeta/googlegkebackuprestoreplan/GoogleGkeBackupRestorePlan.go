@@ -5,14 +5,14 @@ package googlegkebackuprestoreplan
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkebackuprestoreplan/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlegkebackuprestoreplan/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan}.
 type GoogleGkeBackupRestorePlan interface {
 	cdktf.TerraformResource
 	BackupPlan() *string
@@ -40,6 +40,7 @@ type GoogleGkeBackupRestorePlan interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -85,6 +86,7 @@ type GoogleGkeBackupRestorePlan interface {
 	StateReason() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -247,6 +249,16 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -482,6 +494,16 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeBackupRestorePlan) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeBackupRestorePlan) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -533,7 +555,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlan) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan} Resource.
 func NewGoogleGkeBackupRestorePlan(scope constructs.Construct, id *string, config *GoogleGkeBackupRestorePlanConfig) GoogleGkeBackupRestorePlan {
 	_init_.Initialize()
 
@@ -551,7 +573,7 @@ func NewGoogleGkeBackupRestorePlan(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_restore_plan google_gke_backup_restore_plan} Resource.
 func NewGoogleGkeBackupRestorePlan_Override(g GoogleGkeBackupRestorePlan, scope constructs.Construct, id *string, config *GoogleGkeBackupRestorePlanConfig) {
 	_init_.Initialize()
 

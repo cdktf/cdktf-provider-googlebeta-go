@@ -5,14 +5,14 @@ package googlednsmanagedzone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlednsmanagedzone/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlednsmanagedzone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dns_managed_zone google_dns_managed_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone google_dns_managed_zone}.
 type GoogleDnsManagedZone interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -42,6 +42,7 @@ type GoogleDnsManagedZone interface {
 	DnsNameInput() *string
 	DnssecConfig() GoogleDnsManagedZoneDnssecConfigOutputReference
 	DnssecConfigInput() *GoogleDnsManagedZoneDnssecConfig
+	EffectiveLabels() cdktf.StringMap
 	ForceDestroy() interface{}
 	SetForceDestroy(val interface{})
 	ForceDestroyInput() interface{}
@@ -96,6 +97,7 @@ type GoogleDnsManagedZone interface {
 	ServiceDirectoryConfigInput() *GoogleDnsManagedZoneServiceDirectoryConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -304,6 +306,16 @@ func (j *jsiiProxy_GoogleDnsManagedZone) DnssecConfigInput() *GoogleDnsManagedZo
 	_jsii_.Get(
 		j,
 		"dnssecConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsManagedZone) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -619,6 +631,16 @@ func (j *jsiiProxy_GoogleDnsManagedZone) TerraformGeneratorMetadata() *cdktf.Ter
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDnsManagedZone) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDnsManagedZone) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -680,7 +702,7 @@ func (j *jsiiProxy_GoogleDnsManagedZone) VisibilityInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dns_managed_zone google_dns_managed_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone google_dns_managed_zone} Resource.
 func NewGoogleDnsManagedZone(scope constructs.Construct, id *string, config *GoogleDnsManagedZoneConfig) GoogleDnsManagedZone {
 	_init_.Initialize()
 
@@ -698,7 +720,7 @@ func NewGoogleDnsManagedZone(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dns_managed_zone google_dns_managed_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dns_managed_zone google_dns_managed_zone} Resource.
 func NewGoogleDnsManagedZone_Override(g GoogleDnsManagedZone, scope constructs.Construct, id *string, config *GoogleDnsManagedZoneConfig) {
 	_init_.Initialize()
 

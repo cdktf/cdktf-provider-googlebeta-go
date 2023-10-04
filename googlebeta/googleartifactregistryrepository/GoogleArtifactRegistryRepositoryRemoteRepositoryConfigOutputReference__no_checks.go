@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutAptRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigAptRepository) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutDockerRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigDockerRepository) error {
 	return nil
 }
@@ -60,6 +64,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 }
 
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutPythonRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) validatePutYumRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) error {
 	return nil
 }
 

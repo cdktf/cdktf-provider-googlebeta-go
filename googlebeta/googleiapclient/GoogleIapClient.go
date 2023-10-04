@@ -5,14 +5,14 @@ package googleiapclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleiapclient/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleiapclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_iap_client google_iap_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iap_client google_iap_client}.
 type GoogleIapClient interface {
 	cdktf.TerraformResource
 	Brand() *string
@@ -381,7 +381,7 @@ func (j *jsiiProxy_GoogleIapClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_iap_client google_iap_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iap_client google_iap_client} Resource.
 func NewGoogleIapClient(scope constructs.Construct, id *string, config *GoogleIapClientConfig) GoogleIapClient {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewGoogleIapClient(scope constructs.Construct, id *string, config *GoogleIa
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_iap_client google_iap_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iap_client google_iap_client} Resource.
 func NewGoogleIapClient_Override(g GoogleIapClient, scope constructs.Construct, id *string, config *GoogleIapClientConfig) {
 	_init_.Initialize()
 

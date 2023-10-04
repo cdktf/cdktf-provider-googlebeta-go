@@ -5,14 +5,14 @@ package googledataplexzone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataplexzone/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexzone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataplex_zone google_dataplex_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_zone google_dataplex_zone}.
 type GoogleDataplexZone interface {
 	cdktf.TerraformResource
 	AssetStatus() GoogleDataplexZoneAssetStatusList
@@ -41,6 +41,7 @@ type GoogleDataplexZone interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -88,6 +89,7 @@ type GoogleDataplexZone interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -276,6 +278,16 @@ func (j *jsiiProxy_GoogleDataplexZone) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataplexZone) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -521,6 +533,16 @@ func (j *jsiiProxy_GoogleDataplexZone) TerraformGeneratorMetadata() *cdktf.Terra
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataplexZone) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataplexZone) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -602,7 +624,7 @@ func (j *jsiiProxy_GoogleDataplexZone) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
 func NewGoogleDataplexZone(scope constructs.Construct, id *string, config *GoogleDataplexZoneConfig) GoogleDataplexZone {
 	_init_.Initialize()
 
@@ -620,7 +642,7 @@ func NewGoogleDataplexZone(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
 func NewGoogleDataplexZone_Override(g GoogleDataplexZone, scope constructs.Construct, id *string, config *GoogleDataplexZoneConfig) {
 	_init_.Initialize()
 

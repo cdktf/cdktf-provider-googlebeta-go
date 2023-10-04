@@ -5,9 +5,9 @@ package googleloggingmetric
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleloggingmetric/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleloggingmetric/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -73,9 +73,6 @@ type GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetNumFiniteBuckets()
-	ResetOffset()
-	ResetWidth()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -521,30 +518,6 @@ func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference)
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) ResetNumFiniteBuckets() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetNumFiniteBuckets",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) ResetOffset() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetOffset",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) ResetWidth() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetWidth",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

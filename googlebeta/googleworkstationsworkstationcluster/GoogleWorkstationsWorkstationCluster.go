@@ -5,14 +5,14 @@ package googleworkstationsworkstationcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleworkstationsworkstationcluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleworkstationsworkstationcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
 type GoogleWorkstationsWorkstationCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -40,6 +40,8 @@ type GoogleWorkstationsWorkstationCluster interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -88,6 +90,7 @@ type GoogleWorkstationsWorkstationCluster interface {
 	SubnetworkInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -266,6 +269,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) DisplayNameInput() *str
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -521,6 +544,16 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) TerraformGeneratorMetad
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -592,7 +625,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) WorkstationClusterIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) GoogleWorkstationsWorkstationCluster {
 	_init_.Initialize()
 
@@ -610,7 +643,7 @@ func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster_Override(g GoogleWorkstationsWorkstationCluster, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) {
 	_init_.Initialize()
 

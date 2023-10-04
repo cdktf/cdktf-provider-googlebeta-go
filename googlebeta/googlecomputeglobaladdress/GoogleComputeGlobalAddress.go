@@ -5,14 +5,14 @@ package googlecomputeglobaladdress
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputeglobaladdress/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeglobaladdress/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_global_address google_compute_global_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address google_compute_global_address}.
 type GoogleComputeGlobalAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -41,6 +41,7 @@ type GoogleComputeGlobalAddress interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -93,6 +94,7 @@ type GoogleComputeGlobalAddress interface {
 	SelfLink() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -269,6 +271,16 @@ func (j *jsiiProxy_GoogleComputeGlobalAddress) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalAddress) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -544,6 +556,16 @@ func (j *jsiiProxy_GoogleComputeGlobalAddress) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalAddress) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalAddress) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -585,7 +607,7 @@ func (j *jsiiProxy_GoogleComputeGlobalAddress) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address google_compute_global_address} Resource.
 func NewGoogleComputeGlobalAddress(scope constructs.Construct, id *string, config *GoogleComputeGlobalAddressConfig) GoogleComputeGlobalAddress {
 	_init_.Initialize()
 
@@ -603,7 +625,7 @@ func NewGoogleComputeGlobalAddress(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_address google_compute_global_address} Resource.
 func NewGoogleComputeGlobalAddress_Override(g GoogleComputeGlobalAddress, scope constructs.Construct, id *string, config *GoogleComputeGlobalAddressConfig) {
 	_init_.Initialize()
 

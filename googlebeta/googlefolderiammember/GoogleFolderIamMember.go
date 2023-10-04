@@ -5,14 +5,14 @@ package googlefolderiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefolderiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefolderiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_folder_iam_member google_folder_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_folder_iam_member google_folder_iam_member}.
 type GoogleFolderIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleFolderIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_folder_iam_member google_folder_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_folder_iam_member google_folder_iam_member} Resource.
 func NewGoogleFolderIamMember(scope constructs.Construct, id *string, config *GoogleFolderIamMemberConfig) GoogleFolderIamMember {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewGoogleFolderIamMember(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_folder_iam_member google_folder_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_folder_iam_member google_folder_iam_member} Resource.
 func NewGoogleFolderIamMember_Override(g GoogleFolderIamMember, scope constructs.Construct, id *string, config *GoogleFolderIamMemberConfig) {
 	_init_.Initialize()
 

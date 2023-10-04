@@ -59,10 +59,6 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validateSetAutomaticParameters(val interface{}) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleSecretManagerSecretReplicationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

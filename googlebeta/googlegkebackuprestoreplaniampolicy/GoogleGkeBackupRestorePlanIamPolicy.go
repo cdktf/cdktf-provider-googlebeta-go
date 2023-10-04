@@ -5,14 +5,14 @@ package googlegkebackuprestoreplaniampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlegkebackuprestoreplaniampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlegkebackuprestoreplaniampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy}.
 type GoogleGkeBackupRestorePlanIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy} Resource.
 func NewGoogleGkeBackupRestorePlanIamPolicy(scope constructs.Construct, id *string, config *GoogleGkeBackupRestorePlanIamPolicyConfig) GoogleGkeBackupRestorePlanIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewGoogleGkeBackupRestorePlanIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_backup_restore_plan_iam_policy google_gke_backup_restore_plan_iam_policy} Resource.
 func NewGoogleGkeBackupRestorePlanIamPolicy_Override(g GoogleGkeBackupRestorePlanIamPolicy, scope constructs.Construct, id *string, config *GoogleGkeBackupRestorePlanIamPolicyConfig) {
 	_init_.Initialize()
 

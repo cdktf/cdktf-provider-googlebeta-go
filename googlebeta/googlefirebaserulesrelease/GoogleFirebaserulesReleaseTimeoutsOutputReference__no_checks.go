@@ -79,10 +79,6 @@ func (j *jsiiProxy_GoogleFirebaserulesReleaseTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaserulesReleaseTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
-	return nil
-}
-
 func validateNewGoogleFirebaserulesReleaseTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

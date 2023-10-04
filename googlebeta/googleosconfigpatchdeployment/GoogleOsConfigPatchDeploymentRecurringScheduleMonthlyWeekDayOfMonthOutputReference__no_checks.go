@@ -59,6 +59,10 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayO
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference) validateSetDayOffsetParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleMonthlyWeekDayOfMonthOutputReference) validateSetDayOfWeekParameters(val *string) error {
 	return nil
 }

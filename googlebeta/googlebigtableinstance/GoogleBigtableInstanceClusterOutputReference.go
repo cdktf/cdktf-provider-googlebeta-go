@@ -5,9 +5,9 @@ package googlebigtableinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebigtableinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlebigtableinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -43,6 +43,7 @@ type GoogleBigtableInstanceClusterOutputReference interface {
 	NumNodes() *float64
 	SetNumNodes(val *float64)
 	NumNodesInput() *float64
+	State() *string
 	StorageType() *string
 	SetStorageType(val *string)
 	StorageTypeInput() *string
@@ -227,6 +228,16 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) NumNodesInput()
 	_jsii_.Get(
 		j,
 		"numNodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
 		&returns,
 	)
 	return returns

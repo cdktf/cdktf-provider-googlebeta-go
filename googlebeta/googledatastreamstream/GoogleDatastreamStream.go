@@ -5,14 +5,14 @@ package googledatastreamstream
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledatastreamstream/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatastreamstream/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_datastream_stream google_datastream_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_datastream_stream google_datastream_stream}.
 type GoogleDatastreamStream interface {
 	cdktf.TerraformResource
 	BackfillAll() GoogleDatastreamStreamBackfillAllOutputReference
@@ -46,6 +46,7 @@ type GoogleDatastreamStream interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -91,6 +92,7 @@ type GoogleDatastreamStream interface {
 	StreamIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -318,6 +320,16 @@ func (j *jsiiProxy_GoogleDatastreamStream) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStream) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -553,6 +565,16 @@ func (j *jsiiProxy_GoogleDatastreamStream) TerraformGeneratorMetadata() *cdktf.T
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatastreamStream) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatastreamStream) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -594,7 +616,7 @@ func (j *jsiiProxy_GoogleDatastreamStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
 func NewGoogleDatastreamStream(scope constructs.Construct, id *string, config *GoogleDatastreamStreamConfig) GoogleDatastreamStream {
 	_init_.Initialize()
 
@@ -612,7 +634,7 @@ func NewGoogleDatastreamStream(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
 func NewGoogleDatastreamStream_Override(g GoogleDatastreamStream, scope constructs.Construct, id *string, config *GoogleDatastreamStreamConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlehealthcareconsentstore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlehealthcareconsentstore/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlehealthcareconsentstore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store}.
 type GoogleHealthcareConsentStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,6 +37,7 @@ type GoogleHealthcareConsentStore interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveLabels() cdktf.StringMap
 	EnableConsentCreateOnUpdate() interface{}
 	SetEnableConsentCreateOnUpdate(val interface{})
 	EnableConsentCreateOnUpdateInput() interface{}
@@ -75,6 +76,7 @@ type GoogleHealthcareConsentStore interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -215,6 +217,16 @@ func (j *jsiiProxy_GoogleHealthcareConsentStore) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareConsentStore) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -390,6 +402,16 @@ func (j *jsiiProxy_GoogleHealthcareConsentStore) TerraformGeneratorMetadata() *c
 	return returns
 }
 
+func (j *jsiiProxy_GoogleHealthcareConsentStore) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleHealthcareConsentStore) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -431,7 +453,7 @@ func (j *jsiiProxy_GoogleHealthcareConsentStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store} Resource.
 func NewGoogleHealthcareConsentStore(scope constructs.Construct, id *string, config *GoogleHealthcareConsentStoreConfig) GoogleHealthcareConsentStore {
 	_init_.Initialize()
 
@@ -449,7 +471,7 @@ func NewGoogleHealthcareConsentStore(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_healthcare_consent_store google_healthcare_consent_store} Resource.
 func NewGoogleHealthcareConsentStore_Override(g GoogleHealthcareConsentStore, scope constructs.Construct, id *string, config *GoogleHealthcareConsentStoreConfig) {
 	_init_.Initialize()
 

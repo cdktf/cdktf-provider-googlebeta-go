@@ -5,14 +5,14 @@ package googleiapwebiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleiapwebiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleiapwebiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy}.
 type GoogleIapWebIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -347,7 +347,7 @@ func (j *jsiiProxy_GoogleIapWebIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy} Resource.
 func NewGoogleIapWebIamPolicy(scope constructs.Construct, id *string, config *GoogleIapWebIamPolicyConfig) GoogleIapWebIamPolicy {
 	_init_.Initialize()
 
@@ -365,7 +365,7 @@ func NewGoogleIapWebIamPolicy(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iap_web_iam_policy google_iap_web_iam_policy} Resource.
 func NewGoogleIapWebIamPolicy_Override(g GoogleIapWebIamPolicy, scope constructs.Construct, id *string, config *GoogleIapWebIamPolicyConfig) {
 	_init_.Initialize()
 

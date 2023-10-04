@@ -5,14 +5,14 @@ package googlebigqueryanalyticshublistingiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlebigqueryanalyticshublistingiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlebigqueryanalyticshublistingiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy}.
 type GoogleBigqueryAnalyticsHubListingIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingIamPolicy) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Resource.
 func NewGoogleBigqueryAnalyticsHubListingIamPolicy(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingIamPolicyConfig) GoogleBigqueryAnalyticsHubListingIamPolicy {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewGoogleBigqueryAnalyticsHubListingIamPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_bigquery_analytics_hub_listing_iam_policy google_bigquery_analytics_hub_listing_iam_policy} Resource.
 func NewGoogleBigqueryAnalyticsHubListingIamPolicy_Override(g GoogleBigqueryAnalyticsHubListingIamPolicy, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlefilestoresnapshot
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefilestoresnapshot/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefilestoresnapshot/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_filestore_snapshot google_filestore_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_filestore_snapshot google_filestore_snapshot}.
 type GoogleFilestoreSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type GoogleFilestoreSnapshot interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	FilesystemUsedBytes() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -81,6 +82,7 @@ type GoogleFilestoreSnapshot interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -211,6 +213,16 @@ func (j *jsiiProxy_GoogleFilestoreSnapshot) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreSnapshot) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -446,6 +458,16 @@ func (j *jsiiProxy_GoogleFilestoreSnapshot) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFilestoreSnapshot) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFilestoreSnapshot) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -487,7 +509,7 @@ func (j *jsiiProxy_GoogleFilestoreSnapshot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource.
 func NewGoogleFilestoreSnapshot(scope constructs.Construct, id *string, config *GoogleFilestoreSnapshotConfig) GoogleFilestoreSnapshot {
 	_init_.Initialize()
 
@@ -505,7 +527,7 @@ func NewGoogleFilestoreSnapshot(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource.
 func NewGoogleFilestoreSnapshot_Override(g GoogleFilestoreSnapshot, scope constructs.Construct, id *string, config *GoogleFilestoreSnapshotConfig) {
 	_init_.Initialize()
 

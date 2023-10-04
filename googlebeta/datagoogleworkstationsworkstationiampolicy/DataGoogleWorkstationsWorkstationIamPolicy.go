@@ -5,14 +5,14 @@ package datagoogleworkstationsworkstationiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagoogleworkstationsworkstationiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagoogleworkstationsworkstationiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy}.
 type DataGoogleWorkstationsWorkstationIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -400,7 +400,7 @@ func (j *jsiiProxy_DataGoogleWorkstationsWorkstationIamPolicy) WorkstationIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy} Data Source.
 func NewDataGoogleWorkstationsWorkstationIamPolicy(scope constructs.Construct, id *string, config *DataGoogleWorkstationsWorkstationIamPolicyConfig) DataGoogleWorkstationsWorkstationIamPolicy {
 	_init_.Initialize()
 
@@ -418,7 +418,7 @@ func NewDataGoogleWorkstationsWorkstationIamPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_workstations_workstation_iam_policy google_workstations_workstation_iam_policy} Data Source.
 func NewDataGoogleWorkstationsWorkstationIamPolicy_Override(d DataGoogleWorkstationsWorkstationIamPolicy, scope constructs.Construct, id *string, config *DataGoogleWorkstationsWorkstationIamPolicyConfig) {
 	_init_.Initialize()
 

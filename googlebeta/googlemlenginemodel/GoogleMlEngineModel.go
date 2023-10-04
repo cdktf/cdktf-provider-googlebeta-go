@@ -5,14 +5,14 @@ package googlemlenginemodel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlemlenginemodel/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlemlenginemodel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_ml_engine_model google_ml_engine_model}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_ml_engine_model google_ml_engine_model}.
 type GoogleMlEngineModel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,7 @@ type GoogleMlEngineModel interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -83,6 +84,7 @@ type GoogleMlEngineModel interface {
 	RegionsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -228,6 +230,16 @@ func (j *jsiiProxy_GoogleMlEngineModel) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMlEngineModel) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -463,6 +475,16 @@ func (j *jsiiProxy_GoogleMlEngineModel) TerraformGeneratorMetadata() *cdktf.Terr
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMlEngineModel) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMlEngineModel) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -504,7 +526,7 @@ func (j *jsiiProxy_GoogleMlEngineModel) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_ml_engine_model google_ml_engine_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_ml_engine_model google_ml_engine_model} Resource.
 func NewGoogleMlEngineModel(scope constructs.Construct, id *string, config *GoogleMlEngineModelConfig) GoogleMlEngineModel {
 	_init_.Initialize()
 
@@ -522,7 +544,7 @@ func NewGoogleMlEngineModel(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_ml_engine_model google_ml_engine_model} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_ml_engine_model google_ml_engine_model} Resource.
 func NewGoogleMlEngineModel_Override(g GoogleMlEngineModel, scope constructs.Construct, id *string, config *GoogleMlEngineModelConfig) {
 	_init_.Initialize()
 

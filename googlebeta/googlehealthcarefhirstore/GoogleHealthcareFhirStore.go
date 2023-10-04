@@ -5,14 +5,14 @@ package googlehealthcarefhirstore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlehealthcarefhirstore/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlehealthcarefhirstore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store}.
 type GoogleHealthcareFhirStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,7 @@ type GoogleHealthcareFhirStore interface {
 	DisableResourceVersioning() interface{}
 	SetDisableResourceVersioning(val interface{})
 	DisableResourceVersioningInput() interface{}
+	EffectiveLabels() cdktf.StringMap
 	EnableHistoryImport() interface{}
 	SetEnableHistoryImport(val interface{})
 	EnableHistoryImportInput() interface{}
@@ -94,6 +95,7 @@ type GoogleHealthcareFhirStore interface {
 	StreamConfigsInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -308,6 +310,16 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) DisableResourceVersioningInput() i
 	_jsii_.Get(
 		j,
 		"disableResourceVersioningInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleHealthcareFhirStore) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -573,6 +585,16 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
+func (j *jsiiProxy_GoogleHealthcareFhirStore) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleHealthcareFhirStore) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -634,7 +656,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStore) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) GoogleHealthcareFhirStore {
 	_init_.Initialize()
 
@@ -652,7 +674,7 @@ func NewGoogleHealthcareFhirStore(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_healthcare_fhir_store google_healthcare_fhir_store} Resource.
 func NewGoogleHealthcareFhirStore_Override(g GoogleHealthcareFhirStore, scope constructs.Construct, id *string, config *GoogleHealthcareFhirStoreConfig) {
 	_init_.Initialize()
 

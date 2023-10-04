@@ -5,9 +5,9 @@ package googlesqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlesqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -41,6 +41,9 @@ type GoogleSqlDatabaseInstanceCloneOutputReference interface {
 	PointInTime() *string
 	SetPointInTime(val *string)
 	PointInTimeInput() *string
+	PreferredZone() *string
+	SetPreferredZone(val *string)
+	PreferredZoneInput() *string
 	SourceInstanceName() *string
 	SetSourceInstanceName(val *string)
 	SourceInstanceNameInput() *string
@@ -79,6 +82,7 @@ type GoogleSqlDatabaseInstanceCloneOutputReference interface {
 	ResetAllocatedIpRange()
 	ResetDatabaseNames()
 	ResetPointInTime()
+	ResetPreferredZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -199,6 +203,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) PointInTimeInp
 	_jsii_.Get(
 		j,
 		"pointInTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) PreferredZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) PreferredZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredZoneInput",
 		&returns,
 	)
 	return returns
@@ -334,6 +358,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetPointInTime(
 	_jsii_.Set(
 		j,
 		"pointInTime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference)SetPreferredZone(val *string) {
+	if err := j.validateSetPreferredZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredZone",
 		val,
 	)
 }
@@ -577,6 +612,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ResetPointInTi
 	_jsii_.InvokeVoid(
 		g,
 		"resetPointInTime",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceCloneOutputReference) ResetPreferredZone() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreferredZone",
 		nil, // no parameters
 	)
 }

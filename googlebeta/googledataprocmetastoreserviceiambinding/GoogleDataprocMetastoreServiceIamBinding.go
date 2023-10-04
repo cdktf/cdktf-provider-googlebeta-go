@@ -5,14 +5,14 @@ package googledataprocmetastoreserviceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledataprocmetastoreserviceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataprocmetastoreserviceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding}.
 type GoogleDataprocMetastoreServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceIamBinding) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
 func NewGoogleDataprocMetastoreServiceIamBinding(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceIamBindingConfig) GoogleDataprocMetastoreServiceIamBinding {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewGoogleDataprocMetastoreServiceIamBinding(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataproc_metastore_service_iam_binding google_dataproc_metastore_service_iam_binding} Resource.
 func NewGoogleDataprocMetastoreServiceIamBinding_Override(g GoogleDataprocMetastoreServiceIamBinding, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceIamBindingConfig) {
 	_init_.Initialize()
 

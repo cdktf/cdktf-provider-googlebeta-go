@@ -5,14 +5,14 @@ package googledatastreamprivateconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googledatastreamprivateconnection/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatastreamprivateconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_datastream_private_connection google_datastream_private_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_datastream_private_connection google_datastream_private_connection}.
 type GoogleDatastreamPrivateConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -34,6 +34,7 @@ type GoogleDatastreamPrivateConnection interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Error() GoogleDatastreamPrivateConnectionErrorList
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -78,6 +79,7 @@ type GoogleDatastreamPrivateConnection interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -200,6 +202,16 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) DisplayNameInput() *string
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -425,6 +437,16 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) TerraformGeneratorMetadata
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatastreamPrivateConnection) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -486,7 +508,7 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) VpcPeeringConfigInput() *G
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
 func NewGoogleDatastreamPrivateConnection(scope constructs.Construct, id *string, config *GoogleDatastreamPrivateConnectionConfig) GoogleDatastreamPrivateConnection {
 	_init_.Initialize()
 
@@ -504,7 +526,7 @@ func NewGoogleDatastreamPrivateConnection(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
 func NewGoogleDatastreamPrivateConnection_Override(g GoogleDatastreamPrivateConnection, scope constructs.Construct, id *string, config *GoogleDatastreamPrivateConnectionConfig) {
 	_init_.Initialize()
 

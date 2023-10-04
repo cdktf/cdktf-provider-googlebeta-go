@@ -5,14 +5,14 @@ package googlecomputenodegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputenodegroup/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputenodegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_node_group google_compute_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_node_group google_compute_node_group}.
 type GoogleComputeNodeGroup interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() GoogleComputeNodeGroupAutoscalingPolicyOutputReference
@@ -85,8 +85,6 @@ type GoogleComputeNodeGroup interface {
 	ShareSettings() GoogleComputeNodeGroupShareSettingsOutputReference
 	ShareSettingsInput() *GoogleComputeNodeGroupShareSettings
 	Size() *float64
-	SetSize(val *float64)
-	SizeInput() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -139,7 +137,6 @@ type GoogleComputeNodeGroup interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetShareSettings()
-	ResetSize()
 	ResetTimeouts()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -517,16 +514,6 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) Size() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeNodeGroup) SizeInput() *float64 {
-	var returns *float64
-	_jsii_.Get(
-		j,
-		"sizeInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleComputeNodeGroup) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -598,7 +585,7 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
 func NewGoogleComputeNodeGroup(scope constructs.Construct, id *string, config *GoogleComputeNodeGroupConfig) GoogleComputeNodeGroup {
 	_init_.Initialize()
 
@@ -616,7 +603,7 @@ func NewGoogleComputeNodeGroup(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
 func NewGoogleComputeNodeGroup_Override(g GoogleComputeNodeGroup, scope constructs.Construct, id *string, config *GoogleComputeNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -768,17 +755,6 @@ func (j *jsiiProxy_GoogleComputeNodeGroup)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleComputeNodeGroup)SetSize(val *float64) {
-	if err := j.validateSetSizeParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"size",
 		val,
 	)
 }
@@ -1180,14 +1156,6 @@ func (g *jsiiProxy_GoogleComputeNodeGroup) ResetShareSettings() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetShareSettings",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeNodeGroup) ResetSize() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetSize",
 		nil, // no parameters
 	)
 }

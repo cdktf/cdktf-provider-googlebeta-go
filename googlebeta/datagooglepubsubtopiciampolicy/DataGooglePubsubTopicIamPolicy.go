@@ -5,14 +5,14 @@ package datagooglepubsubtopiciampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglepubsubtopiciampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglepubsubtopiciampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy}.
 type DataGooglePubsubTopicIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -330,7 +330,7 @@ func (j *jsiiProxy_DataGooglePubsubTopicIamPolicy) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy} Data Source.
 func NewDataGooglePubsubTopicIamPolicy(scope constructs.Construct, id *string, config *DataGooglePubsubTopicIamPolicyConfig) DataGooglePubsubTopicIamPolicy {
 	_init_.Initialize()
 
@@ -348,7 +348,7 @@ func NewDataGooglePubsubTopicIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/data-sources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/data-sources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy} Data Source.
 func NewDataGooglePubsubTopicIamPolicy_Override(d DataGooglePubsubTopicIamPolicy, scope constructs.Construct, id *string, config *DataGooglePubsubTopicIamPolicyConfig) {
 	_init_.Initialize()
 

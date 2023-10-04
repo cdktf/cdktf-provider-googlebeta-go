@@ -5,14 +5,14 @@ package googlecloudfunctions2function
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudfunctions2function/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecloudfunctions2function/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function}.
 type GoogleCloudfunctions2Function interface {
 	cdktf.TerraformResource
 	BuildConfig() GoogleCloudfunctions2FunctionBuildConfigOutputReference
@@ -36,6 +36,7 @@ type GoogleCloudfunctions2Function interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	Environment() *string
 	EventTrigger() GoogleCloudfunctions2FunctionEventTriggerOutputReference
 	EventTriggerInput() *GoogleCloudfunctions2FunctionEventTrigger
@@ -86,6 +87,7 @@ type GoogleCloudfunctions2Function interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -129,7 +131,6 @@ type GoogleCloudfunctions2Function interface {
 	ResetId()
 	ResetKmsKeyName()
 	ResetLabels()
-	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -236,6 +237,16 @@ func (j *jsiiProxy_GoogleCloudfunctions2Function) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2Function) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -511,6 +522,16 @@ func (j *jsiiProxy_GoogleCloudfunctions2Function) TerraformGeneratorMetadata() *
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudfunctions2Function) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudfunctions2Function) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -572,7 +593,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2Function) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewGoogleCloudfunctions2Function(scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionConfig) GoogleCloudfunctions2Function {
 	_init_.Initialize()
 
@@ -590,7 +611,7 @@ func NewGoogleCloudfunctions2Function(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_cloudfunctions2_function google_cloudfunctions2_function} Resource.
 func NewGoogleCloudfunctions2Function_Override(g GoogleCloudfunctions2Function, scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionConfig) {
 	_init_.Initialize()
 
@@ -1100,14 +1121,6 @@ func (g *jsiiProxy_GoogleCloudfunctions2Function) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleCloudfunctions2Function) ResetLocation() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetLocation",
 		nil, // no parameters
 	)
 }

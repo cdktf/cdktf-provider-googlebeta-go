@@ -699,15 +699,7 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetDefaultMaxPodsPerNodeParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) validateSetDescriptionParameters(val *string) error {
-	if val == nil {
-		return fmt.Errorf("parameter val is required, but nil was provided")
-	}
-
-	return nil
-}
-
-func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerCluster) validateSetDeletionProtectionParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -727,7 +719,15 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableAutopilotParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableBinaryAuthorizationParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleContainerCluster) validateSetDescriptionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

@@ -5,14 +5,14 @@ package googlestoragebucketiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlestoragebucketiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlestoragebucketiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy}.
 type GoogleStorageBucketIamPolicy interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -346,7 +346,7 @@ func (j *jsiiProxy_GoogleStorageBucketIamPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy} Resource.
 func NewGoogleStorageBucketIamPolicy(scope constructs.Construct, id *string, config *GoogleStorageBucketIamPolicyConfig) GoogleStorageBucketIamPolicy {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewGoogleStorageBucketIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_storage_bucket_iam_policy google_storage_bucket_iam_policy} Resource.
 func NewGoogleStorageBucketIamPolicy_Override(g GoogleStorageBucketIamPolicy, scope constructs.Construct, id *string, config *GoogleStorageBucketIamPolicyConfig) {
 	_init_.Initialize()
 

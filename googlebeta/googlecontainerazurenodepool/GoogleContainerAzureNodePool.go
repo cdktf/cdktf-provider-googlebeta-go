@@ -5,14 +5,14 @@ package googlecontainerazurenodepool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecontainerazurenodepool/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecontainerazurenodepool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool}.
 type GoogleContainerAzureNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -45,6 +45,7 @@ type GoogleContainerAzureNodePool interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveAnnotations() cdktf.StringMap
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -313,6 +314,16 @@ func (j *jsiiProxy_GoogleContainerAzureNodePool) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAzureNodePool) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
 		&returns,
 	)
 	return returns
@@ -659,7 +670,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool} Resource.
 func NewGoogleContainerAzureNodePool(scope constructs.Construct, id *string, config *GoogleContainerAzureNodePoolConfig) GoogleContainerAzureNodePool {
 	_init_.Initialize()
 
@@ -677,7 +688,7 @@ func NewGoogleContainerAzureNodePool(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_container_azure_node_pool google_container_azure_node_pool} Resource.
 func NewGoogleContainerAzureNodePool_Override(g GoogleContainerAzureNodePool, scope constructs.Construct, id *string, config *GoogleContainerAzureNodePoolConfig) {
 	_init_.Initialize()
 

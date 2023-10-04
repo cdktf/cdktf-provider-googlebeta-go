@@ -5,14 +5,14 @@ package googleworkstationsworkstation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleworkstationsworkstation/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleworkstationsworkstation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_workstations_workstation google_workstations_workstation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation google_workstations_workstation}.
 type GoogleWorkstationsWorkstation interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -38,6 +38,8 @@ type GoogleWorkstationsWorkstation interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	Env() *map[string]*string
 	SetEnv(val *map[string]*string)
 	EnvInput() *map[string]*string
@@ -82,6 +84,7 @@ type GoogleWorkstationsWorkstation interface {
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -244,6 +247,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -469,6 +492,16 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) TerraformGeneratorMetadata() *
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstation) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -580,7 +613,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) WorkstationIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
 func NewGoogleWorkstationsWorkstation(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfig) GoogleWorkstationsWorkstation {
 	_init_.Initialize()
 
@@ -598,7 +631,7 @@ func NewGoogleWorkstationsWorkstation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
 func NewGoogleWorkstationsWorkstation_Override(g GoogleWorkstationsWorkstation, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfig) {
 	_init_.Initialize()
 

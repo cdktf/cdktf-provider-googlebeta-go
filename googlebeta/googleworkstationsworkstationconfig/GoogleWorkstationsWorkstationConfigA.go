@@ -5,14 +5,14 @@ package googleworkstationsworkstationconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleworkstationsworkstationconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleworkstationsworkstationconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
 type GoogleWorkstationsWorkstationConfigA interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -42,6 +42,11 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
+	EnableAuditAgent() interface{}
+	SetEnableAuditAgent(val interface{})
+	EnableAuditAgentInput() interface{}
 	EncryptionKey() GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference
 	EncryptionKeyInput() *GoogleWorkstationsWorkstationConfigEncryptionKey
 	Etag() *string
@@ -89,11 +94,15 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicaZones() *[]*string
+	SetReplicaZones(val *[]*string)
+	ReplicaZonesInput() *[]*string
 	RunningTimeout() *string
 	SetRunningTimeout(val *string)
 	RunningTimeoutInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -140,6 +149,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	ResetAnnotations()
 	ResetContainer()
 	ResetDisplayName()
+	ResetEnableAuditAgent()
 	ResetEncryptionKey()
 	ResetHost()
 	ResetId()
@@ -150,6 +160,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	ResetOverrideLogicalId()
 	ResetPersistentDirectories()
 	ResetProject()
+	ResetReplicaZones()
 	ResetRunningTimeout()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -302,6 +313,46 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DisplayNameInput() *str
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EnableAuditAgent() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAuditAgent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EnableAuditAgentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAuditAgentInput",
 		&returns,
 	)
 	return returns
@@ -567,6 +618,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ReplicaZones() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaZones",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ReplicaZonesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaZonesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) RunningTimeout() *string {
 	var returns *string
 	_jsii_.Get(
@@ -592,6 +663,16 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) TerraformGeneratorMetad
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -688,7 +769,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) WorkstationConfigIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) GoogleWorkstationsWorkstationConfigA {
 	_init_.Initialize()
 
@@ -706,7 +787,7 @@ func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA_Override(g GoogleWorkstationsWorkstationConfigA, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) {
 	_init_.Initialize()
 
@@ -765,6 +846,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetDisplayName(val *stri
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetEnableAuditAgent(val interface{}) {
+	if err := j.validateSetEnableAuditAgentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAuditAgent",
 		val,
 	)
 }
@@ -858,6 +950,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetProvisioners(val *[]i
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetReplicaZones(val *[]*string) {
+	if err := j.validateSetReplicaZonesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaZones",
 		val,
 	)
 }
@@ -1240,6 +1343,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetDisplayName() {
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetEnableAuditAgent() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableAuditAgent",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetEncryptionKey() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1300,6 +1411,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetReplicaZones() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplicaZones",
 		nil, // no parameters
 	)
 }

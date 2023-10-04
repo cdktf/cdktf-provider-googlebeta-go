@@ -5,14 +5,14 @@ package googleedgenetworknetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleedgenetworknetwork/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleedgenetworknetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_edgenetwork_network google_edgenetwork_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_network google_edgenetwork_network}.
 type GoogleEdgenetworkNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -511,7 +511,7 @@ func (j *jsiiProxy_GoogleEdgenetworkNetwork) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_edgenetwork_network google_edgenetwork_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_network google_edgenetwork_network} Resource.
 func NewGoogleEdgenetworkNetwork(scope constructs.Construct, id *string, config *GoogleEdgenetworkNetworkConfig) GoogleEdgenetworkNetwork {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewGoogleEdgenetworkNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_edgenetwork_network google_edgenetwork_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_edgenetwork_network google_edgenetwork_network} Resource.
 func NewGoogleEdgenetworkNetwork_Override(g GoogleEdgenetworkNetwork, scope constructs.Construct, id *string, config *GoogleEdgenetworkNetworkConfig) {
 	_init_.Initialize()
 

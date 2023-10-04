@@ -5,9 +5,9 @@ package googlecloudrunservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecloudrunservice/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecloudrunservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -31,6 +31,8 @@ type GoogleCloudRunServiceMetadataOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	Fqn() *string
 	Generation() *float64
@@ -48,6 +50,7 @@ type GoogleCloudRunServiceMetadataOutputReference interface {
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
@@ -140,6 +143,26 @@ func (j *jsiiProxy_GoogleCloudRunServiceMetadataOutputReference) CreationStack()
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceMetadataOutputReference) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceMetadataOutputReference) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -240,6 +263,16 @@ func (j *jsiiProxy_GoogleCloudRunServiceMetadataOutputReference) TerraformAttrib
 	_jsii_.Get(
 		j,
 		"terraformAttribute",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunServiceMetadataOutputReference) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns

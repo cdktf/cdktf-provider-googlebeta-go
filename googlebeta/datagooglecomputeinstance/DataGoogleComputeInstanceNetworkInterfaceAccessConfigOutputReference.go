@@ -5,9 +5,9 @@ package datagooglecomputeinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/datagooglecomputeinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglecomputeinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -35,6 +35,7 @@ type DataGoogleComputeInstanceNetworkInterfaceAccessConfigOutputReference interf
 	NatIp() *string
 	NetworkTier() *string
 	PublicPtrDomainName() *string
+	SecurityPolicy() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -157,6 +158,16 @@ func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceAccessConfigOutputRe
 	_jsii_.Get(
 		j,
 		"publicPtrDomainName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeInstanceNetworkInterfaceAccessConfigOutputReference) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
 		&returns,
 	)
 	return returns

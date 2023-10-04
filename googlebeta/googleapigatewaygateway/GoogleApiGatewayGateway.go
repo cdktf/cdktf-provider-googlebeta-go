@@ -5,14 +5,14 @@ package googleapigatewaygateway
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleapigatewaygateway/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleapigatewaygateway/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway}.
 type GoogleApiGatewayGateway interface {
 	cdktf.TerraformResource
 	ApiConfig() *string
@@ -38,6 +38,7 @@ type GoogleApiGatewayGateway interface {
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -80,6 +81,7 @@ type GoogleApiGatewayGateway interface {
 	RegionInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -231,6 +233,16 @@ func (j *jsiiProxy_GoogleApiGatewayGateway) DisplayNameInput() *string {
 	_jsii_.Get(
 		j,
 		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApiGatewayGateway) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -436,6 +448,16 @@ func (j *jsiiProxy_GoogleApiGatewayGateway) TerraformGeneratorMetadata() *cdktf.
 	return returns
 }
 
+func (j *jsiiProxy_GoogleApiGatewayGateway) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleApiGatewayGateway) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -477,7 +499,7 @@ func (j *jsiiProxy_GoogleApiGatewayGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource.
 func NewGoogleApiGatewayGateway(scope constructs.Construct, id *string, config *GoogleApiGatewayGatewayConfig) GoogleApiGatewayGateway {
 	_init_.Initialize()
 
@@ -495,7 +517,7 @@ func NewGoogleApiGatewayGateway(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource.
 func NewGoogleApiGatewayGateway_Override(g GoogleApiGatewayGateway, scope constructs.Construct, id *string, config *GoogleApiGatewayGatewayConfig) {
 	_init_.Initialize()
 

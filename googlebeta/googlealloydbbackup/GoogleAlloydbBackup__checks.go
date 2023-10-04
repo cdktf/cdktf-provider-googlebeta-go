@@ -160,6 +160,14 @@ func validateGoogleAlloydbBackup_IsTerraformResourceParameters(x interface{}) er
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbBackup) validateSetAnnotationsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbBackup) validateSetBackupIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -274,6 +282,14 @@ func (j *jsiiProxy_GoogleAlloydbBackup) validateSetDescriptionParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbBackup) validateSetDisplayNameParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbBackup) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -355,6 +371,14 @@ func (j *jsiiProxy_GoogleAlloydbBackup) validateSetProvisionersParameters(val *[
 				return fmt.Errorf("parameter val[%#v] must be one of the allowed types: *cdktf.FileProvisioner, *cdktf.LocalExecProvisioner, *cdktf.RemoteExecProvisioner; received %#v (a %T)", idx_97dfc6, v, v)
 			}
 		}
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAlloydbBackup) validateSetTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil

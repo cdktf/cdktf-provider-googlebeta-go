@@ -5,14 +5,14 @@ package googleiapwebtypecomputeiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googleiapwebtypecomputeiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleiapwebtypecomputeiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member}.
 type GoogleIapWebTypeComputeIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_GoogleIapWebTypeComputeIamMember) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member} Resource.
 func NewGoogleIapWebTypeComputeIamMember(scope constructs.Construct, id *string, config *GoogleIapWebTypeComputeIamMemberConfig) GoogleIapWebTypeComputeIamMember {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewGoogleIapWebTypeComputeIamMember(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_iap_web_type_compute_iam_member google_iap_web_type_compute_iam_member} Resource.
 func NewGoogleIapWebTypeComputeIamMember_Override(g GoogleIapWebTypeComputeIamMember, scope constructs.Construct, id *string, config *GoogleIapWebTypeComputeIamMemberConfig) {
 	_init_.Initialize()
 

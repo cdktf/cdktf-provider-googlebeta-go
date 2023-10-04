@@ -5,14 +5,14 @@ package googletagstagvalueiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googletagstagvalueiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googletagstagvalueiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_tags_tag_value_iam_member google_tags_tag_value_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_tags_tag_value_iam_member google_tags_tag_value_iam_member}.
 type GoogleTagsTagValueIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleTagsTagValueIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_tags_tag_value_iam_member google_tags_tag_value_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_tags_tag_value_iam_member google_tags_tag_value_iam_member} Resource.
 func NewGoogleTagsTagValueIamMember(scope constructs.Construct, id *string, config *GoogleTagsTagValueIamMemberConfig) GoogleTagsTagValueIamMember {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewGoogleTagsTagValueIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_tags_tag_value_iam_member google_tags_tag_value_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_tags_tag_value_iam_member google_tags_tag_value_iam_member} Resource.
 func NewGoogleTagsTagValueIamMember_Override(g GoogleTagsTagValueIamMember, scope constructs.Construct, id *string, config *GoogleTagsTagValueIamMemberConfig) {
 	_init_.Initialize()
 

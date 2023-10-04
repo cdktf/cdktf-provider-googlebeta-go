@@ -87,6 +87,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceOutputRefere
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetNetworkAttachmentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetNetworkIpParameters(val *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceOutputRefere
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetQueueCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateNetworkInterfaceOutputReference) validateSetSecurityPolicyParameters(val *string) error {
 	return nil
 }
 

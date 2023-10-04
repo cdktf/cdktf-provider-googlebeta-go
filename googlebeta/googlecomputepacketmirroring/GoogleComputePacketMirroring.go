@@ -5,14 +5,14 @@ package googlecomputepacketmirroring
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputepacketmirroring/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputepacketmirroring/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring}.
 type GoogleComputePacketMirroring interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -525,7 +525,7 @@ func (j *jsiiProxy_GoogleComputePacketMirroring) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewGoogleComputePacketMirroring(scope constructs.Construct, id *string, config *GoogleComputePacketMirroringConfig) GoogleComputePacketMirroring {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewGoogleComputePacketMirroring(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_packet_mirroring google_compute_packet_mirroring} Resource.
 func NewGoogleComputePacketMirroring_Override(g GoogleComputePacketMirroring, scope constructs.Construct, id *string, config *GoogleComputePacketMirroringConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlesecretmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlesecretmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlesecretmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}.
 type GoogleSecretManagerSecret interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -35,6 +35,8 @@ type GoogleSecretManagerSecret interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	EffectiveAnnotations() cdktf.StringMap
+	EffectiveLabels() cdktf.StringMap
 	ExpireTime() *string
 	SetExpireTime(val *string)
 	ExpireTimeInput() *string
@@ -81,6 +83,7 @@ type GoogleSecretManagerSecret interface {
 	SecretIdInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -227,6 +230,26 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecretManagerSecret) EffectiveAnnotations() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveAnnotations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecretManagerSecret) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -472,6 +495,16 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) TerraformGeneratorMetadata() *cdkt
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSecretManagerSecret) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSecretManagerSecret) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -573,7 +606,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) VersionAliasesInput() *map[string]
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
 func NewGoogleSecretManagerSecret(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretConfig) GoogleSecretManagerSecret {
 	_init_.Initialize()
 
@@ -591,7 +624,7 @@ func NewGoogleSecretManagerSecret(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
 func NewGoogleSecretManagerSecret_Override(g GoogleSecretManagerSecret, scope constructs.Construct, id *string, config *GoogleSecretManagerSecretConfig) {
 	_init_.Initialize()
 

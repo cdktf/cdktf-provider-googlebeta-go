@@ -5,9 +5,9 @@ package googlecomputeinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlecomputeinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -48,6 +48,9 @@ type GoogleComputeInstanceNetworkInterfaceOutputReference interface {
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
+	NetworkAttachment() *string
+	SetNetworkAttachment(val *string)
+	NetworkAttachmentInput() *string
 	NetworkInput() *string
 	NetworkIp() *string
 	SetNetworkIp(val *string)
@@ -58,6 +61,9 @@ type GoogleComputeInstanceNetworkInterfaceOutputReference interface {
 	QueueCount() *float64
 	SetQueueCount(val *float64)
 	QueueCountInput() *float64
+	SecurityPolicy() *string
+	SetSecurityPolicy(val *string)
+	SecurityPolicyInput() *string
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
@@ -108,9 +114,11 @@ type GoogleComputeInstanceNetworkInterfaceOutputReference interface {
 	ResetIpv6AccessConfig()
 	ResetIpv6Address()
 	ResetNetwork()
+	ResetNetworkAttachment()
 	ResetNetworkIp()
 	ResetNicType()
 	ResetQueueCount()
+	ResetSecurityPolicy()
 	ResetStackType()
 	ResetSubnetwork()
 	ResetSubnetworkProject()
@@ -309,6 +317,26 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) Network
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) NetworkAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) NetworkAttachmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) NetworkInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -374,6 +402,26 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) QueueCo
 	_jsii_.Get(
 		j,
 		"queueCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) SecurityPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) SecurityPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityPolicyInput",
 		&returns,
 	)
 	return returns
@@ -553,6 +601,17 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetNetwo
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetNetworkAttachment(val *string) {
+	if err := j.validateSetNetworkAttachmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkAttachment",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetNetworkIp(val *string) {
 	if err := j.validateSetNetworkIpParameters(val); err != nil {
 		panic(err)
@@ -582,6 +641,17 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetQueue
 	_jsii_.Set(
 		j,
 		"queueCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference)SetSecurityPolicy(val *string) {
+	if err := j.validateSetSecurityPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"securityPolicy",
 		val,
 	)
 }
@@ -908,6 +978,14 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetNe
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetNetworkAttachment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkAttachment",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetNetworkIp() {
 	_jsii_.InvokeVoid(
 		g,
@@ -928,6 +1006,14 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetQu
 	_jsii_.InvokeVoid(
 		g,
 		"resetQueueCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) ResetSecurityPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityPolicy",
 		nil, // no parameters
 	)
 }

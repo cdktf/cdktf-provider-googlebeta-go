@@ -5,14 +5,14 @@ package googlespannerdatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlespannerdatabase/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlespannerdatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_database google_spanner_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_database google_spanner_database}.
 type GoogleSpannerDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -538,7 +538,7 @@ func (j *jsiiProxy_GoogleSpannerDatabase) VersionRetentionPeriodInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_database google_spanner_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_database google_spanner_database} Resource.
 func NewGoogleSpannerDatabase(scope constructs.Construct, id *string, config *GoogleSpannerDatabaseConfig) GoogleSpannerDatabase {
 	_init_.Initialize()
 
@@ -556,7 +556,7 @@ func NewGoogleSpannerDatabase(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_spanner_database google_spanner_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_spanner_database google_spanner_database} Resource.
 func NewGoogleSpannerDatabase_Override(g GoogleSpannerDatabase, scope constructs.Construct, id *string, config *GoogleSpannerDatabaseConfig) {
 	_init_.Initialize()
 

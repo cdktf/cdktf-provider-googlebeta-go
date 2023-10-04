@@ -5,14 +5,14 @@ package googlefirestoredatabase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v9/googlefirestoredatabase/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefirestoredatabase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_database google_firestore_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firestore_database google_firestore_database}.
 type GoogleFirestoreDatabase interface {
 	cdktf.TerraformResource
 	AppEngineIntegrationMode() *string
@@ -579,7 +579,7 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) VersionRetentionPeriod() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) GoogleFirestoreDatabase {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/4.84.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase_Override(g GoogleFirestoreDatabase, scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) {
 	_init_.Initialize()
 

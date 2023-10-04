@@ -87,6 +87,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetNetworkAttachmentParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetNetworkIpParameters(val *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputRe
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetQueueCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceOutputReference) validateSetSecurityPolicyParameters(val *string) error {
 	return nil
 }
 
