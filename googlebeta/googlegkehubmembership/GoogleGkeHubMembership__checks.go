@@ -293,6 +293,14 @@ func (j *jsiiProxy_GoogleGkeHubMembership) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubMembership) validateSetLocationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubMembership) validateSetMembershipIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

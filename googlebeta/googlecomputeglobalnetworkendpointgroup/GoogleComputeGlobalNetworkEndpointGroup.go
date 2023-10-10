@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group}.
 type GoogleComputeGlobalNetworkEndpointGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -442,7 +442,7 @@ func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpointGroup) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group} Resource.
 func NewGoogleComputeGlobalNetworkEndpointGroup(scope constructs.Construct, id *string, config *GoogleComputeGlobalNetworkEndpointGroupConfig) GoogleComputeGlobalNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -460,7 +460,7 @@ func NewGoogleComputeGlobalNetworkEndpointGroup(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_global_network_endpoint_group google_compute_global_network_endpoint_group} Resource.
 func NewGoogleComputeGlobalNetworkEndpointGroup_Override(g GoogleComputeGlobalNetworkEndpointGroup, scope constructs.Construct, id *string, config *GoogleComputeGlobalNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 

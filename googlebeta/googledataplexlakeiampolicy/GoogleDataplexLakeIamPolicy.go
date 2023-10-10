@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_lake_iam_policy google_dataplex_lake_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake_iam_policy google_dataplex_lake_iam_policy}.
 type GoogleDataplexLakeIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_GoogleDataplexLakeIamPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_lake_iam_policy google_dataplex_lake_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake_iam_policy google_dataplex_lake_iam_policy} Resource.
 func NewGoogleDataplexLakeIamPolicy(scope constructs.Construct, id *string, config *GoogleDataplexLakeIamPolicyConfig) GoogleDataplexLakeIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewGoogleDataplexLakeIamPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_dataplex_lake_iam_policy google_dataplex_lake_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_lake_iam_policy google_dataplex_lake_iam_policy} Resource.
 func NewGoogleDataplexLakeIamPolicy_Override(g GoogleDataplexLakeIamPolicy, scope constructs.Construct, id *string, config *GoogleDataplexLakeIamPolicyConfig) {
 	_init_.Initialize()
 

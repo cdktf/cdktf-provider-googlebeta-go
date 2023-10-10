@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding}.
 type GoogleGkeHubMembershipIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,9 @@ type GoogleGkeHubMembershipIamBinding interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Location() *string
+	SetLocation(val *string)
+	LocationInput() *string
 	Members() *[]*string
 	SetMembers(val *[]*string)
 	MembershipId() *string
@@ -107,6 +110,7 @@ type GoogleGkeHubMembershipIamBinding interface {
 	PutCondition(value *GoogleGkeHubMembershipIamBindingCondition)
 	ResetCondition()
 	ResetId()
+	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -266,6 +270,26 @@ func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) Lifecycle() *cdktf.Terrafor
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) Location() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"location",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) LocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) Members() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -417,7 +441,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding} Resource.
 func NewGoogleGkeHubMembershipIamBinding(scope constructs.Construct, id *string, config *GoogleGkeHubMembershipIamBindingConfig) GoogleGkeHubMembershipIamBinding {
 	_init_.Initialize()
 
@@ -435,7 +459,7 @@ func NewGoogleGkeHubMembershipIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_binding google_gke_hub_membership_iam_binding} Resource.
 func NewGoogleGkeHubMembershipIamBinding_Override(g GoogleGkeHubMembershipIamBinding, scope constructs.Construct, id *string, config *GoogleGkeHubMembershipIamBindingConfig) {
 	_init_.Initialize()
 
@@ -502,6 +526,17 @@ func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding)SetLifecycle(val *cdktf.Terr
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeHubMembershipIamBinding)SetLocation(val *string) {
+	if err := j.validateSetLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"location",
 		val,
 	)
 }
@@ -858,6 +893,14 @@ func (g *jsiiProxy_GoogleGkeHubMembershipIamBinding) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubMembershipIamBinding) ResetLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

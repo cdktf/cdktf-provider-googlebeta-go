@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
 type GoogleGkeonpremVmwareCluster interface {
 	cdktf.TerraformResource
 	AdminClusterMembership() *string
@@ -121,7 +121,8 @@ type GoogleGkeonpremVmwareCluster interface {
 	UpgradePolicy() GoogleGkeonpremVmwareClusterUpgradePolicyOutputReference
 	UpgradePolicyInput() *GoogleGkeonpremVmwareClusterUpgradePolicy
 	ValidationCheck() GoogleGkeonpremVmwareClusterValidationCheckList
-	Vcenter() GoogleGkeonpremVmwareClusterVcenterList
+	Vcenter() GoogleGkeonpremVmwareClusterVcenterOutputReference
+	VcenterInput() *GoogleGkeonpremVmwareClusterVcenter
 	VmTrackingEnabled() interface{}
 	SetVmTrackingEnabled(val interface{})
 	VmTrackingEnabledInput() interface{}
@@ -160,6 +161,7 @@ type GoogleGkeonpremVmwareCluster interface {
 	PutStorage(value *GoogleGkeonpremVmwareClusterStorage)
 	PutTimeouts(value *GoogleGkeonpremVmwareClusterTimeouts)
 	PutUpgradePolicy(value *GoogleGkeonpremVmwareClusterUpgradePolicy)
+	PutVcenter(value *GoogleGkeonpremVmwareClusterVcenter)
 	ResetAnnotations()
 	ResetAntiAffinityGroups()
 	ResetAuthorization()
@@ -177,6 +179,7 @@ type GoogleGkeonpremVmwareCluster interface {
 	ResetStorage()
 	ResetTimeouts()
 	ResetUpgradePolicy()
+	ResetVcenter()
 	ResetVmTrackingEnabled()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -863,11 +866,21 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) ValidationCheck() GoogleGkeonpr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) Vcenter() GoogleGkeonpremVmwareClusterVcenterList {
-	var returns GoogleGkeonpremVmwareClusterVcenterList
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) Vcenter() GoogleGkeonpremVmwareClusterVcenterOutputReference {
+	var returns GoogleGkeonpremVmwareClusterVcenterOutputReference
 	_jsii_.Get(
 		j,
 		"vcenter",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) VcenterInput() *GoogleGkeonpremVmwareClusterVcenter {
+	var returns *GoogleGkeonpremVmwareClusterVcenter
+	_jsii_.Get(
+		j,
+		"vcenterInput",
 		&returns,
 	)
 	return returns
@@ -894,7 +907,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) VmTrackingEnabledInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGoogleGkeonpremVmwareCluster(scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareClusterConfig) GoogleGkeonpremVmwareCluster {
 	_init_.Initialize()
 
@@ -912,7 +925,7 @@ func NewGoogleGkeonpremVmwareCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGoogleGkeonpremVmwareCluster_Override(g GoogleGkeonpremVmwareCluster, scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareClusterConfig) {
 	_init_.Initialize()
 
@@ -1477,6 +1490,17 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) PutUpgradePolicy(value *GoogleG
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) PutVcenter(value *GoogleGkeonpremVmwareClusterVcenter) {
+	if err := g.validatePutVcenterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVcenter",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1593,6 +1617,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) ResetUpgradePolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetUpgradePolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) ResetVcenter() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVcenter",
 		nil, // no parameters
 	)
 }

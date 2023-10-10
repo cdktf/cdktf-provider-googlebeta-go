@@ -7,40 +7,40 @@ package googlenetworkservicesedgecacheservice
 type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteActionCdnPolicyAddSignatures struct {
 	// The actions to take to add signatures to responses. Possible values: ["GENERATE_COOKIE", "GENERATE_TOKEN_HLS_COOKIELESS", "PROPAGATE_TOKEN_HLS_COOKIELESS"].
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_edge_cache_service#actions GoogleNetworkServicesEdgeCacheService#actions}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_services_edge_cache_service#actions GoogleNetworkServicesEdgeCacheService#actions}
 	Actions *[]*string `field:"required" json:"actions" yaml:"actions"`
 	// The parameters to copy from the verified token to the generated token.
 	//
 	// Only the following parameters may be copied:
 	//
-	// 'PathGlobs'
-	// 'paths'
-	// 'acl'
-	// 'URLPrefix'
-	// 'IPRanges'
-	// 'SessionID'
-	// 'id'
-	// 'Data'
-	// 'data'
-	// 'payload'
-	// 'Headers'
+	//   * 'PathGlobs'
+	//   * 'paths'
+	//   * 'acl'
+	//   * 'URLPrefix'
+	//   * 'IPRanges'
+	//   * 'SessionID'
+	//   * 'id'
+	//   * 'Data'
+	//   * 'data'
+	//   * 'payload'
+	//   * 'Headers'
 	//
 	// You may specify up to 6 parameters to copy.  A given parameter is be copied only if the parameter exists in the verified token.  Parameter names are matched exactly as specified.  The order of the parameters does not matter.  Duplicates are not allowed.
 	//
 	// This field may only be specified when the GENERATE_COOKIE or GENERATE_TOKEN_HLS_COOKIELESS actions are specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_edge_cache_service#copied_parameters GoogleNetworkServicesEdgeCacheService#copied_parameters}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_services_edge_cache_service#copied_parameters GoogleNetworkServicesEdgeCacheService#copied_parameters}
 	CopiedParameters *[]*string `field:"optional" json:"copiedParameters" yaml:"copiedParameters"`
 	// The keyset to use for signature generation.
 	//
 	// The following are both valid paths to an EdgeCacheKeyset resource:
 	//
-	// 'projects/project/locations/global/edgeCacheKeysets/yourKeyset'
-	// 'yourKeyset'
+	//   * 'projects/project/locations/global/edgeCacheKeysets/yourKeyset'
+	//   * 'yourKeyset'
 	//
 	// This must be specified when the GENERATE_COOKIE or GENERATE_TOKEN_HLS_COOKIELESS actions are specified.  This field may not be specified otherwise.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_edge_cache_service#keyset GoogleNetworkServicesEdgeCacheService#keyset}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_services_edge_cache_service#keyset GoogleNetworkServicesEdgeCacheService#keyset}
 	Keyset *string `field:"optional" json:"keyset" yaml:"keyset"`
 	// The query parameter in which to put the generated token.
 	//
@@ -50,7 +50,7 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction
 	//
 	// This field may only be set when the GENERATE_TOKEN_HLS_COOKIELESS or PROPAGATE_TOKEN_HLS_COOKIELESS actions are specified.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_edge_cache_service#token_query_parameter GoogleNetworkServicesEdgeCacheService#token_query_parameter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_services_edge_cache_service#token_query_parameter GoogleNetworkServicesEdgeCacheService#token_query_parameter}
 	TokenQueryParameter *string `field:"optional" json:"tokenQueryParameter" yaml:"tokenQueryParameter"`
 	// The duration the token is valid starting from the moment the token is first generated.
 	//
@@ -62,7 +62,7 @@ type GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteAction
 	//
 	// A duration in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_network_services_edge_cache_service#token_ttl GoogleNetworkServicesEdgeCacheService#token_ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_services_edge_cache_service#token_ttl GoogleNetworkServicesEdgeCacheService#token_ttl}
 	TokenTtl *string `field:"optional" json:"tokenTtl" yaml:"tokenTtl"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_vpcsc_config google_artifact_registry_vpcsc_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config google_artifact_registry_vpcsc_config}.
 type GoogleArtifactRegistryVpcscConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -396,7 +396,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryVpcscConfig) VpcscPolicyInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_vpcsc_config google_artifact_registry_vpcsc_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config google_artifact_registry_vpcsc_config} Resource.
 func NewGoogleArtifactRegistryVpcscConfig(scope constructs.Construct, id *string, config *GoogleArtifactRegistryVpcscConfigConfig) GoogleArtifactRegistryVpcscConfig {
 	_init_.Initialize()
 
@@ -414,7 +414,7 @@ func NewGoogleArtifactRegistryVpcscConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_artifact_registry_vpcsc_config google_artifact_registry_vpcsc_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_artifact_registry_vpcsc_config google_artifact_registry_vpcsc_config} Resource.
 func NewGoogleArtifactRegistryVpcscConfig_Override(g GoogleArtifactRegistryVpcscConfig, scope constructs.Construct, id *string, config *GoogleArtifactRegistryVpcscConfigConfig) {
 	_init_.Initialize()
 

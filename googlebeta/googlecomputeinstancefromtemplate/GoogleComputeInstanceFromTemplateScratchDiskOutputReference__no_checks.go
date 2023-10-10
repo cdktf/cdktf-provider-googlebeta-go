@@ -59,6 +59,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) validateSetDeviceNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateScratchDiskOutputReference) validateSetInterfaceParameters(val *string) error {
 	return nil
 }

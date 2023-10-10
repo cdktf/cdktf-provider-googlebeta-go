@@ -18,21 +18,21 @@ type GoogleSccNotificationConfigStreamingConfig struct {
 	//
 	// The supported operators are:
 	//
-	// = for all value types.
-	// >, <, >=, <= for integer values.
-	// :, meaning substring matching, for strings.
+	// * = for all value types.
+	// * >, <, >=, <= for integer values.
+	// * :, meaning substring matching, for strings.
 	//
 	// The supported value types are:
 	//
-	// string literals in quotes.
-	// integer literals without quotes.
-	// boolean literals true and false without quotes.
+	// * string literals in quotes.
+	// * integer literals without quotes.
+	// * boolean literals true and false without quotes.
 	//
 	// See
 	// [Filtering notifications](https://cloud.google.com/security-command-center/docs/how-to-api-filter-notifications)
 	// for information on how to write a filter.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.0.0/docs/resources/google_scc_notification_config#filter GoogleSccNotificationConfig#filter}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_scc_notification_config#filter GoogleSccNotificationConfig#filter}
 	Filter *string `field:"required" json:"filter" yaml:"filter"`
 }
 
