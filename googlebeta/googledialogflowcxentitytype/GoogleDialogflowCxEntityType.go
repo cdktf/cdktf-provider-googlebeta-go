@@ -5,14 +5,14 @@ package googledialogflowcxentitytype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxentitytype/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledialogflowcxentitytype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type}.
 type GoogleDialogflowCxEntityType interface {
 	cdktf.TerraformResource
 	AutoExpansionMode() *string
@@ -537,7 +537,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEntityType) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type} Resource.
 func NewGoogleDialogflowCxEntityType(scope constructs.Construct, id *string, config *GoogleDialogflowCxEntityTypeConfig) GoogleDialogflowCxEntityType {
 	_init_.Initialize()
 
@@ -555,7 +555,7 @@ func NewGoogleDialogflowCxEntityType(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dialogflow_cx_entity_type google_dialogflow_cx_entity_type} Resource.
 func NewGoogleDialogflowCxEntityType_Override(g GoogleDialogflowCxEntityType, scope constructs.Construct, id *string, config *GoogleDialogflowCxEntityTypeConfig) {
 	_init_.Initialize()
 

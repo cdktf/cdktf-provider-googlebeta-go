@@ -5,14 +5,14 @@ package datagooglefirebaseandroidappconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/datagooglefirebaseandroidappconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/datagooglefirebaseandroidappconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config}.
 type DataGoogleFirebaseAndroidAppConfigA interface {
 	cdktf.TerraformDataSource
 	AppId() *string
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAndroidAppConfigA) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config} Data Source.
 func NewDataGoogleFirebaseAndroidAppConfigA(scope constructs.Construct, id *string, config *DataGoogleFirebaseAndroidAppConfigAConfig) DataGoogleFirebaseAndroidAppConfigA {
 	_init_.Initialize()
 
@@ -335,7 +335,7 @@ func NewDataGoogleFirebaseAndroidAppConfigA(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/data-sources/google_firebase_android_app_config google_firebase_android_app_config} Data Source.
 func NewDataGoogleFirebaseAndroidAppConfigA_Override(d DataGoogleFirebaseAndroidAppConfigA, scope constructs.Construct, id *string, config *DataGoogleFirebaseAndroidAppConfigAConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlecomputeautoscaler
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeautoscaler/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputeautoscaler/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_autoscaler google_compute_autoscaler}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_autoscaler google_compute_autoscaler}.
 type GoogleComputeAutoscaler interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() GoogleComputeAutoscalerAutoscalingPolicyOutputReference
@@ -476,7 +476,7 @@ func (j *jsiiProxy_GoogleComputeAutoscaler) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_autoscaler google_compute_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_autoscaler google_compute_autoscaler} Resource.
 func NewGoogleComputeAutoscaler(scope constructs.Construct, id *string, config *GoogleComputeAutoscalerConfig) GoogleComputeAutoscaler {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewGoogleComputeAutoscaler(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_autoscaler google_compute_autoscaler} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_autoscaler google_compute_autoscaler} Resource.
 func NewGoogleComputeAutoscaler_Override(g GoogleComputeAutoscaler, scope constructs.Construct, id *string, config *GoogleComputeAutoscalerConfig) {
 	_init_.Initialize()
 

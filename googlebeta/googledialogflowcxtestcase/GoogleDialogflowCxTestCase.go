@@ -5,14 +5,14 @@ package googledialogflowcxtestcase
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxtestcase/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledialogflowcxtestcase/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case}.
 type GoogleDialogflowCxTestCase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -489,7 +489,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCase) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
 func NewGoogleDialogflowCxTestCase(scope constructs.Construct, id *string, config *GoogleDialogflowCxTestCaseConfig) GoogleDialogflowCxTestCase {
 	_init_.Initialize()
 
@@ -507,7 +507,7 @@ func NewGoogleDialogflowCxTestCase(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dialogflow_cx_test_case google_dialogflow_cx_test_case} Resource.
 func NewGoogleDialogflowCxTestCase_Override(g GoogleDialogflowCxTestCase, scope constructs.Construct, id *string, config *GoogleDialogflowCxTestCaseConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlenetworksecuritytlsinspectionpolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworksecuritytlsinspectionpolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworksecuritytlsinspectionpolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy}.
 type GoogleNetworkSecurityTlsInspectionPolicy interface {
 	cdktf.TerraformResource
 	CaPool() *string
@@ -477,7 +477,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
 func NewGoogleNetworkSecurityTlsInspectionPolicy(scope constructs.Construct, id *string, config *GoogleNetworkSecurityTlsInspectionPolicyConfig) GoogleNetworkSecurityTlsInspectionPolicy {
 	_init_.Initialize()
 
@@ -495,7 +495,7 @@ func NewGoogleNetworkSecurityTlsInspectionPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
 func NewGoogleNetworkSecurityTlsInspectionPolicy_Override(g GoogleNetworkSecurityTlsInspectionPolicy, scope constructs.Construct, id *string, config *GoogleNetworkSecurityTlsInspectionPolicyConfig) {
 	_init_.Initialize()
 

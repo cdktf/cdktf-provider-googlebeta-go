@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) validatePutSshAuthenticationConfigParameters(value *GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

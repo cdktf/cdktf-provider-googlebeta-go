@@ -5,14 +5,14 @@ package googlecloudassetprojectfeed
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecloudassetprojectfeed/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecloudassetprojectfeed/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed}.
 type GoogleCloudAssetProjectFeed interface {
 	cdktf.TerraformResource
 	AssetNames() *[]*string
@@ -514,7 +514,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
 func NewGoogleCloudAssetProjectFeed(scope constructs.Construct, id *string, config *GoogleCloudAssetProjectFeedConfig) GoogleCloudAssetProjectFeed {
 	_init_.Initialize()
 
@@ -532,7 +532,7 @@ func NewGoogleCloudAssetProjectFeed(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
 func NewGoogleCloudAssetProjectFeed_Override(g GoogleCloudAssetProjectFeed, scope constructs.Construct, id *string, config *GoogleCloudAssetProjectFeedConfig) {
 	_init_.Initialize()
 

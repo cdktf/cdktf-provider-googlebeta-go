@@ -1,4 +1,4 @@
-module github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10
+module github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11
 
 go 1.18
 

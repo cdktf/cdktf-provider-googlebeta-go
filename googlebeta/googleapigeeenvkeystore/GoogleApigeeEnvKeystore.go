@@ -5,14 +5,14 @@ package googleapigeeenvkeystore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleapigeeenvkeystore/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleapigeeenvkeystore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_apigee_env_keystore google_apigee_env_keystore}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_apigee_env_keystore google_apigee_env_keystore}.
 type GoogleApigeeEnvKeystore interface {
 	cdktf.TerraformResource
 	Aliases() *[]*string
@@ -371,7 +371,7 @@ func (j *jsiiProxy_GoogleApigeeEnvKeystore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_apigee_env_keystore google_apigee_env_keystore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_apigee_env_keystore google_apigee_env_keystore} Resource.
 func NewGoogleApigeeEnvKeystore(scope constructs.Construct, id *string, config *GoogleApigeeEnvKeystoreConfig) GoogleApigeeEnvKeystore {
 	_init_.Initialize()
 
@@ -389,7 +389,7 @@ func NewGoogleApigeeEnvKeystore(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_apigee_env_keystore google_apigee_env_keystore} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_apigee_env_keystore google_apigee_env_keystore} Resource.
 func NewGoogleApigeeEnvKeystore_Override(g GoogleApigeeEnvKeystore, scope constructs.Construct, id *string, config *GoogleApigeeEnvKeystoreConfig) {
 	_init_.Initialize()
 

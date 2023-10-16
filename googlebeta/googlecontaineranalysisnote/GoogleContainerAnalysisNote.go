@@ -5,14 +5,14 @@ package googlecontaineranalysisnote
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecontaineranalysisnote/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecontaineranalysisnote/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_container_analysis_note google_container_analysis_note}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_container_analysis_note google_container_analysis_note}.
 type GoogleContainerAnalysisNote interface {
 	cdktf.TerraformResource
 	AttestationAuthority() GoogleContainerAnalysisNoteAttestationAuthorityOutputReference
@@ -536,7 +536,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNote) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_container_analysis_note google_container_analysis_note} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_container_analysis_note google_container_analysis_note} Resource.
 func NewGoogleContainerAnalysisNote(scope constructs.Construct, id *string, config *GoogleContainerAnalysisNoteConfig) GoogleContainerAnalysisNote {
 	_init_.Initialize()
 
@@ -554,7 +554,7 @@ func NewGoogleContainerAnalysisNote(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_container_analysis_note google_container_analysis_note} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_container_analysis_note google_container_analysis_note} Resource.
 func NewGoogleContainerAnalysisNote_Override(g GoogleContainerAnalysisNote, scope constructs.Construct, id *string, config *GoogleContainerAnalysisNoteConfig) {
 	_init_.Initialize()
 

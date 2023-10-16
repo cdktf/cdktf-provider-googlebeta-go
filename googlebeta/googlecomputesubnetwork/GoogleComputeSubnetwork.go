@@ -5,16 +5,19 @@ package googlecomputesubnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputesubnetwork/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputesubnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
 type GoogleComputeSubnetwork interface {
 	cdktf.TerraformResource
+	AllowSubnetCidrRoutesOverlap() interface{}
+	SetAllowSubnetCidrRoutesOverlap(val interface{})
+	AllowSubnetCidrRoutesOverlapInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -141,6 +144,7 @@ type GoogleComputeSubnetwork interface {
 	PutLogConfig(value *GoogleComputeSubnetworkLogConfig)
 	PutSecondaryIpRange(value interface{})
 	PutTimeouts(value *GoogleComputeSubnetworkTimeouts)
+	ResetAllowSubnetCidrRoutesOverlap()
 	ResetDescription()
 	ResetId()
 	ResetIpv6AccessType()
@@ -170,6 +174,26 @@ type GoogleComputeSubnetwork interface {
 // The jsii proxy struct for GoogleComputeSubnetwork
 type jsiiProxy_GoogleComputeSubnetwork struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) AllowSubnetCidrRoutesOverlap() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowSubnetCidrRoutesOverlap",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) AllowSubnetCidrRoutesOverlapInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowSubnetCidrRoutesOverlapInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeSubnetwork) CdktfStack() cdktf.TerraformStack {
@@ -723,7 +747,7 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -741,7 +765,7 @@ func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -749,6 +773,17 @@ func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constr
 		"@cdktf/provider-google-beta.googleComputeSubnetwork.GoogleComputeSubnetwork",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork)SetAllowSubnetCidrRoutesOverlap(val interface{}) {
+	if err := j.validateSetAllowSubnetCidrRoutesOverlapParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowSubnetCidrRoutesOverlap",
+		val,
 	)
 }
 
@@ -1259,6 +1294,14 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) PutTimeouts(value *GoogleComputeSubn
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetAllowSubnetCidrRoutesOverlap() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowSubnetCidrRoutesOverlap",
+		nil, // no parameters
 	)
 }
 

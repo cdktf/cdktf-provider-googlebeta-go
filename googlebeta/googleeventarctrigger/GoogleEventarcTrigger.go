@@ -5,14 +5,14 @@ package googleeventarctrigger
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleeventarctrigger/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleeventarctrigger/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_eventarc_trigger google_eventarc_trigger}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_eventarc_trigger google_eventarc_trigger}.
 type GoogleEventarcTrigger interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -626,7 +626,7 @@ func (j *jsiiProxy_GoogleEventarcTrigger) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_eventarc_trigger google_eventarc_trigger} Resource.
 func NewGoogleEventarcTrigger(scope constructs.Construct, id *string, config *GoogleEventarcTriggerConfig) GoogleEventarcTrigger {
 	_init_.Initialize()
 
@@ -644,7 +644,7 @@ func NewGoogleEventarcTrigger(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_eventarc_trigger google_eventarc_trigger} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_eventarc_trigger google_eventarc_trigger} Resource.
 func NewGoogleEventarcTrigger_Override(g GoogleEventarcTrigger, scope constructs.Construct, id *string, config *GoogleEventarcTriggerConfig) {
 	_init_.Initialize()
 

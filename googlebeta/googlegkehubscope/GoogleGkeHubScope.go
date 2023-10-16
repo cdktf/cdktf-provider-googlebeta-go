@@ -5,14 +5,14 @@ package googlegkehubscope
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlegkehubscope/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlegkehubscope/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}.
 type GoogleGkeHubScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -472,7 +472,7 @@ func (j *jsiiProxy_GoogleGkeHubScope) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource.
 func NewGoogleGkeHubScope(scope constructs.Construct, id *string, config *GoogleGkeHubScopeConfig) GoogleGkeHubScope {
 	_init_.Initialize()
 
@@ -490,7 +490,7 @@ func NewGoogleGkeHubScope(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource.
 func NewGoogleGkeHubScope_Override(g GoogleGkeHubScope, scope constructs.Construct, id *string, config *GoogleGkeHubScopeConfig) {
 	_init_.Initialize()
 

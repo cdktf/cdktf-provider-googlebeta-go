@@ -5,14 +5,14 @@ package googlednsresponsepolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlednsresponsepolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlednsresponsepolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_response_policy google_dns_response_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_response_policy google_dns_response_policy}.
 type GoogleDnsResponsePolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -432,7 +432,7 @@ func (j *jsiiProxy_GoogleDnsResponsePolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_response_policy google_dns_response_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_response_policy google_dns_response_policy} Resource.
 func NewGoogleDnsResponsePolicy(scope constructs.Construct, id *string, config *GoogleDnsResponsePolicyConfig) GoogleDnsResponsePolicy {
 	_init_.Initialize()
 
@@ -450,7 +450,7 @@ func NewGoogleDnsResponsePolicy(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dns_response_policy google_dns_response_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dns_response_policy google_dns_response_policy} Resource.
 func NewGoogleDnsResponsePolicy_Override(g GoogleDnsResponsePolicy, scope constructs.Construct, id *string, config *GoogleDnsResponsePolicyConfig) {
 	_init_.Initialize()
 

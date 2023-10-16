@@ -5,14 +5,14 @@ package googlecomputeforwardingrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputeforwardingrule/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputeforwardingrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule}.
 type GoogleComputeForwardingRule interface {
 	cdktf.TerraformResource
 	AllowGlobalAccess() interface{}
@@ -118,6 +118,9 @@ type GoogleComputeForwardingRule interface {
 	PscConnectionStatus() *string
 	// Experimental.
 	RawOverrides() interface{}
+	RecreateClosedPsc() interface{}
+	SetRecreateClosedPsc(val interface{})
+	RecreateClosedPscInput() interface{}
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
@@ -194,6 +197,7 @@ type GoogleComputeForwardingRule interface {
 	ResetPortRange()
 	ResetPorts()
 	ResetProject()
+	ResetRecreateClosedPsc()
 	ResetRegion()
 	ResetServiceDirectoryRegistrations()
 	ResetServiceLabel()
@@ -786,6 +790,26 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeForwardingRule) RecreateClosedPsc() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"recreateClosedPsc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule) RecreateClosedPscInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"recreateClosedPscInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeForwardingRule) Region() *string {
 	var returns *string
 	_jsii_.Get(
@@ -987,7 +1011,7 @@ func (j *jsiiProxy_GoogleComputeForwardingRule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewGoogleComputeForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeForwardingRuleConfig) GoogleComputeForwardingRule {
 	_init_.Initialize()
 
@@ -1005,7 +1029,7 @@ func NewGoogleComputeForwardingRule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_forwarding_rule google_compute_forwarding_rule} Resource.
 func NewGoogleComputeForwardingRule_Override(g GoogleComputeForwardingRule, scope constructs.Construct, id *string, config *GoogleComputeForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -1289,6 +1313,17 @@ func (j *jsiiProxy_GoogleComputeForwardingRule)SetProvisioners(val *[]interface{
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeForwardingRule)SetRecreateClosedPsc(val interface{}) {
+	if err := j.validateSetRecreateClosedPscParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"recreateClosedPsc",
 		val,
 	)
 }
@@ -1784,6 +1819,14 @@ func (g *jsiiProxy_GoogleComputeForwardingRule) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeForwardingRule) ResetRecreateClosedPsc() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRecreateClosedPsc",
 		nil, // no parameters
 	)
 }

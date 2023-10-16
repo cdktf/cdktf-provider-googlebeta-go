@@ -5,14 +5,14 @@ package googlegkehubscopeiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlegkehubscopeiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlegkehubscopeiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy}.
 type GoogleGkeHubScopeIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_GoogleGkeHubScopeIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Resource.
 func NewGoogleGkeHubScopeIamPolicy(scope constructs.Construct, id *string, config *GoogleGkeHubScopeIamPolicyConfig) GoogleGkeHubScopeIamPolicy {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewGoogleGkeHubScopeIamPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_scope_iam_policy google_gke_hub_scope_iam_policy} Resource.
 func NewGoogleGkeHubScopeIamPolicy_Override(g GoogleGkeHubScopeIamPolicy, scope constructs.Construct, id *string, config *GoogleGkeHubScopeIamPolicyConfig) {
 	_init_.Initialize()
 

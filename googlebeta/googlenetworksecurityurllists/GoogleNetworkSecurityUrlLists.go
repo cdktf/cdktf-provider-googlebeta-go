@@ -5,14 +5,14 @@ package googlenetworksecurityurllists
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworksecurityurllists/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworksecurityurllists/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_security_url_lists google_network_security_url_lists}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_security_url_lists google_network_security_url_lists}.
 type GoogleNetworkSecurityUrlLists interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityUrlLists) ValuesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_security_url_lists google_network_security_url_lists} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_security_url_lists google_network_security_url_lists} Resource.
 func NewGoogleNetworkSecurityUrlLists(scope constructs.Construct, id *string, config *GoogleNetworkSecurityUrlListsConfig) GoogleNetworkSecurityUrlLists {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewGoogleNetworkSecurityUrlLists(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_security_url_lists google_network_security_url_lists} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_security_url_lists google_network_security_url_lists} Resource.
 func NewGoogleNetworkSecurityUrlLists_Override(g GoogleNetworkSecurityUrlLists, scope constructs.Construct, id *string, config *GoogleNetworkSecurityUrlListsConfig) {
 	_init_.Initialize()
 

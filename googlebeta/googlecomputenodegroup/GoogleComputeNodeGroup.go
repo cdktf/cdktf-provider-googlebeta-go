@@ -5,14 +5,14 @@ package googlecomputenodegroup
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputenodegroup/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputenodegroup/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_node_group google_compute_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_node_group google_compute_node_group}.
 type GoogleComputeNodeGroup interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() GoogleComputeNodeGroupAutoscalingPolicyOutputReference
@@ -585,7 +585,7 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
 func NewGoogleComputeNodeGroup(scope constructs.Construct, id *string, config *GoogleComputeNodeGroupConfig) GoogleComputeNodeGroup {
 	_init_.Initialize()
 
@@ -603,7 +603,7 @@ func NewGoogleComputeNodeGroup(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
 func NewGoogleComputeNodeGroup_Override(g GoogleComputeNodeGroup, scope constructs.Construct, id *string, config *GoogleComputeNodeGroupConfig) {
 	_init_.Initialize()
 

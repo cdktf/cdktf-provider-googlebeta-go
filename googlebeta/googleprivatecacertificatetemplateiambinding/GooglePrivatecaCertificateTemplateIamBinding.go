@@ -5,14 +5,14 @@ package googleprivatecacertificatetemplateiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleprivatecacertificatetemplateiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleprivatecacertificatetemplateiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_privateca_certificate_template_iam_binding google_privateca_certificate_template_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_privateca_certificate_template_iam_binding google_privateca_certificate_template_iam_binding}.
 type GooglePrivatecaCertificateTemplateIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamBinding) TerraformResour
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_privateca_certificate_template_iam_binding google_privateca_certificate_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_privateca_certificate_template_iam_binding google_privateca_certificate_template_iam_binding} Resource.
 func NewGooglePrivatecaCertificateTemplateIamBinding(scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateIamBindingConfig) GooglePrivatecaCertificateTemplateIamBinding {
 	_init_.Initialize()
 
@@ -459,7 +459,7 @@ func NewGooglePrivatecaCertificateTemplateIamBinding(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_privateca_certificate_template_iam_binding google_privateca_certificate_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_privateca_certificate_template_iam_binding google_privateca_certificate_template_iam_binding} Resource.
 func NewGooglePrivatecaCertificateTemplateIamBinding_Override(g GooglePrivatecaCertificateTemplateIamBinding, scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateIamBindingConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlecloudassetfolderfeed
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecloudassetfolderfeed/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecloudassetfolderfeed/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_cloud_asset_folder_feed google_cloud_asset_folder_feed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_asset_folder_feed google_cloud_asset_folder_feed}.
 type GoogleCloudAssetFolderFeed interface {
 	cdktf.TerraformResource
 	AssetNames() *[]*string
@@ -523,7 +523,7 @@ func (j *jsiiProxy_GoogleCloudAssetFolderFeed) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
 func NewGoogleCloudAssetFolderFeed(scope constructs.Construct, id *string, config *GoogleCloudAssetFolderFeedConfig) GoogleCloudAssetFolderFeed {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewGoogleCloudAssetFolderFeed(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_asset_folder_feed google_cloud_asset_folder_feed} Resource.
 func NewGoogleCloudAssetFolderFeed_Override(g GoogleCloudAssetFolderFeed, scope constructs.Construct, id *string, config *GoogleCloudAssetFolderFeedConfig) {
 	_init_.Initialize()
 

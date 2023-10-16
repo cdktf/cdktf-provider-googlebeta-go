@@ -5,14 +5,14 @@ package googlesccsourceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlesccsourceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesccsourceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding}.
 type GoogleSccSourceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -416,7 +416,7 @@ func (j *jsiiProxy_GoogleSccSourceIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding} Resource.
 func NewGoogleSccSourceIamBinding(scope constructs.Construct, id *string, config *GoogleSccSourceIamBindingConfig) GoogleSccSourceIamBinding {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewGoogleSccSourceIamBinding(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_scc_source_iam_binding google_scc_source_iam_binding} Resource.
 func NewGoogleSccSourceIamBinding_Override(g GoogleSccSourceIamBinding, scope constructs.Construct, id *string, config *GoogleSccSourceIamBindingConfig) {
 	_init_.Initialize()
 

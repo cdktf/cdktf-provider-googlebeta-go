@@ -5,14 +5,14 @@ package googlefirebasedatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlefirebasedatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlefirebasedatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance google_firebase_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance google_firebase_database_instance}.
 type GoogleFirebaseDatabaseInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_GoogleFirebaseDatabaseInstance) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance google_firebase_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance google_firebase_database_instance} Resource.
 func NewGoogleFirebaseDatabaseInstance(scope constructs.Construct, id *string, config *GoogleFirebaseDatabaseInstanceConfig) GoogleFirebaseDatabaseInstance {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewGoogleFirebaseDatabaseInstance(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_firebase_database_instance google_firebase_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_firebase_database_instance google_firebase_database_instance} Resource.
 func NewGoogleFirebaseDatabaseInstance_Override(g GoogleFirebaseDatabaseInstance, scope constructs.Construct, id *string, config *GoogleFirebaseDatabaseInstanceConfig) {
 	_init_.Initialize()
 

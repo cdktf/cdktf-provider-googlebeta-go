@@ -5,14 +5,14 @@ package googlehealthcaredatasetiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlehealthcaredatasetiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlehealthcaredatasetiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_healthcare_dataset_iam_member google_healthcare_dataset_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_healthcare_dataset_iam_member google_healthcare_dataset_iam_member}.
 type GoogleHealthcareDatasetIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleHealthcareDatasetIamMember) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_healthcare_dataset_iam_member google_healthcare_dataset_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_healthcare_dataset_iam_member google_healthcare_dataset_iam_member} Resource.
 func NewGoogleHealthcareDatasetIamMember(scope constructs.Construct, id *string, config *GoogleHealthcareDatasetIamMemberConfig) GoogleHealthcareDatasetIamMember {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewGoogleHealthcareDatasetIamMember(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_healthcare_dataset_iam_member google_healthcare_dataset_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_healthcare_dataset_iam_member google_healthcare_dataset_iam_member} Resource.
 func NewGoogleHealthcareDatasetIamMember_Override(g GoogleHealthcareDatasetIamMember, scope constructs.Construct, id *string, config *GoogleHealthcareDatasetIamMemberConfig) {
 	_init_.Initialize()
 

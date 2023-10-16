@@ -5,14 +5,14 @@ package googledataproccluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataproccluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataproccluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataproc_cluster google_dataproc_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataproc_cluster google_dataproc_cluster}.
 type GoogleDataprocCluster interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -502,7 +502,7 @@ func (j *jsiiProxy_GoogleDataprocCluster) VirtualClusterConfigInput() *GoogleDat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataproc_cluster google_dataproc_cluster} Resource.
 func NewGoogleDataprocCluster(scope constructs.Construct, id *string, config *GoogleDataprocClusterConfig) GoogleDataprocCluster {
 	_init_.Initialize()
 
@@ -520,7 +520,7 @@ func NewGoogleDataprocCluster(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataproc_cluster google_dataproc_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataproc_cluster google_dataproc_cluster} Resource.
 func NewGoogleDataprocCluster_Override(g GoogleDataprocCluster, scope constructs.Construct, id *string, config *GoogleDataprocClusterConfig) {
 	_init_.Initialize()
 

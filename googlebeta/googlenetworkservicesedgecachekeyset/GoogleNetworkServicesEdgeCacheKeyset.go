@@ -5,14 +5,14 @@ package googlenetworkservicesedgecachekeyset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlenetworkservicesedgecachekeyset/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlenetworkservicesedgecachekeyset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset}.
 type GoogleNetworkServicesEdgeCacheKeyset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -478,7 +478,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheKeyset) ValidationSharedKeysInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
 func NewGoogleNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheKeysetConfig) GoogleNetworkServicesEdgeCacheKeyset {
 	_init_.Initialize()
 
@@ -496,7 +496,7 @@ func NewGoogleNetworkServicesEdgeCacheKeyset(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_network_services_edge_cache_keyset google_network_services_edge_cache_keyset} Resource.
 func NewGoogleNetworkServicesEdgeCacheKeyset_Override(g GoogleNetworkServicesEdgeCacheKeyset, scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheKeysetConfig) {
 	_init_.Initialize()
 

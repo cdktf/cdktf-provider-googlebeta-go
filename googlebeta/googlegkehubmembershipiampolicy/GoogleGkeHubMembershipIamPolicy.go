@@ -5,14 +5,14 @@ package googlegkehubmembershipiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlegkehubmembershipiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlegkehubmembershipiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy}.
 type GoogleGkeHubMembershipIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Resource.
 func NewGoogleGkeHubMembershipIamPolicy(scope constructs.Construct, id *string, config *GoogleGkeHubMembershipIamPolicyConfig) GoogleGkeHubMembershipIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewGoogleGkeHubMembershipIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_membership_iam_policy google_gke_hub_membership_iam_policy} Resource.
 func NewGoogleGkeHubMembershipIamPolicy_Override(g GoogleGkeHubMembershipIamPolicy, scope constructs.Construct, id *string, config *GoogleGkeHubMembershipIamPolicyConfig) {
 	_init_.Initialize()
 

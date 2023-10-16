@@ -83,6 +83,10 @@ func (g *jsiiProxy_GoogleAlloydbCluster) validatePutRestoreContinuousBackupSourc
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) validatePutSecondaryConfigParameters(value *GoogleAlloydbClusterSecondaryConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) validatePutTimeoutsParameters(value *GoogleAlloydbClusterTimeouts) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (j *jsiiProxy_GoogleAlloydbCluster) validateSetAnnotationsParameters(val *m
 }
 
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetClusterIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetClusterTypeParameters(val *string) error {
 	return nil
 }
 

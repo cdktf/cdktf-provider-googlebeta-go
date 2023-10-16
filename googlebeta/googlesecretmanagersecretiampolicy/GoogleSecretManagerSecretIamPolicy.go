@@ -5,14 +5,14 @@ package googlesecretmanagersecretiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlesecretmanagersecretiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesecretmanagersecretiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy}.
 type GoogleSecretManagerSecretIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -370,7 +370,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy} Resource.
 func NewGoogleSecretManagerSecretIamPolicy(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretIamPolicyConfig) GoogleSecretManagerSecretIamPolicy {
 	_init_.Initialize()
 
@@ -388,7 +388,7 @@ func NewGoogleSecretManagerSecretIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_secret_manager_secret_iam_policy google_secret_manager_secret_iam_policy} Resource.
 func NewGoogleSecretManagerSecretIamPolicy_Override(g GoogleSecretManagerSecretIamPolicy, scope constructs.Construct, id *string, config *GoogleSecretManagerSecretIamPolicyConfig) {
 	_init_.Initialize()
 

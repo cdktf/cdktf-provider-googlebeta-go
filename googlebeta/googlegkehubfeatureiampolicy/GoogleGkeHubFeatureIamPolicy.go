@@ -5,14 +5,14 @@ package googlegkehubfeatureiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlegkehubfeatureiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlegkehubfeatureiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy}.
 type GoogleGkeHubFeatureIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_GoogleGkeHubFeatureIamPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy} Resource.
 func NewGoogleGkeHubFeatureIamPolicy(scope constructs.Construct, id *string, config *GoogleGkeHubFeatureIamPolicyConfig) GoogleGkeHubFeatureIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewGoogleGkeHubFeatureIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_feature_iam_policy google_gke_hub_feature_iam_policy} Resource.
 func NewGoogleGkeHubFeatureIamPolicy_Override(g GoogleGkeHubFeatureIamPolicy, scope constructs.Construct, id *string, config *GoogleGkeHubFeatureIamPolicyConfig) {
 	_init_.Initialize()
 

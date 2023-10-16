@@ -5,14 +5,14 @@ package googleactivedirectorypeering
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleactivedirectorypeering/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleactivedirectorypeering/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_active_directory_peering google_active_directory_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_active_directory_peering google_active_directory_peering}.
 type GoogleActiveDirectoryPeering interface {
 	cdktf.TerraformResource
 	AuthorizedNetwork() *string
@@ -511,7 +511,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryPeering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
 func NewGoogleActiveDirectoryPeering(scope constructs.Construct, id *string, config *GoogleActiveDirectoryPeeringConfig) GoogleActiveDirectoryPeering {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewGoogleActiveDirectoryPeering(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
 func NewGoogleActiveDirectoryPeering_Override(g GoogleActiveDirectoryPeering, scope constructs.Construct, id *string, config *GoogleActiveDirectoryPeeringConfig) {
 	_init_.Initialize()
 

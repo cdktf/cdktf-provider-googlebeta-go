@@ -5,14 +5,14 @@ package googledataplexzoneiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexzoneiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexzoneiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_zone_iam_policy google_dataplex_zone_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_zone_iam_policy google_dataplex_zone_iam_policy}.
 type GoogleDataplexZoneIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_GoogleDataplexZoneIamPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_zone_iam_policy google_dataplex_zone_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_zone_iam_policy google_dataplex_zone_iam_policy} Resource.
 func NewGoogleDataplexZoneIamPolicy(scope constructs.Construct, id *string, config *GoogleDataplexZoneIamPolicyConfig) GoogleDataplexZoneIamPolicy {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewGoogleDataplexZoneIamPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_zone_iam_policy google_dataplex_zone_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_zone_iam_policy google_dataplex_zone_iam_policy} Resource.
 func NewGoogleDataplexZoneIamPolicy_Override(g GoogleDataplexZoneIamPolicy, scope constructs.Construct, id *string, config *GoogleDataplexZoneIamPolicyConfig) {
 	_init_.Initialize()
 

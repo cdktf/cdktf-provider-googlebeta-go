@@ -5,14 +5,14 @@ package googleapigatewaygatewayiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleapigatewaygatewayiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleapigatewaygatewayiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy}.
 type GoogleApiGatewayGatewayIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_GoogleApiGatewayGatewayIamPolicy) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy} Resource.
 func NewGoogleApiGatewayGatewayIamPolicy(scope constructs.Construct, id *string, config *GoogleApiGatewayGatewayIamPolicyConfig) GoogleApiGatewayGatewayIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewGoogleApiGatewayGatewayIamPolicy(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_api_gateway_gateway_iam_policy google_api_gateway_gateway_iam_policy} Resource.
 func NewGoogleApiGatewayGatewayIamPolicy_Override(g GoogleApiGatewayGatewayIamPolicy, scope constructs.Construct, id *string, config *GoogleApiGatewayGatewayIamPolicyConfig) {
 	_init_.Initialize()
 

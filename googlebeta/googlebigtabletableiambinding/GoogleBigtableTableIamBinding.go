@@ -5,14 +5,14 @@ package googlebigtabletableiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlebigtabletableiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlebigtabletableiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding}.
 type GoogleBigtableTableIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -440,7 +440,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding} Resource.
 func NewGoogleBigtableTableIamBinding(scope constructs.Construct, id *string, config *GoogleBigtableTableIamBindingConfig) GoogleBigtableTableIamBinding {
 	_init_.Initialize()
 
@@ -458,7 +458,7 @@ func NewGoogleBigtableTableIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_bigtable_table_iam_binding google_bigtable_table_iam_binding} Resource.
 func NewGoogleBigtableTableIamBinding_Override(g GoogleBigtableTableIamBinding, scope constructs.Construct, id *string, config *GoogleBigtableTableIamBindingConfig) {
 	_init_.Initialize()
 

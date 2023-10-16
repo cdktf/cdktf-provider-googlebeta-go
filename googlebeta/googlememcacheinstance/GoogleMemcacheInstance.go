@@ -5,14 +5,14 @@ package googlememcacheinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlememcacheinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlememcacheinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_memcache_instance google_memcache_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_memcache_instance google_memcache_instance}.
 type GoogleMemcacheInstance interface {
 	cdktf.TerraformResource
 	AuthorizedNetwork() *string
@@ -675,7 +675,7 @@ func (j *jsiiProxy_GoogleMemcacheInstance) ZonesInput() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_memcache_instance google_memcache_instance} Resource.
 func NewGoogleMemcacheInstance(scope constructs.Construct, id *string, config *GoogleMemcacheInstanceConfig) GoogleMemcacheInstance {
 	_init_.Initialize()
 
@@ -693,7 +693,7 @@ func NewGoogleMemcacheInstance(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_memcache_instance google_memcache_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_memcache_instance google_memcache_instance} Resource.
 func NewGoogleMemcacheInstance_Override(g GoogleMemcacheInstance, scope constructs.Construct, id *string, config *GoogleMemcacheInstanceConfig) {
 	_init_.Initialize()
 

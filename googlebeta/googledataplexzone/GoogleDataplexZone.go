@@ -5,14 +5,14 @@ package googledataplexzone
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledataplexzone/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledataplexzone/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_zone google_dataplex_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_zone google_dataplex_zone}.
 type GoogleDataplexZone interface {
 	cdktf.TerraformResource
 	AssetStatus() GoogleDataplexZoneAssetStatusList
@@ -624,7 +624,7 @@ func (j *jsiiProxy_GoogleDataplexZone) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
 func NewGoogleDataplexZone(scope constructs.Construct, id *string, config *GoogleDataplexZoneConfig) GoogleDataplexZone {
 	_init_.Initialize()
 
@@ -642,7 +642,7 @@ func NewGoogleDataplexZone(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dataplex_zone google_dataplex_zone} Resource.
 func NewGoogleDataplexZone_Override(g GoogleDataplexZone, scope constructs.Construct, id *string, config *GoogleDataplexZoneConfig) {
 	_init_.Initialize()
 

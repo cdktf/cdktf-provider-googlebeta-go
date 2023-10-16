@@ -5,14 +5,14 @@ package googledatacatalogtagtemplateiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledatacatalogtagtemplateiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledatacatalogtagtemplateiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy}.
 type GoogleDataCatalogTagTemplateIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -394,7 +394,7 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
 func NewGoogleDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamPolicyConfig) GoogleDataCatalogTagTemplateIamPolicy {
 	_init_.Initialize()
 
@@ -412,7 +412,7 @@ func NewGoogleDataCatalogTagTemplateIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_data_catalog_tag_template_iam_policy google_data_catalog_tag_template_iam_policy} Resource.
 func NewGoogleDataCatalogTagTemplateIamPolicy_Override(g GoogleDataCatalogTagTemplateIamPolicy, scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googledialogflowcxintent
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googledialogflowcxintent/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledialogflowcxintent/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent}.
 type GoogleDialogflowCxIntent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -561,7 +561,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) TrainingPhrasesInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config *GoogleDialogflowCxIntentConfig) GoogleDialogflowCxIntent {
 	_init_.Initialize()
 
@@ -579,7 +579,7 @@ func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewGoogleDialogflowCxIntent_Override(g GoogleDialogflowCxIntent, scope constructs.Construct, id *string, config *GoogleDialogflowCxIntentConfig) {
 	_init_.Initialize()
 

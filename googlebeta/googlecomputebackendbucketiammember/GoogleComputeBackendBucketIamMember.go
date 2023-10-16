@@ -5,14 +5,14 @@ package googlecomputebackendbucketiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlecomputebackendbucketiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputebackendbucketiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_backend_bucket_iam_member google_compute_backend_bucket_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_backend_bucket_iam_member google_compute_backend_bucket_iam_member}.
 type GoogleComputeBackendBucketIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -417,7 +417,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucketIamMember) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_backend_bucket_iam_member google_compute_backend_bucket_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_backend_bucket_iam_member google_compute_backend_bucket_iam_member} Resource.
 func NewGoogleComputeBackendBucketIamMember(scope constructs.Construct, id *string, config *GoogleComputeBackendBucketIamMemberConfig) GoogleComputeBackendBucketIamMember {
 	_init_.Initialize()
 
@@ -435,7 +435,7 @@ func NewGoogleComputeBackendBucketIamMember(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_compute_backend_bucket_iam_member google_compute_backend_bucket_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_compute_backend_bucket_iam_member google_compute_backend_bucket_iam_member} Resource.
 func NewGoogleComputeBackendBucketIamMember_Override(g GoogleComputeBackendBucketIamMember, scope constructs.Construct, id *string, config *GoogleComputeBackendBucketIamMemberConfig) {
 	_init_.Initialize()
 

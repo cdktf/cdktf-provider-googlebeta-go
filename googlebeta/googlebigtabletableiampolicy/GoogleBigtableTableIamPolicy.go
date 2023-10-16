@@ -5,14 +5,14 @@ package googlebigtabletableiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlebigtabletableiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlebigtabletableiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy}.
 type GoogleBigtableTableIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleBigtableTableIamPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy} Resource.
 func NewGoogleBigtableTableIamPolicy(scope constructs.Construct, id *string, config *GoogleBigtableTableIamPolicyConfig) GoogleBigtableTableIamPolicy {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewGoogleBigtableTableIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_bigtable_table_iam_policy google_bigtable_table_iam_policy} Resource.
 func NewGoogleBigtableTableIamPolicy_Override(g GoogleBigtableTableIamPolicy, scope constructs.Construct, id *string, config *GoogleBigtableTableIamPolicyConfig) {
 	_init_.Initialize()
 

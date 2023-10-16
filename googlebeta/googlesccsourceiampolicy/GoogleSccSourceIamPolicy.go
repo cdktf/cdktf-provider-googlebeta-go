@@ -5,14 +5,14 @@ package googlesccsourceiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlesccsourceiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlesccsourceiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy}.
 type GoogleSccSourceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleSccSourceIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy} Resource.
 func NewGoogleSccSourceIamPolicy(scope constructs.Construct, id *string, config *GoogleSccSourceIamPolicyConfig) GoogleSccSourceIamPolicy {
 	_init_.Initialize()
 
@@ -387,7 +387,7 @@ func NewGoogleSccSourceIamPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_scc_source_iam_policy google_scc_source_iam_policy} Resource.
 func NewGoogleSccSourceIamPolicy_Override(g GoogleSccSourceIamPolicy, scope constructs.Construct, id *string, config *GoogleSccSourceIamPolicyConfig) {
 	_init_.Initialize()
 

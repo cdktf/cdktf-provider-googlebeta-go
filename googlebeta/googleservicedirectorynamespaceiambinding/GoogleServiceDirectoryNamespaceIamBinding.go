@@ -5,14 +5,14 @@ package googleservicedirectorynamespaceiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googleservicedirectorynamespaceiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googleservicedirectorynamespaceiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_service_directory_namespace_iam_binding google_service_directory_namespace_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_service_directory_namespace_iam_binding google_service_directory_namespace_iam_binding}.
 type GoogleServiceDirectoryNamespaceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamBinding) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_service_directory_namespace_iam_binding google_service_directory_namespace_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_service_directory_namespace_iam_binding google_service_directory_namespace_iam_binding} Resource.
 func NewGoogleServiceDirectoryNamespaceIamBinding(scope constructs.Construct, id *string, config *GoogleServiceDirectoryNamespaceIamBindingConfig) GoogleServiceDirectoryNamespaceIamBinding {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewGoogleServiceDirectoryNamespaceIamBinding(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_service_directory_namespace_iam_binding google_service_directory_namespace_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_service_directory_namespace_iam_binding google_service_directory_namespace_iam_binding} Resource.
 func NewGoogleServiceDirectoryNamespaceIamBinding_Override(g GoogleServiceDirectoryNamespaceIamBinding, scope constructs.Construct, id *string, config *GoogleServiceDirectoryNamespaceIamBindingConfig) {
 	_init_.Initialize()
 

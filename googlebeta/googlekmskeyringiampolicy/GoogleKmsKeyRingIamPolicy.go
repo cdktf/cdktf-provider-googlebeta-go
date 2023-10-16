@@ -5,14 +5,14 @@ package googlekmskeyringiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v10/googlekmskeyringiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlekmskeyringiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_kms_key_ring_iam_policy google_kms_key_ring_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_kms_key_ring_iam_policy google_kms_key_ring_iam_policy}.
 type GoogleKmsKeyRingIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingIamPolicy) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_kms_key_ring_iam_policy google_kms_key_ring_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_kms_key_ring_iam_policy google_kms_key_ring_iam_policy} Resource.
 func NewGoogleKmsKeyRingIamPolicy(scope constructs.Construct, id *string, config *GoogleKmsKeyRingIamPolicyConfig) GoogleKmsKeyRingIamPolicy {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewGoogleKmsKeyRingIamPolicy(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.1.0/docs/resources/google_kms_key_ring_iam_policy google_kms_key_ring_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_kms_key_ring_iam_policy google_kms_key_ring_iam_policy} Resource.
 func NewGoogleKmsKeyRingIamPolicy_Override(g GoogleKmsKeyRingIamPolicy, scope constructs.Construct, id *string, config *GoogleKmsKeyRingIamPolicyConfig) {
 	_init_.Initialize()
 
