@@ -7,6 +7,10 @@ package googlefirebaseandroidapp
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseAndroidApp) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAndroidApp) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleFirebaseAndroidApp) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAndroidApp) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAndroidApp) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAndroidApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleFirebaseAndroidApp) validateOverrideLogicalIdParameters
 }
 
 func (g *jsiiProxy_GoogleFirebaseAndroidApp) validatePutTimeoutsParameters(value *GoogleFirebaseAndroidAppTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseAndroidApp_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

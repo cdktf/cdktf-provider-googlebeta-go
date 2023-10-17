@@ -7,6 +7,10 @@ package googlenetworkconnectivityserviceconnectionpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateGet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validatePut
 }
 
 func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validatePutTimeoutsParameters(value *GoogleNetworkConnectivityServiceConnectionPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkConnectivityServiceConnectionPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

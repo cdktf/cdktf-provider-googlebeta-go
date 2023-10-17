@@ -7,6 +7,10 @@ package googlecomputebackendbucketsignedurlkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validatePutTimeoutsParameters(value *GoogleComputeBackendBucketSignedUrlKeyTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeBackendBucketSignedUrlKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

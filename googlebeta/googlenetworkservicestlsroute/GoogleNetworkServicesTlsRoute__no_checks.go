@@ -7,6 +7,10 @@ package googlenetworkservicestlsroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validatePutRulesParameters(val
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validatePutTimeoutsParameters(value *GoogleNetworkServicesTlsRouteTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkServicesTlsRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

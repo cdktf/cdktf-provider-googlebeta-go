@@ -7,6 +7,10 @@ package googlecomputeresourcepolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeResourcePolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeResourcePolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeResourcePolicy) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeResourcePolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeResourcePolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeResourcePolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (g *jsiiProxy_GoogleComputeResourcePolicy) validatePutSnapshotSchedulePolic
 }
 
 func (g *jsiiProxy_GoogleComputeResourcePolicy) validatePutTimeoutsParameters(value *GoogleComputeResourcePolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeResourcePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

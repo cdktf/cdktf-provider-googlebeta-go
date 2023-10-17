@@ -7,6 +7,10 @@ package googleservicedirectoryserviceiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateGetStringMap
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) validatePutConditionParameters(value *GoogleServiceDirectoryServiceIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleServiceDirectoryServiceIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

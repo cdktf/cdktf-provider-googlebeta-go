@@ -7,6 +7,10 @@ package googlenetworkservicesgateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkServicesGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleNetworkServicesGateway) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleNetworkServicesGateway) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesGateway) validatePutTimeoutsParameters(value *GoogleNetworkServicesGatewayTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkServicesGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

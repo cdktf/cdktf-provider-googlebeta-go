@@ -7,6 +7,10 @@ package googledataplextask
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataplexTask) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexTask) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataplexTask) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexTask) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexTask) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexTask) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (g *jsiiProxy_GoogleDataplexTask) validatePutTimeoutsParameters(value *Goog
 }
 
 func (g *jsiiProxy_GoogleDataplexTask) validatePutTriggerSpecParameters(value *GoogleDataplexTaskTriggerSpec) error {
+	return nil
+}
+
+func validateGoogleDataplexTask_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

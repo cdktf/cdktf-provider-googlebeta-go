@@ -7,6 +7,10 @@ package googleiapappengineversioniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIapAppEngineVersionIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapAppEngineVersionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIapAppEngineVersionIamMember) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapAppEngineVersionIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapAppEngineVersionIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapAppEngineVersionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleIapAppEngineVersionIamMember) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleIapAppEngineVersionIamMember) validatePutConditionParameters(value *GoogleIapAppEngineVersionIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleIapAppEngineVersionIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

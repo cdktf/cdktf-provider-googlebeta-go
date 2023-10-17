@@ -7,6 +7,10 @@ package googlehealthcarehl7v2store
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validatePutParserConfigParameters
 }
 
 func (g *jsiiProxy_GoogleHealthcareHl7V2Store) validatePutTimeoutsParameters(value *GoogleHealthcareHl7V2StoreTimeouts) error {
+	return nil
+}
+
+func validateGoogleHealthcareHl7V2Store_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

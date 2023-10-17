@@ -7,6 +7,10 @@ package googlecomputediskasyncreplication
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) validatePutSecondaryDiskPa
 }
 
 func (g *jsiiProxy_GoogleComputeDiskAsyncReplication) validatePutTimeoutsParameters(value *GoogleComputeDiskAsyncReplicationTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeDiskAsyncReplication_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

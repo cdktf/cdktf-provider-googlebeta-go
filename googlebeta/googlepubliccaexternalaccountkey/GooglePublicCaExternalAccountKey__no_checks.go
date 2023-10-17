@@ -7,6 +7,10 @@ package googlepubliccaexternalaccountkey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validatePutTimeoutsParameters(value *GooglePublicCaExternalAccountKeyTimeouts) error {
+	return nil
+}
+
+func validateGooglePublicCaExternalAccountKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

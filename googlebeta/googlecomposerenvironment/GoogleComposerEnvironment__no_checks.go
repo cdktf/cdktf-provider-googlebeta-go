@@ -7,6 +7,10 @@ package googlecomposerenvironment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComposerEnvironment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComposerEnvironment) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleComposerEnvironment) validatePutConfigParameters(value 
 }
 
 func (g *jsiiProxy_GoogleComposerEnvironment) validatePutTimeoutsParameters(value *GoogleComposerEnvironmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleComposerEnvironment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

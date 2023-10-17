@@ -7,6 +7,10 @@ package googledataprocjobiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataprocJobIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocJobIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataprocJobIamMember) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocJobIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocJobIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocJobIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleDataprocJobIamMember) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleDataprocJobIamMember) validatePutConditionParameters(value *GoogleDataprocJobIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleDataprocJobIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

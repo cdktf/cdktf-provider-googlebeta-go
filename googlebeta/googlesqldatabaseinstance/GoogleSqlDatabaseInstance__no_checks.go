@@ -7,6 +7,10 @@ package googlesqldatabaseinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutSettingsParameters(valu
 }
 
 func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutTimeoutsParameters(value *GoogleSqlDatabaseInstanceTimeouts) error {
+	return nil
+}
+
+func validateGoogleSqlDatabaseInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

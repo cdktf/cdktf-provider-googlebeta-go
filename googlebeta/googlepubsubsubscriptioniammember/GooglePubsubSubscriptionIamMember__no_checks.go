@@ -7,6 +7,10 @@ package googlepubsubsubscriptioniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePubsubSubscriptionIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GooglePubsubSubscriptionIamMember) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscriptionIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GooglePubsubSubscriptionIamMember) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GooglePubsubSubscriptionIamMember) validatePutConditionParameters(value *GooglePubsubSubscriptionIamMemberCondition) error {
+	return nil
+}
+
+func validateGooglePubsubSubscriptionIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

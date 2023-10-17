@@ -7,6 +7,10 @@ package googleactivedirectorydomain
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleActiveDirectoryDomain) validatePutTimeoutsParameters(value *GoogleActiveDirectoryDomainTimeouts) error {
+	return nil
+}
+
+func validateGoogleActiveDirectoryDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googlenetworksecurityauthorizationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) validateGetStringMa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) validatePutRulesPar
 }
 
 func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicy) validatePutTimeoutsParameters(value *GoogleNetworkSecurityAuthorizationPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkSecurityAuthorizationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

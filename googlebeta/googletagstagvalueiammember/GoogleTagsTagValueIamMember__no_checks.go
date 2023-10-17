@@ -7,6 +7,10 @@ package googletagstagvalueiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleTagsTagValueIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTagsTagValueIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleTagsTagValueIamMember) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTagsTagValueIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTagsTagValueIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTagsTagValueIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleTagsTagValueIamMember) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleTagsTagValueIamMember) validatePutConditionParameters(value *GoogleTagsTagValueIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleTagsTagValueIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

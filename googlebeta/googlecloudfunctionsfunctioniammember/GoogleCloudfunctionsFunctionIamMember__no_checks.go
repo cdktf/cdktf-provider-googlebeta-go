@@ -7,6 +7,10 @@ package googlecloudfunctionsfunctioniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamMember) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamMember) validateOverrideLogica
 }
 
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamMember) validatePutConditionParameters(value *GoogleCloudfunctionsFunctionIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleCloudfunctionsFunctionIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

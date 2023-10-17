@@ -7,6 +7,10 @@ package googlebigquerytableiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigqueryTableIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTableIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBigqueryTableIamBinding) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTableIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTableIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleBigqueryTableIamBinding) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleBigqueryTableIamBinding) validatePutConditionParameters(value *GoogleBigqueryTableIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleBigqueryTableIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

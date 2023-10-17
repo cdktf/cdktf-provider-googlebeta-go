@@ -7,6 +7,10 @@ package googlesccnotificationconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSccNotificationConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccNotificationConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleSccNotificationConfig) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccNotificationConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccNotificationConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccNotificationConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleSccNotificationConfig) validatePutStreamingConfigParame
 }
 
 func (g *jsiiProxy_GoogleSccNotificationConfig) validatePutTimeoutsParameters(value *GoogleSccNotificationConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleSccNotificationConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

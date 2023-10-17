@@ -7,6 +7,10 @@ package googlebigqueryconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigqueryConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBigqueryConnection) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (g *jsiiProxy_GoogleBigqueryConnection) validatePutCloudSqlParameters(value
 }
 
 func (g *jsiiProxy_GoogleBigqueryConnection) validatePutTimeoutsParameters(value *GoogleBigqueryConnectionTimeouts) error {
+	return nil
+}
+
+func validateGoogleBigqueryConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

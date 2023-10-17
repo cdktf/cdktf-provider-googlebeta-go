@@ -7,6 +7,10 @@ package googlenetworksecuritytlsinspectionpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateGetStringMa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateOverrideLog
 }
 
 func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validatePutTimeoutsParameters(value *GoogleNetworkSecurityTlsInspectionPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkSecurityTlsInspectionPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

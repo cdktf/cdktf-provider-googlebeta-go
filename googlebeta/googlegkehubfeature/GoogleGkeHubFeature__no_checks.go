@@ -7,6 +7,10 @@ package googlegkehubfeature
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeHubFeature) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeature) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleGkeHubFeature) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeature) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeature) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeature) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleGkeHubFeature) validatePutSpecParameters(value *GoogleG
 }
 
 func (g *jsiiProxy_GoogleGkeHubFeature) validatePutTimeoutsParameters(value *GoogleGkeHubFeatureTimeouts) error {
+	return nil
+}
+
+func validateGoogleGkeHubFeature_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googlecomputehavpngateway
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeHaVpnGateway) validatePutTimeoutsParameters(valu
 }
 
 func (g *jsiiProxy_GoogleComputeHaVpnGateway) validatePutVpnInterfacesParameters(value interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeHaVpnGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

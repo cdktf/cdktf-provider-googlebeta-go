@@ -7,6 +7,10 @@ package googleiamdenypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIamDenyPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamDenyPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIamDenyPolicy) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamDenyPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamDenyPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamDenyPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleIamDenyPolicy) validatePutRulesParameters(value interfa
 }
 
 func (g *jsiiProxy_GoogleIamDenyPolicy) validatePutTimeoutsParameters(value *GoogleIamDenyPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleIamDenyPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

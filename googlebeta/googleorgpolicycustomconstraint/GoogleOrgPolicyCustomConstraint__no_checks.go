@@ -7,6 +7,10 @@ package googleorgpolicycustomconstraint
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validatePutTimeoutsParameters(value *GoogleOrgPolicyCustomConstraintTimeouts) error {
+	return nil
+}
+
+func validateGoogleOrgPolicyCustomConstraint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

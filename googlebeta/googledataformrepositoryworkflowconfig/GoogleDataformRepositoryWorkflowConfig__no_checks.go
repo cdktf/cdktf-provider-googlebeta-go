@@ -7,6 +7,10 @@ package googledataformrepositoryworkflowconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfig) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfig) validatePutInvocation
 }
 
 func (g *jsiiProxy_GoogleDataformRepositoryWorkflowConfig) validatePutTimeoutsParameters(value *GoogleDataformRepositoryWorkflowConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleDataformRepositoryWorkflowConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

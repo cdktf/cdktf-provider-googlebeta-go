@@ -7,6 +7,10 @@ package googlecomputeregioncommitment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionCommitment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionCommitment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeRegionCommitment) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionCommitment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionCommitment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionCommitment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeRegionCommitment) validatePutResourcesParameters
 }
 
 func (g *jsiiProxy_GoogleComputeRegionCommitment) validatePutTimeoutsParameters(value *GoogleComputeRegionCommitmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeRegionCommitment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

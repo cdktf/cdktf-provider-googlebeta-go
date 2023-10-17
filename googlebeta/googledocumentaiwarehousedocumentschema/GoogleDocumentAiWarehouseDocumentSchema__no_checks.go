@@ -7,6 +7,10 @@ package googledocumentaiwarehousedocumentschema
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateGetStringMap
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validatePutPropertyD
 }
 
 func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validatePutTimeoutsParameters(value *GoogleDocumentAiWarehouseDocumentSchemaTimeouts) error {
+	return nil
+}
+
+func validateGoogleDocumentAiWarehouseDocumentSchema_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

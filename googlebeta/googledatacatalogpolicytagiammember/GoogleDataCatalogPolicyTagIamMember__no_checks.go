@@ -7,6 +7,10 @@ package googledatacatalogpolicytagiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validatePutConditionParameters(value *GoogleDataCatalogPolicyTagIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleDataCatalogPolicyTagIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googlevmwareengineprivatecloud
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validatePutNetworkConfigParam
 }
 
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) validatePutTimeoutsParameters(value *GoogleVmwareenginePrivateCloudTimeouts) error {
+	return nil
+}
+
+func validateGoogleVmwareenginePrivateCloud_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

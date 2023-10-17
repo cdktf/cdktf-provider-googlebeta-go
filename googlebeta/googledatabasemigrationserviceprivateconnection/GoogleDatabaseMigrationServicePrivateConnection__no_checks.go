@@ -7,6 +7,10 @@ package googledatabasemigrationserviceprivateconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateGetS
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validatePutT
 }
 
 func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validatePutVpcPeeringConfigParameters(value *GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfig) error {
+	return nil
+}
+
+func validateGoogleDatabaseMigrationServicePrivateConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

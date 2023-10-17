@@ -7,6 +7,10 @@ package googledatafusioninstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataFusionInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataFusionInstance) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (g *jsiiProxy_GoogleDataFusionInstance) validatePutNetworkConfigParameters(
 }
 
 func (g *jsiiProxy_GoogleDataFusionInstance) validatePutTimeoutsParameters(value *GoogleDataFusionInstanceTimeouts) error {
+	return nil
+}
+
+func validateGoogleDataFusionInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

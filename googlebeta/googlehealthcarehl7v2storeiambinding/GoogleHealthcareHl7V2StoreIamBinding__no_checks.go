@@ -7,6 +7,10 @@ package googlehealthcarehl7v2storeiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamBinding) validatePutConditionParameters(value *GoogleHealthcareHl7V2StoreIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleHealthcareHl7V2StoreIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

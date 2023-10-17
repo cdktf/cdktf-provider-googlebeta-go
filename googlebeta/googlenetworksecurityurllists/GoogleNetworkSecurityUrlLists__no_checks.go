@@ -7,6 +7,10 @@ package googlenetworksecurityurllists
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validatePutTimeoutsParameters(value *GoogleNetworkSecurityUrlListsTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkSecurityUrlLists_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

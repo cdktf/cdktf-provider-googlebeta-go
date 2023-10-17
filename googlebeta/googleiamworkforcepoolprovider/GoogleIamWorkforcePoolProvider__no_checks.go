@@ -7,6 +7,10 @@ package googleiamworkforcepoolprovider
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validatePutSamlParameters(val
 }
 
 func (g *jsiiProxy_GoogleIamWorkforcePoolProvider) validatePutTimeoutsParameters(value *GoogleIamWorkforcePoolProviderTimeouts) error {
+	return nil
+}
+
+func validateGoogleIamWorkforcePoolProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

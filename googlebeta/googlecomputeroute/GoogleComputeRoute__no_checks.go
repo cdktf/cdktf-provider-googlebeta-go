@@ -7,6 +7,10 @@ package googlecomputeroute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRoute) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRoute) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeRoute) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRoute) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRoute) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRoute) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeRoute) validateOverrideLogicalIdParameters(newLo
 }
 
 func (g *jsiiProxy_GoogleComputeRoute) validatePutTimeoutsParameters(value *GoogleComputeRouteTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeRoute_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

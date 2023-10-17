@@ -7,6 +7,10 @@ package googledataprocmetastorefederationiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) validateGetString
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) validateOverrideL
 }
 
 func (g *jsiiProxy_GoogleDataprocMetastoreFederationIamMember) validatePutConditionParameters(value *GoogleDataprocMetastoreFederationIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleDataprocMetastoreFederationIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

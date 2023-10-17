@@ -7,6 +7,10 @@ package googlecloudrunv2serviceiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleCloudRunV2ServiceIamBinding) validatePutConditionParameters(value *GoogleCloudRunV2ServiceIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleCloudRunV2ServiceIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

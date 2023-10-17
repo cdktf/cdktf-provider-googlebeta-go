@@ -7,6 +7,10 @@ package googlebigqueryanalyticshubdataexchangeiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember) validateGetS
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember) validateOver
 }
 
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamMember) validatePutConditionParameters(value *GoogleBigqueryAnalyticsHubDataExchangeIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleBigqueryAnalyticsHubDataExchangeIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

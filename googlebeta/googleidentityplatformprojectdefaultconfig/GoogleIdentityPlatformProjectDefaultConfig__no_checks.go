@@ -7,6 +7,10 @@ package googleidentityplatformprojectdefaultconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateGetString
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validatePutSignIn
 }
 
 func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validatePutTimeoutsParameters(value *GoogleIdentityPlatformProjectDefaultConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleIdentityPlatformProjectDefaultConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

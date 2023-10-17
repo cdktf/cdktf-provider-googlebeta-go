@@ -7,6 +7,10 @@ package googlecloudrundomainmapping
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudRunDomainMapping) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunDomainMapping) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleCloudRunDomainMapping) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunDomainMapping) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunDomainMapping) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunDomainMapping) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleCloudRunDomainMapping) validatePutSpecParameters(value 
 }
 
 func (g *jsiiProxy_GoogleCloudRunDomainMapping) validatePutTimeoutsParameters(value *GoogleCloudRunDomainMappingTimeouts) error {
+	return nil
+}
+
+func validateGoogleCloudRunDomainMapping_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

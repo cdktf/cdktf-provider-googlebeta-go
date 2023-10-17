@@ -7,6 +7,10 @@ package googleapigeeenvgroupattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeEnvgroupAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvgroupAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleApigeeEnvgroupAttachment) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvgroupAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvgroupAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvgroupAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleApigeeEnvgroupAttachment) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleApigeeEnvgroupAttachment) validatePutTimeoutsParameters(value *GoogleApigeeEnvgroupAttachmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleApigeeEnvgroupAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

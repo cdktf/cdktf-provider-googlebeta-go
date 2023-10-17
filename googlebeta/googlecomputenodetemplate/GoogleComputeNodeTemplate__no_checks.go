@@ -7,6 +7,10 @@ package googlecomputenodetemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeNodeTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNodeTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeNodeTemplate) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNodeTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNodeTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeNodeTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeNodeTemplate) validatePutServerBindingParameters
 }
 
 func (g *jsiiProxy_GoogleComputeNodeTemplate) validatePutTimeoutsParameters(value *GoogleComputeNodeTemplateTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeNodeTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

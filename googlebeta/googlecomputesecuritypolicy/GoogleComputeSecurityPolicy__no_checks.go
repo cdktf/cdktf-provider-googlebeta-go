@@ -7,6 +7,10 @@ package googlecomputesecuritypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicy) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicy) validatePutRuleParameters(value 
 }
 
 func (g *jsiiProxy_GoogleComputeSecurityPolicy) validatePutTimeoutsParameters(value *GoogleComputeSecurityPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeSecurityPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

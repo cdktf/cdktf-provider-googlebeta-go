@@ -7,6 +7,10 @@ package googleproject
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleProject) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleProject) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleProject) validateGetStringMapAttributeParameters(terraf
 	return nil
 }
 
+func (g *jsiiProxy_GoogleProject) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleProject) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleProject) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (g *jsiiProxy_GoogleProject) validatePutTimeoutsParameters(value *GoogleProjectTimeouts) error {
+	return nil
+}
+
+func validateGoogleProject_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

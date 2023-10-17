@@ -7,6 +7,10 @@ package googleapigeeorganization
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeOrganization) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeOrganization) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleApigeeOrganization) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeOrganization) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeOrganization) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeOrganization) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleApigeeOrganization) validatePutPropertiesParameters(val
 }
 
 func (g *jsiiProxy_GoogleApigeeOrganization) validatePutTimeoutsParameters(value *GoogleApigeeOrganizationTimeouts) error {
+	return nil
+}
+
+func validateGoogleApigeeOrganization_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

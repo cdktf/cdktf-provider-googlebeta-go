@@ -7,6 +7,10 @@ package googlecomputeinstancegroupmanager
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -92,6 +104,10 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutUpdatePolicyPar
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutVersionParameters(value interface{}) error {
+	return nil
+}
+
+func validateGoogleComputeInstanceGroupManager_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

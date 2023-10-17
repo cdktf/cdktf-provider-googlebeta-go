@@ -7,6 +7,10 @@ package googlebillingprojectinfo
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBillingProjectInfo) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBillingProjectInfo) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBillingProjectInfo) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBillingProjectInfo) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBillingProjectInfo) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBillingProjectInfo) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleBillingProjectInfo) validateOverrideLogicalIdParameters
 }
 
 func (g *jsiiProxy_GoogleBillingProjectInfo) validatePutTimeoutsParameters(value *GoogleBillingProjectInfoTimeouts) error {
+	return nil
+}
+
+func validateGoogleBillingProjectInfo_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googlecomputeprojectdefaultnetworktier
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeProjectDefaultNetworkTier) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeProjectDefaultNetworkTier) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeProjectDefaultNetworkTier) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeProjectDefaultNetworkTier) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeProjectDefaultNetworkTier) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeProjectDefaultNetworkTier) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeProjectDefaultNetworkTier) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleComputeProjectDefaultNetworkTier) validatePutTimeoutsParameters(value *GoogleComputeProjectDefaultNetworkTierTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeProjectDefaultNetworkTier_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

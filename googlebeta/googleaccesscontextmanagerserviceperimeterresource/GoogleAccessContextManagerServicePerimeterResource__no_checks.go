@@ -7,6 +7,10 @@ package googleaccesscontextmanagerserviceperimeterresource
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateG
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validateO
 }
 
 func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterResource) validatePutTimeoutsParameters(value *GoogleAccessContextManagerServicePerimeterResourceTimeouts) error {
+	return nil
+}
+
+func validateGoogleAccessContextManagerServicePerimeterResource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

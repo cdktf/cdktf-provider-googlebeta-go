@@ -7,6 +7,10 @@ package googlecomputetargetsslproxy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeTargetSslProxy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeTargetSslProxy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeTargetSslProxy) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeTargetSslProxy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeTargetSslProxy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeTargetSslProxy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeTargetSslProxy) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleComputeTargetSslProxy) validatePutTimeoutsParameters(value *GoogleComputeTargetSslProxyTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeTargetSslProxy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

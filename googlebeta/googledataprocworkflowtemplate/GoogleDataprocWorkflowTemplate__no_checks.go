@@ -7,6 +7,10 @@ package googledataprocworkflowtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validatePutPlacementParameter
 }
 
 func (g *jsiiProxy_GoogleDataprocWorkflowTemplate) validatePutTimeoutsParameters(value *GoogleDataprocWorkflowTemplateTimeouts) error {
+	return nil
+}
+
+func validateGoogleDataprocWorkflowTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

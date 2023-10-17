@@ -7,6 +7,10 @@ package googledialogflowcxentitytype
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxEntityType) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleDialogflowCxEntityType) validatePutExcludedPhrasesParam
 }
 
 func (g *jsiiProxy_GoogleDialogflowCxEntityType) validatePutTimeoutsParameters(value *GoogleDialogflowCxEntityTypeTimeouts) error {
+	return nil
+}
+
+func validateGoogleDialogflowCxEntityType_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

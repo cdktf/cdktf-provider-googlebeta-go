@@ -7,6 +7,10 @@ package googleloggingprojectsink
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleLoggingProjectSink) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingProjectSink) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleLoggingProjectSink) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingProjectSink) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingProjectSink) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingProjectSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleLoggingProjectSink) validatePutBigqueryOptionsParameter
 }
 
 func (g *jsiiProxy_GoogleLoggingProjectSink) validatePutExclusionsParameters(value interface{}) error {
+	return nil
+}
+
+func validateGoogleLoggingProjectSink_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

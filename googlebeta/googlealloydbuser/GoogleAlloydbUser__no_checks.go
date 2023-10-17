@@ -7,6 +7,10 @@ package googlealloydbuser
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAlloydbUser) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbUser) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleAlloydbUser) validateGetStringMapAttributeParameters(te
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbUser) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbUser) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleAlloydbUser) validateOverrideLogicalIdParameters(newLog
 }
 
 func (g *jsiiProxy_GoogleAlloydbUser) validatePutTimeoutsParameters(value *GoogleAlloydbUserTimeouts) error {
+	return nil
+}
+
+func validateGoogleAlloydbUser_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

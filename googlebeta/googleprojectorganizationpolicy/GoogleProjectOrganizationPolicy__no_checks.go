@@ -7,6 +7,10 @@ package googleprojectorganizationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleProjectOrganizationPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleProjectOrganizationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleProjectOrganizationPolicy) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleProjectOrganizationPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleProjectOrganizationPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleProjectOrganizationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GoogleProjectOrganizationPolicy) validatePutRestorePolicyPara
 }
 
 func (g *jsiiProxy_GoogleProjectOrganizationPolicy) validatePutTimeoutsParameters(value *GoogleProjectOrganizationPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleProjectOrganizationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

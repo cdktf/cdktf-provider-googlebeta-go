@@ -7,6 +7,10 @@ package googleappenginestandardappversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -88,6 +100,10 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validatePutTimeoutsParamet
 }
 
 func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validatePutVpcAccessConnectorParameters(value *GoogleAppEngineStandardAppVersionVpcAccessConnector) error {
+	return nil
+}
+
+func validateGoogleAppEngineStandardAppVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

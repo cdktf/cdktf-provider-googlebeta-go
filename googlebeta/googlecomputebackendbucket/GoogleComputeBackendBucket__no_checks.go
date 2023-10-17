@@ -7,6 +7,10 @@ package googlecomputebackendbucket
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeBackendBucket) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendBucket) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeBackendBucket) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendBucket) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendBucket) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeBackendBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutCdnPolicyParameters(va
 }
 
 func (g *jsiiProxy_GoogleComputeBackendBucket) validatePutTimeoutsParameters(value *GoogleComputeBackendBucketTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeBackendBucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

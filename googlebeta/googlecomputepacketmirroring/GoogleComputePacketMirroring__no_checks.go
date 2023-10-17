@@ -7,6 +7,10 @@ package googlecomputepacketmirroring
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputePacketMirroring) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputePacketMirroring) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputePacketMirroring) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputePacketMirroring) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputePacketMirroring) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputePacketMirroring) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (g *jsiiProxy_GoogleComputePacketMirroring) validatePutNetworkParameters(va
 }
 
 func (g *jsiiProxy_GoogleComputePacketMirroring) validatePutTimeoutsParameters(value *GoogleComputePacketMirroringTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputePacketMirroring_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

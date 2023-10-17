@@ -7,6 +7,10 @@ package googlevertexaitensorboard
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVertexAiTensorboard) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiTensorboard) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleVertexAiTensorboard) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiTensorboard) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiTensorboard) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiTensorboard) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleVertexAiTensorboard) validatePutEncryptionSpecParameter
 }
 
 func (g *jsiiProxy_GoogleVertexAiTensorboard) validatePutTimeoutsParameters(value *GoogleVertexAiTensorboardTimeouts) error {
+	return nil
+}
+
+func validateGoogleVertexAiTensorboard_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

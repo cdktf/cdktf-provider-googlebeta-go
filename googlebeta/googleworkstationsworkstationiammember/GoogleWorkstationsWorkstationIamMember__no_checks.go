@@ -7,6 +7,10 @@ package googleworkstationsworkstationiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationIamMember) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationIamMember) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleWorkstationsWorkstationIamMember) validatePutConditionParameters(value *GoogleWorkstationsWorkstationIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleWorkstationsWorkstationIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

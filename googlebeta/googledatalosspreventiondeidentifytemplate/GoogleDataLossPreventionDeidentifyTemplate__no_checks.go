@@ -7,6 +7,10 @@ package googledatalosspreventiondeidentifytemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateGetString
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validatePutDeiden
 }
 
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validatePutTimeoutsParameters(value *GoogleDataLossPreventionDeidentifyTemplateTimeouts) error {
+	return nil
+}
+
+func validateGoogleDataLossPreventionDeidentifyTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

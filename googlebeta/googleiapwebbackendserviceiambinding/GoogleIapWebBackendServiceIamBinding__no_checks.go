@@ -7,6 +7,10 @@ package googleiapwebbackendserviceiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIapWebBackendServiceIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapWebBackendServiceIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIapWebBackendServiceIamBinding) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapWebBackendServiceIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapWebBackendServiceIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebBackendServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleIapWebBackendServiceIamBinding) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleIapWebBackendServiceIamBinding) validatePutConditionParameters(value *GoogleIapWebBackendServiceIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleIapWebBackendServiceIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

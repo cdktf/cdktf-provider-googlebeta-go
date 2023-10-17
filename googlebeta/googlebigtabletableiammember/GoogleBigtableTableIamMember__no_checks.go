@@ -7,6 +7,10 @@ package googlebigtabletableiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigtableTableIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableTableIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableTableIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableTableIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableTableIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleBigtableTableIamMember) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleBigtableTableIamMember) validatePutConditionParameters(value *GoogleBigtableTableIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleBigtableTableIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

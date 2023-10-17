@@ -7,6 +7,10 @@ package googlebiglaketable
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBiglakeTable) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBiglakeTable) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBiglakeTable) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBiglakeTable) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBiglakeTable) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeTable) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleBiglakeTable) validatePutHiveOptionsParameters(value *G
 }
 
 func (g *jsiiProxy_GoogleBiglakeTable) validatePutTimeoutsParameters(value *GoogleBiglakeTableTimeouts) error {
+	return nil
+}
+
+func validateGoogleBiglakeTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googlegkeonpremvmwarenodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validatePutNodePoolAutoscaling
 }
 
 func (g *jsiiProxy_GoogleGkeonpremVmwareNodePool) validatePutTimeoutsParameters(value *GoogleGkeonpremVmwareNodePoolTimeouts) error {
+	return nil
+}
+
+func validateGoogleGkeonpremVmwareNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

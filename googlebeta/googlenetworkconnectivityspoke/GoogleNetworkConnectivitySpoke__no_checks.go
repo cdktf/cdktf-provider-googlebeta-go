@@ -7,6 +7,10 @@ package googlenetworkconnectivityspoke
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedVpnTunnelsPa
 }
 
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutTimeoutsParameters(value *GoogleNetworkConnectivitySpokeTimeouts) error {
+	return nil
+}
+
+func validateGoogleNetworkConnectivitySpoke_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

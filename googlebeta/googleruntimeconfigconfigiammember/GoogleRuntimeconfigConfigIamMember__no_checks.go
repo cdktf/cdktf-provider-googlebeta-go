@@ -7,6 +7,10 @@ package googleruntimeconfigconfigiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMember) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMember) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleRuntimeconfigConfigIamMember) validatePutConditionParameters(value *GoogleRuntimeconfigConfigIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleRuntimeconfigConfigIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

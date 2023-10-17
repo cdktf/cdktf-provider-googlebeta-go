@@ -7,6 +7,10 @@ package googleiaptunnelinstanceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleIapTunnelInstanceIamMember) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleIapTunnelInstanceIamMember) validatePutConditionParameters(value *GoogleIapTunnelInstanceIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleIapTunnelInstanceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

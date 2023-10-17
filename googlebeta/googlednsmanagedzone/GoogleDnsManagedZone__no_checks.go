@@ -7,6 +7,10 @@ package googlednsmanagedzone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDnsManagedZone) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZone) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDnsManagedZone) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsManagedZone) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsManagedZone) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsManagedZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -80,6 +92,10 @@ func (g *jsiiProxy_GoogleDnsManagedZone) validatePutServiceDirectoryConfigParame
 }
 
 func (g *jsiiProxy_GoogleDnsManagedZone) validatePutTimeoutsParameters(value *GoogleDnsManagedZoneTimeouts) error {
+	return nil
+}
+
+func validateGoogleDnsManagedZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

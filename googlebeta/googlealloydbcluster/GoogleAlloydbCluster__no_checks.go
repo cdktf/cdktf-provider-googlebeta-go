@@ -7,6 +7,10 @@ package googlealloydbcluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAlloydbCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleAlloydbCluster) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -88,6 +100,10 @@ func (g *jsiiProxy_GoogleAlloydbCluster) validatePutSecondaryConfigParameters(va
 }
 
 func (g *jsiiProxy_GoogleAlloydbCluster) validatePutTimeoutsParameters(value *GoogleAlloydbClusterTimeouts) error {
+	return nil
+}
+
+func validateGoogleAlloydbCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googleosconfigguestpolicies
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -72,6 +84,10 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutRecipesParameters(val
 }
 
 func (g *jsiiProxy_GoogleOsConfigGuestPolicies) validatePutTimeoutsParameters(value *GoogleOsConfigGuestPoliciesTimeouts) error {
+	return nil
+}
+
+func validateGoogleOsConfigGuestPolicies_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

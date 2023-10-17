@@ -7,6 +7,10 @@ package googlecloudrunv2serviceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceIamMember) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceIamMember) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleCloudRunV2ServiceIamMember) validatePutConditionParameters(value *GoogleCloudRunV2ServiceIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleCloudRunV2ServiceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

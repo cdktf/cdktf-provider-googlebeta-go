@@ -7,6 +7,10 @@ package googleiaptunneliambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleIapTunnelIamBinding) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleIapTunnelIamBinding) validatePutConditionParameters(value *GoogleIapTunnelIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleIapTunnelIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

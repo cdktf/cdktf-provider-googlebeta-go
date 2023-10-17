@@ -5,10 +5,10 @@ package googlecloudfunctions2function
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecloudfunctions2function/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudfunctions2function/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -96,6 +96,9 @@ type GoogleCloudfunctions2Function interface {
 	TimeoutsInput() interface{}
 	UpdateTime() *string
 	Url() *string
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -117,7 +120,12 @@ type GoogleCloudfunctions2Function interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -767,6 +775,25 @@ func (j *jsiiProxy_GoogleCloudfunctions2Function)SetProvisioners(val *[]interfac
 	)
 }
 
+// Generates CDKTF code for importing a GoogleCloudfunctions2Function resource upon running "cdktf plan <stack-name>".
+func GoogleCloudfunctions2Function_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGoogleCloudfunctions2Function_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleCloudfunctions2Function.GoogleCloudfunctions2Function",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -849,6 +876,17 @@ func GoogleCloudfunctions2Function_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2Function) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (g *jsiiProxy_GoogleCloudfunctions2Function) AddOverride(path *string, value interface{}) {
@@ -1006,6 +1044,17 @@ func (g *jsiiProxy_GoogleCloudfunctions2Function) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudfunctions2Function) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudfunctions2Function) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1020,6 +1069,17 @@ func (g *jsiiProxy_GoogleCloudfunctions2Function) InterpolationForAttribute(terr
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2Function) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (g *jsiiProxy_GoogleCloudfunctions2Function) OverrideLogicalId(newLogicalId *string) {

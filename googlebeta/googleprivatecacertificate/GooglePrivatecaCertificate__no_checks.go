@@ -7,6 +7,10 @@ package googleprivatecacertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePrivatecaCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GooglePrivatecaCertificate) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GooglePrivatecaCertificate) validatePutConfigParameters(value
 }
 
 func (g *jsiiProxy_GooglePrivatecaCertificate) validatePutTimeoutsParameters(value *GooglePrivatecaCertificateTimeouts) error {
+	return nil
+}
+
+func validateGooglePrivatecaCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

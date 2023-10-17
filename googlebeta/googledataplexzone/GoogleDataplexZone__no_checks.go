@@ -7,6 +7,10 @@ package googledataplexzone
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataplexZone) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexZone) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataplexZone) validateGetStringMapAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexZone) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexZone) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleDataplexZone) validatePutResourceSpecParameters(value *
 }
 
 func (g *jsiiProxy_GoogleDataplexZone) validatePutTimeoutsParameters(value *GoogleDataplexZoneTimeouts) error {
+	return nil
+}
+
+func validateGoogleDataplexZone_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

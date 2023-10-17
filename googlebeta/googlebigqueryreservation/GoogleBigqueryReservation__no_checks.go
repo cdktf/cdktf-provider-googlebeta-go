@@ -7,6 +7,10 @@ package googlebigqueryreservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigqueryReservation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryReservation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBigqueryReservation) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryReservation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryReservation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryReservation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleBigqueryReservation) validatePutAutoscaleParameters(val
 }
 
 func (g *jsiiProxy_GoogleBigqueryReservation) validatePutTimeoutsParameters(value *GoogleBigqueryReservationTimeouts) error {
+	return nil
+}
+
+func validateGoogleBigqueryReservation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

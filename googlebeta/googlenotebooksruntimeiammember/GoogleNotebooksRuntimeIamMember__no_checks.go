@@ -7,6 +7,10 @@ package googlenotebooksruntimeiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validatePutConditionParameters(value *GoogleNotebooksRuntimeIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleNotebooksRuntimeIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

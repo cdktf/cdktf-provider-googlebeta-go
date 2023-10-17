@@ -14,6 +14,7 @@ func init() {
 		"@cdktf/provider-google-beta.googleComputeDisk.GoogleComputeDisk",
 		reflect.TypeOf((*GoogleComputeDisk)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "asyncPrimaryDisk", GoGetter: "AsyncPrimaryDisk"},
 			_jsii_.MemberProperty{JsiiProperty: "asyncPrimaryDiskInput", GoGetter: "AsyncPrimaryDiskInput"},
@@ -48,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "idInput", GoGetter: "IdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "image", GoGetter: "Image"},
 			_jsii_.MemberProperty{JsiiProperty: "imageInput", GoGetter: "ImageInput"},
+			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberProperty{JsiiProperty: "interface", GoGetter: "Interface"},
 			_jsii_.MemberProperty{JsiiProperty: "interfaceInput", GoGetter: "InterfaceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
@@ -59,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "licenses", GoGetter: "Licenses"},
 			_jsii_.MemberProperty{JsiiProperty: "licensesInput", GoGetter: "LicensesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberProperty{JsiiProperty: "multiWriter", GoGetter: "MultiWriter"},
 			_jsii_.MemberProperty{JsiiProperty: "multiWriterInput", GoGetter: "MultiWriterInput"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},

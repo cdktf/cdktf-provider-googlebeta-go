@@ -7,6 +7,10 @@ package googleaccesscontextmanageregresspolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validatePutTimeoutsParameters(value *GoogleAccessContextManagerEgressPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleAccessContextManagerEgressPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

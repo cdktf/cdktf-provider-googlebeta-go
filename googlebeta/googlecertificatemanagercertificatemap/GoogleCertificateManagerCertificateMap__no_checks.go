@@ -7,6 +7,10 @@ package googlecertificatemanagercertificatemap
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCertificateManagerCertificateMap) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCertificateManagerCertificateMap) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleCertificateManagerCertificateMap) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCertificateManagerCertificateMap) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCertificateManagerCertificateMap) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCertificateManagerCertificateMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleCertificateManagerCertificateMap) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleCertificateManagerCertificateMap) validatePutTimeoutsParameters(value *GoogleCertificateManagerCertificateMapTimeouts) error {
+	return nil
+}
+
+func validateGoogleCertificateManagerCertificateMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

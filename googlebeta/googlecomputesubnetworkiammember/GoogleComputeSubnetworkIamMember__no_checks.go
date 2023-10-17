@@ -7,6 +7,10 @@ package googlecomputesubnetworkiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeSubnetworkIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSubnetworkIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeSubnetworkIamMember) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSubnetworkIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSubnetworkIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSubnetworkIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeSubnetworkIamMember) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleComputeSubnetworkIamMember) validatePutConditionParameters(value *GoogleComputeSubnetworkIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleComputeSubnetworkIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

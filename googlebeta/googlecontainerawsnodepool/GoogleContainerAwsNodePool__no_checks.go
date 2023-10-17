@@ -7,6 +7,10 @@ package googlecontainerawsnodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerAwsNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) validateGetStringMapAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAwsNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAwsNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAwsNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutTimeoutsParameters(val
 }
 
 func (g *jsiiProxy_GoogleContainerAwsNodePool) validatePutUpdateSettingsParameters(value *GoogleContainerAwsNodePoolUpdateSettings) error {
+	return nil
+}
+
+func validateGoogleContainerAwsNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

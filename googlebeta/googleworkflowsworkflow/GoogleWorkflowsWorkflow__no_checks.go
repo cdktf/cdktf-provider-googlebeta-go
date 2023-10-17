@@ -7,6 +7,10 @@ package googleworkflowsworkflow
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GoogleWorkflowsWorkflow) validatePutTimeoutsParameters(value *GoogleWorkflowsWorkflowTimeouts) error {
+	return nil
+}
+
+func validateGoogleWorkflowsWorkflow_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googlecomputeregionhealthcheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validatePutTcpHealthCheckPara
 }
 
 func (g *jsiiProxy_GoogleComputeRegionHealthCheck) validatePutTimeoutsParameters(value *GoogleComputeRegionHealthCheckTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeRegionHealthCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

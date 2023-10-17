@@ -7,6 +7,10 @@ package googlecomputeinstancefromtemplate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -108,6 +120,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutShieldedInstanc
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutTimeoutsParameters(value *GoogleComputeInstanceFromTemplateTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeInstanceFromTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googledataplexassetiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleDataplexAssetIamMember) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleDataplexAssetIamMember) validatePutConditionParameters(value *GoogleDataplexAssetIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleDataplexAssetIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

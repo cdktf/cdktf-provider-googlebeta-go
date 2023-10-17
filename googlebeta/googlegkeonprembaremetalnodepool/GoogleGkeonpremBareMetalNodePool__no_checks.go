@@ -7,6 +7,10 @@ package googlegkeonprembaremetalnodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validatePutNodePoolConfigPa
 }
 
 func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validatePutTimeoutsParameters(value *GoogleGkeonpremBareMetalNodePoolTimeouts) error {
+	return nil
+}
+
+func validateGoogleGkeonpremBareMetalNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

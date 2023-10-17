@@ -7,6 +7,10 @@ package googlestorageinsightsreportconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validatePutObjectMetadataR
 }
 
 func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validatePutTimeoutsParameters(value *GoogleStorageInsightsReportConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleStorageInsightsReportConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

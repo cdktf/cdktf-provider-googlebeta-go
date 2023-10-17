@@ -7,6 +7,10 @@ package googlecomputehealthcheck
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeHealthCheck) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeHealthCheck) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeHealthCheck) validateGetStringMapAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeHealthCheck) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeHealthCheck) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (g *jsiiProxy_GoogleComputeHealthCheck) validatePutTcpHealthCheckParameters
 }
 
 func (g *jsiiProxy_GoogleComputeHealthCheck) validatePutTimeoutsParameters(value *GoogleComputeHealthCheckTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeHealthCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

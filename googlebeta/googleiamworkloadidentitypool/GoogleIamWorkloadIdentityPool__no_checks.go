@@ -7,6 +7,10 @@ package googleiamworkloadidentitypool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPool) validatePutTimeoutsParameters(value *GoogleIamWorkloadIdentityPoolTimeouts) error {
+	return nil
+}
+
+func validateGoogleIamWorkloadIdentityPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

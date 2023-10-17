@@ -7,6 +7,10 @@ package googleartifactregistryvpcscconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleArtifactRegistryVpcscConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryVpcscConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleArtifactRegistryVpcscConfig) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryVpcscConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryVpcscConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryVpcscConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryVpcscConfig) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleArtifactRegistryVpcscConfig) validatePutTimeoutsParameters(value *GoogleArtifactRegistryVpcscConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleArtifactRegistryVpcscConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

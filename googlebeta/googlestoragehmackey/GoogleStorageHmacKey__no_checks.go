@@ -7,6 +7,10 @@ package googlestoragehmackey
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleStorageHmacKey) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageHmacKey) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleStorageHmacKey) validateGetStringMapAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageHmacKey) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageHmacKey) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageHmacKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleStorageHmacKey) validateOverrideLogicalIdParameters(new
 }
 
 func (g *jsiiProxy_GoogleStorageHmacKey) validatePutTimeoutsParameters(value *GoogleStorageHmacKeyTimeouts) error {
+	return nil
+}
+
+func validateGoogleStorageHmacKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

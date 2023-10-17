@@ -7,6 +7,10 @@ package googlecomputeregiontargethttpsproxy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) validatePutTimeoutsParameters(value *GoogleComputeRegionTargetHttpsProxyTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeRegionTargetHttpsProxy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googleiamaccessboundarypolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIamAccessBoundaryPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamAccessBoundaryPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIamAccessBoundaryPolicy) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamAccessBoundaryPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamAccessBoundaryPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamAccessBoundaryPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleIamAccessBoundaryPolicy) validatePutRulesParameters(val
 }
 
 func (g *jsiiProxy_GoogleIamAccessBoundaryPolicy) validatePutTimeoutsParameters(value *GoogleIamAccessBoundaryPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleIamAccessBoundaryPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

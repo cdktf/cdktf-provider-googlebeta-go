@@ -7,6 +7,10 @@ package googlebinaryauthorizationattestoriammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateGetString
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateOverrideL
 }
 
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validatePutConditionParameters(value *GoogleBinaryAuthorizationAttestorIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleBinaryAuthorizationAttestorIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

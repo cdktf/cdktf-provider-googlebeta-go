@@ -5,10 +5,10 @@ package googlecloudassetfolderfeed
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecloudassetfolderfeed/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecloudassetfolderfeed/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -90,6 +90,9 @@ type GoogleCloudAssetFolderFeed interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleCloudAssetFolderFeedTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -111,7 +114,12 @@ type GoogleCloudAssetFolderFeed interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -697,6 +705,25 @@ func (j *jsiiProxy_GoogleCloudAssetFolderFeed)SetProvisioners(val *[]interface{}
 	)
 }
 
+// Generates CDKTF code for importing a GoogleCloudAssetFolderFeed resource upon running "cdktf plan <stack-name>".
+func GoogleCloudAssetFolderFeed_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGoogleCloudAssetFolderFeed_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleCloudAssetFolderFeed.GoogleCloudAssetFolderFeed",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -779,6 +806,17 @@ func GoogleCloudAssetFolderFeed_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (g *jsiiProxy_GoogleCloudAssetFolderFeed) AddOverride(path *string, value interface{}) {
@@ -936,6 +974,17 @@ func (g *jsiiProxy_GoogleCloudAssetFolderFeed) GetStringMapAttribute(terraformAt
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudAssetFolderFeed) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -950,6 +999,17 @@ func (g *jsiiProxy_GoogleCloudAssetFolderFeed) InterpolationForAttribute(terrafo
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (g *jsiiProxy_GoogleCloudAssetFolderFeed) OverrideLogicalId(newLogicalId *string) {

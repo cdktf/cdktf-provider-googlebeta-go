@@ -5,10 +5,10 @@ package googledatabasemigrationserviceconnectionprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googledatabasemigrationserviceconnectionprofile/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googledatabasemigrationserviceconnectionprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -98,6 +98,9 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleDatabaseMigrationServiceConnectionProfileTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -119,7 +122,12 @@ type GoogleDatabaseMigrationServiceConnectionProfile interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -792,6 +800,25 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile)SetProvisione
 	)
 }
 
+// Generates CDKTF code for importing a GoogleDatabaseMigrationServiceConnectionProfile resource upon running "cdktf plan <stack-name>".
+func GoogleDatabaseMigrationServiceConnectionProfile_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGoogleDatabaseMigrationServiceConnectionProfile_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfile",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -874,6 +901,17 @@ func GoogleDatabaseMigrationServiceConnectionProfile_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) AddOverride(path *string, value interface{}) {
@@ -1031,6 +1069,17 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) GetStringMap
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1045,6 +1094,17 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) Interpolatio
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfile) OverrideLogicalId(newLogicalId *string) {

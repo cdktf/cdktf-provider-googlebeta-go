@@ -7,6 +7,10 @@ package googlemonitoringslo
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleMonitoringSlo) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringSlo) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleMonitoringSlo) validateGetStringMapAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringSlo) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringSlo) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringSlo) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GoogleMonitoringSlo) validatePutTimeoutsParameters(value *Goo
 }
 
 func (g *jsiiProxy_GoogleMonitoringSlo) validatePutWindowsBasedSliParameters(value *GoogleMonitoringSloWindowsBasedSli) error {
+	return nil
+}
+
+func validateGoogleMonitoringSlo_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

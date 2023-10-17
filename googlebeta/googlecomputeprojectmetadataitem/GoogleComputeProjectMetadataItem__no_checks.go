@@ -7,6 +7,10 @@ package googlecomputeprojectmetadataitem
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeProjectMetadataItem) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeProjectMetadataItem) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeProjectMetadataItem) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeProjectMetadataItem) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeProjectMetadataItem) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeProjectMetadataItem) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeProjectMetadataItem) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleComputeProjectMetadataItem) validatePutTimeoutsParameters(value *GoogleComputeProjectMetadataItemTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeProjectMetadataItem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

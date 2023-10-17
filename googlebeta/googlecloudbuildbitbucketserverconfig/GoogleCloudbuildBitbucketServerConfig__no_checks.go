@@ -7,6 +7,10 @@ package googlecloudbuildbitbucketserverconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validatePutSecretsPara
 }
 
 func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validatePutTimeoutsParameters(value *GoogleCloudbuildBitbucketServerConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleCloudbuildBitbucketServerConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

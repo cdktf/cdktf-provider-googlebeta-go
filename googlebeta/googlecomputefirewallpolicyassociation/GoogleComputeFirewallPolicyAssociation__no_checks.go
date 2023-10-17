@@ -7,6 +7,10 @@ package googlecomputefirewallpolicyassociation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateGetStringMapA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleComputeFirewallPolicyAssociation) validatePutTimeoutsParameters(value *GoogleComputeFirewallPolicyAssociationTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeFirewallPolicyAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

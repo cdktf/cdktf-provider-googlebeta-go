@@ -7,6 +7,10 @@ package googleapigeeendpointattachment
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEndpointAttachment) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEndpointAttachment) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeEndpointAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleApigeeEndpointAttachment) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleApigeeEndpointAttachment) validatePutTimeoutsParameters(value *GoogleApigeeEndpointAttachmentTimeouts) error {
+	return nil
+}
+
+func validateGoogleApigeeEndpointAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googleapigeeenvironmentiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateOverrideLogicalIdPa
 }
 
 func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validatePutConditionParameters(value *GoogleApigeeEnvironmentIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleApigeeEnvironmentIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

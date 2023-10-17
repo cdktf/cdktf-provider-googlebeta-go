@@ -7,6 +7,10 @@ package googlebackupdrmanagementserver
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBackupDrManagementServer) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBackupDrManagementServer) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBackupDrManagementServer) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBackupDrManagementServer) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBackupDrManagementServer) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBackupDrManagementServer) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleBackupDrManagementServer) validatePutNetworksParameters
 }
 
 func (g *jsiiProxy_GoogleBackupDrManagementServer) validatePutTimeoutsParameters(value *GoogleBackupDrManagementServerTimeouts) error {
+	return nil
+}
+
+func validateGoogleBackupDrManagementServer_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

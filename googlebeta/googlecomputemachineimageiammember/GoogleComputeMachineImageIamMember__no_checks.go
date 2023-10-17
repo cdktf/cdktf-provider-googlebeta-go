@@ -7,6 +7,10 @@ package googlecomputemachineimageiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeMachineImageIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeMachineImageIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeMachineImageIamMember) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeMachineImageIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeMachineImageIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeMachineImageIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeMachineImageIamMember) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleComputeMachineImageIamMember) validatePutConditionParameters(value *GoogleComputeMachineImageIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleComputeMachineImageIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

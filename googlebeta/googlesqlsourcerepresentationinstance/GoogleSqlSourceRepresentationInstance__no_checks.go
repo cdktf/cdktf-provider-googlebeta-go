@@ -7,6 +7,10 @@ package googlesqlsourcerepresentationinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateOverrideLogica
 }
 
 func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validatePutTimeoutsParameters(value *GoogleSqlSourceRepresentationInstanceTimeouts) error {
+	return nil
+}
+
+func validateGoogleSqlSourceRepresentationInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

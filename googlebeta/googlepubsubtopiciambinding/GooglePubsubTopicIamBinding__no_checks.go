@@ -7,6 +7,10 @@ package googlepubsubtopiciambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GooglePubsubTopicIamBinding) validatePutConditionParameters(value *GooglePubsubTopicIamBindingCondition) error {
+	return nil
+}
+
+func validateGooglePubsubTopicIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

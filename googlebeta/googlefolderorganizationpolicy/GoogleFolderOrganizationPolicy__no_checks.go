@@ -7,6 +7,10 @@ package googlefolderorganizationpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validatePutRestorePolicyParam
 }
 
 func (g *jsiiProxy_GoogleFolderOrganizationPolicy) validatePutTimeoutsParameters(value *GoogleFolderOrganizationPolicyTimeouts) error {
+	return nil
+}
+
+func validateGoogleFolderOrganizationPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googlecomputepublicdelegatedprefix
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleComputePublicDelegatedPrefix) validatePutTimeoutsParameters(value *GoogleComputePublicDelegatedPrefixTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputePublicDelegatedPrefix_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

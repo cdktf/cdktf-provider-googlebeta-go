@@ -7,6 +7,10 @@ package googlevmwareenginecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVmwareengineCluster) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineCluster) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareengineCluster) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineCluster) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) validatePutNodeTypeConfigsParamete
 }
 
 func (g *jsiiProxy_GoogleVmwareengineCluster) validatePutTimeoutsParameters(value *GoogleVmwareengineClusterTimeouts) error {
+	return nil
+}
+
+func validateGoogleVmwareengineCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googleedgecontainervpnconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validatePutTimeoutsParamete
 }
 
 func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validatePutVpcProjectParameters(value *GoogleEdgecontainerVpnConnectionVpcProject) error {
+	return nil
+}
+
+func validateGoogleEdgecontainerVpnConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

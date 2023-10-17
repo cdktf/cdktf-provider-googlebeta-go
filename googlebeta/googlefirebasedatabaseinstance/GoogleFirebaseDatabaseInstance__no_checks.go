@@ -7,6 +7,10 @@ package googlefirebasedatabaseinstance
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleFirebaseDatabaseInstance) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseDatabaseInstance) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleFirebaseDatabaseInstance) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseDatabaseInstance) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseDatabaseInstance) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseDatabaseInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleFirebaseDatabaseInstance) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleFirebaseDatabaseInstance) validatePutTimeoutsParameters(value *GoogleFirebaseDatabaseInstanceTimeouts) error {
+	return nil
+}
+
+func validateGoogleFirebaseDatabaseInstance_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

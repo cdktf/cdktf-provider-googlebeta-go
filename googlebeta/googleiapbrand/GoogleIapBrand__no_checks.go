@@ -7,6 +7,10 @@ package googleiapbrand
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIapBrand) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapBrand) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleIapBrand) validateGetStringMapAttributeParameters(terra
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapBrand) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapBrand) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapBrand) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleIapBrand) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (g *jsiiProxy_GoogleIapBrand) validatePutTimeoutsParameters(value *GoogleIapBrandTimeouts) error {
+	return nil
+}
+
+func validateGoogleIapBrand_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -5,10 +5,10 @@ package googlecomputehealthcheck
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v11/googlecomputehealthcheck/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputehealthcheck/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -104,6 +104,9 @@ type GoogleComputeHealthCheck interface {
 	UnhealthyThreshold() *float64
 	SetUnhealthyThreshold(val *float64)
 	UnhealthyThresholdInput() *float64
+	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+	// Experimental.
+	AddMoveTarget(moveTarget *string)
 	// Experimental.
 	AddOverride(path *string, value interface{})
 	// Experimental.
@@ -125,7 +128,12 @@ type GoogleComputeHealthCheck interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	ImportFrom(id *string, provider cdktf.TerraformProvider)
+	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Moves this resource to the target resource given by moveTarget.
+	// Experimental.
+	MoveTo(moveTarget *string, index interface{})
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -866,6 +874,25 @@ func (j *jsiiProxy_GoogleComputeHealthCheck)SetUnhealthyThreshold(val *float64) 
 	)
 }
 
+// Generates CDKTF code for importing a GoogleComputeHealthCheck resource upon running "cdktf plan <stack-name>".
+func GoogleComputeHealthCheck_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+	_init_.Initialize()
+
+	if err := validateGoogleComputeHealthCheck_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
+		panic(err)
+	}
+	var returns cdktf.ImportableResource
+
+	_jsii_.StaticInvoke(
+		"@cdktf/provider-google-beta.googleComputeHealthCheck.GoogleComputeHealthCheck",
+		"generateConfigForImport",
+		[]interface{}{scope, importToId, importFromId, provider},
+		&returns,
+	)
+
+	return returns
+}
+
 // Checks if `x` is a construct.
 //
 // Use this method instead of `instanceof` to properly detect `Construct`
@@ -948,6 +975,17 @@ func GoogleComputeHealthCheck_TfResourceType() *string {
 		&returns,
 	)
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) AddMoveTarget(moveTarget *string) {
+	if err := g.validateAddMoveTargetParameters(moveTarget); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"addMoveTarget",
+		[]interface{}{moveTarget},
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeHealthCheck) AddOverride(path *string, value interface{}) {
@@ -1105,6 +1143,17 @@ func (g *jsiiProxy_GoogleComputeHealthCheck) GetStringMapAttribute(terraformAttr
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeHealthCheck) ImportFrom(id *string, provider cdktf.TerraformProvider) {
+	if err := g.validateImportFromParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"importFrom",
+		[]interface{}{id, provider},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeHealthCheck) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
 	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
@@ -1119,6 +1168,17 @@ func (g *jsiiProxy_GoogleComputeHealthCheck) InterpolationForAttribute(terraform
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeHealthCheck) MoveTo(moveTarget *string, index interface{}) {
+	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveTo",
+		[]interface{}{moveTarget, index},
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeHealthCheck) OverrideLogicalId(newLogicalId *string) {

@@ -7,6 +7,10 @@ package googlesccfoldercustommodule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSccFolderCustomModule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccFolderCustomModule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleSccFolderCustomModule) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccFolderCustomModule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccFolderCustomModule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccFolderCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleSccFolderCustomModule) validatePutCustomConfigParameter
 }
 
 func (g *jsiiProxy_GoogleSccFolderCustomModule) validatePutTimeoutsParameters(value *GoogleSccFolderCustomModuleTimeouts) error {
+	return nil
+}
+
+func validateGoogleSccFolderCustomModule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

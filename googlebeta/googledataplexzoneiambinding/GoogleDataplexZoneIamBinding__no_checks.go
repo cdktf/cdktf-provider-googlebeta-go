@@ -7,6 +7,10 @@ package googledataplexzoneiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataplexZoneIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexZoneIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataplexZoneIamBinding) validateGetStringMapAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexZoneIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexZoneIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexZoneIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleDataplexZoneIamBinding) validateOverrideLogicalIdParame
 }
 
 func (g *jsiiProxy_GoogleDataplexZoneIamBinding) validatePutConditionParameters(value *GoogleDataplexZoneIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleDataplexZoneIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

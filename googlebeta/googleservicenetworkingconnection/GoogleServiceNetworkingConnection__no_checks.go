@@ -7,6 +7,10 @@ package googleservicenetworkingconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleServiceNetworkingConnection) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceNetworkingConnection) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleServiceNetworkingConnection) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceNetworkingConnection) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceNetworkingConnection) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceNetworkingConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleServiceNetworkingConnection) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleServiceNetworkingConnection) validatePutTimeoutsParameters(value *GoogleServiceNetworkingConnectionTimeouts) error {
+	return nil
+}
+
+func validateGoogleServiceNetworkingConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

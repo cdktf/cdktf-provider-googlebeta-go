@@ -7,6 +7,10 @@ package googlecomputenetworkpeeringroutesconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateGetStringMap
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validatePutTimeoutsParameters(value *GoogleComputeNetworkPeeringRoutesConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeNetworkPeeringRoutesConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

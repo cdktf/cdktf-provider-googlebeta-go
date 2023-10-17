@@ -7,6 +7,10 @@ package googlecomputeperinstanceconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputePerInstanceConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputePerInstanceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfig) validateGetStringMapAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputePerInstanceConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputePerInstanceConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputePerInstanceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfig) validatePutPreservedStatePara
 }
 
 func (g *jsiiProxy_GoogleComputePerInstanceConfig) validatePutTimeoutsParameters(value *GoogleComputePerInstanceConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputePerInstanceConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

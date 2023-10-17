@@ -7,6 +7,10 @@ package googlemonitoringmetricdescriptor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateGetStringMapAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validatePutMetadataParamete
 }
 
 func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validatePutTimeoutsParameters(value *GoogleMonitoringMetricDescriptorTimeouts) error {
+	return nil
+}
+
+func validateGoogleMonitoringMetricDescriptor_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

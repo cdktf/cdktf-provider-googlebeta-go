@@ -7,6 +7,10 @@ package googledocumentaiprocessordefaultversion
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateGetStringMap
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleDocumentAiProcessorDefaultVersion) validatePutTimeoutsParameters(value *GoogleDocumentAiProcessorDefaultVersionTimeouts) error {
+	return nil
+}
+
+func validateGoogleDocumentAiProcessorDefaultVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

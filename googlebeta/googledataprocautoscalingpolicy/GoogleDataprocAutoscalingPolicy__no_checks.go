@@ -7,6 +7,10 @@ package googledataprocautoscalingpolicy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateGetStringMapAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -68,6 +80,10 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validatePutTimeoutsParameter
 }
 
 func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validatePutWorkerConfigParameters(value *GoogleDataprocAutoscalingPolicyWorkerConfig) error {
+	return nil
+}
+
+func validateGoogleDataprocAutoscalingPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

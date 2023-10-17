@@ -7,6 +7,10 @@ package googleapigatewayapiconfigiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleApiGatewayApiConfigIamBinding) validatePutConditionParameters(value *GoogleApiGatewayApiConfigIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleApiGatewayApiConfigIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

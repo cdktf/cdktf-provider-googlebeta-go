@@ -7,6 +7,10 @@ package googlecomputeregionsslcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validatePutTimeoutsParameters(value *GoogleComputeRegionSslCertificateTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeRegionSslCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

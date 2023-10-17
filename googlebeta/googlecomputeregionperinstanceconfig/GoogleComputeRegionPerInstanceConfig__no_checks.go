@@ -7,6 +7,10 @@ package googlecomputeregionperinstanceconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validatePutPreservedSta
 }
 
 func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) validatePutTimeoutsParameters(value *GoogleComputeRegionPerInstanceConfigTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeRegionPerInstanceConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

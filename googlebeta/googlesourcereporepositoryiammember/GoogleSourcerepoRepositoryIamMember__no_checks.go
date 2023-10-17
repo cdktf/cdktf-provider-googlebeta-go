@@ -7,6 +7,10 @@ package googlesourcereporepositoryiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleSourcerepoRepositoryIamMember) validatePutConditionParameters(value *GoogleSourcerepoRepositoryIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleSourcerepoRepositoryIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

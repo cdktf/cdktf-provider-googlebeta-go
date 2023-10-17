@@ -7,6 +7,10 @@ package googlecomputemanagedsslcertificate
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeManagedSslCertificate) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeManagedSslCertificate) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeManagedSslCertificate) validateGetStringMapAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeManagedSslCertificate) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeManagedSslCertificate) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeManagedSslCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeManagedSslCertificate) validatePutManagedParamet
 }
 
 func (g *jsiiProxy_GoogleComputeManagedSslCertificate) validatePutTimeoutsParameters(value *GoogleComputeManagedSslCertificateTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeManagedSslCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

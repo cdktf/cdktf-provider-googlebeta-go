@@ -7,6 +7,10 @@ package googleedgecontainernodepool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateGetStringMapAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GoogleEdgecontainerNodePool) validatePutNodeConfigParameters(
 }
 
 func (g *jsiiProxy_GoogleEdgecontainerNodePool) validatePutTimeoutsParameters(value *GoogleEdgecontainerNodePoolTimeouts) error {
+	return nil
+}
+
+func validateGoogleEdgecontainerNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googledatastreamconnectionprofile
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -84,6 +96,10 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutPrivateConnecti
 }
 
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validatePutTimeoutsParameters(value *GoogleDatastreamConnectionProfileTimeouts) error {
+	return nil
+}
+
+func validateGoogleDatastreamConnectionProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

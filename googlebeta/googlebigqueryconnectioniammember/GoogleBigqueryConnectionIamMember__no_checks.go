@@ -7,6 +7,10 @@ package googlebigqueryconnectioniammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validatePutConditionParameters(value *GoogleBigqueryConnectionIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleBigqueryConnectionIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

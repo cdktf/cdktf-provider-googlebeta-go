@@ -7,6 +7,10 @@ package googleworkstationsworkstation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstation) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstation) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstation) validateGetStringMapAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstation) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstation) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstation) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstation) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleWorkstationsWorkstation) validatePutTimeoutsParameters(value *GoogleWorkstationsWorkstationTimeouts) error {
+	return nil
+}
+
+func validateGoogleWorkstationsWorkstation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

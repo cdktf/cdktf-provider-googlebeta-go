@@ -7,6 +7,10 @@ package googlegkehubmembershiprbacrolebinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validatePutRoleParamet
 }
 
 func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validatePutTimeoutsParameters(value *GoogleGkeHubMembershipRbacRoleBindingTimeouts) error {
+	return nil
+}
+
+func validateGoogleGkeHubMembershipRbacRoleBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

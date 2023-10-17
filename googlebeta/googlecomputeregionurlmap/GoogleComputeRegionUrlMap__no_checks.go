@@ -7,6 +7,10 @@ package googlecomputeregionurlmap
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMap) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMap) validatePutTestParameters(value in
 }
 
 func (g *jsiiProxy_GoogleComputeRegionUrlMap) validatePutTimeoutsParameters(value *GoogleComputeRegionUrlMapTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeRegionUrlMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

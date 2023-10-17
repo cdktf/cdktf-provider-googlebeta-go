@@ -7,6 +7,10 @@ package googlecomputeglobalforwardingrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateGetStringMapAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -60,6 +72,10 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validatePutMetadataFilters
 }
 
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validatePutTimeoutsParameters(value *GoogleComputeGlobalForwardingRuleTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeGlobalForwardingRule_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

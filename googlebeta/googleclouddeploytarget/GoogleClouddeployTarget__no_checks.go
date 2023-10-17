@@ -7,6 +7,10 @@ package googleclouddeploytarget
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleClouddeployTarget) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployTarget) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleClouddeployTarget) validateGetStringMapAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployTarget) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployTarget) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddeployTarget) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -76,6 +88,10 @@ func (g *jsiiProxy_GoogleClouddeployTarget) validatePutRunParameters(value *Goog
 }
 
 func (g *jsiiProxy_GoogleClouddeployTarget) validatePutTimeoutsParameters(value *GoogleClouddeployTargetTimeouts) error {
+	return nil
+}
+
+func validateGoogleClouddeployTarget_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

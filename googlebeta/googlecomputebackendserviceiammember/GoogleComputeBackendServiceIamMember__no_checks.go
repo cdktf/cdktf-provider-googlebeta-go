@@ -7,6 +7,10 @@ package googlecomputebackendserviceiammember
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeBackendServiceIamMember) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceIamMember) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeBackendServiceIamMember) validateGetStringMapAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceIamMember) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceIamMember) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleComputeBackendServiceIamMember) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleComputeBackendServiceIamMember) validatePutConditionParameters(value *GoogleComputeBackendServiceIamMemberCondition) error {
+	return nil
+}
+
+func validateGoogleComputeBackendServiceIamMember_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

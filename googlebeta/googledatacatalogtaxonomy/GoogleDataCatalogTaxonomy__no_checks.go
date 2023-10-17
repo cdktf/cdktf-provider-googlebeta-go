@@ -7,6 +7,10 @@ package googledatacatalogtaxonomy
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateGetStringMapAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validatePutTimeoutsParameters(value *GoogleDataCatalogTaxonomyTimeouts) error {
+	return nil
+}
+
+func validateGoogleDataCatalogTaxonomy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

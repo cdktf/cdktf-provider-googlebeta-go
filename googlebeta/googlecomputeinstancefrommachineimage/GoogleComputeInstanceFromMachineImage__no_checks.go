@@ -7,6 +7,10 @@ package googlecomputeinstancefrommachineimage
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateGetStringMapAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -96,6 +108,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutShieldedIns
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutTimeoutsParameters(value *GoogleComputeInstanceFromMachineImageTimeouts) error {
+	return nil
+}
+
+func validateGoogleComputeInstanceFromMachineImage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

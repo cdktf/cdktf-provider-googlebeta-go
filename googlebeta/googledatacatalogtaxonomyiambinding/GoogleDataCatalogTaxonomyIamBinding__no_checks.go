@@ -7,6 +7,10 @@ package googledatacatalogtaxonomyiambinding
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateGetStringMapAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -56,6 +68,10 @@ func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validatePutConditionParameters(value *GoogleDataCatalogTaxonomyIamBindingCondition) error {
+	return nil
+}
+
+func validateGoogleDataCatalogTaxonomyIamBinding_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 

@@ -7,6 +7,10 @@ package googleprivatecacapool
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GooglePrivatecaCaPool) validateAddMoveTargetParameters(moveTarget *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCaPool) validateAddOverrideParameters(path *string, value interface{}) error {
 	return nil
 }
@@ -47,7 +51,15 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) validateGetStringMapAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCaPool) validateImportFromParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCaPool) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCaPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
@@ -64,6 +76,10 @@ func (g *jsiiProxy_GooglePrivatecaCaPool) validatePutPublishingOptionsParameters
 }
 
 func (g *jsiiProxy_GooglePrivatecaCaPool) validatePutTimeoutsParameters(value *GooglePrivatecaCaPoolTimeouts) error {
+	return nil
+}
+
+func validateGooglePrivatecaCaPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
 
