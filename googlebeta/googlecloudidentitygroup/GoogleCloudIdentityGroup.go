@@ -12,9 +12,10 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group google_cloud_identity_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group google_cloud_identity_group}.
 type GoogleCloudIdentityGroup interface {
 	cdktf.TerraformResource
+	AdditionalGroupKeys() GoogleCloudIdentityGroupAdditionalGroupKeysList
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -142,6 +143,16 @@ type GoogleCloudIdentityGroup interface {
 // The jsii proxy struct for GoogleCloudIdentityGroup
 type jsiiProxy_GoogleCloudIdentityGroup struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleCloudIdentityGroup) AdditionalGroupKeys() GoogleCloudIdentityGroupAdditionalGroupKeysList {
+	var returns GoogleCloudIdentityGroupAdditionalGroupKeysList
+	_jsii_.Get(
+		j,
+		"additionalGroupKeys",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleCloudIdentityGroup) CdktfStack() cdktf.TerraformStack {
@@ -495,7 +506,7 @@ func (j *jsiiProxy_GoogleCloudIdentityGroup) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource.
 func NewGoogleCloudIdentityGroup(scope constructs.Construct, id *string, config *GoogleCloudIdentityGroupConfig) GoogleCloudIdentityGroup {
 	_init_.Initialize()
 
@@ -513,7 +524,7 @@ func NewGoogleCloudIdentityGroup(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_identity_group google_cloud_identity_group} Resource.
 func NewGoogleCloudIdentityGroup_Override(g GoogleCloudIdentityGroup, scope constructs.Construct, id *string, config *GoogleCloudIdentityGroupConfig) {
 	_init_.Initialize()
 

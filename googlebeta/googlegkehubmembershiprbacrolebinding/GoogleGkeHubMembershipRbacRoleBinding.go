@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_membership_rbac_role_binding google_gke_hub_membership_rbac_role_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_gke_hub_membership_rbac_role_binding google_gke_hub_membership_rbac_role_binding}.
 type GoogleGkeHubMembershipRbacRoleBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -526,7 +526,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) UserInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_membership_rbac_role_binding google_gke_hub_membership_rbac_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_gke_hub_membership_rbac_role_binding google_gke_hub_membership_rbac_role_binding} Resource.
 func NewGoogleGkeHubMembershipRbacRoleBinding(scope constructs.Construct, id *string, config *GoogleGkeHubMembershipRbacRoleBindingConfig) GoogleGkeHubMembershipRbacRoleBinding {
 	_init_.Initialize()
 
@@ -544,7 +544,7 @@ func NewGoogleGkeHubMembershipRbacRoleBinding(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_gke_hub_membership_rbac_role_binding google_gke_hub_membership_rbac_role_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_gke_hub_membership_rbac_role_binding google_gke_hub_membership_rbac_role_binding} Resource.
 func NewGoogleGkeHubMembershipRbacRoleBinding_Override(g GoogleGkeHubMembershipRbacRoleBinding, scope constructs.Construct, id *string, config *GoogleGkeHubMembershipRbacRoleBindingConfig) {
 	_init_.Initialize()
 

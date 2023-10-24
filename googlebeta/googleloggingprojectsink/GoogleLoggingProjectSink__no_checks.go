@@ -99,6 +99,10 @@ func (j *jsiiProxy_GoogleLoggingProjectSink) validateSetCountParameters(val inte
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLoggingProjectSink) validateSetCustomWriterIdentityParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLoggingProjectSink) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

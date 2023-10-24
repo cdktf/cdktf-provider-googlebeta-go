@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_scc_folder_custom_module google_scc_folder_custom_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_scc_folder_custom_module google_scc_folder_custom_module}.
 type GoogleSccFolderCustomModule interface {
 	cdktf.TerraformResource
 	AncestorModule() *string
@@ -457,7 +457,7 @@ func (j *jsiiProxy_GoogleSccFolderCustomModule) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_scc_folder_custom_module google_scc_folder_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_scc_folder_custom_module google_scc_folder_custom_module} Resource.
 func NewGoogleSccFolderCustomModule(scope constructs.Construct, id *string, config *GoogleSccFolderCustomModuleConfig) GoogleSccFolderCustomModule {
 	_init_.Initialize()
 
@@ -475,7 +475,7 @@ func NewGoogleSccFolderCustomModule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.2.0/docs/resources/google_scc_folder_custom_module google_scc_folder_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_scc_folder_custom_module google_scc_folder_custom_module} Resource.
 func NewGoogleSccFolderCustomModule_Override(g GoogleSccFolderCustomModule, scope constructs.Construct, id *string, config *GoogleSccFolderCustomModuleConfig) {
 	_init_.Initialize()
 
