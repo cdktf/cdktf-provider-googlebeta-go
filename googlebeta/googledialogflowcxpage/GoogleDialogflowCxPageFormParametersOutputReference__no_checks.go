@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validate
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validatePutAdvancedSettingsParameters(value *GoogleDialogflowCxPageFormParametersAdvancedSettings) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPageFormParametersOutputReference) validatePutFillBehaviorParameters(value *GoogleDialogflowCxPageFormParametersFillBehavior) error {
 	return nil
 }

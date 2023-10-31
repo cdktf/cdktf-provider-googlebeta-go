@@ -397,6 +397,14 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetMaintenanceIntervalParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetMaintenancePolicyParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

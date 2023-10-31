@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page}.
 type GoogleDialogflowCxPage interface {
 	cdktf.TerraformResource
+	AdvancedSettings() GoogleDialogflowCxPageAdvancedSettingsOutputReference
+	AdvancedSettingsInput() *GoogleDialogflowCxPageAdvancedSettings
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -120,11 +122,13 @@ type GoogleDialogflowCxPage interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAdvancedSettings(value *GoogleDialogflowCxPageAdvancedSettings)
 	PutEntryFulfillment(value *GoogleDialogflowCxPageEntryFulfillment)
 	PutEventHandlers(value interface{})
 	PutForm(value *GoogleDialogflowCxPageForm)
 	PutTimeouts(value *GoogleDialogflowCxPageTimeouts)
 	PutTransitionRoutes(value interface{})
+	ResetAdvancedSettings()
 	ResetEntryFulfillment()
 	ResetEventHandlers()
 	ResetForm()
@@ -150,6 +154,26 @@ type GoogleDialogflowCxPage interface {
 // The jsii proxy struct for GoogleDialogflowCxPage
 type jsiiProxy_GoogleDialogflowCxPage struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPage) AdvancedSettings() GoogleDialogflowCxPageAdvancedSettingsOutputReference {
+	var returns GoogleDialogflowCxPageAdvancedSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"advancedSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxPage) AdvancedSettingsInput() *GoogleDialogflowCxPageAdvancedSettings {
+	var returns *GoogleDialogflowCxPageAdvancedSettings
+	_jsii_.Get(
+		j,
+		"advancedSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxPage) CdktfStack() cdktf.TerraformStack {
@@ -523,7 +547,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPage) TransitionRoutesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page} Resource.
 func NewGoogleDialogflowCxPage(scope constructs.Construct, id *string, config *GoogleDialogflowCxPageConfig) GoogleDialogflowCxPage {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewGoogleDialogflowCxPage(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_page google_dialogflow_cx_page} Resource.
 func NewGoogleDialogflowCxPage_Override(g GoogleDialogflowCxPage, scope constructs.Construct, id *string, config *GoogleDialogflowCxPageConfig) {
 	_init_.Initialize()
 
@@ -993,6 +1017,17 @@ func (g *jsiiProxy_GoogleDialogflowCxPage) OverrideLogicalId(newLogicalId *strin
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxPage) PutAdvancedSettings(value *GoogleDialogflowCxPageAdvancedSettings) {
+	if err := g.validatePutAdvancedSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdvancedSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxPage) PutEntryFulfillment(value *GoogleDialogflowCxPageEntryFulfillment) {
 	if err := g.validatePutEntryFulfillmentParameters(value); err != nil {
 		panic(err)
@@ -1045,6 +1080,14 @@ func (g *jsiiProxy_GoogleDialogflowCxPage) PutTransitionRoutes(value interface{}
 		g,
 		"putTransitionRoutes",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxPage) ResetAdvancedSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdvancedSettings",
+		nil, // no parameters
 	)
 }
 

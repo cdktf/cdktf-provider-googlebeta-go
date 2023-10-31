@@ -191,6 +191,92 @@ func (g *jsiiProxy_GoogleTpuV2Vm) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutAcceleratorConfigParameters(value *GoogleTpuV2VmAcceleratorConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutDataDisksParameters(value interface{}) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	switch value.(type) {
+	case cdktf.IResolvable:
+		// ok
+	case *[]*GoogleTpuV2VmDataDisks:
+		value := value.(*[]*GoogleTpuV2VmDataDisks)
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	case []*GoogleTpuV2VmDataDisks:
+		value_ := value.([]*GoogleTpuV2VmDataDisks)
+		value := &value_
+		for idx_cd4240, v := range *value {
+			if err := _jsii_.ValidateStruct(v, func() string { return fmt.Sprintf("parameter value[%#v]", idx_cd4240) }); err != nil {
+				return err
+			}
+		}
+	default:
+		if !_jsii_.IsAnonymousProxy(value) {
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleTpuV2VmDataDisks; received %#v (a %T)", value, value)
+		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutNetworkConfigParameters(value *GoogleTpuV2VmNetworkConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutSchedulingConfigParameters(value *GoogleTpuV2VmSchedulingConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutServiceAccountParameters(value *GoogleTpuV2VmServiceAccount) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutShieldedInstanceConfigParameters(value *GoogleTpuV2VmShieldedInstanceConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuV2Vm) validatePutTimeoutsParameters(value *GoogleTpuV2VmTimeouts) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -243,6 +329,14 @@ func validateGoogleTpuV2Vm_IsTerraformResourceParameters(x interface{}) error {
 }
 
 func (j *jsiiProxy_GoogleTpuV2Vm) validateSetAcceleratorTypeParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetCidrBlockParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -356,9 +450,25 @@ func (j *jsiiProxy_GoogleTpuV2Vm) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetLabelsParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetMetadataParameters(val *map[string]*string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
 
 	return nil
@@ -427,6 +537,14 @@ func (j *jsiiProxy_GoogleTpuV2Vm) validateSetProvisionersParameters(val *[]inter
 }
 
 func (j *jsiiProxy_GoogleTpuV2Vm) validateSetRuntimeVersionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetTagsParameters(val *[]*string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}

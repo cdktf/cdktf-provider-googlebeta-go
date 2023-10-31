@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_service_account_iam_member google_service_account_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_account_iam_member google_service_account_iam_member}.
 type GoogleServiceAccountIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleServiceAccountIamMember) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_service_account_iam_member google_service_account_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_account_iam_member google_service_account_iam_member} Resource.
 func NewGoogleServiceAccountIamMember(scope constructs.Construct, id *string, config *GoogleServiceAccountIamMemberConfig) GoogleServiceAccountIamMember {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewGoogleServiceAccountIamMember(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_service_account_iam_member google_service_account_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_account_iam_member google_service_account_iam_member} Resource.
 func NewGoogleServiceAccountIamMember_Override(g GoogleServiceAccountIamMember, scope constructs.Construct, id *string, config *GoogleServiceAccountIamMemberConfig) {
 	_init_.Initialize()
 

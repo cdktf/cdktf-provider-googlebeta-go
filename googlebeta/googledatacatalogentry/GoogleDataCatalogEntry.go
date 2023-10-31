@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_data_catalog_entry google_data_catalog_entry}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_catalog_entry google_data_catalog_entry}.
 type GoogleDataCatalogEntry interface {
 	cdktf.TerraformResource
 	BigqueryDateShardedSpec() GoogleDataCatalogEntryBigqueryDateShardedSpecList
@@ -603,7 +603,7 @@ func (j *jsiiProxy_GoogleDataCatalogEntry) UserSpecifiedTypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_data_catalog_entry google_data_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_catalog_entry google_data_catalog_entry} Resource.
 func NewGoogleDataCatalogEntry(scope constructs.Construct, id *string, config *GoogleDataCatalogEntryConfig) GoogleDataCatalogEntry {
 	_init_.Initialize()
 
@@ -621,7 +621,7 @@ func NewGoogleDataCatalogEntry(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_data_catalog_entry google_data_catalog_entry} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_data_catalog_entry google_data_catalog_entry} Resource.
 func NewGoogleDataCatalogEntry_Override(g GoogleDataCatalogEntry, scope constructs.Construct, id *string, config *GoogleDataCatalogEntryConfig) {
 	_init_.Initialize()
 

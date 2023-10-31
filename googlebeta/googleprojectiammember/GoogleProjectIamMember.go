@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_project_iam_member google_project_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_project_iam_member google_project_iam_member}.
 type GoogleProjectIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleProjectIamMember) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_project_iam_member google_project_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_project_iam_member google_project_iam_member} Resource.
 func NewGoogleProjectIamMember(scope constructs.Construct, id *string, config *GoogleProjectIamMemberConfig) GoogleProjectIamMember {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewGoogleProjectIamMember(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_project_iam_member google_project_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_project_iam_member google_project_iam_member} Resource.
 func NewGoogleProjectIamMember_Override(g GoogleProjectIamMember, scope constructs.Construct, id *string, config *GoogleProjectIamMemberConfig) {
 	_init_.Initialize()
 

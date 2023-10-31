@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition}.
 type GoogleAccessContextManagerAccessLevelCondition interface {
 	cdktf.TerraformResource
 	AccessLevel() *string
@@ -86,6 +86,8 @@ type GoogleAccessContextManagerAccessLevelCondition interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleAccessContextManagerAccessLevelConditionTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	VpcNetworkSources() GoogleAccessContextManagerAccessLevelConditionVpcNetworkSourcesList
+	VpcNetworkSourcesInput() interface{}
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -121,6 +123,7 @@ type GoogleAccessContextManagerAccessLevelCondition interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutDevicePolicy(value *GoogleAccessContextManagerAccessLevelConditionDevicePolicy)
 	PutTimeouts(value *GoogleAccessContextManagerAccessLevelConditionTimeouts)
+	PutVpcNetworkSources(value interface{})
 	ResetDevicePolicy()
 	ResetId()
 	ResetIpSubnetworks()
@@ -132,6 +135,7 @@ type GoogleAccessContextManagerAccessLevelCondition interface {
 	ResetRegions()
 	ResetRequiredAccessLevels()
 	ResetTimeouts()
+	ResetVpcNetworkSources()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -487,8 +491,28 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) TimeoutsInput
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) VpcNetworkSources() GoogleAccessContextManagerAccessLevelConditionVpcNetworkSourcesList {
+	var returns GoogleAccessContextManagerAccessLevelConditionVpcNetworkSourcesList
+	_jsii_.Get(
+		j,
+		"vpcNetworkSources",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) VpcNetworkSourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"vpcNetworkSourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewGoogleAccessContextManagerAccessLevelCondition(scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessLevelConditionConfig) GoogleAccessContextManagerAccessLevelCondition {
 	_init_.Initialize()
 
@@ -506,7 +530,7 @@ func NewGoogleAccessContextManagerAccessLevelCondition(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_access_context_manager_access_level_condition google_access_context_manager_access_level_condition} Resource.
 func NewGoogleAccessContextManagerAccessLevelCondition_Override(g GoogleAccessContextManagerAccessLevelCondition, scope constructs.Construct, id *string, config *GoogleAccessContextManagerAccessLevelConditionConfig) {
 	_init_.Initialize()
 
@@ -1002,6 +1026,17 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) PutTimeouts(v
 	)
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) PutVpcNetworkSources(value interface{}) {
+	if err := g.validatePutVpcNetworkSourcesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVpcNetworkSources",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) ResetDevicePolicy() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1070,6 +1105,14 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) ResetTimeouts
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) ResetVpcNetworkSources() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVpcNetworkSources",
 		nil, // no parameters
 	)
 }

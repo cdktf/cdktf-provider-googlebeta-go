@@ -143,6 +143,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetD
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetEnableConfidentialStorageParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetImageTypeParameters(val *string) error {
 	return nil
 }

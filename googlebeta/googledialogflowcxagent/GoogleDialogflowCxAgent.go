@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
 type GoogleDialogflowCxAgent interface {
 	cdktf.TerraformResource
+	AdvancedSettings() GoogleDialogflowCxAgentAdvancedSettingsOutputReference
+	AdvancedSettingsInput() *GoogleDialogflowCxAgentAdvancedSettings
 	AvatarUri() *string
 	SetAvatarUri(val *string)
 	AvatarUriInput() *string
@@ -57,6 +59,8 @@ type GoogleDialogflowCxAgent interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GitIntegrationSettings() GoogleDialogflowCxAgentGitIntegrationSettingsOutputReference
+	GitIntegrationSettingsInput() *GoogleDialogflowCxAgentGitIntegrationSettings
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -98,6 +102,8 @@ type GoogleDialogflowCxAgent interface {
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
 	TerraformResourceType() *string
+	TextToSpeechSettings() GoogleDialogflowCxAgentTextToSpeechSettingsOutputReference
+	TextToSpeechSettingsInput() *GoogleDialogflowCxAgentTextToSpeechSettings
 	Timeouts() GoogleDialogflowCxAgentTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	TimeZone() *string
@@ -136,12 +142,17 @@ type GoogleDialogflowCxAgent interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAdvancedSettings(value *GoogleDialogflowCxAgentAdvancedSettings)
+	PutGitIntegrationSettings(value *GoogleDialogflowCxAgentGitIntegrationSettings)
 	PutSpeechToTextSettings(value *GoogleDialogflowCxAgentSpeechToTextSettings)
+	PutTextToSpeechSettings(value *GoogleDialogflowCxAgentTextToSpeechSettings)
 	PutTimeouts(value *GoogleDialogflowCxAgentTimeouts)
+	ResetAdvancedSettings()
 	ResetAvatarUri()
 	ResetDescription()
 	ResetEnableSpellCorrection()
 	ResetEnableStackdriverLogging()
+	ResetGitIntegrationSettings()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -150,6 +161,7 @@ type GoogleDialogflowCxAgent interface {
 	ResetSecuritySettings()
 	ResetSpeechToTextSettings()
 	ResetSupportedLanguageCodes()
+	ResetTextToSpeechSettings()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -164,6 +176,26 @@ type GoogleDialogflowCxAgent interface {
 // The jsii proxy struct for GoogleDialogflowCxAgent
 type jsiiProxy_GoogleDialogflowCxAgent struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) AdvancedSettings() GoogleDialogflowCxAgentAdvancedSettingsOutputReference {
+	var returns GoogleDialogflowCxAgentAdvancedSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"advancedSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) AdvancedSettingsInput() *GoogleDialogflowCxAgentAdvancedSettings {
+	var returns *GoogleDialogflowCxAgentAdvancedSettings
+	_jsii_.Get(
+		j,
+		"advancedSettingsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxAgent) AvatarUri() *string {
@@ -361,6 +393,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) GitIntegrationSettings() GoogleDialogflowCxAgentGitIntegrationSettingsOutputReference {
+	var returns GoogleDialogflowCxAgentGitIntegrationSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"gitIntegrationSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) GitIntegrationSettingsInput() *GoogleDialogflowCxAgentGitIntegrationSettings {
+	var returns *GoogleDialogflowCxAgentGitIntegrationSettings
+	_jsii_.Get(
+		j,
+		"gitIntegrationSettingsInput",
 		&returns,
 	)
 	return returns
@@ -586,6 +638,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) TerraformResourceType() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxAgent) TextToSpeechSettings() GoogleDialogflowCxAgentTextToSpeechSettingsOutputReference {
+	var returns GoogleDialogflowCxAgentTextToSpeechSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"textToSpeechSettings",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) TextToSpeechSettingsInput() *GoogleDialogflowCxAgentTextToSpeechSettings {
+	var returns *GoogleDialogflowCxAgentTextToSpeechSettings
+	_jsii_.Get(
+		j,
+		"textToSpeechSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxAgent) Timeouts() GoogleDialogflowCxAgentTimeoutsOutputReference {
 	var returns GoogleDialogflowCxAgentTimeoutsOutputReference
 	_jsii_.Get(
@@ -627,7 +699,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) GoogleDialogflowCxAgent {
 	_init_.Initialize()
 
@@ -645,7 +717,7 @@ func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent_Override(g GoogleDialogflowCxAgent, scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) {
 	_init_.Initialize()
 
@@ -1174,6 +1246,28 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxAgent) PutAdvancedSettings(value *GoogleDialogflowCxAgentAdvancedSettings) {
+	if err := g.validatePutAdvancedSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdvancedSettings",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) PutGitIntegrationSettings(value *GoogleDialogflowCxAgentGitIntegrationSettings) {
+	if err := g.validatePutGitIntegrationSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGitIntegrationSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxAgent) PutSpeechToTextSettings(value *GoogleDialogflowCxAgentSpeechToTextSettings) {
 	if err := g.validatePutSpeechToTextSettingsParameters(value); err != nil {
 		panic(err)
@@ -1181,6 +1275,17 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) PutSpeechToTextSettings(value *Googl
 	_jsii_.InvokeVoid(
 		g,
 		"putSpeechToTextSettings",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) PutTextToSpeechSettings(value *GoogleDialogflowCxAgentTextToSpeechSettings) {
+	if err := g.validatePutTextToSpeechSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTextToSpeechSettings",
 		[]interface{}{value},
 	)
 }
@@ -1193,6 +1298,14 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) PutTimeouts(value *GoogleDialogflowC
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetAdvancedSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdvancedSettings",
+		nil, // no parameters
 	)
 }
 
@@ -1224,6 +1337,14 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetEnableStackdriverLogging() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableStackdriverLogging",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetGitIntegrationSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGitIntegrationSettings",
 		nil, // no parameters
 	)
 }
@@ -1272,6 +1393,14 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetSupportedLanguageCodes() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSupportedLanguageCodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetTextToSpeechSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTextToSpeechSettings",
 		nil, // no parameters
 	)
 }

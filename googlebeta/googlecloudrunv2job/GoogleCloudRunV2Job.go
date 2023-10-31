@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
 type GoogleCloudRunV2Job interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -155,7 +155,6 @@ type GoogleCloudRunV2Job interface {
 	ResetId()
 	ResetLabels()
 	ResetLaunchStage()
-	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -757,7 +756,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) GoogleCloudRunV2Job {
 	_init_.Initialize()
 
@@ -775,7 +774,7 @@ func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job_Override(g GoogleCloudRunV2Job, scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) {
 	_init_.Initialize()
 
@@ -1356,14 +1355,6 @@ func (g *jsiiProxy_GoogleCloudRunV2Job) ResetLaunchStage() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLaunchStage",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleCloudRunV2Job) ResetLocation() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetLocation",
 		nil, // no parameters
 	)
 }

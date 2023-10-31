@@ -9,7 +9,7 @@ type GoogleMonitoringUptimeCheckConfigTcpCheck struct {
 	//
 	// Will be combined with host (specified within the MonitoredResource) to construct the full URL.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_monitoring_uptime_check_config#port GoogleMonitoringUptimeCheckConfig#port}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_monitoring_uptime_check_config#port GoogleMonitoringUptimeCheckConfig#port}
 	Port *float64 `field:"required" json:"port" yaml:"port"`
 }
 

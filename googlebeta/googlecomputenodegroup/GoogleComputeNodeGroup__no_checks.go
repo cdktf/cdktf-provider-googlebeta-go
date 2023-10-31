@@ -123,6 +123,10 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetLifecycleParameters(val *c
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetMaintenanceIntervalParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNodeGroup) validateSetMaintenancePolicyParameters(val *string) error {
 	return nil
 }

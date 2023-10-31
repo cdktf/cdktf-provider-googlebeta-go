@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_node_group google_compute_node_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_node_group google_compute_node_group}.
 type GoogleComputeNodeGroup interface {
 	cdktf.TerraformResource
 	AutoscalingPolicy() GoogleComputeNodeGroupAutoscalingPolicyOutputReference
@@ -55,6 +55,9 @@ type GoogleComputeNodeGroup interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	MaintenanceInterval() *string
+	SetMaintenanceInterval(val *string)
+	MaintenanceIntervalInput() *string
 	MaintenancePolicy() *string
 	SetMaintenancePolicy(val *string)
 	MaintenancePolicyInput() *string
@@ -137,6 +140,7 @@ type GoogleComputeNodeGroup interface {
 	ResetDescription()
 	ResetId()
 	ResetInitialSize()
+	ResetMaintenanceInterval()
 	ResetMaintenancePolicy()
 	ResetMaintenanceWindow()
 	ResetName()
@@ -337,6 +341,26 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) Lifecycle() *cdktf.TerraformResourceL
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNodeGroup) MaintenanceInterval() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceInterval",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNodeGroup) MaintenanceIntervalInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maintenanceIntervalInput",
 		&returns,
 	)
 	return returns
@@ -593,7 +617,7 @@ func (j *jsiiProxy_GoogleComputeNodeGroup) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
 func NewGoogleComputeNodeGroup(scope constructs.Construct, id *string, config *GoogleComputeNodeGroupConfig) GoogleComputeNodeGroup {
 	_init_.Initialize()
 
@@ -611,7 +635,7 @@ func NewGoogleComputeNodeGroup(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_compute_node_group google_compute_node_group} Resource.
 func NewGoogleComputeNodeGroup_Override(g GoogleComputeNodeGroup, scope constructs.Construct, id *string, config *GoogleComputeNodeGroupConfig) {
 	_init_.Initialize()
 
@@ -700,6 +724,17 @@ func (j *jsiiProxy_GoogleComputeNodeGroup)SetLifecycle(val *cdktf.TerraformResou
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeNodeGroup)SetMaintenanceInterval(val *string) {
+	if err := j.validateSetMaintenanceIntervalParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maintenanceInterval",
 		val,
 	)
 }
@@ -1168,6 +1203,14 @@ func (g *jsiiProxy_GoogleComputeNodeGroup) ResetInitialSize() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetInitialSize",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNodeGroup) ResetMaintenanceInterval() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenanceInterval",
 		nil, // no parameters
 	)
 }

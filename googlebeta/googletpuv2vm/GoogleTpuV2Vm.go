@@ -12,14 +12,20 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}.
 type GoogleTpuV2Vm interface {
 	cdktf.TerraformResource
+	AcceleratorConfig() GoogleTpuV2VmAcceleratorConfigOutputReference
+	AcceleratorConfigInput() *GoogleTpuV2VmAcceleratorConfig
 	AcceleratorType() *string
 	SetAcceleratorType(val *string)
 	AcceleratorTypeInput() *string
+	ApiVersion() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CidrBlock() *string
+	SetCidrBlock(val *string)
+	CidrBlockInput() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -30,6 +36,8 @@ type GoogleTpuV2Vm interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DataDisks() GoogleTpuV2VmDataDisksList
+	DataDisksInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -37,6 +45,7 @@ type GoogleTpuV2Vm interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -45,16 +54,28 @@ type GoogleTpuV2Vm interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	Health() *string
+	HealthDescription() *string
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Metadata() *map[string]*string
+	SetMetadata(val *map[string]*string)
+	MetadataInput() *map[string]*string
+	MultisliceNode() cdktf.IResolvable
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
+	NetworkConfig() GoogleTpuV2VmNetworkConfigOutputReference
+	NetworkConfigInput() *GoogleTpuV2VmNetworkConfig
+	NetworkEndpoints() GoogleTpuV2VmNetworkEndpointsList
 	// The tree node.
 	Node() constructs.Node
 	Project() *string
@@ -68,13 +89,26 @@ type GoogleTpuV2Vm interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QueuedResource() *string
 	// Experimental.
 	RawOverrides() interface{}
 	RuntimeVersion() *string
 	SetRuntimeVersion(val *string)
 	RuntimeVersionInput() *string
+	SchedulingConfig() GoogleTpuV2VmSchedulingConfigOutputReference
+	SchedulingConfigInput() *GoogleTpuV2VmSchedulingConfig
+	ServiceAccount() GoogleTpuV2VmServiceAccountOutputReference
+	ServiceAccountInput() *GoogleTpuV2VmServiceAccount
+	ShieldedInstanceConfig() GoogleTpuV2VmShieldedInstanceConfigOutputReference
+	ShieldedInstanceConfigInput() *GoogleTpuV2VmShieldedInstanceConfig
+	State() *string
+	Symptoms() GoogleTpuV2VmSymptomsList
+	Tags() *[]*string
+	SetTags(val *[]*string)
+	TagsInput() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -117,14 +151,30 @@ type GoogleTpuV2Vm interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAcceleratorConfig(value *GoogleTpuV2VmAcceleratorConfig)
+	PutDataDisks(value interface{})
+	PutNetworkConfig(value *GoogleTpuV2VmNetworkConfig)
+	PutSchedulingConfig(value *GoogleTpuV2VmSchedulingConfig)
+	PutServiceAccount(value *GoogleTpuV2VmServiceAccount)
+	PutShieldedInstanceConfig(value *GoogleTpuV2VmShieldedInstanceConfig)
 	PutTimeouts(value *GoogleTpuV2VmTimeouts)
+	ResetAcceleratorConfig()
 	ResetAcceleratorType()
+	ResetCidrBlock()
+	ResetDataDisks()
 	ResetDescription()
 	ResetId()
+	ResetLabels()
+	ResetMetadata()
+	ResetNetworkConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSchedulingConfig()
+	ResetServiceAccount()
+	ResetShieldedInstanceConfig()
+	ResetTags()
 	ResetTimeouts()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
@@ -140,6 +190,26 @@ type GoogleTpuV2Vm interface {
 // The jsii proxy struct for GoogleTpuV2Vm
 type jsiiProxy_GoogleTpuV2Vm struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) AcceleratorConfig() GoogleTpuV2VmAcceleratorConfigOutputReference {
+	var returns GoogleTpuV2VmAcceleratorConfigOutputReference
+	_jsii_.Get(
+		j,
+		"acceleratorConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) AcceleratorConfigInput() *GoogleTpuV2VmAcceleratorConfig {
+	var returns *GoogleTpuV2VmAcceleratorConfig
+	_jsii_.Get(
+		j,
+		"acceleratorConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleTpuV2Vm) AcceleratorType() *string {
@@ -162,11 +232,41 @@ func (j *jsiiProxy_GoogleTpuV2Vm) AcceleratorTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) ApiVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apiVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) CdktfStack() cdktf.TerraformStack {
 	var returns cdktf.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) CidrBlockInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cidrBlockInput",
 		&returns,
 	)
 	return returns
@@ -202,6 +302,26 @@ func (j *jsiiProxy_GoogleTpuV2Vm) Count() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) DataDisks() GoogleTpuV2VmDataDisksList {
+	var returns GoogleTpuV2VmDataDisksList
+	_jsii_.Get(
+		j,
+		"dataDisks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) DataDisksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"dataDisksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -227,6 +347,16 @@ func (j *jsiiProxy_GoogleTpuV2Vm) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -262,6 +392,26 @@ func (j *jsiiProxy_GoogleTpuV2Vm) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) Health() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"health",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) HealthDescription() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"healthDescription",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -282,11 +432,61 @@ func (j *jsiiProxy_GoogleTpuV2Vm) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) Metadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) MetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadataInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) MultisliceNode() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"multisliceNode",
 		&returns,
 	)
 	return returns
@@ -307,6 +507,36 @@ func (j *jsiiProxy_GoogleTpuV2Vm) NameInput() *string {
 	_jsii_.Get(
 		j,
 		"nameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) NetworkConfig() GoogleTpuV2VmNetworkConfigOutputReference {
+	var returns GoogleTpuV2VmNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) NetworkConfigInput() *GoogleTpuV2VmNetworkConfig {
+	var returns *GoogleTpuV2VmNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) NetworkEndpoints() GoogleTpuV2VmNetworkEndpointsList {
+	var returns GoogleTpuV2VmNetworkEndpointsList
+	_jsii_.Get(
+		j,
+		"networkEndpoints",
 		&returns,
 	)
 	return returns
@@ -362,6 +592,16 @@ func (j *jsiiProxy_GoogleTpuV2Vm) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) QueuedResource() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"queuedResource",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -392,11 +632,121 @@ func (j *jsiiProxy_GoogleTpuV2Vm) RuntimeVersionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) SchedulingConfig() GoogleTpuV2VmSchedulingConfigOutputReference {
+	var returns GoogleTpuV2VmSchedulingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"schedulingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) SchedulingConfigInput() *GoogleTpuV2VmSchedulingConfig {
+	var returns *GoogleTpuV2VmSchedulingConfig
+	_jsii_.Get(
+		j,
+		"schedulingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) ServiceAccount() GoogleTpuV2VmServiceAccountOutputReference {
+	var returns GoogleTpuV2VmServiceAccountOutputReference
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) ServiceAccountInput() *GoogleTpuV2VmServiceAccount {
+	var returns *GoogleTpuV2VmServiceAccount
+	_jsii_.Get(
+		j,
+		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) ShieldedInstanceConfig() GoogleTpuV2VmShieldedInstanceConfigOutputReference {
+	var returns GoogleTpuV2VmShieldedInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) ShieldedInstanceConfigInput() *GoogleTpuV2VmShieldedInstanceConfig {
+	var returns *GoogleTpuV2VmShieldedInstanceConfig
+	_jsii_.Get(
+		j,
+		"shieldedInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) Symptoms() GoogleTpuV2VmSymptomsList {
+	var returns GoogleTpuV2VmSymptomsList
+	_jsii_.Get(
+		j,
+		"symptoms",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) Tags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) TagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
 		&returns,
 	)
 	return returns
@@ -463,7 +813,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
 func NewGoogleTpuV2Vm(scope constructs.Construct, id *string, config *GoogleTpuV2VmConfig) GoogleTpuV2Vm {
 	_init_.Initialize()
 
@@ -481,7 +831,7 @@ func NewGoogleTpuV2Vm(scope constructs.Construct, id *string, config *GoogleTpuV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.3.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
 func NewGoogleTpuV2Vm_Override(g GoogleTpuV2Vm, scope constructs.Construct, id *string, config *GoogleTpuV2VmConfig) {
 	_init_.Initialize()
 
@@ -499,6 +849,17 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetAcceleratorType(val *string) {
 	_jsii_.Set(
 		j,
 		"acceleratorType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm)SetCidrBlock(val *string) {
+	if err := j.validateSetCidrBlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cidrBlock",
 		val,
 	)
 }
@@ -563,6 +924,17 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetId(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
@@ -570,6 +942,17 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetLifecycle(val *cdktf.TerraformResourceLifecy
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm)SetMetadata(val *map[string]*string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metadata",
 		val,
 	)
 }
@@ -622,6 +1005,17 @@ func (j *jsiiProxy_GoogleTpuV2Vm)SetRuntimeVersion(val *string) {
 	_jsii_.Set(
 		j,
 		"runtimeVersion",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm)SetTags(val *[]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -955,6 +1349,72 @@ func (g *jsiiProxy_GoogleTpuV2Vm) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GoogleTpuV2Vm) PutAcceleratorConfig(value *GoogleTpuV2VmAcceleratorConfig) {
+	if err := g.validatePutAcceleratorConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAcceleratorConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) PutDataDisks(value interface{}) {
+	if err := g.validatePutDataDisksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDataDisks",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) PutNetworkConfig(value *GoogleTpuV2VmNetworkConfig) {
+	if err := g.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) PutSchedulingConfig(value *GoogleTpuV2VmSchedulingConfig) {
+	if err := g.validatePutSchedulingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSchedulingConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) PutServiceAccount(value *GoogleTpuV2VmServiceAccount) {
+	if err := g.validatePutServiceAccountParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putServiceAccount",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) PutShieldedInstanceConfig(value *GoogleTpuV2VmShieldedInstanceConfig) {
+	if err := g.validatePutShieldedInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleTpuV2Vm) PutTimeouts(value *GoogleTpuV2VmTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -966,10 +1426,34 @@ func (g *jsiiProxy_GoogleTpuV2Vm) PutTimeouts(value *GoogleTpuV2VmTimeouts) {
 	)
 }
 
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetAcceleratorConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAcceleratorConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleTpuV2Vm) ResetAcceleratorType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAcceleratorType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetCidrBlock() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCidrBlock",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetDataDisks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataDisks",
 		nil, // no parameters
 	)
 }
@@ -990,6 +1474,30 @@ func (g *jsiiProxy_GoogleTpuV2Vm) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMetadata",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleTpuV2Vm) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1002,6 +1510,38 @@ func (g *jsiiProxy_GoogleTpuV2Vm) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetSchedulingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSchedulingConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetServiceAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetShieldedInstanceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
 		nil, // no parameters
 	)
 }

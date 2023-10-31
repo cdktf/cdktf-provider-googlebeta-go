@@ -135,6 +135,10 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleApigeeEnvironment) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleApigeeEnvironmentParameters(scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentConfig) error {
 	return nil
 }

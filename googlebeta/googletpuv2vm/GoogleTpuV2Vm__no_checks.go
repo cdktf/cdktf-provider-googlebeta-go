@@ -67,6 +67,30 @@ func (g *jsiiProxy_GoogleTpuV2Vm) validateOverrideLogicalIdParameters(newLogical
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutAcceleratorConfigParameters(value *GoogleTpuV2VmAcceleratorConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutDataDisksParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutNetworkConfigParameters(value *GoogleTpuV2VmNetworkConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutSchedulingConfigParameters(value *GoogleTpuV2VmSchedulingConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutServiceAccountParameters(value *GoogleTpuV2VmServiceAccount) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTpuV2Vm) validatePutShieldedInstanceConfigParameters(value *GoogleTpuV2VmShieldedInstanceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuV2Vm) validatePutTimeoutsParameters(value *GoogleTpuV2VmTimeouts) error {
 	return nil
 }
@@ -91,6 +115,10 @@ func (j *jsiiProxy_GoogleTpuV2Vm) validateSetAcceleratorTypeParameters(val *stri
 	return nil
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetCidrBlockParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -107,7 +135,15 @@ func (j *jsiiProxy_GoogleTpuV2Vm) validateSetIdParameters(val *string) error {
 	return nil
 }
 
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetLabelsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleTpuV2Vm) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetMetadataParameters(val *map[string]*string) error {
 	return nil
 }
 
@@ -124,6 +160,10 @@ func (j *jsiiProxy_GoogleTpuV2Vm) validateSetProvisionersParameters(val *[]inter
 }
 
 func (j *jsiiProxy_GoogleTpuV2Vm) validateSetRuntimeVersionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleTpuV2Vm) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }
 
