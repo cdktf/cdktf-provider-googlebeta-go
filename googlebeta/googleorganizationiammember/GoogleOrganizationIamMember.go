@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_organization_iam_member google_organization_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_organization_iam_member google_organization_iam_member}.
 type GoogleOrganizationIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -401,7 +401,7 @@ func (j *jsiiProxy_GoogleOrganizationIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_organization_iam_member google_organization_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_organization_iam_member google_organization_iam_member} Resource.
 func NewGoogleOrganizationIamMember(scope constructs.Construct, id *string, config *GoogleOrganizationIamMemberConfig) GoogleOrganizationIamMember {
 	_init_.Initialize()
 
@@ -419,7 +419,7 @@ func NewGoogleOrganizationIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_organization_iam_member google_organization_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_organization_iam_member google_organization_iam_member} Resource.
 func NewGoogleOrganizationIamMember_Override(g GoogleOrganizationIamMember, scope constructs.Construct, id *string, config *GoogleOrganizationIamMemberConfig) {
 	_init_.Initialize()
 

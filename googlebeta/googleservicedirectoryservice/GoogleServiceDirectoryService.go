@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_directory_service google_service_directory_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_service_directory_service google_service_directory_service}.
 type GoogleServiceDirectoryService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -402,7 +402,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_directory_service google_service_directory_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_service_directory_service google_service_directory_service} Resource.
 func NewGoogleServiceDirectoryService(scope constructs.Construct, id *string, config *GoogleServiceDirectoryServiceConfig) GoogleServiceDirectoryService {
 	_init_.Initialize()
 
@@ -420,7 +420,7 @@ func NewGoogleServiceDirectoryService(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_service_directory_service google_service_directory_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_service_directory_service google_service_directory_service} Resource.
 func NewGoogleServiceDirectoryService_Override(g GoogleServiceDirectoryService, scope constructs.Construct, id *string, config *GoogleServiceDirectoryServiceConfig) {
 	_init_.Initialize()
 

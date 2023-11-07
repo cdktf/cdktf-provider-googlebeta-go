@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_spanner_database_iam_member google_spanner_database_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_database_iam_member google_spanner_database_iam_member}.
 type GoogleSpannerDatabaseIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -448,7 +448,7 @@ func (j *jsiiProxy_GoogleSpannerDatabaseIamMember) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_spanner_database_iam_member google_spanner_database_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_database_iam_member google_spanner_database_iam_member} Resource.
 func NewGoogleSpannerDatabaseIamMember(scope constructs.Construct, id *string, config *GoogleSpannerDatabaseIamMemberConfig) GoogleSpannerDatabaseIamMember {
 	_init_.Initialize()
 
@@ -466,7 +466,7 @@ func NewGoogleSpannerDatabaseIamMember(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_spanner_database_iam_member google_spanner_database_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_database_iam_member google_spanner_database_iam_member} Resource.
 func NewGoogleSpannerDatabaseIamMember_Override(g GoogleSpannerDatabaseIamMember, scope constructs.Construct, id *string, config *GoogleSpannerDatabaseIamMemberConfig) {
 	_init_.Initialize()
 

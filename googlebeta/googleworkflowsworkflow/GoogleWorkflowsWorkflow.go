@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workflows_workflow google_workflows_workflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_workflows_workflow google_workflows_workflow}.
 type GoogleWorkflowsWorkflow interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -99,6 +99,9 @@ type GoogleWorkflowsWorkflow interface {
 	Timeouts() GoogleWorkflowsWorkflowTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	UserEnvVars() *map[string]*string
+	SetUserEnvVars(val *map[string]*string)
+	UserEnvVarsInput() *map[string]*string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -147,6 +150,7 @@ type GoogleWorkflowsWorkflow interface {
 	ResetServiceAccount()
 	ResetSourceContents()
 	ResetTimeouts()
+	ResetUserEnvVars()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
 	ToMetadata() interface{}
@@ -602,8 +606,28 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) UpdateTime() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) UserEnvVars() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"userEnvVars",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workflows_workflow google_workflows_workflow} Resource.
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) UserEnvVarsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"userEnvVarsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_workflows_workflow google_workflows_workflow} Resource.
 func NewGoogleWorkflowsWorkflow(scope constructs.Construct, id *string, config *GoogleWorkflowsWorkflowConfig) GoogleWorkflowsWorkflow {
 	_init_.Initialize()
 
@@ -621,7 +645,7 @@ func NewGoogleWorkflowsWorkflow(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.4.0/docs/resources/google_workflows_workflow google_workflows_workflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_workflows_workflow google_workflows_workflow} Resource.
 func NewGoogleWorkflowsWorkflow_Override(g GoogleWorkflowsWorkflow, scope constructs.Construct, id *string, config *GoogleWorkflowsWorkflowConfig) {
 	_init_.Initialize()
 
@@ -806,6 +830,17 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetSourceContents(val *string) {
 	_jsii_.Set(
 		j,
 		"sourceContents",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkflowsWorkflow)SetUserEnvVars(val *map[string]*string) {
+	if err := j.validateSetUserEnvVarsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"userEnvVars",
 		val,
 	)
 }
@@ -1231,6 +1266,14 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) ResetUserEnvVars() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUserEnvVars",
 		nil, // no parameters
 	)
 }
