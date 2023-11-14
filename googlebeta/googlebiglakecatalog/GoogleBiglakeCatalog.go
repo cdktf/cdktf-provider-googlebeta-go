@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_biglake_catalog google_biglake_catalog}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_biglake_catalog google_biglake_catalog}.
 type GoogleBiglakeCatalog interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleBiglakeCatalog) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_biglake_catalog google_biglake_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_biglake_catalog google_biglake_catalog} Resource.
 func NewGoogleBiglakeCatalog(scope constructs.Construct, id *string, config *GoogleBiglakeCatalogConfig) GoogleBiglakeCatalog {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleBiglakeCatalog(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_biglake_catalog google_biglake_catalog} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_biglake_catalog google_biglake_catalog} Resource.
 func NewGoogleBiglakeCatalog_Override(g GoogleBiglakeCatalog, scope constructs.Construct, id *string, config *GoogleBiglakeCatalogConfig) {
 	_init_.Initialize()
 

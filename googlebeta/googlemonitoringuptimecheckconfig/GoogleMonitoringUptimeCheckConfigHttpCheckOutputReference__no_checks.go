@@ -55,6 +55,10 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validatePutPingConfigParameters(value *GoogleMonitoringUptimeCheckConfigHttpCheckPingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -72,6 +76,10 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) va
 }
 
 func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetContentTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckOutputReference) validateSetCustomContentTypeParameters(val *string) error {
 	return nil
 }
 

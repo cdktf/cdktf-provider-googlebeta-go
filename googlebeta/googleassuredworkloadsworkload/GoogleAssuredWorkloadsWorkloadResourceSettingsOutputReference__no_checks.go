@@ -59,6 +59,10 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference) validateSetDisplayNameParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadResourceSettingsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	return nil
 }

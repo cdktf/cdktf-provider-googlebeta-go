@@ -13,6 +13,8 @@ import (
 
 type GoogleContainerAwsClusterAuthorizationOutputReference interface {
 	cdktf.ComplexObject
+	AdminGroups() GoogleContainerAwsClusterAuthorizationAdminGroupsList
+	AdminGroupsInput() interface{}
 	AdminUsers() GoogleContainerAwsClusterAuthorizationAdminUsersList
 	AdminUsersInput() interface{}
 	// the index of the complex object in a list.
@@ -66,7 +68,9 @@ type GoogleContainerAwsClusterAuthorizationOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAdminGroups(value interface{})
 	PutAdminUsers(value interface{})
+	ResetAdminGroups()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +84,26 @@ type GoogleContainerAwsClusterAuthorizationOutputReference interface {
 // The jsii proxy struct for GoogleContainerAwsClusterAuthorizationOutputReference
 type jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) AdminGroups() GoogleContainerAwsClusterAuthorizationAdminGroupsList {
+	var returns GoogleContainerAwsClusterAuthorizationAdminGroupsList
+	_jsii_.Get(
+		j,
+		"adminGroups",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) AdminGroupsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"adminGroupsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) AdminUsers() GoogleContainerAwsClusterAuthorizationAdminUsersList {
@@ -441,6 +465,17 @@ func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) Interp
 	return returns
 }
 
+func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) PutAdminGroups(value interface{}) {
+	if err := g.validatePutAdminGroupsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAdminGroups",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) PutAdminUsers(value interface{}) {
 	if err := g.validatePutAdminUsersParameters(value); err != nil {
 		panic(err)
@@ -449,6 +484,14 @@ func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) PutAdm
 		g,
 		"putAdminUsers",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationOutputReference) ResetAdminGroups() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdminGroups",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -314,6 +314,9 @@ type GoogleBetaProvider interface {
 	SetImpersonateServiceAccountDelegates(val *[]*string)
 	ImpersonateServiceAccountDelegatesInput() *[]*string
 	ImpersonateServiceAccountInput() *string
+	IntegrationConnectorsCustomEndpoint() *string
+	SetIntegrationConnectorsCustomEndpoint(val *string)
+	IntegrationConnectorsCustomEndpointInput() *string
 	KmsCustomEndpoint() *string
 	SetKmsCustomEndpoint(val *string)
 	KmsCustomEndpointInput() *string
@@ -590,6 +593,7 @@ type GoogleBetaProvider interface {
 	ResetIdentityPlatformCustomEndpoint()
 	ResetImpersonateServiceAccount()
 	ResetImpersonateServiceAccountDelegates()
+	ResetIntegrationConnectorsCustomEndpoint()
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
@@ -2642,6 +2646,26 @@ func (j *jsiiProxy_GoogleBetaProvider) ImpersonateServiceAccountInput() *string 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) IntegrationConnectorsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationConnectorsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) IntegrationConnectorsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"integrationConnectorsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) KmsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3783,7 +3807,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3801,7 +3825,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4587,6 +4611,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetImpersonateServiceAccountDelegates(val 
 	_jsii_.Set(
 		j,
 		"impersonateServiceAccountDelegates",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetIntegrationConnectorsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"integrationConnectorsCustomEndpoint",
 		val,
 	)
 }
@@ -5923,6 +5955,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetImpersonateServiceAccountDelegates()
 	_jsii_.InvokeVoid(
 		g,
 		"resetImpersonateServiceAccountDelegates",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetIntegrationConnectorsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIntegrationConnectorsCustomEndpoint",
 		nil, // no parameters
 	)
 }

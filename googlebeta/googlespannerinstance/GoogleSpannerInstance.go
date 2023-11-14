@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance google_spanner_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance google_spanner_instance}.
 type GoogleSpannerInstance interface {
 	cdktf.TerraformResource
+	AutoscalingConfig() GoogleSpannerInstanceAutoscalingConfigOutputReference
+	AutoscalingConfigInput() *GoogleSpannerInstanceAutoscalingConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Config() *string
@@ -126,7 +128,9 @@ type GoogleSpannerInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutoscalingConfig(value *GoogleSpannerInstanceAutoscalingConfig)
 	PutTimeouts(value *GoogleSpannerInstanceTimeouts)
+	ResetAutoscalingConfig()
 	ResetForceDestroy()
 	ResetId()
 	ResetLabels()
@@ -151,6 +155,26 @@ type GoogleSpannerInstance interface {
 // The jsii proxy struct for GoogleSpannerInstance
 type jsiiProxy_GoogleSpannerInstance struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleSpannerInstance) AutoscalingConfig() GoogleSpannerInstanceAutoscalingConfigOutputReference {
+	var returns GoogleSpannerInstanceAutoscalingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autoscalingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSpannerInstance) AutoscalingConfigInput() *GoogleSpannerInstanceAutoscalingConfig {
+	var returns *GoogleSpannerInstanceAutoscalingConfig
+	_jsii_.Get(
+		j,
+		"autoscalingConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleSpannerInstance) CdktfStack() cdktf.TerraformStack {
@@ -544,7 +568,7 @@ func (j *jsiiProxy_GoogleSpannerInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
 func NewGoogleSpannerInstance(scope constructs.Construct, id *string, config *GoogleSpannerInstanceConfig) GoogleSpannerInstance {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewGoogleSpannerInstance(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_spanner_instance google_spanner_instance} Resource.
 func NewGoogleSpannerInstance_Override(g GoogleSpannerInstance, scope constructs.Construct, id *string, config *GoogleSpannerInstanceConfig) {
 	_init_.Initialize()
 
@@ -1058,6 +1082,17 @@ func (g *jsiiProxy_GoogleSpannerInstance) OverrideLogicalId(newLogicalId *string
 	)
 }
 
+func (g *jsiiProxy_GoogleSpannerInstance) PutAutoscalingConfig(value *GoogleSpannerInstanceAutoscalingConfig) {
+	if err := g.validatePutAutoscalingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutoscalingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSpannerInstance) PutTimeouts(value *GoogleSpannerInstanceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1066,6 +1101,14 @@ func (g *jsiiProxy_GoogleSpannerInstance) PutTimeouts(value *GoogleSpannerInstan
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleSpannerInstance) ResetAutoscalingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutoscalingConfig",
+		nil, // no parameters
 	)
 }
 

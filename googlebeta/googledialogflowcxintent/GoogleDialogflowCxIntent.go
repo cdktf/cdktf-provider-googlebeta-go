@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent}.
 type GoogleDialogflowCxIntent interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -49,6 +49,12 @@ type GoogleDialogflowCxIntent interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IsDefaultNegativeIntent() interface{}
+	SetIsDefaultNegativeIntent(val interface{})
+	IsDefaultNegativeIntentInput() interface{}
+	IsDefaultWelcomeIntent() interface{}
+	SetIsDefaultWelcomeIntent(val interface{})
+	IsDefaultWelcomeIntentInput() interface{}
 	IsFallback() interface{}
 	SetIsFallback(val interface{})
 	IsFallbackInput() interface{}
@@ -132,6 +138,8 @@ type GoogleDialogflowCxIntent interface {
 	PutTrainingPhrases(value interface{})
 	ResetDescription()
 	ResetId()
+	ResetIsDefaultNegativeIntent()
+	ResetIsDefaultWelcomeIntent()
 	ResetIsFallback()
 	ResetLabels()
 	ResetLanguageCode()
@@ -303,6 +311,46 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultNegativeIntent() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultNegativeIntent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultNegativeIntentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultNegativeIntentInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultWelcomeIntent() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultWelcomeIntent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxIntent) IsDefaultWelcomeIntentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"isDefaultWelcomeIntentInput",
 		&returns,
 	)
 	return returns
@@ -569,7 +617,7 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent) TrainingPhrasesInput() interface{} 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config *GoogleDialogflowCxIntentConfig) GoogleDialogflowCxIntent {
 	_init_.Initialize()
 
@@ -587,7 +635,7 @@ func NewGoogleDialogflowCxIntent(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.5.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_dialogflow_cx_intent google_dialogflow_cx_intent} Resource.
 func NewGoogleDialogflowCxIntent_Override(g GoogleDialogflowCxIntent, scope constructs.Construct, id *string, config *GoogleDialogflowCxIntentConfig) {
 	_init_.Initialize()
 
@@ -665,6 +713,28 @@ func (j *jsiiProxy_GoogleDialogflowCxIntent)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxIntent)SetIsDefaultNegativeIntent(val interface{}) {
+	if err := j.validateSetIsDefaultNegativeIntentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isDefaultNegativeIntent",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxIntent)SetIsDefaultWelcomeIntent(val interface{}) {
+	if err := j.validateSetIsDefaultWelcomeIntentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"isDefaultWelcomeIntent",
 		val,
 	)
 }
@@ -1117,6 +1187,22 @@ func (g *jsiiProxy_GoogleDialogflowCxIntent) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxIntent) ResetIsDefaultNegativeIntent() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIsDefaultNegativeIntent",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxIntent) ResetIsDefaultWelcomeIntent() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIsDefaultWelcomeIntent",
 		nil, // no parameters
 	)
 }

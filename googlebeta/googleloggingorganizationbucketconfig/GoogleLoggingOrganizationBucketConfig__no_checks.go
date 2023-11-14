@@ -71,6 +71,10 @@ func (g *jsiiProxy_GoogleLoggingOrganizationBucketConfig) validatePutCmekSetting
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingOrganizationBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func validateGoogleLoggingOrganizationBucketConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
