@@ -91,6 +91,10 @@ func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutOidcConfigParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutProxyConfigParameters(value *GoogleContainerAttachedClusterProxyConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAttachedCluster) validatePutTimeoutsParameters(value *GoogleContainerAttachedClusterTimeouts) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembership) validateSetMembershipParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureMembership) validateSetMembershipLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureMembership) validateSetProjectParameters(val *string) error {
 	return nil
 }

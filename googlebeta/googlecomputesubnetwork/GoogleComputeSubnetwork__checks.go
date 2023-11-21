@@ -402,6 +402,14 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetExternalIpv6PrefixParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetIdParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

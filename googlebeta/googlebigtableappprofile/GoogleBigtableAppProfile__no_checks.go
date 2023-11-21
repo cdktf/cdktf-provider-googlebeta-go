@@ -71,6 +71,10 @@ func (g *jsiiProxy_GoogleBigtableAppProfile) validatePutSingleClusterRoutingPara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableAppProfile) validatePutStandardIsolationParameters(value *GoogleBigtableAppProfileStandardIsolation) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableAppProfile) validatePutTimeoutsParameters(value *GoogleBigtableAppProfileTimeouts) error {
 	return nil
 }

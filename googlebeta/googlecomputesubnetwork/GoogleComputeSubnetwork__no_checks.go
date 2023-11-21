@@ -111,6 +111,10 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetExternalIpv6PrefixParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetIdParameters(val *string) error {
 	return nil
 }

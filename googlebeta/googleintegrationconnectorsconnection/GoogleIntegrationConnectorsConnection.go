@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection}.
 type GoogleIntegrationConnectorsConnection interface {
 	cdktf.TerraformResource
 	AuthConfig() GoogleIntegrationConnectorsConnectionAuthConfigOutputReference
@@ -847,7 +847,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
 func NewGoogleIntegrationConnectorsConnection(scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsConnectionConfig) GoogleIntegrationConnectorsConnection {
 	_init_.Initialize()
 
@@ -865,7 +865,7 @@ func NewGoogleIntegrationConnectorsConnection(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
 func NewGoogleIntegrationConnectorsConnection_Override(g GoogleIntegrationConnectorsConnection, scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsConnectionConfig) {
 	_init_.Initialize()
 

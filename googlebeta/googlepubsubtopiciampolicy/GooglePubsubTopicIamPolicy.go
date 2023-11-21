@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy}.
 type GooglePubsubTopicIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_GooglePubsubTopicIamPolicy) TopicInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy} Resource.
 func NewGooglePubsubTopicIamPolicy(scope constructs.Construct, id *string, config *GooglePubsubTopicIamPolicyConfig) GooglePubsubTopicIamPolicy {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewGooglePubsubTopicIamPolicy(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.6.0/docs/resources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_pubsub_topic_iam_policy google_pubsub_topic_iam_policy} Resource.
 func NewGooglePubsubTopicIamPolicy_Override(g GooglePubsubTopicIamPolicy, scope constructs.Construct, id *string, config *GooglePubsubTopicIamPolicyConfig) {
 	_init_.Initialize()
 
