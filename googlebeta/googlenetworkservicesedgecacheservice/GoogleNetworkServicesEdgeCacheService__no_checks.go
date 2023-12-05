@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheService) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

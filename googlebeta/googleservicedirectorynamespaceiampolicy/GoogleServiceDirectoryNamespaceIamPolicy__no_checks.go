@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleServiceDirectoryNamespaceIamPolicy) validateInterpolati
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceDirectoryNamespaceIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceDirectoryNamespaceIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceDirectoryNamespaceIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection}.
 type GoogleIntegrationConnectorsConnection interface {
 	cdktf.TerraformResource
 	AuthConfig() GoogleIntegrationConnectorsConnectionAuthConfigOutputReference
@@ -144,12 +144,22 @@ type GoogleIntegrationConnectorsConnection interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -847,7 +857,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
 func NewGoogleIntegrationConnectorsConnection(scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsConnectionConfig) GoogleIntegrationConnectorsConnection {
 	_init_.Initialize()
 
@@ -865,7 +875,7 @@ func NewGoogleIntegrationConnectorsConnection(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
 func NewGoogleIntegrationConnectorsConnection_Override(g GoogleIntegrationConnectorsConnection, scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsConnectionConfig) {
 	_init_.Initialize()
 
@@ -1323,6 +1333,19 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) GetStringMapAttribute(
 	return returns
 }
 
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1350,6 +1373,17 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) InterpolationForAttrib
 	return returns
 }
 
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1358,6 +1392,17 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) MoveTo(moveTarget *str
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnection) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

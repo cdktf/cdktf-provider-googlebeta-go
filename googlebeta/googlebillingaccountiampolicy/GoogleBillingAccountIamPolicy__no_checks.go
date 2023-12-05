@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleBillingAccountIamPolicy) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBillingAccountIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBillingAccountIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBillingAccountIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

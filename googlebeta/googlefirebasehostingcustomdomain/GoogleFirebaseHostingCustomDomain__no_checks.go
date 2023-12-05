@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingCustomDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

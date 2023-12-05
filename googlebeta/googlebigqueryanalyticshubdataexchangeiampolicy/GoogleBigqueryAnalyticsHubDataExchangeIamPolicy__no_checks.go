@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamPolicy) validateInte
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

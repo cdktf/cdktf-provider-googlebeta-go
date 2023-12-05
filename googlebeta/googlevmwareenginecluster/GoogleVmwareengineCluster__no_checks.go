@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleVmwareengineCluster) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareengineCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamMember) validateInterpol
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplateIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

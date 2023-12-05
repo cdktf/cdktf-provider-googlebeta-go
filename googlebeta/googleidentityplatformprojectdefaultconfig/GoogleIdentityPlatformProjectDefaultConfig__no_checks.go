@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformProjectDefaultConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

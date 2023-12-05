@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreService) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

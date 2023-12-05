@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateInterpolati
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

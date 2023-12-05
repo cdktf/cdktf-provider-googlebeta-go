@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateInterpolati
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOrganizationAccessApprovalSettings) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreIamBinding) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareFhirStoreIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareFhirStoreIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStoreIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

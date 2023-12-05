@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataFusionInstanceIamBinding) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstanceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstanceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstanceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

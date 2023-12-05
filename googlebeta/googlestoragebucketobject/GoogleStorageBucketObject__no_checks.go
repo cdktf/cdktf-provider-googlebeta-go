@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleStorageBucketObject) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucketObject) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucketObject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageBucketObject) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleHealthcareDatasetIamPolicy) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareDatasetIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareDatasetIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareDatasetIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

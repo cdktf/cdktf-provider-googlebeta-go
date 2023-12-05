@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_os_config_patch_deployment google_os_config_patch_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_os_config_patch_deployment google_os_config_patch_deployment}.
 type GoogleOsConfigPatchDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -116,12 +116,22 @@ type GoogleOsConfigPatchDeployment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -579,7 +589,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeployment) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_os_config_patch_deployment google_os_config_patch_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_os_config_patch_deployment google_os_config_patch_deployment} Resource.
 func NewGoogleOsConfigPatchDeployment(scope constructs.Construct, id *string, config *GoogleOsConfigPatchDeploymentConfig) GoogleOsConfigPatchDeployment {
 	_init_.Initialize()
 
@@ -597,7 +607,7 @@ func NewGoogleOsConfigPatchDeployment(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_os_config_patch_deployment google_os_config_patch_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_os_config_patch_deployment google_os_config_patch_deployment} Resource.
 func NewGoogleOsConfigPatchDeployment_Override(g GoogleOsConfigPatchDeployment, scope constructs.Construct, id *string, config *GoogleOsConfigPatchDeploymentConfig) {
 	_init_.Initialize()
 
@@ -1000,6 +1010,19 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeployment) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleOsConfigPatchDeployment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1027,6 +1050,17 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeployment) InterpolationForAttribute(terr
 	return returns
 }
 
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleOsConfigPatchDeployment) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1035,6 +1069,17 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeployment) MoveTo(moveTarget *string, ind
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

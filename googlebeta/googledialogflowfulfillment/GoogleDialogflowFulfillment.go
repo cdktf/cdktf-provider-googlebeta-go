@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment}.
 type GoogleDialogflowFulfillment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -104,12 +104,22 @@ type GoogleDialogflowFulfillment interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -451,7 +461,7 @@ func (j *jsiiProxy_GoogleDialogflowFulfillment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
 func NewGoogleDialogflowFulfillment(scope constructs.Construct, id *string, config *GoogleDialogflowFulfillmentConfig) GoogleDialogflowFulfillment {
 	_init_.Initialize()
 
@@ -469,7 +479,7 @@ func NewGoogleDialogflowFulfillment(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dialogflow_fulfillment google_dialogflow_fulfillment} Resource.
 func NewGoogleDialogflowFulfillment_Override(g GoogleDialogflowFulfillment, scope constructs.Construct, id *string, config *GoogleDialogflowFulfillmentConfig) {
 	_init_.Initialize()
 
@@ -861,6 +871,19 @@ func (g *jsiiProxy_GoogleDialogflowFulfillment) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDialogflowFulfillment) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleDialogflowFulfillment) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -888,6 +911,17 @@ func (g *jsiiProxy_GoogleDialogflowFulfillment) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDialogflowFulfillment) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleDialogflowFulfillment) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -896,6 +930,17 @@ func (g *jsiiProxy_GoogleDialogflowFulfillment) MoveTo(moveTarget *string, index
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowFulfillment) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleSccFolderCustomModule) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccFolderCustomModule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccFolderCustomModule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccFolderCustomModule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

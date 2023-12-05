@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceIamBinding) validateInterpolati
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleBeyondcorpAppGateway) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBeyondcorpAppGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBeyondcorpAppGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBeyondcorpAppGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

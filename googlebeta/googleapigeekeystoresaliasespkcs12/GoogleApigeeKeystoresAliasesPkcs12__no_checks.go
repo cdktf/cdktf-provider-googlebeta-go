@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleHealthcareDicomStore) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareDicomStore) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareDicomStore) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareDicomStore) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

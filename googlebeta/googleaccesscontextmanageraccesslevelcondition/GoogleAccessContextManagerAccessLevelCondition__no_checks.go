@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateInter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelCondition) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

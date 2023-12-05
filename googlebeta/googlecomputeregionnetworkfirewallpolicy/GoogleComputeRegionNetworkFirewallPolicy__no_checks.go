@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateInterpolati
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

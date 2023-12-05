@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleFolderIamMember) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFolderIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

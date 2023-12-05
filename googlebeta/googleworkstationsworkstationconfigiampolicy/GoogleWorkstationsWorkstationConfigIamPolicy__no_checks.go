@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateInterpo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

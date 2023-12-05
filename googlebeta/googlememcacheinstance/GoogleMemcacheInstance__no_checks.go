@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleMemcacheInstance) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemcacheInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemcacheInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMemcacheInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

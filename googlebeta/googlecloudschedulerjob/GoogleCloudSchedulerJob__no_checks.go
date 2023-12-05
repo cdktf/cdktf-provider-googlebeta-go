@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleCloudSchedulerJob) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudSchedulerJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudSchedulerJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudSchedulerJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

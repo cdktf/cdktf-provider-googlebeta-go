@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingBillingAccountSink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

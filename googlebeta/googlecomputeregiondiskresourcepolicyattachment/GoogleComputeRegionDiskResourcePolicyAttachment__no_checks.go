@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeRegionDiskResourcePolicyAttachment) validateInte
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionDiskResourcePolicyAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionDiskResourcePolicyAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDiskResourcePolicyAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRecaptchaEnterpriseKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

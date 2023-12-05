@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateInterpolationFo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortA) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

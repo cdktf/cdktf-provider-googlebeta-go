@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleHealthcareConsentStoreIamPolicy) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareConsentStoreIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareConsentStoreIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareConsentStoreIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

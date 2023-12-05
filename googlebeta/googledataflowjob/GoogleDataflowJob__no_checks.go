@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataflowJob) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataflowJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataflowJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataflowJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

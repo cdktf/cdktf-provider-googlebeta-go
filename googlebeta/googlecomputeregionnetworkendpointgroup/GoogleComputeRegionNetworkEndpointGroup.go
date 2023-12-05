@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
 type GoogleComputeRegionNetworkEndpointGroup interface {
 	cdktf.TerraformResource
 	AppEngine() GoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference
@@ -123,12 +123,22 @@ type GoogleComputeRegionNetworkEndpointGroup interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -618,7 +628,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
 func NewGoogleComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkEndpointGroupConfig) GoogleComputeRegionNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -636,7 +646,7 @@ func NewGoogleComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
 func NewGoogleComputeRegionNetworkEndpointGroup_Override(g GoogleComputeRegionNetworkEndpointGroup, scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -1083,6 +1093,19 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) GetStringMapAttribut
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1110,6 +1133,17 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) InterpolationForAttr
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1118,6 +1152,17 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) MoveTo(moveTarget *s
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

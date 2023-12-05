@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

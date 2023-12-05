@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeHaVpnGateway) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudTasksQueueIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

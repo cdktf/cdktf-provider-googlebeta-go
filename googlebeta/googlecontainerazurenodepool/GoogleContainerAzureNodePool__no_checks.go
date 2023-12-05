@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleContainerAzureNodePool) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAzureNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAzureNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAzureNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

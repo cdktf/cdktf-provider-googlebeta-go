@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsLoginSshPublicKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

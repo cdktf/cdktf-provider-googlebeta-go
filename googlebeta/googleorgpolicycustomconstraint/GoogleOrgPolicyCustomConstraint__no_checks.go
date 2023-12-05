@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOrgPolicyCustomConstraint) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

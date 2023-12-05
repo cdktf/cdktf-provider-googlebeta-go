@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageTransferAgentPool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

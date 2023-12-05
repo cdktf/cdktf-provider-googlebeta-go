@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

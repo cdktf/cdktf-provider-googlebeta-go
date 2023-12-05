@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_acl google_storage_bucket_acl}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_acl google_storage_bucket_acl}.
 type GoogleStorageBucketAcl interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -100,12 +100,22 @@ type GoogleStorageBucketAcl interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -392,7 +402,7 @@ func (j *jsiiProxy_GoogleStorageBucketAcl) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_acl google_storage_bucket_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_acl google_storage_bucket_acl} Resource.
 func NewGoogleStorageBucketAcl(scope constructs.Construct, id *string, config *GoogleStorageBucketAclConfig) GoogleStorageBucketAcl {
 	_init_.Initialize()
 
@@ -410,7 +420,7 @@ func NewGoogleStorageBucketAcl(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_storage_bucket_acl google_storage_bucket_acl} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_storage_bucket_acl google_storage_bucket_acl} Resource.
 func NewGoogleStorageBucketAcl_Override(g GoogleStorageBucketAcl, scope constructs.Construct, id *string, config *GoogleStorageBucketAclConfig) {
 	_init_.Initialize()
 
@@ -813,6 +823,19 @@ func (g *jsiiProxy_GoogleStorageBucketAcl) GetStringMapAttribute(terraformAttrib
 	return returns
 }
 
+func (g *jsiiProxy_GoogleStorageBucketAcl) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleStorageBucketAcl) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -840,6 +863,17 @@ func (g *jsiiProxy_GoogleStorageBucketAcl) InterpolationForAttribute(terraformAt
 	return returns
 }
 
+func (g *jsiiProxy_GoogleStorageBucketAcl) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucketAcl) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -848,6 +882,17 @@ func (g *jsiiProxy_GoogleStorageBucketAcl) MoveTo(moveTarget *string, index inte
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketAcl) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

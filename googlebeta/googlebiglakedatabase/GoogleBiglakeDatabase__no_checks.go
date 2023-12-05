@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleBiglakeDatabase) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBiglakeDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBiglakeDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBiglakeDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

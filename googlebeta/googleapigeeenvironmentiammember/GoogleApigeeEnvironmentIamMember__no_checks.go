@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvironmentIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

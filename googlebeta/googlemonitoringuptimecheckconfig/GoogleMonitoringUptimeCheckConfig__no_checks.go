@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

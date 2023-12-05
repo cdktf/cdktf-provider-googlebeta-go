@@ -59,11 +59,23 @@ func (g *jsiiProxy_GoogleIamWorkforcePool) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePool) validateMoveToIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePool) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePool) validatePutAccessRestrictionsParameters(value *GoogleIamWorkforcePoolAccessRestrictions) error {
 	return nil
 }
 

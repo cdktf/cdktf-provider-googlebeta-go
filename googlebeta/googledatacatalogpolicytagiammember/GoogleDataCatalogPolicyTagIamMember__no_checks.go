@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogPolicyTagIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

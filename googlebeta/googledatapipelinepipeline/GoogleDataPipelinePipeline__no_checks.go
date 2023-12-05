@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataPipelinePipeline) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataPipelinePipeline) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataPipelinePipeline) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataPipelinePipeline) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

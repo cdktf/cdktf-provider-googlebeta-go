@@ -59,7 +59,15 @@ func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

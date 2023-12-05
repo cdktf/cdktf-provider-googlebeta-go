@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleStorageObjectAcl) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageObjectAcl) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageObjectAcl) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageObjectAcl) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

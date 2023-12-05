@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeNetworkPeering) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNetworkPeering) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetworkPeering) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkPeering) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

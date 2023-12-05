@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDialogflowIntent) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowIntent) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowIntent) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowIntent) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

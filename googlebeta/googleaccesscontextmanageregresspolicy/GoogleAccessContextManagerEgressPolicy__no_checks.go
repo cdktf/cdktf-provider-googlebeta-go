@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerEgressPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

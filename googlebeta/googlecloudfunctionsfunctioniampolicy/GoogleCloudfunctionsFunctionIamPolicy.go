@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy}.
 type GoogleCloudfunctionsFunctionIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -101,12 +101,22 @@ type GoogleCloudfunctionsFunctionIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -402,7 +412,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
 func NewGoogleCloudfunctionsFunctionIamPolicy(scope constructs.Construct, id *string, config *GoogleCloudfunctionsFunctionIamPolicyConfig) GoogleCloudfunctionsFunctionIamPolicy {
 	_init_.Initialize()
 
@@ -420,7 +430,7 @@ func NewGoogleCloudfunctionsFunctionIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloudfunctions_function_iam_policy google_cloudfunctions_function_iam_policy} Resource.
 func NewGoogleCloudfunctionsFunctionIamPolicy_Override(g GoogleCloudfunctionsFunctionIamPolicy, scope constructs.Construct, id *string, config *GoogleCloudfunctionsFunctionIamPolicyConfig) {
 	_init_.Initialize()
 
@@ -823,6 +833,19 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) GetStringMapAttribute(
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -850,6 +873,17 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) InterpolationForAttrib
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -858,6 +892,17 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) MoveTo(moveTarget *str
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamPolicy) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

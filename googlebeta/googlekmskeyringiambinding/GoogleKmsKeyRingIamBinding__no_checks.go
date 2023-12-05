@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleKmsKeyRingIamBinding) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsKeyRingIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsKeyRingIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsKeyRingIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

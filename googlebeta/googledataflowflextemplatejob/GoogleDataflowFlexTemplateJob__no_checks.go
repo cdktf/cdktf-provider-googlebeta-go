@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

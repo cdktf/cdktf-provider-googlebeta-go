@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataformRepositoryReleaseConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

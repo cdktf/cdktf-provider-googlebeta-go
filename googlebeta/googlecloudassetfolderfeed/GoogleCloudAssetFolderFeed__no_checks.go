@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudAssetFolderFeed) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

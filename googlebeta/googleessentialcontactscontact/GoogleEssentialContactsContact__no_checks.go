@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleEssentialContactsContact) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEssentialContactsContact) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEssentialContactsContact) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEssentialContactsContact) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

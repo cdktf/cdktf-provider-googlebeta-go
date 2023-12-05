@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleLookerInstance) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLookerInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

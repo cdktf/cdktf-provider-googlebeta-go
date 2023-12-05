@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeBackendBucketSignedUrlKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

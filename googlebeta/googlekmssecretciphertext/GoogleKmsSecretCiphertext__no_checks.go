@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsSecretCiphertext) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

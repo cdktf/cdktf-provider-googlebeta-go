@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleSccNotificationConfig) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccNotificationConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccNotificationConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccNotificationConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleBigtableAppProfile) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableAppProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableAppProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableAppProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

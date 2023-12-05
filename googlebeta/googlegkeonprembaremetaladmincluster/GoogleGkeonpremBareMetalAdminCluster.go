@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster}.
 type GoogleGkeonpremBareMetalAdminCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -141,12 +141,22 @@ type GoogleGkeonpremBareMetalAdminCluster interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -846,7 +856,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) ValidationCheck() Googl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster} Resource.
 func NewGoogleGkeonpremBareMetalAdminCluster(scope constructs.Construct, id *string, config *GoogleGkeonpremBareMetalAdminClusterConfig) GoogleGkeonpremBareMetalAdminCluster {
 	_init_.Initialize()
 
@@ -864,7 +874,7 @@ func NewGoogleGkeonpremBareMetalAdminCluster(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gkeonprem_bare_metal_admin_cluster google_gkeonprem_bare_metal_admin_cluster} Resource.
 func NewGoogleGkeonpremBareMetalAdminCluster_Override(g GoogleGkeonpremBareMetalAdminCluster, scope constructs.Construct, id *string, config *GoogleGkeonpremBareMetalAdminClusterConfig) {
 	_init_.Initialize()
 
@@ -1289,6 +1299,19 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) GetStringMapAttribute(t
 	return returns
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1316,6 +1339,17 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) InterpolationForAttribu
 	return returns
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1324,6 +1358,17 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) MoveTo(moveTarget *stri
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalAdminCluster) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceIamPolicy) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

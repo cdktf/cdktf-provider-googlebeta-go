@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool}.
 type GoogleGkeonpremBareMetalNodePool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -119,12 +119,22 @@ type GoogleGkeonpremBareMetalNodePool interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -584,7 +594,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePool) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool} Resource.
 func NewGoogleGkeonpremBareMetalNodePool(scope constructs.Construct, id *string, config *GoogleGkeonpremBareMetalNodePoolConfig) GoogleGkeonpremBareMetalNodePool {
 	_init_.Initialize()
 
@@ -602,7 +612,7 @@ func NewGoogleGkeonpremBareMetalNodePool(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_gkeonprem_bare_metal_node_pool google_gkeonprem_bare_metal_node_pool} Resource.
 func NewGoogleGkeonpremBareMetalNodePool_Override(g GoogleGkeonpremBareMetalNodePool, scope constructs.Construct, id *string, config *GoogleGkeonpremBareMetalNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1027,6 +1037,19 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) GetStringMapAttribute(terra
 	return returns
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1054,6 +1077,17 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) InterpolationForAttribute(t
 	return returns
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1062,6 +1096,17 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) MoveTo(moveTarget *string, 
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

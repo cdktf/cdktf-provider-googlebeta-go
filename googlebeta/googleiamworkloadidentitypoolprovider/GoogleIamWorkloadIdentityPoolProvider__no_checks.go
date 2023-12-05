@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

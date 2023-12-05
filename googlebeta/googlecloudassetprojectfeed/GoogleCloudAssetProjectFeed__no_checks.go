@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudAssetProjectFeed) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

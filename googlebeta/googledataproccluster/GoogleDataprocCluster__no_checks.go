@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataprocCluster) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

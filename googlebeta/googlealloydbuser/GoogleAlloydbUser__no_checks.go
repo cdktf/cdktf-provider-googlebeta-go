@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleAlloydbUser) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbUser) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbUser) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbUser) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

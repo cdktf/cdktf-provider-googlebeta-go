@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionDiskIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

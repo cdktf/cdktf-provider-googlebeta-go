@@ -59,7 +59,15 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePrivatecaCaPoolIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeSharedflowDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

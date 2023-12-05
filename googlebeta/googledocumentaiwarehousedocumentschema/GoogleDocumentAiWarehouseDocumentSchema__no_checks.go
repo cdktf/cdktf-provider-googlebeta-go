@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleRedisCluster) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

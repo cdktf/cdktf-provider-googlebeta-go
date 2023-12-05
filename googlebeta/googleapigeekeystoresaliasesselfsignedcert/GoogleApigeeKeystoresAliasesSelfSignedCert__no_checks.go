@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCert) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

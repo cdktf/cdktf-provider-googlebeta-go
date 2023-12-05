@@ -53,6 +53,8 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference inter
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	UpstreamCredentials() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference
+	UpstreamCredentialsInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials
 	YumRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepositoryOutputReference
 	YumRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository
 	// Experimental.
@@ -84,6 +86,7 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference inter
 	PutMavenRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository)
 	PutNpmRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigNpmRepository)
 	PutPythonRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository)
+	PutUpstreamCredentials(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials)
 	PutYumRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository)
 	ResetAptRepository()
 	ResetDescription()
@@ -91,6 +94,7 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference inter
 	ResetMavenRepository()
 	ResetNpmRepository()
 	ResetPythonRepository()
+	ResetUpstreamCredentials()
 	ResetYumRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -292,6 +296,26 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) UpstreamCredentials() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference {
+	var returns GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentialsOutputReference
+	_jsii_.Get(
+		j,
+		"upstreamCredentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) UpstreamCredentialsInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials {
+	var returns *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials
+	_jsii_.Get(
+		j,
+		"upstreamCredentialsInput",
 		&returns,
 	)
 	return returns
@@ -652,6 +676,17 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	)
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutUpstreamCredentials(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigUpstreamCredentials) {
+	if err := g.validatePutUpstreamCredentialsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUpstreamCredentials",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) PutYumRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigYumRepository) {
 	if err := g.validatePutYumRepositoryParameters(value); err != nil {
 		panic(err)
@@ -707,6 +742,14 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputR
 	_jsii_.InvokeVoid(
 		g,
 		"resetPythonRepository",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigOutputReference) ResetUpstreamCredentials() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUpstreamCredentials",
 		nil, // no parameters
 	)
 }

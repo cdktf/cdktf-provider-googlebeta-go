@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

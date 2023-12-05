@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleIamDenyPolicy) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamDenyPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamDenyPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamDenyPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

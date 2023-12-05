@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlan) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupRestorePlan) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupRestorePlan) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

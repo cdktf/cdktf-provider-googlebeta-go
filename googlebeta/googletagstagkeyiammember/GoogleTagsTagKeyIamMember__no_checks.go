@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleTagsTagKeyIamMember) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTagsTagKeyIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTagsTagKeyIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTagsTagKeyIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

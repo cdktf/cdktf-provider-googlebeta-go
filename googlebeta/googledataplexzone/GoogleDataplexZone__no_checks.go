@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataplexZone) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexZone) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexZone) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataplexZone) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

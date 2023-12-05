@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

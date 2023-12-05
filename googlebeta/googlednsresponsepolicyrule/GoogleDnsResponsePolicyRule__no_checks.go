@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDnsResponsePolicyRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

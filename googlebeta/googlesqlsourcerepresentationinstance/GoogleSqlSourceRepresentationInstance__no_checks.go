@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSqlSourceRepresentationInstance) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

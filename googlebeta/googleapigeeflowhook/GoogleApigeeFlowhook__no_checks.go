@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleApigeeFlowhook) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeFlowhook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeFlowhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeFlowhook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

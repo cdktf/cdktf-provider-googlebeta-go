@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

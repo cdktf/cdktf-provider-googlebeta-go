@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

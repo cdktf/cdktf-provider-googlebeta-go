@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleContainerAzureClient) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerAzureClient) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAzureClient) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerAzureClient) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogTaxonomyIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

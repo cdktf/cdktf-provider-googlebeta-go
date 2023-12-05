@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleBigqueryCapacityCommitment) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryCapacityCommitment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryCapacityCommitment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryCapacityCommitment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

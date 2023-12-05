@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComposerEnvironment) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

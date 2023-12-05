@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules}.
 type GoogleAppEngineApplicationUrlDispatchRules interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -95,12 +95,22 @@ type GoogleAppEngineApplicationUrlDispatchRules interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -368,7 +378,7 @@ func (j *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
 func NewGoogleAppEngineApplicationUrlDispatchRules(scope constructs.Construct, id *string, config *GoogleAppEngineApplicationUrlDispatchRulesConfig) GoogleAppEngineApplicationUrlDispatchRules {
 	_init_.Initialize()
 
@@ -386,7 +396,7 @@ func NewGoogleAppEngineApplicationUrlDispatchRules(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_app_engine_application_url_dispatch_rules google_app_engine_application_url_dispatch_rules} Resource.
 func NewGoogleAppEngineApplicationUrlDispatchRules_Override(g GoogleAppEngineApplicationUrlDispatchRules, scope constructs.Construct, id *string, config *GoogleAppEngineApplicationUrlDispatchRulesConfig) {
 	_init_.Initialize()
 
@@ -756,6 +766,19 @@ func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) GetStringMapAttri
 	return returns
 }
 
+func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -783,6 +806,17 @@ func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) InterpolationForA
 	return returns
 }
 
+func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -791,6 +825,17 @@ func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) MoveTo(moveTarget
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineApplicationUrlDispatchRules) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

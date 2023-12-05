@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityUrlLists) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

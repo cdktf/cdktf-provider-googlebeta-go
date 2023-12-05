@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleLoggingFolderSink) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingFolderSink) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingFolderSink) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingFolderSink) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

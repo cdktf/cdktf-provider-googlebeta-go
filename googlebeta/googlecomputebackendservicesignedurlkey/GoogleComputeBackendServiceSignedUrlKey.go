@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key}.
 type GoogleComputeBackendServiceSignedUrlKey interface {
 	cdktf.TerraformResource
 	BackendService() *string
@@ -102,12 +102,22 @@ type GoogleComputeBackendServiceSignedUrlKey interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -414,7 +424,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
 func NewGoogleComputeBackendServiceSignedUrlKey(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceSignedUrlKeyConfig) GoogleComputeBackendServiceSignedUrlKey {
 	_init_.Initialize()
 
@@ -432,7 +442,7 @@ func NewGoogleComputeBackendServiceSignedUrlKey(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
 func NewGoogleComputeBackendServiceSignedUrlKey_Override(g GoogleComputeBackendServiceSignedUrlKey, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceSignedUrlKeyConfig) {
 	_init_.Initialize()
 
@@ -835,6 +845,19 @@ func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) GetStringMapAttribut
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -862,6 +885,17 @@ func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) InterpolationForAttr
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -870,6 +904,17 @@ func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) MoveTo(moveTarget *s
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

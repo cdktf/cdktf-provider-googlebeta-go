@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route}.
 type GoogleNetworkServicesGrpcRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -118,12 +118,22 @@ type GoogleNetworkServicesGrpcRoute interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -565,7 +575,7 @@ func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route} Resource.
 func NewGoogleNetworkServicesGrpcRoute(scope constructs.Construct, id *string, config *GoogleNetworkServicesGrpcRouteConfig) GoogleNetworkServicesGrpcRoute {
 	_init_.Initialize()
 
@@ -583,7 +593,7 @@ func NewGoogleNetworkServicesGrpcRoute(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_network_services_grpc_route google_network_services_grpc_route} Resource.
 func NewGoogleNetworkServicesGrpcRoute_Override(g GoogleNetworkServicesGrpcRoute, scope constructs.Construct, id *string, config *GoogleNetworkServicesGrpcRouteConfig) {
 	_init_.Initialize()
 
@@ -1019,6 +1029,19 @@ func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) GetStringMapAttribute(terrafo
 	return returns
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -1046,6 +1069,17 @@ func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) InterpolationForAttribute(ter
 	return returns
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1054,6 +1088,17 @@ func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) MoveTo(moveTarget *string, in
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesGrpcRoute) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

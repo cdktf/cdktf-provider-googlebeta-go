@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

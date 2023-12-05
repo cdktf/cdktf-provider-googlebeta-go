@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirestoreDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirestoreDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -104,6 +112,10 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetCountParameters(val inter
 }
 
 func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetDeleteProtectionStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) validateSetDeletionPolicyParameters(val *string) error {
 	return nil
 }
 

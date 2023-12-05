@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamBinding) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebRegionBackendServiceIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureMembership) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceNetworkingPeeredDnsDomain) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

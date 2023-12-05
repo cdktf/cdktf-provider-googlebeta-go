@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleSpannerDatabase) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSpannerDatabase) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSpannerDatabase) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSpannerDatabase) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

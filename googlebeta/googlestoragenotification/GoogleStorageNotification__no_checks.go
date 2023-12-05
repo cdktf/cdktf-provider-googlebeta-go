@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleStorageNotification) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageNotification) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageNotification) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageNotification) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

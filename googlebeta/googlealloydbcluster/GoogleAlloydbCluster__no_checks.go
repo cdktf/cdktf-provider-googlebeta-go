@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleAlloydbCluster) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAlloydbCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAlloydbCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAlloydbCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

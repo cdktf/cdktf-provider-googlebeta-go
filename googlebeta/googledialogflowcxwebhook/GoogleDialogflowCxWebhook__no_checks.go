@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxWebhook) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

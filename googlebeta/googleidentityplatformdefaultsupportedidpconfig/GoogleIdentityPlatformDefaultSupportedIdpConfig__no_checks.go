@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleIdentityPlatformDefaultSupportedIdpConfig) validateInte
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformDefaultSupportedIdpConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformDefaultSupportedIdpConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformDefaultSupportedIdpConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

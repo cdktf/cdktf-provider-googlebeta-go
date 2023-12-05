@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) validateI
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

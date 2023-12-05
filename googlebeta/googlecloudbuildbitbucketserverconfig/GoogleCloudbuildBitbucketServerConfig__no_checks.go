@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

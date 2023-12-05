@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleSqlSslCert) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlSslCert) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlSslCert) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSqlSslCert) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

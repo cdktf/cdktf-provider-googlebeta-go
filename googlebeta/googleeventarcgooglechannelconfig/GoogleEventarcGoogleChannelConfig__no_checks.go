@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEventarcGoogleChannelConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

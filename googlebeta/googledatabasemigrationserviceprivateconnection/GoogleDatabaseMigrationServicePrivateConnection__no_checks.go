@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateInte
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

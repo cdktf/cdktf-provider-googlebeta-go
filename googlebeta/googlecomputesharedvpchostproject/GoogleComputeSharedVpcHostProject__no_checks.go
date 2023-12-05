@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeSharedVpcHostProject) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSharedVpcHostProject) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSharedVpcHostProject) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSharedVpcHostProject) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

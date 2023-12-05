@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataproc_metastore_federation google_dataproc_metastore_federation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataproc_metastore_federation google_dataproc_metastore_federation}.
 type GoogleDataprocMetastoreFederation interface {
 	cdktf.TerraformResource
 	BackendMetastores() GoogleDataprocMetastoreFederationBackendMetastoresList
@@ -114,12 +114,22 @@ type GoogleDataprocMetastoreFederation interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -539,7 +549,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreFederation) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataproc_metastore_federation google_dataproc_metastore_federation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataproc_metastore_federation google_dataproc_metastore_federation} Resource.
 func NewGoogleDataprocMetastoreFederation(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreFederationConfig) GoogleDataprocMetastoreFederation {
 	_init_.Initialize()
 
@@ -557,7 +567,7 @@ func NewGoogleDataprocMetastoreFederation(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_dataproc_metastore_federation google_dataproc_metastore_federation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_dataproc_metastore_federation google_dataproc_metastore_federation} Resource.
 func NewGoogleDataprocMetastoreFederation_Override(g GoogleDataprocMetastoreFederation, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreFederationConfig) {
 	_init_.Initialize()
 
@@ -971,6 +981,19 @@ func (g *jsiiProxy_GoogleDataprocMetastoreFederation) GetStringMapAttribute(terr
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreFederation) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreFederation) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -998,6 +1021,17 @@ func (g *jsiiProxy_GoogleDataprocMetastoreFederation) InterpolationForAttribute(
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreFederation) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreFederation) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1006,6 +1040,17 @@ func (g *jsiiProxy_GoogleDataprocMetastoreFederation) MoveTo(moveTarget *string,
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreFederation) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

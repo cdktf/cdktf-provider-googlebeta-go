@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeNetworkAttachment) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNetworkAttachment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetworkAttachment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkAttachment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

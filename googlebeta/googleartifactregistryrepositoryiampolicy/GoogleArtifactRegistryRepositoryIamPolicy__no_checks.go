@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateInterpolat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

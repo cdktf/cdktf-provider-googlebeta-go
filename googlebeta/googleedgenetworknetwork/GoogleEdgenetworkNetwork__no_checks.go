@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleEdgenetworkNetwork) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgenetworkNetwork) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgenetworkNetwork) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgenetworkNetwork) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

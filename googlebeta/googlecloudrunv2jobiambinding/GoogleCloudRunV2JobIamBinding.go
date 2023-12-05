@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloud_run_v2_job_iam_binding google_cloud_run_v2_job_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloud_run_v2_job_iam_binding google_cloud_run_v2_job_iam_binding}.
 type GoogleCloudRunV2JobIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -106,12 +106,22 @@ type GoogleCloudRunV2JobIamBinding interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -449,7 +459,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloud_run_v2_job_iam_binding google_cloud_run_v2_job_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloud_run_v2_job_iam_binding google_cloud_run_v2_job_iam_binding} Resource.
 func NewGoogleCloudRunV2JobIamBinding(scope constructs.Construct, id *string, config *GoogleCloudRunV2JobIamBindingConfig) GoogleCloudRunV2JobIamBinding {
 	_init_.Initialize()
 
@@ -467,7 +477,7 @@ func NewGoogleCloudRunV2JobIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_cloud_run_v2_job_iam_binding google_cloud_run_v2_job_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_cloud_run_v2_job_iam_binding google_cloud_run_v2_job_iam_binding} Resource.
 func NewGoogleCloudRunV2JobIamBinding_Override(g GoogleCloudRunV2JobIamBinding, scope constructs.Construct, id *string, config *GoogleCloudRunV2JobIamBindingConfig) {
 	_init_.Initialize()
 
@@ -881,6 +891,19 @@ func (g *jsiiProxy_GoogleCloudRunV2JobIamBinding) GetStringMapAttribute(terrafor
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobIamBinding) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobIamBinding) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -908,6 +931,17 @@ func (g *jsiiProxy_GoogleCloudRunV2JobIamBinding) InterpolationForAttribute(terr
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobIamBinding) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobIamBinding) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -916,6 +950,17 @@ func (g *jsiiProxy_GoogleCloudRunV2JobIamBinding) MoveTo(moveTarget *string, ind
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2JobIamBinding) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

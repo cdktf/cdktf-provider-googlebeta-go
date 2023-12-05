@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleFirebaseWebApp) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseWebApp) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseWebApp) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseWebApp) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

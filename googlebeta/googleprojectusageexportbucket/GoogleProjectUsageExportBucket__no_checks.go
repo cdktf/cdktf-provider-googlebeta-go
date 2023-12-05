@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleProjectUsageExportBucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

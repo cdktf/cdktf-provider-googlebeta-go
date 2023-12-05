@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
@@ -68,6 +76,10 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validatePutMetadataFiltersParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value *GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations) error {
 	return nil
 }
 

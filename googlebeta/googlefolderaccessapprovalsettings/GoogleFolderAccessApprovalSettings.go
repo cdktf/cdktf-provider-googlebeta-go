@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings}.
 type GoogleFolderAccessApprovalSettings interface {
 	cdktf.TerraformResource
 	ActiveKeyVersion() *string
@@ -105,12 +105,22 @@ type GoogleFolderAccessApprovalSettings interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -459,7 +469,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettings) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings} Resource.
 func NewGoogleFolderAccessApprovalSettings(scope constructs.Construct, id *string, config *GoogleFolderAccessApprovalSettingsConfig) GoogleFolderAccessApprovalSettings {
 	_init_.Initialize()
 
@@ -477,7 +487,7 @@ func NewGoogleFolderAccessApprovalSettings(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_folder_access_approval_settings google_folder_access_approval_settings} Resource.
 func NewGoogleFolderAccessApprovalSettings_Override(g GoogleFolderAccessApprovalSettings, scope constructs.Construct, id *string, config *GoogleFolderAccessApprovalSettingsConfig) {
 	_init_.Initialize()
 
@@ -869,6 +879,19 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) GetStringMapAttribute(ter
 	return returns
 }
 
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -896,6 +919,17 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) InterpolationForAttribute
 	return returns
 }
 
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -904,6 +938,17 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) MoveTo(moveTarget *string
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettings) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

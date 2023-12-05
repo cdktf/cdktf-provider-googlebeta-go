@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePool) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

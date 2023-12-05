@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleVpcAccessConnector) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVpcAccessConnector) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVpcAccessConnector) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVpcAccessConnector) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

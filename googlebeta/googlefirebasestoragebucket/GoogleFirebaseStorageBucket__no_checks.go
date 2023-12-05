@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseStorageBucket) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

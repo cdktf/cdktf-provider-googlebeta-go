@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

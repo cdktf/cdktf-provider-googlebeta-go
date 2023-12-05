@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleFilestoreBackup) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFilestoreBackup) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreBackup) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFilestoreBackup) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

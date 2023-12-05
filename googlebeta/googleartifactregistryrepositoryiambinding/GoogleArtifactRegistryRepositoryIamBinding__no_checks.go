@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryIamBinding) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

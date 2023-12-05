@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDeploymentManagerDeployment) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

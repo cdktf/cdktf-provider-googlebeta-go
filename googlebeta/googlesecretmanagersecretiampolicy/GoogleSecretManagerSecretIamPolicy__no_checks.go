@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

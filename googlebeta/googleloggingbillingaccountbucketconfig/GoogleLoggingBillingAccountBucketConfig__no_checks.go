@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

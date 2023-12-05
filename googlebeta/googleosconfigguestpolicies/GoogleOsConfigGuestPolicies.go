@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_os_config_guest_policies google_os_config_guest_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_os_config_guest_policies google_os_config_guest_policies}.
 type GoogleOsConfigGuestPolicies interface {
 	cdktf.TerraformResource
 	Assignment() GoogleOsConfigGuestPoliciesAssignmentOutputReference
@@ -113,12 +113,22 @@ type GoogleOsConfigGuestPolicies interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -544,7 +554,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPolicies) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_os_config_guest_policies google_os_config_guest_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_os_config_guest_policies google_os_config_guest_policies} Resource.
 func NewGoogleOsConfigGuestPolicies(scope constructs.Construct, id *string, config *GoogleOsConfigGuestPoliciesConfig) GoogleOsConfigGuestPolicies {
 	_init_.Initialize()
 
@@ -562,7 +572,7 @@ func NewGoogleOsConfigGuestPolicies(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_os_config_guest_policies google_os_config_guest_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_os_config_guest_policies google_os_config_guest_policies} Resource.
 func NewGoogleOsConfigGuestPolicies_Override(g GoogleOsConfigGuestPolicies, scope constructs.Construct, id *string, config *GoogleOsConfigGuestPoliciesConfig) {
 	_init_.Initialize()
 
@@ -965,6 +975,19 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) GetStringMapAttribute(terraformA
 	return returns
 }
 
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleOsConfigGuestPolicies) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -992,6 +1015,17 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) InterpolationForAttribute(terraf
 	return returns
 }
 
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleOsConfigGuestPolicies) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -1000,6 +1034,17 @@ func (g *jsiiProxy_GoogleOsConfigGuestPolicies) MoveTo(moveTarget *string, index
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleOsConfigGuestPolicies) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevel) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevel) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAccessContextManagerAccessLevel) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevel) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

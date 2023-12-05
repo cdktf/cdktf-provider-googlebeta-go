@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityHub) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

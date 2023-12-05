@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleComputeSslCertificate) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSslCertificate) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSslCertificate) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSslCertificate) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

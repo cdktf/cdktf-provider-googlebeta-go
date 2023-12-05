@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleServiceDirectoryNamespaceIamMember) validateInterpolati
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceDirectoryNamespaceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceDirectoryNamespaceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceDirectoryNamespaceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

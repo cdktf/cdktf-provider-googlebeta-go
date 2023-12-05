@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleLoggingLogView) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingLogView) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingLogView) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingLogView) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

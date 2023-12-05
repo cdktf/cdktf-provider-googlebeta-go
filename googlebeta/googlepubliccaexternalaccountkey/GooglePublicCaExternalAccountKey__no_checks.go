@@ -59,7 +59,15 @@ func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePublicCaExternalAccountKey) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

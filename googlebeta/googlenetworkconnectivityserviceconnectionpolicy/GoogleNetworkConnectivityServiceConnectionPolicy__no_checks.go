@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateInt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

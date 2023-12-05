@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleVertexAiDataset) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiDataset) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiDataset) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiDataset) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

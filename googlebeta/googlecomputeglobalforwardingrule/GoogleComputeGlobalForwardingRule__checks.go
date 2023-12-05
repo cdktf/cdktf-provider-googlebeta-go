@@ -122,6 +122,14 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateMoveFromIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateMoveToParameters(moveTarget *string, index interface{}) error {
 	if moveTarget == nil {
 		return fmt.Errorf("parameter moveTarget is required, but nil was provided")
@@ -183,6 +191,14 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateMoveToParameters(m
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateMoveToIdParameters(id *string) error {
+	if id == nil {
+		return fmt.Errorf("parameter id is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
@@ -217,6 +233,17 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validatePutMetadataFilters
 		if !_jsii_.IsAnonymousProxy(value) {
 			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeGlobalForwardingRuleMetadataFilters; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) validatePutServiceDirectoryRegistrationsParameters(value *GoogleComputeGlobalForwardingRuleServiceDirectoryRegistrations) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
 	}
 
 	return nil

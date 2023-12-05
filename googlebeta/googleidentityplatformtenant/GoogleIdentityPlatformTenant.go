@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant}.
 type GoogleIdentityPlatformTenant interface {
 	cdktf.TerraformResource
 	AllowPasswordSignup() interface{}
@@ -106,12 +106,22 @@ type GoogleIdentityPlatformTenant interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
+	HasResourceMove() interface{}
+	// Experimental.
 	ImportFrom(id *string, provider cdktf.TerraformProvider)
 	// Experimental.
 	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	// Move the resource corresponding to "id" to this resource.
+	//
+	// Note that the resource being moved from must be marked as moved using it's instance function.
+	// Experimental.
+	MoveFromId(id *string)
 	// Moves this resource to the target resource given by moveTarget.
 	// Experimental.
 	MoveTo(moveTarget *string, index interface{})
+	// Moves this resource to the resource corresponding to "id".
+	// Experimental.
+	MoveToId(id *string)
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -451,7 +461,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenant) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource.
 func NewGoogleIdentityPlatformTenant(scope constructs.Construct, id *string, config *GoogleIdentityPlatformTenantConfig) GoogleIdentityPlatformTenant {
 	_init_.Initialize()
 
@@ -469,7 +479,7 @@ func NewGoogleIdentityPlatformTenant(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.7.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_identity_platform_tenant google_identity_platform_tenant} Resource.
 func NewGoogleIdentityPlatformTenant_Override(g GoogleIdentityPlatformTenant, scope constructs.Construct, id *string, config *GoogleIdentityPlatformTenantConfig) {
 	_init_.Initialize()
 
@@ -883,6 +893,19 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) GetStringMapAttribute(terraform
 	return returns
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) HasResourceMove() interface{} {
+	var returns interface{}
+
+	_jsii_.Invoke(
+		g,
+		"hasResourceMove",
+		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenant) ImportFrom(id *string, provider cdktf.TerraformProvider) {
 	if err := g.validateImportFromParameters(id); err != nil {
 		panic(err)
@@ -910,6 +933,17 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) InterpolationForAttribute(terra
 	return returns
 }
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) MoveFromId(id *string) {
+	if err := g.validateMoveFromIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveFromId",
+		[]interface{}{id},
+	)
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenant) MoveTo(moveTarget *string, index interface{}) {
 	if err := g.validateMoveToParameters(moveTarget, index); err != nil {
 		panic(err)
@@ -918,6 +952,17 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenant) MoveTo(moveTarget *string, inde
 		g,
 		"moveTo",
 		[]interface{}{moveTarget, index},
+	)
+}
+
+func (g *jsiiProxy_GoogleIdentityPlatformTenant) MoveToId(id *string) {
+	if err := g.validateMoveToIdParameters(id); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"moveToId",
+		[]interface{}{id},
 	)
 }
 

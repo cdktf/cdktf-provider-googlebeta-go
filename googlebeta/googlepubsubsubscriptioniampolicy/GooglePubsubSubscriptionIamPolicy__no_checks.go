@@ -59,7 +59,15 @@ func (g *jsiiProxy_GooglePubsubSubscriptionIamPolicy) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubSubscriptionIamPolicy) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionIamPolicy) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionIamPolicy) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

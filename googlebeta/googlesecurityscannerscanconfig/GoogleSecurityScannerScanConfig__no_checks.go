@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecurityScannerScanConfig) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

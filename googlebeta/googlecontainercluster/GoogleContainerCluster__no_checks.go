@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleContainerCluster) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

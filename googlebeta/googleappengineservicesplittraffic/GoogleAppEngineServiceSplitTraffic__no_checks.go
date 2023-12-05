@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAppEngineServiceSplitTraffic) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

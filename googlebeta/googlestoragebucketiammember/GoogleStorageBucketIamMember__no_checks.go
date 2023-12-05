@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleStorageBucketIamMember) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageBucketIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageBucketIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageBucketIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

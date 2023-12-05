@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

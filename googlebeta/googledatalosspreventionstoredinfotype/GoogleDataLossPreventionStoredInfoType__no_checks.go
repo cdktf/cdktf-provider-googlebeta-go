@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoType) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

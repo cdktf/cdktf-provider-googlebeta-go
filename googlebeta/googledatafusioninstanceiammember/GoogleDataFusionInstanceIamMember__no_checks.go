@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleDataFusionInstanceIamMember) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataFusionInstanceIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataFusionInstanceIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstanceIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

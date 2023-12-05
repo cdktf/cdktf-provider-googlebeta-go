@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkflowsWorkflow) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 

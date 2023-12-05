@@ -59,7 +59,15 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateMoveFromIdParameters(id *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateMoveToParameters(moveTarget *string, index interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNotebooksRuntimeIamMember) validateMoveToIdParameters(id *string) error {
 	return nil
 }
 
