@@ -56,6 +56,9 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	MatchesSuffix() *[]*string
 	SetMatchesSuffix(val *[]*string)
 	MatchesSuffixInput() *[]*string
+	NoAge() interface{}
+	SetNoAge(val interface{})
+	NoAgeInput() interface{}
 	NoncurrentTimeBefore() *string
 	SetNoncurrentTimeBefore(val *string)
 	NoncurrentTimeBeforeInput() *string
@@ -105,6 +108,7 @@ type GoogleStorageBucketLifecycleRuleConditionOutputReference interface {
 	ResetMatchesPrefix()
 	ResetMatchesStorageClass()
 	ResetMatchesSuffix()
+	ResetNoAge()
 	ResetNoncurrentTimeBefore()
 	ResetNumNewerVersions()
 	ResetWithState()
@@ -328,6 +332,26 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Mat
 	_jsii_.Get(
 		j,
 		"matchesSuffixInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) NoAge() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAge",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) NoAgeInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"noAgeInput",
 		&returns,
 	)
 	return returns
@@ -558,6 +582,17 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetM
 	_jsii_.Set(
 		j,
 		"matchesSuffix",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference)SetNoAge(val interface{}) {
+	if err := j.validateSetNoAgeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"noAge",
 		val,
 	)
 }
@@ -863,6 +898,14 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetMatchesSuffix",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) ResetNoAge() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNoAge",
 		nil, // no parameters
 	)
 }

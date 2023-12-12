@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment}.
 type GoogleComputeRegionDiskResourcePolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -425,7 +425,7 @@ func (j *jsiiProxy_GoogleComputeRegionDiskResourcePolicyAttachment) TimeoutsInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment} Resource.
 func NewGoogleComputeRegionDiskResourcePolicyAttachment(scope constructs.Construct, id *string, config *GoogleComputeRegionDiskResourcePolicyAttachmentConfig) GoogleComputeRegionDiskResourcePolicyAttachment {
 	_init_.Initialize()
 
@@ -443,7 +443,7 @@ func NewGoogleComputeRegionDiskResourcePolicyAttachment(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_region_disk_resource_policy_attachment google_compute_region_disk_resource_policy_attachment} Resource.
 func NewGoogleComputeRegionDiskResourcePolicyAttachment_Override(g GoogleComputeRegionDiskResourcePolicyAttachment, scope constructs.Construct, id *string, config *GoogleComputeRegionDiskResourcePolicyAttachmentConfig) {
 	_init_.Initialize()
 

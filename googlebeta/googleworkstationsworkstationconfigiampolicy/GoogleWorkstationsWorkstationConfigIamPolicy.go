@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy}.
 type GoogleWorkstationsWorkstationConfigIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigIamPolicy) WorkstationConf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy} Resource.
 func NewGoogleWorkstationsWorkstationConfigIamPolicy(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigIamPolicyConfig) GoogleWorkstationsWorkstationConfigIamPolicy {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleWorkstationsWorkstationConfigIamPolicy(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_workstations_workstation_config_iam_policy google_workstations_workstation_config_iam_policy} Resource.
 func NewGoogleWorkstationsWorkstationConfigIamPolicy_Override(g GoogleWorkstationsWorkstationConfigIamPolicy, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_bigquery_connection google_bigquery_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_connection google_bigquery_connection}.
 type GoogleBigqueryConnection interface {
 	cdktf.TerraformResource
 	Aws() GoogleBigqueryConnectionAwsOutputReference
@@ -85,6 +85,8 @@ type GoogleBigqueryConnection interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Spark() GoogleBigqueryConnectionSparkOutputReference
+	SparkInput() *GoogleBigqueryConnectionSpark
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -141,6 +143,7 @@ type GoogleBigqueryConnection interface {
 	PutCloudResource(value *GoogleBigqueryConnectionCloudResource)
 	PutCloudSpanner(value *GoogleBigqueryConnectionCloudSpanner)
 	PutCloudSql(value *GoogleBigqueryConnectionCloudSql)
+	PutSpark(value *GoogleBigqueryConnectionSpark)
 	PutTimeouts(value *GoogleBigqueryConnectionTimeouts)
 	ResetAws()
 	ResetAzure()
@@ -156,6 +159,7 @@ type GoogleBigqueryConnection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSpark()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	// Experimental.
@@ -542,6 +546,26 @@ func (j *jsiiProxy_GoogleBigqueryConnection) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryConnection) Spark() GoogleBigqueryConnectionSparkOutputReference {
+	var returns GoogleBigqueryConnectionSparkOutputReference
+	_jsii_.Get(
+		j,
+		"spark",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryConnection) SparkInput() *GoogleBigqueryConnectionSpark {
+	var returns *GoogleBigqueryConnectionSpark
+	_jsii_.Get(
+		j,
+		"sparkInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryConnection) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -593,7 +617,7 @@ func (j *jsiiProxy_GoogleBigqueryConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_bigquery_connection google_bigquery_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_connection google_bigquery_connection} Resource.
 func NewGoogleBigqueryConnection(scope constructs.Construct, id *string, config *GoogleBigqueryConnectionConfig) GoogleBigqueryConnection {
 	_init_.Initialize()
 
@@ -611,7 +635,7 @@ func NewGoogleBigqueryConnection(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_bigquery_connection google_bigquery_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_bigquery_connection google_bigquery_connection} Resource.
 func NewGoogleBigqueryConnection_Override(g GoogleBigqueryConnection, scope constructs.Construct, id *string, config *GoogleBigqueryConnectionConfig) {
 	_init_.Initialize()
 
@@ -1164,6 +1188,17 @@ func (g *jsiiProxy_GoogleBigqueryConnection) PutCloudSql(value *GoogleBigqueryCo
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryConnection) PutSpark(value *GoogleBigqueryConnectionSpark) {
+	if err := g.validatePutSparkParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSpark",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryConnection) PutTimeouts(value *GoogleBigqueryConnectionTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1267,6 +1302,14 @@ func (g *jsiiProxy_GoogleBigqueryConnection) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryConnection) ResetSpark() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSpark",
 		nil, // no parameters
 	)
 }

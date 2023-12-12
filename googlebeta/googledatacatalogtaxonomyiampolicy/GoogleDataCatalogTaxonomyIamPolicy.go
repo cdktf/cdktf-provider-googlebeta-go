@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy}.
 type GoogleDataCatalogTaxonomyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleDataCatalogTaxonomyIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy} Resource.
 func NewGoogleDataCatalogTaxonomyIamPolicy(scope constructs.Construct, id *string, config *GoogleDataCatalogTaxonomyIamPolicyConfig) GoogleDataCatalogTaxonomyIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleDataCatalogTaxonomyIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_data_catalog_taxonomy_iam_policy google_data_catalog_taxonomy_iam_policy} Resource.
 func NewGoogleDataCatalogTaxonomyIamPolicy_Override(g GoogleDataCatalogTaxonomyIamPolicy, scope constructs.Construct, id *string, config *GoogleDataCatalogTaxonomyIamPolicyConfig) {
 	_init_.Initialize()
 

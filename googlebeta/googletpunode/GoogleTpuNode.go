@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_tpu_node google_tpu_node}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_tpu_node google_tpu_node}.
 type GoogleTpuNode interface {
 	cdktf.TerraformResource
 	AcceleratorType() *string
@@ -636,7 +636,7 @@ func (j *jsiiProxy_GoogleTpuNode) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_tpu_node google_tpu_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_tpu_node google_tpu_node} Resource.
 func NewGoogleTpuNode(scope constructs.Construct, id *string, config *GoogleTpuNodeConfig) GoogleTpuNode {
 	_init_.Initialize()
 
@@ -654,7 +654,7 @@ func NewGoogleTpuNode(scope constructs.Construct, id *string, config *GoogleTpuN
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_tpu_node google_tpu_node} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_tpu_node google_tpu_node} Resource.
 func NewGoogleTpuNode_Override(g GoogleTpuNode, scope constructs.Construct, id *string, config *GoogleTpuNodeConfig) {
 	_init_.Initialize()
 

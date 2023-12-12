@@ -62,6 +62,8 @@ type GoogleContainerClusterNodePoolOutputReference interface {
 	NodeLocationsInput() *[]*string
 	PlacementPolicy() GoogleContainerClusterNodePoolPlacementPolicyOutputReference
 	PlacementPolicyInput() *GoogleContainerClusterNodePoolPlacementPolicy
+	QueuedProvisioning() GoogleContainerClusterNodePoolQueuedProvisioningOutputReference
+	QueuedProvisioningInput() *GoogleContainerClusterNodePoolQueuedProvisioning
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -104,6 +106,7 @@ type GoogleContainerClusterNodePoolOutputReference interface {
 	PutNetworkConfig(value *GoogleContainerClusterNodePoolNetworkConfig)
 	PutNodeConfig(value *GoogleContainerClusterNodePoolNodeConfig)
 	PutPlacementPolicy(value *GoogleContainerClusterNodePoolPlacementPolicy)
+	PutQueuedProvisioning(value *GoogleContainerClusterNodePoolQueuedProvisioning)
 	PutUpgradeSettings(value *GoogleContainerClusterNodePoolUpgradeSettings)
 	ResetAutoscaling()
 	ResetInitialNodeCount()
@@ -116,6 +119,7 @@ type GoogleContainerClusterNodePoolOutputReference interface {
 	ResetNodeCount()
 	ResetNodeLocations()
 	ResetPlacementPolicy()
+	ResetQueuedProvisioning()
 	ResetUpgradeSettings()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
@@ -418,6 +422,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PlacementPolic
 	_jsii_.Get(
 		j,
 		"placementPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) QueuedProvisioning() GoogleContainerClusterNodePoolQueuedProvisioningOutputReference {
+	var returns GoogleContainerClusterNodePoolQueuedProvisioningOutputReference
+	_jsii_.Get(
+		j,
+		"queuedProvisioning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) QueuedProvisioningInput() *GoogleContainerClusterNodePoolQueuedProvisioning {
+	var returns *GoogleContainerClusterNodePoolQueuedProvisioning
+	_jsii_.Get(
+		j,
+		"queuedProvisioningInput",
 		&returns,
 	)
 	return returns
@@ -884,6 +908,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutPlacementPo
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutQueuedProvisioning(value *GoogleContainerClusterNodePoolQueuedProvisioning) {
+	if err := g.validatePutQueuedProvisioningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putQueuedProvisioning",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) PutUpgradeSettings(value *GoogleContainerClusterNodePoolUpgradeSettings) {
 	if err := g.validatePutUpgradeSettingsParameters(value); err != nil {
 		panic(err)
@@ -979,6 +1014,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) ResetPlacement
 	_jsii_.InvokeVoid(
 		g,
 		"resetPlacementPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolOutputReference) ResetQueuedProvisioning() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetQueuedProvisioning",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_iam_policy google_compute_backend_bucket_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_policy google_compute_backend_bucket_iam_policy}.
 type GoogleComputeBackendBucketIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucketIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_iam_policy google_compute_backend_bucket_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_policy google_compute_backend_bucket_iam_policy} Resource.
 func NewGoogleComputeBackendBucketIamPolicy(scope constructs.Construct, id *string, config *GoogleComputeBackendBucketIamPolicyConfig) GoogleComputeBackendBucketIamPolicy {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewGoogleComputeBackendBucketIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_compute_backend_bucket_iam_policy google_compute_backend_bucket_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_backend_bucket_iam_policy google_compute_backend_bucket_iam_policy} Resource.
 func NewGoogleComputeBackendBucketIamPolicy_Override(g GoogleComputeBackendBucketIamPolicy, scope constructs.Construct, id *string, config *GoogleComputeBackendBucketIamPolicyConfig) {
 	_init_.Initialize()
 

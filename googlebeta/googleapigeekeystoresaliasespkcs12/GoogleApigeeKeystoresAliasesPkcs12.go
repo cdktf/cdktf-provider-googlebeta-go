@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12}.
 type GoogleApigeeKeystoresAliasesPkcs12 interface {
 	cdktf.TerraformResource
 	Alias() *string
@@ -515,7 +515,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource.
 func NewGoogleApigeeKeystoresAliasesPkcs12(scope constructs.Construct, id *string, config *GoogleApigeeKeystoresAliasesPkcs12Config) GoogleApigeeKeystoresAliasesPkcs12 {
 	_init_.Initialize()
 
@@ -533,7 +533,7 @@ func NewGoogleApigeeKeystoresAliasesPkcs12(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_apigee_keystores_aliases_pkcs12 google_apigee_keystores_aliases_pkcs12} Resource.
 func NewGoogleApigeeKeystoresAliasesPkcs12_Override(g GoogleApigeeKeystoresAliasesPkcs12, scope constructs.Construct, id *string, config *GoogleApigeeKeystoresAliasesPkcs12Config) {
 	_init_.Initialize()
 

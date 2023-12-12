@@ -7,7 +7,7 @@ package googlecontainerattachedcluster
 type GoogleContainerAttachedClusterProxyConfig struct {
 	// kubernetes_secret block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_container_attached_cluster#kubernetes_secret GoogleContainerAttachedCluster#kubernetes_secret}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_container_attached_cluster#kubernetes_secret GoogleContainerAttachedCluster#kubernetes_secret}
 	KubernetesSecret *GoogleContainerAttachedClusterProxyConfigKubernetesSecret `field:"optional" json:"kubernetesSecret" yaml:"kubernetesSecret"`
 }
 

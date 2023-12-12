@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member}.
 type GooglePrivatecaCertificateTemplateIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -459,7 +459,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplateIamMember) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member} Resource.
 func NewGooglePrivatecaCertificateTemplateIamMember(scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateIamMemberConfig) GooglePrivatecaCertificateTemplateIamMember {
 	_init_.Initialize()
 
@@ -477,7 +477,7 @@ func NewGooglePrivatecaCertificateTemplateIamMember(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_privateca_certificate_template_iam_member google_privateca_certificate_template_iam_member} Resource.
 func NewGooglePrivatecaCertificateTemplateIamMember_Override(g GooglePrivatecaCertificateTemplateIamMember, scope constructs.Construct, id *string, config *GooglePrivatecaCertificateTemplateIamMemberConfig) {
 	_init_.Initialize()
 

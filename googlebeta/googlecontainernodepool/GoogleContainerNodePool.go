@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_container_node_pool google_container_node_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_container_node_pool google_container_node_pool}.
 type GoogleContainerNodePool interface {
 	cdktf.TerraformResource
 	Autoscaling() GoogleContainerNodePoolAutoscalingOutputReference
@@ -96,6 +96,8 @@ type GoogleContainerNodePool interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	QueuedProvisioning() GoogleContainerNodePoolQueuedProvisioningOutputReference
+	QueuedProvisioningInput() *GoogleContainerNodePoolQueuedProvisioning
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
@@ -159,6 +161,7 @@ type GoogleContainerNodePool interface {
 	PutNetworkConfig(value *GoogleContainerNodePoolNetworkConfig)
 	PutNodeConfig(value *GoogleContainerNodePoolNodeConfig)
 	PutPlacementPolicy(value *GoogleContainerNodePoolPlacementPolicy)
+	PutQueuedProvisioning(value *GoogleContainerNodePoolQueuedProvisioning)
 	PutTimeouts(value *GoogleContainerNodePoolTimeouts)
 	PutUpgradeSettings(value *GoogleContainerNodePoolUpgradeSettings)
 	ResetAutoscaling()
@@ -178,6 +181,7 @@ type GoogleContainerNodePool interface {
 	ResetOverrideLogicalId()
 	ResetPlacementPolicy()
 	ResetProject()
+	ResetQueuedProvisioning()
 	ResetTimeouts()
 	ResetUpgradeSettings()
 	ResetVersion()
@@ -646,6 +650,26 @@ func (j *jsiiProxy_GoogleContainerNodePool) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerNodePool) QueuedProvisioning() GoogleContainerNodePoolQueuedProvisioningOutputReference {
+	var returns GoogleContainerNodePoolQueuedProvisioningOutputReference
+	_jsii_.Get(
+		j,
+		"queuedProvisioning",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePool) QueuedProvisioningInput() *GoogleContainerNodePoolQueuedProvisioning {
+	var returns *GoogleContainerNodePoolQueuedProvisioning
+	_jsii_.Get(
+		j,
+		"queuedProvisioningInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerNodePool) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -747,7 +771,7 @@ func (j *jsiiProxy_GoogleContainerNodePool) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_container_node_pool google_container_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_container_node_pool google_container_node_pool} Resource.
 func NewGoogleContainerNodePool(scope constructs.Construct, id *string, config *GoogleContainerNodePoolConfig) GoogleContainerNodePool {
 	_init_.Initialize()
 
@@ -765,7 +789,7 @@ func NewGoogleContainerNodePool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_container_node_pool google_container_node_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_container_node_pool google_container_node_pool} Resource.
 func NewGoogleContainerNodePool_Override(g GoogleContainerNodePool, scope constructs.Construct, id *string, config *GoogleContainerNodePoolConfig) {
 	_init_.Initialize()
 
@@ -1373,6 +1397,17 @@ func (g *jsiiProxy_GoogleContainerNodePool) PutPlacementPolicy(value *GoogleCont
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePool) PutQueuedProvisioning(value *GoogleContainerNodePoolQueuedProvisioning) {
+	if err := g.validatePutQueuedProvisioningParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putQueuedProvisioning",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePool) PutTimeouts(value *GoogleContainerNodePoolTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1511,6 +1546,14 @@ func (g *jsiiProxy_GoogleContainerNodePool) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePool) ResetQueuedProvisioning() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetQueuedProvisioning",
 		nil, // no parameters
 	)
 }

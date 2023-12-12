@@ -95,6 +95,10 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetNoAgeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference) validateSetNoncurrentTimeBeforeParameters(val *string) error {
 	return nil
 }

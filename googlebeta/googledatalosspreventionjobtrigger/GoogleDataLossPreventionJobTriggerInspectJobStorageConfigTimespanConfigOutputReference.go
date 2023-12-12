@@ -79,6 +79,7 @@ type GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutp
 	ResetEnableAutoPopulationOfTimespanConfig()
 	ResetEndTime()
 	ResetStartTime()
+	ResetTimestampField()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -577,6 +578,14 @@ func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTime
 	_jsii_.InvokeVoid(
 		g,
 		"resetStartTime",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionJobTriggerInspectJobStorageConfigTimespanConfigOutputReference) ResetTimestampField() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTimestampField",
 		nil, // no parameters
 	)
 }

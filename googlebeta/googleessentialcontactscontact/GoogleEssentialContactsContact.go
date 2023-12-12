@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact}.
 type GoogleEssentialContactsContact interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -434,7 +434,7 @@ func (j *jsiiProxy_GoogleEssentialContactsContact) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact} Resource.
 func NewGoogleEssentialContactsContact(scope constructs.Construct, id *string, config *GoogleEssentialContactsContactConfig) GoogleEssentialContactsContact {
 	_init_.Initialize()
 
@@ -452,7 +452,7 @@ func NewGoogleEssentialContactsContact(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.8.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_essential_contacts_contact google_essential_contacts_contact} Resource.
 func NewGoogleEssentialContactsContact_Override(g GoogleEssentialContactsContact, scope constructs.Construct, id *string, config *GoogleEssentialContactsContactConfig) {
 	_init_.Initialize()
 
