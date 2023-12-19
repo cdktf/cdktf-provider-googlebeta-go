@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validateOverrideLogicalIdP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validatePutPrivateConfigParameters(value *GoogleSecureSourceManagerInstancePrivateConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecureSourceManagerInstance) validatePutTimeoutsParameters(value *GoogleSecureSourceManagerInstanceTimeouts) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstance) validateSetIdParameters(va
 }
 
 func (j *jsiiProxy_GoogleSecureSourceManagerInstance) validateSetInstanceIdParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance) validateSetKmsKeyParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_storage_bucket google_storage_bucket}.
 type GoogleStorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() GoogleStorageBucketAutoclassOutputReference
@@ -100,6 +100,9 @@ type GoogleStorageBucket interface {
 	RequesterPaysInput() interface{}
 	RetentionPolicy() GoogleStorageBucketRetentionPolicyOutputReference
 	RetentionPolicyInput() *GoogleStorageBucketRetentionPolicy
+	Rpo() *string
+	SetRpo(val *string)
+	RpoInput() *string
 	SelfLink() *string
 	StorageClass() *string
 	SetStorageClass(val *string)
@@ -192,6 +195,7 @@ type GoogleStorageBucket interface {
 	ResetPublicAccessPrevention()
 	ResetRequesterPays()
 	ResetRetentionPolicy()
+	ResetRpo()
 	ResetStorageClass()
 	ResetTimeouts()
 	ResetUniformBucketLevelAccess()
@@ -692,6 +696,26 @@ func (j *jsiiProxy_GoogleStorageBucket) RetentionPolicyInput() *GoogleStorageBuc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucket) Rpo() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rpo",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) RpoInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"rpoInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucket) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -853,7 +877,7 @@ func (j *jsiiProxy_GoogleStorageBucket) WebsiteInput() *GoogleStorageBucketWebsi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) GoogleStorageBucket {
 	_init_.Initialize()
 
@@ -871,7 +895,7 @@ func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket_Override(g GoogleStorageBucket, scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) {
 	_init_.Initialize()
 
@@ -1056,6 +1080,17 @@ func (j *jsiiProxy_GoogleStorageBucket)SetRequesterPays(val interface{}) {
 	_jsii_.Set(
 		j,
 		"requesterPays",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleStorageBucket)SetRpo(val *string) {
+	if err := j.validateSetRpoParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rpo",
 		val,
 	)
 }
@@ -1669,6 +1704,14 @@ func (g *jsiiProxy_GoogleStorageBucket) ResetRetentionPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRetentionPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) ResetRpo() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRpo",
 		nil, // no parameters
 	)
 }

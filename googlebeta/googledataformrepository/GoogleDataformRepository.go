@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataform_repository google_dataform_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataform_repository google_dataform_repository}.
 type GoogleDataformRepository interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,10 @@ type GoogleDataformRepository interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisplayName() *string
+	SetDisplayName(val *string)
+	DisplayNameInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -44,6 +48,9 @@ type GoogleDataformRepository interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -53,6 +60,9 @@ type GoogleDataformRepository interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	NpmrcEnvironmentVariablesSecretVersion() *string
+	SetNpmrcEnvironmentVariablesSecretVersion(val *string)
+	NpmrcEnvironmentVariablesSecretVersionInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -74,6 +84,7 @@ type GoogleDataformRepository interface {
 	ServiceAccountInput() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -128,8 +139,11 @@ type GoogleDataformRepository interface {
 	PutGitRemoteSettings(value *GoogleDataformRepositoryGitRemoteSettings)
 	PutTimeouts(value *GoogleDataformRepositoryTimeouts)
 	PutWorkspaceCompilationOverrides(value *GoogleDataformRepositoryWorkspaceCompilationOverrides)
+	ResetDisplayName()
 	ResetGitRemoteSettings()
 	ResetId()
+	ResetLabels()
+	ResetNpmrcEnvironmentVariablesSecretVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -198,6 +212,36 @@ func (j *jsiiProxy_GoogleDataformRepository) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) DisplayName() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) DisplayNameInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"displayNameInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -273,6 +317,26 @@ func (j *jsiiProxy_GoogleDataformRepository) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataformRepository) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -308,6 +372,26 @@ func (j *jsiiProxy_GoogleDataformRepository) Node() constructs.Node {
 	_jsii_.Get(
 		j,
 		"node",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) NpmrcEnvironmentVariablesSecretVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"npmrcEnvironmentVariablesSecretVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataformRepository) NpmrcEnvironmentVariablesSecretVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"npmrcEnvironmentVariablesSecretVersionInput",
 		&returns,
 	)
 	return returns
@@ -413,6 +497,16 @@ func (j *jsiiProxy_GoogleDataformRepository) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataformRepository) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataformRepository) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -474,7 +568,7 @@ func (j *jsiiProxy_GoogleDataformRepository) WorkspaceCompilationOverridesInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository(scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) GoogleDataformRepository {
 	_init_.Initialize()
 
@@ -492,7 +586,7 @@ func NewGoogleDataformRepository(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_dataform_repository google_dataform_repository} Resource.
 func NewGoogleDataformRepository_Override(g GoogleDataformRepository, scope constructs.Construct, id *string, config *GoogleDataformRepositoryConfig) {
 	_init_.Initialize()
 
@@ -533,6 +627,17 @@ func (j *jsiiProxy_GoogleDataformRepository)SetDependsOn(val *[]*string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleDataformRepository)SetDisplayName(val *string) {
+	if err := j.validateSetDisplayNameParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"displayName",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleDataformRepository)SetForEach(val cdktf.ITerraformIterator) {
 	_jsii_.Set(
 		j,
@@ -548,6 +653,17 @@ func (j *jsiiProxy_GoogleDataformRepository)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataformRepository)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -570,6 +686,17 @@ func (j *jsiiProxy_GoogleDataformRepository)SetName(val *string) {
 	_jsii_.Set(
 		j,
 		"name",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataformRepository)SetNpmrcEnvironmentVariablesSecretVersion(val *string) {
+	if err := j.validateSetNpmrcEnvironmentVariablesSecretVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"npmrcEnvironmentVariablesSecretVersion",
 		val,
 	)
 }
@@ -1012,6 +1139,14 @@ func (g *jsiiProxy_GoogleDataformRepository) PutWorkspaceCompilationOverrides(va
 	)
 }
 
+func (g *jsiiProxy_GoogleDataformRepository) ResetDisplayName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDataformRepository) ResetGitRemoteSettings() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1024,6 +1159,22 @@ func (g *jsiiProxy_GoogleDataformRepository) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataformRepository) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataformRepository) ResetNpmrcEnvironmentVariablesSecretVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNpmrcEnvironmentVariablesSecretVersion",
 		nil, // no parameters
 	)
 }

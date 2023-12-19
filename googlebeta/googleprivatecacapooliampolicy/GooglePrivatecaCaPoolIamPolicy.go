@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_privateca_ca_pool_iam_policy google_privateca_ca_pool_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_privateca_ca_pool_iam_policy google_privateca_ca_pool_iam_policy}.
 type GooglePrivatecaCaPoolIamPolicy interface {
 	cdktf.TerraformResource
 	CaPool() *string
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolIamPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_privateca_ca_pool_iam_policy google_privateca_ca_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_privateca_ca_pool_iam_policy google_privateca_ca_pool_iam_policy} Resource.
 func NewGooglePrivatecaCaPoolIamPolicy(scope constructs.Construct, id *string, config *GooglePrivatecaCaPoolIamPolicyConfig) GooglePrivatecaCaPoolIamPolicy {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGooglePrivatecaCaPoolIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_privateca_ca_pool_iam_policy google_privateca_ca_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_privateca_ca_pool_iam_policy google_privateca_ca_pool_iam_policy} Resource.
 func NewGooglePrivatecaCaPoolIamPolicy_Override(g GooglePrivatecaCaPoolIamPolicy, scope constructs.Construct, id *string, config *GooglePrivatecaCaPoolIamPolicyConfig) {
 	_init_.Initialize()
 

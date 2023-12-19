@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_project_default_network_tier google_compute_project_default_network_tier}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_project_default_network_tier google_compute_project_default_network_tier}.
 type GoogleComputeProjectDefaultNetworkTier interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_GoogleComputeProjectDefaultNetworkTier) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_project_default_network_tier google_compute_project_default_network_tier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_project_default_network_tier google_compute_project_default_network_tier} Resource.
 func NewGoogleComputeProjectDefaultNetworkTier(scope constructs.Construct, id *string, config *GoogleComputeProjectDefaultNetworkTierConfig) GoogleComputeProjectDefaultNetworkTier {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewGoogleComputeProjectDefaultNetworkTier(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_project_default_network_tier google_compute_project_default_network_tier} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_project_default_network_tier google_compute_project_default_network_tier} Resource.
 func NewGoogleComputeProjectDefaultNetworkTier_Override(g GoogleComputeProjectDefaultNetworkTier, scope constructs.Construct, id *string, config *GoogleComputeProjectDefaultNetworkTierConfig) {
 	_init_.Initialize()
 

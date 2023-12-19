@@ -83,6 +83,10 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) validatePutOidcParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) validatePutSamlParameters(value *GoogleIamWorkloadIdentityPoolProviderSaml) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) validatePutTimeoutsParameters(value *GoogleIamWorkloadIdentityPoolProviderTimeouts) error {
 	return nil
 }

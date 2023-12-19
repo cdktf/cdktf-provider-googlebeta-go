@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config}.
 type GoogleCertificateManagerTrustConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -517,7 +517,7 @@ func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
 func NewGoogleCertificateManagerTrustConfig(scope constructs.Construct, id *string, config *GoogleCertificateManagerTrustConfigConfig) GoogleCertificateManagerTrustConfig {
 	_init_.Initialize()
 
@@ -535,7 +535,7 @@ func NewGoogleCertificateManagerTrustConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
 func NewGoogleCertificateManagerTrustConfig_Override(g GoogleCertificateManagerTrustConfig, scope constructs.Construct, id *string, config *GoogleCertificateManagerTrustConfigConfig) {
 	_init_.Initialize()
 

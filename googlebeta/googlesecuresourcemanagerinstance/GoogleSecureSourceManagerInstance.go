@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance}.
 type GoogleSecureSourceManagerInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -41,12 +41,16 @@ type GoogleSecureSourceManagerInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	HostConfig() GoogleSecureSourceManagerInstanceHostConfigList
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
 	InstanceId() *string
 	SetInstanceId(val *string)
 	InstanceIdInput() *string
+	KmsKey() *string
+	SetKmsKey(val *string)
+	KmsKeyInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -60,6 +64,8 @@ type GoogleSecureSourceManagerInstance interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	PrivateConfig() GoogleSecureSourceManagerInstancePrivateConfigOutputReference
+	PrivateConfigInput() *GoogleSecureSourceManagerInstancePrivateConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -74,6 +80,7 @@ type GoogleSecureSourceManagerInstance interface {
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
+	StateNote() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -127,12 +134,15 @@ type GoogleSecureSourceManagerInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPrivateConfig(value *GoogleSecureSourceManagerInstancePrivateConfig)
 	PutTimeouts(value *GoogleSecureSourceManagerInstanceTimeouts)
 	ResetId()
+	ResetKmsKey()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPrivateConfig()
 	ResetProject()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -250,6 +260,16 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstance) FriendlyUniqueId() *string
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance) HostConfig() GoogleSecureSourceManagerInstanceHostConfigList {
+	var returns GoogleSecureSourceManagerInstanceHostConfigList
+	_jsii_.Get(
+		j,
+		"hostConfig",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSecureSourceManagerInstance) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -285,6 +305,26 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstance) InstanceIdInput() *string 
 	_jsii_.Get(
 		j,
 		"instanceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance) KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
 		&returns,
 	)
 	return returns
@@ -360,6 +400,26 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance) PrivateConfig() GoogleSecureSourceManagerInstancePrivateConfigOutputReference {
+	var returns GoogleSecureSourceManagerInstancePrivateConfigOutputReference
+	_jsii_.Get(
+		j,
+		"privateConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance) PrivateConfigInput() *GoogleSecureSourceManagerInstancePrivateConfig {
+	var returns *GoogleSecureSourceManagerInstancePrivateConfig
+	_jsii_.Get(
+		j,
+		"privateConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSecureSourceManagerInstance) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -415,6 +475,16 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstance) State() *string {
 	_jsii_.Get(
 		j,
 		"state",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance) StateNote() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"stateNote",
 		&returns,
 	)
 	return returns
@@ -491,7 +561,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewGoogleSecureSourceManagerInstance(scope constructs.Construct, id *string, config *GoogleSecureSourceManagerInstanceConfig) GoogleSecureSourceManagerInstance {
 	_init_.Initialize()
 
@@ -509,7 +579,7 @@ func NewGoogleSecureSourceManagerInstance(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_secure_source_manager_instance google_secure_source_manager_instance} Resource.
 func NewGoogleSecureSourceManagerInstance_Override(g GoogleSecureSourceManagerInstance, scope constructs.Construct, id *string, config *GoogleSecureSourceManagerInstanceConfig) {
 	_init_.Initialize()
 
@@ -576,6 +646,17 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstance)SetInstanceId(val *string) 
 	_jsii_.Set(
 		j,
 		"instanceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSecureSourceManagerInstance)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKey",
 		val,
 	)
 }
@@ -996,6 +1077,17 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstance) OverrideLogicalId(newLogic
 	)
 }
 
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) PutPrivateConfig(value *GoogleSecureSourceManagerInstancePrivateConfig) {
+	if err := g.validatePutPrivateConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPrivateConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSecureSourceManagerInstance) PutTimeouts(value *GoogleSecureSourceManagerInstanceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1015,6 +1107,14 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstance) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKey",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSecureSourceManagerInstance) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1027,6 +1127,14 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSecureSourceManagerInstance) ResetPrivateConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateConfig",
 		nil, // no parameters
 	)
 }

@@ -35,6 +35,9 @@ type GoogleContainerAzureNodePoolConfigAOutputReference interface {
 	ImageTypeInput() *string
 	InternalValue() *GoogleContainerAzureNodePoolConfigA
 	SetInternalValue(val *GoogleContainerAzureNodePoolConfigA)
+	Labels() *map[string]*string
+	SetLabels(val *map[string]*string)
+	LabelsInput() *map[string]*string
 	ProxyConfig() GoogleContainerAzureNodePoolConfigProxyConfigOutputReference
 	ProxyConfigInput() *GoogleContainerAzureNodePoolConfigProxyConfig
 	RootVolume() GoogleContainerAzureNodePoolConfigRootVolumeOutputReference
@@ -83,6 +86,7 @@ type GoogleContainerAzureNodePoolConfigAOutputReference interface {
 	PutRootVolume(value *GoogleContainerAzureNodePoolConfigRootVolume)
 	PutSshConfig(value *GoogleContainerAzureNodePoolConfigSshConfig)
 	ResetImageType()
+	ResetLabels()
 	ResetProxyConfig()
 	ResetRootVolume()
 	ResetTags()
@@ -167,6 +171,26 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) InternalV
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) Labels() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) LabelsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"labelsInput",
 		&returns,
 	)
 	return returns
@@ -360,6 +384,17 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetInterna
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference)SetLabels(val *map[string]*string) {
+	if err := j.validateSetLabelsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"labels",
 		val,
 	)
 }
@@ -631,6 +666,14 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) ResetImag
 	_jsii_.InvokeVoid(
 		g,
 		"resetImageType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) ResetLabels() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLabels",
 		nil, // no parameters
 	)
 }

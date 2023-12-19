@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline}.
 type GoogleClouddeployDeliveryPipeline interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -609,7 +609,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipeline) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
 func NewGoogleClouddeployDeliveryPipeline(scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineConfig) GoogleClouddeployDeliveryPipeline {
 	_init_.Initialize()
 
@@ -627,7 +627,7 @@ func NewGoogleClouddeployDeliveryPipeline(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_clouddeploy_delivery_pipeline google_clouddeploy_delivery_pipeline} Resource.
 func NewGoogleClouddeployDeliveryPipeline_Override(g GoogleClouddeployDeliveryPipeline, scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineConfig) {
 	_init_.Initialize()
 

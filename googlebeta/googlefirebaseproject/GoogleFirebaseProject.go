@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_firebase_project google_firebase_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_firebase_project google_firebase_project}.
 type GoogleFirebaseProject interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleFirebaseProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_firebase_project google_firebase_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_firebase_project google_firebase_project} Resource.
 func NewGoogleFirebaseProject(scope constructs.Construct, id *string, config *GoogleFirebaseProjectConfig) GoogleFirebaseProject {
 	_init_.Initialize()
 
@@ -395,7 +395,7 @@ func NewGoogleFirebaseProject(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_firebase_project google_firebase_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_firebase_project google_firebase_project} Resource.
 func NewGoogleFirebaseProject_Override(g GoogleFirebaseProject, scope constructs.Construct, id *string, config *GoogleFirebaseProjectConfig) {
 	_init_.Initialize()
 

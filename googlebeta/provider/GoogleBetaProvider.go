@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -491,6 +491,9 @@ type GoogleBetaProvider interface {
 	VpcAccessCustomEndpoint() *string
 	SetVpcAccessCustomEndpoint(val *string)
 	VpcAccessCustomEndpointInput() *string
+	WorkbenchCustomEndpoint() *string
+	SetWorkbenchCustomEndpoint(val *string)
+	WorkbenchCustomEndpointInput() *string
 	WorkflowsCustomEndpoint() *string
 	SetWorkflowsCustomEndpoint(val *string)
 	WorkflowsCustomEndpointInput() *string
@@ -660,6 +663,7 @@ type GoogleBetaProvider interface {
 	ResetVertexAiCustomEndpoint()
 	ResetVmwareengineCustomEndpoint()
 	ResetVpcAccessCustomEndpoint()
+	ResetWorkbenchCustomEndpoint()
 	ResetWorkflowsCustomEndpoint()
 	ResetWorkstationsCustomEndpoint()
 	ResetZone()
@@ -3818,6 +3822,26 @@ func (j *jsiiProxy_GoogleBetaProvider) VpcAccessCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) WorkbenchCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workbenchCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) WorkbenchCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"workbenchCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) WorkflowsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3879,7 +3903,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3897,7 +3921,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -5126,6 +5150,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetVpcAccessCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"vpcAccessCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetWorkbenchCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"workbenchCustomEndpoint",
 		val,
 	)
 }
@@ -6499,6 +6531,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetVpcAccessCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetVpcAccessCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetWorkbenchCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWorkbenchCustomEndpoint",
 		nil, // no parameters
 	)
 }

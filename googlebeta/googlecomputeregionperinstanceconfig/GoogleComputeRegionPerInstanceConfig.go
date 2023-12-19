@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config}.
 type GoogleComputeRegionPerInstanceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -78,6 +78,9 @@ type GoogleComputeRegionPerInstanceConfig interface {
 	RegionInstanceGroupManager() *string
 	SetRegionInstanceGroupManager(val *string)
 	RegionInstanceGroupManagerInput() *string
+	RemoveInstanceOnDestroy() interface{}
+	SetRemoveInstanceOnDestroy(val interface{})
+	RemoveInstanceOnDestroyInput() interface{}
 	RemoveInstanceStateOnDestroy() interface{}
 	SetRemoveInstanceStateOnDestroy(val interface{})
 	RemoveInstanceStateOnDestroyInput() interface{}
@@ -143,6 +146,7 @@ type GoogleComputeRegionPerInstanceConfig interface {
 	ResetPreservedState()
 	ResetProject()
 	ResetRegion()
+	ResetRemoveInstanceOnDestroy()
 	ResetRemoveInstanceStateOnDestroy()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -450,6 +454,26 @@ func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) RegionInstanceGroupMana
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) RemoveInstanceOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeInstanceOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) RemoveInstanceOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"removeInstanceOnDestroyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) RemoveInstanceStateOnDestroy() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -521,7 +545,7 @@ func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
 func NewGoogleComputeRegionPerInstanceConfig(scope constructs.Construct, id *string, config *GoogleComputeRegionPerInstanceConfigConfig) GoogleComputeRegionPerInstanceConfig {
 	_init_.Initialize()
 
@@ -539,7 +563,7 @@ func NewGoogleComputeRegionPerInstanceConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_compute_region_per_instance_config google_compute_region_per_instance_config} Resource.
 func NewGoogleComputeRegionPerInstanceConfig_Override(g GoogleComputeRegionPerInstanceConfig, scope constructs.Construct, id *string, config *GoogleComputeRegionPerInstanceConfigConfig) {
 	_init_.Initialize()
 
@@ -691,6 +715,17 @@ func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig)SetRegionInstanceGroupMa
 	_jsii_.Set(
 		j,
 		"regionInstanceGroupManager",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionPerInstanceConfig)SetRemoveInstanceOnDestroy(val interface{}) {
+	if err := j.validateSetRemoveInstanceOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"removeInstanceOnDestroy",
 		val,
 	)
 }
@@ -1133,6 +1168,14 @@ func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionPerInstanceConfig) ResetRemoveInstanceOnDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRemoveInstanceOnDestroy",
 		nil, // no parameters
 	)
 }

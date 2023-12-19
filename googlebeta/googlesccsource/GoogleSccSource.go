@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_scc_source google_scc_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_scc_source google_scc_source}.
 type GoogleSccSource interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -412,7 +412,7 @@ func (j *jsiiProxy_GoogleSccSource) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_scc_source google_scc_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_scc_source google_scc_source} Resource.
 func NewGoogleSccSource(scope constructs.Construct, id *string, config *GoogleSccSourceConfig) GoogleSccSource {
 	_init_.Initialize()
 
@@ -430,7 +430,7 @@ func NewGoogleSccSource(scope constructs.Construct, id *string, config *GoogleSc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_scc_source google_scc_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_scc_source google_scc_source} Resource.
 func NewGoogleSccSource_Override(g GoogleSccSource, scope constructs.Construct, id *string, config *GoogleSccSourceConfig) {
 	_init_.Initialize()
 

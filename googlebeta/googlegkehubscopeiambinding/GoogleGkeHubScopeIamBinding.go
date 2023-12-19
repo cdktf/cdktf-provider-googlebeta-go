@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_gke_hub_scope_iam_binding google_gke_hub_scope_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_gke_hub_scope_iam_binding google_gke_hub_scope_iam_binding}.
 type GoogleGkeHubScopeIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -435,7 +435,7 @@ func (j *jsiiProxy_GoogleGkeHubScopeIamBinding) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_gke_hub_scope_iam_binding google_gke_hub_scope_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_gke_hub_scope_iam_binding google_gke_hub_scope_iam_binding} Resource.
 func NewGoogleGkeHubScopeIamBinding(scope constructs.Construct, id *string, config *GoogleGkeHubScopeIamBindingConfig) GoogleGkeHubScopeIamBinding {
 	_init_.Initialize()
 
@@ -453,7 +453,7 @@ func NewGoogleGkeHubScopeIamBinding(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.9.0/docs/resources/google_gke_hub_scope_iam_binding google_gke_hub_scope_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_gke_hub_scope_iam_binding google_gke_hub_scope_iam_binding} Resource.
 func NewGoogleGkeHubScopeIamBinding_Override(g GoogleGkeHubScopeIamBinding, scope constructs.Construct, id *string, config *GoogleGkeHubScopeIamBindingConfig) {
 	_init_.Initialize()
 
