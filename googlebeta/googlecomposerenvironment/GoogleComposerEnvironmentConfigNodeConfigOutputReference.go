@@ -23,6 +23,9 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ComposerInternalIpv4CidrBlock() *string
+	SetComposerInternalIpv4CidrBlock(val *string)
+	ComposerInternalIpv4CidrBlockInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -97,6 +100,7 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutIpAllocationPolicy(value interface{})
+	ResetComposerInternalIpv4CidrBlock()
 	ResetDiskSizeGb()
 	ResetEnableIpMasqAgent()
 	ResetIpAllocationPolicy()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Com
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) ComposerInternalIpv4CidrBlock() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"composerInternalIpv4CidrBlock",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) ComposerInternalIpv4CidrBlockInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"composerInternalIpv4CidrBlockInput",
 		&returns,
 	)
 	return returns
@@ -459,6 +483,17 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetC
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetComposerInternalIpv4CidrBlock(val *string) {
+	if err := j.validateSetComposerInternalIpv4CidrBlockParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"composerInternalIpv4CidrBlock",
 		val,
 	)
 }
@@ -800,6 +835,14 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Put
 		g,
 		"putIpAllocationPolicy",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) ResetComposerInternalIpv4CidrBlock() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetComposerInternalIpv4CidrBlock",
+		nil, // no parameters
 	)
 }
 

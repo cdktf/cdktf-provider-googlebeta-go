@@ -99,6 +99,10 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigSoftwareConfigOutputReference) validateSetWebServerPluginsModeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleComposerEnvironmentConfigSoftwareConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

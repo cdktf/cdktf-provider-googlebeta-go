@@ -35,6 +35,8 @@ type GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReferenc
 	InternalValue() *GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	SetInternalValue(val *GoogleComputeInstanceFromMachineImageBootDiskInitializeParams)
 	Labels() cdktf.StringMap
+	ProvisionedIops() *float64
+	ProvisionedThroughput() *float64
 	ResourceManagerTags() cdktf.StringMap
 	Size() *float64
 	// Experimental.
@@ -160,6 +162,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	_jsii_.Get(
 		j,
 		"labels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) ProvisionedIops() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) ProvisionedThroughput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"provisionedThroughput",
 		&returns,
 	)
 	return returns

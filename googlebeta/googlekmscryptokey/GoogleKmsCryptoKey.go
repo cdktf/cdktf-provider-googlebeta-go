@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}.
 type GoogleKmsCryptoKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -64,6 +64,7 @@ type GoogleKmsCryptoKey interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Primary() GoogleKmsCryptoKeyPrimaryList
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -396,6 +397,16 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleKmsCryptoKey) Primary() GoogleKmsCryptoKeyPrimaryList {
+	var returns GoogleKmsCryptoKeyPrimaryList
+	_jsii_.Get(
+		j,
+		"primary",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleKmsCryptoKey) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -567,7 +578,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) VersionTemplateInput() *GoogleKmsCryptoKe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
 func NewGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyConfig) GoogleKmsCryptoKey {
 	_init_.Initialize()
 
@@ -585,7 +596,7 @@ func NewGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
 func NewGoogleKmsCryptoKey_Override(g GoogleKmsCryptoKey, scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyConfig) {
 	_init_.Initialize()
 

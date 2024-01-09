@@ -28,6 +28,8 @@ type GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DagProcessor() GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference
+	DagProcessorInput() *GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessor
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComposerEnvironmentConfigWorkloadsConfig
@@ -72,10 +74,12 @@ type GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDagProcessor(value *GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessor)
 	PutScheduler(value *GoogleComposerEnvironmentConfigWorkloadsConfigScheduler)
 	PutTriggerer(value *GoogleComposerEnvironmentConfigWorkloadsConfigTriggerer)
 	PutWebServer(value *GoogleComposerEnvironmentConfigWorkloadsConfigWebServer)
 	PutWorker(value *GoogleComposerEnvironmentConfigWorkloadsConfigWorker)
+	ResetDagProcessor()
 	ResetScheduler()
 	ResetTriggerer()
 	ResetWebServer()
@@ -120,6 +124,26 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) DagProcessor() GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference {
+	var returns GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessorOutputReference
+	_jsii_.Get(
+		j,
+		"dagProcessor",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) DagProcessorInput() *GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessor {
+	var returns *GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessor
+	_jsii_.Get(
+		j,
+		"dagProcessorInput",
 		&returns,
 	)
 	return returns
@@ -514,6 +538,17 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) PutDagProcessor(value *GoogleComposerEnvironmentConfigWorkloadsConfigDagProcessor) {
+	if err := g.validatePutDagProcessorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDagProcessor",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) PutScheduler(value *GoogleComposerEnvironmentConfigWorkloadsConfigScheduler) {
 	if err := g.validatePutSchedulerParameters(value); err != nil {
 		panic(err)
@@ -555,6 +590,14 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference
 		g,
 		"putWorker",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigOutputReference) ResetDagProcessor() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDagProcessor",
+		nil, // no parameters
 	)
 }
 

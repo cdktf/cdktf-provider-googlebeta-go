@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_access_context_manager_service_perimeters google_access_context_manager_service_perimeters}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_access_context_manager_service_perimeters google_access_context_manager_service_perimeters}.
 type GoogleAccessContextManagerServicePerimeters interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -378,7 +378,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeters) TimeoutsInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_access_context_manager_service_perimeters google_access_context_manager_service_perimeters} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_access_context_manager_service_perimeters google_access_context_manager_service_perimeters} Resource.
 func NewGoogleAccessContextManagerServicePerimeters(scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimetersConfig) GoogleAccessContextManagerServicePerimeters {
 	_init_.Initialize()
 
@@ -396,7 +396,7 @@ func NewGoogleAccessContextManagerServicePerimeters(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.10.0/docs/resources/google_access_context_manager_service_perimeters google_access_context_manager_service_perimeters} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_access_context_manager_service_perimeters google_access_context_manager_service_perimeters} Resource.
 func NewGoogleAccessContextManagerServicePerimeters_Override(g GoogleAccessContextManagerServicePerimeters, scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimetersConfig) {
 	_init_.Initialize()
 
