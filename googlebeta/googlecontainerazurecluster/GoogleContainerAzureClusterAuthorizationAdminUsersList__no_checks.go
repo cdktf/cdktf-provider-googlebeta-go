@@ -7,6 +7,10 @@ package googlecontainerazurecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminUsersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerAzureClusterAuthorizationAdminUsersList) validateGetParameters(index *float64) error {
 	return nil
 }

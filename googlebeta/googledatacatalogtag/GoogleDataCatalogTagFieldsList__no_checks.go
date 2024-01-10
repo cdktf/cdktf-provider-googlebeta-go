@@ -7,6 +7,10 @@ package googledatacatalogtag
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataCatalogTagFieldsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTagFieldsList) validateGetParameters(index *float64) error {
 	return nil
 }

@@ -7,6 +7,10 @@ package googlecloudbuildbitbucketserverconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildBitbucketServerConfigConnectedRepositoriesList) validateGetParameters(index *float64) error {
 	return nil
 }

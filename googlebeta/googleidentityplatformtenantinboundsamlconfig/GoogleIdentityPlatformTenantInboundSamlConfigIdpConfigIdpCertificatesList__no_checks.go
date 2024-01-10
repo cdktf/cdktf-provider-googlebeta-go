@@ -7,6 +7,10 @@ package googleidentityplatformtenantinboundsamlconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesList) validateGetParameters(index *float64) error {
 	return nil
 }

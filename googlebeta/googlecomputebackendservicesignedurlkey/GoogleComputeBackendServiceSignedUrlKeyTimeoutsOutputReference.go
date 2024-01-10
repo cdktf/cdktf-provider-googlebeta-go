@@ -5,9 +5,9 @@ package googlecomputebackendservicesignedurlkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlecomputebackendservicesignedurlkey/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputebackendservicesignedurlkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

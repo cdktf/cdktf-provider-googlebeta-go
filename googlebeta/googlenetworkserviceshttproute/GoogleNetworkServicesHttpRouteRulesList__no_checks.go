@@ -7,6 +7,10 @@ package googlenetworkserviceshttproute
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesList) validateGetParameters(index *float64) error {
 	return nil
 }

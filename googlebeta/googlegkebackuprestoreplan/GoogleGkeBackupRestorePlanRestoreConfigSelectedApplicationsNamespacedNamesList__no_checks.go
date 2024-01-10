@@ -7,6 +7,10 @@ package googlegkebackuprestoreplan
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateGetParameters(index *float64) error {
 	return nil
 }

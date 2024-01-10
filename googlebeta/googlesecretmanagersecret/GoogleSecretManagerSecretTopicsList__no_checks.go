@@ -7,6 +7,10 @@ package googlesecretmanagersecret
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleSecretManagerSecretTopicsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretTopicsList) validateGetParameters(index *float64) error {
 	return nil
 }

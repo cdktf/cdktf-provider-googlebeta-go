@@ -7,6 +7,10 @@ package googledataprocmetastorefederation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreFederationBackendMetastoresList) validateGetParameters(index *float64) error {
 	return nil
 }

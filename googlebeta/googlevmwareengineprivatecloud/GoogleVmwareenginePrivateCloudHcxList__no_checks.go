@@ -7,6 +7,10 @@ package googlevmwareengineprivatecloud
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloudHcxList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloudHcxList) validateGetParameters(index *float64) error {
 	return nil
 }

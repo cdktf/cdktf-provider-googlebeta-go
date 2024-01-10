@@ -7,6 +7,10 @@ package googlecloudbuildtrigger
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildSecretList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildTriggerBuildSecretList) validateGetParameters(index *float64) error {
 	return nil
 }

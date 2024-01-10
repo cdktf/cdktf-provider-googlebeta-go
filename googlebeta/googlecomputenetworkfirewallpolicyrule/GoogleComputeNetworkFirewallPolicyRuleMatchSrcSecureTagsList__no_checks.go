@@ -7,6 +7,10 @@ package googlecomputenetworkfirewallpolicyrule
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleMatchSrcSecureTagsList) validateGetParameters(index *float64) error {
 	return nil
 }

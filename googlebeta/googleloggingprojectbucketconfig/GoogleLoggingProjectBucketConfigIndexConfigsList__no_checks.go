@@ -7,6 +7,10 @@ package googleloggingprojectbucketconfig
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingProjectBucketConfigIndexConfigsList) validateGetParameters(index *float64) error {
 	return nil
 }

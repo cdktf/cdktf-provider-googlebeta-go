@@ -7,6 +7,10 @@ package googledatabasemigrationserviceprivateconnection
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnectionErrorList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnectionErrorList) validateGetParameters(index *float64) error {
 	return nil
 }

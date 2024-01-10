@@ -7,6 +7,10 @@ package googletpunode
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleTpuNodeNetworkEndpointsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTpuNodeNetworkEndpointsList) validateGetParameters(index *float64) error {
 	return nil
 }

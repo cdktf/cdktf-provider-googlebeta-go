@@ -5,9 +5,9 @@ package googlefirestoredocument
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v12/googlefirestoredocument/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlefirestoredocument/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

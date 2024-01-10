@@ -7,6 +7,10 @@ package googlecomputereservation
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesLocalSsdsList) validateGetParameters(index *float64) error {
 	return nil
 }

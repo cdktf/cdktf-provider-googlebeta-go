@@ -7,6 +7,10 @@ package googlebinaryauthorizationattestor
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorAttestationAuthorityNotePublicKeysList) validateGetParameters(index *float64) error {
 	return nil
 }

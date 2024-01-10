@@ -7,6 +7,10 @@ package googlegkeonpremvmwarecluster
 
 // Building without runtime type checking enabled, so all the below just return nil
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStatusList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareClusterStatusList) validateGetParameters(index *float64) error {
 	return nil
 }
