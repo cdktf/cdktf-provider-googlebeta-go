@@ -107,6 +107,10 @@ func (j *jsiiProxy_GoogleServiceAccount) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GoogleServiceAccount) validateSetCreateIgnoreAlreadyExistsParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleServiceAccount) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

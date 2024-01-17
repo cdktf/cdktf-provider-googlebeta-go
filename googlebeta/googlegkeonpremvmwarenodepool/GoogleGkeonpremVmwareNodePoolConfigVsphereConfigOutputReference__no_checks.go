@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validatePutTagsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,6 +60,14 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 }
 
 func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateSetDatastoreParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateSetHostGroupsParameters(val *[]*string) error {
 	return nil
 }
 
@@ -71,7 +83,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferen
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

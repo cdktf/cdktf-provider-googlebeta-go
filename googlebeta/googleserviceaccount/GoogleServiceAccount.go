@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account google_service_account}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account google_service_account}.
 type GoogleServiceAccount interface {
 	cdktf.TerraformResource
 	AccountId() *string
@@ -30,6 +30,9 @@ type GoogleServiceAccount interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateIgnoreAlreadyExists() interface{}
+	SetCreateIgnoreAlreadyExists(val interface{})
+	CreateIgnoreAlreadyExistsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -129,6 +132,7 @@ type GoogleServiceAccount interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleServiceAccountTimeouts)
+	ResetCreateIgnoreAlreadyExists()
 	ResetDescription()
 	ResetDisabled()
 	ResetDisplayName()
@@ -211,6 +215,26 @@ func (j *jsiiProxy_GoogleServiceAccount) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleServiceAccount) CreateIgnoreAlreadyExists() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createIgnoreAlreadyExists",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleServiceAccount) CreateIgnoreAlreadyExistsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createIgnoreAlreadyExistsInput",
 		&returns,
 	)
 	return returns
@@ -497,7 +521,7 @@ func (j *jsiiProxy_GoogleServiceAccount) UniqueId() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account google_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account google_service_account} Resource.
 func NewGoogleServiceAccount(scope constructs.Construct, id *string, config *GoogleServiceAccountConfig) GoogleServiceAccount {
 	_init_.Initialize()
 
@@ -515,7 +539,7 @@ func NewGoogleServiceAccount(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.11.0/docs/resources/google_service_account google_service_account} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_service_account google_service_account} Resource.
 func NewGoogleServiceAccount_Override(g GoogleServiceAccount, scope constructs.Construct, id *string, config *GoogleServiceAccountConfig) {
 	_init_.Initialize()
 
@@ -555,6 +579,17 @@ func (j *jsiiProxy_GoogleServiceAccount)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleServiceAccount)SetCreateIgnoreAlreadyExists(val interface{}) {
+	if err := j.validateSetCreateIgnoreAlreadyExistsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createIgnoreAlreadyExists",
 		val,
 	)
 }
@@ -1021,6 +1056,14 @@ func (g *jsiiProxy_GoogleServiceAccount) PutTimeouts(value *GoogleServiceAccount
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleServiceAccount) ResetCreateIgnoreAlreadyExists() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateIgnoreAlreadyExists",
+		nil, // no parameters
 	)
 }
 
