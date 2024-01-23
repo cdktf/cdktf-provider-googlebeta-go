@@ -103,6 +103,14 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetC
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateBuildsOnlyParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetEnablePrivateEnvironmentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validateSetEnvironmentSizeParameters(val *string) error {
 	return nil
 }

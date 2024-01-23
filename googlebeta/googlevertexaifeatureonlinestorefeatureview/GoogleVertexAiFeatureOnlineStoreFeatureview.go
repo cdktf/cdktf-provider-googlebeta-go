@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}.
 type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	cdktf.TerraformResource
 	BigQuerySource() GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReference
@@ -544,7 +544,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreFeatureviewConfig) GoogleVertexAiFeatureOnlineStoreFeatureview {
 	_init_.Initialize()
 
@@ -562,7 +562,7 @@ func NewGoogleVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreFeatureview_Override(g GoogleVertexAiFeatureOnlineStoreFeatureview, scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreFeatureviewConfig) {
 	_init_.Initialize()
 

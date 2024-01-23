@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_gke_hub_scope google_gke_hub_scope}.
 type GoogleGkeHubScope interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -493,7 +493,7 @@ func (j *jsiiProxy_GoogleGkeHubScope) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource.
 func NewGoogleGkeHubScope(scope constructs.Construct, id *string, config *GoogleGkeHubScopeConfig) GoogleGkeHubScope {
 	_init_.Initialize()
 
@@ -511,7 +511,7 @@ func NewGoogleGkeHubScope(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_gke_hub_scope google_gke_hub_scope} Resource.
 func NewGoogleGkeHubScope_Override(g GoogleGkeHubScope, scope constructs.Construct, id *string, config *GoogleGkeHubScopeConfig) {
 	_init_.Initialize()
 

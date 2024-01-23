@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
 type GoogleWorkstationsWorkstationConfigA interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -39,6 +39,9 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableTcpConnections() interface{}
+	SetDisableTcpConnections(val interface{})
+	DisableTcpConnectionsInput() interface{}
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -166,6 +169,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	PutTimeouts(value *GoogleWorkstationsWorkstationConfigTimeouts)
 	ResetAnnotations()
 	ResetContainer()
+	ResetDisableTcpConnections()
 	ResetDisplayName()
 	ResetEnableAuditAgent()
 	ResetEncryptionKey()
@@ -314,6 +318,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DependsOn() *[]*string 
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DisableTcpConnections() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableTcpConnections",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) DisableTcpConnectionsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableTcpConnectionsInput",
 		&returns,
 	)
 	return returns
@@ -790,7 +814,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) WorkstationConfigIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) GoogleWorkstationsWorkstationConfigA {
 	_init_.Initialize()
 
@@ -808,7 +832,7 @@ func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA_Override(g GoogleWorkstationsWorkstationConfigA, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) {
 	_init_.Initialize()
 
@@ -856,6 +880,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetDependsOn(val *[]*str
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA)SetDisableTcpConnections(val interface{}) {
+	if err := j.validateSetDisableTcpConnectionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableTcpConnections",
 		val,
 	)
 }
@@ -1439,6 +1474,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetContainer() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetContainer",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetDisableTcpConnections() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableTcpConnections",
 		nil, // no parameters
 	)
 }

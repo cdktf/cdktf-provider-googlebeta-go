@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_compute_disk google_compute_disk}.
 type GoogleComputeDisk interface {
 	cdktf.TerraformResource
 	AsyncPrimaryDisk() GoogleComputeDiskAsyncPrimaryDiskOutputReference
@@ -1006,7 +1006,7 @@ func (j *jsiiProxy_GoogleComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_compute_disk google_compute_disk} Resource.
 func NewGoogleComputeDisk(scope constructs.Construct, id *string, config *GoogleComputeDiskConfig) GoogleComputeDisk {
 	_init_.Initialize()
 
@@ -1024,7 +1024,7 @@ func NewGoogleComputeDisk(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_compute_disk google_compute_disk} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_compute_disk google_compute_disk} Resource.
 func NewGoogleComputeDisk_Override(g GoogleComputeDisk, scope constructs.Construct, id *string, config *GoogleComputeDiskConfig) {
 	_init_.Initialize()
 

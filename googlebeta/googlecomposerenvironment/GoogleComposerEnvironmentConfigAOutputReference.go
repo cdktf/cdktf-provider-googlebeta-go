@@ -32,6 +32,12 @@ type GoogleComposerEnvironmentConfigAOutputReference interface {
 	DagGcsPrefix() *string
 	DatabaseConfig() GoogleComposerEnvironmentConfigDatabaseConfigOutputReference
 	DatabaseConfigInput() *GoogleComposerEnvironmentConfigDatabaseConfig
+	EnablePrivateBuildsOnly() interface{}
+	SetEnablePrivateBuildsOnly(val interface{})
+	EnablePrivateBuildsOnlyInput() interface{}
+	EnablePrivateEnvironment() interface{}
+	SetEnablePrivateEnvironment(val interface{})
+	EnablePrivateEnvironmentInput() interface{}
 	EncryptionConfig() GoogleComposerEnvironmentConfigEncryptionConfigOutputReference
 	EncryptionConfigInput() *GoogleComposerEnvironmentConfigEncryptionConfig
 	EnvironmentSize() *string
@@ -110,6 +116,8 @@ type GoogleComposerEnvironmentConfigAOutputReference interface {
 	PutWebServerNetworkAccessControl(value *GoogleComposerEnvironmentConfigWebServerNetworkAccessControl)
 	PutWorkloadsConfig(value *GoogleComposerEnvironmentConfigWorkloadsConfig)
 	ResetDatabaseConfig()
+	ResetEnablePrivateBuildsOnly()
+	ResetEnablePrivateEnvironment()
 	ResetEncryptionConfig()
 	ResetEnvironmentSize()
 	ResetMaintenanceWindow()
@@ -203,6 +211,46 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) DatabaseConf
 	_jsii_.Get(
 		j,
 		"databaseConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) EnablePrivateBuildsOnly() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateBuildsOnly",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) EnablePrivateBuildsOnlyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateBuildsOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) EnablePrivateEnvironment() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateEnvironment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) EnablePrivateEnvironmentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enablePrivateEnvironmentInput",
 		&returns,
 	)
 	return returns
@@ -564,6 +612,28 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference)SetComplexObj
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference)SetEnablePrivateBuildsOnly(val interface{}) {
+	if err := j.validateSetEnablePrivateBuildsOnlyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrivateBuildsOnly",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference)SetEnablePrivateEnvironment(val interface{}) {
+	if err := j.validateSetEnablePrivateEnvironmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enablePrivateEnvironment",
 		val,
 	)
 }
@@ -945,6 +1015,22 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) ResetDatabas
 	_jsii_.InvokeVoid(
 		g,
 		"resetDatabaseConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) ResetEnablePrivateBuildsOnly() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnablePrivateBuildsOnly",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) ResetEnablePrivateEnvironment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnablePrivateEnvironment",
 		nil, // no parameters
 	)
 }

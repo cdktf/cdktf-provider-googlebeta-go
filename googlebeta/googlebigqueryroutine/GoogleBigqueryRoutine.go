@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_bigquery_routine google_bigquery_routine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_bigquery_routine google_bigquery_routine}.
 type GoogleBigqueryRoutine interface {
 	cdktf.TerraformResource
 	Arguments() GoogleBigqueryRoutineArgumentsList
@@ -95,6 +95,8 @@ type GoogleBigqueryRoutine interface {
 	RoutineType() *string
 	SetRoutineType(val *string)
 	RoutineTypeInput() *string
+	SparkOptions() GoogleBigqueryRoutineSparkOptionsOutputReference
+	SparkOptionsInput() *GoogleBigqueryRoutineSparkOptions
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -147,6 +149,7 @@ type GoogleBigqueryRoutine interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutArguments(value interface{})
+	PutSparkOptions(value *GoogleBigqueryRoutineSparkOptions)
 	PutTimeouts(value *GoogleBigqueryRoutineTimeouts)
 	ResetArguments()
 	ResetDescription()
@@ -160,6 +163,7 @@ type GoogleBigqueryRoutine interface {
 	ResetProject()
 	ResetReturnTableType()
 	ResetReturnType()
+	ResetSparkOptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -589,6 +593,26 @@ func (j *jsiiProxy_GoogleBigqueryRoutine) RoutineTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryRoutine) SparkOptions() GoogleBigqueryRoutineSparkOptionsOutputReference {
+	var returns GoogleBigqueryRoutineSparkOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"sparkOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryRoutine) SparkOptionsInput() *GoogleBigqueryRoutineSparkOptions {
+	var returns *GoogleBigqueryRoutineSparkOptions
+	_jsii_.Get(
+		j,
+		"sparkOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryRoutine) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -640,7 +664,7 @@ func (j *jsiiProxy_GoogleBigqueryRoutine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource.
 func NewGoogleBigqueryRoutine(scope constructs.Construct, id *string, config *GoogleBigqueryRoutineConfig) GoogleBigqueryRoutine {
 	_init_.Initialize()
 
@@ -658,7 +682,7 @@ func NewGoogleBigqueryRoutine(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource.
 func NewGoogleBigqueryRoutine_Override(g GoogleBigqueryRoutine, scope constructs.Construct, id *string, config *GoogleBigqueryRoutineConfig) {
 	_init_.Initialize()
 
@@ -1233,6 +1257,17 @@ func (g *jsiiProxy_GoogleBigqueryRoutine) PutArguments(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryRoutine) PutSparkOptions(value *GoogleBigqueryRoutineSparkOptions) {
+	if err := g.validatePutSparkOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSparkOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryRoutine) PutTimeouts(value *GoogleBigqueryRoutineTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1320,6 +1355,14 @@ func (g *jsiiProxy_GoogleBigqueryRoutine) ResetReturnType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetReturnType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryRoutine) ResetSparkOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSparkOptions",
 		nil, // no parameters
 	)
 }

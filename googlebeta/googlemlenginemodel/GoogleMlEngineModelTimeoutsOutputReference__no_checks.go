@@ -79,6 +79,10 @@ func (j *jsiiProxy_GoogleMlEngineModelTimeoutsOutputReference) validateSetTerraf
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMlEngineModelTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleMlEngineModelTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

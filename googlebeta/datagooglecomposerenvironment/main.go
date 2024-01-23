@@ -110,6 +110,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "dagGcsPrefix", GoGetter: "DagGcsPrefix"},
 			_jsii_.MemberProperty{JsiiProperty: "databaseConfig", GoGetter: "DatabaseConfig"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePrivateBuildsOnly", GoGetter: "EnablePrivateBuildsOnly"},
+			_jsii_.MemberProperty{JsiiProperty: "enablePrivateEnvironment", GoGetter: "EnablePrivateEnvironment"},
 			_jsii_.MemberProperty{JsiiProperty: "encryptionConfig", GoGetter: "EncryptionConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "environmentSize", GoGetter: "EnvironmentSize"},
 			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},

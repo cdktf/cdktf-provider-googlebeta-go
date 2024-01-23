@@ -79,6 +79,10 @@ func (j *jsiiProxy_GoogleClouddomainsRegistrationTimeoutsOutputReference) valida
 	return nil
 }
 
+func (j *jsiiProxy_GoogleClouddomainsRegistrationTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleClouddomainsRegistrationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

@@ -79,6 +79,10 @@ func (j *jsiiProxy_GoogleNetworkServicesServiceBindingTimeoutsOutputReference) v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesServiceBindingTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleNetworkServicesServiceBindingTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

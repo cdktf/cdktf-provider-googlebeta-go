@@ -1,12 +1,15 @@
-# CDKTF Go bindings for hashicorp/google-beta provider version 5.12.0
+# CDKTF Go bindings for hashicorp/google-beta provider version 5.13.0
 
-This repo builds and publishes the [Terraform google-beta provider](https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform google-beta provider](https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Go Package
 
 The go package is generated into the [`github.com/cdktf/cdktf-provider-googlebeta-go`](https://github.com/cdktf/cdktf-provider-googlebeta-go) package.
 
-`go get github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta`
+`go get github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/<version>`
+
+Where `<version>` is the version of the prebuilt provider you would like to use e.g. `v11`. The full module name can be found
+within the [go.mod](https://github.com/cdktf/cdktf-provider-googlebeta-go/blob/main/googlebeta/go.mod#L1) file.
 
 ## Docs
 
@@ -20,7 +23,7 @@ This project is explicitly not tracking the Terraform google-beta provider versi
 These are the upstream dependencies:
 
 * [CDK for Terraform](https://cdk.tf)
-* [Terraform google-beta provider](https://registry.terraform.io/providers/hashicorp/google-beta/5.12.0)
+* [Terraform google-beta provider](https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0)
 * [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

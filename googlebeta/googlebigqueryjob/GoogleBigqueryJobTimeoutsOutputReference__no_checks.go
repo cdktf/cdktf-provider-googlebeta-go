@@ -79,6 +79,10 @@ func (j *jsiiProxy_GoogleBigqueryJobTimeoutsOutputReference) validateSetTerrafor
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryJobTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleBigqueryJobTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
