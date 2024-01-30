@@ -91,6 +91,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutPersistentDi
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutReadinessChecksParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutTimeoutsParameters(value *GoogleWorkstationsWorkstationConfigTimeouts) error {
 	return nil
 }

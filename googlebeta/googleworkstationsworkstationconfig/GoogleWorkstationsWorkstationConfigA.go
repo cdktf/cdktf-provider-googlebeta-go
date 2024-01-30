@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
 type GoogleWorkstationsWorkstationConfigA interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -97,6 +97,8 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReadinessChecks() GoogleWorkstationsWorkstationConfigReadinessChecksList
+	ReadinessChecksInput() interface{}
 	ReplicaZones() *[]*string
 	SetReplicaZones(val *[]*string)
 	ReplicaZonesInput() *[]*string
@@ -166,6 +168,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	PutEncryptionKey(value *GoogleWorkstationsWorkstationConfigEncryptionKey)
 	PutHost(value *GoogleWorkstationsWorkstationConfigHost)
 	PutPersistentDirectories(value interface{})
+	PutReadinessChecks(value interface{})
 	PutTimeouts(value *GoogleWorkstationsWorkstationConfigTimeouts)
 	ResetAnnotations()
 	ResetContainer()
@@ -182,6 +185,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	ResetOverrideLogicalId()
 	ResetPersistentDirectories()
 	ResetProject()
+	ResetReadinessChecks()
 	ResetReplicaZones()
 	ResetRunningTimeout()
 	ResetTimeouts()
@@ -663,6 +667,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) RawOverrides() interfac
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ReadinessChecks() GoogleWorkstationsWorkstationConfigReadinessChecksList {
+	var returns GoogleWorkstationsWorkstationConfigReadinessChecksList
+	_jsii_.Get(
+		j,
+		"readinessChecks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ReadinessChecksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"readinessChecksInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ReplicaZones() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -814,7 +838,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) WorkstationConfigIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) GoogleWorkstationsWorkstationConfigA {
 	_init_.Initialize()
 
@@ -832,7 +856,7 @@ func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA_Override(g GoogleWorkstationsWorkstationConfigA, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) {
 	_init_.Initialize()
 
@@ -1451,6 +1475,17 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutPersistentDirectorie
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutReadinessChecks(value interface{}) {
+	if err := g.validatePutReadinessChecksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReadinessChecks",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutTimeouts(value *GoogleWorkstationsWorkstationConfigTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1562,6 +1597,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetReadinessChecks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReadinessChecks",
 		nil, // no parameters
 	)
 }

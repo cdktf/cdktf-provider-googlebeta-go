@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validatePutD
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validatePutDataRetentionConfigParameters(value *GoogleComposerEnvironmentConfigDataRetentionConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) validatePutEncryptionConfigParameters(value *GoogleComposerEnvironmentConfigEncryptionConfig) error {
 	return nil
 }

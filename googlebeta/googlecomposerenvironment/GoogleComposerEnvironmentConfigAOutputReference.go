@@ -32,6 +32,8 @@ type GoogleComposerEnvironmentConfigAOutputReference interface {
 	DagGcsPrefix() *string
 	DatabaseConfig() GoogleComposerEnvironmentConfigDatabaseConfigOutputReference
 	DatabaseConfigInput() *GoogleComposerEnvironmentConfigDatabaseConfig
+	DataRetentionConfig() GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference
+	DataRetentionConfigInput() *GoogleComposerEnvironmentConfigDataRetentionConfig
 	EnablePrivateBuildsOnly() interface{}
 	SetEnablePrivateBuildsOnly(val interface{})
 	EnablePrivateBuildsOnlyInput() interface{}
@@ -105,6 +107,7 @@ type GoogleComposerEnvironmentConfigAOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDatabaseConfig(value *GoogleComposerEnvironmentConfigDatabaseConfig)
+	PutDataRetentionConfig(value *GoogleComposerEnvironmentConfigDataRetentionConfig)
 	PutEncryptionConfig(value *GoogleComposerEnvironmentConfigEncryptionConfig)
 	PutMaintenanceWindow(value *GoogleComposerEnvironmentConfigMaintenanceWindow)
 	PutMasterAuthorizedNetworksConfig(value *GoogleComposerEnvironmentConfigMasterAuthorizedNetworksConfig)
@@ -116,6 +119,7 @@ type GoogleComposerEnvironmentConfigAOutputReference interface {
 	PutWebServerNetworkAccessControl(value *GoogleComposerEnvironmentConfigWebServerNetworkAccessControl)
 	PutWorkloadsConfig(value *GoogleComposerEnvironmentConfigWorkloadsConfig)
 	ResetDatabaseConfig()
+	ResetDataRetentionConfig()
 	ResetEnablePrivateBuildsOnly()
 	ResetEnablePrivateEnvironment()
 	ResetEncryptionConfig()
@@ -211,6 +215,26 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) DatabaseConf
 	_jsii_.Get(
 		j,
 		"databaseConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) DataRetentionConfig() GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference {
+	var returns GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dataRetentionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) DataRetentionConfigInput() *GoogleComposerEnvironmentConfigDataRetentionConfig {
+	var returns *GoogleComposerEnvironmentConfigDataRetentionConfig
+	_jsii_.Get(
+		j,
+		"dataRetentionConfigInput",
 		&returns,
 	)
 	return returns
@@ -901,6 +925,17 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) PutDatabaseC
 	)
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) PutDataRetentionConfig(value *GoogleComposerEnvironmentConfigDataRetentionConfig) {
+	if err := g.validatePutDataRetentionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDataRetentionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) PutEncryptionConfig(value *GoogleComposerEnvironmentConfigEncryptionConfig) {
 	if err := g.validatePutEncryptionConfigParameters(value); err != nil {
 		panic(err)
@@ -1015,6 +1050,14 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) ResetDatabas
 	_jsii_.InvokeVoid(
 		g,
 		"resetDatabaseConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigAOutputReference) ResetDataRetentionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataRetentionConfig",
 		nil, // no parameters
 	)
 }

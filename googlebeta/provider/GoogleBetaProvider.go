@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -223,6 +223,9 @@ type GoogleBetaProvider interface {
 	DialogflowCxCustomEndpoint() *string
 	SetDialogflowCxCustomEndpoint(val *string)
 	DialogflowCxCustomEndpointInput() *string
+	DiscoveryEngineCustomEndpoint() *string
+	SetDiscoveryEngineCustomEndpoint(val *string)
+	DiscoveryEngineCustomEndpointInput() *string
 	DnsCustomEndpoint() *string
 	SetDnsCustomEndpoint(val *string)
 	DnsCustomEndpointInput() *string
@@ -428,6 +431,9 @@ type GoogleBetaProvider interface {
 	SecurityCenterCustomEndpoint() *string
 	SetSecurityCenterCustomEndpoint(val *string)
 	SecurityCenterCustomEndpointInput() *string
+	SecuritypostureCustomEndpoint() *string
+	SetSecuritypostureCustomEndpoint(val *string)
+	SecuritypostureCustomEndpointInput() *string
 	SecurityScannerCustomEndpoint() *string
 	SetSecurityScannerCustomEndpoint(val *string)
 	SecurityScannerCustomEndpointInput() *string
@@ -579,6 +585,7 @@ type GoogleBetaProvider interface {
 	ResetDeploymentManagerCustomEndpoint()
 	ResetDialogflowCustomEndpoint()
 	ResetDialogflowCxCustomEndpoint()
+	ResetDiscoveryEngineCustomEndpoint()
 	ResetDnsCustomEndpoint()
 	ResetDocumentAiCustomEndpoint()
 	ResetDocumentAiWarehouseCustomEndpoint()
@@ -647,6 +654,7 @@ type GoogleBetaProvider interface {
 	ResetSecretManagerCustomEndpoint()
 	ResetSecureSourceManagerCustomEndpoint()
 	ResetSecurityCenterCustomEndpoint()
+	ResetSecuritypostureCustomEndpoint()
 	ResetSecurityScannerCustomEndpoint()
 	ResetServiceDirectoryCustomEndpoint()
 	ResetServiceManagementCustomEndpoint()
@@ -2069,6 +2077,26 @@ func (j *jsiiProxy_GoogleBetaProvider) DialogflowCxCustomEndpointInput() *string
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) DiscoveryEngineCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryEngineCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) DiscoveryEngineCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryEngineCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) DnsCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3419,6 +3447,26 @@ func (j *jsiiProxy_GoogleBetaProvider) SecurityCenterCustomEndpointInput() *stri
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) SecuritypostureCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securitypostureCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) SecuritypostureCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securitypostureCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) SecurityScannerCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3930,7 +3978,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3948,7 +3996,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4506,6 +4554,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetDialogflowCxCustomEndpoint(val *string)
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetDiscoveryEngineCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"discoveryEngineCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetDnsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5022,6 +5078,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetSecurityCenterCustomEndpoint(val *strin
 	_jsii_.Set(
 		j,
 		"securityCenterCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetSecuritypostureCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"securitypostureCustomEndpoint",
 		val,
 	)
 }
@@ -5890,6 +5954,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetDialogflowCxCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetDiscoveryEngineCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiscoveryEngineCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetDnsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6414,6 +6486,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetSecurityCenterCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecurityCenterCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetSecuritypostureCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecuritypostureCustomEndpoint",
 		nil, // no parameters
 	)
 }

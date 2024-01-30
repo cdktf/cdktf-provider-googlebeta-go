@@ -87,6 +87,10 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) validatePutTimeo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) validatePutVectorSearchConfigParameters(value *GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig) error {
+	return nil
+}
+
 func validateGoogleVertexAiFeatureOnlineStoreFeatureview_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

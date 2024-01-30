@@ -59,10 +59,6 @@ func (g *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) validateReso
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) validateSetCloudFunctionParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleEventarcTriggerDestinationOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

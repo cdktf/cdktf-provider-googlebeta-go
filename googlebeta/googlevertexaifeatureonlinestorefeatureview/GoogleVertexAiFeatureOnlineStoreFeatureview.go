@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview}.
 type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	cdktf.TerraformResource
 	BigQuerySource() GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySourceOutputReference
@@ -89,6 +89,8 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	Timeouts() GoogleVertexAiFeatureOnlineStoreFeatureviewTimeoutsOutputReference
 	TimeoutsInput() interface{}
 	UpdateTime() *string
+	VectorSearchConfig() GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference
+	VectorSearchConfigInput() *GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -135,6 +137,7 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	PutBigQuerySource(value *GoogleVertexAiFeatureOnlineStoreFeatureviewBigQuerySource)
 	PutSyncConfig(value *GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfig)
 	PutTimeouts(value *GoogleVertexAiFeatureOnlineStoreFeatureviewTimeouts)
+	PutVectorSearchConfig(value *GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig)
 	ResetBigQuerySource()
 	ResetId()
 	ResetLabels()
@@ -145,6 +148,7 @@ type GoogleVertexAiFeatureOnlineStoreFeatureview interface {
 	ResetProject()
 	ResetSyncConfig()
 	ResetTimeouts()
+	ResetVectorSearchConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -543,8 +547,28 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) UpdateTime() *st
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) VectorSearchConfig() GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference {
+	var returns GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfigOutputReference
+	_jsii_.Get(
+		j,
+		"vectorSearchConfig",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) VectorSearchConfigInput() *GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig {
+	var returns *GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig
+	_jsii_.Get(
+		j,
+		"vectorSearchConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreFeatureviewConfig) GoogleVertexAiFeatureOnlineStoreFeatureview {
 	_init_.Initialize()
 
@@ -562,7 +586,7 @@ func NewGoogleVertexAiFeatureOnlineStoreFeatureview(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.13.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_vertex_ai_feature_online_store_featureview google_vertex_ai_feature_online_store_featureview} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreFeatureview_Override(g GoogleVertexAiFeatureOnlineStoreFeatureview, scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreFeatureviewConfig) {
 	_init_.Initialize()
 
@@ -1093,6 +1117,17 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) PutTimeouts(valu
 	)
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) PutVectorSearchConfig(value *GoogleVertexAiFeatureOnlineStoreFeatureviewVectorSearchConfig) {
+	if err := g.validatePutVectorSearchConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putVectorSearchConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ResetBigQuerySource() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1153,6 +1188,14 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ResetTimeouts() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) ResetVectorSearchConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVectorSearchConfig",
 		nil, // no parameters
 	)
 }
