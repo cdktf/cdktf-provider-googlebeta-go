@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -93,6 +93,9 @@ type GoogleBetaProvider interface {
 	BinaryAuthorizationCustomEndpoint() *string
 	SetBinaryAuthorizationCustomEndpoint(val *string)
 	BinaryAuthorizationCustomEndpointInput() *string
+	BlockchainNodeEngineCustomEndpoint() *string
+	SetBlockchainNodeEngineCustomEndpoint(val *string)
+	BlockchainNodeEngineCustomEndpointInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CertificateManagerCustomEndpoint() *string
@@ -543,6 +546,7 @@ type GoogleBetaProvider interface {
 	ResetBillingCustomEndpoint()
 	ResetBillingProject()
 	ResetBinaryAuthorizationCustomEndpoint()
+	ResetBlockchainNodeEngineCustomEndpoint()
 	ResetCertificateManagerCustomEndpoint()
 	ResetCloudAssetCustomEndpoint()
 	ResetCloudBillingCustomEndpoint()
@@ -1212,6 +1216,26 @@ func (j *jsiiProxy_GoogleBetaProvider) BinaryAuthorizationCustomEndpointInput() 
 	_jsii_.Get(
 		j,
 		"binaryAuthorizationCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) BlockchainNodeEngineCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blockchainNodeEngineCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) BlockchainNodeEngineCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"blockchainNodeEngineCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3978,7 +4002,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -3996,7 +4020,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4214,6 +4238,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetBinaryAuthorizationCustomEndpoint(val *
 	_jsii_.Set(
 		j,
 		"binaryAuthorizationCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetBlockchainNodeEngineCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"blockchainNodeEngineCustomEndpoint",
 		val,
 	)
 }
@@ -5614,6 +5646,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetBinaryAuthorizationCustomEndpoint() 
 	_jsii_.InvokeVoid(
 		g,
 		"resetBinaryAuthorizationCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetBlockchainNodeEngineCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBlockchainNodeEngineCustomEndpoint",
 		nil, // no parameters
 	)
 }

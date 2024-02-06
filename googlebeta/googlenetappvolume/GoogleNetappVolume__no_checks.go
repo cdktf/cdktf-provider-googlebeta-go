@@ -115,6 +115,10 @@ func (j *jsiiProxy_GoogleNetappVolume) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappVolume) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappVolume) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

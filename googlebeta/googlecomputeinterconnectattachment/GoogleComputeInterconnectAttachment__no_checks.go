@@ -167,6 +167,10 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetRouterParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetStackTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) validateSetTypeParameters(val *string) error {
 	return nil
 }

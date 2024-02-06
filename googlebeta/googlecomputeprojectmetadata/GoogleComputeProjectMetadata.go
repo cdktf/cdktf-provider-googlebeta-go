@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_compute_project_metadata google_compute_project_metadata}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_compute_project_metadata google_compute_project_metadata}.
 type GoogleComputeProjectMetadata interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -381,7 +381,7 @@ func (j *jsiiProxy_GoogleComputeProjectMetadata) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_compute_project_metadata google_compute_project_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_compute_project_metadata google_compute_project_metadata} Resource.
 func NewGoogleComputeProjectMetadata(scope constructs.Construct, id *string, config *GoogleComputeProjectMetadataConfig) GoogleComputeProjectMetadata {
 	_init_.Initialize()
 
@@ -399,7 +399,7 @@ func NewGoogleComputeProjectMetadata(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_compute_project_metadata google_compute_project_metadata} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_compute_project_metadata google_compute_project_metadata} Resource.
 func NewGoogleComputeProjectMetadata_Override(g GoogleComputeProjectMetadata, scope constructs.Construct, id *string, config *GoogleComputeProjectMetadataConfig) {
 	_init_.Initialize()
 

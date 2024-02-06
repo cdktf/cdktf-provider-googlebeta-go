@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_netapp_volume google_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_netapp_volume google_netapp_volume}.
 type GoogleNetappVolume interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -31,6 +31,9 @@ type GoogleNetappVolume interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionPolicy() *string
+	SetDeletionPolicy(val *string)
+	DeletionPolicyInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -173,6 +176,7 @@ type GoogleNetappVolume interface {
 	PutExportPolicy(value *GoogleNetappVolumeExportPolicy)
 	PutSnapshotPolicy(value *GoogleNetappVolumeSnapshotPolicy)
 	PutTimeouts(value *GoogleNetappVolumeTimeouts)
+	ResetDeletionPolicy()
 	ResetDescription()
 	ResetExportPolicy()
 	ResetId()
@@ -272,6 +276,26 @@ func (j *jsiiProxy_GoogleNetappVolume) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) DeletionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) DeletionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deletionPolicyInput",
 		&returns,
 	)
 	return returns
@@ -868,7 +892,7 @@ func (j *jsiiProxy_GoogleNetappVolume) UsedGib() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
 func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *GoogleNetappVolumeConfig) GoogleNetappVolume {
 	_init_.Initialize()
 
@@ -886,7 +910,7 @@ func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.14.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
 func NewGoogleNetappVolume_Override(g GoogleNetappVolume, scope constructs.Construct, id *string, config *GoogleNetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -926,6 +950,17 @@ func (j *jsiiProxy_GoogleNetappVolume)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappVolume)SetDeletionPolicy(val *string) {
+	if err := j.validateSetDeletionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionPolicy",
 		val,
 	)
 }
@@ -1524,6 +1559,14 @@ func (g *jsiiProxy_GoogleNetappVolume) PutTimeouts(value *GoogleNetappVolumeTime
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) ResetDeletionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionPolicy",
+		nil, // no parameters
 	)
 }
 
