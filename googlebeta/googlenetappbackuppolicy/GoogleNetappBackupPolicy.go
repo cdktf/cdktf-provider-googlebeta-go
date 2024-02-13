@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_netapp_backup_policy google_netapp_backup_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_netapp_backup_policy google_netapp_backup_policy}.
 type GoogleNetappBackupPolicy interface {
 	cdktf.TerraformResource
 	AssignedVolumeCount() *float64
@@ -600,7 +600,7 @@ func (j *jsiiProxy_GoogleNetappBackupPolicy) WeeklyBackupLimitInput() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_netapp_backup_policy google_netapp_backup_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_netapp_backup_policy google_netapp_backup_policy} Resource.
 func NewGoogleNetappBackupPolicy(scope constructs.Construct, id *string, config *GoogleNetappBackupPolicyConfig) GoogleNetappBackupPolicy {
 	_init_.Initialize()
 
@@ -618,7 +618,7 @@ func NewGoogleNetappBackupPolicy(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_netapp_backup_policy google_netapp_backup_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_netapp_backup_policy google_netapp_backup_policy} Resource.
 func NewGoogleNetappBackupPolicy_Override(g GoogleNetappBackupPolicy, scope constructs.Construct, id *string, config *GoogleNetappBackupPolicyConfig) {
 	_init_.Initialize()
 

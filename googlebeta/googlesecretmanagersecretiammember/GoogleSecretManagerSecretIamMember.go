@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member}.
 type GoogleSecretManagerSecretIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamMember) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member} Resource.
 func NewGoogleSecretManagerSecretIamMember(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretIamMemberConfig) GoogleSecretManagerSecretIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleSecretManagerSecretIamMember(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.15.0/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_secret_manager_secret_iam_member google_secret_manager_secret_iam_member} Resource.
 func NewGoogleSecretManagerSecretIamMember_Override(g GoogleSecretManagerSecretIamMember, scope constructs.Construct, id *string, config *GoogleSecretManagerSecretIamMemberConfig) {
 	_init_.Initialize()
 
