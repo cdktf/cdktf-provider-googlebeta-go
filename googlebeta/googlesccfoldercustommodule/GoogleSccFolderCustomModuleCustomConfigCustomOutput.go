@@ -7,7 +7,7 @@ package googlesccfoldercustommodule
 type GoogleSccFolderCustomModuleCustomConfigCustomOutput struct {
 	// properties block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_scc_folder_custom_module#properties GoogleSccFolderCustomModule#properties}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_scc_folder_custom_module#properties GoogleSccFolderCustomModule#properties}
 	Properties interface{} `field:"optional" json:"properties" yaml:"properties"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_notebooks_instance google_notebooks_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_notebooks_instance google_notebooks_instance}.
 type GoogleNotebooksInstance interface {
 	cdktf.TerraformResource
 	AcceleratorConfig() GoogleNotebooksInstanceAcceleratorConfigOutputReference
@@ -53,6 +53,9 @@ type GoogleNotebooksInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DesiredState() *string
+	SetDesiredState(val *string)
+	DesiredStateInput() *string
 	DiskEncryption() *string
 	SetDiskEncryption(val *string)
 	DiskEncryptionInput() *string
@@ -218,6 +221,7 @@ type GoogleNotebooksInstance interface {
 	ResetCustomGpuDriverPath()
 	ResetDataDiskSizeGb()
 	ResetDataDiskType()
+	ResetDesiredState()
 	ResetDiskEncryption()
 	ResetId()
 	ResetInstallGpuDriver()
@@ -467,6 +471,26 @@ func (j *jsiiProxy_GoogleNotebooksInstance) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNotebooksInstance) DesiredState() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNotebooksInstance) DesiredStateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"desiredStateInput",
 		&returns,
 	)
 	return returns
@@ -1143,7 +1167,7 @@ func (j *jsiiProxy_GoogleNotebooksInstance) VmImageInput() *GoogleNotebooksInsta
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_notebooks_instance google_notebooks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_notebooks_instance google_notebooks_instance} Resource.
 func NewGoogleNotebooksInstance(scope constructs.Construct, id *string, config *GoogleNotebooksInstanceConfig) GoogleNotebooksInstance {
 	_init_.Initialize()
 
@@ -1161,7 +1185,7 @@ func NewGoogleNotebooksInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.16.0/docs/resources/google_notebooks_instance google_notebooks_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_notebooks_instance google_notebooks_instance} Resource.
 func NewGoogleNotebooksInstance_Override(g GoogleNotebooksInstance, scope constructs.Construct, id *string, config *GoogleNotebooksInstanceConfig) {
 	_init_.Initialize()
 
@@ -1264,6 +1288,17 @@ func (j *jsiiProxy_GoogleNotebooksInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNotebooksInstance)SetDesiredState(val *string) {
+	if err := j.validateSetDesiredStateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"desiredState",
 		val,
 	)
 }
@@ -2027,6 +2062,14 @@ func (g *jsiiProxy_GoogleNotebooksInstance) ResetDataDiskType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDataDiskType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNotebooksInstance) ResetDesiredState() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDesiredState",
 		nil, // no parameters
 	)
 }

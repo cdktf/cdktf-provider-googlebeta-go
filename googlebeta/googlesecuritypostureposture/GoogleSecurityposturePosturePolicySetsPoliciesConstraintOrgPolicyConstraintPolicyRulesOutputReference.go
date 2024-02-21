@@ -26,6 +26,8 @@ type GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	Condition() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference
+	ConditionInput() *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -37,8 +39,6 @@ type GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint
 	Enforce() interface{}
 	SetEnforce(val interface{})
 	EnforceInput() interface{}
-	Expr() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExprOutputReference
-	ExprInput() *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -77,12 +77,12 @@ type GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraint
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutExpr(value *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr)
+	PutCondition(value *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition)
 	PutValues(value *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesValues)
 	ResetAllowAll()
+	ResetCondition()
 	ResetDenyAll()
 	ResetEnforce()
-	ResetExpr()
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -139,6 +139,26 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) Condition() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference {
+	var returns GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesConditionOutputReference
+	_jsii_.Get(
+		j,
+		"condition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ConditionInput() *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition {
+	var returns *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition
+	_jsii_.Get(
+		j,
+		"conditionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -184,26 +204,6 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	_jsii_.Get(
 		j,
 		"enforceInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) Expr() GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExprOutputReference {
-	var returns GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExprOutputReference
-	_jsii_.Get(
-		j,
-		"expr",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ExprInput() *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr {
-	var returns *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr
-	_jsii_.Get(
-		j,
-		"exprInput",
 		&returns,
 	)
 	return returns
@@ -571,13 +571,13 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) PutExpr(value *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesExpr) {
-	if err := g.validatePutExprParameters(value); err != nil {
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) PutCondition(value *GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesCondition) {
+	if err := g.validatePutConditionParameters(value); err != nil {
 		panic(err)
 	}
 	_jsii_.InvokeVoid(
 		g,
-		"putExpr",
+		"putCondition",
 		[]interface{}{value},
 	)
 }
@@ -601,6 +601,14 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	)
 }
 
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ResetCondition() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCondition",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ResetDenyAll() {
 	_jsii_.InvokeVoid(
 		g,
@@ -613,14 +621,6 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPo
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnforce",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesConstraintOrgPolicyConstraintPolicyRulesOutputReference) ResetExpr() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetExpr",
 		nil, // no parameters
 	)
 }

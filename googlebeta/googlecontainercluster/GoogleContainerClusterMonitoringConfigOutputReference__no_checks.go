@@ -47,7 +47,7 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) validatePutAdvancedDatapathObservabilityConfigParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigOutputReference) validatePutAdvancedDatapathObservabilityConfigParameters(value *GoogleContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig) error {
 	return nil
 }
 

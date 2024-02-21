@@ -16,6 +16,9 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	AutomaticTrafficControl() interface{}
 	SetAutomaticTrafficControl(val interface{})
 	AutomaticTrafficControlInput() interface{}
+	CanaryRevisionTags() *[]*string
+	SetCanaryRevisionTags(val *[]*string)
+	CanaryRevisionTagsInput() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,6 +38,12 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	Fqn() *string
 	InternalValue() *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRun
 	SetInternalValue(val *GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRun)
+	PriorRevisionTags() *[]*string
+	SetPriorRevisionTags(val *[]*string)
+	PriorRevisionTagsInput() *[]*string
+	StableRevisionTags() *[]*string
+	SetStableRevisionTags(val *[]*string)
+	StableRevisionTagsInput() *[]*string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +77,9 @@ type GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeC
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAutomaticTrafficControl()
+	ResetCanaryRevisionTags()
+	ResetPriorRevisionTags()
+	ResetStableRevisionTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -98,6 +110,26 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Get(
 		j,
 		"automaticTrafficControlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference) CanaryRevisionTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"canaryRevisionTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference) CanaryRevisionTagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"canaryRevisionTagsInput",
 		&returns,
 	)
 	return returns
@@ -148,6 +180,46 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference) PriorRevisionTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"priorRevisionTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference) PriorRevisionTagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"priorRevisionTagsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference) StableRevisionTags() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"stableRevisionTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference) StableRevisionTagsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"stableRevisionTagsInput",
 		&returns,
 	)
 	return returns
@@ -212,6 +284,17 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	)
 }
 
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference)SetCanaryRevisionTags(val *[]*string) {
+	if err := j.validateSetCanaryRevisionTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"canaryRevisionTags",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference)SetComplexObjectIndex(val interface{}) {
 	if err := j.validateSetComplexObjectIndexParameters(val); err != nil {
 		panic(err)
@@ -241,6 +324,28 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference)SetPriorRevisionTags(val *[]*string) {
+	if err := j.validateSetPriorRevisionTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"priorRevisionTags",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference)SetStableRevisionTags(val *[]*string) {
+	if err := j.validateSetStableRevisionTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stableRevisionTags",
 		val,
 	)
 }
@@ -457,6 +562,30 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategy
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutomaticTrafficControl",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference) ResetCanaryRevisionTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCanaryRevisionTags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference) ResetPriorRevisionTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPriorRevisionTags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineSerialPipelineStagesStrategyCanaryRuntimeConfigCloudRunOutputReference) ResetStableRevisionTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStableRevisionTags",
 		nil, // no parameters
 	)
 }

@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) validatePutBigQu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) validatePutFeatureRegistrySourceParameters(value *GoogleVertexAiFeatureOnlineStoreFeatureviewFeatureRegistrySource) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureview) validatePutSyncConfigParameters(value *GoogleVertexAiFeatureOnlineStoreFeatureviewSyncConfig) error {
 	return nil
 }
