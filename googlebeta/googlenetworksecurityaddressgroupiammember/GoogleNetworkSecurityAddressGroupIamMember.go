@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_network_security_address_group_iam_member google_network_security_address_group_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_network_security_address_group_iam_member google_network_security_address_group_iam_member}.
 type GoogleNetworkSecurityAddressGroupIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityAddressGroupIamMember) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_network_security_address_group_iam_member google_network_security_address_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_network_security_address_group_iam_member google_network_security_address_group_iam_member} Resource.
 func NewGoogleNetworkSecurityAddressGroupIamMember(scope constructs.Construct, id *string, config *GoogleNetworkSecurityAddressGroupIamMemberConfig) GoogleNetworkSecurityAddressGroupIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleNetworkSecurityAddressGroupIamMember(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_network_security_address_group_iam_member google_network_security_address_group_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_network_security_address_group_iam_member google_network_security_address_group_iam_member} Resource.
 func NewGoogleNetworkSecurityAddressGroupIamMember_Override(g GoogleNetworkSecurityAddressGroupIamMember, scope constructs.Construct, id *string, config *GoogleNetworkSecurityAddressGroupIamMemberConfig) {
 	_init_.Initialize()
 

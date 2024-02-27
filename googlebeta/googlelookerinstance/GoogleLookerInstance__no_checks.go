@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleLookerInstance) validatePutAdminSettingsParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLookerInstance) validatePutCustomDomainParameters(value *GoogleLookerInstanceCustomDomain) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLookerInstance) validatePutDenyMaintenancePeriodParameters(value *GoogleLookerInstanceDenyMaintenancePeriod) error {
 	return nil
 }

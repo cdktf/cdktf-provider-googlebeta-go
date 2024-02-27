@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_dataplex_lake google_dataplex_lake}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_dataplex_lake google_dataplex_lake}.
 type GoogleDataplexLake interface {
 	cdktf.TerraformResource
 	AssetStatus() GoogleDataplexLakeAssetStatusList
@@ -599,7 +599,7 @@ func (j *jsiiProxy_GoogleDataplexLake) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource.
 func NewGoogleDataplexLake(scope constructs.Construct, id *string, config *GoogleDataplexLakeConfig) GoogleDataplexLake {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewGoogleDataplexLake(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.17.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_dataplex_lake google_dataplex_lake} Resource.
 func NewGoogleDataplexLake_Override(g GoogleDataplexLake, scope constructs.Construct, id *string, config *GoogleDataplexLakeConfig) {
 	_init_.Initialize()
 

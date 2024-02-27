@@ -74,7 +74,6 @@ type GoogleSecurityposturePosturePolicySetsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPolicies(value interface{})
 	ResetDescription()
-	ResetPolicies()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -526,14 +525,6 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) ResetD
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsOutputReference) ResetPolicies() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetPolicies",
 		nil, // no parameters
 	)
 }
