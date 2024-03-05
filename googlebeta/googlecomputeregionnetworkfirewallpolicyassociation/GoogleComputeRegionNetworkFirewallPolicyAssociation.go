@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association}.
 type GoogleComputeRegionNetworkFirewallPolicyAssociation interface {
 	cdktf.TerraformResource
 	AttachmentTarget() *string
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyAssociation) Timeouts
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource.
 func NewGoogleComputeRegionNetworkFirewallPolicyAssociation(scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkFirewallPolicyAssociationConfig) GoogleComputeRegionNetworkFirewallPolicyAssociation {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleComputeRegionNetworkFirewallPolicyAssociation(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_compute_region_network_firewall_policy_association google_compute_region_network_firewall_policy_association} Resource.
 func NewGoogleComputeRegionNetworkFirewallPolicyAssociation_Override(g GoogleComputeRegionNetworkFirewallPolicyAssociation, scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkFirewallPolicyAssociationConfig) {
 	_init_.Initialize()
 

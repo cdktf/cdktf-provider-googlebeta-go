@@ -656,6 +656,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberProperty{JsiiProperty: "composerInternalIpv4CidrBlock", GoGetter: "ComposerInternalIpv4CidrBlock"},
+			_jsii_.MemberProperty{JsiiProperty: "composerNetworkAttachment", GoGetter: "ComposerNetworkAttachment"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
 			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
 			_jsii_.MemberProperty{JsiiProperty: "diskSizeGb", GoGetter: "DiskSizeGb"},

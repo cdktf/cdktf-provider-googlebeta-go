@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutArgumentsParameters(value i
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutRemoteFunctionOptionsParameters(value *GoogleBigqueryRoutineRemoteFunctionOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryRoutine) validatePutSparkOptionsParameters(value *GoogleBigqueryRoutineSparkOptions) error {
 	return nil
 }

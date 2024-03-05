@@ -26,6 +26,9 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	ComposerInternalIpv4CidrBlock() *string
 	SetComposerInternalIpv4CidrBlock(val *string)
 	ComposerInternalIpv4CidrBlockInput() *string
+	ComposerNetworkAttachment() *string
+	SetComposerNetworkAttachment(val *string)
+	ComposerNetworkAttachmentInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -101,6 +104,7 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutIpAllocationPolicy(value interface{})
 	ResetComposerInternalIpv4CidrBlock()
+	ResetComposerNetworkAttachment()
 	ResetDiskSizeGb()
 	ResetEnableIpMasqAgent()
 	ResetIpAllocationPolicy()
@@ -162,6 +166,26 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Com
 	_jsii_.Get(
 		j,
 		"composerInternalIpv4CidrBlockInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) ComposerNetworkAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"composerNetworkAttachment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) ComposerNetworkAttachmentInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"composerNetworkAttachmentInput",
 		&returns,
 	)
 	return returns
@@ -494,6 +518,17 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetC
 	_jsii_.Set(
 		j,
 		"composerInternalIpv4CidrBlock",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference)SetComposerNetworkAttachment(val *string) {
+	if err := j.validateSetComposerNetworkAttachmentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"composerNetworkAttachment",
 		val,
 	)
 }
@@ -842,6 +877,14 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetComposerInternalIpv4CidrBlock",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) ResetComposerNetworkAttachment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetComposerNetworkAttachment",
 		nil, // no parameters
 	)
 }

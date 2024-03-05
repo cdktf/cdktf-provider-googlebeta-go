@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy}.
 type GoogleComputeRegionTargetHttpsProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CertificateManagerCertificates() *[]*string
+	SetCertificateManagerCertificates(val *[]*string)
+	CertificateManagerCertificatesInput() *[]*string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -134,6 +137,7 @@ type GoogleComputeRegionTargetHttpsProxy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleComputeRegionTargetHttpsProxyTimeouts)
+	ResetCertificateManagerCertificates()
 	ResetDescription()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -141,6 +145,7 @@ type GoogleComputeRegionTargetHttpsProxy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetSslCertificates()
 	ResetSslPolicy()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -166,6 +171,26 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) CdktfStack() cdktf.Terra
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) CertificateManagerCertificates() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"certificateManagerCertificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) CertificateManagerCertificatesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"certificateManagerCertificatesInput",
 		&returns,
 	)
 	return returns
@@ -532,7 +557,7 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
 func NewGoogleComputeRegionTargetHttpsProxy(scope constructs.Construct, id *string, config *GoogleComputeRegionTargetHttpsProxyConfig) GoogleComputeRegionTargetHttpsProxy {
 	_init_.Initialize()
 
@@ -550,7 +575,7 @@ func NewGoogleComputeRegionTargetHttpsProxy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.18.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.19.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
 func NewGoogleComputeRegionTargetHttpsProxy_Override(g GoogleComputeRegionTargetHttpsProxy, scope constructs.Construct, id *string, config *GoogleComputeRegionTargetHttpsProxyConfig) {
 	_init_.Initialize()
 
@@ -558,6 +583,17 @@ func NewGoogleComputeRegionTargetHttpsProxy_Override(g GoogleComputeRegionTarget
 		"@cdktf/provider-google-beta.googleComputeRegionTargetHttpsProxy.GoogleComputeRegionTargetHttpsProxy",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy)SetCertificateManagerCertificates(val *[]*string) {
+	if err := j.validateSetCertificateManagerCertificatesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"certificateManagerCertificates",
+		val,
 	)
 }
 
@@ -1081,6 +1117,14 @@ func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) PutTimeouts(value *Googl
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ResetCertificateManagerCertificates() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCertificateManagerCertificates",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1117,6 +1161,14 @@ func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ResetSslCertificates() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSslCertificates",
 		nil, // no parameters
 	)
 }
