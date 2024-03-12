@@ -139,6 +139,10 @@ func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) validateSetProvisio
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerDnsAuthorization) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleCertificateManagerDnsAuthorizationParameters(scope constructs.Construct, id *string, config *GoogleCertificateManagerDnsAuthorizationConfig) error {
 	return nil
 }

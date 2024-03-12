@@ -34,6 +34,8 @@ type GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutpu
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeploymentConfigs() GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList
+	DeploymentConfigsInput() interface{}
 	ExemptableNamespaces() *[]*string
 	SetExemptableNamespaces(val *[]*string)
 	ExemptableNamespacesInput() *[]*string
@@ -89,10 +91,12 @@ type GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutpu
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDeploymentConfigs(value interface{})
 	PutMonitoring(value *GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring)
 	PutPolicyContent(value *GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigPolicyContent)
 	ResetAuditIntervalSeconds()
 	ResetConstraintViolationLimit()
+	ResetDeploymentConfigs()
 	ResetExemptableNamespaces()
 	ResetInstallSpec()
 	ResetLogDeniesEnabled()
@@ -180,6 +184,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyController
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) DeploymentConfigs() GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList {
+	var returns GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigDeploymentConfigsList
+	_jsii_.Get(
+		j,
+		"deploymentConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) DeploymentConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deploymentConfigsInput",
 		&returns,
 	)
 	return returns
@@ -711,6 +735,17 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyController
 	return returns
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) PutDeploymentConfigs(value interface{}) {
+	if err := g.validatePutDeploymentConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDeploymentConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) PutMonitoring(value *GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring) {
 	if err := g.validatePutMonitoringParameters(value); err != nil {
 		panic(err)
@@ -745,6 +780,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyController
 	_jsii_.InvokeVoid(
 		g,
 		"resetConstraintViolationLimit",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) ResetDeploymentConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeploymentConfigs",
 		nil, // no parameters
 	)
 }

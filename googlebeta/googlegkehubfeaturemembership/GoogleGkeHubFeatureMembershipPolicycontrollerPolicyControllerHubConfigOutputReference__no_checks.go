@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyController
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) validatePutDeploymentConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigOutputReference) validatePutMonitoringParameters(value *GoogleGkeHubFeatureMembershipPolicycontrollerPolicyControllerHubConfigMonitoring) error {
 	return nil
 }

@@ -13,7 +13,7 @@ import (
 
 type GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference interface {
 	cdktf.ComplexObject
-	CaviumCerts() *string
+	CaviumCerts() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,8 +31,8 @@ type GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	GoogleCardCerts() *string
-	GooglePartitionCerts() *string
+	GoogleCardCerts() *[]*string
+	GooglePartitionCerts() *[]*string
 	InternalValue() *GoogleKmsCryptoKeyVersionAttestationCertChains
 	SetInternalValue(val *GoogleKmsCryptoKeyVersionAttestationCertChains)
 	// Experimental.
@@ -82,8 +82,8 @@ type jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference str
 	internal.Type__cdktfComplexObject
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference) CaviumCerts() *string {
-	var returns *string
+func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference) CaviumCerts() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"caviumCerts",
@@ -132,8 +132,8 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference) GoogleCardCerts() *string {
-	var returns *string
+func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference) GoogleCardCerts() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"googleCardCerts",
@@ -142,8 +142,8 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference) GooglePartitionCerts() *string {
-	var returns *string
+func (j *jsiiProxy_GoogleKmsCryptoKeyVersionAttestationCertChainsOutputReference) GooglePartitionCerts() *[]*string {
+	var returns *[]*string
 	_jsii_.Get(
 		j,
 		"googlePartitionCerts",
