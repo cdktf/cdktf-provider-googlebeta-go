@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_compute_disk_iam_binding google_compute_disk_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_compute_disk_iam_binding google_compute_disk_iam_binding}.
 type GoogleComputeDiskIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleComputeDiskIamBinding) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_compute_disk_iam_binding google_compute_disk_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_compute_disk_iam_binding google_compute_disk_iam_binding} Resource.
 func NewGoogleComputeDiskIamBinding(scope constructs.Construct, id *string, config *GoogleComputeDiskIamBindingConfig) GoogleComputeDiskIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleComputeDiskIamBinding(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_compute_disk_iam_binding google_compute_disk_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_compute_disk_iam_binding google_compute_disk_iam_binding} Resource.
 func NewGoogleComputeDiskIamBinding_Override(g GoogleComputeDiskIamBinding, scope constructs.Construct, id *string, config *GoogleComputeDiskIamBindingConfig) {
 	_init_.Initialize()
 

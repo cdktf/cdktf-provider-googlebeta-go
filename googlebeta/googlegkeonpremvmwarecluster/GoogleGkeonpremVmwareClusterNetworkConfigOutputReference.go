@@ -55,6 +55,8 @@ type GoogleGkeonpremVmwareClusterNetworkConfigOutputReference interface {
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
 	VcenterNetwork() *string
+	SetVcenterNetwork(val *string)
+	VcenterNetworkInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -87,6 +89,7 @@ type GoogleGkeonpremVmwareClusterNetworkConfigOutputReference interface {
 	ResetDhcpIpConfig()
 	ResetHostConfig()
 	ResetStaticIpConfig()
+	ResetVcenterNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -302,6 +305,16 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterNetworkConfigOutputReference) Vce
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterNetworkConfigOutputReference) VcenterNetworkInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"vcenterNetworkInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleGkeonpremVmwareClusterNetworkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremVmwareClusterNetworkConfigOutputReference {
 	_init_.Initialize()
@@ -403,6 +416,17 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterNetworkConfigOutputReference)SetT
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterNetworkConfigOutputReference)SetVcenterNetwork(val *string) {
+	if err := j.validateSetVcenterNetworkParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vcenterNetwork",
 		val,
 	)
 }
@@ -665,6 +689,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterNetworkConfigOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetStaticIpConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterNetworkConfigOutputReference) ResetVcenterNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVcenterNetwork",
 		nil, // no parameters
 	)
 }

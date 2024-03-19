@@ -83,6 +83,10 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutEncryptionKe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutEphemeralDirectoriesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) validatePutHostParameters(value *GoogleWorkstationsWorkstationConfigHost) error {
 	return nil
 }

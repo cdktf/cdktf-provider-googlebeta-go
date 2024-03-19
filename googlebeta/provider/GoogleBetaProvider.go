@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -48,6 +48,9 @@ type GoogleBetaProvider interface {
 	AppEngineCustomEndpoint() *string
 	SetAppEngineCustomEndpoint(val *string)
 	AppEngineCustomEndpointInput() *string
+	ApphubCustomEndpoint() *string
+	SetApphubCustomEndpoint(val *string)
+	ApphubCustomEndpointInput() *string
 	ArtifactRegistryCustomEndpoint() *string
 	SetArtifactRegistryCustomEndpoint(val *string)
 	ArtifactRegistryCustomEndpointInput() *string
@@ -137,6 +140,9 @@ type GoogleBetaProvider interface {
 	CloudIdsCustomEndpoint() *string
 	SetCloudIdsCustomEndpoint(val *string)
 	CloudIdsCustomEndpointInput() *string
+	CloudQuotasCustomEndpoint() *string
+	SetCloudQuotasCustomEndpoint(val *string)
+	CloudQuotasCustomEndpointInput() *string
 	CloudResourceManagerCustomEndpoint() *string
 	SetCloudResourceManagerCustomEndpoint(val *string)
 	CloudResourceManagerCustomEndpointInput() *string
@@ -540,6 +546,7 @@ type GoogleBetaProvider interface {
 	ResetApigeeCustomEndpoint()
 	ResetApikeysCustomEndpoint()
 	ResetAppEngineCustomEndpoint()
+	ResetApphubCustomEndpoint()
 	ResetArtifactRegistryCustomEndpoint()
 	ResetAssuredWorkloadsCustomEndpoint()
 	ResetBackupDrCustomEndpoint()
@@ -569,6 +576,7 @@ type GoogleBetaProvider interface {
 	ResetCloudFunctionsCustomEndpoint()
 	ResetCloudIdentityCustomEndpoint()
 	ResetCloudIdsCustomEndpoint()
+	ResetCloudQuotasCustomEndpoint()
 	ResetCloudResourceManagerCustomEndpoint()
 	ResetCloudRunCustomEndpoint()
 	ResetCloudRunV2CustomEndpoint()
@@ -928,6 +936,26 @@ func (j *jsiiProxy_GoogleBetaProvider) AppEngineCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"appEngineCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ApphubCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apphubCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ApphubCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apphubCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -1518,6 +1546,26 @@ func (j *jsiiProxy_GoogleBetaProvider) CloudIdsCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"cloudIdsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) CloudQuotasCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudQuotasCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) CloudQuotasCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudQuotasCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4074,7 +4122,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4092,7 +4140,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4190,6 +4238,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetAppEngineCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"appEngineCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetApphubCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"apphubCustomEndpoint",
 		val,
 	)
 }
@@ -4425,6 +4481,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetCloudIdsCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"cloudIdsCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetCloudQuotasCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"cloudQuotasCustomEndpoint",
 		val,
 	)
 }
@@ -5629,6 +5693,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetAppEngineCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetApphubCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApphubCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetArtifactRegistryCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -5857,6 +5929,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetCloudIdsCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCloudIdsCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetCloudQuotasCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudQuotasCustomEndpoint",
 		nil, // no parameters
 	)
 }

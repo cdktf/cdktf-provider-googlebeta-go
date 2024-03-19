@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
 type GoogleCloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -107,6 +107,8 @@ type GoogleCloudRunV2Service interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
+	Scaling() GoogleCloudRunV2ServiceScalingOutputReference
+	ScalingInput() *GoogleCloudRunV2ServiceScaling
 	Template() GoogleCloudRunV2ServiceTemplateOutputReference
 	TemplateInput() *GoogleCloudRunV2ServiceTemplate
 	TerminalCondition() GoogleCloudRunV2ServiceTerminalConditionList
@@ -169,6 +171,7 @@ type GoogleCloudRunV2Service interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutBinaryAuthorization(value *GoogleCloudRunV2ServiceBinaryAuthorization)
+	PutScaling(value *GoogleCloudRunV2ServiceScaling)
 	PutTemplate(value *GoogleCloudRunV2ServiceTemplate)
 	PutTimeouts(value *GoogleCloudRunV2ServiceTimeouts)
 	PutTraffic(value interface{})
@@ -186,6 +189,7 @@ type GoogleCloudRunV2Service interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetScaling()
 	ResetTimeouts()
 	ResetTraffic()
 	SynthesizeAttributes() *map[string]interface{}
@@ -736,6 +740,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) Reconciling() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service) Scaling() GoogleCloudRunV2ServiceScalingOutputReference {
+	var returns GoogleCloudRunV2ServiceScalingOutputReference
+	_jsii_.Get(
+		j,
+		"scaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) ScalingInput() *GoogleCloudRunV2ServiceScaling {
+	var returns *GoogleCloudRunV2ServiceScaling
+	_jsii_.Get(
+		j,
+		"scalingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service) Template() GoogleCloudRunV2ServiceTemplateOutputReference {
 	var returns GoogleCloudRunV2ServiceTemplateOutputReference
 	_jsii_.Get(
@@ -887,7 +911,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) GoogleCloudRunV2Service {
 	_init_.Initialize()
 
@@ -905,7 +929,7 @@ func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service_Override(g GoogleCloudRunV2Service, scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -1480,6 +1504,17 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) PutBinaryAuthorization(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2Service) PutScaling(value *GoogleCloudRunV2ServiceScaling) {
+	if err := g.validatePutScalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putScaling",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2Service) PutTemplate(value *GoogleCloudRunV2ServiceTemplate) {
 	if err := g.validatePutTemplateParameters(value); err != nil {
 		panic(err)
@@ -1605,6 +1640,14 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetScaling() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetScaling",
 		nil, // no parameters
 	)
 }

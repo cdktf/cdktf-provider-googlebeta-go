@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config}.
 type GoogleWorkstationsWorkstationConfigA interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -52,6 +52,8 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	EnableAuditAgentInput() interface{}
 	EncryptionKey() GoogleWorkstationsWorkstationConfigEncryptionKeyOutputReference
 	EncryptionKeyInput() *GoogleWorkstationsWorkstationConfigEncryptionKey
+	EphemeralDirectories() GoogleWorkstationsWorkstationConfigEphemeralDirectoriesList
+	EphemeralDirectoriesInput() interface{}
 	Etag() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -166,6 +168,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutContainer(value *GoogleWorkstationsWorkstationConfigContainer)
 	PutEncryptionKey(value *GoogleWorkstationsWorkstationConfigEncryptionKey)
+	PutEphemeralDirectories(value interface{})
 	PutHost(value *GoogleWorkstationsWorkstationConfigHost)
 	PutPersistentDirectories(value interface{})
 	PutReadinessChecks(value interface{})
@@ -176,6 +179,7 @@ type GoogleWorkstationsWorkstationConfigA interface {
 	ResetDisplayName()
 	ResetEnableAuditAgent()
 	ResetEncryptionKey()
+	ResetEphemeralDirectories()
 	ResetHost()
 	ResetId()
 	ResetIdleTimeout()
@@ -422,6 +426,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EncryptionKeyInput() *G
 	_jsii_.Get(
 		j,
 		"encryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EphemeralDirectories() GoogleWorkstationsWorkstationConfigEphemeralDirectoriesList {
+	var returns GoogleWorkstationsWorkstationConfigEphemeralDirectoriesList
+	_jsii_.Get(
+		j,
+		"ephemeralDirectories",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) EphemeralDirectoriesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ephemeralDirectoriesInput",
 		&returns,
 	)
 	return returns
@@ -838,7 +862,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigA) WorkstationConfigIdInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) GoogleWorkstationsWorkstationConfigA {
 	_init_.Initialize()
 
@@ -856,7 +880,7 @@ func NewGoogleWorkstationsWorkstationConfigA(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_workstations_workstation_config google_workstations_workstation_config} Resource.
 func NewGoogleWorkstationsWorkstationConfigA_Override(g GoogleWorkstationsWorkstationConfigA, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfigAConfig) {
 	_init_.Initialize()
 
@@ -1453,6 +1477,17 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutEncryptionKey(value 
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutEphemeralDirectories(value interface{}) {
+	if err := g.validatePutEphemeralDirectoriesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putEphemeralDirectories",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) PutHost(value *GoogleWorkstationsWorkstationConfigHost) {
 	if err := g.validatePutHostParameters(value); err != nil {
 		panic(err)
@@ -1541,6 +1576,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetEncryptionKey() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEncryptionKey",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigA) ResetEphemeralDirectories() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEphemeralDirectories",
 		nil, // no parameters
 	)
 }

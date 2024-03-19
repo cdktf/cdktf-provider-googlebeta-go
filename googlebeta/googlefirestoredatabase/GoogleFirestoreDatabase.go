@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_firestore_database google_firestore_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firestore_database google_firestore_database}.
 type GoogleFirestoreDatabase interface {
 	cdktf.TerraformResource
 	AppEngineIntegrationMode() *string
@@ -20,6 +20,8 @@ type GoogleFirestoreDatabase interface {
 	AppEngineIntegrationModeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CmekConfig() GoogleFirestoreDatabaseCmekConfigOutputReference
+	CmekConfigInput() *GoogleFirestoreDatabaseCmekConfig
 	ConcurrencyMode() *string
 	SetConcurrencyMode(val *string)
 	ConcurrencyModeInput() *string
@@ -143,8 +145,10 @@ type GoogleFirestoreDatabase interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCmekConfig(value *GoogleFirestoreDatabaseCmekConfig)
 	PutTimeouts(value *GoogleFirestoreDatabaseTimeouts)
 	ResetAppEngineIntegrationMode()
+	ResetCmekConfig()
 	ResetConcurrencyMode()
 	ResetDeleteProtectionState()
 	ResetDeletionPolicy()
@@ -198,6 +202,26 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) CmekConfig() GoogleFirestoreDatabaseCmekConfigOutputReference {
+	var returns GoogleFirestoreDatabaseCmekConfigOutputReference
+	_jsii_.Get(
+		j,
+		"cmekConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreDatabase) CmekConfigInput() *GoogleFirestoreDatabaseCmekConfig {
+	var returns *GoogleFirestoreDatabaseCmekConfig
+	_jsii_.Get(
+		j,
+		"cmekConfigInput",
 		&returns,
 	)
 	return returns
@@ -624,7 +648,7 @@ func (j *jsiiProxy_GoogleFirestoreDatabase) VersionRetentionPeriod() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) GoogleFirestoreDatabase {
 	_init_.Initialize()
 
@@ -642,7 +666,7 @@ func NewGoogleFirestoreDatabase(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.20.0/docs/resources/google_firestore_database google_firestore_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_firestore_database google_firestore_database} Resource.
 func NewGoogleFirestoreDatabase_Override(g GoogleFirestoreDatabase, scope constructs.Construct, id *string, config *GoogleFirestoreDatabaseConfig) {
 	_init_.Initialize()
 
@@ -1184,6 +1208,17 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (g *jsiiProxy_GoogleFirestoreDatabase) PutCmekConfig(value *GoogleFirestoreDatabaseCmekConfig) {
+	if err := g.validatePutCmekConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCmekConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleFirestoreDatabase) PutTimeouts(value *GoogleFirestoreDatabaseTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1199,6 +1234,14 @@ func (g *jsiiProxy_GoogleFirestoreDatabase) ResetAppEngineIntegrationMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAppEngineIntegrationMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFirestoreDatabase) ResetCmekConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCmekConfig",
 		nil, // no parameters
 	)
 }
