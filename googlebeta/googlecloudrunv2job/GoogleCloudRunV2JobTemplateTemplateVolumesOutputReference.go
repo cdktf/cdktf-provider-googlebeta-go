@@ -34,6 +34,8 @@ type GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	EmptyDirInput() *GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir
 	// Experimental.
 	Fqn() *string
+	Gcs() GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference
+	GcsInput() *GoogleCloudRunV2JobTemplateTemplateVolumesGcs
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
 	Name() *string
@@ -75,9 +77,11 @@ type GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutCloudSqlInstance(value *GoogleCloudRunV2JobTemplateTemplateVolumesCloudSqlInstance)
 	PutEmptyDir(value *GoogleCloudRunV2JobTemplateTemplateVolumesEmptyDir)
+	PutGcs(value *GoogleCloudRunV2JobTemplateTemplateVolumesGcs)
 	PutSecret(value *GoogleCloudRunV2JobTemplateTemplateVolumesSecret)
 	ResetCloudSqlInstance()
 	ResetEmptyDir()
+	ResetGcs()
 	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -169,6 +173,26 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) Fq
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) Gcs() GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference {
+	var returns GoogleCloudRunV2JobTemplateTemplateVolumesGcsOutputReference
+	_jsii_.Get(
+		j,
+		"gcs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) GcsInput() *GoogleCloudRunV2JobTemplateTemplateVolumesGcs {
+	var returns *GoogleCloudRunV2JobTemplateTemplateVolumesGcs
+	_jsii_.Get(
+		j,
+		"gcsInput",
 		&returns,
 	)
 	return returns
@@ -546,6 +570,17 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) Pu
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) PutGcs(value *GoogleCloudRunV2JobTemplateTemplateVolumesGcs) {
+	if err := g.validatePutGcsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGcs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) PutSecret(value *GoogleCloudRunV2JobTemplateTemplateVolumesSecret) {
 	if err := g.validatePutSecretParameters(value); err != nil {
 		panic(err)
@@ -569,6 +604,14 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetEmptyDir",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) ResetGcs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGcs",
 		nil, // no parameters
 	)
 }

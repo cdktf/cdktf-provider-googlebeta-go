@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_storage_bucket google_storage_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_storage_bucket google_storage_bucket}.
 type GoogleStorageBucket interface {
 	cdktf.TerraformResource
 	Autoclass() GoogleStorageBucketAutoclassOutputReference
@@ -104,6 +104,8 @@ type GoogleStorageBucket interface {
 	SetRpo(val *string)
 	RpoInput() *string
 	SelfLink() *string
+	SoftDeletePolicy() GoogleStorageBucketSoftDeletePolicyOutputReference
+	SoftDeletePolicyInput() *GoogleStorageBucketSoftDeletePolicy
 	StorageClass() *string
 	SetStorageClass(val *string)
 	StorageClassInput() *string
@@ -174,6 +176,7 @@ type GoogleStorageBucket interface {
 	PutLifecycleRule(value interface{})
 	PutLogging(value *GoogleStorageBucketLogging)
 	PutRetentionPolicy(value *GoogleStorageBucketRetentionPolicy)
+	PutSoftDeletePolicy(value *GoogleStorageBucketSoftDeletePolicy)
 	PutTimeouts(value *GoogleStorageBucketTimeouts)
 	PutVersioning(value *GoogleStorageBucketVersioning)
 	PutWebsite(value *GoogleStorageBucketWebsite)
@@ -196,6 +199,7 @@ type GoogleStorageBucket interface {
 	ResetRequesterPays()
 	ResetRetentionPolicy()
 	ResetRpo()
+	ResetSoftDeletePolicy()
 	ResetStorageClass()
 	ResetTimeouts()
 	ResetUniformBucketLevelAccess()
@@ -729,6 +733,26 @@ func (j *jsiiProxy_GoogleStorageBucket) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageBucket) SoftDeletePolicy() GoogleStorageBucketSoftDeletePolicyOutputReference {
+	var returns GoogleStorageBucketSoftDeletePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"softDeletePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageBucket) SoftDeletePolicyInput() *GoogleStorageBucketSoftDeletePolicy {
+	var returns *GoogleStorageBucketSoftDeletePolicy
+	_jsii_.Get(
+		j,
+		"softDeletePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageBucket) StorageClass() *string {
 	var returns *string
 	_jsii_.Get(
@@ -880,7 +904,7 @@ func (j *jsiiProxy_GoogleStorageBucket) WebsiteInput() *GoogleStorageBucketWebsi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) GoogleStorageBucket {
 	_init_.Initialize()
 
@@ -898,7 +922,7 @@ func NewGoogleStorageBucket(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_storage_bucket google_storage_bucket} Resource.
 func NewGoogleStorageBucket_Override(g GoogleStorageBucket, scope constructs.Construct, id *string, config *GoogleStorageBucketConfig) {
 	_init_.Initialize()
 
@@ -1550,6 +1574,17 @@ func (g *jsiiProxy_GoogleStorageBucket) PutRetentionPolicy(value *GoogleStorageB
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageBucket) PutSoftDeletePolicy(value *GoogleStorageBucketSoftDeletePolicy) {
+	if err := g.validatePutSoftDeletePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSoftDeletePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageBucket) PutTimeouts(value *GoogleStorageBucketTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1715,6 +1750,14 @@ func (g *jsiiProxy_GoogleStorageBucket) ResetRpo() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRpo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageBucket) ResetSoftDeletePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSoftDeletePolicy",
 		nil, // no parameters
 	)
 }

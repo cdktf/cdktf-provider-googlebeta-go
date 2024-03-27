@@ -15,6 +15,8 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	cdktf.ComplexObject
 	Accelerators() GoogleWorkstationsWorkstationConfigHostGceInstanceAcceleratorsList
 	AcceleratorsInput() interface{}
+	BoostConfigs() GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList
+	BoostConfigsInput() interface{}
 	BootDiskSizeGb() *float64
 	SetBootDiskSizeGb(val *float64)
 	BootDiskSizeGbInput() *float64
@@ -98,9 +100,11 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAccelerators(value interface{})
+	PutBoostConfigs(value interface{})
 	PutConfidentialInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig)
 	PutShieldedInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfig)
 	ResetAccelerators()
+	ResetBoostConfigs()
 	ResetBootDiskSizeGb()
 	ResetConfidentialInstanceConfig()
 	ResetDisablePublicIpAddresses()
@@ -142,6 +146,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Get(
 		j,
 		"acceleratorsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) BoostConfigs() GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList {
+	var returns GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList
+	_jsii_.Get(
+		j,
+		"boostConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) BoostConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"boostConfigsInput",
 		&returns,
 	)
 	return returns
@@ -816,6 +840,17 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	)
 }
 
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) PutBoostConfigs(value interface{}) {
+	if err := g.validatePutBoostConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBoostConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) PutConfidentialInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig) {
 	if err := g.validatePutConfidentialInstanceConfigParameters(value); err != nil {
 		panic(err)
@@ -842,6 +877,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"resetAccelerators",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetBoostConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBoostConfigs",
 		nil, // no parameters
 	)
 }

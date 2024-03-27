@@ -17,6 +17,8 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "associatedNetworks", GoGetter: "AssociatedNetworks"},
+			_jsii_.MemberProperty{JsiiProperty: "billingProjectId", GoGetter: "BillingProjectId"},
+			_jsii_.MemberProperty{JsiiProperty: "billingProjectIdInput", GoGetter: "BillingProjectIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "cdktfStack", GoGetter: "CdktfStack"},
 			_jsii_.MemberProperty{JsiiProperty: "connection", GoGetter: "Connection"},
 			_jsii_.MemberProperty{JsiiProperty: "constructNodeMetadata", GoGetter: "ConstructNodeMetadata"},

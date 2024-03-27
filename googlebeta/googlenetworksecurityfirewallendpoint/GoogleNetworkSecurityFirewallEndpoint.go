@@ -12,10 +12,13 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint}.
 type GoogleNetworkSecurityFirewallEndpoint interface {
 	cdktf.TerraformResource
 	AssociatedNetworks() *[]*string
+	BillingProjectId() *string
+	SetBillingProjectId(val *string)
+	BillingProjectIdInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -159,6 +162,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) AssociatedNetworks() *
 	_jsii_.Get(
 		j,
 		"associatedNetworks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) BillingProjectId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"billingProjectId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) BillingProjectIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"billingProjectIdInput",
 		&returns,
 	)
 	return returns
@@ -515,7 +538,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
 func NewGoogleNetworkSecurityFirewallEndpoint(scope constructs.Construct, id *string, config *GoogleNetworkSecurityFirewallEndpointConfig) GoogleNetworkSecurityFirewallEndpoint {
 	_init_.Initialize()
 
@@ -533,7 +556,7 @@ func NewGoogleNetworkSecurityFirewallEndpoint(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
 func NewGoogleNetworkSecurityFirewallEndpoint_Override(g GoogleNetworkSecurityFirewallEndpoint, scope constructs.Construct, id *string, config *GoogleNetworkSecurityFirewallEndpointConfig) {
 	_init_.Initialize()
 
@@ -541,6 +564,17 @@ func NewGoogleNetworkSecurityFirewallEndpoint_Override(g GoogleNetworkSecurityFi
 		"@cdktf/provider-google-beta.googleNetworkSecurityFirewallEndpoint.GoogleNetworkSecurityFirewallEndpoint",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint)SetBillingProjectId(val *string) {
+	if err := j.validateSetBillingProjectIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"billingProjectId",
+		val,
 	)
 }
 

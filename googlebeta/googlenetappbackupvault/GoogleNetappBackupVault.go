@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault}.
 type GoogleNetappBackupVault interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_GoogleNetappBackupVault) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource.
 func NewGoogleNetappBackupVault(scope constructs.Construct, id *string, config *GoogleNetappBackupVaultConfig) GoogleNetappBackupVault {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewGoogleNetappBackupVault(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.21.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_netapp_backup_vault google_netapp_backup_vault} Resource.
 func NewGoogleNetappBackupVault_Override(g GoogleNetappBackupVault, scope constructs.Construct, id *string, config *GoogleNetappBackupVaultConfig) {
 	_init_.Initialize()
 

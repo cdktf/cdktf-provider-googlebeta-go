@@ -32,6 +32,7 @@ type DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference interface {
 	EmptyDir() DataGoogleCloudRunV2JobTemplateTemplateVolumesEmptyDirList
 	// Experimental.
 	Fqn() *string
+	Gcs() DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList
 	InternalValue() *DataGoogleCloudRunV2JobTemplateTemplateVolumes
 	SetInternalValue(val *DataGoogleCloudRunV2JobTemplateTemplateVolumes)
 	Name() *string
@@ -138,6 +139,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) Gcs() DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList {
+	var returns DataGoogleCloudRunV2JobTemplateTemplateVolumesGcsList
+	_jsii_.Get(
+		j,
+		"gcs",
 		&returns,
 	)
 	return returns
