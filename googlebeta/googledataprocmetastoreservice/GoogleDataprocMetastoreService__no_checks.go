@@ -99,6 +99,10 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) validatePutScalingConfigParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocMetastoreService) validatePutScheduledBackupParameters(value *GoogleDataprocMetastoreServiceScheduledBackup) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocMetastoreService) validatePutTelemetryConfigParameters(value *GoogleDataprocMetastoreServiceTelemetryConfig) error {
 	return nil
 }

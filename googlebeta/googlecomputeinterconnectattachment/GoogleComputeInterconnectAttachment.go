@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment}.
 type GoogleComputeInterconnectAttachment interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -27,6 +27,7 @@ type GoogleComputeInterconnectAttachment interface {
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	CloudRouterIpAddress() *string
+	CloudRouterIpv6Address() *string
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -39,6 +40,7 @@ type GoogleComputeInterconnectAttachment interface {
 	SetCount(val interface{})
 	CreationTimestamp() *string
 	CustomerRouterIpAddress() *string
+	CustomerRouterIpv6Address() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -284,6 +286,16 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CloudRouterIpAddress() *
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CloudRouterIpv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cloudRouterIpv6Address",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInterconnectAttachment) Connection() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -329,6 +341,16 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CustomerRouterIpAddress(
 	_jsii_.Get(
 		j,
 		"customerRouterIpAddress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnectAttachment) CustomerRouterIpv6Address() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customerRouterIpv6Address",
 		&returns,
 	)
 	return returns
@@ -815,7 +837,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachment) VlanTag8021QInput() *flo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewGoogleComputeInterconnectAttachment(scope constructs.Construct, id *string, config *GoogleComputeInterconnectAttachmentConfig) GoogleComputeInterconnectAttachment {
 	_init_.Initialize()
 
@@ -833,7 +855,7 @@ func NewGoogleComputeInterconnectAttachment(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_compute_interconnect_attachment google_compute_interconnect_attachment} Resource.
 func NewGoogleComputeInterconnectAttachment_Override(g GoogleComputeInterconnectAttachment, scope constructs.Construct, id *string, config *GoogleComputeInterconnectAttachmentConfig) {
 	_init_.Initialize()
 

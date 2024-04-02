@@ -55,6 +55,9 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	IgnoreUnknownValuesInput() interface{}
 	InternalValue() *GoogleBigqueryTableExternalDataConfiguration
 	SetInternalValue(val *GoogleBigqueryTableExternalDataConfiguration)
+	JsonExtension() *string
+	SetJsonExtension(val *string)
+	JsonExtensionInput() *string
 	JsonOptions() GoogleBigqueryTableExternalDataConfigurationJsonOptionsOutputReference
 	JsonOptionsInput() *GoogleBigqueryTableExternalDataConfigurationJsonOptions
 	MaxBadRecords() *float64
@@ -126,6 +129,7 @@ type GoogleBigqueryTableExternalDataConfigurationOutputReference interface {
 	ResetGoogleSheetsOptions()
 	ResetHivePartitioningOptions()
 	ResetIgnoreUnknownValues()
+	ResetJsonExtension()
 	ResetJsonOptions()
 	ResetMaxBadRecords()
 	ResetMetadataCacheMode()
@@ -374,6 +378,26 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) JsonExtension() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jsonExtension",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) JsonExtensionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"jsonExtensionInput",
 		&returns,
 	)
 	return returns
@@ -691,6 +715,17 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference)S
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference)SetJsonExtension(val *string) {
+	if err := j.validateSetJsonExtensionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"jsonExtension",
 		val,
 	)
 }
@@ -1106,6 +1141,14 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetIgnoreUnknownValues",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) ResetJsonExtension() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetJsonExtension",
 		nil, // no parameters
 	)
 }

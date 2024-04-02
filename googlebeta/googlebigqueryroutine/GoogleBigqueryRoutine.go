@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_bigquery_routine google_bigquery_routine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_bigquery_routine google_bigquery_routine}.
 type GoogleBigqueryRoutine interface {
 	cdktf.TerraformResource
 	Arguments() GoogleBigqueryRoutineArgumentsList
@@ -30,6 +30,9 @@ type GoogleBigqueryRoutine interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTime() *float64
+	DataGovernanceType() *string
+	SetDataGovernanceType(val *string)
+	DataGovernanceTypeInput() *string
 	DatasetId() *string
 	SetDatasetId(val *string)
 	DatasetIdInput() *string
@@ -155,6 +158,7 @@ type GoogleBigqueryRoutine interface {
 	PutSparkOptions(value *GoogleBigqueryRoutineSparkOptions)
 	PutTimeouts(value *GoogleBigqueryRoutineTimeouts)
 	ResetArguments()
+	ResetDataGovernanceType()
 	ResetDescription()
 	ResetDeterminismLevel()
 	ResetId()
@@ -252,6 +256,26 @@ func (j *jsiiProxy_GoogleBigqueryRoutine) CreationTime() *float64 {
 	_jsii_.Get(
 		j,
 		"creationTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryRoutine) DataGovernanceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataGovernanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryRoutine) DataGovernanceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"dataGovernanceTypeInput",
 		&returns,
 	)
 	return returns
@@ -688,7 +712,7 @@ func (j *jsiiProxy_GoogleBigqueryRoutine) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource.
 func NewGoogleBigqueryRoutine(scope constructs.Construct, id *string, config *GoogleBigqueryRoutineConfig) GoogleBigqueryRoutine {
 	_init_.Initialize()
 
@@ -706,7 +730,7 @@ func NewGoogleBigqueryRoutine(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.22.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_bigquery_routine google_bigquery_routine} Resource.
 func NewGoogleBigqueryRoutine_Override(g GoogleBigqueryRoutine, scope constructs.Construct, id *string, config *GoogleBigqueryRoutineConfig) {
 	_init_.Initialize()
 
@@ -735,6 +759,17 @@ func (j *jsiiProxy_GoogleBigqueryRoutine)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryRoutine)SetDataGovernanceType(val *string) {
+	if err := j.validateSetDataGovernanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dataGovernanceType",
 		val,
 	)
 }
@@ -1318,6 +1353,14 @@ func (g *jsiiProxy_GoogleBigqueryRoutine) ResetArguments() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetArguments",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryRoutine) ResetDataGovernanceType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDataGovernanceType",
 		nil, // no parameters
 	)
 }
