@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster}.
 type GoogleGkeonpremVmwareCluster interface {
 	cdktf.TerraformResource
 	AdminClusterMembership() *string
@@ -52,6 +52,9 @@ type GoogleGkeonpremVmwareCluster interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DisableBundledIngress() interface{}
+	SetDisableBundledIngress(val interface{})
+	DisableBundledIngressInput() interface{}
 	EffectiveAnnotations() cdktf.StringMap
 	EnableControlPlaneV2() interface{}
 	SetEnableControlPlaneV2(val interface{})
@@ -186,6 +189,7 @@ type GoogleGkeonpremVmwareCluster interface {
 	ResetAutoRepairConfig()
 	ResetDataplaneV2()
 	ResetDescription()
+	ResetDisableBundledIngress()
 	ResetEnableControlPlaneV2()
 	ResetId()
 	ResetLoadBalancer()
@@ -442,6 +446,26 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) DisableBundledIngress() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableBundledIngress",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) DisableBundledIngressInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableBundledIngressInput",
 		&returns,
 	)
 	return returns
@@ -928,7 +952,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) VmTrackingEnabledInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGoogleGkeonpremVmwareCluster(scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareClusterConfig) GoogleGkeonpremVmwareCluster {
 	_init_.Initialize()
 
@@ -946,7 +970,7 @@ func NewGoogleGkeonpremVmwareCluster(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.23.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_gkeonprem_vmware_cluster google_gkeonprem_vmware_cluster} Resource.
 func NewGoogleGkeonpremVmwareCluster_Override(g GoogleGkeonpremVmwareCluster, scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareClusterConfig) {
 	_init_.Initialize()
 
@@ -1016,6 +1040,17 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster)SetDisableBundledIngress(val interface{}) {
+	if err := j.validateSetDisableBundledIngressParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableBundledIngress",
 		val,
 	)
 }
@@ -1653,6 +1688,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareCluster) ResetDisableBundledIngress() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableBundledIngress",
 		nil, // no parameters
 	)
 }

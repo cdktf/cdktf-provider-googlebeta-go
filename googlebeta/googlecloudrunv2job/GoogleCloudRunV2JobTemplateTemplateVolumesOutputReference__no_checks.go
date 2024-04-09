@@ -59,6 +59,10 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) validatePutNfsParameters(value *GoogleCloudRunV2JobTemplateTemplateVolumesNfs) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateVolumesOutputReference) validatePutSecretParameters(value *GoogleCloudRunV2JobTemplateTemplateVolumesSecret) error {
 	return nil
 }
