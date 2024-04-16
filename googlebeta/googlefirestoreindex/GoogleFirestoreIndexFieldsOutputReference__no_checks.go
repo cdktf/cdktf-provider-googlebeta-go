@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateInterpolat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validatePutVectorConfigParameters(value *GoogleFirestoreIndexFieldsVectorConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreIndexFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

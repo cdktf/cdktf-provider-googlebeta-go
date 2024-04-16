@@ -41,6 +41,9 @@ type GoogleComputeRouterBgpOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdentifierRange() *string
+	SetIdentifierRange(val *string)
+	IdentifierRangeInput() *string
 	InternalValue() *GoogleComputeRouterBgp
 	SetInternalValue(val *GoogleComputeRouterBgp)
 	KeepaliveInterval() *float64
@@ -82,6 +85,7 @@ type GoogleComputeRouterBgpOutputReference interface {
 	ResetAdvertisedGroups()
 	ResetAdvertisedIpRanges()
 	ResetAdvertiseMode()
+	ResetIdentifierRange()
 	ResetKeepaliveInterval()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -218,6 +222,26 @@ func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) Fqn() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) IdentifierRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identifierRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) IdentifierRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"identifierRangeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference) InternalValue() *GoogleComputeRouterBgp {
 	var returns *GoogleComputeRouterBgp
 	_jsii_.Get(
@@ -347,6 +371,17 @@ func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference)SetComplexObjectIsFromS
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterBgpOutputReference)SetIdentifierRange(val *string) {
+	if err := j.validateSetIdentifierRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"identifierRange",
 		val,
 	)
 }
@@ -612,6 +647,14 @@ func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) ResetAdvertiseMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAdvertiseMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterBgpOutputReference) ResetIdentifierRange() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdentifierRange",
 		nil, // no parameters
 	)
 }

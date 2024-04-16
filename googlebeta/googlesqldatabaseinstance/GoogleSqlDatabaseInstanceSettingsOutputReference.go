@@ -70,6 +70,9 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	Edition() *string
 	SetEdition(val *string)
 	EditionInput() *string
+	EnableGoogleMlIntegration() interface{}
+	SetEnableGoogleMlIntegration(val interface{})
+	EnableGoogleMlIntegrationInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InsightsConfig() GoogleSqlDatabaseInstanceSettingsInsightsConfigOutputReference
@@ -159,6 +162,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetDiskSize()
 	ResetDiskType()
 	ResetEdition()
+	ResetEnableGoogleMlIntegration()
 	ResetInsightsConfig()
 	ResetIpConfiguration()
 	ResetLocationPreference()
@@ -528,6 +532,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EditionInpu
 	_jsii_.Get(
 		j,
 		"editionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegration() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGoogleMlIntegration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) EnableGoogleMlIntegrationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableGoogleMlIntegrationInput",
 		&returns,
 	)
 	return returns
@@ -939,6 +963,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEdition(v
 	_jsii_.Set(
 		j,
 		"edition",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference)SetEnableGoogleMlIntegration(val interface{}) {
+	if err := j.validateSetEnableGoogleMlIntegrationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableGoogleMlIntegration",
 		val,
 	)
 }
@@ -1462,6 +1497,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEditio
 	_jsii_.InvokeVoid(
 		g,
 		"resetEdition",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetEnableGoogleMlIntegration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableGoogleMlIntegration",
 		nil, // no parameters
 	)
 }

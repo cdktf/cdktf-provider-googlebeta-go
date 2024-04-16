@@ -127,6 +127,10 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEnableEndpointIndependentM
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetEndpointTypesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetIcmpIdleTimeoutSecParameters(val *float64) error {
 	return nil
 }

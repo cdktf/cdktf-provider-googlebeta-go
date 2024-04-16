@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_network_security_firewall_endpoint_association google_network_security_firewall_endpoint_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_network_security_firewall_endpoint_association google_network_security_firewall_endpoint_association}.
 type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Disabled() interface{}
+	SetDisabled(val interface{})
+	DisabledInput() interface{}
 	EffectiveLabels() cdktf.StringMap
 	FirewallEndpoint() *string
 	SetFirewallEndpoint(val *string)
@@ -138,6 +141,7 @@ type GoogleNetworkSecurityFirewallEndpointAssociation interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkSecurityFirewallEndpointAssociationTimeouts)
+	ResetDisabled()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -219,6 +223,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) DependsOn()
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) Disabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) DisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disabledInput",
 		&returns,
 	)
 	return returns
@@ -575,7 +599,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) UpdateTime(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_network_security_firewall_endpoint_association google_network_security_firewall_endpoint_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_network_security_firewall_endpoint_association google_network_security_firewall_endpoint_association} Resource.
 func NewGoogleNetworkSecurityFirewallEndpointAssociation(scope constructs.Construct, id *string, config *GoogleNetworkSecurityFirewallEndpointAssociationConfig) GoogleNetworkSecurityFirewallEndpointAssociation {
 	_init_.Initialize()
 
@@ -593,7 +617,7 @@ func NewGoogleNetworkSecurityFirewallEndpointAssociation(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_network_security_firewall_endpoint_association google_network_security_firewall_endpoint_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_network_security_firewall_endpoint_association google_network_security_firewall_endpoint_association} Resource.
 func NewGoogleNetworkSecurityFirewallEndpointAssociation_Override(g GoogleNetworkSecurityFirewallEndpointAssociation, scope constructs.Construct, id *string, config *GoogleNetworkSecurityFirewallEndpointAssociationConfig) {
 	_init_.Initialize()
 
@@ -630,6 +654,17 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetDependsOn
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation)SetDisabled(val interface{}) {
+	if err := j.validateSetDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disabled",
 		val,
 	)
 }
@@ -1121,6 +1156,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) PutTimeouts
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityFirewallEndpointAssociation) ResetDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisabled",
+		nil, // no parameters
 	)
 }
 

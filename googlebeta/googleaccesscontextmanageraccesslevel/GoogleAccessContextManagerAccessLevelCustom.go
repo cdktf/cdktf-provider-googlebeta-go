@@ -7,7 +7,7 @@ package googleaccesscontextmanageraccesslevel
 type GoogleAccessContextManagerAccessLevelCustom struct {
 	// expr block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_access_context_manager_access_level#expr GoogleAccessContextManagerAccessLevel#expr}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_access_context_manager_access_level#expr GoogleAccessContextManagerAccessLevel#expr}
 	Expr *GoogleAccessContextManagerAccessLevelCustomExpr `field:"required" json:"expr" yaml:"expr"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud}.
 type GoogleVmwareenginePrivateCloud interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -63,6 +63,9 @@ type GoogleVmwareenginePrivateCloud interface {
 	// The tree node.
 	Node() constructs.Node
 	Nsx() GoogleVmwareenginePrivateCloudNsxList
+	PreferredZone() *string
+	SetPreferredZone(val *string)
+	PreferredZoneInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -76,6 +79,9 @@ type GoogleVmwareenginePrivateCloud interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SecondaryZone() *string
+	SetSecondaryZone(val *string)
+	SecondaryZoneInput() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -141,7 +147,9 @@ type GoogleVmwareenginePrivateCloud interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPreferredZone()
 	ResetProject()
+	ResetSecondaryZone()
 	ResetTimeouts()
 	ResetType()
 	SynthesizeAttributes() *map[string]interface{}
@@ -402,6 +410,26 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) Nsx() GoogleVmwareenginePriva
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) PreferredZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) PreferredZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"preferredZoneInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -447,6 +475,26 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) SecondaryZone() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryZone",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) SecondaryZoneInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryZoneInput",
 		&returns,
 	)
 	return returns
@@ -553,7 +601,7 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) Vcenter() GoogleVmwareengineP
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
 func NewGoogleVmwareenginePrivateCloud(scope constructs.Construct, id *string, config *GoogleVmwareenginePrivateCloudConfig) GoogleVmwareenginePrivateCloud {
 	_init_.Initialize()
 
@@ -571,7 +619,7 @@ func NewGoogleVmwareenginePrivateCloud(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_vmwareengine_private_cloud google_vmwareengine_private_cloud} Resource.
 func NewGoogleVmwareenginePrivateCloud_Override(g GoogleVmwareenginePrivateCloud, scope constructs.Construct, id *string, config *GoogleVmwareenginePrivateCloudConfig) {
 	_init_.Initialize()
 
@@ -675,6 +723,17 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloud)SetName(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud)SetPreferredZone(val *string) {
+	if err := j.validateSetPreferredZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"preferredZone",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleVmwareenginePrivateCloud)SetProject(val *string) {
 	if err := j.validateSetProjectParameters(val); err != nil {
 		panic(err)
@@ -701,6 +760,17 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloud)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud)SetSecondaryZone(val *string) {
+	if err := j.validateSetSecondaryZoneParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryZone",
 		val,
 	)
 }
@@ -1126,10 +1196,26 @@ func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) ResetOverrideLogicalId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) ResetPreferredZone() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPreferredZone",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVmwareenginePrivateCloud) ResetSecondaryZone() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecondaryZone",
 		nil, // no parameters
 	)
 }

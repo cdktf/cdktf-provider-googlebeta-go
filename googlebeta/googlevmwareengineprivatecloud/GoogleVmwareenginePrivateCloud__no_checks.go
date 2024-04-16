@@ -131,11 +131,19 @@ func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetNameParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetPreferredZoneParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleVmwareenginePrivateCloud) validateSetSecondaryZoneParameters(val *string) error {
 	return nil
 }
 

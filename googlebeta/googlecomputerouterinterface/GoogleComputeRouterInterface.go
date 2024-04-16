@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface google_compute_router_interface}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface google_compute_router_interface}.
 type GoogleComputeRouterInterface interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -48,6 +48,9 @@ type GoogleComputeRouterInterface interface {
 	IpRange() *string
 	SetIpRange(val *string)
 	IpRangeInput() *string
+	IpVersion() *string
+	SetIpVersion(val *string)
+	IpVersionInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -143,6 +146,7 @@ type GoogleComputeRouterInterface interface {
 	ResetId()
 	ResetInterconnectAttachment()
 	ResetIpRange()
+	ResetIpVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -306,6 +310,26 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) IpRangeInput() *string {
 	_jsii_.Get(
 		j,
 		"ipRangeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface) IpVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface) IpVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipVersionInput",
 		&returns,
 	)
 	return returns
@@ -572,7 +596,7 @@ func (j *jsiiProxy_GoogleComputeRouterInterface) VpnTunnelInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface google_compute_router_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface google_compute_router_interface} Resource.
 func NewGoogleComputeRouterInterface(scope constructs.Construct, id *string, config *GoogleComputeRouterInterfaceConfig) GoogleComputeRouterInterface {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewGoogleComputeRouterInterface(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.24.0/docs/resources/google_compute_router_interface google_compute_router_interface} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_compute_router_interface google_compute_router_interface} Resource.
 func NewGoogleComputeRouterInterface_Override(g GoogleComputeRouterInterface, scope constructs.Construct, id *string, config *GoogleComputeRouterInterfaceConfig) {
 	_init_.Initialize()
 
@@ -668,6 +692,17 @@ func (j *jsiiProxy_GoogleComputeRouterInterface)SetIpRange(val *string) {
 	_jsii_.Set(
 		j,
 		"ipRange",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRouterInterface)SetIpVersion(val *string) {
+	if err := j.validateSetIpVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipVersion",
 		val,
 	)
 }
@@ -1174,6 +1209,14 @@ func (g *jsiiProxy_GoogleComputeRouterInterface) ResetIpRange() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetIpRange",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRouterInterface) ResetIpVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpVersion",
 		nil, // no parameters
 	)
 }
