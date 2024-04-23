@@ -45,6 +45,9 @@ type GoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	Runtime() *string
 	SetRuntime(val *string)
 	RuntimeInput() *string
+	ServiceAccount() *string
+	SetServiceAccount(val *string)
+	ServiceAccountInput() *string
 	Source() GoogleCloudfunctions2FunctionBuildConfigSourceOutputReference
 	SourceInput() *GoogleCloudfunctions2FunctionBuildConfigSource
 	// Experimental.
@@ -87,6 +90,7 @@ type GoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	ResetEntryPoint()
 	ResetEnvironmentVariables()
 	ResetRuntime()
+	ResetServiceAccount()
 	ResetSource()
 	ResetWorkerPool()
 	// Produce the Token's value at resolution time.
@@ -239,6 +243,26 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Runt
 	_jsii_.Get(
 		j,
 		"runtimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) ServiceAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) ServiceAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountInput",
 		&returns,
 	)
 	return returns
@@ -405,6 +429,17 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetRu
 	_jsii_.Set(
 		j,
 		"runtime",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference)SetServiceAccount(val *string) {
+	if err := j.validateSetServiceAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccount",
 		val,
 	)
 }
@@ -667,6 +702,14 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetRuntime",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) ResetServiceAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccount",
 		nil, // no parameters
 	)
 }

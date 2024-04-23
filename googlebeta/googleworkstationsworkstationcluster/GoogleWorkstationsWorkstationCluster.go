@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster}.
 type GoogleWorkstationsWorkstationCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -27,6 +27,7 @@ type GoogleWorkstationsWorkstationCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneIp() *string
 	// Experimental.
 	Count() interface{}
 	// Experimental.
@@ -234,6 +235,16 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) ConstructNodeMetadata()
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) ControlPlaneIp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"controlPlaneIp",
 		&returns,
 	)
 	return returns
@@ -670,7 +681,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationCluster) WorkstationClusterIdInp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) GoogleWorkstationsWorkstationCluster {
 	_init_.Initialize()
 
@@ -688,7 +699,7 @@ func NewGoogleWorkstationsWorkstationCluster(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_workstations_workstation_cluster google_workstations_workstation_cluster} Resource.
 func NewGoogleWorkstationsWorkstationCluster_Override(g GoogleWorkstationsWorkstationCluster, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationClusterConfig) {
 	_init_.Initialize()
 

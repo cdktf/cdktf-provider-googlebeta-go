@@ -28,6 +28,8 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutpu
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference
+	CustomRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepository
@@ -67,6 +69,8 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutpu
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository)
+	ResetCustomRepository()
 	ResetPublicRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonR
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference) CustomRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference {
+	var returns GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"customRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference) CustomRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository {
+	var returns *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository
+	_jsii_.Get(
+		j,
+		"customRepositoryInput",
 		&returns,
 	)
 	return returns
@@ -451,6 +475,25 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonR
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference) PutCustomRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository) {
+	if err := g.validatePutCustomRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomRepository",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference) ResetCustomRepository() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomRepository",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference) ResetPublicRepository() {

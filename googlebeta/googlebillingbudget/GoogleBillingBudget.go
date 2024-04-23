@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_billing_budget google_billing_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_billing_budget google_billing_budget}.
 type GoogleBillingBudget interface {
 	cdktf.TerraformResource
 	AllUpdatesRule() GoogleBillingBudgetAllUpdatesRuleOutputReference
@@ -61,6 +61,9 @@ type GoogleBillingBudget interface {
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
+	OwnershipScope() *string
+	SetOwnershipScope(val *string)
+	OwnershipScopeInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -136,6 +139,7 @@ type GoogleBillingBudget interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetOwnershipScope()
 	ResetThresholdRules()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -386,6 +390,26 @@ func (j *jsiiProxy_GoogleBillingBudget) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBillingBudget) OwnershipScope() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownershipScope",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBillingBudget) OwnershipScopeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ownershipScopeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBillingBudget) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -487,7 +511,7 @@ func (j *jsiiProxy_GoogleBillingBudget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_billing_budget google_billing_budget} Resource.
 func NewGoogleBillingBudget(scope constructs.Construct, id *string, config *GoogleBillingBudgetConfig) GoogleBillingBudget {
 	_init_.Initialize()
 
@@ -505,7 +529,7 @@ func NewGoogleBillingBudget(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.25.0/docs/resources/google_billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_billing_budget google_billing_budget} Resource.
 func NewGoogleBillingBudget_Override(g GoogleBillingBudget, scope constructs.Construct, id *string, config *GoogleBillingBudgetConfig) {
 	_init_.Initialize()
 
@@ -594,6 +618,17 @@ func (j *jsiiProxy_GoogleBillingBudget)SetLifecycle(val *cdktf.TerraformResource
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBillingBudget)SetOwnershipScope(val *string) {
+	if err := j.validateSetOwnershipScopeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ownershipScope",
 		val,
 	)
 }
@@ -1061,6 +1096,14 @@ func (g *jsiiProxy_GoogleBillingBudget) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBillingBudget) ResetOwnershipScope() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOwnershipScope",
 		nil, // no parameters
 	)
 }

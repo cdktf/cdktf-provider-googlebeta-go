@@ -28,6 +28,8 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutput
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference
+	CustomRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepository
@@ -67,6 +69,8 @@ type GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutput
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository)
+	ResetCustomRepository()
 	ResetPublicRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRe
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) CustomRepository() GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference {
+	var returns GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepositoryOutputReference
+	_jsii_.Get(
+		j,
+		"customRepository",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) CustomRepositoryInput() *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository {
+	var returns *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository
+	_jsii_.Get(
+		j,
+		"customRepositoryInput",
 		&returns,
 	)
 	return returns
@@ -451,6 +475,25 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRe
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) PutCustomRepository(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository) {
+	if err := g.validatePutCustomRepositoryParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomRepository",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) ResetCustomRepository() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomRepository",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) ResetPublicRepository() {

@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonR
 	return nil
 }
 
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference) validatePutCustomRepositoryParameters(value *GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryCustomRepository) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleArtifactRegistryRepositoryRemoteRepositoryConfigPythonRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
