@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member}.
 type GoogleCloudTasksQueueIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueIamMember) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member} Resource.
 func NewGoogleCloudTasksQueueIamMember(scope constructs.Construct, id *string, config *GoogleCloudTasksQueueIamMemberConfig) GoogleCloudTasksQueueIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleCloudTasksQueueIamMember(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloud_tasks_queue_iam_member google_cloud_tasks_queue_iam_member} Resource.
 func NewGoogleCloudTasksQueueIamMember_Override(g GoogleCloudTasksQueueIamMember, scope constructs.Construct, id *string, config *GoogleCloudTasksQueueIamMemberConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy}.
 type GoogleCloudfunctions2FunctionIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionIamPolicy) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy} Resource.
 func NewGoogleCloudfunctions2FunctionIamPolicy(scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionIamPolicyConfig) GoogleCloudfunctions2FunctionIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleCloudfunctions2FunctionIamPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloudfunctions2_function_iam_policy google_cloudfunctions2_function_iam_policy} Resource.
 func NewGoogleCloudfunctions2FunctionIamPolicy_Override(g GoogleCloudfunctions2FunctionIamPolicy, scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionIamPolicyConfig) {
 	_init_.Initialize()
 

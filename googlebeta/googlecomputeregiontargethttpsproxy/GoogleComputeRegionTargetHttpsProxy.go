@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy}.
 type GoogleComputeRegionTargetHttpsProxy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,9 @@ type GoogleComputeRegionTargetHttpsProxy interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	SelfLink() *string
+	ServerTlsPolicy() *string
+	SetServerTlsPolicy(val *string)
+	ServerTlsPolicyInput() *string
 	SslCertificates() *[]*string
 	SetSslCertificates(val *[]*string)
 	SslCertificatesInput() *[]*string
@@ -145,6 +148,7 @@ type GoogleComputeRegionTargetHttpsProxy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetServerTlsPolicy()
 	ResetSslCertificates()
 	ResetSslPolicy()
 	ResetTimeouts()
@@ -446,6 +450,26 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ServerTlsPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverTlsPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ServerTlsPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serverTlsPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) SslCertificates() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -557,7 +581,7 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) UrlMapInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
 func NewGoogleComputeRegionTargetHttpsProxy(scope constructs.Construct, id *string, config *GoogleComputeRegionTargetHttpsProxyConfig) GoogleComputeRegionTargetHttpsProxy {
 	_init_.Initialize()
 
@@ -575,7 +599,7 @@ func NewGoogleComputeRegionTargetHttpsProxy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_region_target_https_proxy google_compute_region_target_https_proxy} Resource.
 func NewGoogleComputeRegionTargetHttpsProxy_Override(g GoogleComputeRegionTargetHttpsProxy, scope constructs.Construct, id *string, config *GoogleComputeRegionTargetHttpsProxyConfig) {
 	_init_.Initialize()
 
@@ -716,6 +740,17 @@ func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionTargetHttpsProxy)SetServerTlsPolicy(val *string) {
+	if err := j.validateSetServerTlsPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serverTlsPolicy",
 		val,
 	)
 }
@@ -1161,6 +1196,14 @@ func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionTargetHttpsProxy) ResetServerTlsPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServerTlsPolicy",
 		nil, // no parameters
 	)
 }

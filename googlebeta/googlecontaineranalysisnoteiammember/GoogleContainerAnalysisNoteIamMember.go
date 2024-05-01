@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_container_analysis_note_iam_member google_container_analysis_note_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_container_analysis_note_iam_member google_container_analysis_note_iam_member}.
 type GoogleContainerAnalysisNoteIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamMember) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_container_analysis_note_iam_member google_container_analysis_note_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_container_analysis_note_iam_member google_container_analysis_note_iam_member} Resource.
 func NewGoogleContainerAnalysisNoteIamMember(scope constructs.Construct, id *string, config *GoogleContainerAnalysisNoteIamMemberConfig) GoogleContainerAnalysisNoteIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleContainerAnalysisNoteIamMember(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_container_analysis_note_iam_member google_container_analysis_note_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_container_analysis_note_iam_member google_container_analysis_note_iam_member} Resource.
 func NewGoogleContainerAnalysisNoteIamMember_Override(g GoogleContainerAnalysisNoteIamMember, scope constructs.Construct, id *string, config *GoogleContainerAnalysisNoteIamMemberConfig) {
 	_init_.Initialize()
 

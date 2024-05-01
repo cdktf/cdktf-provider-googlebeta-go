@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_folder_iam_binding google_folder_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_folder_iam_binding google_folder_iam_binding}.
 type GoogleFolderIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleFolderIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_folder_iam_binding google_folder_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_folder_iam_binding google_folder_iam_binding} Resource.
 func NewGoogleFolderIamBinding(scope constructs.Construct, id *string, config *GoogleFolderIamBindingConfig) GoogleFolderIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleFolderIamBinding(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.26.0/docs/resources/google_folder_iam_binding google_folder_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_folder_iam_binding google_folder_iam_binding} Resource.
 func NewGoogleFolderIamBinding_Override(g GoogleFolderIamBinding, scope constructs.Construct, id *string, config *GoogleFolderIamBindingConfig) {
 	_init_.Initialize()
 

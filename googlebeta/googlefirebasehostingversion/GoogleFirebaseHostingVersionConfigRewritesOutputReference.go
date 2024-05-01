@@ -38,6 +38,9 @@ type GoogleFirebaseHostingVersionConfigRewritesOutputReference interface {
 	GlobInput() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Path() *string
+	SetPath(val *string)
+	PathInput() *string
 	Regex() *string
 	SetRegex(val *string)
 	RegexInput() *string
@@ -78,6 +81,7 @@ type GoogleFirebaseHostingVersionConfigRewritesOutputReference interface {
 	PutRun(value *GoogleFirebaseHostingVersionConfigRewritesRun)
 	ResetFunction()
 	ResetGlob()
+	ResetPath()
 	ResetRegex()
 	ResetRun()
 	// Produce the Token's value at resolution time.
@@ -180,6 +184,26 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) Path() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"path",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) PathInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pathInput",
 		&returns,
 	)
 	return returns
@@ -324,6 +348,17 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference)SetPath(val *string) {
+	if err := j.validateSetPathParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"path",
 		val,
 	)
 }
@@ -570,6 +605,14 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetGlob",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) ResetPath() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPath",
 		nil, // no parameters
 	)
 }
