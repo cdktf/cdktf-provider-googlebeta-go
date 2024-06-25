@@ -33,6 +33,9 @@ type GooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	FilenameDatetimeFormat() *string
+	SetFilenameDatetimeFormat(val *string)
+	FilenameDatetimeFormatInput() *string
 	FilenamePrefix() *string
 	SetFilenamePrefix(val *string)
 	FilenamePrefixInput() *string
@@ -49,6 +52,9 @@ type GooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	MaxDuration() *string
 	SetMaxDuration(val *string)
 	MaxDurationInput() *string
+	ServiceAccountEmail() *string
+	SetServiceAccountEmail(val *string)
+	ServiceAccountEmailInput() *string
 	State() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -84,10 +90,12 @@ type GooglePubsubSubscriptionCloudStorageConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAvroConfig(value *GooglePubsubSubscriptionCloudStorageConfigAvroConfig)
 	ResetAvroConfig()
+	ResetFilenameDatetimeFormat()
 	ResetFilenamePrefix()
 	ResetFilenameSuffix()
 	ResetMaxBytes()
 	ResetMaxDuration()
+	ResetServiceAccountEmail()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -168,6 +176,26 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) Cr
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) FilenameDatetimeFormat() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filenameDatetimeFormat",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) FilenameDatetimeFormatInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"filenameDatetimeFormatInput",
 		&returns,
 	)
 	return returns
@@ -273,6 +301,26 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) Ma
 	return returns
 }
 
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) ServiceAccountEmail() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) ServiceAccountEmailInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAccountEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -364,6 +412,17 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference)Set
 	)
 }
 
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference)SetFilenameDatetimeFormat(val *string) {
+	if err := j.validateSetFilenameDatetimeFormatParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"filenameDatetimeFormat",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference)SetFilenamePrefix(val *string) {
 	if err := j.validateSetFilenamePrefixParameters(val); err != nil {
 		panic(err)
@@ -415,6 +474,17 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference)Set
 	_jsii_.Set(
 		j,
 		"maxDuration",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference)SetServiceAccountEmail(val *string) {
+	if err := j.validateSetServiceAccountEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceAccountEmail",
 		val,
 	)
 }
@@ -646,6 +716,14 @@ func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) Re
 	)
 }
 
+func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) ResetFilenameDatetimeFormat() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFilenameDatetimeFormat",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) ResetFilenamePrefix() {
 	_jsii_.InvokeVoid(
 		g,
@@ -674,6 +752,14 @@ func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxDuration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) ResetServiceAccountEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceAccountEmail",
 		nil, // no parameters
 	)
 }

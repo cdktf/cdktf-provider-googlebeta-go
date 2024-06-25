@@ -107,6 +107,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetCountPar
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetCustomTlsFeaturesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetDescriptionParameters(val *string) error {
 	return nil
 }
@@ -127,6 +131,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetLocation
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetMinTlsVersionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetNameParameters(val *string) error {
 	return nil
 }
@@ -136,6 +144,14 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetProjectP
 }
 
 func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetTlsFeatureProfileParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) validateSetTrustConfigParameters(val *string) error {
 	return nil
 }
 

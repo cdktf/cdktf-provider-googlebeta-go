@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
 type GoogleAlloydbInstance interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -94,6 +94,8 @@ type GoogleAlloydbInstance interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscInstanceConfig() GoogleAlloydbInstancePscInstanceConfigOutputReference
+	PscInstanceConfigInput() *GoogleAlloydbInstancePscInstanceConfig
 	PublicIpAddress() *string
 	QueryInsightsConfig() GoogleAlloydbInstanceQueryInsightsConfigOutputReference
 	QueryInsightsConfigInput() *GoogleAlloydbInstanceQueryInsightsConfig
@@ -160,6 +162,7 @@ type GoogleAlloydbInstance interface {
 	PutClientConnectionConfig(value *GoogleAlloydbInstanceClientConnectionConfig)
 	PutMachineConfig(value *GoogleAlloydbInstanceMachineConfig)
 	PutNetworkConfig(value *GoogleAlloydbInstanceNetworkConfig)
+	PutPscInstanceConfig(value *GoogleAlloydbInstancePscInstanceConfig)
 	PutQueryInsightsConfig(value *GoogleAlloydbInstanceQueryInsightsConfig)
 	PutReadPoolConfig(value *GoogleAlloydbInstanceReadPoolConfig)
 	PutTimeouts(value *GoogleAlloydbInstanceTimeouts)
@@ -176,6 +179,7 @@ type GoogleAlloydbInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPscInstanceConfig()
 	ResetQueryInsightsConfig()
 	ResetReadPoolConfig()
 	ResetTimeouts()
@@ -627,6 +631,26 @@ func (j *jsiiProxy_GoogleAlloydbInstance) Provisioners() *[]interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstance) PscInstanceConfig() GoogleAlloydbInstancePscInstanceConfigOutputReference {
+	var returns GoogleAlloydbInstancePscInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstance) PscInstanceConfigInput() *GoogleAlloydbInstancePscInstanceConfig {
+	var returns *GoogleAlloydbInstancePscInstanceConfig
+	_jsii_.Get(
+		j,
+		"pscInstanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstance) PublicIpAddress() *string {
 	var returns *string
 	_jsii_.Get(
@@ -788,7 +812,7 @@ func (j *jsiiProxy_GoogleAlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) GoogleAlloydbInstance {
 	_init_.Initialize()
 
@@ -806,7 +830,7 @@ func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance_Override(g GoogleAlloydbInstance, scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) {
 	_init_.Initialize()
 
@@ -1381,6 +1405,17 @@ func (g *jsiiProxy_GoogleAlloydbInstance) PutNetworkConfig(value *GoogleAlloydbI
 	)
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstance) PutPscInstanceConfig(value *GoogleAlloydbInstancePscInstanceConfig) {
+	if err := g.validatePutPscInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPscInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstance) PutQueryInsightsConfig(value *GoogleAlloydbInstanceQueryInsightsConfig) {
 	if err := g.validatePutQueryInsightsConfigParameters(value); err != nil {
 		panic(err)
@@ -1498,6 +1533,14 @@ func (g *jsiiProxy_GoogleAlloydbInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstance) ResetPscInstanceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscInstanceConfig",
 		nil, // no parameters
 	)
 }

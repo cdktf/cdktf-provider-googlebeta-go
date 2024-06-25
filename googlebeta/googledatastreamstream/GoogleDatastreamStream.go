@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_datastream_stream google_datastream_stream}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_datastream_stream google_datastream_stream}.
 type GoogleDatastreamStream interface {
 	cdktf.TerraformResource
 	BackfillAll() GoogleDatastreamStreamBackfillAllOutputReference
@@ -31,6 +31,9 @@ type GoogleDatastreamStream interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateWithoutValidation() interface{}
+	SetCreateWithoutValidation(val interface{})
+	CreateWithoutValidationInput() interface{}
 	CustomerManagedEncryptionKey() *string
 	SetCustomerManagedEncryptionKey(val *string)
 	CustomerManagedEncryptionKeyInput() *string
@@ -149,6 +152,7 @@ type GoogleDatastreamStream interface {
 	PutTimeouts(value *GoogleDatastreamStreamTimeouts)
 	ResetBackfillAll()
 	ResetBackfillNone()
+	ResetCreateWithoutValidation()
 	ResetCustomerManagedEncryptionKey()
 	ResetDesiredState()
 	ResetId()
@@ -251,6 +255,26 @@ func (j *jsiiProxy_GoogleDatastreamStream) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStream) CreateWithoutValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createWithoutValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStream) CreateWithoutValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createWithoutValidationInput",
 		&returns,
 	)
 	return returns
@@ -637,7 +661,7 @@ func (j *jsiiProxy_GoogleDatastreamStream) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
 func NewGoogleDatastreamStream(scope constructs.Construct, id *string, config *GoogleDatastreamStreamConfig) GoogleDatastreamStream {
 	_init_.Initialize()
 
@@ -655,7 +679,7 @@ func NewGoogleDatastreamStream(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_datastream_stream google_datastream_stream} Resource.
 func NewGoogleDatastreamStream_Override(g GoogleDatastreamStream, scope constructs.Construct, id *string, config *GoogleDatastreamStreamConfig) {
 	_init_.Initialize()
 
@@ -684,6 +708,17 @@ func (j *jsiiProxy_GoogleDatastreamStream)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatastreamStream)SetCreateWithoutValidation(val interface{}) {
+	if err := j.validateSetCreateWithoutValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createWithoutValidation",
 		val,
 	)
 }
@@ -1242,6 +1277,14 @@ func (g *jsiiProxy_GoogleDatastreamStream) ResetBackfillNone() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBackfillNone",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStream) ResetCreateWithoutValidation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateWithoutValidation",
 		nil, // no parameters
 	)
 }

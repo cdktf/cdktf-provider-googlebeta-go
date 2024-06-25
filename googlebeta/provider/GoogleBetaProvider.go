@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -350,6 +350,9 @@ type GoogleBetaProvider interface {
 	LookerCustomEndpoint() *string
 	SetLookerCustomEndpoint(val *string)
 	LookerCustomEndpointInput() *string
+	ManagedKafkaCustomEndpoint() *string
+	SetManagedKafkaCustomEndpoint(val *string)
+	ManagedKafkaCustomEndpointInput() *string
 	MemcacheCustomEndpoint() *string
 	SetMemcacheCustomEndpoint(val *string)
 	MemcacheCustomEndpointInput() *string
@@ -399,6 +402,9 @@ type GoogleBetaProvider interface {
 	PrivatecaCustomEndpoint() *string
 	SetPrivatecaCustomEndpoint(val *string)
 	PrivatecaCustomEndpointInput() *string
+	PrivilegedAccessManagerCustomEndpoint() *string
+	SetPrivilegedAccessManagerCustomEndpoint(val *string)
+	PrivilegedAccessManagerCustomEndpointInput() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -452,6 +458,9 @@ type GoogleBetaProvider interface {
 	SecurityCenterCustomEndpoint() *string
 	SetSecurityCenterCustomEndpoint(val *string)
 	SecurityCenterCustomEndpointInput() *string
+	SecurityCenterManagementCustomEndpoint() *string
+	SetSecurityCenterManagementCustomEndpoint(val *string)
+	SecurityCenterManagementCustomEndpointInput() *string
 	SecuritypostureCustomEndpoint() *string
 	SetSecuritypostureCustomEndpoint(val *string)
 	SecuritypostureCustomEndpointInput() *string
@@ -650,6 +659,7 @@ type GoogleBetaProvider interface {
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
+	ResetManagedKafkaCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
 	ResetMigrationCenterCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
@@ -668,6 +678,7 @@ type GoogleBetaProvider interface {
 	ResetOverrideLogicalId()
 	ResetParallelstoreCustomEndpoint()
 	ResetPrivatecaCustomEndpoint()
+	ResetPrivilegedAccessManagerCustomEndpoint()
 	ResetProject()
 	ResetPublicCaCustomEndpoint()
 	ResetPubsubCustomEndpoint()
@@ -685,6 +696,7 @@ type GoogleBetaProvider interface {
 	ResetSecretManagerCustomEndpoint()
 	ResetSecureSourceManagerCustomEndpoint()
 	ResetSecurityCenterCustomEndpoint()
+	ResetSecurityCenterManagementCustomEndpoint()
 	ResetSecuritypostureCustomEndpoint()
 	ResetSecurityScannerCustomEndpoint()
 	ResetServiceDirectoryCustomEndpoint()
@@ -2949,6 +2961,26 @@ func (j *jsiiProxy_GoogleBetaProvider) LookerCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) ManagedKafkaCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKafkaCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ManagedKafkaCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"managedKafkaCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) MemcacheCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3264,6 +3296,26 @@ func (j *jsiiProxy_GoogleBetaProvider) PrivatecaCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"privatecaCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) PrivilegedAccessManagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privilegedAccessManagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) PrivilegedAccessManagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"privilegedAccessManagerCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3614,6 +3666,26 @@ func (j *jsiiProxy_GoogleBetaProvider) SecurityCenterCustomEndpointInput() *stri
 	_jsii_.Get(
 		j,
 		"securityCenterCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) SecurityCenterManagementCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityCenterManagementCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) SecurityCenterManagementCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"securityCenterManagementCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4170,7 +4242,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4188,7 +4260,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -5077,6 +5149,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetLookerCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetManagedKafkaCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"managedKafkaCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetMemcacheCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5193,6 +5273,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetPrivatecaCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"privatecaCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetPrivilegedAccessManagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"privilegedAccessManagerCustomEndpoint",
 		val,
 	)
 }
@@ -5329,6 +5417,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetSecurityCenterCustomEndpoint(val *strin
 	_jsii_.Set(
 		j,
 		"securityCenterCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetSecurityCenterManagementCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"securityCenterManagementCustomEndpoint",
 		val,
 	)
 }
@@ -6541,6 +6637,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetLookerCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetManagedKafkaCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagedKafkaCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetMemcacheCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6665,6 +6769,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetPrivatecaCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPrivatecaCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetPrivilegedAccessManagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivilegedAccessManagerCustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -6801,6 +6913,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetSecurityCenterCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecurityCenterCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetSecurityCenterManagementCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecurityCenterManagementCustomEndpoint",
 		nil, // no parameters
 	)
 }

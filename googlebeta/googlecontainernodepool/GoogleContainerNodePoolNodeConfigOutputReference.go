@@ -30,6 +30,8 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	SetComplexObjectIsFromSet(val *bool)
 	ConfidentialNodes() GoogleContainerNodePoolNodeConfigConfidentialNodesOutputReference
 	ConfidentialNodesInput() *GoogleContainerNodePoolNodeConfigConfidentialNodes
+	ContainerdConfig() GoogleContainerNodePoolNodeConfigContainerdConfigOutputReference
+	ContainerdConfigInput() *GoogleContainerNodePoolNodeConfigContainerdConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -109,6 +111,8 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ResourceManagerTagsInput() *map[string]*string
 	SandboxConfig() GoogleContainerNodePoolNodeConfigSandboxConfigOutputReference
 	SandboxConfigInput() *GoogleContainerNodePoolNodeConfigSandboxConfig
+	SecondaryBootDisks() GoogleContainerNodePoolNodeConfigSecondaryBootDisksList
+	SecondaryBootDisksInput() interface{}
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
@@ -160,6 +164,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAdvancedMachineFeatures(value *GoogleContainerNodePoolNodeConfigAdvancedMachineFeatures)
 	PutConfidentialNodes(value *GoogleContainerNodePoolNodeConfigConfidentialNodes)
+	PutContainerdConfig(value *GoogleContainerNodePoolNodeConfigContainerdConfig)
 	PutEphemeralStorageConfig(value *GoogleContainerNodePoolNodeConfigEphemeralStorageConfig)
 	PutEphemeralStorageLocalSsdConfig(value *GoogleContainerNodePoolNodeConfigEphemeralStorageLocalSsdConfig)
 	PutFastSocket(value *GoogleContainerNodePoolNodeConfigFastSocket)
@@ -172,6 +177,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	PutLocalNvmeSsdBlockConfig(value *GoogleContainerNodePoolNodeConfigLocalNvmeSsdBlockConfig)
 	PutReservationAffinity(value *GoogleContainerNodePoolNodeConfigReservationAffinity)
 	PutSandboxConfig(value *GoogleContainerNodePoolNodeConfigSandboxConfig)
+	PutSecondaryBootDisks(value interface{})
 	PutShieldedInstanceConfig(value *GoogleContainerNodePoolNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *GoogleContainerNodePoolNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
@@ -179,6 +185,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
 	ResetConfidentialNodes()
+	ResetContainerdConfig()
 	ResetDiskSizeGb()
 	ResetDiskType()
 	ResetEnableConfidentialStorage()
@@ -206,6 +213,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ResetResourceLabels()
 	ResetResourceManagerTags()
 	ResetSandboxConfig()
+	ResetSecondaryBootDisks()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
 	ResetSoleTenantConfig()
@@ -303,6 +311,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) Confidentia
 	_jsii_.Get(
 		j,
 		"confidentialNodesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ContainerdConfig() GoogleContainerNodePoolNodeConfigContainerdConfigOutputReference {
+	var returns GoogleContainerNodePoolNodeConfigContainerdConfigOutputReference
+	_jsii_.Get(
+		j,
+		"containerdConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ContainerdConfigInput() *GoogleContainerNodePoolNodeConfigContainerdConfig {
+	var returns *GoogleContainerNodePoolNodeConfigContainerdConfig
+	_jsii_.Get(
+		j,
+		"containerdConfigInput",
 		&returns,
 	)
 	return returns
@@ -883,6 +911,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) SandboxConf
 	_jsii_.Get(
 		j,
 		"sandboxConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) SecondaryBootDisks() GoogleContainerNodePoolNodeConfigSecondaryBootDisksList {
+	var returns GoogleContainerNodePoolNodeConfigSecondaryBootDisksList
+	_jsii_.Get(
+		j,
+		"secondaryBootDisks",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) SecondaryBootDisksInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"secondaryBootDisksInput",
 		&returns,
 	)
 	return returns
@@ -1548,6 +1596,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutConfiden
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutContainerdConfig(value *GoogleContainerNodePoolNodeConfigContainerdConfig) {
+	if err := g.validatePutContainerdConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putContainerdConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutEphemeralStorageConfig(value *GoogleContainerNodePoolNodeConfigEphemeralStorageConfig) {
 	if err := g.validatePutEphemeralStorageConfigParameters(value); err != nil {
 		panic(err)
@@ -1680,6 +1739,17 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutSandboxC
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutSecondaryBootDisks(value interface{}) {
+	if err := g.validatePutSecondaryBootDisksParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecondaryBootDisks",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) PutShieldedInstanceConfig(value *GoogleContainerNodePoolNodeConfigShieldedInstanceConfig) {
 	if err := g.validatePutShieldedInstanceConfigParameters(value); err != nil {
 		panic(err)
@@ -1744,6 +1814,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetConfid
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfidentialNodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetContainerdConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContainerdConfig",
 		nil, // no parameters
 	)
 }
@@ -1960,6 +2038,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetSandbo
 	_jsii_.InvokeVoid(
 		g,
 		"resetSandboxConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetSecondaryBootDisks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecondaryBootDisks",
 		nil, // no parameters
 	)
 }

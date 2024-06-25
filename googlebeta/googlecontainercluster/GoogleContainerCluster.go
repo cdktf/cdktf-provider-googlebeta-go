@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -216,6 +216,8 @@ type GoogleContainerCluster interface {
 	ResourceLabelsInput() *map[string]*string
 	ResourceUsageExportConfig() GoogleContainerClusterResourceUsageExportConfigOutputReference
 	ResourceUsageExportConfigInput() *GoogleContainerClusterResourceUsageExportConfig
+	SecretManagerConfig() GoogleContainerClusterSecretManagerConfigOutputReference
+	SecretManagerConfigInput() *GoogleContainerClusterSecretManagerConfig
 	SecurityPostureConfig() GoogleContainerClusterSecurityPostureConfigOutputReference
 	SecurityPostureConfigInput() *GoogleContainerClusterSecurityPostureConfig
 	SelfLink() *string
@@ -317,6 +319,7 @@ type GoogleContainerCluster interface {
 	PutProtectConfig(value *GoogleContainerClusterProtectConfig)
 	PutReleaseChannel(value *GoogleContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *GoogleContainerClusterResourceUsageExportConfig)
+	PutSecretManagerConfig(value *GoogleContainerClusterSecretManagerConfig)
 	PutSecurityPostureConfig(value *GoogleContainerClusterSecurityPostureConfig)
 	PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig)
 	PutTimeouts(value *GoogleContainerClusterTimeouts)
@@ -389,6 +392,7 @@ type GoogleContainerCluster interface {
 	ResetRemoveDefaultNodePool()
 	ResetResourceLabels()
 	ResetResourceUsageExportConfig()
+	ResetSecretManagerConfig()
 	ResetSecurityPostureConfig()
 	ResetServiceExternalIpsConfig()
 	ResetSubnetwork()
@@ -1845,6 +1849,26 @@ func (j *jsiiProxy_GoogleContainerCluster) ResourceUsageExportConfigInput() *Goo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) SecretManagerConfig() GoogleContainerClusterSecretManagerConfigOutputReference {
+	var returns GoogleContainerClusterSecretManagerConfigOutputReference
+	_jsii_.Get(
+		j,
+		"secretManagerConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) SecretManagerConfigInput() *GoogleContainerClusterSecretManagerConfig {
+	var returns *GoogleContainerClusterSecretManagerConfig
+	_jsii_.Get(
+		j,
+		"secretManagerConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) SecurityPostureConfig() GoogleContainerClusterSecurityPostureConfigOutputReference {
 	var returns GoogleContainerClusterSecurityPostureConfigOutputReference
 	_jsii_.Get(
@@ -2066,7 +2090,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2084,7 +2108,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3220,6 +3244,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutResourceUsageExportConfig(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutSecretManagerConfig(value *GoogleContainerClusterSecretManagerConfig) {
+	if err := g.validatePutSecretManagerConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecretManagerConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutSecurityPostureConfig(value *GoogleContainerClusterSecurityPostureConfig) {
 	if err := g.validatePutSecurityPostureConfigParameters(value); err != nil {
 		panic(err)
@@ -3797,6 +3832,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetResourceUsageExportConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetResourceUsageExportConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetSecretManagerConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretManagerConfig",
 		nil, // no parameters
 	)
 }

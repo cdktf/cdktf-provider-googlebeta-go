@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
 type GoogleCloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -44,6 +44,9 @@ type GoogleCloudRunV2Service interface {
 	CustomAudiences() *[]*string
 	SetCustomAudiences(val *[]*string)
 	CustomAudiencesInput() *[]*string
+	DefaultUriDisabled() interface{}
+	SetDefaultUriDisabled(val interface{})
+	DefaultUriDisabledInput() interface{}
 	DeleteTime() *string
 	// Experimental.
 	DependsOn() *[]*string
@@ -180,6 +183,7 @@ type GoogleCloudRunV2Service interface {
 	ResetClient()
 	ResetClientVersion()
 	ResetCustomAudiences()
+	ResetDefaultUriDisabled()
 	ResetDescription()
 	ResetId()
 	ResetIngress()
@@ -375,6 +379,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) CustomAudiencesInput() *[]*string {
 	_jsii_.Get(
 		j,
 		"customAudiencesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) DefaultUriDisabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultUriDisabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) DefaultUriDisabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"defaultUriDisabledInput",
 		&returns,
 	)
 	return returns
@@ -911,7 +935,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) Uri() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) GoogleCloudRunV2Service {
 	_init_.Initialize()
 
@@ -929,7 +953,7 @@ func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service_Override(g GoogleCloudRunV2Service, scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -1002,6 +1026,17 @@ func (j *jsiiProxy_GoogleCloudRunV2Service)SetCustomAudiences(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"customAudiences",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service)SetDefaultUriDisabled(val interface{}) {
+	if err := j.validateSetDefaultUriDisabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"defaultUriDisabled",
 		val,
 	)
 }
@@ -1584,6 +1619,14 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) ResetCustomAudiences() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCustomAudiences",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetDefaultUriDisabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultUriDisabled",
 		nil, // no parameters
 	)
 }

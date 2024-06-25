@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/data-sources/google_compute_disk google_compute_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_compute_disk google_compute_disk}.
 type DataGoogleComputeDisk interface {
 	cdktf.TerraformDataSource
 	AsyncPrimaryDisk() DataGoogleComputeDiskAsyncPrimaryDiskList
@@ -85,6 +85,7 @@ type DataGoogleComputeDisk interface {
 	SourceImageId() *string
 	SourceSnapshotEncryptionKey() DataGoogleComputeDiskSourceSnapshotEncryptionKeyList
 	SourceSnapshotId() *string
+	StoragePool() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -607,6 +608,16 @@ func (j *jsiiProxy_DataGoogleComputeDisk) SourceSnapshotId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeDisk) StoragePool() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storagePool",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeDisk) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -688,7 +699,7 @@ func (j *jsiiProxy_DataGoogleComputeDisk) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
 func NewDataGoogleComputeDisk(scope constructs.Construct, id *string, config *DataGoogleComputeDiskConfig) DataGoogleComputeDisk {
 	_init_.Initialize()
 
@@ -706,7 +717,7 @@ func NewDataGoogleComputeDisk(scope constructs.Construct, id *string, config *Da
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_compute_disk google_compute_disk} Data Source.
 func NewDataGoogleComputeDisk_Override(d DataGoogleComputeDisk, scope constructs.Construct, id *string, config *DataGoogleComputeDiskConfig) {
 	_init_.Initialize()
 

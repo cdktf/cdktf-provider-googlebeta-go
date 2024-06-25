@@ -55,6 +55,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutContainerdConfigParameters(value *GoogleContainerNodePoolNodeConfigContainerdConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutEphemeralStorageConfigParameters(value *GoogleContainerNodePoolNodeConfigEphemeralStorageConfig) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePut
 }
 
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutSandboxConfigParameters(value *GoogleContainerNodePoolNodeConfigSandboxConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutSecondaryBootDisksParameters(value interface{}) error {
 	return nil
 }
 

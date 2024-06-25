@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client google_integrations_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_integrations_client google_integrations_client}.
 type GoogleIntegrationsClient interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -29,6 +29,9 @@ type GoogleIntegrationsClient interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateSampleIntegrations() interface{}
+	SetCreateSampleIntegrations(val interface{})
+	CreateSampleIntegrationsInput() interface{}
 	CreateSampleWorkflows() interface{}
 	SetCreateSampleWorkflows(val interface{})
 	CreateSampleWorkflowsInput() interface{}
@@ -129,6 +132,7 @@ type GoogleIntegrationsClient interface {
 	PutCloudKmsConfig(value *GoogleIntegrationsClientCloudKmsConfig)
 	PutTimeouts(value *GoogleIntegrationsClientTimeouts)
 	ResetCloudKmsConfig()
+	ResetCreateSampleIntegrations()
 	ResetCreateSampleWorkflows()
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -211,6 +215,26 @@ func (j *jsiiProxy_GoogleIntegrationsClient) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIntegrationsClient) CreateSampleIntegrations() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createSampleIntegrations",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleIntegrationsClient) CreateSampleIntegrationsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createSampleIntegrationsInput",
 		&returns,
 	)
 	return returns
@@ -477,7 +501,7 @@ func (j *jsiiProxy_GoogleIntegrationsClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client google_integrations_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_integrations_client google_integrations_client} Resource.
 func NewGoogleIntegrationsClient(scope constructs.Construct, id *string, config *GoogleIntegrationsClientConfig) GoogleIntegrationsClient {
 	_init_.Initialize()
 
@@ -495,7 +519,7 @@ func NewGoogleIntegrationsClient(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_integrations_client google_integrations_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_integrations_client google_integrations_client} Resource.
 func NewGoogleIntegrationsClient_Override(g GoogleIntegrationsClient, scope constructs.Construct, id *string, config *GoogleIntegrationsClientConfig) {
 	_init_.Initialize()
 
@@ -524,6 +548,17 @@ func (j *jsiiProxy_GoogleIntegrationsClient)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleIntegrationsClient)SetCreateSampleIntegrations(val interface{}) {
+	if err := j.validateSetCreateSampleIntegrationsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createSampleIntegrations",
 		val,
 	)
 }
@@ -1019,6 +1054,14 @@ func (g *jsiiProxy_GoogleIntegrationsClient) ResetCloudKmsConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetCloudKmsConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIntegrationsClient) ResetCreateSampleIntegrations() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateSampleIntegrations",
 		nil, // no parameters
 	)
 }

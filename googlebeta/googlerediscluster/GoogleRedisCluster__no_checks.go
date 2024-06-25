@@ -83,6 +83,10 @@ func (g *jsiiProxy_GoogleRedisCluster) validatePutTimeoutsParameters(value *Goog
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) validatePutZoneDistributionConfigParameters(value *GoogleRedisClusterZoneDistributionConfig) error {
+	return nil
+}
+
 func validateGoogleRedisCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -132,6 +136,10 @@ func (j *jsiiProxy_GoogleRedisCluster) validateSetProjectParameters(val *string)
 }
 
 func (j *jsiiProxy_GoogleRedisCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) validateSetRedisConfigsParameters(val *map[string]*string) error {
 	return nil
 }
 

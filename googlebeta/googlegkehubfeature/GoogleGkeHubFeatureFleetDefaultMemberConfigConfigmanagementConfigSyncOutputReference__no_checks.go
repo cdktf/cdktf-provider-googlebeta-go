@@ -71,6 +71,10 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) validateSetPreventDriftParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) validateSetSourceFormatParameters(val *string) error {
 	return nil
 }

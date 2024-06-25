@@ -35,6 +35,7 @@ type DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference interface {
 	InternalValue() *DataGoogleCloudRunServiceTemplateSpecVolumes
 	SetInternalValue(val *DataGoogleCloudRunServiceTemplateSpecVolumes)
 	Name() *string
+	Nfs() DataGoogleCloudRunServiceTemplateSpecVolumesNfsList
 	Secret() DataGoogleCloudRunServiceTemplateSpecVolumesSecretList
 	// Experimental.
 	TerraformAttribute() *string
@@ -158,6 +159,16 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) 
 	_jsii_.Get(
 		j,
 		"name",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecVolumesOutputReference) Nfs() DataGoogleCloudRunServiceTemplateSpecVolumesNfsList {
+	var returns DataGoogleCloudRunServiceTemplateSpecVolumesNfsList
+	_jsii_.Get(
+		j,
+		"nfs",
 		&returns,
 	)
 	return returns

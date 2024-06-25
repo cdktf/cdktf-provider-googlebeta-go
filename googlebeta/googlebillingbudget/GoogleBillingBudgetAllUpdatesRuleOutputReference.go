@@ -31,6 +31,9 @@ type GoogleBillingBudgetAllUpdatesRuleOutputReference interface {
 	DisableDefaultIamRecipients() interface{}
 	SetDisableDefaultIamRecipients(val interface{})
 	DisableDefaultIamRecipientsInput() interface{}
+	EnableProjectLevelRecipients() interface{}
+	SetEnableProjectLevelRecipients(val interface{})
+	EnableProjectLevelRecipientsInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleBillingBudgetAllUpdatesRule
@@ -77,6 +80,7 @@ type GoogleBillingBudgetAllUpdatesRuleOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetDisableDefaultIamRecipients()
+	ResetEnableProjectLevelRecipients()
 	ResetMonitoringNotificationChannels()
 	ResetPubsubTopic()
 	ResetSchemaVersion()
@@ -140,6 +144,26 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) DisableDefa
 	_jsii_.Get(
 		j,
 		"disableDefaultIamRecipientsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipients() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableProjectLevelRecipients",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) EnableProjectLevelRecipientsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableProjectLevelRecipientsInput",
 		&returns,
 	)
 	return returns
@@ -302,6 +326,17 @@ func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetDisableDe
 	_jsii_.Set(
 		j,
 		"disableDefaultIamRecipients",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference)SetEnableProjectLevelRecipients(val interface{}) {
+	if err := j.validateSetEnableProjectLevelRecipientsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableProjectLevelRecipients",
 		val,
 	)
 }
@@ -562,6 +597,14 @@ func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) ResetDisabl
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisableDefaultIamRecipients",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBillingBudgetAllUpdatesRuleOutputReference) ResetEnableProjectLevelRecipients() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableProjectLevelRecipients",
 		nil, // no parameters
 	)
 }

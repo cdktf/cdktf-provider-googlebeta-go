@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleContainerClusterDnsConfigOutputReference) validateResol
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterDnsConfigOutputReference) validateSetAdditiveVpcScopeDnsDomainParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterDnsConfigOutputReference) validateSetClusterDnsParameters(val *string) error {
 	return nil
 }

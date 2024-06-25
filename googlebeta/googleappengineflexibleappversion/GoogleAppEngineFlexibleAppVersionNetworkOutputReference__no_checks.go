@@ -63,6 +63,10 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference) validateSetInstanceIpModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference) validateSetInstanceTagParameters(val *string) error {
 	return nil
 }

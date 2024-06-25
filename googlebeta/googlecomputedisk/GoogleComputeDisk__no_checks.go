@@ -199,6 +199,10 @@ func (j *jsiiProxy_GoogleComputeDisk) validateSetSourceDiskParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeDisk) validateSetStoragePoolParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeDisk) validateSetTypeParameters(val *string) error {
 	return nil
 }

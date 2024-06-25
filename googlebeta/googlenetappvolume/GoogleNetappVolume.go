@@ -12,10 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_netapp_volume google_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_netapp_volume google_netapp_volume}.
 type GoogleNetappVolume interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
+	BackupConfig() GoogleNetappVolumeBackupConfigOutputReference
+	BackupConfigInput() *GoogleNetappVolumeBackupConfig
 	CapacityGib() *string
 	SetCapacityGib(val *string)
 	CapacityGibInput() *string
@@ -178,10 +180,12 @@ type GoogleNetappVolume interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBackupConfig(value *GoogleNetappVolumeBackupConfig)
 	PutExportPolicy(value *GoogleNetappVolumeExportPolicy)
 	PutRestoreParameters(value *GoogleNetappVolumeRestoreParameters)
 	PutSnapshotPolicy(value *GoogleNetappVolumeSnapshotPolicy)
 	PutTimeouts(value *GoogleNetappVolumeTimeouts)
+	ResetBackupConfig()
 	ResetDeletionPolicy()
 	ResetDescription()
 	ResetExportPolicy()
@@ -223,6 +227,26 @@ func (j *jsiiProxy_GoogleNetappVolume) ActiveDirectory() *string {
 	_jsii_.Get(
 		j,
 		"activeDirectory",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) BackupConfig() GoogleNetappVolumeBackupConfigOutputReference {
+	var returns GoogleNetappVolumeBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"backupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) BackupConfigInput() *GoogleNetappVolumeBackupConfig {
+	var returns *GoogleNetappVolumeBackupConfig
+	_jsii_.Get(
+		j,
+		"backupConfigInput",
 		&returns,
 	)
 	return returns
@@ -949,7 +973,7 @@ func (j *jsiiProxy_GoogleNetappVolume) UsedGib() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
 func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *GoogleNetappVolumeConfig) GoogleNetappVolume {
 	_init_.Initialize()
 
@@ -967,7 +991,7 @@ func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
 func NewGoogleNetappVolume_Override(g GoogleNetappVolume, scope constructs.Construct, id *string, config *GoogleNetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1586,6 +1610,17 @@ func (g *jsiiProxy_GoogleNetappVolume) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappVolume) PutBackupConfig(value *GoogleNetappVolumeBackupConfig) {
+	if err := g.validatePutBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBackupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappVolume) PutExportPolicy(value *GoogleNetappVolumeExportPolicy) {
 	if err := g.validatePutExportPolicyParameters(value); err != nil {
 		panic(err)
@@ -1627,6 +1662,14 @@ func (g *jsiiProxy_GoogleNetappVolume) PutTimeouts(value *GoogleNetappVolumeTime
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) ResetBackupConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBackupConfig",
+		nil, // no parameters
 	)
 }
 

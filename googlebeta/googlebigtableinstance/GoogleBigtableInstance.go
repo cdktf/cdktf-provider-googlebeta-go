@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigtable_instance google_bigtable_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_bigtable_instance google_bigtable_instance}.
 type GoogleBigtableInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,9 @@ type GoogleBigtableInstance interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EffectiveLabels() cdktf.StringMap
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -136,6 +139,7 @@ type GoogleBigtableInstance interface {
 	ResetCluster()
 	ResetDeletionProtection()
 	ResetDisplayName()
+	ResetForceDestroy()
 	ResetId()
 	ResetInstanceType()
 	ResetLabels()
@@ -277,6 +281,26 @@ func (j *jsiiProxy_GoogleBigtableInstance) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableInstance) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableInstance) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -523,7 +547,7 @@ func (j *jsiiProxy_GoogleBigtableInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigtable_instance google_bigtable_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_bigtable_instance google_bigtable_instance} Resource.
 func NewGoogleBigtableInstance(scope constructs.Construct, id *string, config *GoogleBigtableInstanceConfig) GoogleBigtableInstance {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewGoogleBigtableInstance(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigtable_instance google_bigtable_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_bigtable_instance google_bigtable_instance} Resource.
 func NewGoogleBigtableInstance_Override(g GoogleBigtableInstance, scope constructs.Construct, id *string, config *GoogleBigtableInstanceConfig) {
 	_init_.Initialize()
 
@@ -600,6 +624,17 @@ func (j *jsiiProxy_GoogleBigtableInstance)SetDisplayName(val *string) {
 	_jsii_.Set(
 		j,
 		"displayName",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigtableInstance)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -1092,6 +1127,14 @@ func (g *jsiiProxy_GoogleBigtableInstance) ResetDisplayName() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisplayName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigtableInstance) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForceDestroy",
 		nil, // no parameters
 	)
 }

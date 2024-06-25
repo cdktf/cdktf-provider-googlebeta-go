@@ -12,11 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_region_network_endpoint google_compute_region_network_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_compute_region_network_endpoint google_compute_region_network_endpoint}.
 type GoogleComputeRegionNetworkEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientDestinationPort() *float64
+	SetClientDestinationPort(val *float64)
+	ClientDestinationPortInput() *float64
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -45,6 +48,9 @@ type GoogleComputeRegionNetworkEndpoint interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Instance() *string
+	SetInstance(val *string)
+	InstanceInput() *string
 	IpAddress() *string
 	SetIpAddress(val *string)
 	IpAddressInput() *string
@@ -128,8 +134,10 @@ type GoogleComputeRegionNetworkEndpoint interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleComputeRegionNetworkEndpointTimeouts)
+	ResetClientDestinationPort()
 	ResetFqdn()
 	ResetId()
+	ResetInstance()
 	ResetIpAddress()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -160,6 +168,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) CdktfStack() cdktf.Terraf
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) ClientDestinationPort() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientDestinationPort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) ClientDestinationPortInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"clientDestinationPortInput",
 		&returns,
 	)
 	return returns
@@ -270,6 +298,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) Instance() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instance",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) InstanceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceInput",
 		&returns,
 	)
 	return returns
@@ -476,7 +524,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_region_network_endpoint google_compute_region_network_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_compute_region_network_endpoint google_compute_region_network_endpoint} Resource.
 func NewGoogleComputeRegionNetworkEndpoint(scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkEndpointConfig) GoogleComputeRegionNetworkEndpoint {
 	_init_.Initialize()
 
@@ -494,7 +542,7 @@ func NewGoogleComputeRegionNetworkEndpoint(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_region_network_endpoint google_compute_region_network_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_compute_region_network_endpoint google_compute_region_network_endpoint} Resource.
 func NewGoogleComputeRegionNetworkEndpoint_Override(g GoogleComputeRegionNetworkEndpoint, scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkEndpointConfig) {
 	_init_.Initialize()
 
@@ -502,6 +550,17 @@ func NewGoogleComputeRegionNetworkEndpoint_Override(g GoogleComputeRegionNetwork
 		"@cdktf/provider-google-beta.googleComputeRegionNetworkEndpoint.GoogleComputeRegionNetworkEndpoint",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint)SetClientDestinationPort(val *float64) {
+	if err := j.validateSetClientDestinationPortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"clientDestinationPort",
+		val,
 	)
 }
 
@@ -561,6 +620,17 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpoint)SetInstance(val *string) {
+	if err := j.validateSetInstanceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instance",
 		val,
 	)
 }
@@ -1014,6 +1084,14 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpoint) PutTimeouts(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpoint) ResetClientDestinationPort() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClientDestinationPort",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkEndpoint) ResetFqdn() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1026,6 +1104,14 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpoint) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpoint) ResetInstance() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstance",
 		nil, // no parameters
 	)
 }

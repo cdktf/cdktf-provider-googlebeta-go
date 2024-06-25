@@ -26,6 +26,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConfidentialNodes() DataGoogleContainerClusterNodeConfigConfidentialNodesList
+	ContainerdConfig() DataGoogleContainerClusterNodeConfigContainerdConfigList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -63,6 +64,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	ResourceLabels() cdktf.StringMap
 	ResourceManagerTags() cdktf.StringMap
 	SandboxConfig() DataGoogleContainerClusterNodeConfigSandboxConfigList
+	SecondaryBootDisks() DataGoogleContainerClusterNodeConfigSecondaryBootDisksList
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodeConfigSoleTenantConfigList
@@ -162,6 +164,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) Confiden
 	_jsii_.Get(
 		j,
 		"confidentialNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) ContainerdConfig() DataGoogleContainerClusterNodeConfigContainerdConfigList {
+	var returns DataGoogleContainerClusterNodeConfigContainerdConfigList
+	_jsii_.Get(
+		j,
+		"containerdConfig",
 		&returns,
 	)
 	return returns
@@ -472,6 +484,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) SandboxC
 	_jsii_.Get(
 		j,
 		"sandboxConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) SecondaryBootDisks() DataGoogleContainerClusterNodeConfigSecondaryBootDisksList {
+	var returns DataGoogleContainerClusterNodeConfigSecondaryBootDisksList
+	_jsii_.Get(
+		j,
+		"secondaryBootDisks",
 		&returns,
 	)
 	return returns

@@ -53,6 +53,8 @@ type GoogleComputeInstanceFromTemplateSchedulingOutputReference interface {
 	OnHostMaintenance() *string
 	SetOnHostMaintenance(val *string)
 	OnHostMaintenanceInput() *string
+	OnInstanceStopAction() GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopActionOutputReference
+	OnInstanceStopActionInput() *GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopAction
 	Preemptible() interface{}
 	SetPreemptible(val interface{})
 	PreemptibleInput() interface{}
@@ -94,6 +96,7 @@ type GoogleComputeInstanceFromTemplateSchedulingOutputReference interface {
 	PutLocalSsdRecoveryTimeout(value *GoogleComputeInstanceFromTemplateSchedulingLocalSsdRecoveryTimeout)
 	PutMaxRunDuration(value *GoogleComputeInstanceFromTemplateSchedulingMaxRunDuration)
 	PutNodeAffinities(value interface{})
+	PutOnInstanceStopAction(value *GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
 	ResetInstanceTerminationAction()
 	ResetLocalSsdRecoveryTimeout()
@@ -102,6 +105,7 @@ type GoogleComputeInstanceFromTemplateSchedulingOutputReference interface {
 	ResetMinNodeCpus()
 	ResetNodeAffinities()
 	ResetOnHostMaintenance()
+	ResetOnInstanceStopAction()
 	ResetPreemptible()
 	ResetProvisioningModel()
 	// Produce the Token's value at resolution time.
@@ -324,6 +328,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) O
 	_jsii_.Get(
 		j,
 		"onHostMaintenanceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) OnInstanceStopAction() GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopActionOutputReference {
+	var returns GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopActionOutputReference
+	_jsii_.Get(
+		j,
+		"onInstanceStopAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) OnInstanceStopActionInput() *GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopAction {
+	var returns *GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopAction
+	_jsii_.Get(
+		j,
+		"onInstanceStopActionInput",
 		&returns,
 	)
 	return returns
@@ -768,6 +792,17 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) P
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) PutOnInstanceStopAction(value *GoogleComputeInstanceFromTemplateSchedulingOnInstanceStopAction) {
+	if err := g.validatePutOnInstanceStopActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOnInstanceStopAction",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) ResetAutomaticRestart() {
 	_jsii_.InvokeVoid(
 		g,
@@ -828,6 +863,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetOnHostMaintenance",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingOutputReference) ResetOnInstanceStopAction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOnInstanceStopAction",
 		nil, // no parameters
 	)
 }

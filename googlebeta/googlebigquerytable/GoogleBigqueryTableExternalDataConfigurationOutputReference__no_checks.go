@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validatePutBigtableOptionsParameters(value *GoogleBigqueryTableExternalDataConfigurationBigtableOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationOutputReference) validatePutCsvOptionsParameters(value *GoogleBigqueryTableExternalDataConfigurationCsvOptions) error {
 	return nil
 }

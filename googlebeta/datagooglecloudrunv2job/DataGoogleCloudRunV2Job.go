@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/data-sources/google_cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job google_cloud_run_v2_job}.
 type DataGoogleCloudRunV2Job interface {
 	cdktf.TerraformDataSource
 	Annotations() cdktf.StringMap
@@ -79,6 +79,8 @@ type DataGoogleCloudRunV2Job interface {
 	// Experimental.
 	RawOverrides() interface{}
 	Reconciling() cdktf.IResolvable
+	RunExecutionToken() *string
+	StartExecutionToken() *string
 	Template() DataGoogleCloudRunV2JobTemplateList
 	TerminalCondition() DataGoogleCloudRunV2JobTerminalConditionList
 	// Experimental.
@@ -530,6 +532,26 @@ func (j *jsiiProxy_DataGoogleCloudRunV2Job) Reconciling() cdktf.IResolvable {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleCloudRunV2Job) RunExecutionToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"runExecutionToken",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2Job) StartExecutionToken() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"startExecutionToken",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleCloudRunV2Job) Template() DataGoogleCloudRunV2JobTemplateList {
 	var returns DataGoogleCloudRunV2JobTemplateList
 	_jsii_.Get(
@@ -611,7 +633,7 @@ func (j *jsiiProxy_DataGoogleCloudRunV2Job) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/data-sources/google_cloud_run_v2_job google_cloud_run_v2_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job google_cloud_run_v2_job} Data Source.
 func NewDataGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *DataGoogleCloudRunV2JobConfig) DataGoogleCloudRunV2Job {
 	_init_.Initialize()
 
@@ -629,7 +651,7 @@ func NewDataGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/data-sources/google_cloud_run_v2_job google_cloud_run_v2_job} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/data-sources/google_cloud_run_v2_job google_cloud_run_v2_job} Data Source.
 func NewDataGoogleCloudRunV2Job_Override(d DataGoogleCloudRunV2Job, scope constructs.Construct, id *string, config *DataGoogleCloudRunV2JobConfig) {
 	_init_.Initialize()
 

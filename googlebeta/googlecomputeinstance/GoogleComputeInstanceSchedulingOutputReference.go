@@ -53,6 +53,8 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	OnHostMaintenance() *string
 	SetOnHostMaintenance(val *string)
 	OnHostMaintenanceInput() *string
+	OnInstanceStopAction() GoogleComputeInstanceSchedulingOnInstanceStopActionOutputReference
+	OnInstanceStopActionInput() *GoogleComputeInstanceSchedulingOnInstanceStopAction
 	Preemptible() interface{}
 	SetPreemptible(val interface{})
 	PreemptibleInput() interface{}
@@ -94,6 +96,7 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	PutLocalSsdRecoveryTimeout(value *GoogleComputeInstanceSchedulingLocalSsdRecoveryTimeout)
 	PutMaxRunDuration(value *GoogleComputeInstanceSchedulingMaxRunDuration)
 	PutNodeAffinities(value interface{})
+	PutOnInstanceStopAction(value *GoogleComputeInstanceSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
 	ResetInstanceTerminationAction()
 	ResetLocalSsdRecoveryTimeout()
@@ -102,6 +105,7 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	ResetMinNodeCpus()
 	ResetNodeAffinities()
 	ResetOnHostMaintenance()
+	ResetOnInstanceStopAction()
 	ResetPreemptible()
 	ResetProvisioningModel()
 	// Produce the Token's value at resolution time.
@@ -324,6 +328,26 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) OnHostMainten
 	_jsii_.Get(
 		j,
 		"onHostMaintenanceInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) OnInstanceStopAction() GoogleComputeInstanceSchedulingOnInstanceStopActionOutputReference {
+	var returns GoogleComputeInstanceSchedulingOnInstanceStopActionOutputReference
+	_jsii_.Get(
+		j,
+		"onInstanceStopAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) OnInstanceStopActionInput() *GoogleComputeInstanceSchedulingOnInstanceStopAction {
+	var returns *GoogleComputeInstanceSchedulingOnInstanceStopAction
+	_jsii_.Get(
+		j,
+		"onInstanceStopActionInput",
 		&returns,
 	)
 	return returns
@@ -768,6 +792,17 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) PutNodeAffini
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) PutOnInstanceStopAction(value *GoogleComputeInstanceSchedulingOnInstanceStopAction) {
+	if err := g.validatePutOnInstanceStopActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOnInstanceStopAction",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetAutomaticRestart() {
 	_jsii_.InvokeVoid(
 		g,
@@ -828,6 +863,14 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetOnHostMa
 	_jsii_.InvokeVoid(
 		g,
 		"resetOnHostMaintenance",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetOnInstanceStopAction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOnInstanceStopAction",
 		nil, // no parameters
 	)
 }

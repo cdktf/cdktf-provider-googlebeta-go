@@ -26,6 +26,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
 	ConfidentialNodes() DataGoogleContainerClusterNodePoolNodeConfigConfidentialNodesList
+	ContainerdConfig() DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -63,6 +64,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResourceLabels() cdktf.StringMap
 	ResourceManagerTags() cdktf.StringMap
 	SandboxConfig() DataGoogleContainerClusterNodePoolNodeConfigSandboxConfigList
+	SecondaryBootDisks() DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList
 	ServiceAccount() *string
 	ShieldedInstanceConfig() DataGoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfigList
 	SoleTenantConfig() DataGoogleContainerClusterNodePoolNodeConfigSoleTenantConfigList
@@ -162,6 +164,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"confidentialNodes",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) ContainerdConfig() DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigContainerdConfigList
+	_jsii_.Get(
+		j,
+		"containerdConfig",
 		&returns,
 	)
 	return returns
@@ -472,6 +484,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) 
 	_jsii_.Get(
 		j,
 		"sandboxConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigOutputReference) SecondaryBootDisks() DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList {
+	var returns DataGoogleContainerClusterNodePoolNodeConfigSecondaryBootDisksList
+	_jsii_.Get(
+		j,
+		"secondaryBootDisks",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_clouddeploy_target google_clouddeploy_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_clouddeploy_target google_clouddeploy_target}.
 type GoogleClouddeployTarget interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -33,6 +33,8 @@ type GoogleClouddeployTarget interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CustomTarget() GoogleClouddeployTargetCustomTargetOutputReference
+	CustomTargetInput() *GoogleClouddeployTargetCustomTarget
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -152,6 +154,7 @@ type GoogleClouddeployTarget interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAnthosCluster(value *GoogleClouddeployTargetAnthosCluster)
+	PutCustomTarget(value *GoogleClouddeployTargetCustomTarget)
 	PutExecutionConfigs(value interface{})
 	PutGke(value *GoogleClouddeployTargetGke)
 	PutMultiTarget(value *GoogleClouddeployTargetMultiTarget)
@@ -159,6 +162,7 @@ type GoogleClouddeployTarget interface {
 	PutTimeouts(value *GoogleClouddeployTargetTimeouts)
 	ResetAnnotations()
 	ResetAnthosCluster()
+	ResetCustomTarget()
 	ResetDeployParameters()
 	ResetDescription()
 	ResetExecutionConfigs()
@@ -276,6 +280,26 @@ func (j *jsiiProxy_GoogleClouddeployTarget) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTarget) CustomTarget() GoogleClouddeployTargetCustomTargetOutputReference {
+	var returns GoogleClouddeployTargetCustomTargetOutputReference
+	_jsii_.Get(
+		j,
+		"customTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTarget) CustomTargetInput() *GoogleClouddeployTargetCustomTarget {
+	var returns *GoogleClouddeployTargetCustomTarget
+	_jsii_.Get(
+		j,
+		"customTargetInput",
 		&returns,
 	)
 	return returns
@@ -732,7 +756,7 @@ func (j *jsiiProxy_GoogleClouddeployTarget) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource.
 func NewGoogleClouddeployTarget(scope constructs.Construct, id *string, config *GoogleClouddeployTargetConfig) GoogleClouddeployTarget {
 	_init_.Initialize()
 
@@ -750,7 +774,7 @@ func NewGoogleClouddeployTarget(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource.
 func NewGoogleClouddeployTarget_Override(g GoogleClouddeployTarget, scope constructs.Construct, id *string, config *GoogleClouddeployTargetConfig) {
 	_init_.Initialize()
 
@@ -1292,6 +1316,17 @@ func (g *jsiiProxy_GoogleClouddeployTarget) PutAnthosCluster(value *GoogleCloudd
 	)
 }
 
+func (g *jsiiProxy_GoogleClouddeployTarget) PutCustomTarget(value *GoogleClouddeployTargetCustomTarget) {
+	if err := g.validatePutCustomTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomTarget",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployTarget) PutExecutionConfigs(value interface{}) {
 	if err := g.validatePutExecutionConfigsParameters(value); err != nil {
 		panic(err)
@@ -1359,6 +1394,14 @@ func (g *jsiiProxy_GoogleClouddeployTarget) ResetAnthosCluster() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAnthosCluster",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployTarget) ResetCustomTarget() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomTarget",
 		nil, // no parameters
 	)
 }

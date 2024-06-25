@@ -33,6 +33,9 @@ type GoogleAppEngineFlexibleAppVersionNetworkOutputReference interface {
 	ForwardedPortsInput() *[]*string
 	// Experimental.
 	Fqn() *string
+	InstanceIpMode() *string
+	SetInstanceIpMode(val *string)
+	InstanceIpModeInput() *string
 	InstanceTag() *string
 	SetInstanceTag(val *string)
 	InstanceTagInput() *string
@@ -80,6 +83,7 @@ type GoogleAppEngineFlexibleAppVersionNetworkOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetForwardedPorts()
+	ResetInstanceIpMode()
 	ResetInstanceTag()
 	ResetSessionAffinity()
 	ResetSubnetwork()
@@ -153,6 +157,26 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference) Fqn(
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference) InstanceIpMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceIpMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference) InstanceIpModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"instanceIpModeInput",
 		&returns,
 	)
 	return returns
@@ -325,6 +349,17 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference)SetFo
 	_jsii_.Set(
 		j,
 		"forwardedPorts",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference)SetInstanceIpMode(val *string) {
+	if err := j.validateSetInstanceIpModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"instanceIpMode",
 		val,
 	)
 }
@@ -596,6 +631,14 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetForwardedPorts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionNetworkOutputReference) ResetInstanceIpMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstanceIpMode",
 		nil, // no parameters
 	)
 }

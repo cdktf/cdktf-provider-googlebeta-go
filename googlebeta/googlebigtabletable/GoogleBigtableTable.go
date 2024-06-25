@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigtable_table google_bigtable_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_bigtable_table google_bigtable_table}.
 type GoogleBigtableTable interface {
 	cdktf.TerraformResource
+	AutomatedBackupPolicy() GoogleBigtableTableAutomatedBackupPolicyOutputReference
+	AutomatedBackupPolicyInput() *GoogleBigtableTableAutomatedBackupPolicy
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	ChangeStreamRetention() *string
@@ -129,8 +131,10 @@ type GoogleBigtableTable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutomatedBackupPolicy(value *GoogleBigtableTableAutomatedBackupPolicy)
 	PutColumnFamily(value interface{})
 	PutTimeouts(value *GoogleBigtableTableTimeouts)
+	ResetAutomatedBackupPolicy()
 	ResetChangeStreamRetention()
 	ResetColumnFamily()
 	ResetDeletionProtection()
@@ -157,6 +161,26 @@ type GoogleBigtableTable interface {
 // The jsii proxy struct for GoogleBigtableTable
 type jsiiProxy_GoogleBigtableTable struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleBigtableTable) AutomatedBackupPolicy() GoogleBigtableTableAutomatedBackupPolicyOutputReference {
+	var returns GoogleBigtableTableAutomatedBackupPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"automatedBackupPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableTable) AutomatedBackupPolicyInput() *GoogleBigtableTableAutomatedBackupPolicy {
+	var returns *GoogleBigtableTableAutomatedBackupPolicy
+	_jsii_.Get(
+		j,
+		"automatedBackupPolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleBigtableTable) CdktfStack() cdktf.TerraformStack {
@@ -500,7 +524,7 @@ func (j *jsiiProxy_GoogleBigtableTable) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigtable_table google_bigtable_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_bigtable_table google_bigtable_table} Resource.
 func NewGoogleBigtableTable(scope constructs.Construct, id *string, config *GoogleBigtableTableConfig) GoogleBigtableTable {
 	_init_.Initialize()
 
@@ -518,7 +542,7 @@ func NewGoogleBigtableTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_bigtable_table google_bigtable_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_bigtable_table google_bigtable_table} Resource.
 func NewGoogleBigtableTable_Override(g GoogleBigtableTable, scope constructs.Construct, id *string, config *GoogleBigtableTableConfig) {
 	_init_.Initialize()
 
@@ -1027,6 +1051,17 @@ func (g *jsiiProxy_GoogleBigtableTable) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (g *jsiiProxy_GoogleBigtableTable) PutAutomatedBackupPolicy(value *GoogleBigtableTableAutomatedBackupPolicy) {
+	if err := g.validatePutAutomatedBackupPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutomatedBackupPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigtableTable) PutColumnFamily(value interface{}) {
 	if err := g.validatePutColumnFamilyParameters(value); err != nil {
 		panic(err)
@@ -1046,6 +1081,14 @@ func (g *jsiiProxy_GoogleBigtableTable) PutTimeouts(value *GoogleBigtableTableTi
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigtableTable) ResetAutomatedBackupPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutomatedBackupPolicy",
+		nil, // no parameters
 	)
 }
 

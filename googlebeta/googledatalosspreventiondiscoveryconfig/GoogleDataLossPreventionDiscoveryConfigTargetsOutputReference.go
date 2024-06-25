@@ -15,6 +15,8 @@ type GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference interface {
 	cdktf.ComplexObject
 	BigQueryTarget() GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTargetOutputReference
 	BigQueryTargetInput() *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTarget
+	CloudSqlTarget() GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference
+	CloudSqlTargetInput() *GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTarget
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,6 +36,8 @@ type GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	SecretsTarget() GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference
+	SecretsTargetInput() *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,7 +71,11 @@ type GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutBigQueryTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsBigQueryTarget)
+	PutCloudSqlTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTarget)
+	PutSecretsTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget)
 	ResetBigQueryTarget()
+	ResetCloudSqlTarget()
+	ResetSecretsTarget()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -98,6 +106,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference
 	_jsii_.Get(
 		j,
 		"bigQueryTargetInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) CloudSqlTarget() GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference {
+	var returns GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTargetOutputReference
+	_jsii_.Get(
+		j,
+		"cloudSqlTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) CloudSqlTargetInput() *GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTarget {
+	var returns *GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTarget
+	_jsii_.Get(
+		j,
+		"cloudSqlTargetInput",
 		&returns,
 	)
 	return returns
@@ -148,6 +176,26 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) SecretsTarget() GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference {
+	var returns GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTargetOutputReference
+	_jsii_.Get(
+		j,
+		"secretsTarget",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) SecretsTargetInput() *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget {
+	var returns *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget
+	_jsii_.Get(
+		j,
+		"secretsTargetInput",
 		&returns,
 	)
 	return returns
@@ -453,10 +501,48 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference
 	)
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) PutCloudSqlTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsCloudSqlTarget) {
+	if err := g.validatePutCloudSqlTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCloudSqlTarget",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) PutSecretsTarget(value *GoogleDataLossPreventionDiscoveryConfigTargetsSecretsTarget) {
+	if err := g.validatePutSecretsTargetParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSecretsTarget",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) ResetBigQueryTarget() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetBigQueryTarget",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) ResetCloudSqlTarget() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCloudSqlTarget",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigTargetsOutputReference) ResetSecretsTarget() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretsTarget",
 		nil, // no parameters
 	)
 }

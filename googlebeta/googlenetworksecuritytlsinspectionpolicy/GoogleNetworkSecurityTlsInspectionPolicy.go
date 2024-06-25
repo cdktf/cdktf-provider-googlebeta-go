@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy}.
 type GoogleNetworkSecurityTlsInspectionPolicy interface {
 	cdktf.TerraformResource
 	CaPool() *string
@@ -31,6 +31,9 @@ type GoogleNetworkSecurityTlsInspectionPolicy interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CustomTlsFeatures() *[]*string
+	SetCustomTlsFeatures(val *[]*string)
+	CustomTlsFeaturesInput() *[]*string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -59,6 +62,9 @@ type GoogleNetworkSecurityTlsInspectionPolicy interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MinTlsVersion() *string
+	SetMinTlsVersion(val *string)
+	MinTlsVersionInput() *string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -85,6 +91,12 @@ type GoogleNetworkSecurityTlsInspectionPolicy interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleNetworkSecurityTlsInspectionPolicyTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TlsFeatureProfile() *string
+	SetTlsFeatureProfile(val *string)
+	TlsFeatureProfileInput() *string
+	TrustConfig() *string
+	SetTrustConfig(val *string)
+	TrustConfigInput() *string
 	UpdateTime() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
@@ -130,15 +142,19 @@ type GoogleNetworkSecurityTlsInspectionPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkSecurityTlsInspectionPolicyTimeouts)
+	ResetCustomTlsFeatures()
 	ResetDescription()
 	ResetExcludePublicCaSet()
 	ResetId()
 	ResetLocation()
+	ResetMinTlsVersion()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetTimeouts()
+	ResetTlsFeatureProfile()
+	ResetTrustConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -222,6 +238,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) CreateTime() *strin
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) CustomTlsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customTlsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) CustomTlsFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"customTlsFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -357,6 +393,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) LocationInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) MinTlsVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minTlsVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) MinTlsVersionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"minTlsVersionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -487,6 +543,46 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) TimeoutsInput() int
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) TlsFeatureProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsFeatureProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) TlsFeatureProfileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tlsFeatureProfileInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) TrustConfig() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trustConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) TrustConfigInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"trustConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) UpdateTime() *string {
 	var returns *string
 	_jsii_.Get(
@@ -498,7 +594,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
 func NewGoogleNetworkSecurityTlsInspectionPolicy(scope constructs.Construct, id *string, config *GoogleNetworkSecurityTlsInspectionPolicyConfig) GoogleNetworkSecurityTlsInspectionPolicy {
 	_init_.Initialize()
 
@@ -516,7 +612,7 @@ func NewGoogleNetworkSecurityTlsInspectionPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_network_security_tls_inspection_policy google_network_security_tls_inspection_policy} Resource.
 func NewGoogleNetworkSecurityTlsInspectionPolicy_Override(g GoogleNetworkSecurityTlsInspectionPolicy, scope constructs.Construct, id *string, config *GoogleNetworkSecurityTlsInspectionPolicyConfig) {
 	_init_.Initialize()
 
@@ -556,6 +652,17 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy)SetCount(val interfa
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy)SetCustomTlsFeatures(val *[]*string) {
+	if err := j.validateSetCustomTlsFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customTlsFeatures",
 		val,
 	)
 }
@@ -631,6 +738,17 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy)SetLocation(val *str
 	)
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy)SetMinTlsVersion(val *string) {
+	if err := j.validateSetMinTlsVersionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"minTlsVersion",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy)SetName(val *string) {
 	if err := j.validateSetNameParameters(val); err != nil {
 		panic(err)
@@ -668,6 +786,28 @@ func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy)SetProvisioners(val 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy)SetTlsFeatureProfile(val *string) {
+	if err := j.validateSetTlsFeatureProfileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tlsFeatureProfile",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy)SetTrustConfig(val *string) {
+	if err := j.validateSetTrustConfigParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"trustConfig",
 		val,
 	)
 }
@@ -1036,6 +1176,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) PutTimeouts(value *
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) ResetCustomTlsFeatures() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomTlsFeatures",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1068,6 +1216,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) ResetLocation() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) ResetMinTlsVersion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMinTlsVersion",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1088,6 +1244,22 @@ func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) ResetTlsFeatureProfile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTlsFeatureProfile",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityTlsInspectionPolicy) ResetTrustConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTrustConfig",
 		nil, // no parameters
 	)
 }

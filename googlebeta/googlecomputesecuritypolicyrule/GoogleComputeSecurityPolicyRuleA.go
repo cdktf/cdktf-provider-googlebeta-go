@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule}.
 type GoogleComputeSecurityPolicyRuleA interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -75,6 +75,8 @@ type GoogleComputeSecurityPolicyRuleA interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	RateLimitOptions() GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference
+	RateLimitOptionsInput() *GoogleComputeSecurityPolicyRuleRateLimitOptionsA
 	// Experimental.
 	RawOverrides() interface{}
 	SecurityPolicy() *string
@@ -133,6 +135,7 @@ type GoogleComputeSecurityPolicyRuleA interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutMatch(value *GoogleComputeSecurityPolicyRuleMatchA)
 	PutPreconfiguredWafConfig(value *GoogleComputeSecurityPolicyRulePreconfiguredWafConfigA)
+	PutRateLimitOptions(value *GoogleComputeSecurityPolicyRuleRateLimitOptionsA)
 	PutTimeouts(value *GoogleComputeSecurityPolicyRuleTimeouts)
 	ResetDescription()
 	ResetId()
@@ -143,6 +146,7 @@ type GoogleComputeSecurityPolicyRuleA interface {
 	ResetPreconfiguredWafConfig()
 	ResetPreview()
 	ResetProject()
+	ResetRateLimitOptions()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -442,6 +446,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) Provisioners() *[]interface
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) RateLimitOptions() GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference {
+	var returns GoogleComputeSecurityPolicyRuleRateLimitOptionsAOutputReference
+	_jsii_.Get(
+		j,
+		"rateLimitOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) RateLimitOptionsInput() *GoogleComputeSecurityPolicyRuleRateLimitOptionsA {
+	var returns *GoogleComputeSecurityPolicyRuleRateLimitOptionsA
+	_jsii_.Get(
+		j,
+		"rateLimitOptionsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -523,7 +547,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleA) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule} Resource.
 func NewGoogleComputeSecurityPolicyRuleA(scope constructs.Construct, id *string, config *GoogleComputeSecurityPolicyRuleAConfig) GoogleComputeSecurityPolicyRuleA {
 	_init_.Initialize()
 
@@ -541,7 +565,7 @@ func NewGoogleComputeSecurityPolicyRuleA(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_compute_security_policy_rule google_compute_security_policy_rule} Resource.
 func NewGoogleComputeSecurityPolicyRuleA_Override(g GoogleComputeSecurityPolicyRuleA, scope constructs.Construct, id *string, config *GoogleComputeSecurityPolicyRuleAConfig) {
 	_init_.Initialize()
 
@@ -1072,6 +1096,17 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) PutPreconfiguredWafConfig(v
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) PutRateLimitOptions(value *GoogleComputeSecurityPolicyRuleRateLimitOptionsA) {
+	if err := g.validatePutRateLimitOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRateLimitOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) PutTimeouts(value *GoogleComputeSecurityPolicyRuleTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1135,6 +1170,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleA) ResetRateLimitOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRateLimitOptions",
 		nil, // no parameters
 	)
 }

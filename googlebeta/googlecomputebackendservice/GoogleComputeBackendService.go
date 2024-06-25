@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -128,6 +128,9 @@ type GoogleComputeBackendService interface {
 	SecuritySettings() GoogleComputeBackendServiceSecuritySettingsOutputReference
 	SecuritySettingsInput() *GoogleComputeBackendServiceSecuritySettings
 	SelfLink() *string
+	ServiceLbPolicy() *string
+	SetServiceLbPolicy(val *string)
+	ServiceLbPolicyInput() *string
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
 	SessionAffinityInput() *string
@@ -223,6 +226,7 @@ type GoogleComputeBackendService interface {
 	ResetProtocol()
 	ResetSecurityPolicy()
 	ResetSecuritySettings()
+	ResetServiceLbPolicy()
 	ResetSessionAffinity()
 	ResetTimeouts()
 	ResetTimeoutSec()
@@ -934,6 +938,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) ServiceLbPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceLbPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) ServiceLbPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceLbPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) SessionAffinity() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1025,7 +1049,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1043,7 +1067,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1305,6 +1329,17 @@ func (j *jsiiProxy_GoogleComputeBackendService)SetSecurityPolicy(val *string) {
 	_jsii_.Set(
 		j,
 		"securityPolicy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService)SetServiceLbPolicy(val *string) {
+	if err := j.validateSetServiceLbPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"serviceLbPolicy",
 		val,
 	)
 }
@@ -1998,6 +2033,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetSecuritySettings() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecuritySettings",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetServiceLbPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceLbPolicy",
 		nil, // no parameters
 	)
 }

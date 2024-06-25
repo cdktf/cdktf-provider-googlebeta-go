@@ -12,12 +12,16 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}.
 type GoogleCloudbuildv2Connection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
+	BitbucketCloudConfig() GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReference
+	BitbucketCloudConfigInput() *GoogleCloudbuildv2ConnectionBitbucketCloudConfig
+	BitbucketDataCenterConfig() GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference
+	BitbucketDataCenterConfigInput() *GoogleCloudbuildv2ConnectionBitbucketDataCenterConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -136,11 +140,15 @@ type GoogleCloudbuildv2Connection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBitbucketCloudConfig(value *GoogleCloudbuildv2ConnectionBitbucketCloudConfig)
+	PutBitbucketDataCenterConfig(value *GoogleCloudbuildv2ConnectionBitbucketDataCenterConfig)
 	PutGithubConfig(value *GoogleCloudbuildv2ConnectionGithubConfig)
 	PutGithubEnterpriseConfig(value *GoogleCloudbuildv2ConnectionGithubEnterpriseConfig)
 	PutGitlabConfig(value *GoogleCloudbuildv2ConnectionGitlabConfig)
 	PutTimeouts(value *GoogleCloudbuildv2ConnectionTimeouts)
 	ResetAnnotations()
+	ResetBitbucketCloudConfig()
+	ResetBitbucketDataCenterConfig()
 	ResetDisabled()
 	ResetGithubConfig()
 	ResetGithubEnterpriseConfig()
@@ -184,6 +192,46 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) AnnotationsInput() *map[string]
 	_jsii_.Get(
 		j,
 		"annotationsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) BitbucketCloudConfig() GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReference {
+	var returns GoogleCloudbuildv2ConnectionBitbucketCloudConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucketCloudConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) BitbucketCloudConfigInput() *GoogleCloudbuildv2ConnectionBitbucketCloudConfig {
+	var returns *GoogleCloudbuildv2ConnectionBitbucketCloudConfig
+	_jsii_.Get(
+		j,
+		"bitbucketCloudConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) BitbucketDataCenterConfig() GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference {
+	var returns GoogleCloudbuildv2ConnectionBitbucketDataCenterConfigOutputReference
+	_jsii_.Get(
+		j,
+		"bitbucketDataCenterConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) BitbucketDataCenterConfigInput() *GoogleCloudbuildv2ConnectionBitbucketDataCenterConfig {
+	var returns *GoogleCloudbuildv2ConnectionBitbucketDataCenterConfig
+	_jsii_.Get(
+		j,
+		"bitbucketDataCenterConfigInput",
 		&returns,
 	)
 	return returns
@@ -590,7 +638,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionConfig) GoogleCloudbuildv2Connection {
 	_init_.Initialize()
 
@@ -608,7 +656,7 @@ func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.27.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewGoogleCloudbuildv2Connection_Override(g GoogleCloudbuildv2Connection, scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionConfig) {
 	_init_.Initialize()
 
@@ -1106,6 +1154,28 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutBitbucketCloudConfig(value *GoogleCloudbuildv2ConnectionBitbucketCloudConfig) {
+	if err := g.validatePutBitbucketCloudConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBitbucketCloudConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutBitbucketDataCenterConfig(value *GoogleCloudbuildv2ConnectionBitbucketDataCenterConfig) {
+	if err := g.validatePutBitbucketDataCenterConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBitbucketDataCenterConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudbuildv2Connection) PutGithubConfig(value *GoogleCloudbuildv2ConnectionGithubConfig) {
 	if err := g.validatePutGithubConfigParameters(value); err != nil {
 		panic(err)
@@ -1154,6 +1224,22 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) ResetAnnotations() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAnnotations",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) ResetBitbucketCloudConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBitbucketCloudConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) ResetBitbucketDataCenterConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBitbucketDataCenterConfig",
 		nil, // no parameters
 	)
 }

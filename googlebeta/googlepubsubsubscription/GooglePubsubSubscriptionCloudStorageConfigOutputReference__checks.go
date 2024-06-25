@@ -185,6 +185,14 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenameDatetimeFormatParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetFilenamePrefixParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
@@ -218,6 +226,14 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) va
 }
 
 func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetMaxDurationParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigOutputReference) validateSetServiceAccountEmailParameters(val *string) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
