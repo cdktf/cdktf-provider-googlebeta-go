@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_dataproc_autoscaling_policy_iam_binding google_dataproc_autoscaling_policy_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_dataproc_autoscaling_policy_iam_binding google_dataproc_autoscaling_policy_iam_binding}.
 type GoogleDataprocAutoscalingPolicyIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamBinding) TerraformResourceT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_dataproc_autoscaling_policy_iam_binding google_dataproc_autoscaling_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_dataproc_autoscaling_policy_iam_binding google_dataproc_autoscaling_policy_iam_binding} Resource.
 func NewGoogleDataprocAutoscalingPolicyIamBinding(scope constructs.Construct, id *string, config *GoogleDataprocAutoscalingPolicyIamBindingConfig) GoogleDataprocAutoscalingPolicyIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleDataprocAutoscalingPolicyIamBinding(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.35.0/docs/resources/google_dataproc_autoscaling_policy_iam_binding google_dataproc_autoscaling_policy_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_dataproc_autoscaling_policy_iam_binding google_dataproc_autoscaling_policy_iam_binding} Resource.
 func NewGoogleDataprocAutoscalingPolicyIamBinding_Override(g GoogleDataprocAutoscalingPolicyIamBinding, scope constructs.Construct, id *string, config *GoogleDataprocAutoscalingPolicyIamBindingConfig) {
 	_init_.Initialize()
 

@@ -23,6 +23,9 @@ type GoogleDataFusionInstanceNetworkConfigOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionType() *string
+	SetConnectionType(val *string)
+	ConnectionTypeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -38,6 +41,8 @@ type GoogleDataFusionInstanceNetworkConfigOutputReference interface {
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	PrivateServiceConnectConfig() GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference
+	PrivateServiceConnectConfigInput() *GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -70,6 +75,11 @@ type GoogleDataFusionInstanceNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPrivateServiceConnectConfig(value *GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig)
+	ResetConnectionType()
+	ResetIpAllocation()
+	ResetNetwork()
+	ResetPrivateServiceConnectConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -100,6 +110,26 @@ func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) Complex
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) ConnectionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) ConnectionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionTypeInput",
 		&returns,
 	)
 	return returns
@@ -175,6 +205,26 @@ func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) Network
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) PrivateServiceConnectConfig() GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference {
+	var returns GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference
+	_jsii_.Get(
+		j,
+		"privateServiceConnectConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) PrivateServiceConnectConfigInput() *GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig {
+	var returns *GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig
+	_jsii_.Get(
+		j,
+		"privateServiceConnectConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -241,6 +291,17 @@ func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference)SetCompl
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference)SetConnectionType(val *string) {
+	if err := j.validateSetConnectionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"connectionType",
 		val,
 	)
 }
@@ -484,6 +545,49 @@ func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) Interpo
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) PutPrivateServiceConnectConfig(value *GoogleDataFusionInstanceNetworkConfigPrivateServiceConnectConfig) {
+	if err := g.validatePutPrivateServiceConnectConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPrivateServiceConnectConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) ResetConnectionType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnectionType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) ResetIpAllocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpAllocation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) ResetNetwork() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) ResetPrivateServiceConnectConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateServiceConnectConfig",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

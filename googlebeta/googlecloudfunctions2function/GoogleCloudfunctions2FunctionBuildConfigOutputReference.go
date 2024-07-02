@@ -13,6 +13,8 @@ import (
 
 type GoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	cdktf.ComplexObject
+	AutomaticUpdatePolicy() GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference
+	AutomaticUpdatePolicyInput() *GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy
 	BuildAttribute() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -42,6 +44,8 @@ type GoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleCloudfunctions2FunctionBuildConfig
 	SetInternalValue(val *GoogleCloudfunctions2FunctionBuildConfig)
+	OnDeployUpdatePolicy() GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference
+	OnDeployUpdatePolicyInput() *GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy
 	Runtime() *string
 	SetRuntime(val *string)
 	RuntimeInput() *string
@@ -85,10 +89,14 @@ type GoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutomaticUpdatePolicy(value *GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy)
+	PutOnDeployUpdatePolicy(value *GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy)
 	PutSource(value *GoogleCloudfunctions2FunctionBuildConfigSource)
+	ResetAutomaticUpdatePolicy()
 	ResetDockerRepository()
 	ResetEntryPoint()
 	ResetEnvironmentVariables()
+	ResetOnDeployUpdatePolicy()
 	ResetRuntime()
 	ResetServiceAccount()
 	ResetSource()
@@ -106,6 +114,26 @@ type GoogleCloudfunctions2FunctionBuildConfigOutputReference interface {
 // The jsii proxy struct for GoogleCloudfunctions2FunctionBuildConfigOutputReference
 type jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) AutomaticUpdatePolicy() GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference {
+	var returns GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"automaticUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) AutomaticUpdatePolicyInput() *GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy {
+	var returns *GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy
+	_jsii_.Get(
+		j,
+		"automaticUpdatePolicyInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) BuildAttribute() *string {
@@ -223,6 +251,26 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) OnDeployUpdatePolicy() GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference {
+	var returns GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"onDeployUpdatePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) OnDeployUpdatePolicyInput() *GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy {
+	var returns *GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy
+	_jsii_.Get(
+		j,
+		"onDeployUpdatePolicyInput",
 		&returns,
 	)
 	return returns
@@ -663,6 +711,28 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) PutAutomaticUpdatePolicy(value *GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy) {
+	if err := g.validatePutAutomaticUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutomaticUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) PutOnDeployUpdatePolicy(value *GoogleCloudfunctions2FunctionBuildConfigOnDeployUpdatePolicy) {
+	if err := g.validatePutOnDeployUpdatePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putOnDeployUpdatePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) PutSource(value *GoogleCloudfunctions2FunctionBuildConfigSource) {
 	if err := g.validatePutSourceParameters(value); err != nil {
 		panic(err)
@@ -671,6 +741,14 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) PutS
 		g,
 		"putSource",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) ResetAutomaticUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutomaticUpdatePolicy",
+		nil, // no parameters
 	)
 }
 
@@ -694,6 +772,14 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnvironmentVariables",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) ResetOnDeployUpdatePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOnDeployUpdatePolicy",
 		nil, // no parameters
 	)
 }
