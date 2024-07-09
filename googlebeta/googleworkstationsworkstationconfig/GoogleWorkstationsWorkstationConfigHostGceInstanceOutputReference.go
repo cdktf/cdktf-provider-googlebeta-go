@@ -75,6 +75,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	VmTags() *map[string]*string
+	SetVmTags(val *map[string]*string)
+	VmTagsInput() *map[string]*string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -116,6 +119,7 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	ResetServiceAccountScopes()
 	ResetShieldedInstanceConfig()
 	ResetTags()
+	ResetVmTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -461,6 +465,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) VmTags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"vmTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) VmTagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"vmTagsInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference {
 	_init_.Initialize()
@@ -639,6 +663,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetVmTags(val *map[string]*string) {
+	if err := j.validateSetVmTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"vmTags",
 		val,
 	)
 }
@@ -973,6 +1008,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.InvokeVoid(
 		g,
 		"resetTags",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) ResetVmTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVmTags",
 		nil, // no parameters
 	)
 }

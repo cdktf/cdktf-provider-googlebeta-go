@@ -28,6 +28,9 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutput
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	Git() GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGitOutputReference
@@ -76,6 +79,7 @@ type GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutput
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGit(value *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncGit)
 	PutOci(value *GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOci)
+	ResetEnabled()
 	ResetGit()
 	ResetOci()
 	ResetPreventDrift()
@@ -120,6 +124,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -291,6 +315,17 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -555,6 +590,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementCo
 		g,
 		"putOci",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigConfigmanagementConfigSyncOutputReference) ResetEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnabled",
+		nil, // no parameters
 	)
 }
 

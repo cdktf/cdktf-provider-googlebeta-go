@@ -709,6 +709,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetServiceAccountScopes", GoMethod: "ResetServiceAccountScopes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetShieldedInstanceConfig", GoMethod: "ResetShieldedInstanceConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
+			_jsii_.MemberMethod{JsiiMethod: "resetVmTags", GoMethod: "ResetVmTags"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccount", GoGetter: "ServiceAccount"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountInput", GoGetter: "ServiceAccountInput"},
@@ -721,6 +722,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+			_jsii_.MemberProperty{JsiiProperty: "vmTags", GoGetter: "VmTags"},
+			_jsii_.MemberProperty{JsiiProperty: "vmTagsInput", GoGetter: "VmTagsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference{}

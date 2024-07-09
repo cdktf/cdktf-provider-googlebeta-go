@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config}.
 type GoogleCertificateManagerTrustConfig interface {
 	cdktf.TerraformResource
+	AllowlistedCertificates() GoogleCertificateManagerTrustConfigAllowlistedCertificatesList
+	AllowlistedCertificatesInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -130,8 +132,10 @@ type GoogleCertificateManagerTrustConfig interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAllowlistedCertificates(value interface{})
 	PutTimeouts(value *GoogleCertificateManagerTrustConfigTimeouts)
 	PutTrustStores(value interface{})
+	ResetAllowlistedCertificates()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
@@ -157,6 +161,26 @@ type GoogleCertificateManagerTrustConfig interface {
 // The jsii proxy struct for GoogleCertificateManagerTrustConfig
 type jsiiProxy_GoogleCertificateManagerTrustConfig struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) AllowlistedCertificates() GoogleCertificateManagerTrustConfigAllowlistedCertificatesList {
+	var returns GoogleCertificateManagerTrustConfigAllowlistedCertificatesList
+	_jsii_.Get(
+		j,
+		"allowlistedCertificates",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) AllowlistedCertificatesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowlistedCertificatesInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) CdktfStack() cdktf.TerraformStack {
@@ -520,7 +544,7 @@ func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
 func NewGoogleCertificateManagerTrustConfig(scope constructs.Construct, id *string, config *GoogleCertificateManagerTrustConfigConfig) GoogleCertificateManagerTrustConfig {
 	_init_.Initialize()
 
@@ -538,7 +562,7 @@ func NewGoogleCertificateManagerTrustConfig(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_certificate_manager_trust_config google_certificate_manager_trust_config} Resource.
 func NewGoogleCertificateManagerTrustConfig_Override(g GoogleCertificateManagerTrustConfig, scope constructs.Construct, id *string, config *GoogleCertificateManagerTrustConfigConfig) {
 	_init_.Initialize()
 
@@ -1036,6 +1060,17 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) OverrideLogicalId(newLog
 	)
 }
 
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) PutAllowlistedCertificates(value interface{}) {
+	if err := g.validatePutAllowlistedCertificatesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAllowlistedCertificates",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) PutTimeouts(value *GoogleCertificateManagerTrustConfigTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1055,6 +1090,14 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) PutTrustStores(value int
 		g,
 		"putTrustStores",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) ResetAllowlistedCertificates() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowlistedCertificates",
+		nil, // no parameters
 	)
 }
 

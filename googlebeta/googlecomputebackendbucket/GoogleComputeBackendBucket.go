@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket}.
 type GoogleComputeBackendBucket interface {
 	cdktf.TerraformResource
 	BucketName() *string
@@ -570,7 +570,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucket) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket} Resource.
 func NewGoogleComputeBackendBucket(scope constructs.Construct, id *string, config *GoogleComputeBackendBucketConfig) GoogleComputeBackendBucket {
 	_init_.Initialize()
 
@@ -588,7 +588,7 @@ func NewGoogleComputeBackendBucket(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.36.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_compute_backend_bucket google_compute_backend_bucket} Resource.
 func NewGoogleComputeBackendBucket_Override(g GoogleComputeBackendBucket, scope constructs.Construct, id *string, config *GoogleComputeBackendBucketConfig) {
 	_init_.Initialize()
 
