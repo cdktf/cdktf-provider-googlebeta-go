@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key google_kms_crypto_key}.
 type GoogleKmsCryptoKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -52,6 +52,8 @@ type GoogleKmsCryptoKey interface {
 	ImportOnly() interface{}
 	SetImportOnly(val interface{})
 	ImportOnlyInput() interface{}
+	KeyAccessJustificationsPolicy() GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference
+	KeyAccessJustificationsPolicyInput() *GoogleKmsCryptoKeyKeyAccessJustificationsPolicy
 	KeyRing() *string
 	SetKeyRing(val *string)
 	KeyRingInput() *string
@@ -141,12 +143,14 @@ type GoogleKmsCryptoKey interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutKeyAccessJustificationsPolicy(value *GoogleKmsCryptoKeyKeyAccessJustificationsPolicy)
 	PutTimeouts(value *GoogleKmsCryptoKeyTimeouts)
 	PutVersionTemplate(value *GoogleKmsCryptoKeyVersionTemplate)
 	ResetCryptoKeyBackend()
 	ResetDestroyScheduledDuration()
 	ResetId()
 	ResetImportOnly()
+	ResetKeyAccessJustificationsPolicy()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -339,6 +343,26 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) ImportOnlyInput() interface{} {
 	_jsii_.Get(
 		j,
 		"importOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleKmsCryptoKey) KeyAccessJustificationsPolicy() GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference {
+	var returns GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"keyAccessJustificationsPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleKmsCryptoKey) KeyAccessJustificationsPolicyInput() *GoogleKmsCryptoKeyKeyAccessJustificationsPolicy {
+	var returns *GoogleKmsCryptoKeyKeyAccessJustificationsPolicy
+	_jsii_.Get(
+		j,
+		"keyAccessJustificationsPolicyInput",
 		&returns,
 	)
 	return returns
@@ -605,7 +629,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) VersionTemplateInput() *GoogleKmsCryptoKe
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
 func NewGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyConfig) GoogleKmsCryptoKey {
 	_init_.Initialize()
 
@@ -623,7 +647,7 @@ func NewGoogleKmsCryptoKey(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.37.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_kms_crypto_key google_kms_crypto_key} Resource.
 func NewGoogleKmsCryptoKey_Override(g GoogleKmsCryptoKey, scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyConfig) {
 	_init_.Initialize()
 
@@ -1165,6 +1189,17 @@ func (g *jsiiProxy_GoogleKmsCryptoKey) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GoogleKmsCryptoKey) PutKeyAccessJustificationsPolicy(value *GoogleKmsCryptoKeyKeyAccessJustificationsPolicy) {
+	if err := g.validatePutKeyAccessJustificationsPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putKeyAccessJustificationsPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleKmsCryptoKey) PutTimeouts(value *GoogleKmsCryptoKeyTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1215,6 +1250,14 @@ func (g *jsiiProxy_GoogleKmsCryptoKey) ResetImportOnly() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetImportOnly",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleKmsCryptoKey) ResetKeyAccessJustificationsPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKeyAccessJustificationsPolicy",
 		nil, // no parameters
 	)
 }

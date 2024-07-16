@@ -37,6 +37,7 @@ type DataGoogleKmsCryptoKeysKeysOutputReference interface {
 	ImportOnly() cdktf.IResolvable
 	InternalValue() *DataGoogleKmsCryptoKeysKeys
 	SetInternalValue(val *DataGoogleKmsCryptoKeysKeys)
+	KeyAccessJustificationsPolicy() DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList
 	KeyRing() *string
 	Labels() cdktf.StringMap
 	Name() *string
@@ -188,6 +189,16 @@ func (j *jsiiProxy_DataGoogleKmsCryptoKeysKeysOutputReference) InternalValue() *
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleKmsCryptoKeysKeysOutputReference) KeyAccessJustificationsPolicy() DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList {
+	var returns DataGoogleKmsCryptoKeysKeysKeyAccessJustificationsPolicyList
+	_jsii_.Get(
+		j,
+		"keyAccessJustificationsPolicy",
 		&returns,
 	)
 	return returns
