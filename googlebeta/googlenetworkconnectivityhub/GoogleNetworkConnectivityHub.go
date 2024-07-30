@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.39.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub}.
 type GoogleNetworkConnectivityHub interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -132,6 +132,7 @@ type GoogleNetworkConnectivityHub interface {
 	ResetDescription()
 	ResetId()
 	ResetLabels()
+	ResetName()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -506,7 +507,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHub) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.39.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewGoogleNetworkConnectivityHub(scope constructs.Construct, id *string, config *GoogleNetworkConnectivityHubConfig) GoogleNetworkConnectivityHub {
 	_init_.Initialize()
 
@@ -524,7 +525,7 @@ func NewGoogleNetworkConnectivityHub(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.39.0/docs/resources/google_network_connectivity_hub google_network_connectivity_hub} Resource.
 func NewGoogleNetworkConnectivityHub_Override(g GoogleNetworkConnectivityHub, scope constructs.Construct, id *string, config *GoogleNetworkConnectivityHubConfig) {
 	_init_.Initialize()
 
@@ -1042,6 +1043,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivityHub) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
 		nil, // no parameters
 	)
 }

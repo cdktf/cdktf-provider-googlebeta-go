@@ -12,11 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_project_service google_project_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.39.0/docs/data-sources/google_project_service google_project_service}.
 type DataGoogleProjectService interface {
 	cdktf.TerraformDataSource
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CheckIfServiceHasUsageOnDestroy() cdktf.IResolvable
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -118,6 +119,16 @@ func (j *jsiiProxy_DataGoogleProjectService) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleProjectService) CheckIfServiceHasUsageOnDestroy() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"checkIfServiceHasUsageOnDestroy",
 		&returns,
 	)
 	return returns
@@ -334,7 +345,7 @@ func (j *jsiiProxy_DataGoogleProjectService) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_project_service google_project_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.39.0/docs/data-sources/google_project_service google_project_service} Data Source.
 func NewDataGoogleProjectService(scope constructs.Construct, id *string, config *DataGoogleProjectServiceConfig) DataGoogleProjectService {
 	_init_.Initialize()
 
@@ -352,7 +363,7 @@ func NewDataGoogleProjectService(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.38.0/docs/data-sources/google_project_service google_project_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.39.0/docs/data-sources/google_project_service google_project_service} Data Source.
 func NewDataGoogleProjectService_Override(d DataGoogleProjectService, scope constructs.Construct, id *string, config *DataGoogleProjectServiceConfig) {
 	_init_.Initialize()
 

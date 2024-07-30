@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReferen
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference) validatePutAccessConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

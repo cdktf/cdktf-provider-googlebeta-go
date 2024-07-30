@@ -95,6 +95,10 @@ func validateGoogleProjectService_IsTerraformResourceParameters(x interface{}) e
 	return nil
 }
 
+func (j *jsiiProxy_GoogleProjectService) validateSetCheckIfServiceHasUsageOnDestroyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleProjectService) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
