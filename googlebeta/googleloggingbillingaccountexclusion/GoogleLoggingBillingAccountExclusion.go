@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.39.1/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion}.
 type GoogleLoggingBillingAccountExclusion interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountExclusion) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.39.1/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
 func NewGoogleLoggingBillingAccountExclusion(scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountExclusionConfig) GoogleLoggingBillingAccountExclusion {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewGoogleLoggingBillingAccountExclusion(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.39.1/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_logging_billing_account_exclusion google_logging_billing_account_exclusion} Resource.
 func NewGoogleLoggingBillingAccountExclusion_Override(g GoogleLoggingBillingAccountExclusion, scope constructs.Construct, id *string, config *GoogleLoggingBillingAccountExclusionConfig) {
 	_init_.Initialize()
 
