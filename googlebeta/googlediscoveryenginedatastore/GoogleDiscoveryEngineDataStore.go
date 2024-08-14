@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store}.
 type GoogleDiscoveryEngineDataStore interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -84,6 +84,9 @@ type GoogleDiscoveryEngineDataStore interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SkipDefaultSchemaCreation() interface{}
+	SetSkipDefaultSchemaCreation(val interface{})
+	SkipDefaultSchemaCreationInput() interface{}
 	SolutionTypes() *[]*string
 	SetSolutionTypes(val *[]*string)
 	SolutionTypesInput() *[]*string
@@ -147,6 +150,7 @@ type GoogleDiscoveryEngineDataStore interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSkipDefaultSchemaCreation()
 	ResetSolutionTypes()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -507,6 +511,26 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) SkipDefaultSchemaCreation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDefaultSchemaCreation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) SkipDefaultSchemaCreationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"skipDefaultSchemaCreationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) SolutionTypes() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -578,7 +602,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) GoogleDiscoveryEngineDataStore {
 	_init_.Initialize()
 
@@ -596,7 +620,7 @@ func NewGoogleDiscoveryEngineDataStore(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_discovery_engine_data_store google_discovery_engine_data_store} Resource.
 func NewGoogleDiscoveryEngineDataStore_Override(g GoogleDiscoveryEngineDataStore, scope constructs.Construct, id *string, config *GoogleDiscoveryEngineDataStoreConfig) {
 	_init_.Initialize()
 
@@ -759,6 +783,17 @@ func (j *jsiiProxy_GoogleDiscoveryEngineDataStore)SetProvisioners(val *[]interfa
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStore)SetSkipDefaultSchemaCreation(val interface{}) {
+	if err := j.validateSetSkipDefaultSchemaCreationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"skipDefaultSchemaCreation",
 		val,
 	)
 }
@@ -1185,6 +1220,14 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStore) ResetSkipDefaultSchemaCreation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSkipDefaultSchemaCreation",
 		nil, // no parameters
 	)
 }

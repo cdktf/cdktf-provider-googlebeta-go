@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding}.
 type GoogleSecureSourceManagerRepositoryIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryIamBinding) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding} Resource.
 func NewGoogleSecureSourceManagerRepositoryIamBinding(scope constructs.Construct, id *string, config *GoogleSecureSourceManagerRepositoryIamBindingConfig) GoogleSecureSourceManagerRepositoryIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleSecureSourceManagerRepositoryIamBinding(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding} Resource.
 func NewGoogleSecureSourceManagerRepositoryIamBinding_Override(g GoogleSecureSourceManagerRepositoryIamBinding, scope constructs.Construct, id *string, config *GoogleSecureSourceManagerRepositoryIamBindingConfig) {
 	_init_.Initialize()
 

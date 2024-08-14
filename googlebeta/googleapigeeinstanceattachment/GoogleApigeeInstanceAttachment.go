@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_apigee_instance_attachment google_apigee_instance_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_apigee_instance_attachment google_apigee_instance_attachment}.
 type GoogleApigeeInstanceAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleApigeeInstanceAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_apigee_instance_attachment google_apigee_instance_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_apigee_instance_attachment google_apigee_instance_attachment} Resource.
 func NewGoogleApigeeInstanceAttachment(scope constructs.Construct, id *string, config *GoogleApigeeInstanceAttachmentConfig) GoogleApigeeInstanceAttachment {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleApigeeInstanceAttachment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.40.0/docs/resources/google_apigee_instance_attachment google_apigee_instance_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_apigee_instance_attachment google_apigee_instance_attachment} Resource.
 func NewGoogleApigeeInstanceAttachment_Override(g GoogleApigeeInstanceAttachment, scope constructs.Construct, id *string, config *GoogleApigeeInstanceAttachmentConfig) {
 	_init_.Initialize()
 
