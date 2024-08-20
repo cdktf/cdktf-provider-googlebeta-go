@@ -175,6 +175,10 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetRoleParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetSendSecondaryIpRangeIfEmptyParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetStackTypeParameters(val *string) error {
 	return nil
 }

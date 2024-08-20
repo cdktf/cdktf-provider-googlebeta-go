@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_scc_management_project_security_health_analytics_custom_module google_scc_management_project_security_health_analytics_custom_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_scc_management_project_security_health_analytics_custom_module google_scc_management_project_security_health_analytics_custom_module}.
 type GoogleSccManagementProjectSecurityHealthAnalyticsCustomModule interface {
 	cdktf.TerraformResource
 	AncestorModule() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_GoogleSccManagementProjectSecurityHealthAnalyticsCustomModule
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_scc_management_project_security_health_analytics_custom_module google_scc_management_project_security_health_analytics_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_scc_management_project_security_health_analytics_custom_module google_scc_management_project_security_health_analytics_custom_module} Resource.
 func NewGoogleSccManagementProjectSecurityHealthAnalyticsCustomModule(scope constructs.Construct, id *string, config *GoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleConfig) GoogleSccManagementProjectSecurityHealthAnalyticsCustomModule {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewGoogleSccManagementProjectSecurityHealthAnalyticsCustomModule(scope cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_scc_management_project_security_health_analytics_custom_module google_scc_management_project_security_health_analytics_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_scc_management_project_security_health_analytics_custom_module google_scc_management_project_security_health_analytics_custom_module} Resource.
 func NewGoogleSccManagementProjectSecurityHealthAnalyticsCustomModule_Override(g GoogleSccManagementProjectSecurityHealthAnalyticsCustomModule, scope constructs.Construct, id *string, config *GoogleSccManagementProjectSecurityHealthAnalyticsCustomModuleConfig) {
 	_init_.Initialize()
 

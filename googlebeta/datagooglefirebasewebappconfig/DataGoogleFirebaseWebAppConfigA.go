@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config}.
 type DataGoogleFirebaseWebAppConfigA interface {
 	cdktf.TerraformDataSource
 	ApiKey() *string
@@ -376,7 +376,7 @@ func (j *jsiiProxy_DataGoogleFirebaseWebAppConfigA) WebAppIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config} Data Source.
 func NewDataGoogleFirebaseWebAppConfigA(scope constructs.Construct, id *string, config *DataGoogleFirebaseWebAppConfigAConfig) DataGoogleFirebaseWebAppConfigA {
 	_init_.Initialize()
 
@@ -394,7 +394,7 @@ func NewDataGoogleFirebaseWebAppConfigA(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/data-sources/google_firebase_web_app_config google_firebase_web_app_config} Data Source.
 func NewDataGoogleFirebaseWebAppConfigA_Override(d DataGoogleFirebaseWebAppConfigA, scope constructs.Construct, id *string, config *DataGoogleFirebaseWebAppConfigAConfig) {
 	_init_.Initialize()
 

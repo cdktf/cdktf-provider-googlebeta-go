@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset}.
 type GoogleVertexAiDataset interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -531,7 +531,7 @@ func (j *jsiiProxy_GoogleVertexAiDataset) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset} Resource.
 func NewGoogleVertexAiDataset(scope constructs.Construct, id *string, config *GoogleVertexAiDatasetConfig) GoogleVertexAiDataset {
 	_init_.Initialize()
 
@@ -549,7 +549,7 @@ func NewGoogleVertexAiDataset(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.41.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_vertex_ai_dataset google_vertex_ai_dataset} Resource.
 func NewGoogleVertexAiDataset_Override(g GoogleVertexAiDataset, scope constructs.Construct, id *string, config *GoogleVertexAiDatasetConfig) {
 	_init_.Initialize()
 
