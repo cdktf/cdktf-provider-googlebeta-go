@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy}.
 type GoogleAccessContextManagerServicePerimeterDryRunEgressPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterDryRunEgressPolicy)
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy} Resource.
 func NewGoogleAccessContextManagerServicePerimeterDryRunEgressPolicy(scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyConfig) GoogleAccessContextManagerServicePerimeterDryRunEgressPolicy {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewGoogleAccessContextManagerServicePerimeterDryRunEgressPolicy(scope const
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_access_context_manager_service_perimeter_dry_run_egress_policy google_access_context_manager_service_perimeter_dry_run_egress_policy} Resource.
 func NewGoogleAccessContextManagerServicePerimeterDryRunEgressPolicy_Override(g GoogleAccessContextManagerServicePerimeterDryRunEgressPolicy, scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimeterDryRunEgressPolicyConfig) {
 	_init_.Initialize()
 

@@ -32,6 +32,9 @@ type GoogleNetworkServicesTcpRouteRulesActionOutputReference interface {
 	DestinationsInput() interface{}
 	// Experimental.
 	Fqn() *string
+	IdleTimeout() *string
+	SetIdleTimeout(val *string)
+	IdleTimeoutInput() *string
 	InternalValue() *GoogleNetworkServicesTcpRouteRulesAction
 	SetInternalValue(val *GoogleNetworkServicesTcpRouteRulesAction)
 	OriginalDestination() interface{}
@@ -71,6 +74,7 @@ type GoogleNetworkServicesTcpRouteRulesActionOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutDestinations(value interface{})
 	ResetDestinations()
+	ResetIdleTimeout()
 	ResetOriginalDestination()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -142,6 +146,26 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) Fqn(
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) IdleTimeout() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleTimeout",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) IdleTimeoutInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleTimeoutInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference)SetCo
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference)SetIdleTimeout(val *string) {
+	if err := j.validateSetIdleTimeoutParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"idleTimeout",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetDestinations",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesTcpRouteRulesActionOutputReference) ResetIdleTimeout() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdleTimeout",
 		nil, // no parameters
 	)
 }

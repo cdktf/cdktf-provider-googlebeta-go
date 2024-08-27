@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/data-sources/google_tpu_v2_accelerator_types google_tpu_v2_accelerator_types}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/data-sources/google_tpu_v2_accelerator_types google_tpu_v2_accelerator_types}.
 type DataGoogleTpuV2AcceleratorTypes interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataGoogleTpuV2AcceleratorTypes) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/data-sources/google_tpu_v2_accelerator_types google_tpu_v2_accelerator_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/data-sources/google_tpu_v2_accelerator_types google_tpu_v2_accelerator_types} Data Source.
 func NewDataGoogleTpuV2AcceleratorTypes(scope constructs.Construct, id *string, config *DataGoogleTpuV2AcceleratorTypesConfig) DataGoogleTpuV2AcceleratorTypes {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataGoogleTpuV2AcceleratorTypes(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/data-sources/google_tpu_v2_accelerator_types google_tpu_v2_accelerator_types} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/data-sources/google_tpu_v2_accelerator_types google_tpu_v2_accelerator_types} Data Source.
 func NewDataGoogleTpuV2AcceleratorTypes_Override(d DataGoogleTpuV2AcceleratorTypes, scope constructs.Construct, id *string, config *DataGoogleTpuV2AcceleratorTypesConfig) {
 	_init_.Initialize()
 

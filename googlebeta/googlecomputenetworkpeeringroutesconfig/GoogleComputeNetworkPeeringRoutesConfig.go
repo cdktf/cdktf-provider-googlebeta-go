@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config}.
 type GoogleComputeNetworkPeeringRoutesConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -450,7 +450,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
 func NewGoogleComputeNetworkPeeringRoutesConfig(scope constructs.Construct, id *string, config *GoogleComputeNetworkPeeringRoutesConfigConfig) GoogleComputeNetworkPeeringRoutesConfig {
 	_init_.Initialize()
 
@@ -468,7 +468,7 @@ func NewGoogleComputeNetworkPeeringRoutesConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.42.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.0/docs/resources/google_compute_network_peering_routes_config google_compute_network_peering_routes_config} Resource.
 func NewGoogleComputeNetworkPeeringRoutesConfig_Override(g GoogleComputeNetworkPeeringRoutesConfig, scope constructs.Construct, id *string, config *GoogleComputeNetworkPeeringRoutesConfigConfig) {
 	_init_.Initialize()
 
