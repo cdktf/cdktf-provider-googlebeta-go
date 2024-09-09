@@ -5,14 +5,14 @@ package googlelogginglinkeddataset
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlelogginglinkeddataset/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglinkeddataset/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_logging_linked_dataset google_logging_linked_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset}.
 type GoogleLoggingLinkedDataset interface {
 	cdktf.TerraformResource
 	BigqueryDataset() GoogleLoggingLinkedDatasetBigqueryDatasetList
@@ -509,7 +509,7 @@ func (j *jsiiProxy_GoogleLoggingLinkedDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_logging_linked_dataset google_logging_linked_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset} Resource.
 func NewGoogleLoggingLinkedDataset(scope constructs.Construct, id *string, config *GoogleLoggingLinkedDatasetConfig) GoogleLoggingLinkedDataset {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewGoogleLoggingLinkedDataset(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_logging_linked_dataset google_logging_linked_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_logging_linked_dataset google_logging_linked_dataset} Resource.
 func NewGoogleLoggingLinkedDataset_Override(g GoogleLoggingLinkedDataset, scope constructs.Construct, id *string, config *GoogleLoggingLinkedDatasetConfig) {
 	_init_.Initialize()
 

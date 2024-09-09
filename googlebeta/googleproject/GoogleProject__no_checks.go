@@ -147,10 +147,6 @@ func (j *jsiiProxy_GoogleProject) validateSetProvisionersParameters(val *[]inter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProject) validateSetSkipDeleteParameters(val interface{}) error {
-	return nil
-}
-
 func validateNewGoogleProjectParameters(scope constructs.Construct, id *string, config *GoogleProjectConfig) error {
 	return nil
 }

@@ -1,0 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package googledatalosspreventiondiscoveryconfig
+
+
+type GoogleDataLossPreventionDiscoveryConfigActionsTagResourcesTagConditionsSensitivityScore struct {
+	// The sensitivity score applied to the resource. Possible values: ["SENSITIVITY_LOW", "SENSITIVITY_MODERATE", "SENSITIVITY_HIGH"].
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_data_loss_prevention_discovery_config#score GoogleDataLossPreventionDiscoveryConfig#score}
+	Score *string `field:"required" json:"score" yaml:"score"`
+}
+

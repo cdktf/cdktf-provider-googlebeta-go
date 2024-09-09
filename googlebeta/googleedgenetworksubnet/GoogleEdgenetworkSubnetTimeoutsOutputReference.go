@@ -5,9 +5,9 @@ package googleedgenetworksubnet
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleedgenetworksubnet/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleedgenetworksubnet/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -46,6 +46,9 @@ type GoogleEdgenetworkSubnetTimeoutsOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Update() *string
+	SetUpdate(val *string)
+	UpdateInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type GoogleEdgenetworkSubnetTimeoutsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCreate()
 	ResetDelete()
+	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_GoogleEdgenetworkSubnetTimeoutsOutputReference) TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_GoogleEdgenetworkSubnetTimeoutsOutputReference) Update() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"update",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleEdgenetworkSubnetTimeoutsOutputReference) UpdateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleEdgenetworkSubnetTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleEdgenetworkSubnetTimeoutsOutputReference {
 	_init_.Initialize()
@@ -298,6 +322,17 @@ func (j *jsiiProxy_GoogleEdgenetworkSubnetTimeoutsOutputReference)SetTerraformRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleEdgenetworkSubnetTimeoutsOutputReference)SetUpdate(val *string) {
+	if err := j.validateSetUpdateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"update",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (g *jsiiProxy_GoogleEdgenetworkSubnetTimeoutsOutputReference) ResetDelete()
 	_jsii_.InvokeVoid(
 		g,
 		"resetDelete",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleEdgenetworkSubnetTimeoutsOutputReference) ResetUpdate() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUpdate",
 		nil, // no parameters
 	)
 }

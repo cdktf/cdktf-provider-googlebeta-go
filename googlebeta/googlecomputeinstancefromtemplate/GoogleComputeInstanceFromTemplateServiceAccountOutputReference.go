@@ -5,9 +5,9 @@ package googlecomputeinstancefromtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeinstancefromtemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinstancefromtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type GoogleComputeInstanceFromTemplateServiceAccountOutputReference interface {
 	EmailInput() *string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *GoogleComputeInstanceFromTemplateServiceAccount
+	SetInternalValue(val *GoogleComputeInstanceFromTemplateServiceAccount)
 	Scopes() *[]*string
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
@@ -71,7 +71,6 @@ type GoogleComputeInstanceFromTemplateServiceAccountOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEmail()
-	ResetScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,8 +146,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReference) InternalValue() *GoogleComputeInstanceFromTemplateServiceAccount {
+	var returns *GoogleComputeInstanceFromTemplateServiceAccount
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,29 +197,29 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReferenc
 }
 
 
-func NewGoogleComputeInstanceFromTemplateServiceAccountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeInstanceFromTemplateServiceAccountOutputReference {
+func NewGoogleComputeInstanceFromTemplateServiceAccountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateServiceAccountOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleComputeInstanceFromTemplateServiceAccountOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewGoogleComputeInstanceFromTemplateServiceAccountOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateServiceAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleComputeInstanceFromTemplateServiceAccountOutputReference_Override(g GoogleComputeInstanceFromTemplateServiceAccountOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleComputeInstanceFromTemplateServiceAccountOutputReference_Override(g GoogleComputeInstanceFromTemplateServiceAccountOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateServiceAccountOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
 }
@@ -258,7 +257,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReference)SetInternalValue(val *GoogleComputeInstanceFromTemplateServiceAccount) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -492,14 +491,6 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReferenc
 	_jsii_.InvokeVoid(
 		g,
 		"resetEmail",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateServiceAccountOutputReference) ResetScopes() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetScopes",
 		nil, // no parameters
 	)
 }

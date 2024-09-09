@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleComputeNodeTemplate) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNodeTemplate) validatePutAcceleratorsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNodeTemplate) validatePutNodeTypeFlexibilityParameters(value *GoogleComputeNodeTemplateNodeTypeFlexibility) error {
 	return nil
 }

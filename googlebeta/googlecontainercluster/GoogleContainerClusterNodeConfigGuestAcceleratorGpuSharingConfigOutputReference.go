@@ -5,9 +5,9 @@ package googlecontainercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecontainercluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecontainercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -33,8 +33,8 @@ type GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputRefer
 	GpuSharingStrategy() *string
 	SetGpuSharingStrategy(val *string)
 	GpuSharingStrategyInput() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig
+	SetInternalValue(val *GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig)
 	MaxSharedClientsPerGpu() *float64
 	SetMaxSharedClientsPerGpu(val *float64)
 	MaxSharedClientsPerGpuInput() *float64
@@ -70,8 +70,6 @@ type GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputRefer
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetGpuSharingStrategy()
-	ResetMaxSharedClientsPerGpu()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,8 +145,8 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingCon
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) InternalValue() *GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig {
+	var returns *GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -198,29 +196,29 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingCon
 }
 
 
-func NewGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference {
+func NewGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference_Override(g GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference_Override(g GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
 }
@@ -258,7 +256,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingCon
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference)SetInternalValue(val *GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfig) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}
@@ -486,22 +484,6 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingCon
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) ResetGpuSharingStrategy() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetGpuSharingStrategy",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) ResetMaxSharedClientsPerGpu() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetMaxSharedClientsPerGpu",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

@@ -5,14 +5,14 @@ package googlekmsekmconnectioniammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmsekmconnectioniammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmsekmconnectioniammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_kms_ekm_connection_iam_member google_kms_ekm_connection_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_kms_ekm_connection_iam_member google_kms_ekm_connection_iam_member}.
 type GoogleKmsEkmConnectionIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionIamMember) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_kms_ekm_connection_iam_member google_kms_ekm_connection_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_kms_ekm_connection_iam_member google_kms_ekm_connection_iam_member} Resource.
 func NewGoogleKmsEkmConnectionIamMember(scope constructs.Construct, id *string, config *GoogleKmsEkmConnectionIamMemberConfig) GoogleKmsEkmConnectionIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleKmsEkmConnectionIamMember(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_kms_ekm_connection_iam_member google_kms_ekm_connection_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_kms_ekm_connection_iam_member google_kms_ekm_connection_iam_member} Resource.
 func NewGoogleKmsEkmConnectionIamMember_Override(g GoogleKmsEkmConnectionIamMember, scope constructs.Construct, id *string, config *GoogleKmsEkmConnectionIamMemberConfig) {
 	_init_.Initialize()
 

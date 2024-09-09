@@ -5,14 +5,14 @@ package datagooglefirebasehostingchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglefirebasehostingchannel/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglefirebasehostingchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel}.
 type DataGoogleFirebaseHostingChannel interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -388,7 +388,7 @@ func (j *jsiiProxy_DataGoogleFirebaseHostingChannel) Ttl() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel} Data Source.
 func NewDataGoogleFirebaseHostingChannel(scope constructs.Construct, id *string, config *DataGoogleFirebaseHostingChannelConfig) DataGoogleFirebaseHostingChannel {
 	_init_.Initialize()
 
@@ -406,7 +406,7 @@ func NewDataGoogleFirebaseHostingChannel(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_firebase_hosting_channel google_firebase_hosting_channel} Data Source.
 func NewDataGoogleFirebaseHostingChannel_Override(d DataGoogleFirebaseHostingChannel, scope constructs.Construct, id *string, config *DataGoogleFirebaseHostingChannelConfig) {
 	_init_.Initialize()
 

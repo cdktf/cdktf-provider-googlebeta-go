@@ -5,14 +5,14 @@ package googleintegrationconnectorsconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleintegrationconnectorsconnection/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleintegrationconnectorsconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_integration_connectors_connection google_integration_connectors_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection}.
 type GoogleIntegrationConnectorsConnection interface {
 	cdktf.TerraformResource
 	AuthConfig() GoogleIntegrationConnectorsConnectionAuthConfigOutputReference
@@ -860,7 +860,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
 func NewGoogleIntegrationConnectorsConnection(scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsConnectionConfig) GoogleIntegrationConnectorsConnection {
 	_init_.Initialize()
 
@@ -878,7 +878,7 @@ func NewGoogleIntegrationConnectorsConnection(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_integration_connectors_connection google_integration_connectors_connection} Resource.
 func NewGoogleIntegrationConnectorsConnection_Override(g GoogleIntegrationConnectorsConnection, scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsConnectionConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlecomputesubnetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputesubnetwork/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputesubnetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
 type GoogleComputeSubnetwork interface {
 	cdktf.TerraformResource
 	AllowSubnetCidrRoutesOverlap() interface{}
@@ -101,6 +101,9 @@ type GoogleComputeSubnetwork interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	ReservedInternalRange() *string
+	SetReservedInternalRange(val *string)
+	ReservedInternalRangeInput() *string
 	Role() *string
 	SetRole(val *string)
 	RoleInput() *string
@@ -171,6 +174,7 @@ type GoogleComputeSubnetwork interface {
 	ResetDescription()
 	ResetExternalIpv6Prefix()
 	ResetId()
+	ResetIpCidrRange()
 	ResetIpv6AccessType()
 	ResetLogConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -181,6 +185,7 @@ type GoogleComputeSubnetwork interface {
 	ResetProject()
 	ResetPurpose()
 	ResetRegion()
+	ResetReservedInternalRange()
 	ResetRole()
 	ResetSecondaryIpRange()
 	ResetSendSecondaryIpRangeIfEmpty()
@@ -664,6 +669,26 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) ReservedInternalRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRange",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) ReservedInternalRangeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"reservedInternalRangeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) Role() *string {
 	var returns *string
 	_jsii_.Get(
@@ -805,7 +830,7 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -823,7 +848,7 @@ func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -1041,6 +1066,17 @@ func (j *jsiiProxy_GoogleComputeSubnetwork)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork)SetReservedInternalRange(val *string) {
+	if err := j.validateSetReservedInternalRangeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"reservedInternalRange",
 		val,
 	)
 }
@@ -1496,6 +1532,14 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) ResetId() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetIpCidrRange() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpCidrRange",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSubnetwork) ResetIpv6AccessType() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1556,6 +1600,14 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetReservedInternalRange() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReservedInternalRange",
 		nil, // no parameters
 	)
 }

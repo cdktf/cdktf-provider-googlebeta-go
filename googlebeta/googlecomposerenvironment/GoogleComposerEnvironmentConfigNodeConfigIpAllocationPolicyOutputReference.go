@@ -5,9 +5,9 @@ package googlecomposerenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomposerenvironment/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposerenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -36,8 +36,8 @@ type GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	InternalValue() interface{}
-	SetInternalValue(val interface{})
+	InternalValue() *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy
+	SetInternalValue(val *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy)
 	ServicesIpv4CidrBlock() *string
 	SetServicesIpv4CidrBlock(val *string)
 	ServicesIpv4CidrBlockInput() *string
@@ -179,8 +179,8 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) InternalValue() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) InternalValue() *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy {
+	var returns *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy
 	_jsii_.Get(
 		j,
 		"internalValue",
@@ -270,29 +270,29 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOu
 }
 
 
-func NewGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference {
+func NewGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference {
 	_init_.Initialize()
 
-	if err := validateNewGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
+	if err := validateNewGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
 		panic(err)
 	}
 	j := jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference{}
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
 
 	return &j
 }
 
-func NewGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference_Override(g GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference_Override(g GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
 		"@cdktf/provider-google-beta.googleComposerEnvironment.GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference",
-		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
+		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
 }
@@ -341,7 +341,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOu
 	)
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference)SetInternalValue(val interface{}) {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference)SetInternalValue(val *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
 	}

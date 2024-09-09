@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefault
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) validatePutLayoutParsingConfigParameters(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference) validatePutOcrParsingConfigParameters(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig) error {
 	return nil
 }

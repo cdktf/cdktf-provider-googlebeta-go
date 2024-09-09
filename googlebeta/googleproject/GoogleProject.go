@@ -5,14 +5,14 @@ package googleproject
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleproject/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleproject/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project google_project}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project google_project}.
 type GoogleProject interface {
 	cdktf.TerraformResource
 	AutoCreateNetwork() interface{}
@@ -84,9 +84,6 @@ type GoogleProject interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
-	SkipDelete() interface{}
-	SetSkipDelete(val interface{})
-	SkipDeleteInput() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -150,7 +147,6 @@ type GoogleProject interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
-	ResetSkipDelete()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -500,26 +496,6 @@ func (j *jsiiProxy_GoogleProject) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleProject) SkipDelete() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipDelete",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleProject) SkipDeleteInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"skipDeleteInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleProject) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -581,7 +557,7 @@ func (j *jsiiProxy_GoogleProject) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project google_project} Resource.
 func NewGoogleProject(scope constructs.Construct, id *string, config *GoogleProjectConfig) GoogleProject {
 	_init_.Initialize()
 
@@ -599,7 +575,7 @@ func NewGoogleProject(scope constructs.Construct, id *string, config *GoogleProj
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_project google_project} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_project google_project} Resource.
 func NewGoogleProject_Override(g GoogleProject, scope constructs.Construct, id *string, config *GoogleProjectConfig) {
 	_init_.Initialize()
 
@@ -773,17 +749,6 @@ func (j *jsiiProxy_GoogleProject)SetProvisioners(val *[]interface{}) {
 	_jsii_.Set(
 		j,
 		"provisioners",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleProject)SetSkipDelete(val interface{}) {
-	if err := j.validateSetSkipDeleteParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"skipDelete",
 		val,
 	)
 }
@@ -1212,14 +1177,6 @@ func (g *jsiiProxy_GoogleProject) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleProject) ResetSkipDelete() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetSkipDelete",
 		nil, // no parameters
 	)
 }

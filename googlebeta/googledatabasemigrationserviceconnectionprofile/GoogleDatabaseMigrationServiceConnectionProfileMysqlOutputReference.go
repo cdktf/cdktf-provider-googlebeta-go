@@ -5,9 +5,9 @@ package googledatabasemigrationserviceconnectionprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledatabasemigrationserviceconnectionprofile/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatabasemigrationserviceconnectionprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -84,7 +84,11 @@ type GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference interfa
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSsl(value *GoogleDatabaseMigrationServiceConnectionProfileMysqlSsl)
 	ResetCloudSqlId()
+	ResetHost()
+	ResetPassword()
+	ResetPort()
 	ResetSsl()
+	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -643,10 +647,42 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputRef
 	)
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetSsl() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileMysqlOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUsername",
 		nil, // no parameters
 	)
 }

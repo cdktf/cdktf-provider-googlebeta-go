@@ -5,14 +5,14 @@ package googlecomputebackendservicesignedurlkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputebackendservicesignedurlkey/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputebackendservicesignedurlkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key}.
 type GoogleComputeBackendServiceSignedUrlKey interface {
 	cdktf.TerraformResource
 	BackendService() *string
@@ -427,7 +427,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceSignedUrlKey) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
 func NewGoogleComputeBackendServiceSignedUrlKey(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceSignedUrlKeyConfig) GoogleComputeBackendServiceSignedUrlKey {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewGoogleComputeBackendServiceSignedUrlKey(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_backend_service_signed_url_key google_compute_backend_service_signed_url_key} Resource.
 func NewGoogleComputeBackendServiceSignedUrlKey_Override(g GoogleComputeBackendServiceSignedUrlKey, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceSignedUrlKeyConfig) {
 	_init_.Initialize()
 

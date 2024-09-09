@@ -5,14 +5,14 @@ package googlesecurityscannerscanconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlesecurityscannerscanconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecurityscannerscanconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_security_scanner_scan_config google_security_scanner_scan_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_security_scanner_scan_config google_security_scanner_scan_config}.
 type GoogleSecurityScannerScanConfig interface {
 	cdktf.TerraformResource
 	Authentication() GoogleSecurityScannerScanConfigAuthenticationOutputReference
@@ -583,7 +583,7 @@ func (j *jsiiProxy_GoogleSecurityScannerScanConfig) UserAgentInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_security_scanner_scan_config google_security_scanner_scan_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_security_scanner_scan_config google_security_scanner_scan_config} Resource.
 func NewGoogleSecurityScannerScanConfig(scope constructs.Construct, id *string, config *GoogleSecurityScannerScanConfigConfig) GoogleSecurityScannerScanConfig {
 	_init_.Initialize()
 
@@ -601,7 +601,7 @@ func NewGoogleSecurityScannerScanConfig(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_security_scanner_scan_config google_security_scanner_scan_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_security_scanner_scan_config google_security_scanner_scan_config} Resource.
 func NewGoogleSecurityScannerScanConfig_Override(g GoogleSecurityScannerScanConfig, scope constructs.Construct, id *string, config *GoogleSecurityScannerScanConfigConfig) {
 	_init_.Initialize()
 

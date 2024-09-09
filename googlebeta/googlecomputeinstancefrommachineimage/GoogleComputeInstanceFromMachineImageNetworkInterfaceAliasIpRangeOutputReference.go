@@ -5,9 +5,9 @@ package googlecomputeinstancefrommachineimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeinstancefrommachineimage/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinstancefrommachineimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -70,7 +70,6 @@ type GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputRefe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	ResetIpCidrRange()
 	ResetSubnetworkRangeName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -486,14 +485,6 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpR
 	)
 
 	return returns
-}
-
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputReference) ResetIpCidrRange() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetIpCidrRange",
-		nil, // no parameters
-	)
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAliasIpRangeOutputReference) ResetSubnetworkRangeName() {

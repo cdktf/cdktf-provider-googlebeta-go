@@ -5,14 +5,14 @@ package googledataplexaspecttype
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataplexaspecttype/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataplexaspecttype/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type}.
 type GoogleDataplexAspectType interface {
 	cdktf.TerraformResource
 	AspectTypeId() *string
@@ -579,7 +579,7 @@ func (j *jsiiProxy_GoogleDataplexAspectType) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
 func NewGoogleDataplexAspectType(scope constructs.Construct, id *string, config *GoogleDataplexAspectTypeConfig) GoogleDataplexAspectType {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewGoogleDataplexAspectType(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_dataplex_aspect_type google_dataplex_aspect_type} Resource.
 func NewGoogleDataplexAspectType_Override(g GoogleDataplexAspectType, scope constructs.Construct, id *string, config *GoogleDataplexAspectTypeConfig) {
 	_init_.Initialize()
 

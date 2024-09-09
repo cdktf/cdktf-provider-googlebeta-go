@@ -5,14 +5,14 @@ package googleclouddomainsregistration
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleclouddomainsregistration/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleclouddomainsregistration/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_clouddomains_registration google_clouddomains_registration}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_clouddomains_registration google_clouddomains_registration}.
 type GoogleClouddomainsRegistration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -669,7 +669,7 @@ func (j *jsiiProxy_GoogleClouddomainsRegistration) YearlyPriceInput() *GoogleClo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_clouddomains_registration google_clouddomains_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_clouddomains_registration google_clouddomains_registration} Resource.
 func NewGoogleClouddomainsRegistration(scope constructs.Construct, id *string, config *GoogleClouddomainsRegistrationConfig) GoogleClouddomainsRegistration {
 	_init_.Initialize()
 
@@ -687,7 +687,7 @@ func NewGoogleClouddomainsRegistration(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_clouddomains_registration google_clouddomains_registration} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_clouddomains_registration google_clouddomains_registration} Resource.
 func NewGoogleClouddomainsRegistration_Override(g GoogleClouddomainsRegistration, scope constructs.Construct, id *string, config *GoogleClouddomainsRegistrationConfig) {
 	_init_.Initialize()
 

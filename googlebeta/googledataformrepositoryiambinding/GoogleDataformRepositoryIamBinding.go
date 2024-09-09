@@ -5,14 +5,14 @@ package googledataformrepositoryiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledataformrepositoryiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataformrepositoryiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_dataform_repository_iam_binding google_dataform_repository_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_dataform_repository_iam_binding google_dataform_repository_iam_binding}.
 type GoogleDataformRepositoryIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryIamBinding) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_dataform_repository_iam_binding google_dataform_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_dataform_repository_iam_binding google_dataform_repository_iam_binding} Resource.
 func NewGoogleDataformRepositoryIamBinding(scope constructs.Construct, id *string, config *GoogleDataformRepositoryIamBindingConfig) GoogleDataformRepositoryIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleDataformRepositoryIamBinding(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_dataform_repository_iam_binding google_dataform_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_dataform_repository_iam_binding google_dataform_repository_iam_binding} Resource.
 func NewGoogleDataformRepositoryIamBinding_Override(g GoogleDataformRepositoryIamBinding, scope constructs.Construct, id *string, config *GoogleDataformRepositoryIamBindingConfig) {
 	_init_.Initialize()
 

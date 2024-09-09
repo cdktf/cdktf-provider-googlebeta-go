@@ -5,14 +5,14 @@ package googlenetworkconnectivityregionalendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlenetworkconnectivityregionalendpoint/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkconnectivityregionalendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint}.
 type GoogleNetworkConnectivityRegionalEndpoint interface {
 	cdktf.TerraformResource
 	AccessType() *string
@@ -625,7 +625,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityRegionalEndpoint) UpdateTime() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint} Resource.
 func NewGoogleNetworkConnectivityRegionalEndpoint(scope constructs.Construct, id *string, config *GoogleNetworkConnectivityRegionalEndpointConfig) GoogleNetworkConnectivityRegionalEndpoint {
 	_init_.Initialize()
 
@@ -643,7 +643,7 @@ func NewGoogleNetworkConnectivityRegionalEndpoint(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_network_connectivity_regional_endpoint google_network_connectivity_regional_endpoint} Resource.
 func NewGoogleNetworkConnectivityRegionalEndpoint_Override(g GoogleNetworkConnectivityRegionalEndpoint, scope constructs.Construct, id *string, config *GoogleNetworkConnectivityRegionalEndpointConfig) {
 	_init_.Initialize()
 

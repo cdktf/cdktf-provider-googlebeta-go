@@ -5,14 +5,14 @@ package googlestoragebucketiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlestoragebucketiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlestoragebucketiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_storage_bucket_iam_binding google_storage_bucket_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_storage_bucket_iam_binding google_storage_bucket_iam_binding}.
 type GoogleStorageBucketIamBinding interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleStorageBucketIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
 func NewGoogleStorageBucketIamBinding(scope constructs.Construct, id *string, config *GoogleStorageBucketIamBindingConfig) GoogleStorageBucketIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleStorageBucketIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_storage_bucket_iam_binding google_storage_bucket_iam_binding} Resource.
 func NewGoogleStorageBucketIamBinding_Override(g GoogleStorageBucketIamBinding, scope constructs.Construct, id *string, config *GoogleStorageBucketIamBindingConfig) {
 	_init_.Initialize()
 

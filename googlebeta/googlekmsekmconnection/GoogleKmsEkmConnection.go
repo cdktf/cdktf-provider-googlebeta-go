@@ -5,14 +5,14 @@ package googlekmsekmconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlekmsekmconnection/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmsekmconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_kms_ekm_connection google_kms_ekm_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_kms_ekm_connection google_kms_ekm_connection}.
 type GoogleKmsEkmConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -510,7 +510,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnection) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_kms_ekm_connection google_kms_ekm_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_kms_ekm_connection google_kms_ekm_connection} Resource.
 func NewGoogleKmsEkmConnection(scope constructs.Construct, id *string, config *GoogleKmsEkmConnectionConfig) GoogleKmsEkmConnection {
 	_init_.Initialize()
 
@@ -528,7 +528,7 @@ func NewGoogleKmsEkmConnection(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_kms_ekm_connection google_kms_ekm_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_kms_ekm_connection google_kms_ekm_connection} Resource.
 func NewGoogleKmsEkmConnection_Override(g GoogleKmsEkmConnection, scope constructs.Construct, id *string, config *GoogleKmsEkmConnectionConfig) {
 	_init_.Initialize()
 

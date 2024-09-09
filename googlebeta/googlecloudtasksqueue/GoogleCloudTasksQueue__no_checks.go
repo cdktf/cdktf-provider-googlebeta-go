@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleCloudTasksQueue) validatePutAppEngineRoutingOverridePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudTasksQueue) validatePutHttpTargetParameters(value *GoogleCloudTasksQueueHttpTarget) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudTasksQueue) validatePutRateLimitsParameters(value *GoogleCloudTasksQueueRateLimits) error {
 	return nil
 }

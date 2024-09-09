@@ -5,14 +5,14 @@ package googlepubsublitesubscription
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlepubsublitesubscription/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlepubsublitesubscription/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription}.
 type GooglePubsubLiteSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -476,7 +476,7 @@ func (j *jsiiProxy_GooglePubsubLiteSubscription) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
 func NewGooglePubsubLiteSubscription(scope constructs.Construct, id *string, config *GooglePubsubLiteSubscriptionConfig) GooglePubsubLiteSubscription {
 	_init_.Initialize()
 
@@ -494,7 +494,7 @@ func NewGooglePubsubLiteSubscription(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_pubsub_lite_subscription google_pubsub_lite_subscription} Resource.
 func NewGooglePubsubLiteSubscription_Override(g GooglePubsubLiteSubscription, scope constructs.Construct, id *string, config *GooglePubsubLiteSubscriptionConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googleendpointsserviceconsumersiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleendpointsserviceconsumersiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleendpointsserviceconsumersiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy}.
 type GoogleEndpointsServiceConsumersIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_GoogleEndpointsServiceConsumersIamPolicy) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy} Resource.
 func NewGoogleEndpointsServiceConsumersIamPolicy(scope constructs.Construct, id *string, config *GoogleEndpointsServiceConsumersIamPolicyConfig) GoogleEndpointsServiceConsumersIamPolicy {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewGoogleEndpointsServiceConsumersIamPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_endpoints_service_consumers_iam_policy google_endpoints_service_consumers_iam_policy} Resource.
 func NewGoogleEndpointsServiceConsumersIamPolicy_Override(g GoogleEndpointsServiceConsumersIamPolicy, scope constructs.Construct, id *string, config *GoogleEndpointsServiceConsumersIamPolicyConfig) {
 	_init_.Initialize()
 

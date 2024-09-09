@@ -5,14 +5,14 @@ package googlebigqueryreservation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlebigqueryreservation/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigqueryreservation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_reservation google_bigquery_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_reservation google_bigquery_reservation}.
 type GoogleBigqueryReservation interface {
 	cdktf.TerraformResource
 	Autoscale() GoogleBigqueryReservationAutoscaleOutputReference
@@ -60,9 +60,6 @@ type GoogleBigqueryReservation interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
-	MultiRegionAuxiliary() interface{}
-	SetMultiRegionAuxiliary(val interface{})
-	MultiRegionAuxiliaryInput() interface{}
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -143,7 +140,6 @@ type GoogleBigqueryReservation interface {
 	ResetId()
 	ResetIgnoreIdleSlots()
 	ResetLocation()
-	ResetMultiRegionAuxiliary()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -377,26 +373,6 @@ func (j *jsiiProxy_GoogleBigqueryReservation) LocationInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryReservation) MultiRegionAuxiliary() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"multiRegionAuxiliary",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleBigqueryReservation) MultiRegionAuxiliaryInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"multiRegionAuxiliaryInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleBigqueryReservation) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -548,7 +524,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
 func NewGoogleBigqueryReservation(scope constructs.Construct, id *string, config *GoogleBigqueryReservationConfig) GoogleBigqueryReservation {
 	_init_.Initialize()
 
@@ -566,7 +542,7 @@ func NewGoogleBigqueryReservation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
 func NewGoogleBigqueryReservation_Override(g GoogleBigqueryReservation, scope constructs.Construct, id *string, config *GoogleBigqueryReservationConfig) {
 	_init_.Initialize()
 
@@ -677,17 +653,6 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleBigqueryReservation)SetMultiRegionAuxiliary(val interface{}) {
-	if err := j.validateSetMultiRegionAuxiliaryParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"multiRegionAuxiliary",
 		val,
 	)
 }
@@ -1163,14 +1128,6 @@ func (g *jsiiProxy_GoogleBigqueryReservation) ResetLocation() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLocation",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleBigqueryReservation) ResetMultiRegionAuxiliary() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetMultiRegionAuxiliary",
 		nil, // no parameters
 	)
 }

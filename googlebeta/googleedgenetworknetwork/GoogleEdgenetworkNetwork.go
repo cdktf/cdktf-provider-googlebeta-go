@@ -5,14 +5,14 @@ package googleedgenetworknetwork
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleedgenetworknetwork/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleedgenetworknetwork/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_edgenetwork_network google_edgenetwork_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_edgenetwork_network google_edgenetwork_network}.
 type GoogleEdgenetworkNetwork interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -35,6 +35,7 @@ type GoogleEdgenetworkNetwork interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -80,6 +81,7 @@ type GoogleEdgenetworkNetwork interface {
 	RawOverrides() interface{}
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -236,6 +238,16 @@ func (j *jsiiProxy_GoogleEdgenetworkNetwork) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleEdgenetworkNetwork) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -461,6 +473,16 @@ func (j *jsiiProxy_GoogleEdgenetworkNetwork) TerraformGeneratorMetadata() *cdktf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleEdgenetworkNetwork) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleEdgenetworkNetwork) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -532,7 +554,7 @@ func (j *jsiiProxy_GoogleEdgenetworkNetwork) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_edgenetwork_network google_edgenetwork_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_edgenetwork_network google_edgenetwork_network} Resource.
 func NewGoogleEdgenetworkNetwork(scope constructs.Construct, id *string, config *GoogleEdgenetworkNetworkConfig) GoogleEdgenetworkNetwork {
 	_init_.Initialize()
 
@@ -550,7 +572,7 @@ func NewGoogleEdgenetworkNetwork(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_edgenetwork_network google_edgenetwork_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_edgenetwork_network google_edgenetwork_network} Resource.
 func NewGoogleEdgenetworkNetwork_Override(g GoogleEdgenetworkNetwork, scope constructs.Construct, id *string, config *GoogleEdgenetworkNetworkConfig) {
 	_init_.Initialize()
 

@@ -5,9 +5,9 @@ package googlesqldatabaseinstance
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlesqldatabaseinstance/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesqldatabaseinstance/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -48,9 +48,6 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	PrivateNetworkInput() *string
 	PscConfig() GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigList
 	PscConfigInput() interface{}
-	RequireSsl() interface{}
-	SetRequireSsl(val interface{})
-	RequireSslInput() interface{}
 	ServerCaMode() *string
 	SetServerCaMode(val *string)
 	ServerCaModeInput() *string
@@ -97,7 +94,6 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference interface {
 	ResetIpv4Enabled()
 	ResetPrivateNetwork()
 	ResetPscConfig()
-	ResetRequireSsl()
 	ResetServerCaMode()
 	ResetSslMode()
 	// Produce the Token's value at resolution time.
@@ -285,26 +281,6 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSsl() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"requireSsl",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) RequireSslInput() interface{} {
-	var returns interface{}
-	_jsii_.Get(
-		j,
-		"requireSslInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ServerCaMode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -466,17 +442,6 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.Set(
 		j,
 		"privateNetwork",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference)SetRequireSsl(val interface{}) {
-	if err := j.validateSetRequireSslParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"requireSsl",
 		val,
 	)
 }
@@ -777,14 +742,6 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReferen
 	_jsii_.InvokeVoid(
 		g,
 		"resetPscConfig",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationOutputReference) ResetRequireSsl() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetRequireSsl",
 		nil, // no parameters
 	)
 }

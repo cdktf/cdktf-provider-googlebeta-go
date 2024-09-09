@@ -5,14 +5,14 @@ package googlecomputeinstancefrommachineimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeinstancefrommachineimage/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinstancefrommachineimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}.
 type GoogleComputeInstanceFromMachineImage interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference
@@ -132,8 +132,8 @@ type GoogleComputeInstanceFromMachineImage interface {
 	SchedulingInput() *GoogleComputeInstanceFromMachineImageScheduling
 	ScratchDisk() GoogleComputeInstanceFromMachineImageScratchDiskList
 	SelfLink() *string
-	ServiceAccount() GoogleComputeInstanceFromMachineImageServiceAccountList
-	ServiceAccountInput() interface{}
+	ServiceAccount() GoogleComputeInstanceFromMachineImageServiceAccountOutputReference
+	ServiceAccountInput() *GoogleComputeInstanceFromMachineImageServiceAccount
 	ShieldedInstanceConfig() GoogleComputeInstanceFromMachineImageShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *GoogleComputeInstanceFromMachineImageShieldedInstanceConfig
 	SourceMachineImage() *string
@@ -206,7 +206,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	PutParams(value *GoogleComputeInstanceFromMachineImageParams)
 	PutReservationAffinity(value *GoogleComputeInstanceFromMachineImageReservationAffinity)
 	PutScheduling(value *GoogleComputeInstanceFromMachineImageScheduling)
-	PutServiceAccount(value interface{})
+	PutServiceAccount(value *GoogleComputeInstanceFromMachineImageServiceAccount)
 	PutShieldedInstanceConfig(value *GoogleComputeInstanceFromMachineImageShieldedInstanceConfig)
 	PutTimeouts(value *GoogleComputeInstanceFromMachineImageTimeouts)
 	ResetAdvancedMachineFeatures()
@@ -989,8 +989,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SelfLink() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ServiceAccount() GoogleComputeInstanceFromMachineImageServiceAccountList {
-	var returns GoogleComputeInstanceFromMachineImageServiceAccountList
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ServiceAccount() GoogleComputeInstanceFromMachineImageServiceAccountOutputReference {
+	var returns GoogleComputeInstanceFromMachineImageServiceAccountOutputReference
 	_jsii_.Get(
 		j,
 		"serviceAccount",
@@ -999,8 +999,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ServiceAccount() Googl
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ServiceAccountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ServiceAccountInput() *GoogleComputeInstanceFromMachineImageServiceAccount {
+	var returns *GoogleComputeInstanceFromMachineImageServiceAccount
 	_jsii_.Get(
 		j,
 		"serviceAccountInput",
@@ -1160,7 +1160,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
 func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromMachineImageConfig) GoogleComputeInstanceFromMachineImage {
 	_init_.Initialize()
 
@@ -1178,7 +1178,7 @@ func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
 func NewGoogleComputeInstanceFromMachineImage_Override(g GoogleComputeInstanceFromMachineImage, scope constructs.Construct, id *string, config *GoogleComputeInstanceFromMachineImageConfig) {
 	_init_.Initialize()
 
@@ -1918,7 +1918,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutScheduling(value *G
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutServiceAccount(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutServiceAccount(value *GoogleComputeInstanceFromMachineImageServiceAccount) {
 	if err := g.validatePutServiceAccountParameters(value); err != nil {
 		panic(err)
 	}

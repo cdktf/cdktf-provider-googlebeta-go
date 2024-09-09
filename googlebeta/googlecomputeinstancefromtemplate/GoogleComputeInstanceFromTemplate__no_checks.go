@@ -119,7 +119,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutScratchDiskPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutServiceAccountParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) validatePutServiceAccountParameters(value *GoogleComputeInstanceFromTemplateServiceAccount) error {
 	return nil
 }
 

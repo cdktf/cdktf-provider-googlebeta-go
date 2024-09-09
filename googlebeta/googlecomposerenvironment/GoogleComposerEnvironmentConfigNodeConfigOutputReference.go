@@ -5,9 +5,9 @@ package googlecomposerenvironment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomposerenvironment/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomposerenvironment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -44,8 +44,8 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleComposerEnvironmentConfigNodeConfig
 	SetInternalValue(val *GoogleComposerEnvironmentConfigNodeConfig)
-	IpAllocationPolicy() GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList
-	IpAllocationPolicyInput() interface{}
+	IpAllocationPolicy() GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference
+	IpAllocationPolicyInput() *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
@@ -102,7 +102,7 @@ type GoogleComposerEnvironmentConfigNodeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
-	PutIpAllocationPolicy(value interface{})
+	PutIpAllocationPolicy(value *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy)
 	ResetComposerInternalIpv4CidrBlock()
 	ResetComposerNetworkAttachment()
 	ResetDiskSizeGb()
@@ -261,8 +261,8 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Int
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) IpAllocationPolicy() GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList {
-	var returns GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyList
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) IpAllocationPolicy() GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference {
+	var returns GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference
 	_jsii_.Get(
 		j,
 		"ipAllocationPolicy",
@@ -271,8 +271,8 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) IpA
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) IpAllocationPolicyInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) IpAllocationPolicyInput() *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy {
+	var returns *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy
 	_jsii_.Get(
 		j,
 		"ipAllocationPolicyInput",
@@ -862,7 +862,7 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) Int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) PutIpAllocationPolicy(value interface{}) {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigNodeConfigOutputReference) PutIpAllocationPolicy(value *GoogleComposerEnvironmentConfigNodeConfigIpAllocationPolicy) {
 	if err := g.validatePutIpAllocationPolicyParameters(value); err != nil {
 		panic(err)
 	}

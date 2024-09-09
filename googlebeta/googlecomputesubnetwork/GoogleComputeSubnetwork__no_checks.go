@@ -171,6 +171,10 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetRegionParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetReservedInternalRangeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetRoleParameters(val *string) error {
 	return nil
 }

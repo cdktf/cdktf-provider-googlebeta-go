@@ -5,14 +5,14 @@ package googlebigqueryanalyticshubdataexchange
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlebigqueryanalyticshubdataexchange/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigqueryanalyticshubdataexchange/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
 type GoogleBigqueryAnalyticsHubDataExchange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -84,6 +84,8 @@ type GoogleBigqueryAnalyticsHubDataExchange interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SharingEnvironmentConfig() GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference
+	SharingEnvironmentConfigInput() *GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -135,6 +137,7 @@ type GoogleBigqueryAnalyticsHubDataExchange interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutSharingEnvironmentConfig(value *GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig)
 	PutTimeouts(value *GoogleBigqueryAnalyticsHubDataExchangeTimeouts)
 	ResetDescription()
 	ResetDocumentation()
@@ -145,6 +148,7 @@ type GoogleBigqueryAnalyticsHubDataExchange interface {
 	ResetOverrideLogicalId()
 	ResetPrimaryContact()
 	ResetProject()
+	ResetSharingEnvironmentConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -494,6 +498,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) RawOverrides() interf
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) SharingEnvironmentConfig() GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference {
+	var returns GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference
+	_jsii_.Get(
+		j,
+		"sharingEnvironmentConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) SharingEnvironmentConfigInput() *GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig {
+	var returns *GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig
+	_jsii_.Get(
+		j,
+		"sharingEnvironmentConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) GoogleBigqueryAnalyticsHubDataExchange {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange_Override(g GoogleBigqueryAnalyticsHubDataExchange, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) {
 	_init_.Initialize()
 
@@ -1094,6 +1118,17 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) OverrideLogicalId(new
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) PutSharingEnvironmentConfig(value *GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig) {
+	if err := g.validatePutSharingEnvironmentConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSharingEnvironmentConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) PutTimeouts(value *GoogleBigqueryAnalyticsHubDataExchangeTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1157,6 +1192,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) ResetSharingEnvironmentConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSharingEnvironmentConfig",
 		nil, // no parameters
 	)
 }

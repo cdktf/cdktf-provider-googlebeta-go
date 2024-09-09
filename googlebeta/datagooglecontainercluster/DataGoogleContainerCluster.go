@@ -5,14 +5,14 @@ package datagooglecontainercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagooglecontainercluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecontainercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/data-sources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_container_cluster google_container_cluster}.
 type DataGoogleContainerCluster interface {
 	cdktf.TerraformDataSource
 	AddonsConfig() DataGoogleContainerClusterAddonsConfigList
@@ -43,6 +43,7 @@ type DataGoogleContainerCluster interface {
 	SetDependsOn(val *[]*string)
 	Description() *string
 	DnsConfig() DataGoogleContainerClusterDnsConfigList
+	EffectiveLabels() cdktf.StringMap
 	EnableAutopilot() cdktf.IResolvable
 	EnableCiliumClusterwideNetworkPolicy() cdktf.IResolvable
 	EnableFqdnNetworkPolicy() cdktf.IResolvable
@@ -130,6 +131,7 @@ type DataGoogleContainerCluster interface {
 	Subnetwork() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformLabels() cdktf.StringMap
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -384,6 +386,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) DnsConfig() DataGoogleContainerCl
 	_jsii_.Get(
 		j,
 		"dnsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerCluster) EffectiveLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"effectiveLabels",
 		&returns,
 	)
 	return returns
@@ -1079,6 +1091,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) TerraformGeneratorMetadata() *cdk
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) TerraformLabels() cdktf.StringMap {
+	var returns cdktf.StringMap
+	_jsii_.Get(
+		j,
+		"terraformLabels",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) TerraformMetaArguments() *map[string]interface{} {
 	var returns *map[string]interface{}
 	_jsii_.Get(
@@ -1150,7 +1172,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster) WorkloadIdentityConfig() DataGoog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) DataGoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1168,7 +1190,7 @@ func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster_Override(d DataGoogleContainerCluster, scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) {
 	_init_.Initialize()
 

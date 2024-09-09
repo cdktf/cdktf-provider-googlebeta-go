@@ -5,14 +5,14 @@ package googlecomputeinterconnect
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeinterconnect/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinterconnect/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_interconnect google_compute_interconnect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_interconnect google_compute_interconnect}.
 type GoogleComputeInterconnect interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -853,7 +853,7 @@ func (j *jsiiProxy_GoogleComputeInterconnect) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
 func NewGoogleComputeInterconnect(scope constructs.Construct, id *string, config *GoogleComputeInterconnectConfig) GoogleComputeInterconnect {
 	_init_.Initialize()
 
@@ -871,7 +871,7 @@ func NewGoogleComputeInterconnect(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
 func NewGoogleComputeInterconnect_Override(g GoogleComputeInterconnect, scope constructs.Construct, id *string, config *GoogleComputeInterconnectConfig) {
 	_init_.Initialize()
 

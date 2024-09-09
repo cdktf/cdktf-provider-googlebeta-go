@@ -107,7 +107,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutSchedulingP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutServiceAccountParameters(value interface{}) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutServiceAccountParameters(value *GoogleComputeInstanceFromMachineImageServiceAccount) error {
 	return nil
 }
 

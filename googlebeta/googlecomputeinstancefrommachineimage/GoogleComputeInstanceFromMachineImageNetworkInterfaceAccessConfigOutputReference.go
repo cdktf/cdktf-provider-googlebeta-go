@@ -5,9 +5,9 @@ package googlecomputeinstancefrommachineimage
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeinstancefrommachineimage/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinstancefrommachineimage/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -42,8 +42,6 @@ type GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputRefe
 	SetPublicPtrDomainName(val *string)
 	PublicPtrDomainNameInput() *string
 	SecurityPolicy() *string
-	SetSecurityPolicy(val *string)
-	SecurityPolicyInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,7 +77,6 @@ type GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputRefe
 	ResetNatIp()
 	ResetNetworkTier()
 	ResetPublicPtrDomainName()
-	ResetSecurityPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -215,16 +212,6 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessCo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference) SecurityPolicyInput() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"securityPolicyInput",
-		&returns,
-	)
-	return returns
-}
-
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -335,17 +322,6 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessCo
 	_jsii_.Set(
 		j,
 		"publicPtrDomainName",
-		val,
-	)
-}
-
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference)SetSecurityPolicy(val *string) {
-	if err := j.validateSetSecurityPolicyParameters(val); err != nil {
-		panic(err)
-	}
-	_jsii_.Set(
-		j,
-		"securityPolicy",
 		val,
 	)
 }
@@ -578,14 +554,6 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessCo
 	_jsii_.InvokeVoid(
 		g,
 		"resetPublicPtrDomainName",
-		nil, // no parameters
-	)
-}
-
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageNetworkInterfaceAccessConfigOutputReference) ResetSecurityPolicy() {
-	_jsii_.InvokeVoid(
-		g,
-		"resetSecurityPolicy",
 		nil, // no parameters
 	)
 }

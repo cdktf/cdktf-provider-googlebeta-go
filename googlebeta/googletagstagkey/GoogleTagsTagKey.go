@@ -5,14 +5,14 @@ package googletagstagkey
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googletagstagkey/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googletagstagkey/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_tags_tag_key google_tags_tag_key}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_tags_tag_key google_tags_tag_key}.
 type GoogleTagsTagKey interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_GoogleTagsTagKey) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_tags_tag_key google_tags_tag_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_tags_tag_key google_tags_tag_key} Resource.
 func NewGoogleTagsTagKey(scope constructs.Construct, id *string, config *GoogleTagsTagKeyConfig) GoogleTagsTagKey {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewGoogleTagsTagKey(scope constructs.Construct, id *string, config *GoogleT
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_tags_tag_key google_tags_tag_key} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_tags_tag_key google_tags_tag_key} Resource.
 func NewGoogleTagsTagKey_Override(g GoogleTagsTagKey, scope constructs.Construct, id *string, config *GoogleTagsTagKeyConfig) {
 	_init_.Initialize()
 

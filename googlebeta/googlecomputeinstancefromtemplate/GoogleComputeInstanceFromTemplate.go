@@ -5,14 +5,14 @@ package googlecomputeinstancefromtemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeinstancefromtemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinstancefromtemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
 type GoogleComputeInstanceFromTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference
@@ -135,8 +135,8 @@ type GoogleComputeInstanceFromTemplate interface {
 	ScratchDisk() GoogleComputeInstanceFromTemplateScratchDiskList
 	ScratchDiskInput() interface{}
 	SelfLink() *string
-	ServiceAccount() GoogleComputeInstanceFromTemplateServiceAccountList
-	ServiceAccountInput() interface{}
+	ServiceAccount() GoogleComputeInstanceFromTemplateServiceAccountOutputReference
+	ServiceAccountInput() *GoogleComputeInstanceFromTemplateServiceAccount
 	ShieldedInstanceConfig() GoogleComputeInstanceFromTemplateShieldedInstanceConfigOutputReference
 	ShieldedInstanceConfigInput() *GoogleComputeInstanceFromTemplateShieldedInstanceConfig
 	SourceInstanceTemplate() *string
@@ -212,7 +212,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	PutReservationAffinity(value *GoogleComputeInstanceFromTemplateReservationAffinity)
 	PutScheduling(value *GoogleComputeInstanceFromTemplateScheduling)
 	PutScratchDisk(value interface{})
-	PutServiceAccount(value interface{})
+	PutServiceAccount(value *GoogleComputeInstanceFromTemplateServiceAccount)
 	PutShieldedInstanceConfig(value *GoogleComputeInstanceFromTemplateShieldedInstanceConfig)
 	PutTimeouts(value *GoogleComputeInstanceFromTemplateTimeouts)
 	ResetAdvancedMachineFeatures()
@@ -1028,8 +1028,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) SelfLink() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccount() GoogleComputeInstanceFromTemplateServiceAccountList {
-	var returns GoogleComputeInstanceFromTemplateServiceAccountList
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccount() GoogleComputeInstanceFromTemplateServiceAccountOutputReference {
+	var returns GoogleComputeInstanceFromTemplateServiceAccountOutputReference
 	_jsii_.Get(
 		j,
 		"serviceAccount",
@@ -1038,8 +1038,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccount() GoogleCom
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccountInput() interface{} {
-	var returns interface{}
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ServiceAccountInput() *GoogleComputeInstanceFromTemplateServiceAccount {
+	var returns *GoogleComputeInstanceFromTemplateServiceAccount
 	_jsii_.Get(
 		j,
 		"serviceAccountInput",
@@ -1199,7 +1199,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) GoogleComputeInstanceFromTemplate {
 	_init_.Initialize()
 
@@ -1217,7 +1217,7 @@ func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate_Override(g GoogleComputeInstanceFromTemplate, scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) {
 	_init_.Initialize()
 
@@ -1990,7 +1990,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutScratchDisk(value inter
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutServiceAccount(value interface{}) {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutServiceAccount(value *GoogleComputeInstanceFromTemplateServiceAccount) {
 	if err := g.validatePutServiceAccountParameters(value); err != nil {
 		panic(err)
 	}

@@ -5,14 +5,14 @@ package googleapphubworkload
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleapphubworkload/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapphubworkload/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_apphub_workload google_apphub_workload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_apphub_workload google_apphub_workload}.
 type GoogleApphubWorkload interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -599,7 +599,7 @@ func (j *jsiiProxy_GoogleApphubWorkload) WorkloadReference() GoogleApphubWorkloa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_apphub_workload google_apphub_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_apphub_workload google_apphub_workload} Resource.
 func NewGoogleApphubWorkload(scope constructs.Construct, id *string, config *GoogleApphubWorkloadConfig) GoogleApphubWorkload {
 	_init_.Initialize()
 
@@ -617,7 +617,7 @@ func NewGoogleApphubWorkload(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_apphub_workload google_apphub_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_apphub_workload google_apphub_workload} Resource.
 func NewGoogleApphubWorkload_Override(g GoogleApphubWorkload, scope constructs.Construct, id *string, config *GoogleApphubWorkloadConfig) {
 	_init_.Initialize()
 

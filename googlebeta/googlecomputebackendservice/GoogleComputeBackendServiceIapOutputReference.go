@@ -5,9 +5,9 @@ package googlecomputebackendservice
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputebackendservice/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputebackendservice/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
@@ -28,6 +28,9 @@ type GoogleComputeBackendServiceIapOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	Enabled() interface{}
+	SetEnabled(val interface{})
+	EnabledInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComputeBackendServiceIap
@@ -71,6 +74,8 @@ type GoogleComputeBackendServiceIapOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetOauth2ClientId()
+	ResetOauth2ClientSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -111,6 +116,26 @@ func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) CreationStack(
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) Enabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) EnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enabledInput",
 		&returns,
 	)
 	return returns
@@ -252,6 +277,17 @@ func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference)SetComplexObjec
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendServiceIapOutputReference)SetEnabled(val interface{}) {
+	if err := j.validateSetEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enabled",
 		val,
 	)
 }
@@ -495,6 +531,22 @@ func (g *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) InterpolationF
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) ResetOauth2ClientId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOauth2ClientId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) ResetOauth2ClientSecret() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOauth2ClientSecret",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeBackendServiceIapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

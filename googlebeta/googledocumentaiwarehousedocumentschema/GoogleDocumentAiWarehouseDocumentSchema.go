@@ -5,14 +5,14 @@ package googledocumentaiwarehousedocumentschema
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledocumentaiwarehousedocumentschema/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledocumentaiwarehousedocumentschema/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema}.
 type GoogleDocumentAiWarehouseDocumentSchema interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -461,7 +461,7 @@ func (j *jsiiProxy_GoogleDocumentAiWarehouseDocumentSchema) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
 func NewGoogleDocumentAiWarehouseDocumentSchema(scope constructs.Construct, id *string, config *GoogleDocumentAiWarehouseDocumentSchemaConfig) GoogleDocumentAiWarehouseDocumentSchema {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewGoogleDocumentAiWarehouseDocumentSchema(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_document_ai_warehouse_document_schema google_document_ai_warehouse_document_schema} Resource.
 func NewGoogleDocumentAiWarehouseDocumentSchema_Override(g GoogleDocumentAiWarehouseDocumentSchema, scope constructs.Construct, id *string, config *GoogleDocumentAiWarehouseDocumentSchemaConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googleactivedirectorydomain
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googleactivedirectorydomain/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleactivedirectorydomain/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_active_directory_domain google_active_directory_domain}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_active_directory_domain google_active_directory_domain}.
 type GoogleActiveDirectoryDomain interface {
 	cdktf.TerraformResource
 	Admin() *string
@@ -33,6 +33,9 @@ type GoogleActiveDirectoryDomain interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -137,6 +140,7 @@ type GoogleActiveDirectoryDomain interface {
 	PutTimeouts(value *GoogleActiveDirectoryDomainTimeouts)
 	ResetAdmin()
 	ResetAuthorizedNetworks()
+	ResetDeletionProtection()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -237,6 +241,26 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleActiveDirectoryDomain) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -543,7 +567,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_active_directory_domain google_active_directory_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_active_directory_domain google_active_directory_domain} Resource.
 func NewGoogleActiveDirectoryDomain(scope constructs.Construct, id *string, config *GoogleActiveDirectoryDomainConfig) GoogleActiveDirectoryDomain {
 	_init_.Initialize()
 
@@ -561,7 +585,7 @@ func NewGoogleActiveDirectoryDomain(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_active_directory_domain google_active_directory_domain} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_active_directory_domain google_active_directory_domain} Resource.
 func NewGoogleActiveDirectoryDomain_Override(g GoogleActiveDirectoryDomain, scope constructs.Construct, id *string, config *GoogleActiveDirectoryDomainConfig) {
 	_init_.Initialize()
 
@@ -612,6 +636,17 @@ func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleActiveDirectoryDomain)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1104,6 +1139,14 @@ func (g *jsiiProxy_GoogleActiveDirectoryDomain) ResetAuthorizedNetworks() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuthorizedNetworks",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleActiveDirectoryDomain) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

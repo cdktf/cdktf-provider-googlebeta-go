@@ -187,15 +187,15 @@ func (j *jsiiProxy_GoogleAlloydbCluster) validateSetLocationParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbCluster) validateSetNetworkParameters(val *string) error {
-	return nil
-}
-
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetProjectParameters(val *string) error {
 	return nil
 }
 
 func (j *jsiiProxy_GoogleAlloydbCluster) validateSetProvisionersParameters(val *[]interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleAlloydbCluster) validateSetSubscriptionTypeParameters(val *string) error {
 	return nil
 }
 

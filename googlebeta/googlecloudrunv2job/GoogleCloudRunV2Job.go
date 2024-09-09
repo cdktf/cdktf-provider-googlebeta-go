@@ -5,14 +5,14 @@ package googlecloudrunv2job
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecloudrunv2job/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudrunv2job/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job}.
 type GoogleCloudRunV2Job interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -42,6 +42,9 @@ type GoogleCloudRunV2Job interface {
 	CreateTime() *string
 	Creator() *string
 	DeleteTime() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -168,6 +171,7 @@ type GoogleCloudRunV2Job interface {
 	ResetBinaryAuthorization()
 	ResetClient()
 	ResetClientVersion()
+	ResetDeletionProtection()
 	ResetId()
 	ResetLabels()
 	ResetLaunchStage()
@@ -351,6 +355,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) DeleteTime() *string {
 	_jsii_.Get(
 		j,
 		"deleteTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -817,7 +841,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Job) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) GoogleCloudRunV2Job {
 	_init_.Initialize()
 
@@ -835,7 +859,7 @@ func NewGoogleCloudRunV2Job(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_cloud_run_v2_job google_cloud_run_v2_job} Resource.
 func NewGoogleCloudRunV2Job_Override(g GoogleCloudRunV2Job, scope constructs.Construct, id *string, config *GoogleCloudRunV2JobConfig) {
 	_init_.Initialize()
 
@@ -897,6 +921,17 @@ func (j *jsiiProxy_GoogleCloudRunV2Job)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Job)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1449,6 +1484,14 @@ func (g *jsiiProxy_GoogleCloudRunV2Job) ResetClientVersion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetClientVersion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Job) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
 		nil, // no parameters
 	)
 }

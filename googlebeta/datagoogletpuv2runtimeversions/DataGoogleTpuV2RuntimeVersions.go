@@ -5,14 +5,14 @@ package datagoogletpuv2runtimeversions
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/datagoogletpuv2runtimeversions/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogletpuv2runtimeversions/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/data-sources/google_tpu_v2_runtime_versions google_tpu_v2_runtime_versions}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_tpu_v2_runtime_versions google_tpu_v2_runtime_versions}.
 type DataGoogleTpuV2RuntimeVersions interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -324,7 +324,7 @@ func (j *jsiiProxy_DataGoogleTpuV2RuntimeVersions) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/data-sources/google_tpu_v2_runtime_versions google_tpu_v2_runtime_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_tpu_v2_runtime_versions google_tpu_v2_runtime_versions} Data Source.
 func NewDataGoogleTpuV2RuntimeVersions(scope constructs.Construct, id *string, config *DataGoogleTpuV2RuntimeVersionsConfig) DataGoogleTpuV2RuntimeVersions {
 	_init_.Initialize()
 
@@ -342,7 +342,7 @@ func NewDataGoogleTpuV2RuntimeVersions(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/data-sources/google_tpu_v2_runtime_versions google_tpu_v2_runtime_versions} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/data-sources/google_tpu_v2_runtime_versions google_tpu_v2_runtime_versions} Data Source.
 func NewDataGoogleTpuV2RuntimeVersions_Override(d DataGoogleTpuV2RuntimeVersions, scope constructs.Construct, id *string, config *DataGoogleTpuV2RuntimeVersionsConfig) {
 	_init_.Initialize()
 

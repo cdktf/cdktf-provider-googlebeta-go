@@ -5,14 +5,16 @@ package googlediscoveryenginedatastore
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlediscoveryenginedatastore/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlediscoveryenginedatastore/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference interface {
 	cdktf.ComplexObject
+	ChunkingConfig() GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference
+	ChunkingConfigInput() *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -69,8 +71,10 @@ type GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutChunkingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig)
 	PutDefaultParsingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig)
 	PutParsingConfigOverrides(value interface{})
+	ResetChunkingConfig()
 	ResetDefaultParsingConfig()
 	ResetParsingConfigOverrides()
 	// Produce the Token's value at resolution time.
@@ -86,6 +90,26 @@ type GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference inter
 // The jsii proxy struct for GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference
 type jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) ChunkingConfig() GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference {
+	var returns GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"chunkingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) ChunkingConfigInput() *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig {
+	var returns *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig
+	_jsii_.Get(
+		j,
+		"chunkingConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -477,6 +501,17 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputR
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) PutChunkingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig) {
+	if err := g.validatePutChunkingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putChunkingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) PutDefaultParsingConfig(value *GoogleDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig) {
 	if err := g.validatePutDefaultParsingConfigParameters(value); err != nil {
 		panic(err)
@@ -496,6 +531,14 @@ func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputR
 		g,
 		"putParsingConfigOverrides",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference) ResetChunkingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetChunkingConfig",
+		nil, // no parameters
 	)
 }
 

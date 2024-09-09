@@ -5,14 +5,17 @@ package googledatabasemigrationserviceconnectionprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googledatabasemigrationserviceconnectionprofile/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatabasemigrationserviceconnectionprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
 type GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference interface {
 	cdktf.ComplexObject
+	AlloydbClusterId() *string
+	SetAlloydbClusterId(val *string)
+	AlloydbClusterIdInput() *string
 	CloudSqlId() *string
 	SetCloudSqlId(val *string)
 	CloudSqlIdInput() *string
@@ -84,8 +87,13 @@ type GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference in
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSsl(value *GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSsl)
+	ResetAlloydbClusterId()
 	ResetCloudSqlId()
+	ResetHost()
+	ResetPassword()
+	ResetPort()
 	ResetSsl()
+	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -99,6 +107,26 @@ type GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference in
 // The jsii proxy struct for GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference
 type jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) AlloydbClusterId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alloydbClusterId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) AlloydbClusterIdInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"alloydbClusterIdInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) CloudSqlId() *string {
@@ -336,6 +364,17 @@ func NewGoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference
 		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference)SetAlloydbClusterId(val *string) {
+	if err := j.validateSetAlloydbClusterIdParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"alloydbClusterId",
+		val,
 	)
 }
 
@@ -646,6 +685,14 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutp
 	)
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetAlloydbClusterId() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAlloydbClusterId",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetCloudSqlId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -654,10 +701,42 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutp
 	)
 }
 
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetHost() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHost",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetPort() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPort",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetSsl() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSsl",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlOutputReference) ResetUsername() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUsername",
 		nil, // no parameters
 	)
 }

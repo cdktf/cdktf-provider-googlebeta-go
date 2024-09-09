@@ -5,16 +5,18 @@ package googlecomputenodetemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputenodetemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputenodetemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template google_compute_node_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template google_compute_node_template}.
 type GoogleComputeNodeTemplate interface {
 	cdktf.TerraformResource
+	Accelerators() GoogleComputeNodeTemplateAcceleratorsList
+	AcceleratorsInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -136,9 +138,11 @@ type GoogleComputeNodeTemplate interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAccelerators(value interface{})
 	PutNodeTypeFlexibility(value *GoogleComputeNodeTemplateNodeTypeFlexibility)
 	PutServerBinding(value *GoogleComputeNodeTemplateServerBinding)
 	PutTimeouts(value *GoogleComputeNodeTemplateTimeouts)
+	ResetAccelerators()
 	ResetCpuOvercommitType()
 	ResetDescription()
 	ResetId()
@@ -169,6 +173,26 @@ type GoogleComputeNodeTemplate interface {
 // The jsii proxy struct for GoogleComputeNodeTemplate
 type jsiiProxy_GoogleComputeNodeTemplate struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeNodeTemplate) Accelerators() GoogleComputeNodeTemplateAcceleratorsList {
+	var returns GoogleComputeNodeTemplateAcceleratorsList
+	_jsii_.Get(
+		j,
+		"accelerators",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNodeTemplate) AcceleratorsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"acceleratorsInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeNodeTemplate) CdktfStack() cdktf.TerraformStack {
@@ -572,7 +596,7 @@ func (j *jsiiProxy_GoogleComputeNodeTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template google_compute_node_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template google_compute_node_template} Resource.
 func NewGoogleComputeNodeTemplate(scope constructs.Construct, id *string, config *GoogleComputeNodeTemplateConfig) GoogleComputeNodeTemplate {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewGoogleComputeNodeTemplate(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_node_template google_compute_node_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_node_template google_compute_node_template} Resource.
 func NewGoogleComputeNodeTemplate_Override(g GoogleComputeNodeTemplate, scope constructs.Construct, id *string, config *GoogleComputeNodeTemplateConfig) {
 	_init_.Initialize()
 
@@ -1110,6 +1134,17 @@ func (g *jsiiProxy_GoogleComputeNodeTemplate) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeNodeTemplate) PutAccelerators(value interface{}) {
+	if err := g.validatePutAcceleratorsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAccelerators",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeNodeTemplate) PutNodeTypeFlexibility(value *GoogleComputeNodeTemplateNodeTypeFlexibility) {
 	if err := g.validatePutNodeTypeFlexibilityParameters(value); err != nil {
 		panic(err)
@@ -1140,6 +1175,14 @@ func (g *jsiiProxy_GoogleComputeNodeTemplate) PutTimeouts(value *GoogleComputeNo
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNodeTemplate) ResetAccelerators() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccelerators",
+		nil, // no parameters
 	)
 }
 

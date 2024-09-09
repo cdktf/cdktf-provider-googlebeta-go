@@ -103,6 +103,10 @@ func (j *jsiiProxy_GoogleFolder) validateSetCountParameters(val interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFolder) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFolder) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

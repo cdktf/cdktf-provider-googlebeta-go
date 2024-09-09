@@ -5,14 +5,14 @@ package googlebillingsubaccount
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlebillingsubaccount/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebillingsubaccount/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_billing_subaccount google_billing_subaccount}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_billing_subaccount google_billing_subaccount}.
 type GoogleBillingSubaccount interface {
 	cdktf.TerraformResource
 	BillingAccountId() *string
@@ -413,7 +413,7 @@ func (j *jsiiProxy_GoogleBillingSubaccount) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_billing_subaccount google_billing_subaccount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_billing_subaccount google_billing_subaccount} Resource.
 func NewGoogleBillingSubaccount(scope constructs.Construct, id *string, config *GoogleBillingSubaccountConfig) GoogleBillingSubaccount {
 	_init_.Initialize()
 
@@ -431,7 +431,7 @@ func NewGoogleBillingSubaccount(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_billing_subaccount google_billing_subaccount} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_billing_subaccount google_billing_subaccount} Resource.
 func NewGoogleBillingSubaccount_Override(g GoogleBillingSubaccount, scope constructs.Construct, id *string, config *GoogleBillingSubaccountConfig) {
 	_init_.Initialize()
 

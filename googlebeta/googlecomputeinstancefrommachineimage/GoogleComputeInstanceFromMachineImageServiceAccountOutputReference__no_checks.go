@@ -63,7 +63,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference) validateSetInternalValueParameters(val interface{}) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputReference) validateSetInternalValueParameters(val *GoogleComputeInstanceFromMachineImageServiceAccount) error {
 	return nil
 }
 
@@ -79,7 +79,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageServiceAccountOutputRefe
 	return nil
 }
 
-func validateNewGoogleComputeInstanceFromMachineImageServiceAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeInstanceFromMachineImageServiceAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

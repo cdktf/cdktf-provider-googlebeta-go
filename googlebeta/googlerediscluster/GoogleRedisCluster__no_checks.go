@@ -115,6 +115,10 @@ func (j *jsiiProxy_GoogleRedisCluster) validateSetCountParameters(val interface{
 	return nil
 }
 
+func (j *jsiiProxy_GoogleRedisCluster) validateSetDeletionProtectionEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleRedisCluster) validateSetIdParameters(val *string) error {
 	return nil
 }

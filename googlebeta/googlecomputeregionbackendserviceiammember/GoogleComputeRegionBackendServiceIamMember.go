@@ -5,14 +5,14 @@ package googlecomputeregionbackendserviceiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v13/googlecomputeregionbackendserviceiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionbackendserviceiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member}.
 type GoogleComputeRegionBackendServiceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceIamMember) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource.
 func NewGoogleComputeRegionBackendServiceIamMember(scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceIamMemberConfig) GoogleComputeRegionBackendServiceIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleComputeRegionBackendServiceIamMember(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/5.43.1/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_compute_region_backend_service_iam_member google_compute_region_backend_service_iam_member} Resource.
 func NewGoogleComputeRegionBackendServiceIamMember_Override(g GoogleComputeRegionBackendServiceIamMember, scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceIamMemberConfig) {
 	_init_.Initialize()
 
