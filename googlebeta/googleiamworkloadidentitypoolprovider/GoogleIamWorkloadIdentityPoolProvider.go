@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider}.
 type GoogleIamWorkloadIdentityPoolProvider interface {
 	cdktf.TerraformResource
 	AttributeCondition() *string
@@ -98,6 +98,8 @@ type GoogleIamWorkloadIdentityPoolProvider interface {
 	WorkloadIdentityPoolProviderId() *string
 	SetWorkloadIdentityPoolProviderId(val *string)
 	WorkloadIdentityPoolProviderIdInput() *string
+	X509() GoogleIamWorkloadIdentityPoolProviderX509OutputReference
+	X509Input() *GoogleIamWorkloadIdentityPoolProviderX509
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -145,6 +147,7 @@ type GoogleIamWorkloadIdentityPoolProvider interface {
 	PutOidc(value *GoogleIamWorkloadIdentityPoolProviderOidc)
 	PutSaml(value *GoogleIamWorkloadIdentityPoolProviderSaml)
 	PutTimeouts(value *GoogleIamWorkloadIdentityPoolProviderTimeouts)
+	PutX509(value *GoogleIamWorkloadIdentityPoolProviderX509)
 	ResetAttributeCondition()
 	ResetAttributeMapping()
 	ResetAws()
@@ -159,6 +162,7 @@ type GoogleIamWorkloadIdentityPoolProvider interface {
 	ResetProject()
 	ResetSaml()
 	ResetTimeouts()
+	ResetX509()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -617,8 +621,28 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) WorkloadIdentityPoolPr
 	return returns
 }
 
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) X509() GoogleIamWorkloadIdentityPoolProviderX509OutputReference {
+	var returns GoogleIamWorkloadIdentityPoolProviderX509OutputReference
+	_jsii_.Get(
+		j,
+		"x509",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) X509Input() *GoogleIamWorkloadIdentityPoolProviderX509 {
+	var returns *GoogleIamWorkloadIdentityPoolProviderX509
+	_jsii_.Get(
+		j,
+		"x509Input",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewGoogleIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolProviderConfig) GoogleIamWorkloadIdentityPoolProvider {
 	_init_.Initialize()
 
@@ -636,7 +660,7 @@ func NewGoogleIamWorkloadIdentityPoolProvider(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_iam_workload_identity_pool_provider google_iam_workload_identity_pool_provider} Resource.
 func NewGoogleIamWorkloadIdentityPoolProvider_Override(g GoogleIamWorkloadIdentityPoolProvider, scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolProviderConfig) {
 	_init_.Initialize()
 
@@ -1211,6 +1235,17 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) PutTimeouts(value *Goo
 	)
 }
 
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) PutX509(value *GoogleIamWorkloadIdentityPoolProviderX509) {
+	if err := g.validatePutX509Parameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putX509",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) ResetAttributeCondition() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1303,6 +1338,14 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProvider) ResetX509() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetX509",
 		nil, // no parameters
 	)
 }

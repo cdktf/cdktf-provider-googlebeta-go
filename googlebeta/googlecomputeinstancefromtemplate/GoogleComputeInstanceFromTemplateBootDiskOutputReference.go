@@ -42,6 +42,9 @@ type GoogleComputeInstanceFromTemplateBootDiskOutputReference interface {
 	Fqn() *string
 	InitializeParams() GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference
 	InitializeParamsInput() *GoogleComputeInstanceFromTemplateBootDiskInitializeParams
+	Interface() *string
+	SetInterface(val *string)
+	InterfaceInput() *string
 	InternalValue() *GoogleComputeInstanceFromTemplateBootDisk
 	SetInternalValue(val *GoogleComputeInstanceFromTemplateBootDisk)
 	KmsKeySelfLink() *string
@@ -90,6 +93,7 @@ type GoogleComputeInstanceFromTemplateBootDiskOutputReference interface {
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
 	ResetInitializeParams()
+	ResetInterface()
 	ResetKmsKeySelfLink()
 	ResetMode()
 	ResetSource()
@@ -233,6 +237,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Ini
 	_jsii_.Get(
 		j,
 		"initializeParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Interface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) InterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +431,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetD
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetInterface(val *string) {
+	if err := j.validateSetInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interface",
 		val,
 	)
 }
@@ -702,6 +737,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetInitializeParams",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ResetInterface() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInterface",
 		nil, // no parameters
 	)
 }

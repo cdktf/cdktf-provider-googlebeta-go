@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) validatePutNodeKubeletConfigParameters(value *GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

@@ -57,6 +57,8 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	ServiceAccount() *string
 	SetServiceAccount(val *string)
 	ServiceAccountInput() *string
+	ServiceMesh() GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference
+	ServiceMeshInput() *GoogleCloudRunV2ServiceTemplateServiceMesh
 	SessionAffinity() interface{}
 	SetSessionAffinity(val interface{})
 	SessionAffinityInput() interface{}
@@ -101,6 +103,7 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainers(value interface{})
 	PutScaling(value *GoogleCloudRunV2ServiceTemplateScaling)
+	PutServiceMesh(value *GoogleCloudRunV2ServiceTemplateServiceMesh)
 	PutVolumes(value interface{})
 	PutVpcAccess(value *GoogleCloudRunV2ServiceTemplateVpcAccess)
 	ResetAnnotations()
@@ -112,6 +115,7 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	ResetRevision()
 	ResetScaling()
 	ResetServiceAccount()
+	ResetServiceMesh()
 	ResetSessionAffinity()
 	ResetTimeout()
 	ResetVolumes()
@@ -356,6 +360,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ServiceAccoun
 	_jsii_.Get(
 		j,
 		"serviceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ServiceMesh() GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference
+	_jsii_.Get(
+		j,
+		"serviceMesh",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ServiceMeshInput() *GoogleCloudRunV2ServiceTemplateServiceMesh {
+	var returns *GoogleCloudRunV2ServiceTemplateServiceMesh
+	_jsii_.Get(
+		j,
+		"serviceMeshInput",
 		&returns,
 	)
 	return returns
@@ -851,6 +875,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutScaling(va
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutServiceMesh(value *GoogleCloudRunV2ServiceTemplateServiceMesh) {
+	if err := g.validatePutServiceMeshParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putServiceMesh",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutVolumes(value interface{}) {
 	if err := g.validatePutVolumesParameters(value); err != nil {
 		panic(err)
@@ -941,6 +976,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetServiceA
 	_jsii_.InvokeVoid(
 		g,
 		"resetServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetServiceMesh() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetServiceMesh",
 		nil, // no parameters
 	)
 }

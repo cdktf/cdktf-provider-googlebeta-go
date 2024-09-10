@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload}.
 type GoogleAssuredWorkloadsWorkload interface {
 	cdktf.TerraformResource
 	BillingAccount() *string
@@ -83,6 +83,9 @@ type GoogleAssuredWorkloadsWorkload interface {
 	PartnerInput() *string
 	PartnerPermissions() GoogleAssuredWorkloadsWorkloadPartnerPermissionsOutputReference
 	PartnerPermissionsInput() *GoogleAssuredWorkloadsWorkloadPartnerPermissions
+	PartnerServicesBillingAccount() *string
+	SetPartnerServicesBillingAccount(val *string)
+	PartnerServicesBillingAccountInput() *string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -169,6 +172,7 @@ type GoogleAssuredWorkloadsWorkload interface {
 	ResetOverrideLogicalId()
 	ResetPartner()
 	ResetPartnerPermissions()
+	ResetPartnerServicesBillingAccount()
 	ResetProvisionedResourcesParent()
 	ResetResourceSettings()
 	ResetTimeouts()
@@ -581,6 +585,26 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) PartnerPermissionsInput() *Go
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) PartnerServicesBillingAccount() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerServicesBillingAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) PartnerServicesBillingAccountInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"partnerServicesBillingAccountInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -752,7 +776,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload) ViolationNotificationsEnabled
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewGoogleAssuredWorkloadsWorkload(scope constructs.Construct, id *string, config *GoogleAssuredWorkloadsWorkloadConfig) GoogleAssuredWorkloadsWorkload {
 	_init_.Initialize()
 
@@ -770,7 +794,7 @@ func NewGoogleAssuredWorkloadsWorkload(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_assured_workloads_workload google_assured_workloads_workload} Resource.
 func NewGoogleAssuredWorkloadsWorkload_Override(g GoogleAssuredWorkloadsWorkload, scope constructs.Construct, id *string, config *GoogleAssuredWorkloadsWorkloadConfig) {
 	_init_.Initialize()
 
@@ -925,6 +949,17 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetPartner(val *string) {
 	_jsii_.Set(
 		j,
 		"partner",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkload)SetPartnerServicesBillingAccount(val *string) {
+	if err := j.validateSetPartnerServicesBillingAccountParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"partnerServicesBillingAccount",
 		val,
 	)
 }
@@ -1427,6 +1462,14 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetPartnerPermissions() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPartnerPermissions",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkload) ResetPartnerServicesBillingAccount() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPartnerServicesBillingAccount",
 		nil, // no parameters
 	)
 }

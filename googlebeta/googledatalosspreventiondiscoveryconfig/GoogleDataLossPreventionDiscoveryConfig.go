@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config}.
 type GoogleDataLossPreventionDiscoveryConfig interface {
 	cdktf.TerraformResource
 	Actions() GoogleDataLossPreventionDiscoveryConfigActionsList
@@ -579,7 +579,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfig) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config} Resource.
 func NewGoogleDataLossPreventionDiscoveryConfig(scope constructs.Construct, id *string, config *GoogleDataLossPreventionDiscoveryConfigConfig) GoogleDataLossPreventionDiscoveryConfig {
 	_init_.Initialize()
 
@@ -597,7 +597,7 @@ func NewGoogleDataLossPreventionDiscoveryConfig(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_data_loss_prevention_discovery_config google_data_loss_prevention_discovery_config} Resource.
 func NewGoogleDataLossPreventionDiscoveryConfig_Override(g GoogleDataLossPreventionDiscoveryConfig, scope constructs.Construct, id *string, config *GoogleDataLossPreventionDiscoveryConfigConfig) {
 	_init_.Initialize()
 

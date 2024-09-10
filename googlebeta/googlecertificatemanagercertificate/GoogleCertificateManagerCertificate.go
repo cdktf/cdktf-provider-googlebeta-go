@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate}.
 type GoogleCertificateManagerCertificate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,7 @@ type GoogleCertificateManagerCertificate interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SanDnsnames() *[]*string
 	Scope() *string
 	SetScope(val *string)
 	ScopeInput() *string
@@ -446,6 +447,16 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificate) RawOverrides() interface
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCertificateManagerCertificate) SanDnsnames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"sanDnsnames",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCertificateManagerCertificate) Scope() *string {
 	var returns *string
 	_jsii_.Get(
@@ -547,7 +558,7 @@ func (j *jsiiProxy_GoogleCertificateManagerCertificate) TimeoutsInput() interfac
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewGoogleCertificateManagerCertificate(scope constructs.Construct, id *string, config *GoogleCertificateManagerCertificateConfig) GoogleCertificateManagerCertificate {
 	_init_.Initialize()
 
@@ -565,7 +576,7 @@ func NewGoogleCertificateManagerCertificate(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.1.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_certificate_manager_certificate google_certificate_manager_certificate} Resource.
 func NewGoogleCertificateManagerCertificate_Override(g GoogleCertificateManagerCertificate, scope constructs.Construct, id *string, config *GoogleCertificateManagerCertificateConfig) {
 	_init_.Initialize()
 

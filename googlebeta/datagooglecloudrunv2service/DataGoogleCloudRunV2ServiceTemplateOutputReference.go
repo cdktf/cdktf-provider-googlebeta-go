@@ -41,6 +41,7 @@ type DataGoogleCloudRunV2ServiceTemplateOutputReference interface {
 	Revision() *string
 	Scaling() DataGoogleCloudRunV2ServiceTemplateScalingList
 	ServiceAccount() *string
+	ServiceMesh() DataGoogleCloudRunV2ServiceTemplateServiceMeshList
 	SessionAffinity() cdktf.IResolvable
 	// Experimental.
 	TerraformAttribute() *string
@@ -227,6 +228,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) ServiceAc
 	_jsii_.Get(
 		j,
 		"serviceAccount",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) ServiceMesh() DataGoogleCloudRunV2ServiceTemplateServiceMeshList {
+	var returns DataGoogleCloudRunV2ServiceTemplateServiceMeshList
+	_jsii_.Get(
+		j,
+		"serviceMesh",
 		&returns,
 	)
 	return returns

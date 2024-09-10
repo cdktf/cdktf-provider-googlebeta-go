@@ -42,6 +42,9 @@ type GoogleComputeInstanceBootDiskOutputReference interface {
 	Fqn() *string
 	InitializeParams() GoogleComputeInstanceBootDiskInitializeParamsOutputReference
 	InitializeParamsInput() *GoogleComputeInstanceBootDiskInitializeParams
+	Interface() *string
+	SetInterface(val *string)
+	InterfaceInput() *string
 	InternalValue() *GoogleComputeInstanceBootDisk
 	SetInternalValue(val *GoogleComputeInstanceBootDisk)
 	KmsKeySelfLink() *string
@@ -90,6 +93,7 @@ type GoogleComputeInstanceBootDiskOutputReference interface {
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
 	ResetInitializeParams()
+	ResetInterface()
 	ResetKmsKeySelfLink()
 	ResetMode()
 	ResetSource()
@@ -233,6 +237,26 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) InitializeParam
 	_jsii_.Get(
 		j,
 		"initializeParamsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) Interface() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interface",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) InterfaceInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"interfaceInput",
 		&returns,
 	)
 	return returns
@@ -407,6 +431,17 @@ func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference)SetDiskEncryptio
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference)SetInterface(val *string) {
+	if err := j.validateSetInterfaceParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"interface",
 		val,
 	)
 }
@@ -702,6 +737,14 @@ func (g *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) ResetInitialize
 	_jsii_.InvokeVoid(
 		g,
 		"resetInitializeParams",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceBootDiskOutputReference) ResetInterface() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInterface",
 		nil, // no parameters
 	)
 }

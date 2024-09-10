@@ -55,6 +55,10 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutSc
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutServiceMeshParameters(value *GoogleCloudRunV2ServiceTemplateServiceMesh) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutVolumesParameters(value interface{}) error {
 	return nil
 }

@@ -43,6 +43,9 @@ type GoogleBigtableTableColumnFamilyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Type() *string
+	SetType(val *string)
+	TypeInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type GoogleBigtableTableColumnFamilyOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -172,6 +176,26 @@ func (j *jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference) TerraformReso
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference) Type() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"type",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference) TypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"typeInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleBigtableTableColumnFamilyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleBigtableTableColumnFamilyOutputReference {
 	_init_.Initialize()
@@ -262,6 +286,17 @@ func (j *jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference)SetTerraformRe
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference)SetType(val *string) {
+	if err := j.validateSetTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"type",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (g *jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference) Interpolation
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference) ResetType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetType",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
