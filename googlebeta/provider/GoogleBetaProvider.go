@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -226,6 +226,9 @@ type GoogleBetaProvider interface {
 	DeploymentManagerCustomEndpoint() *string
 	SetDeploymentManagerCustomEndpoint(val *string)
 	DeploymentManagerCustomEndpointInput() *string
+	DeveloperConnectCustomEndpoint() *string
+	SetDeveloperConnectCustomEndpoint(val *string)
+	DeveloperConnectCustomEndpointInput() *string
 	DialogflowCustomEndpoint() *string
 	SetDialogflowCustomEndpoint(val *string)
 	DialogflowCustomEndpointInput() *string
@@ -353,6 +356,9 @@ type GoogleBetaProvider interface {
 	MemcacheCustomEndpoint() *string
 	SetMemcacheCustomEndpoint(val *string)
 	MemcacheCustomEndpointInput() *string
+	MemorystoreCustomEndpoint() *string
+	SetMemorystoreCustomEndpoint(val *string)
+	MemorystoreCustomEndpointInput() *string
 	// Experimental.
 	MetaAttributes() *map[string]interface{}
 	MigrationCenterCustomEndpoint() *string
@@ -622,6 +628,7 @@ type GoogleBetaProvider interface {
 	ResetDatastreamCustomEndpoint()
 	ResetDefaultLabels()
 	ResetDeploymentManagerCustomEndpoint()
+	ResetDeveloperConnectCustomEndpoint()
 	ResetDialogflowCustomEndpoint()
 	ResetDialogflowCxCustomEndpoint()
 	ResetDiscoveryEngineCustomEndpoint()
@@ -663,6 +670,7 @@ type GoogleBetaProvider interface {
 	ResetLookerCustomEndpoint()
 	ResetManagedKafkaCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
+	ResetMemorystoreCustomEndpoint()
 	ResetMigrationCenterCustomEndpoint()
 	ResetMlEngineCustomEndpoint()
 	ResetMonitoringCustomEndpoint()
@@ -2145,6 +2153,26 @@ func (j *jsiiProxy_GoogleBetaProvider) DeploymentManagerCustomEndpointInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) DeveloperConnectCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"developerConnectCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) DeveloperConnectCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"developerConnectCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) DialogflowCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -2980,6 +3008,26 @@ func (j *jsiiProxy_GoogleBetaProvider) MemcacheCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"memcacheCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) MemorystoreCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memorystoreCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) MemorystoreCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"memorystoreCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4266,7 +4314,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4284,7 +4332,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4853,6 +4901,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetDeploymentManagerCustomEndpoint(val *st
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetDeveloperConnectCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"developerConnectCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetDialogflowCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5177,6 +5233,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetMemcacheCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"memcacheCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetMemorystoreCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"memorystoreCustomEndpoint",
 		val,
 	)
 }
@@ -6349,6 +6413,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetDeploymentManagerCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetDeveloperConnectCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeveloperConnectCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetDialogflowCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -6673,6 +6745,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetMemcacheCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMemcacheCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetMemorystoreCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMemorystoreCustomEndpoint",
 		nil, // no parameters
 	)
 }

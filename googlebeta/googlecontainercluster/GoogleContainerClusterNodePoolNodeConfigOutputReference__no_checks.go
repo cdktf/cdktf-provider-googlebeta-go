@@ -215,6 +215,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validateSetStoragePoolsParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validateSetTagsParameters(val *[]*string) error {
 	return nil
 }

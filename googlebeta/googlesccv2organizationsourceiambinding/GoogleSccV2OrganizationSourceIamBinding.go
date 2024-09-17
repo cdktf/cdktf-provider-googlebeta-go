@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_scc_v2_organization_source_iam_binding google_scc_v2_organization_source_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_scc_v2_organization_source_iam_binding google_scc_v2_organization_source_iam_binding}.
 type GoogleSccV2OrganizationSourceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamBinding) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_scc_v2_organization_source_iam_binding google_scc_v2_organization_source_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_scc_v2_organization_source_iam_binding google_scc_v2_organization_source_iam_binding} Resource.
 func NewGoogleSccV2OrganizationSourceIamBinding(scope constructs.Construct, id *string, config *GoogleSccV2OrganizationSourceIamBindingConfig) GoogleSccV2OrganizationSourceIamBinding {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewGoogleSccV2OrganizationSourceIamBinding(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_scc_v2_organization_source_iam_binding google_scc_v2_organization_source_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_scc_v2_organization_source_iam_binding google_scc_v2_organization_source_iam_binding} Resource.
 func NewGoogleSccV2OrganizationSourceIamBinding_Override(g GoogleSccV2OrganizationSourceIamBinding, scope constructs.Construct, id *string, config *GoogleSccV2OrganizationSourceIamBindingConfig) {
 	_init_.Initialize()
 

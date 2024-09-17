@@ -38,6 +38,7 @@ type GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReferenc
 	ProvisionedIops() *float64
 	ProvisionedThroughput() *float64
 	ResourceManagerTags() cdktf.StringMap
+	ResourcePolicies() *[]*string
 	Size() *float64
 	StoragePool() *string
 	// Experimental.
@@ -193,6 +194,16 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	_jsii_.Get(
 		j,
 		"resourceManagerTags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) ResourcePolicies() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"resourcePolicies",
 		&returns,
 	)
 	return returns

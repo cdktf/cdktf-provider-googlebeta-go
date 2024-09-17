@@ -123,6 +123,9 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	Spot() interface{}
 	SetSpot(val interface{})
 	SpotInput() interface{}
+	StoragePools() *[]*string
+	SetStoragePools(val *[]*string)
+	StoragePoolsInput() *[]*string
 	Tags() *[]*string
 	SetTags(val *[]*string)
 	TagsInput() *[]*string
@@ -218,6 +221,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ResetShieldedInstanceConfig()
 	ResetSoleTenantConfig()
 	ResetSpot()
+	ResetStoragePools()
 	ResetTags()
 	ResetTaint()
 	ResetWorkloadMetadataConfig()
@@ -1016,6 +1020,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) SpotInput()
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) StoragePools() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storagePools",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) StoragePoolsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"storagePoolsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) Tags() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -1351,6 +1375,17 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference)SetSpot(val 
 	_jsii_.Set(
 		j,
 		"spot",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference)SetStoragePools(val *[]*string) {
+	if err := j.validateSetStoragePoolsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"storagePools",
 		val,
 	)
 }
@@ -2078,6 +2113,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetSpot()
 	_jsii_.InvokeVoid(
 		g,
 		"resetSpot",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetStoragePools() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStoragePools",
 		nil, // no parameters
 	)
 }

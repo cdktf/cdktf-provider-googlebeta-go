@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_gke_hub_membership google_gke_hub_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_gke_hub_membership google_gke_hub_membership}.
 type GoogleGkeHubMembership interface {
 	cdktf.TerraformResource
 	Authority() GoogleGkeHubMembershipAuthorityOutputReference
@@ -534,7 +534,7 @@ func (j *jsiiProxy_GoogleGkeHubMembership) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_gke_hub_membership google_gke_hub_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_gke_hub_membership google_gke_hub_membership} Resource.
 func NewGoogleGkeHubMembership(scope constructs.Construct, id *string, config *GoogleGkeHubMembershipConfig) GoogleGkeHubMembership {
 	_init_.Initialize()
 
@@ -552,7 +552,7 @@ func NewGoogleGkeHubMembership(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.2.0/docs/resources/google_gke_hub_membership google_gke_hub_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_gke_hub_membership google_gke_hub_membership} Resource.
 func NewGoogleGkeHubMembership_Override(g GoogleGkeHubMembership, scope constructs.Construct, id *string, config *GoogleGkeHubMembershipConfig) {
 	_init_.Initialize()
 

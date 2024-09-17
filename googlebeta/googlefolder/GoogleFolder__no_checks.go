@@ -127,6 +127,10 @@ func (j *jsiiProxy_GoogleFolder) validateSetProvisionersParameters(val *[]interf
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFolder) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func validateNewGoogleFolderParameters(scope constructs.Construct, id *string, config *GoogleFolderConfig) error {
 	return nil
 }
