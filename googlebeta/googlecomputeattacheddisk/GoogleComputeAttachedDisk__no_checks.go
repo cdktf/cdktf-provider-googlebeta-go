@@ -119,6 +119,10 @@ func (j *jsiiProxy_GoogleComputeAttachedDisk) validateSetInstanceParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeAttachedDisk) validateSetInterfaceParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeAttachedDisk) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint}.
 type GoogleNetworkSecurityFirewallEndpoint interface {
 	cdktf.TerraformResource
 	AssociatedNetworks() *[]*string
@@ -538,7 +538,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityFirewallEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
 func NewGoogleNetworkSecurityFirewallEndpoint(scope constructs.Construct, id *string, config *GoogleNetworkSecurityFirewallEndpointConfig) GoogleNetworkSecurityFirewallEndpoint {
 	_init_.Initialize()
 
@@ -556,7 +556,7 @@ func NewGoogleNetworkSecurityFirewallEndpoint(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_network_security_firewall_endpoint google_network_security_firewall_endpoint} Resource.
 func NewGoogleNetworkSecurityFirewallEndpoint_Override(g GoogleNetworkSecurityFirewallEndpoint, scope constructs.Construct, id *string, config *GoogleNetworkSecurityFirewallEndpointConfig) {
 	_init_.Initialize()
 

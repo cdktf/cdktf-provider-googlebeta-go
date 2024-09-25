@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_dataflow_job google_dataflow_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_dataflow_job google_dataflow_job}.
 type GoogleDataflowJob interface {
 	cdktf.TerraformResource
 	AdditionalExperiments() *[]*string
@@ -866,7 +866,7 @@ func (j *jsiiProxy_GoogleDataflowJob) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_dataflow_job google_dataflow_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_dataflow_job google_dataflow_job} Resource.
 func NewGoogleDataflowJob(scope constructs.Construct, id *string, config *GoogleDataflowJobConfig) GoogleDataflowJob {
 	_init_.Initialize()
 
@@ -884,7 +884,7 @@ func NewGoogleDataflowJob(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_dataflow_job google_dataflow_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_dataflow_job google_dataflow_job} Resource.
 func NewGoogleDataflowJob_Override(g GoogleDataflowJob, scope constructs.Construct, id *string, config *GoogleDataflowJobConfig) {
 	_init_.Initialize()
 

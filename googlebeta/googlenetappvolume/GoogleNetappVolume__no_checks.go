@@ -91,6 +91,10 @@ func (g *jsiiProxy_GoogleNetappVolume) validatePutSnapshotPolicyParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappVolume) validatePutTieringPolicyParameters(value *GoogleNetappVolumeTieringPolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolume) validatePutTimeoutsParameters(value *GoogleNetappVolumeTimeouts) error {
 	return nil
 }

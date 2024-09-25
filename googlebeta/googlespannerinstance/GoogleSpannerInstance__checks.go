@@ -375,6 +375,14 @@ func (j *jsiiProxy_GoogleSpannerInstance) validateSetDisplayNameParameters(val *
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerInstance) validateSetEditionParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstance) validateSetForceDestroyParameters(val interface{}) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

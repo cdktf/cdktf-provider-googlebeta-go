@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_looker_instance google_looker_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_looker_instance google_looker_instance}.
 type GoogleLookerInstance interface {
 	cdktf.TerraformResource
 	AdminSettings() GoogleLookerInstanceAdminSettingsOutputReference
@@ -44,6 +44,9 @@ type GoogleLookerInstance interface {
 	EgressPublicIp() *string
 	EncryptionConfig() GoogleLookerInstanceEncryptionConfigOutputReference
 	EncryptionConfigInput() *GoogleLookerInstanceEncryptionConfig
+	FipsEnabled() interface{}
+	SetFipsEnabled(val interface{})
+	FipsEnabledInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -167,6 +170,7 @@ type GoogleLookerInstance interface {
 	ResetCustomDomain()
 	ResetDenyMaintenancePeriod()
 	ResetEncryptionConfig()
+	ResetFipsEnabled()
 	ResetId()
 	ResetMaintenanceWindow()
 	ResetOauthConfig()
@@ -364,6 +368,26 @@ func (j *jsiiProxy_GoogleLookerInstance) EncryptionConfigInput() *GoogleLookerIn
 	_jsii_.Get(
 		j,
 		"encryptionConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) FipsEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleLookerInstance) FipsEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"fipsEnabledInput",
 		&returns,
 	)
 	return returns
@@ -770,7 +794,7 @@ func (j *jsiiProxy_GoogleLookerInstance) UserMetadataInput() *GoogleLookerInstan
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) GoogleLookerInstance {
 	_init_.Initialize()
 
@@ -788,7 +812,7 @@ func NewGoogleLookerInstance(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_looker_instance google_looker_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_looker_instance google_looker_instance} Resource.
 func NewGoogleLookerInstance_Override(g GoogleLookerInstance, scope constructs.Construct, id *string, config *GoogleLookerInstanceConfig) {
 	_init_.Initialize()
 
@@ -836,6 +860,17 @@ func (j *jsiiProxy_GoogleLookerInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleLookerInstance)SetFipsEnabled(val interface{}) {
+	if err := j.validateSetFipsEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"fipsEnabled",
 		val,
 	)
 }
@@ -1443,6 +1478,14 @@ func (g *jsiiProxy_GoogleLookerInstance) ResetEncryptionConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEncryptionConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleLookerInstance) ResetFipsEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFipsEnabled",
 		nil, // no parameters
 	)
 }

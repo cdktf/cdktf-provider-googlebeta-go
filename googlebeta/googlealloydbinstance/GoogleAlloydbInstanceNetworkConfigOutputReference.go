@@ -30,6 +30,9 @@ type GoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	EnableOutboundPublicIp() interface{}
+	SetEnableOutboundPublicIp(val interface{})
+	EnableOutboundPublicIpInput() interface{}
 	EnablePublicIp() interface{}
 	SetEnablePublicIp(val interface{})
 	EnablePublicIpInput() interface{}
@@ -71,6 +74,7 @@ type GoogleAlloydbInstanceNetworkConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAuthorizedExternalNetworks(value interface{})
 	ResetAuthorizedExternalNetworks()
+	ResetEnableOutboundPublicIp()
 	ResetEnablePublicIp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -132,6 +136,26 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) CreationSt
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIp() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableOutboundPublicIp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) EnableOutboundPublicIpInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableOutboundPublicIpInput",
 		&returns,
 	)
 	return returns
@@ -243,6 +267,17 @@ func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetComplexO
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference)SetEnableOutboundPublicIp(val interface{}) {
+	if err := j.validateSetEnableOutboundPublicIpParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableOutboundPublicIp",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) ResetAutho
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuthorizedExternalNetworks",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstanceNetworkConfigOutputReference) ResetEnableOutboundPublicIp() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableOutboundPublicIp",
 		nil, // no parameters
 	)
 }

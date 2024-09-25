@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -455,6 +455,9 @@ type GoogleBetaProvider interface {
 	SecretManagerCustomEndpoint() *string
 	SetSecretManagerCustomEndpoint(val *string)
 	SecretManagerCustomEndpointInput() *string
+	SecretManagerRegionalCustomEndpoint() *string
+	SetSecretManagerRegionalCustomEndpoint(val *string)
+	SecretManagerRegionalCustomEndpointInput() *string
 	SecureSourceManagerCustomEndpoint() *string
 	SetSecureSourceManagerCustomEndpoint(val *string)
 	SecureSourceManagerCustomEndpointInput() *string
@@ -704,6 +707,7 @@ type GoogleBetaProvider interface {
 	ResetRuntimeConfigCustomEndpoint()
 	ResetScopes()
 	ResetSecretManagerCustomEndpoint()
+	ResetSecretManagerRegionalCustomEndpoint()
 	ResetSecureSourceManagerCustomEndpoint()
 	ResetSecurityCenterCustomEndpoint()
 	ResetSecurityCenterManagementCustomEndpoint()
@@ -3663,6 +3667,26 @@ func (j *jsiiProxy_GoogleBetaProvider) SecretManagerCustomEndpointInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) SecretManagerRegionalCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerRegionalCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) SecretManagerRegionalCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerRegionalCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) SecureSourceManagerCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4314,7 +4338,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4332,7 +4356,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -5481,6 +5505,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetSecretManagerCustomEndpoint(val *string
 	_jsii_.Set(
 		j,
 		"secretManagerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetSecretManagerRegionalCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"secretManagerRegionalCustomEndpoint",
 		val,
 	)
 }
@@ -7001,6 +7033,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetSecretManagerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSecretManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetSecretManagerRegionalCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretManagerRegionalCustomEndpoint",
 		nil, // no parameters
 	)
 }

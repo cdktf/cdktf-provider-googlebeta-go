@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_alloydb_instance google_alloydb_instance}.
 type GoogleAlloydbInstance interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -88,6 +88,7 @@ type GoogleAlloydbInstance interface {
 	Node() constructs.Node
 	ObservabilityConfig() GoogleAlloydbInstanceObservabilityConfigOutputReference
 	ObservabilityConfigInput() *GoogleAlloydbInstanceObservabilityConfig
+	OutboundPublicIpAddresses() *[]*string
 	// Experimental.
 	Provider() cdktf.TerraformProvider
 	// Experimental.
@@ -635,6 +636,16 @@ func (j *jsiiProxy_GoogleAlloydbInstance) ObservabilityConfigInput() *GoogleAllo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstance) OutboundPublicIpAddresses() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"outboundPublicIpAddresses",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstance) Provider() cdktf.TerraformProvider {
 	var returns cdktf.TerraformProvider
 	_jsii_.Get(
@@ -836,7 +847,7 @@ func (j *jsiiProxy_GoogleAlloydbInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) GoogleAlloydbInstance {
 	_init_.Initialize()
 
@@ -854,7 +865,7 @@ func NewGoogleAlloydbInstance(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.3.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_alloydb_instance google_alloydb_instance} Resource.
 func NewGoogleAlloydbInstance_Override(g GoogleAlloydbInstance, scope constructs.Construct, id *string, config *GoogleAlloydbInstanceConfig) {
 	_init_.Initialize()
 
