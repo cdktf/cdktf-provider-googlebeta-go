@@ -124,6 +124,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutCo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutNodeSelectorParameters(value *GoogleCloudRunV2ServiceTemplateNodeSelector) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutScalingParameters(value *GoogleCloudRunV2ServiceTemplateScaling) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

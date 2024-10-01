@@ -38,6 +38,7 @@ type DataGoogleCloudRunV2ServiceTemplateOutputReference interface {
 	SetInternalValue(val *DataGoogleCloudRunV2ServiceTemplate)
 	Labels() cdktf.StringMap
 	MaxInstanceRequestConcurrency() *float64
+	NodeSelector() DataGoogleCloudRunV2ServiceTemplateNodeSelectorList
 	Revision() *string
 	Scaling() DataGoogleCloudRunV2ServiceTemplateScalingList
 	ServiceAccount() *string
@@ -198,6 +199,16 @@ func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) MaxInstan
 	_jsii_.Get(
 		j,
 		"maxInstanceRequestConcurrency",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleCloudRunV2ServiceTemplateOutputReference) NodeSelector() DataGoogleCloudRunV2ServiceTemplateNodeSelectorList {
+	var returns DataGoogleCloudRunV2ServiceTemplateNodeSelectorList
+	_jsii_.Get(
+		j,
+		"nodeSelector",
 		&returns,
 	)
 	return returns

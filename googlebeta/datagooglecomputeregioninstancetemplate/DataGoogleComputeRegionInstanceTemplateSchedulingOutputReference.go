@@ -31,6 +31,7 @@ type DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HostErrorTimeoutSeconds() *float64
 	InstanceTerminationAction() *string
 	InternalValue() *DataGoogleComputeRegionInstanceTemplateScheduling
 	SetInternalValue(val *DataGoogleComputeRegionInstanceTemplateScheduling)
@@ -135,6 +136,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputRefere
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) HostErrorTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hostErrorTimeoutSeconds",
 		&returns,
 	)
 	return returns

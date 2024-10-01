@@ -30,6 +30,9 @@ type GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IncludeImportRanges() *[]*string
+	SetIncludeImportRanges(val *[]*string)
+	IncludeImportRangesInput() *[]*string
 	Instances() GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesInstancesList
 	InstancesInput() interface{}
 	InternalValue() *GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstances
@@ -70,6 +73,7 @@ type GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInstances(value interface{})
+	ResetIncludeImportRanges()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -120,6 +124,26 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesO
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) IncludeImportRanges() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeImportRanges",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) IncludeImportRangesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"includeImportRangesInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesO
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference)SetIncludeImportRanges(val *[]*string) {
+	if err := j.validateSetIncludeImportRangesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"includeImportRanges",
 		val,
 	)
 }
@@ -483,6 +518,14 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesO
 		g,
 		"putInstances",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstancesOutputReference) ResetIncludeImportRanges() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIncludeImportRanges",
+		nil, // no parameters
 	)
 }
 

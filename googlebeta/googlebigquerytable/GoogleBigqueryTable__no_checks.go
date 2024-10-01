@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleBigqueryTable) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutBiglakeConfigurationParameters(value *GoogleBigqueryTableBiglakeConfiguration) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutEncryptionConfigurationParameters(value *GoogleBigqueryTableEncryptionConfiguration) error {
 	return nil
 }

@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_bigquery_table google_bigquery_table}.
 type GoogleBigqueryTable interface {
 	cdktf.TerraformResource
+	BiglakeConfiguration() GoogleBigqueryTableBiglakeConfigurationOutputReference
+	BiglakeConfigurationInput() *GoogleBigqueryTableBiglakeConfiguration
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	Clustering() *[]*string
@@ -173,6 +175,7 @@ type GoogleBigqueryTable interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutBiglakeConfiguration(value *GoogleBigqueryTableBiglakeConfiguration)
 	PutEncryptionConfiguration(value *GoogleBigqueryTableEncryptionConfiguration)
 	PutExternalDataConfiguration(value *GoogleBigqueryTableExternalDataConfiguration)
 	PutMaterializedView(value *GoogleBigqueryTableMaterializedView)
@@ -181,6 +184,7 @@ type GoogleBigqueryTable interface {
 	PutTableReplicationInfo(value *GoogleBigqueryTableTableReplicationInfo)
 	PutTimePartitioning(value *GoogleBigqueryTableTimePartitioning)
 	PutView(value *GoogleBigqueryTableView)
+	ResetBiglakeConfiguration()
 	ResetClustering()
 	ResetDeletionProtection()
 	ResetDescription()
@@ -220,6 +224,26 @@ type GoogleBigqueryTable interface {
 // The jsii proxy struct for GoogleBigqueryTable
 type jsiiProxy_GoogleBigqueryTable struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) BiglakeConfiguration() GoogleBigqueryTableBiglakeConfigurationOutputReference {
+	var returns GoogleBigqueryTableBiglakeConfigurationOutputReference
+	_jsii_.Get(
+		j,
+		"biglakeConfiguration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) BiglakeConfigurationInput() *GoogleBigqueryTableBiglakeConfiguration {
+	var returns *GoogleBigqueryTableBiglakeConfiguration
+	_jsii_.Get(
+		j,
+		"biglakeConfigurationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleBigqueryTable) CdktfStack() cdktf.TerraformStack {
@@ -933,7 +957,7 @@ func (j *jsiiProxy_GoogleBigqueryTable) ViewInput() *GoogleBigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) GoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -951,7 +975,7 @@ func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1537,6 +1561,17 @@ func (g *jsiiProxy_GoogleBigqueryTable) OverrideLogicalId(newLogicalId *string) 
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) PutBiglakeConfiguration(value *GoogleBigqueryTableBiglakeConfiguration) {
+	if err := g.validatePutBiglakeConfigurationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBiglakeConfiguration",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) PutEncryptionConfiguration(value *GoogleBigqueryTableEncryptionConfiguration) {
 	if err := g.validatePutEncryptionConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1622,6 +1657,14 @@ func (g *jsiiProxy_GoogleBigqueryTable) PutView(value *GoogleBigqueryTableView) 
 		g,
 		"putView",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) ResetBiglakeConfiguration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBiglakeConfiguration",
+		nil, // no parameters
 	)
 }
 

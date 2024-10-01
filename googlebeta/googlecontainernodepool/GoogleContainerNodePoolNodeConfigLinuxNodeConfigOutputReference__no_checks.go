@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReferen
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validatePutHugepagesConfigParameters(value *GoogleContainerNodePoolNodeConfigLinuxNodeConfigHugepagesConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

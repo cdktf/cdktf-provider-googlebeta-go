@@ -33,6 +33,9 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	HostErrorTimeoutSeconds() *float64
+	SetHostErrorTimeoutSeconds(val *float64)
+	HostErrorTimeoutSecondsInput() *float64
 	InstanceTerminationAction() *string
 	SetInstanceTerminationAction(val *string)
 	InstanceTerminationActionInput() *string
@@ -98,6 +101,7 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	PutNodeAffinities(value interface{})
 	PutOnInstanceStopAction(value *GoogleComputeInstanceSchedulingOnInstanceStopAction)
 	ResetAutomaticRestart()
+	ResetHostErrorTimeoutSeconds()
 	ResetInstanceTerminationAction()
 	ResetLocalSsdRecoveryTimeout()
 	ResetMaintenanceInterval()
@@ -178,6 +182,26 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) Fqn() *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) HostErrorTimeoutSeconds() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hostErrorTimeoutSeconds",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) HostErrorTimeoutSecondsInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"hostErrorTimeoutSecondsInput",
 		&returns,
 	)
 	return returns
@@ -470,6 +494,17 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference)SetComplexObje
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference)SetHostErrorTimeoutSeconds(val *float64) {
+	if err := j.validateSetHostErrorTimeoutSecondsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"hostErrorTimeoutSeconds",
 		val,
 	)
 }
@@ -807,6 +842,14 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetAutomati
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutomaticRestart",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetHostErrorTimeoutSeconds() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHostErrorTimeoutSeconds",
 		nil, // no parameters
 	)
 }

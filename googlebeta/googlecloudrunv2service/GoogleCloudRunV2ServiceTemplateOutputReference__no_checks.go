@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutCo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutNodeSelectorParameters(value *GoogleCloudRunV2ServiceTemplateNodeSelector) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validatePutScalingParameters(value *GoogleCloudRunV2ServiceTemplateScaling) error {
 	return nil
 }

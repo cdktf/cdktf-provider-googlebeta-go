@@ -123,6 +123,10 @@ func (j *jsiiProxy_GoogleComputeRegionCommitment) validateSetDescriptionParamete
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionCommitment) validateSetExistingReservationsParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionCommitment) validateSetIdParameters(val *string) error {
 	return nil
 }

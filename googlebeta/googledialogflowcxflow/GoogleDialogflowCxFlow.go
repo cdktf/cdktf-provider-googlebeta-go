@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow}.
 type GoogleDialogflowCxFlow interface {
 	cdktf.TerraformResource
 	AdvancedSettings() GoogleDialogflowCxFlowAdvancedSettingsOutputReference
@@ -584,7 +584,7 @@ func (j *jsiiProxy_GoogleDialogflowCxFlow) TransitionRoutesInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewGoogleDialogflowCxFlow(scope constructs.Construct, id *string, config *GoogleDialogflowCxFlowConfig) GoogleDialogflowCxFlow {
 	_init_.Initialize()
 
@@ -602,7 +602,7 @@ func NewGoogleDialogflowCxFlow(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_dialogflow_cx_flow google_dialogflow_cx_flow} Resource.
 func NewGoogleDialogflowCxFlow_Override(g GoogleDialogflowCxFlow, scope constructs.Construct, id *string, config *GoogleDialogflowCxFlowConfig) {
 	_init_.Initialize()
 

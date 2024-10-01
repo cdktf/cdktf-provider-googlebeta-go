@@ -79,6 +79,10 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetCo
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetHostErrorTimeoutSecondsParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetInstanceTerminationActionParameters(val *string) error {
 	return nil
 }

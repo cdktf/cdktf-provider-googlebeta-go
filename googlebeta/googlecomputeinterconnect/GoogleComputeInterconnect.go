@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_compute_interconnect google_compute_interconnect}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_interconnect google_compute_interconnect}.
 type GoogleComputeInterconnect interface {
 	cdktf.TerraformResource
 	AdminEnabled() interface{}
@@ -171,9 +171,11 @@ type GoogleComputeInterconnect interface {
 	PutMacsec(value *GoogleComputeInterconnectMacsec)
 	PutTimeouts(value *GoogleComputeInterconnectTimeouts)
 	ResetAdminEnabled()
+	ResetCustomerName()
 	ResetDescription()
 	ResetId()
 	ResetLabels()
+	ResetLocation()
 	ResetMacsec()
 	ResetMacsecEnabled()
 	ResetNocContactEmail()
@@ -853,7 +855,7 @@ func (j *jsiiProxy_GoogleComputeInterconnect) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
 func NewGoogleComputeInterconnect(scope constructs.Construct, id *string, config *GoogleComputeInterconnectConfig) GoogleComputeInterconnect {
 	_init_.Initialize()
 
@@ -871,7 +873,7 @@ func NewGoogleComputeInterconnect(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.4.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_interconnect google_compute_interconnect} Resource.
 func NewGoogleComputeInterconnect_Override(g GoogleComputeInterconnect, scope constructs.Construct, id *string, config *GoogleComputeInterconnectConfig) {
 	_init_.Initialize()
 
@@ -1498,6 +1500,14 @@ func (g *jsiiProxy_GoogleComputeInterconnect) ResetAdminEnabled() {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnect) ResetCustomerName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomerName",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnect) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1518,6 +1528,14 @@ func (g *jsiiProxy_GoogleComputeInterconnect) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInterconnect) ResetLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocation",
 		nil, // no parameters
 	)
 }

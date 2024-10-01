@@ -49,6 +49,8 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	MaxInstanceRequestConcurrency() *float64
 	SetMaxInstanceRequestConcurrency(val *float64)
 	MaxInstanceRequestConcurrencyInput() *float64
+	NodeSelector() GoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference
+	NodeSelectorInput() *GoogleCloudRunV2ServiceTemplateNodeSelector
 	Revision() *string
 	SetRevision(val *string)
 	RevisionInput() *string
@@ -102,6 +104,7 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutContainers(value interface{})
+	PutNodeSelector(value *GoogleCloudRunV2ServiceTemplateNodeSelector)
 	PutScaling(value *GoogleCloudRunV2ServiceTemplateScaling)
 	PutServiceMesh(value *GoogleCloudRunV2ServiceTemplateServiceMesh)
 	PutVolumes(value interface{})
@@ -112,6 +115,7 @@ type GoogleCloudRunV2ServiceTemplateOutputReference interface {
 	ResetExecutionEnvironment()
 	ResetLabels()
 	ResetMaxInstanceRequestConcurrency()
+	ResetNodeSelector()
 	ResetRevision()
 	ResetScaling()
 	ResetServiceAccount()
@@ -300,6 +304,26 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) MaxInstanceRe
 	_jsii_.Get(
 		j,
 		"maxInstanceRequestConcurrencyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) NodeSelector() GoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference {
+	var returns GoogleCloudRunV2ServiceTemplateNodeSelectorOutputReference
+	_jsii_.Get(
+		j,
+		"nodeSelector",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) NodeSelectorInput() *GoogleCloudRunV2ServiceTemplateNodeSelector {
+	var returns *GoogleCloudRunV2ServiceTemplateNodeSelector
+	_jsii_.Get(
+		j,
+		"nodeSelectorInput",
 		&returns,
 	)
 	return returns
@@ -864,6 +888,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutContainers
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutNodeSelector(value *GoogleCloudRunV2ServiceTemplateNodeSelector) {
+	if err := g.validatePutNodeSelectorParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNodeSelector",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) PutScaling(value *GoogleCloudRunV2ServiceTemplateScaling) {
 	if err := g.validatePutScalingParameters(value); err != nil {
 		panic(err)
@@ -952,6 +987,14 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetMaxInsta
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxInstanceRequestConcurrency",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) ResetNodeSelector() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNodeSelector",
 		nil, // no parameters
 	)
 }
