@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_route google_compute_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_route google_compute_route}.
 type GoogleComputeRoute interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -70,10 +70,13 @@ type GoogleComputeRoute interface {
 	NextHopInstanceZone() *string
 	SetNextHopInstanceZone(val *string)
 	NextHopInstanceZoneInput() *string
+	NextHopInterRegionCost() *string
 	NextHopIp() *string
 	SetNextHopIp(val *string)
 	NextHopIpInput() *string
+	NextHopMed() *string
 	NextHopNetwork() *string
+	NextHopOrigin() *string
 	NextHopVpnTunnel() *string
 	SetNextHopVpnTunnel(val *string)
 	NextHopVpnTunnelInput() *string
@@ -454,6 +457,16 @@ func (j *jsiiProxy_GoogleComputeRoute) NextHopInstanceZoneInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRoute) NextHopInterRegionCost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopInterRegionCost",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRoute) NextHopIp() *string {
 	var returns *string
 	_jsii_.Get(
@@ -474,11 +487,31 @@ func (j *jsiiProxy_GoogleComputeRoute) NextHopIpInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRoute) NextHopMed() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopMed",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRoute) NextHopNetwork() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"nextHopNetwork",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRoute) NextHopOrigin() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"nextHopOrigin",
 		&returns,
 	)
 	return returns
@@ -665,7 +698,7 @@ func (j *jsiiProxy_GoogleComputeRoute) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_route google_compute_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_route google_compute_route} Resource.
 func NewGoogleComputeRoute(scope constructs.Construct, id *string, config *GoogleComputeRouteConfig) GoogleComputeRoute {
 	_init_.Initialize()
 
@@ -683,7 +716,7 @@ func NewGoogleComputeRoute(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_route google_compute_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_route google_compute_route} Resource.
 func NewGoogleComputeRoute_Override(g GoogleComputeRoute, scope constructs.Construct, id *string, config *GoogleComputeRouteConfig) {
 	_init_.Initialize()
 

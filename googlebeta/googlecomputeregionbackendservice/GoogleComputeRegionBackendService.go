@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
 type GoogleComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -125,6 +125,8 @@ type GoogleComputeRegionBackendService interface {
 	SessionAffinity() *string
 	SetSessionAffinity(val *string)
 	SessionAffinityInput() *string
+	StrongSessionAffinityCookie() GoogleComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference
+	StrongSessionAffinityCookieInput() *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie
 	Subsetting() GoogleComputeRegionBackendServiceSubsettingOutputReference
 	SubsettingInput() *GoogleComputeRegionBackendServiceSubsetting
 	// Experimental.
@@ -190,6 +192,7 @@ type GoogleComputeRegionBackendService interface {
 	PutIap(value *GoogleComputeRegionBackendServiceIap)
 	PutLogConfig(value *GoogleComputeRegionBackendServiceLogConfig)
 	PutOutlierDetection(value *GoogleComputeRegionBackendServiceOutlierDetection)
+	PutStrongSessionAffinityCookie(value *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie)
 	PutSubsetting(value *GoogleComputeRegionBackendServiceSubsetting)
 	PutTimeouts(value *GoogleComputeRegionBackendServiceTimeouts)
 	ResetAffinityCookieTtlSec()
@@ -219,6 +222,7 @@ type GoogleComputeRegionBackendService interface {
 	ResetRegion()
 	ResetSecurityPolicy()
 	ResetSessionAffinity()
+	ResetStrongSessionAffinityCookie()
 	ResetSubsetting()
 	ResetTimeouts()
 	ResetTimeoutSec()
@@ -910,6 +914,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) SessionAffinityInput() *st
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionBackendService) StrongSessionAffinityCookie() GoogleComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference {
+	var returns GoogleComputeRegionBackendServiceStrongSessionAffinityCookieOutputReference
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookie",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) StrongSessionAffinityCookieInput() *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie {
+	var returns *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie
+	_jsii_.Get(
+		j,
+		"strongSessionAffinityCookieInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionBackendService) Subsetting() GoogleComputeRegionBackendServiceSubsettingOutputReference {
 	var returns GoogleComputeRegionBackendServiceSubsettingOutputReference
 	_jsii_.Get(
@@ -1001,7 +1025,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) GoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -1019,7 +1043,7 @@ func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService_Override(g GoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1737,6 +1761,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) PutOutlierDetection(value 
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) PutStrongSessionAffinityCookie(value *GoogleComputeRegionBackendServiceStrongSessionAffinityCookie) {
+	if err := g.validatePutStrongSessionAffinityCookieParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStrongSessionAffinityCookie",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) PutSubsetting(value *GoogleComputeRegionBackendServiceSubsetting) {
 	if err := g.validatePutSubsettingParameters(value); err != nil {
 		panic(err)
@@ -1955,6 +1990,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetSessionAffinity() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSessionAffinity",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetStrongSessionAffinityCookie() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStrongSessionAffinityCookie",
 		nil, // no parameters
 	)
 }

@@ -12,12 +12,21 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network google_compute_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network google_compute_network}.
 type GoogleComputeNetwork interface {
 	cdktf.TerraformResource
 	AutoCreateSubnetworks() interface{}
 	SetAutoCreateSubnetworks(val interface{})
 	AutoCreateSubnetworksInput() interface{}
+	BgpAlwaysCompareMed() interface{}
+	SetBgpAlwaysCompareMed(val interface{})
+	BgpAlwaysCompareMedInput() interface{}
+	BgpBestPathSelectionMode() *string
+	SetBgpBestPathSelectionMode(val *string)
+	BgpBestPathSelectionModeInput() *string
+	BgpInterRegionCost() *string
+	SetBgpInterRegionCost(val *string)
+	BgpInterRegionCostInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -144,6 +153,9 @@ type GoogleComputeNetwork interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleComputeNetworkTimeouts)
 	ResetAutoCreateSubnetworks()
+	ResetBgpAlwaysCompareMed()
+	ResetBgpBestPathSelectionMode()
+	ResetBgpInterRegionCost()
 	ResetDeleteDefaultRoutesOnCreate()
 	ResetDescription()
 	ResetEnableUlaInternalIpv6()
@@ -190,6 +202,66 @@ func (j *jsiiProxy_GoogleComputeNetwork) AutoCreateSubnetworksInput() interface{
 	_jsii_.Get(
 		j,
 		"autoCreateSubnetworksInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) BgpAlwaysCompareMed() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpAlwaysCompareMed",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) BgpAlwaysCompareMedInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"bgpAlwaysCompareMedInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) BgpBestPathSelectionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpBestPathSelectionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) BgpBestPathSelectionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpBestPathSelectionModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) BgpInterRegionCost() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpInterRegionCost",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) BgpInterRegionCostInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"bgpInterRegionCostInput",
 		&returns,
 	)
 	return returns
@@ -606,7 +678,7 @@ func (j *jsiiProxy_GoogleComputeNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network google_compute_network} Resource.
 func NewGoogleComputeNetwork(scope constructs.Construct, id *string, config *GoogleComputeNetworkConfig) GoogleComputeNetwork {
 	_init_.Initialize()
 
@@ -624,7 +696,7 @@ func NewGoogleComputeNetwork(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_compute_network google_compute_network} Resource.
 func NewGoogleComputeNetwork_Override(g GoogleComputeNetwork, scope constructs.Construct, id *string, config *GoogleComputeNetworkConfig) {
 	_init_.Initialize()
 
@@ -642,6 +714,39 @@ func (j *jsiiProxy_GoogleComputeNetwork)SetAutoCreateSubnetworks(val interface{}
 	_jsii_.Set(
 		j,
 		"autoCreateSubnetworks",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork)SetBgpAlwaysCompareMed(val interface{}) {
+	if err := j.validateSetBgpAlwaysCompareMedParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgpAlwaysCompareMed",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork)SetBgpBestPathSelectionMode(val *string) {
+	if err := j.validateSetBgpBestPathSelectionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgpBestPathSelectionMode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork)SetBgpInterRegionCost(val *string) {
+	if err := j.validateSetBgpInterRegionCostParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"bgpInterRegionCost",
 		val,
 	)
 }
@@ -1192,6 +1297,30 @@ func (g *jsiiProxy_GoogleComputeNetwork) ResetAutoCreateSubnetworks() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAutoCreateSubnetworks",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNetwork) ResetBgpAlwaysCompareMed() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBgpAlwaysCompareMed",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNetwork) ResetBgpBestPathSelectionMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBgpBestPathSelectionMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNetwork) ResetBgpInterRegionCost() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBgpInterRegionCost",
 		nil, // no parameters
 	)
 }

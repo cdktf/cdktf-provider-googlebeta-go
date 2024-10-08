@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding}.
 type GoogleClouddeployCustomTargetTypeIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleClouddeployCustomTargetTypeIamBinding) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding} Resource.
 func NewGoogleClouddeployCustomTargetTypeIamBinding(scope constructs.Construct, id *string, config *GoogleClouddeployCustomTargetTypeIamBindingConfig) GoogleClouddeployCustomTargetTypeIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleClouddeployCustomTargetTypeIamBinding(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_clouddeploy_custom_target_type_iam_binding google_clouddeploy_custom_target_type_iam_binding} Resource.
 func NewGoogleClouddeployCustomTargetTypeIamBinding_Override(g GoogleClouddeployCustomTargetTypeIamBinding, scope constructs.Construct, id *string, config *GoogleClouddeployCustomTargetTypeIamBindingConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm}.
 type GoogleTpuV2Vm interface {
 	cdktf.TerraformResource
 	AcceleratorConfig() GoogleTpuV2VmAcceleratorConfigOutputReference
@@ -826,7 +826,7 @@ func (j *jsiiProxy_GoogleTpuV2Vm) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
 func NewGoogleTpuV2Vm(scope constructs.Construct, id *string, config *GoogleTpuV2VmConfig) GoogleTpuV2Vm {
 	_init_.Initialize()
 
@@ -844,7 +844,7 @@ func NewGoogleTpuV2Vm(scope constructs.Construct, id *string, config *GoogleTpuV
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_tpu_v2_vm google_tpu_v2_vm} Resource.
 func NewGoogleTpuV2Vm_Override(g GoogleTpuV2Vm, scope constructs.Construct, id *string, config *GoogleTpuV2VmConfig) {
 	_init_.Initialize()
 

@@ -111,6 +111,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutSecuritySettingsParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutStrongSessionAffinityCookieParameters(value *GoogleComputeBackendServiceStrongSessionAffinityCookie) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutTimeoutsParameters(value *GoogleComputeBackendServiceTimeouts) error {
 	return nil
 }

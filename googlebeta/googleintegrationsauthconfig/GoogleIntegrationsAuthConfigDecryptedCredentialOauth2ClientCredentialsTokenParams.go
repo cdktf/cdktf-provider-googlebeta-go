@@ -7,7 +7,7 @@ package googleintegrationsauthconfig
 type GoogleIntegrationsAuthConfigDecryptedCredentialOauth2ClientCredentialsTokenParams struct {
 	// entries block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.5.0/docs/resources/google_integrations_auth_config#entries GoogleIntegrationsAuthConfig#entries}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.6.0/docs/resources/google_integrations_auth_config#entries GoogleIntegrationsAuthConfig#entries}
 	Entries interface{} `field:"optional" json:"entries" yaml:"entries"`
 }
 
