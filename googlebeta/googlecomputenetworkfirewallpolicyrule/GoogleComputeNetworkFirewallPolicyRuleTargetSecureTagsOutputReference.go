@@ -68,6 +68,7 @@ type GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsOutputReference inter
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -461,6 +462,14 @@ func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsOutputR
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsOutputReference) ResetName() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetName",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyRuleTargetSecureTagsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

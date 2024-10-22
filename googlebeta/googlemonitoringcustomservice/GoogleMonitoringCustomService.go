@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_monitoring_custom_service google_monitoring_custom_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_monitoring_custom_service google_monitoring_custom_service}.
 type GoogleMonitoringCustomService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -465,7 +465,7 @@ func (j *jsiiProxy_GoogleMonitoringCustomService) UserLabelsInput() *map[string]
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_monitoring_custom_service google_monitoring_custom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_monitoring_custom_service google_monitoring_custom_service} Resource.
 func NewGoogleMonitoringCustomService(scope constructs.Construct, id *string, config *GoogleMonitoringCustomServiceConfig) GoogleMonitoringCustomService {
 	_init_.Initialize()
 
@@ -483,7 +483,7 @@ func NewGoogleMonitoringCustomService(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_monitoring_custom_service google_monitoring_custom_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_monitoring_custom_service google_monitoring_custom_service} Resource.
 func NewGoogleMonitoringCustomService_Override(g GoogleMonitoringCustomService, scope constructs.Construct, id *string, config *GoogleMonitoringCustomServiceConfig) {
 	_init_.Initialize()
 

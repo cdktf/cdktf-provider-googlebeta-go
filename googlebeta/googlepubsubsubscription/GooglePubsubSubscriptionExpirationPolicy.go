@@ -13,7 +13,7 @@ type GooglePubsubSubscriptionExpirationPolicy struct {
 	// A duration in seconds with up to nine fractional digits, terminated by 's'.
 	// Example - "3.5s".
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_pubsub_subscription#ttl GooglePubsubSubscription#ttl}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_pubsub_subscription#ttl GooglePubsubSubscription#ttl}
 	Ttl *string `field:"required" json:"ttl" yaml:"ttl"`
 }
 

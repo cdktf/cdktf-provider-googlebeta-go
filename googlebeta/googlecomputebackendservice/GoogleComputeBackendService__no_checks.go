@@ -183,6 +183,10 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetIdParameters(val *str
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetIpAddressSelectionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
 	return nil
 }

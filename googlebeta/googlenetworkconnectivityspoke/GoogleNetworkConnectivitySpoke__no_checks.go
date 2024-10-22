@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedInterconnect
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedProducerVpcNetworkParameters(value *GoogleNetworkConnectivitySpokeLinkedProducerVpcNetwork) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkConnectivitySpoke) validatePutLinkedRouterApplianceInstancesParameters(value *GoogleNetworkConnectivitySpokeLinkedRouterApplianceInstances) error {
 	return nil
 }

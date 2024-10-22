@@ -155,6 +155,10 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetIngressParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetInvokerIamDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2Service) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -82,6 +82,9 @@ type GoogleComputeBackendService interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IpAddressSelectionPolicy() *string
+	SetIpAddressSelectionPolicy(val *string)
+	IpAddressSelectionPolicyInput() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -216,6 +219,7 @@ type GoogleComputeBackendService interface {
 	ResetHealthChecks()
 	ResetIap()
 	ResetId()
+	ResetIpAddressSelectionPolicy()
 	ResetLoadBalancingScheme()
 	ResetLocalityLbPolicies()
 	ResetLocalityLbPolicy()
@@ -662,6 +666,26 @@ func (j *jsiiProxy_GoogleComputeBackendService) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) IpAddressSelectionPolicy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) IpAddressSelectionPolicyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"ipAddressSelectionPolicyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -1073,7 +1097,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1091,7 +1115,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1246,6 +1270,17 @@ func (j *jsiiProxy_GoogleComputeBackendService)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService)SetIpAddressSelectionPolicy(val *string) {
+	if err := j.validateSetIpAddressSelectionPolicyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ipAddressSelectionPolicy",
 		val,
 	)
 }
@@ -1980,6 +2015,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetIpAddressSelectionPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIpAddressSelectionPolicy",
 		nil, // no parameters
 	)
 }

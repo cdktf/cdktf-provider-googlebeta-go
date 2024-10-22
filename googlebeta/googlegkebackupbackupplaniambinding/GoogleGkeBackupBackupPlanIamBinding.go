@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding}.
 type GoogleGkeBackupBackupPlanIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding} Resource.
 func NewGoogleGkeBackupBackupPlanIamBinding(scope constructs.Construct, id *string, config *GoogleGkeBackupBackupPlanIamBindingConfig) GoogleGkeBackupBackupPlanIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleGkeBackupBackupPlanIamBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_gke_backup_backup_plan_iam_binding google_gke_backup_backup_plan_iam_binding} Resource.
 func NewGoogleGkeBackupBackupPlanIamBinding_Override(g GoogleGkeBackupBackupPlanIamBinding, scope constructs.Construct, id *string, config *GoogleGkeBackupBackupPlanIamBindingConfig) {
 	_init_.Initialize()
 

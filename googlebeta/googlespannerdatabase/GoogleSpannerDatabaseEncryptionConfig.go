@@ -10,7 +10,14 @@ type GoogleSpannerDatabaseEncryptionConfig struct {
 	// This key must exist
 	// in the same location as the Spanner Database.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.7.0/docs/resources/google_spanner_database#kms_key_name GoogleSpannerDatabase#kms_key_name}
-	KmsKeyName *string `field:"required" json:"kmsKeyName" yaml:"kmsKeyName"`
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_spanner_database#kms_key_name GoogleSpannerDatabase#kms_key_name}
+	KmsKeyName *string `field:"optional" json:"kmsKeyName" yaml:"kmsKeyName"`
+	// Fully qualified name of the KMS keys to use to encrypt this database.
+	//
+	// The keys must exist
+	// in the same locations as the Spanner Database.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_spanner_database#kms_key_names GoogleSpannerDatabase#kms_key_names}
+	KmsKeyNames *[]*string `field:"optional" json:"kmsKeyNames" yaml:"kmsKeyNames"`
 }
 
