@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
 type GoogleComputeInstanceFromTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference
@@ -42,6 +42,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	// Experimental.
 	SetCount(val interface{})
 	CpuPlatform() *string
+	CreationTimestamp() *string
 	CurrentStatus() *string
 	DeletionProtection() interface{}
 	SetDeletionProtection(val interface{})
@@ -77,6 +78,9 @@ type GoogleComputeInstanceFromTemplate interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceId() *string
+	KeyRevocationActionType() *string
+	SetKeyRevocationActionType(val *string)
+	KeyRevocationActionTypeInput() *string
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -228,6 +232,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	ResetGuestAccelerator()
 	ResetHostname()
 	ResetId()
+	ResetKeyRevocationActionType()
 	ResetLabels()
 	ResetMachineType()
 	ResetMetadata()
@@ -438,6 +443,16 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) CpuPlatform() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) CurrentStatus() *string {
 	var returns *string
 	_jsii_.Get(
@@ -643,6 +658,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) InstanceId() *string {
 	_jsii_.Get(
 		j,
 		"instanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) KeyRevocationActionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) KeyRevocationActionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionTypeInput",
 		&returns,
 	)
 	return returns
@@ -1199,7 +1234,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) GoogleComputeInstanceFromTemplate {
 	_init_.Initialize()
 
@@ -1217,7 +1252,7 @@ func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate_Override(g GoogleComputeInstanceFromTemplate, scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) {
 	_init_.Initialize()
 
@@ -1350,6 +1385,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate)SetKeyRevocationActionType(val *string) {
+	if err := j.validateSetKeyRevocationActionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyRevocationActionType",
 		val,
 	)
 }
@@ -2123,6 +2169,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetKeyRevocationActionType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKeyRevocationActionType",
 		nil, // no parameters
 	)
 }

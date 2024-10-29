@@ -139,6 +139,10 @@ func (j *jsiiProxy_GoogleLookerInstance) validateSetCountParameters(val interfac
 	return nil
 }
 
+func (j *jsiiProxy_GoogleLookerInstance) validateSetDeletionPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleLookerInstance) validateSetFipsEnabledParameters(val interface{}) error {
 	return nil
 }

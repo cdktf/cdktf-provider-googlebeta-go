@@ -7,7 +7,7 @@ package googleprivatecacertificate
 type GooglePrivatecaCertificateConfigSubjectKeyId struct {
 	// The value of the KeyId in lowercase hexidecimal.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_privateca_certificate#key_id GooglePrivatecaCertificate#key_id}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_privateca_certificate#key_id GooglePrivatecaCertificate#key_id}
 	KeyId *string `field:"optional" json:"keyId" yaml:"keyId"`
 }
 

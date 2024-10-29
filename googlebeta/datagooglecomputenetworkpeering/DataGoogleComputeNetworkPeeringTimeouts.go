@@ -5,7 +5,7 @@ package datagooglecomputenetworkpeering
 
 
 type DataGoogleComputeNetworkPeeringTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/data-sources/google_compute_network_peering#read DataGoogleComputeNetworkPeering#read}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/data-sources/google_compute_network_peering#read DataGoogleComputeNetworkPeering#read}.
 	Read *string `field:"optional" json:"read" yaml:"read"`
 }
 

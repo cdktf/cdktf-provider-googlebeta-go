@@ -187,6 +187,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetIdParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetKeyRevocationActionTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

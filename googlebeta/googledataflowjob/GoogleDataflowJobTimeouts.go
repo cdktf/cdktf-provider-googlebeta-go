@@ -5,7 +5,7 @@ package googledataflowjob
 
 
 type GoogleDataflowJobTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_dataflow_job#update GoogleDataflowJob#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_dataflow_job#update GoogleDataflowJob#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_compute_instance google_compute_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_instance google_compute_instance}.
 type GoogleComputeInstance interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceAdvancedMachineFeaturesOutputReference
@@ -42,6 +42,7 @@ type GoogleComputeInstance interface {
 	// Experimental.
 	SetCount(val interface{})
 	CpuPlatform() *string
+	CreationTimestamp() *string
 	CurrentStatus() *string
 	DeletionProtection() interface{}
 	SetDeletionProtection(val interface{})
@@ -77,6 +78,9 @@ type GoogleComputeInstance interface {
 	SetId(val *string)
 	IdInput() *string
 	InstanceId() *string
+	KeyRevocationActionType() *string
+	SetKeyRevocationActionType(val *string)
+	KeyRevocationActionTypeInput() *string
 	LabelFingerprint() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
@@ -224,6 +228,7 @@ type GoogleComputeInstance interface {
 	ResetGuestAccelerator()
 	ResetHostname()
 	ResetId()
+	ResetKeyRevocationActionType()
 	ResetLabels()
 	ResetMetadata()
 	ResetMetadataStartupScript()
@@ -427,6 +432,16 @@ func (j *jsiiProxy_GoogleComputeInstance) CpuPlatform() *string {
 	_jsii_.Get(
 		j,
 		"cpuPlatform",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstance) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -637,6 +652,26 @@ func (j *jsiiProxy_GoogleComputeInstance) InstanceId() *string {
 	_jsii_.Get(
 		j,
 		"instanceId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstance) KeyRevocationActionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstance) KeyRevocationActionTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"keyRevocationActionTypeInput",
 		&returns,
 	)
 	return returns
@@ -1173,7 +1208,7 @@ func (j *jsiiProxy_GoogleComputeInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_compute_instance google_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_instance google_compute_instance} Resource.
 func NewGoogleComputeInstance(scope constructs.Construct, id *string, config *GoogleComputeInstanceConfig) GoogleComputeInstance {
 	_init_.Initialize()
 
@@ -1191,7 +1226,7 @@ func NewGoogleComputeInstance(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_compute_instance google_compute_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_compute_instance google_compute_instance} Resource.
 func NewGoogleComputeInstance_Override(g GoogleComputeInstance, scope constructs.Construct, id *string, config *GoogleComputeInstanceConfig) {
 	_init_.Initialize()
 
@@ -1324,6 +1359,17 @@ func (j *jsiiProxy_GoogleComputeInstance)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstance)SetKeyRevocationActionType(val *string) {
+	if err := j.validateSetKeyRevocationActionTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"keyRevocationActionType",
 		val,
 	)
 }
@@ -2078,6 +2124,14 @@ func (g *jsiiProxy_GoogleComputeInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstance) ResetKeyRevocationActionType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKeyRevocationActionType",
 		nil, // no parameters
 	)
 }

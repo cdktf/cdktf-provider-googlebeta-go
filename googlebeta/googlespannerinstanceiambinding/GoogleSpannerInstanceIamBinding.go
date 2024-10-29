@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_spanner_instance_iam_binding google_spanner_instance_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_spanner_instance_iam_binding google_spanner_instance_iam_binding}.
 type GoogleSpannerInstanceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceIamBinding) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_spanner_instance_iam_binding google_spanner_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_spanner_instance_iam_binding google_spanner_instance_iam_binding} Resource.
 func NewGoogleSpannerInstanceIamBinding(scope constructs.Construct, id *string, config *GoogleSpannerInstanceIamBindingConfig) GoogleSpannerInstanceIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleSpannerInstanceIamBinding(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_spanner_instance_iam_binding google_spanner_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_spanner_instance_iam_binding google_spanner_instance_iam_binding} Resource.
 func NewGoogleSpannerInstanceIamBinding_Override(g GoogleSpannerInstanceIamBinding, scope constructs.Construct, id *string, config *GoogleSpannerInstanceIamBindingConfig) {
 	_init_.Initialize()
 

@@ -7,7 +7,7 @@ package googlegkebackupbackupplan
 type GoogleGkeBackupBackupPlanBackupConfigSelectedApplications struct {
 	// namespaced_names block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.8.0/docs/resources/google_gke_backup_backup_plan#namespaced_names GoogleGkeBackupBackupPlan#namespaced_names}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_gke_backup_backup_plan#namespaced_names GoogleGkeBackupBackupPlan#namespaced_names}
 	NamespacedNames interface{} `field:"required" json:"namespacedNames" yaml:"namespacedNames"`
 }
 
