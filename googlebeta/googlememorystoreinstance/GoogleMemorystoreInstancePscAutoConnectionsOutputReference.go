@@ -23,6 +23,7 @@ type GoogleMemorystoreInstancePscAutoConnectionsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionType() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -35,8 +36,11 @@ type GoogleMemorystoreInstancePscAutoConnectionsOutputReference interface {
 	SetInternalValue(val *GoogleMemorystoreInstancePscAutoConnections)
 	IpAddress() *string
 	Network() *string
+	Port() *float64
 	ProjectId() *string
 	PscConnectionId() *string
+	PscConnectionStatus() *string
+	ServiceAttachment() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -104,6 +108,16 @@ func (j *jsiiProxy_GoogleMemorystoreInstancePscAutoConnectionsOutputReference) C
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstancePscAutoConnectionsOutputReference) ConnectionType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"connectionType",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstancePscAutoConnectionsOutputReference) CreationStack() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -164,6 +178,16 @@ func (j *jsiiProxy_GoogleMemorystoreInstancePscAutoConnectionsOutputReference) N
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstancePscAutoConnectionsOutputReference) Port() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"port",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstancePscAutoConnectionsOutputReference) ProjectId() *string {
 	var returns *string
 	_jsii_.Get(
@@ -179,6 +203,26 @@ func (j *jsiiProxy_GoogleMemorystoreInstancePscAutoConnectionsOutputReference) P
 	_jsii_.Get(
 		j,
 		"pscConnectionId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstancePscAutoConnectionsOutputReference) PscConnectionStatus() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"pscConnectionStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstancePscAutoConnectionsOutputReference) ServiceAttachment() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"serviceAttachment",
 		&returns,
 	)
 	return returns

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server}.
 type GoogleBackupDrManagementServer interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -128,6 +128,7 @@ type GoogleBackupDrManagementServer interface {
 	PutNetworks(value interface{})
 	PutTimeouts(value *GoogleBackupDrManagementServerTimeouts)
 	ResetId()
+	ResetNetworks()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -473,7 +474,7 @@ func (j *jsiiProxy_GoogleBackupDrManagementServer) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource.
 func NewGoogleBackupDrManagementServer(scope constructs.Construct, id *string, config *GoogleBackupDrManagementServerConfig) GoogleBackupDrManagementServer {
 	_init_.Initialize()
 
@@ -491,7 +492,7 @@ func NewGoogleBackupDrManagementServer(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_backup_dr_management_server google_backup_dr_management_server} Resource.
 func NewGoogleBackupDrManagementServer_Override(g GoogleBackupDrManagementServer, scope constructs.Construct, id *string, config *GoogleBackupDrManagementServerConfig) {
 	_init_.Initialize()
 
@@ -1004,6 +1005,14 @@ func (g *jsiiProxy_GoogleBackupDrManagementServer) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBackupDrManagementServer) ResetNetworks() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworks",
 		nil, // no parameters
 	)
 }

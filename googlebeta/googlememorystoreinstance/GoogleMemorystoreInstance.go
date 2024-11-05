@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
 type GoogleMemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -42,6 +42,7 @@ type GoogleMemorystoreInstance interface {
 	DesiredPscAutoConnectionsInput() interface{}
 	DiscoveryEndpoints() GoogleMemorystoreInstanceDiscoveryEndpointsList
 	EffectiveLabels() cdktf.StringMap
+	Endpoints() cdktf.StringListList
 	EngineConfigs() *map[string]*string
 	SetEngineConfigs(val *map[string]*string)
 	EngineConfigsInput() *map[string]*string
@@ -72,6 +73,9 @@ type GoogleMemorystoreInstance interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Mode() *string
+	SetMode(val *string)
+	ModeInput() *string
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -172,6 +176,7 @@ type GoogleMemorystoreInstance interface {
 	ResetEngineVersion()
 	ResetId()
 	ResetLabels()
+	ResetMode()
 	ResetNodeType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -340,6 +345,16 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) EffectiveLabels() cdktf.StringMap 
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstance) Endpoints() cdktf.StringListList {
+	var returns cdktf.StringListList
+	_jsii_.Get(
+		j,
+		"endpoints",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstance) EngineConfigs() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -495,6 +510,26 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) LocationInput() *string {
 	_jsii_.Get(
 		j,
 		"locationInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) Mode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"mode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) ModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"modeInput",
 		&returns,
 	)
 	return returns
@@ -811,7 +846,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) ZoneDistributionConfigInput() *Goo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) GoogleMemorystoreInstance {
 	_init_.Initialize()
 
@@ -829,7 +864,7 @@ func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance_Override(g GoogleMemorystoreInstance, scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -973,6 +1008,17 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance)SetMode(val *string) {
+	if err := j.validateSetModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mode",
 		val,
 	)
 }
@@ -1492,6 +1538,14 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) ResetMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMode",
 		nil, // no parameters
 	)
 }

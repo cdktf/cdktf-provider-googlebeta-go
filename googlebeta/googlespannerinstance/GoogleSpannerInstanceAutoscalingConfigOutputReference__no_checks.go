@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) valida
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) validatePutAsymmetricAutoscalingOptionsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) validatePutAutoscalingLimitsParameters(value *GoogleSpannerInstanceAutoscalingConfigAutoscalingLimits) error {
 	return nil
 }

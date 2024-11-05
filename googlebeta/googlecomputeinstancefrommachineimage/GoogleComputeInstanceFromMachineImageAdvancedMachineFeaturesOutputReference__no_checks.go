@@ -79,6 +79,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesO
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetTurboModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference) validateSetVisibleCoreCountParameters(val *float64) error {
 	return nil
 }

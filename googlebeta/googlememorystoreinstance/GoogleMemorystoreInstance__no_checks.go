@@ -151,6 +151,10 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetLocationParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstance) validateSetNodeTypeParameters(val *string) error {
 	return nil
 }

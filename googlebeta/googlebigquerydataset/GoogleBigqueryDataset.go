@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_bigquery_dataset google_bigquery_dataset}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_bigquery_dataset google_bigquery_dataset}.
 type GoogleBigqueryDataset interface {
 	cdktf.TerraformResource
 	Access() GoogleBigqueryDatasetAccessList
@@ -56,6 +56,8 @@ type GoogleBigqueryDataset interface {
 	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	Etag() *string
+	ExternalCatalogDatasetOptions() GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference
+	ExternalCatalogDatasetOptionsInput() *GoogleBigqueryDatasetExternalCatalogDatasetOptions
 	ExternalDatasetReference() GoogleBigqueryDatasetExternalDatasetReferenceOutputReference
 	ExternalDatasetReferenceInput() *GoogleBigqueryDatasetExternalDatasetReference
 	// Experimental.
@@ -165,6 +167,7 @@ type GoogleBigqueryDataset interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAccess(value interface{})
 	PutDefaultEncryptionConfiguration(value *GoogleBigqueryDatasetDefaultEncryptionConfiguration)
+	PutExternalCatalogDatasetOptions(value *GoogleBigqueryDatasetExternalCatalogDatasetOptions)
 	PutExternalDatasetReference(value *GoogleBigqueryDatasetExternalDatasetReference)
 	PutTimeouts(value *GoogleBigqueryDatasetTimeouts)
 	ResetAccess()
@@ -174,6 +177,7 @@ type GoogleBigqueryDataset interface {
 	ResetDefaultTableExpirationMs()
 	ResetDeleteContentsOnDestroy()
 	ResetDescription()
+	ResetExternalCatalogDatasetOptions()
 	ResetExternalDatasetReference()
 	ResetFriendlyName()
 	ResetId()
@@ -441,6 +445,26 @@ func (j *jsiiProxy_GoogleBigqueryDataset) Etag() *string {
 	_jsii_.Get(
 		j,
 		"etag",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) ExternalCatalogDatasetOptions() GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference {
+	var returns GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"externalCatalogDatasetOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDataset) ExternalCatalogDatasetOptionsInput() *GoogleBigqueryDatasetExternalCatalogDatasetOptions {
+	var returns *GoogleBigqueryDatasetExternalCatalogDatasetOptions
+	_jsii_.Get(
+		j,
+		"externalCatalogDatasetOptionsInput",
 		&returns,
 	)
 	return returns
@@ -807,7 +831,7 @@ func (j *jsiiProxy_GoogleBigqueryDataset) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
 func NewGoogleBigqueryDataset(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetConfig) GoogleBigqueryDataset {
 	_init_.Initialize()
 
@@ -825,7 +849,7 @@ func NewGoogleBigqueryDataset(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.9.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_bigquery_dataset google_bigquery_dataset} Resource.
 func NewGoogleBigqueryDataset_Override(g GoogleBigqueryDataset, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetConfig) {
 	_init_.Initialize()
 
@@ -1444,6 +1468,17 @@ func (g *jsiiProxy_GoogleBigqueryDataset) PutDefaultEncryptionConfiguration(valu
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryDataset) PutExternalCatalogDatasetOptions(value *GoogleBigqueryDatasetExternalCatalogDatasetOptions) {
+	if err := g.validatePutExternalCatalogDatasetOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExternalCatalogDatasetOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryDataset) PutExternalDatasetReference(value *GoogleBigqueryDatasetExternalDatasetReference) {
 	if err := g.validatePutExternalDatasetReferenceParameters(value); err != nil {
 		panic(err)
@@ -1518,6 +1553,14 @@ func (g *jsiiProxy_GoogleBigqueryDataset) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDataset) ResetExternalCatalogDatasetOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalCatalogDatasetOptions",
 		nil, // no parameters
 	)
 }
