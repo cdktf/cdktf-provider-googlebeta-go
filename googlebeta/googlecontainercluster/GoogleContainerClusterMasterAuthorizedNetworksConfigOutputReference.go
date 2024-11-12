@@ -37,6 +37,9 @@ type GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference interfa
 	GcpPublicCidrsAccessEnabledInput() interface{}
 	InternalValue() *GoogleContainerClusterMasterAuthorizedNetworksConfig
 	SetInternalValue(val *GoogleContainerClusterMasterAuthorizedNetworksConfig)
+	PrivateEndpointEnforcementEnabled() interface{}
+	SetPrivateEndpointEnforcementEnabled(val interface{})
+	PrivateEndpointEnforcementEnabledInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference interfa
 	PutCidrBlocks(value interface{})
 	ResetCidrBlocks()
 	ResetGcpPublicCidrsAccessEnabled()
+	ResetPrivateEndpointEnforcementEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) PrivateEndpointEnforcementEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateEndpointEnforcementEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) PrivateEndpointEnforcementEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"privateEndpointEnforcementEnabledInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -265,6 +289,17 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference)SetPrivateEndpointEnforcementEnabled(val interface{}) {
+	if err := j.validateSetPrivateEndpointEnforcementEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"privateEndpointEnforcementEnabled",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputRef
 	_jsii_.InvokeVoid(
 		g,
 		"resetGcpPublicCidrsAccessEnabled",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterMasterAuthorizedNetworksConfigOutputReference) ResetPrivateEndpointEnforcementEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateEndpointEnforcementEnabled",
 		nil, // no parameters
 	)
 }

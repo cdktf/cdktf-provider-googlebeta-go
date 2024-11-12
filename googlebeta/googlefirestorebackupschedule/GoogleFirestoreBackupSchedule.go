@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_firestore_backup_schedule google_firestore_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_firestore_backup_schedule google_firestore_backup_schedule}.
 type GoogleFirestoreBackupSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -464,7 +464,7 @@ func (j *jsiiProxy_GoogleFirestoreBackupSchedule) WeeklyRecurrenceInput() *Googl
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_firestore_backup_schedule google_firestore_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_firestore_backup_schedule google_firestore_backup_schedule} Resource.
 func NewGoogleFirestoreBackupSchedule(scope constructs.Construct, id *string, config *GoogleFirestoreBackupScheduleConfig) GoogleFirestoreBackupSchedule {
 	_init_.Initialize()
 
@@ -482,7 +482,7 @@ func NewGoogleFirestoreBackupSchedule(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_firestore_backup_schedule google_firestore_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_firestore_backup_schedule google_firestore_backup_schedule} Resource.
 func NewGoogleFirestoreBackupSchedule_Override(g GoogleFirestoreBackupSchedule, scope constructs.Construct, id *string, config *GoogleFirestoreBackupScheduleConfig) {
 	_init_.Initialize()
 

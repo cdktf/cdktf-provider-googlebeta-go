@@ -55,6 +55,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetCascadableReplicaParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) validateSetClientCertificateParameters(val *string) error {
 	return nil
 }

@@ -99,6 +99,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutConfidentialNodesParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutControlPlaneEndpointsConfigParameters(value *GoogleContainerClusterControlPlaneEndpointsConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutCostManagementConfigParameters(value *GoogleContainerClusterCostManagementConfig) error {
 	return nil
 }
@@ -220,6 +224,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutTimeoutsParameters(value *
 }
 
 func (g *jsiiProxy_GoogleContainerCluster) validatePutTpuConfigParameters(value *GoogleContainerClusterTpuConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) validatePutUserManagedKeysConfigParameters(value *GoogleContainerClusterUserManagedKeysConfig) error {
 	return nil
 }
 

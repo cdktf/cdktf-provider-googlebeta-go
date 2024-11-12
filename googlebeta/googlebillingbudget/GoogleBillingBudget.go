@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_billing_budget google_billing_budget}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_billing_budget google_billing_budget}.
 type GoogleBillingBudget interface {
 	cdktf.TerraformResource
 	AllUpdatesRule() GoogleBillingBudgetAllUpdatesRuleOutputReference
@@ -511,7 +511,7 @@ func (j *jsiiProxy_GoogleBillingBudget) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_billing_budget google_billing_budget} Resource.
 func NewGoogleBillingBudget(scope constructs.Construct, id *string, config *GoogleBillingBudgetConfig) GoogleBillingBudget {
 	_init_.Initialize()
 
@@ -529,7 +529,7 @@ func NewGoogleBillingBudget(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_billing_budget google_billing_budget} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_billing_budget google_billing_budget} Resource.
 func NewGoogleBillingBudget_Override(g GoogleBillingBudget, scope constructs.Construct, id *string, config *GoogleBillingBudgetConfig) {
 	_init_.Initialize()
 

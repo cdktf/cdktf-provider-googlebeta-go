@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_active_directory_peering google_active_directory_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_active_directory_peering google_active_directory_peering}.
 type GoogleActiveDirectoryPeering interface {
 	cdktf.TerraformResource
 	AuthorizedNetwork() *string
@@ -532,7 +532,7 @@ func (j *jsiiProxy_GoogleActiveDirectoryPeering) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
 func NewGoogleActiveDirectoryPeering(scope constructs.Construct, id *string, config *GoogleActiveDirectoryPeeringConfig) GoogleActiveDirectoryPeering {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewGoogleActiveDirectoryPeering(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_active_directory_peering google_active_directory_peering} Resource.
 func NewGoogleActiveDirectoryPeering_Override(g GoogleActiveDirectoryPeering, scope constructs.Construct, id *string, config *GoogleActiveDirectoryPeeringConfig) {
 	_init_.Initialize()
 

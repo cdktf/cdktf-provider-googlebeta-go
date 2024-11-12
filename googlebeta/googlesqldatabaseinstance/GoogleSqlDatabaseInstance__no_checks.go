@@ -167,6 +167,10 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetRegionParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetReplicaNamesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetRootPasswordParameters(val *string) error {
 	return nil
 }

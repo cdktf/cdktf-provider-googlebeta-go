@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy}.
 type GoogleComputeRegionSecurityPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,8 @@ type GoogleComputeRegionSecurityPolicy interface {
 	Region() *string
 	SetRegion(val *string)
 	RegionInput() *string
+	Rules() GoogleComputeRegionSecurityPolicyRulesList
+	RulesInput() interface{}
 	SelfLink() *string
 	SelfLinkWithPolicyId() *string
 	// Experimental.
@@ -133,6 +135,7 @@ type GoogleComputeRegionSecurityPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDdosProtectionConfig(value *GoogleComputeRegionSecurityPolicyDdosProtectionConfig)
+	PutRules(value interface{})
 	PutTimeouts(value *GoogleComputeRegionSecurityPolicyTimeouts)
 	PutUserDefinedFields(value interface{})
 	ResetDdosProtectionConfig()
@@ -143,6 +146,7 @@ type GoogleComputeRegionSecurityPolicy interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRegion()
+	ResetRules()
 	ResetTimeouts()
 	ResetType()
 	ResetUserDefinedFields()
@@ -434,6 +438,26 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) RegionInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) Rules() GoogleComputeRegionSecurityPolicyRulesList {
+	var returns GoogleComputeRegionSecurityPolicyRulesList
+	_jsii_.Get(
+		j,
+		"rules",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) RulesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rulesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) SelfLink() *string {
 	var returns *string
 	_jsii_.Get(
@@ -545,7 +569,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicy) UserDefinedFieldsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
 func NewGoogleComputeRegionSecurityPolicy(scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyConfig) GoogleComputeRegionSecurityPolicy {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewGoogleComputeRegionSecurityPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_compute_region_security_policy google_compute_region_security_policy} Resource.
 func NewGoogleComputeRegionSecurityPolicy_Override(g GoogleComputeRegionSecurityPolicy, scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyConfig) {
 	_init_.Initialize()
 
@@ -1072,6 +1096,17 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) PutDdosProtectionConfig(va
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) PutRules(value interface{}) {
+	if err := g.validatePutRulesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRules",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) PutTimeouts(value *GoogleComputeRegionSecurityPolicyTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1138,6 +1173,14 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicy) ResetRules() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRules",
 		nil, // no parameters
 	)
 }

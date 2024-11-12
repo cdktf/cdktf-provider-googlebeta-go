@@ -79,6 +79,14 @@ func (g *jsiiProxy_GoogleVertexAiEndpoint) validatePutEncryptionSpecParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiEndpoint) validatePutPredictRequestResponseLoggingConfigParameters(value *GoogleVertexAiEndpointPredictRequestResponseLoggingConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiEndpoint) validatePutPrivateServiceConnectConfigParameters(value *GoogleVertexAiEndpointPrivateServiceConnectConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiEndpoint) validatePutTimeoutsParameters(value *GoogleVertexAiEndpointTimeouts) error {
 	return nil
 }
@@ -104,6 +112,10 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetConnectionParameters(val i
 }
 
 func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetCountParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetDedicatedEndpointEnabledParameters(val interface{}) error {
 	return nil
 }
 
@@ -148,6 +160,10 @@ func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetProvisionersParameters(val
 }
 
 func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetRegionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleVertexAiEndpoint) validateSetTrafficSplitParameters(val *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule}.
 type GoogleComputeFirewallPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -30,6 +30,7 @@ type GoogleComputeFirewallPolicyRule interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreationTimestamp() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -233,6 +234,16 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) CreationTimestamp() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"creationTimestamp",
 		&returns,
 	)
 	return returns
@@ -639,7 +650,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRule) TlsInspectInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
 func NewGoogleComputeFirewallPolicyRule(scope constructs.Construct, id *string, config *GoogleComputeFirewallPolicyRuleConfig) GoogleComputeFirewallPolicyRule {
 	_init_.Initialize()
 
@@ -657,7 +668,7 @@ func NewGoogleComputeFirewallPolicyRule(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_compute_firewall_policy_rule google_compute_firewall_policy_rule} Resource.
 func NewGoogleComputeFirewallPolicyRule_Override(g GoogleComputeFirewallPolicyRule, scope constructs.Construct, id *string, config *GoogleComputeFirewallPolicyRuleConfig) {
 	_init_.Initialize()
 

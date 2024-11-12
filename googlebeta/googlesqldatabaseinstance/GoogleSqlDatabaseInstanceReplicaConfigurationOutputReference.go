@@ -16,6 +16,9 @@ type GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	CaCertificate() *string
 	SetCaCertificate(val *string)
 	CaCertificateInput() *string
+	CascadableReplica() interface{}
+	SetCascadableReplica(val interface{})
+	CascadableReplicaInput() interface{}
 	ClientCertificate() *string
 	SetClientCertificate(val *string)
 	ClientCertificateInput() *string
@@ -98,6 +101,7 @@ type GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCaCertificate()
+	ResetCascadableReplica()
 	ResetClientCertificate()
 	ResetClientKey()
 	ResetConnectRetryInterval()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Get(
 		j,
 		"caCertificateInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) CascadableReplica() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cascadableReplica",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) CascadableReplicaInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"cascadableReplicaInput",
 		&returns,
 	)
 	return returns
@@ -448,6 +472,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.Set(
 		j,
 		"caCertificate",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)SetCascadableReplica(val interface{}) {
+	if err := j.validateSetCascadableReplicaParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cascadableReplica",
 		val,
 	)
 }
@@ -807,6 +842,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"resetCaCertificate",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference) ResetCascadableReplica() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCascadableReplica",
 		nil, // no parameters
 	)
 }

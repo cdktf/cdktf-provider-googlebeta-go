@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_sql_database_instance google_sql_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_sql_database_instance google_sql_database_instance}.
 type GoogleSqlDatabaseInstance interface {
 	cdktf.TerraformResource
 	AvailableMaintenanceVersions() *[]*string
@@ -97,6 +97,9 @@ type GoogleSqlDatabaseInstance interface {
 	RegionInput() *string
 	ReplicaConfiguration() GoogleSqlDatabaseInstanceReplicaConfigurationOutputReference
 	ReplicaConfigurationInput() *GoogleSqlDatabaseInstanceReplicaConfiguration
+	ReplicaNames() *[]*string
+	SetReplicaNames(val *[]*string)
+	ReplicaNamesInput() *[]*string
 	RestoreBackupContext() GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference
 	RestoreBackupContextInput() *GoogleSqlDatabaseInstanceRestoreBackupContext
 	RootPassword() *string
@@ -177,6 +180,7 @@ type GoogleSqlDatabaseInstance interface {
 	ResetProject()
 	ResetRegion()
 	ResetReplicaConfiguration()
+	ResetReplicaNames()
 	ResetRestoreBackupContext()
 	ResetRootPassword()
 	ResetSettings()
@@ -649,6 +653,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) ReplicaConfigurationInput() *Googl
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) ReplicaNames() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaNames",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) ReplicaNamesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"replicaNamesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) RestoreBackupContext() GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference {
 	var returns GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference
 	_jsii_.Get(
@@ -790,7 +814,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_sql_database_instance google_sql_database_instance} Resource.
 func NewGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, config *GoogleSqlDatabaseInstanceConfig) GoogleSqlDatabaseInstance {
 	_init_.Initialize()
 
@@ -808,7 +832,7 @@ func NewGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_sql_database_instance google_sql_database_instance} Resource.
 func NewGoogleSqlDatabaseInstance_Override(g GoogleSqlDatabaseInstance, scope constructs.Construct, id *string, config *GoogleSqlDatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -993,6 +1017,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance)SetReplicaNames(val *[]*string) {
+	if err := j.validateSetReplicaNamesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"replicaNames",
 		val,
 	)
 }
@@ -1508,6 +1543,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) ResetReplicaConfiguration() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetReplicaConfiguration",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) ResetReplicaNames() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplicaNames",
 		nil, // no parameters
 	)
 }

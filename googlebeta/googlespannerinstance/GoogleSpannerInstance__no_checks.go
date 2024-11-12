@@ -111,6 +111,10 @@ func (j *jsiiProxy_GoogleSpannerInstance) validateSetCountParameters(val interfa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerInstance) validateSetDefaultBackupScheduleTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstance) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

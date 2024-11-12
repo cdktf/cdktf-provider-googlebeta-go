@@ -139,6 +139,14 @@ func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetIdParameters(val *strin
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetIgnoreBackupPlanReferencesParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetIgnoreInactiveDatasourcesParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

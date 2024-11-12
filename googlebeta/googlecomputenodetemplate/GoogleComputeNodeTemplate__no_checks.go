@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleComputeNodeTemplate) validatePutAcceleratorsParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNodeTemplate) validatePutDisksParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNodeTemplate) validatePutNodeTypeFlexibilityParameters(value *GoogleComputeNodeTemplateNodeTypeFlexibility) error {
 	return nil
 }

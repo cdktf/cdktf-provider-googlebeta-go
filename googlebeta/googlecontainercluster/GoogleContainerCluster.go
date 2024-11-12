@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -41,6 +41,8 @@ type GoogleContainerCluster interface {
 	SetConnection(val interface{})
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ControlPlaneEndpointsConfig() GoogleContainerClusterControlPlaneEndpointsConfigOutputReference
+	ControlPlaneEndpointsConfigInput() *GoogleContainerClusterControlPlaneEndpointsConfig
 	CostManagementConfig() GoogleContainerClusterCostManagementConfigOutputReference
 	CostManagementConfigInput() *GoogleContainerClusterCostManagementConfig
 	// Experimental.
@@ -240,6 +242,8 @@ type GoogleContainerCluster interface {
 	TpuConfig() GoogleContainerClusterTpuConfigOutputReference
 	TpuConfigInput() *GoogleContainerClusterTpuConfig
 	TpuIpv4CidrBlock() *string
+	UserManagedKeysConfig() GoogleContainerClusterUserManagedKeysConfigOutputReference
+	UserManagedKeysConfigInput() *GoogleContainerClusterUserManagedKeysConfig
 	VerticalPodAutoscaling() GoogleContainerClusterVerticalPodAutoscalingOutputReference
 	VerticalPodAutoscalingInput() *GoogleContainerClusterVerticalPodAutoscaling
 	WorkloadAltsConfig() GoogleContainerClusterWorkloadAltsConfigOutputReference
@@ -295,6 +299,7 @@ type GoogleContainerCluster interface {
 	PutClusterAutoscaling(value *GoogleContainerClusterClusterAutoscaling)
 	PutClusterTelemetry(value *GoogleContainerClusterClusterTelemetry)
 	PutConfidentialNodes(value *GoogleContainerClusterConfidentialNodes)
+	PutControlPlaneEndpointsConfig(value *GoogleContainerClusterControlPlaneEndpointsConfig)
 	PutCostManagementConfig(value *GoogleContainerClusterCostManagementConfig)
 	PutDatabaseEncryption(value *GoogleContainerClusterDatabaseEncryption)
 	PutDefaultSnatStatus(value *GoogleContainerClusterDefaultSnatStatus)
@@ -326,6 +331,7 @@ type GoogleContainerCluster interface {
 	PutServiceExternalIpsConfig(value *GoogleContainerClusterServiceExternalIpsConfig)
 	PutTimeouts(value *GoogleContainerClusterTimeouts)
 	PutTpuConfig(value *GoogleContainerClusterTpuConfig)
+	PutUserManagedKeysConfig(value *GoogleContainerClusterUserManagedKeysConfig)
 	PutVerticalPodAutoscaling(value *GoogleContainerClusterVerticalPodAutoscaling)
 	PutWorkloadAltsConfig(value *GoogleContainerClusterWorkloadAltsConfig)
 	PutWorkloadIdentityConfig(value *GoogleContainerClusterWorkloadIdentityConfig)
@@ -337,6 +343,7 @@ type GoogleContainerCluster interface {
 	ResetClusterIpv4Cidr()
 	ResetClusterTelemetry()
 	ResetConfidentialNodes()
+	ResetControlPlaneEndpointsConfig()
 	ResetCostManagementConfig()
 	ResetDatabaseEncryption()
 	ResetDatapathProvider()
@@ -400,6 +407,7 @@ type GoogleContainerCluster interface {
 	ResetSubnetwork()
 	ResetTimeouts()
 	ResetTpuConfig()
+	ResetUserManagedKeysConfig()
 	ResetVerticalPodAutoscaling()
 	ResetWorkloadAltsConfig()
 	ResetWorkloadIdentityConfig()
@@ -606,6 +614,26 @@ func (j *jsiiProxy_GoogleContainerCluster) ConstructNodeMetadata() *map[string]i
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ControlPlaneEndpointsConfig() GoogleContainerClusterControlPlaneEndpointsConfigOutputReference {
+	var returns GoogleContainerClusterControlPlaneEndpointsConfigOutputReference
+	_jsii_.Get(
+		j,
+		"controlPlaneEndpointsConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) ControlPlaneEndpointsConfigInput() *GoogleContainerClusterControlPlaneEndpointsConfig {
+	var returns *GoogleContainerClusterControlPlaneEndpointsConfig
+	_jsii_.Get(
+		j,
+		"controlPlaneEndpointsConfigInput",
 		&returns,
 	)
 	return returns
@@ -2051,6 +2079,26 @@ func (j *jsiiProxy_GoogleContainerCluster) TpuIpv4CidrBlock() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) UserManagedKeysConfig() GoogleContainerClusterUserManagedKeysConfigOutputReference {
+	var returns GoogleContainerClusterUserManagedKeysConfigOutputReference
+	_jsii_.Get(
+		j,
+		"userManagedKeysConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) UserManagedKeysConfigInput() *GoogleContainerClusterUserManagedKeysConfig {
+	var returns *GoogleContainerClusterUserManagedKeysConfig
+	_jsii_.Get(
+		j,
+		"userManagedKeysConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) VerticalPodAutoscaling() GoogleContainerClusterVerticalPodAutoscalingOutputReference {
 	var returns GoogleContainerClusterVerticalPodAutoscalingOutputReference
 	_jsii_.Get(
@@ -2112,7 +2160,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2130,7 +2178,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -2980,6 +3028,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutConfidentialNodes(value *GoogleCon
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutControlPlaneEndpointsConfig(value *GoogleContainerClusterControlPlaneEndpointsConfig) {
+	if err := g.validatePutControlPlaneEndpointsConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putControlPlaneEndpointsConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutCostManagementConfig(value *GoogleContainerClusterCostManagementConfig) {
 	if err := g.validatePutCostManagementConfigParameters(value); err != nil {
 		panic(err)
@@ -3321,6 +3380,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutTpuConfig(value *GoogleContainerCl
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutUserManagedKeysConfig(value *GoogleContainerClusterUserManagedKeysConfig) {
+	if err := g.validatePutUserManagedKeysConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putUserManagedKeysConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutVerticalPodAutoscaling(value *GoogleContainerClusterVerticalPodAutoscaling) {
 	if err := g.validatePutVerticalPodAutoscalingParameters(value); err != nil {
 		panic(err)
@@ -3414,6 +3484,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetConfidentialNodes() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfidentialNodes",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetControlPlaneEndpointsConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetControlPlaneEndpointsConfig",
 		nil, // no parameters
 	)
 }
@@ -3902,6 +3980,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetTpuConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTpuConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetUserManagedKeysConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUserManagedKeysConfig",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault}.
 type GoogleBackupDrBackupVault interface {
 	cdktf.TerraformResource
 	AllowMissing() interface{}
@@ -72,6 +72,12 @@ type GoogleBackupDrBackupVault interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	IgnoreBackupPlanReferences() interface{}
+	SetIgnoreBackupPlanReferences(val interface{})
+	IgnoreBackupPlanReferencesInput() interface{}
+	IgnoreInactiveDatasources() interface{}
+	SetIgnoreInactiveDatasources(val interface{})
+	IgnoreInactiveDatasourcesInput() interface{}
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -163,6 +169,8 @@ type GoogleBackupDrBackupVault interface {
 	ResetForceDelete()
 	ResetForceUpdate()
 	ResetId()
+	ResetIgnoreBackupPlanReferences()
+	ResetIgnoreInactiveDatasources()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -507,6 +515,46 @@ func (j *jsiiProxy_GoogleBackupDrBackupVault) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBackupDrBackupVault) IgnoreBackupPlanReferences() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreBackupPlanReferences",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault) IgnoreBackupPlanReferencesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreBackupPlanReferencesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault) IgnoreInactiveDatasources() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreInactiveDatasources",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault) IgnoreInactiveDatasourcesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"ignoreInactiveDatasourcesInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBackupDrBackupVault) Labels() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -738,7 +786,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupVault) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewGoogleBackupDrBackupVault(scope constructs.Construct, id *string, config *GoogleBackupDrBackupVaultConfig) GoogleBackupDrBackupVault {
 	_init_.Initialize()
 
@@ -756,7 +804,7 @@ func NewGoogleBackupDrBackupVault(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewGoogleBackupDrBackupVault_Override(g GoogleBackupDrBackupVault, scope constructs.Construct, id *string, config *GoogleBackupDrBackupVaultConfig) {
 	_init_.Initialize()
 
@@ -900,6 +948,28 @@ func (j *jsiiProxy_GoogleBackupDrBackupVault)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault)SetIgnoreBackupPlanReferences(val interface{}) {
+	if err := j.validateSetIgnoreBackupPlanReferencesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreBackupPlanReferences",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault)SetIgnoreInactiveDatasources(val interface{}) {
+	if err := j.validateSetIgnoreInactiveDatasourcesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"ignoreInactiveDatasources",
 		val,
 	)
 }
@@ -1383,6 +1453,22 @@ func (g *jsiiProxy_GoogleBackupDrBackupVault) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBackupDrBackupVault) ResetIgnoreBackupPlanReferences() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIgnoreBackupPlanReferences",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBackupDrBackupVault) ResetIgnoreInactiveDatasources() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIgnoreInactiveDatasources",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager}.
 type GoogleComputeRegionInstanceGroupManager interface {
 	cdktf.TerraformResource
 	AllInstancesConfig() GoogleComputeRegionInstanceGroupManagerAllInstancesConfigOutputReference
@@ -60,6 +60,8 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstanceFlexibilityPolicy() GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyOutputReference
+	InstanceFlexibilityPolicyInput() *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy
 	InstanceGroup() *string
 	InstanceLifecyclePolicy() GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyOutputReference
 	InstanceLifecyclePolicyInput() *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy
@@ -180,6 +182,7 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutAllInstancesConfig(value *GoogleComputeRegionInstanceGroupManagerAllInstancesConfig)
 	PutAutoHealingPolicies(value *GoogleComputeRegionInstanceGroupManagerAutoHealingPolicies)
+	PutInstanceFlexibilityPolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy)
 	PutInstanceLifecyclePolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy)
 	PutNamedPort(value interface{})
 	PutParams(value *GoogleComputeRegionInstanceGroupManagerParams)
@@ -196,6 +199,7 @@ type GoogleComputeRegionInstanceGroupManager interface {
 	ResetDistributionPolicyTargetShape()
 	ResetDistributionPolicyZones()
 	ResetId()
+	ResetInstanceFlexibilityPolicy()
 	ResetInstanceLifecyclePolicy()
 	ResetListManagedInstancesResults()
 	ResetNamedPort()
@@ -470,6 +474,26 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InstanceFlexibilityPolicy() GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyOutputReference {
+	var returns GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceFlexibilityPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) InstanceFlexibilityPolicyInput() *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy {
+	var returns *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy
+	_jsii_.Get(
+		j,
+		"instanceFlexibilityPolicyInput",
 		&returns,
 	)
 	return returns
@@ -986,7 +1010,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManager) WaitForInstancesStat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceGroupManagerConfig) GoogleComputeRegionInstanceGroupManager {
 	_init_.Initialize()
 
@@ -1004,7 +1028,7 @@ func NewGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.10.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.0/docs/resources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Resource.
 func NewGoogleComputeRegionInstanceGroupManager_Override(g GoogleComputeRegionInstanceGroupManager, scope constructs.Construct, id *string, config *GoogleComputeRegionInstanceGroupManagerConfig) {
 	_init_.Initialize()
 
@@ -1623,6 +1647,17 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutAutoHealingPolici
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutInstanceFlexibilityPolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicy) {
+	if err := g.validatePutInstanceFlexibilityPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInstanceFlexibilityPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) PutInstanceLifecyclePolicy(value *GoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicy) {
 	if err := g.validatePutInstanceLifecyclePolicyParameters(value); err != nil {
 		panic(err)
@@ -1777,6 +1812,14 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManager) ResetInstanceFlexibilityPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstanceFlexibilityPolicy",
 		nil, // no parameters
 	)
 }
