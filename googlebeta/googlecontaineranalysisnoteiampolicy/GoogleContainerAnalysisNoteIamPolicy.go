@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.1/docs/resources/google_container_analysis_note_iam_policy google_container_analysis_note_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_container_analysis_note_iam_policy google_container_analysis_note_iam_policy}.
 type GoogleContainerAnalysisNoteIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.1/docs/resources/google_container_analysis_note_iam_policy google_container_analysis_note_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_container_analysis_note_iam_policy google_container_analysis_note_iam_policy} Resource.
 func NewGoogleContainerAnalysisNoteIamPolicy(scope constructs.Construct, id *string, config *GoogleContainerAnalysisNoteIamPolicyConfig) GoogleContainerAnalysisNoteIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleContainerAnalysisNoteIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.1/docs/resources/google_container_analysis_note_iam_policy google_container_analysis_note_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_container_analysis_note_iam_policy google_container_analysis_note_iam_policy} Resource.
 func NewGoogleContainerAnalysisNoteIamPolicy_Override(g GoogleContainerAnalysisNoteIamPolicy, scope constructs.Construct, id *string, config *GoogleContainerAnalysisNoteIamPolicyConfig) {
 	_init_.Initialize()
 
