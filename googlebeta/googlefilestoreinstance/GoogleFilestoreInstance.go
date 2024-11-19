@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_filestore_instance google_filestore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_filestore_instance google_filestore_instance}.
 type GoogleFilestoreInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -76,6 +76,8 @@ type GoogleFilestoreInstance interface {
 	NetworksInput() interface{}
 	// The tree node.
 	Node() constructs.Node
+	PerformanceConfig() GoogleFilestoreInstancePerformanceConfigOutputReference
+	PerformanceConfigInput() *GoogleFilestoreInstancePerformanceConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -152,6 +154,7 @@ type GoogleFilestoreInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutFileShares(value *GoogleFilestoreInstanceFileShares)
 	PutNetworks(value interface{})
+	PutPerformanceConfig(value *GoogleFilestoreInstancePerformanceConfig)
 	PutTimeouts(value *GoogleFilestoreInstanceTimeouts)
 	ResetDeletionProtectionEnabled()
 	ResetDeletionProtectionReason()
@@ -163,6 +166,7 @@ type GoogleFilestoreInstance interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPerformanceConfig()
 	ResetProject()
 	ResetProtocol()
 	ResetTimeouts()
@@ -515,6 +519,26 @@ func (j *jsiiProxy_GoogleFilestoreInstance) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstance) PerformanceConfig() GoogleFilestoreInstancePerformanceConfigOutputReference {
+	var returns GoogleFilestoreInstancePerformanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"performanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstance) PerformanceConfigInput() *GoogleFilestoreInstancePerformanceConfig {
+	var returns *GoogleFilestoreInstancePerformanceConfig
+	_jsii_.Get(
+		j,
+		"performanceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstance) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -686,7 +710,7 @@ func (j *jsiiProxy_GoogleFilestoreInstance) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_filestore_instance google_filestore_instance} Resource.
 func NewGoogleFilestoreInstance(scope constructs.Construct, id *string, config *GoogleFilestoreInstanceConfig) GoogleFilestoreInstance {
 	_init_.Initialize()
 
@@ -704,7 +728,7 @@ func NewGoogleFilestoreInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_filestore_instance google_filestore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_filestore_instance google_filestore_instance} Resource.
 func NewGoogleFilestoreInstance_Override(g GoogleFilestoreInstance, scope constructs.Construct, id *string, config *GoogleFilestoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1290,6 +1314,17 @@ func (g *jsiiProxy_GoogleFilestoreInstance) PutNetworks(value interface{}) {
 	)
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) PutPerformanceConfig(value *GoogleFilestoreInstancePerformanceConfig) {
+	if err := g.validatePutPerformanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPerformanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) PutTimeouts(value *GoogleFilestoreInstanceTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1361,6 +1396,14 @@ func (g *jsiiProxy_GoogleFilestoreInstance) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstance) ResetPerformanceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPerformanceConfig",
 		nil, // no parameters
 	)
 }

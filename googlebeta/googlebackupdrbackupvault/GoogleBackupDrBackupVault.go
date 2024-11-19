@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault}.
 type GoogleBackupDrBackupVault interface {
 	cdktf.TerraformResource
+	AccessRestriction() *string
+	SetAccessRestriction(val *string)
+	AccessRestrictionInput() *string
 	AllowMissing() interface{}
 	SetAllowMissing(val interface{})
 	AllowMissingInput() interface{}
@@ -162,6 +165,7 @@ type GoogleBackupDrBackupVault interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleBackupDrBackupVaultTimeouts)
+	ResetAccessRestriction()
 	ResetAllowMissing()
 	ResetAnnotations()
 	ResetDescription()
@@ -193,6 +197,26 @@ type GoogleBackupDrBackupVault interface {
 // The jsii proxy struct for GoogleBackupDrBackupVault
 type jsiiProxy_GoogleBackupDrBackupVault struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault) AccessRestriction() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessRestriction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault) AccessRestrictionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"accessRestrictionInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleBackupDrBackupVault) AllowMissing() interface{} {
@@ -786,7 +810,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupVault) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewGoogleBackupDrBackupVault(scope constructs.Construct, id *string, config *GoogleBackupDrBackupVaultConfig) GoogleBackupDrBackupVault {
 	_init_.Initialize()
 
@@ -804,7 +828,7 @@ func NewGoogleBackupDrBackupVault(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_backup_dr_backup_vault google_backup_dr_backup_vault} Resource.
 func NewGoogleBackupDrBackupVault_Override(g GoogleBackupDrBackupVault, scope constructs.Construct, id *string, config *GoogleBackupDrBackupVaultConfig) {
 	_init_.Initialize()
 
@@ -812,6 +836,17 @@ func NewGoogleBackupDrBackupVault_Override(g GoogleBackupDrBackupVault, scope co
 		"@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVault",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleBackupDrBackupVault)SetAccessRestriction(val *string) {
+	if err := j.validateSetAccessRestrictionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"accessRestriction",
+		val,
 	)
 }
 
@@ -1398,6 +1433,14 @@ func (g *jsiiProxy_GoogleBackupDrBackupVault) PutTimeouts(value *GoogleBackupDrB
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBackupDrBackupVault) ResetAccessRestriction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAccessRestriction",
+		nil, // no parameters
 	)
 }
 

@@ -14,6 +14,8 @@ func init() {
 		"@cdktf/provider-google-beta.googleBackupDrBackupVault.GoogleBackupDrBackupVault",
 		reflect.TypeOf((*GoogleBackupDrBackupVault)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "accessRestriction", GoGetter: "AccessRestriction"},
+			_jsii_.MemberProperty{JsiiProperty: "accessRestrictionInput", GoGetter: "AccessRestrictionInput"},
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
 			_jsii_.MemberProperty{JsiiProperty: "allowMissing", GoGetter: "AllowMissing"},
@@ -81,6 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAccessRestriction", GoMethod: "ResetAccessRestriction"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowMissing", GoMethod: "ResetAllowMissing"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},

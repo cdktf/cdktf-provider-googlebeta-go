@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster google_redis_cluster}.
 type GoogleRedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -65,6 +65,8 @@ type GoogleRedisCluster interface {
 	NodeType() *string
 	SetNodeType(val *string)
 	NodeTypeInput() *string
+	PersistenceConfig() GoogleRedisClusterPersistenceConfigOutputReference
+	PersistenceConfigInput() *GoogleRedisClusterPersistenceConfig
 	PreciseSizeGb() *float64
 	Project() *string
 	SetProject(val *string)
@@ -155,6 +157,7 @@ type GoogleRedisCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutMaintenancePolicy(value *GoogleRedisClusterMaintenancePolicy)
+	PutPersistenceConfig(value *GoogleRedisClusterPersistenceConfig)
 	PutPscConfigs(value interface{})
 	PutTimeouts(value *GoogleRedisClusterTimeouts)
 	PutZoneDistributionConfig(value *GoogleRedisClusterZoneDistributionConfig)
@@ -167,6 +170,7 @@ type GoogleRedisCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPersistenceConfig()
 	ResetProject()
 	ResetRedisConfigs()
 	ResetRegion()
@@ -437,6 +441,26 @@ func (j *jsiiProxy_GoogleRedisCluster) NodeTypeInput() *string {
 	_jsii_.Get(
 		j,
 		"nodeTypeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) PersistenceConfig() GoogleRedisClusterPersistenceConfigOutputReference {
+	var returns GoogleRedisClusterPersistenceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"persistenceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) PersistenceConfigInput() *GoogleRedisClusterPersistenceConfig {
+	var returns *GoogleRedisClusterPersistenceConfig
+	_jsii_.Get(
+		j,
+		"persistenceConfigInput",
 		&returns,
 	)
 	return returns
@@ -743,7 +767,7 @@ func (j *jsiiProxy_GoogleRedisCluster) ZoneDistributionConfigInput() *GoogleRedi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) GoogleRedisCluster {
 	_init_.Initialize()
 
@@ -761,7 +785,7 @@ func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.11.2/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1325,6 +1349,17 @@ func (g *jsiiProxy_GoogleRedisCluster) PutMaintenancePolicy(value *GoogleRedisCl
 	)
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) PutPersistenceConfig(value *GoogleRedisClusterPersistenceConfig) {
+	if err := g.validatePutPersistenceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPersistenceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) PutPscConfigs(value interface{}) {
 	if err := g.validatePutPscConfigsParameters(value); err != nil {
 		panic(err)
@@ -1410,6 +1445,14 @@ func (g *jsiiProxy_GoogleRedisCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) ResetPersistenceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPersistenceConfig",
 		nil, // no parameters
 	)
 }

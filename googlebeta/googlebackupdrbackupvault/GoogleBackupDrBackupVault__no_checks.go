@@ -95,6 +95,10 @@ func validateGoogleBackupDrBackupVault_IsTerraformResourceParameters(x interface
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetAccessRestrictionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBackupDrBackupVault) validateSetAllowMissingParameters(val interface{}) error {
 	return nil
 }

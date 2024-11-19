@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleRedisCluster) validatePutMaintenancePolicyParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) validatePutPersistenceConfigParameters(value *GoogleRedisClusterPersistenceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) validatePutPscConfigsParameters(value interface{}) error {
 	return nil
 }

@@ -83,6 +83,10 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validatePutNetworksParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) validatePutPerformanceConfigParameters(value *GoogleFilestoreInstancePerformanceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) validatePutTimeoutsParameters(value *GoogleFilestoreInstanceTimeouts) error {
 	return nil
 }
