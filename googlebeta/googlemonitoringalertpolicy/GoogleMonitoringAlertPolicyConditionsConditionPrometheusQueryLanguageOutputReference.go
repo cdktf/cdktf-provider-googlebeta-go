@@ -31,6 +31,9 @@ type GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutput
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DisableMetricValidation() interface{}
+	SetDisableMetricValidation(val interface{})
+	DisableMetricValidationInput() interface{}
 	Duration() *string
 	SetDuration(val *string)
 	DurationInput() *string
@@ -83,6 +86,7 @@ type GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutput
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAlertRule()
+	ResetDisableMetricValidation()
 	ResetDuration()
 	ResetEvaluationInterval()
 	ResetLabels()
@@ -147,6 +151,26 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQuery
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) DisableMetricValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableMetricValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) DisableMetricValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableMetricValidationInput",
 		&returns,
 	)
 	return returns
@@ -349,6 +373,17 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQuery
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetDisableMetricValidation(val interface{}) {
+	if err := j.validateSetDisableMetricValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableMetricValidation",
 		val,
 	)
 }
@@ -631,6 +666,14 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQuery
 	_jsii_.InvokeVoid(
 		g,
 		"resetAlertRule",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) ResetDisableMetricValidation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableMetricValidation",
 		nil, // no parameters
 	)
 }

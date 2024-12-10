@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleRedisCluster) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) validatePutCrossClusterReplicationConfigParameters(value *GoogleRedisClusterCrossClusterReplicationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) validatePutMaintenancePolicyParameters(value *GoogleRedisClusterMaintenancePolicy) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutEnableK8SBetaApisParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutEnterpriseConfigParameters(value *GoogleContainerClusterEnterpriseConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutFleetParameters(value *GoogleContainerClusterFleet) error {
 	return nil
 }

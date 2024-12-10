@@ -46,6 +46,8 @@ type GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigO
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	ThresholdConfigs() GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsList
+	ThresholdConfigsInput() interface{}
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -70,8 +72,10 @@ type GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigO
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutThresholdConfigs(value interface{})
 	ResetEnable()
 	ResetRuleVisibility()
+	ResetThresholdConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -192,6 +196,26 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7Ddos
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) ThresholdConfigs() GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsList {
+	var returns GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigThresholdConfigsList
+	_jsii_.Get(
+		j,
+		"thresholdConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) ThresholdConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"thresholdConfigsInput",
 		&returns,
 	)
 	return returns
@@ -488,6 +512,17 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7Ddos
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) PutThresholdConfigs(value interface{}) {
+	if err := g.validatePutThresholdConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putThresholdConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) ResetEnable() {
 	_jsii_.InvokeVoid(
 		g,
@@ -500,6 +535,14 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7Ddos
 	_jsii_.InvokeVoid(
 		g,
 		"resetRuleVisibility",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) ResetThresholdConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetThresholdConfigs",
 		nil, // no parameters
 	)
 }

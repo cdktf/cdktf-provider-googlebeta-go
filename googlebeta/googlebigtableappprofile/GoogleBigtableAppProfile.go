@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile}.
 type GoogleBigtableAppProfile interface {
 	cdktf.TerraformResource
 	AppProfileId() *string
@@ -82,6 +82,9 @@ type GoogleBigtableAppProfile interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RowAffinity() interface{}
+	SetRowAffinity(val interface{})
+	RowAffinityInput() interface{}
 	SingleClusterRouting() GoogleBigtableAppProfileSingleClusterRoutingOutputReference
 	SingleClusterRoutingInput() *GoogleBigtableAppProfileSingleClusterRouting
 	StandardIsolation() GoogleBigtableAppProfileStandardIsolationOutputReference
@@ -152,6 +155,7 @@ type GoogleBigtableAppProfile interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRowAffinity()
 	ResetSingleClusterRouting()
 	ResetStandardIsolation()
 	ResetTimeouts()
@@ -493,6 +497,26 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigtableAppProfile) RowAffinity() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rowAffinity",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigtableAppProfile) RowAffinityInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"rowAffinityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigtableAppProfile) SingleClusterRouting() GoogleBigtableAppProfileSingleClusterRoutingOutputReference {
 	var returns GoogleBigtableAppProfileSingleClusterRoutingOutputReference
 	_jsii_.Get(
@@ -584,7 +608,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewGoogleBigtableAppProfile(scope constructs.Construct, id *string, config *GoogleBigtableAppProfileConfig) GoogleBigtableAppProfile {
 	_init_.Initialize()
 
@@ -602,7 +626,7 @@ func NewGoogleBigtableAppProfile(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewGoogleBigtableAppProfile_Override(g GoogleBigtableAppProfile, scope constructs.Construct, id *string, config *GoogleBigtableAppProfileConfig) {
 	_init_.Initialize()
 
@@ -765,6 +789,17 @@ func (j *jsiiProxy_GoogleBigtableAppProfile)SetProvisioners(val *[]interface{}) 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigtableAppProfile)SetRowAffinity(val interface{}) {
+	if err := j.validateSetRowAffinityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"rowAffinity",
 		val,
 	)
 }
@@ -1234,6 +1269,14 @@ func (g *jsiiProxy_GoogleBigtableAppProfile) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigtableAppProfile) ResetRowAffinity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRowAffinity",
 		nil, // no parameters
 	)
 }

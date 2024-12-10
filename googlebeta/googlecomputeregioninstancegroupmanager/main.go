@@ -54,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "instanceFlexibilityPolicy", GoGetter: "InstanceFlexibilityPolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceFlexibilityPolicyInput", GoGetter: "InstanceFlexibilityPolicyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceGroup", GoGetter: "InstanceGroup"},
+			_jsii_.MemberProperty{JsiiProperty: "instanceGroupManagerId", GoGetter: "InstanceGroupManagerId"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceLifecyclePolicy", GoGetter: "InstanceLifecyclePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "instanceLifecyclePolicyInput", GoGetter: "InstanceLifecyclePolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},

@@ -80,6 +80,9 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	LocalSsdCount() *float64
 	SetLocalSsdCount(val *float64)
 	LocalSsdCountInput() *float64
+	LocalSsdEncryptionMode() *string
+	SetLocalSsdEncryptionMode(val *string)
+	LocalSsdEncryptionModeInput() *string
 	LoggingVariant() *string
 	SetLoggingVariant(val *string)
 	LoggingVariantInput() *string
@@ -205,6 +208,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetLinuxNodeConfig()
 	ResetLocalNvmeSsdBlockConfig()
 	ResetLocalSsdCount()
+	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
 	ResetMetadata()
@@ -695,6 +699,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Loca
 	_jsii_.Get(
 		j,
 		"localSsdCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) LocalSsdEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) LocalSsdEncryptionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionModeInput",
 		&returns,
 	)
 	return returns
@@ -1254,6 +1278,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference)SetLo
 	_jsii_.Set(
 		j,
 		"localSsdCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference)SetLocalSsdEncryptionMode(val *string) {
+	if err := j.validateSetLocalSsdEncryptionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSsdEncryptionMode",
 		val,
 	)
 }
@@ -1985,6 +2020,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetLocalSsdCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetLocalSsdEncryptionMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocalSsdEncryptionMode",
 		nil, // no parameters
 	)
 }

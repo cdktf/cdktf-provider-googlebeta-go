@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target google_clouddeploy_target}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target google_clouddeploy_target}.
 type GoogleClouddeployTarget interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -20,6 +20,8 @@ type GoogleClouddeployTarget interface {
 	AnnotationsInput() *map[string]*string
 	AnthosCluster() GoogleClouddeployTargetAnthosClusterOutputReference
 	AnthosClusterInput() *GoogleClouddeployTargetAnthosCluster
+	AssociatedEntities() GoogleClouddeployTargetAssociatedEntitiesList
+	AssociatedEntitiesInput() interface{}
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -154,6 +156,7 @@ type GoogleClouddeployTarget interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAnthosCluster(value *GoogleClouddeployTargetAnthosCluster)
+	PutAssociatedEntities(value interface{})
 	PutCustomTarget(value *GoogleClouddeployTargetCustomTarget)
 	PutExecutionConfigs(value interface{})
 	PutGke(value *GoogleClouddeployTargetGke)
@@ -162,6 +165,7 @@ type GoogleClouddeployTarget interface {
 	PutTimeouts(value *GoogleClouddeployTargetTimeouts)
 	ResetAnnotations()
 	ResetAnthosCluster()
+	ResetAssociatedEntities()
 	ResetCustomTarget()
 	ResetDeployParameters()
 	ResetDescription()
@@ -230,6 +234,26 @@ func (j *jsiiProxy_GoogleClouddeployTarget) AnthosClusterInput() *GoogleClouddep
 	_jsii_.Get(
 		j,
 		"anthosClusterInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTarget) AssociatedEntities() GoogleClouddeployTargetAssociatedEntitiesList {
+	var returns GoogleClouddeployTargetAssociatedEntitiesList
+	_jsii_.Get(
+		j,
+		"associatedEntities",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleClouddeployTarget) AssociatedEntitiesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"associatedEntitiesInput",
 		&returns,
 	)
 	return returns
@@ -756,7 +780,7 @@ func (j *jsiiProxy_GoogleClouddeployTarget) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource.
 func NewGoogleClouddeployTarget(scope constructs.Construct, id *string, config *GoogleClouddeployTargetConfig) GoogleClouddeployTarget {
 	_init_.Initialize()
 
@@ -774,7 +798,7 @@ func NewGoogleClouddeployTarget(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_clouddeploy_target google_clouddeploy_target} Resource.
 func NewGoogleClouddeployTarget_Override(g GoogleClouddeployTarget, scope constructs.Construct, id *string, config *GoogleClouddeployTargetConfig) {
 	_init_.Initialize()
 
@@ -1316,6 +1340,17 @@ func (g *jsiiProxy_GoogleClouddeployTarget) PutAnthosCluster(value *GoogleCloudd
 	)
 }
 
+func (g *jsiiProxy_GoogleClouddeployTarget) PutAssociatedEntities(value interface{}) {
+	if err := g.validatePutAssociatedEntitiesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAssociatedEntities",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleClouddeployTarget) PutCustomTarget(value *GoogleClouddeployTargetCustomTarget) {
 	if err := g.validatePutCustomTargetParameters(value); err != nil {
 		panic(err)
@@ -1394,6 +1429,14 @@ func (g *jsiiProxy_GoogleClouddeployTarget) ResetAnthosCluster() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAnthosCluster",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleClouddeployTarget) ResetAssociatedEntities() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAssociatedEntities",
 		nil, // no parameters
 	)
 }

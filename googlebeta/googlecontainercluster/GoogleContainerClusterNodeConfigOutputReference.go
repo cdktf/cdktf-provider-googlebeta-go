@@ -80,6 +80,9 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	LocalSsdCount() *float64
 	SetLocalSsdCount(val *float64)
 	LocalSsdCountInput() *float64
+	LocalSsdEncryptionMode() *string
+	SetLocalSsdEncryptionMode(val *string)
+	LocalSsdEncryptionModeInput() *string
 	LoggingVariant() *string
 	SetLoggingVariant(val *string)
 	LoggingVariantInput() *string
@@ -205,6 +208,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetLinuxNodeConfig()
 	ResetLocalNvmeSsdBlockConfig()
 	ResetLocalSsdCount()
+	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
 	ResetMetadata()
@@ -695,6 +699,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) LocalSsdCoun
 	_jsii_.Get(
 		j,
 		"localSsdCountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) LocalSsdEncryptionMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) LocalSsdEncryptionModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"localSsdEncryptionModeInput",
 		&returns,
 	)
 	return returns
@@ -1254,6 +1278,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetLocalSsdCo
 	_jsii_.Set(
 		j,
 		"localSsdCount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetLocalSsdEncryptionMode(val *string) {
+	if err := j.validateSetLocalSsdEncryptionModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"localSsdEncryptionMode",
 		val,
 	)
 }
@@ -1985,6 +2020,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetLocalSs
 	_jsii_.InvokeVoid(
 		g,
 		"resetLocalSsdCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetLocalSsdEncryptionMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLocalSsdEncryptionMode",
 		nil, // no parameters
 	)
 }

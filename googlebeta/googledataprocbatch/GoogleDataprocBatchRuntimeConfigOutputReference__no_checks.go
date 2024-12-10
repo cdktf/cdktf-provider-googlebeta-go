@@ -47,7 +47,15 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) validateInte
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) validatePutAutotuningConfigParameters(value *GoogleDataprocBatchRuntimeConfigAutotuningConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) validateSetCohortParameters(val *string) error {
 	return nil
 }
 

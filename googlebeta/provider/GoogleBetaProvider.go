@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -60,9 +60,9 @@ type GoogleBetaProvider interface {
 	BackupDrCustomEndpoint() *string
 	SetBackupDrCustomEndpoint(val *string)
 	BackupDrCustomEndpointInput() *string
-	Batching() *GoogleBetaProviderBatching
-	SetBatching(val *GoogleBetaProviderBatching)
-	BatchingInput() *GoogleBetaProviderBatching
+	Batching() interface{}
+	SetBatching(val interface{})
+	BatchingInput() interface{}
 	BeyondcorpCustomEndpoint() *string
 	SetBeyondcorpCustomEndpoint(val *string)
 	BeyondcorpCustomEndpointInput() *string
@@ -293,6 +293,9 @@ type GoogleBetaProvider interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GeminiCustomEndpoint() *string
+	SetGeminiCustomEndpoint(val *string)
+	GeminiCustomEndpointInput() *string
 	GkeBackupCustomEndpoint() *string
 	SetGkeBackupCustomEndpoint(val *string)
 	GkeBackupCustomEndpointInput() *string
@@ -664,6 +667,7 @@ type GoogleBetaProvider interface {
 	ResetFirebaserulesCustomEndpoint()
 	ResetFirebaseStorageCustomEndpoint()
 	ResetFirestoreCustomEndpoint()
+	ResetGeminiCustomEndpoint()
 	ResetGkeBackupCustomEndpoint()
 	ResetGkeHub2CustomEndpoint()
 	ResetGkeHubCustomEndpoint()
@@ -1073,8 +1077,8 @@ func (j *jsiiProxy_GoogleBetaProvider) BackupDrCustomEndpointInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBetaProvider) Batching() *GoogleBetaProviderBatching {
-	var returns *GoogleBetaProviderBatching
+func (j *jsiiProxy_GoogleBetaProvider) Batching() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"batching",
@@ -1083,8 +1087,8 @@ func (j *jsiiProxy_GoogleBetaProvider) Batching() *GoogleBetaProviderBatching {
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBetaProvider) BatchingInput() *GoogleBetaProviderBatching {
-	var returns *GoogleBetaProviderBatching
+func (j *jsiiProxy_GoogleBetaProvider) BatchingInput() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"batchingInput",
@@ -2608,6 +2612,26 @@ func (j *jsiiProxy_GoogleBetaProvider) FriendlyUniqueId() *string {
 	_jsii_.Get(
 		j,
 		"friendlyUniqueId",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) GeminiCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geminiCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) GeminiCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"geminiCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4434,7 +4458,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4452,7 +4476,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4586,7 +4610,7 @@ func (j *jsiiProxy_GoogleBetaProvider)SetBackupDrCustomEndpoint(val *string) {
 	)
 }
 
-func (j *jsiiProxy_GoogleBetaProvider)SetBatching(val *GoogleBetaProviderBatching) {
+func (j *jsiiProxy_GoogleBetaProvider)SetBatching(val interface{}) {
 	if err := j.validateSetBatchingParameters(val); err != nil {
 		panic(err)
 	}
@@ -5185,6 +5209,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetFirestoreCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"firestoreCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetGeminiCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"geminiCustomEndpoint",
 		val,
 	)
 }
@@ -6737,6 +6769,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetFirestoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetFirestoreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetGeminiCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGeminiCustomEndpoint",
 		nil, // no parameters
 	)
 }

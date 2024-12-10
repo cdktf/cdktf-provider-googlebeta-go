@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster google_redis_cluster}.
 type GoogleRedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -31,6 +31,8 @@ type GoogleRedisCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	CrossClusterReplicationConfig() GoogleRedisClusterCrossClusterReplicationConfigOutputReference
+	CrossClusterReplicationConfigInput() *GoogleRedisClusterCrossClusterReplicationConfig
 	DeletionProtectionEnabled() interface{}
 	SetDeletionProtectionEnabled(val interface{})
 	DeletionProtectionEnabledInput() interface{}
@@ -156,12 +158,14 @@ type GoogleRedisCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCrossClusterReplicationConfig(value *GoogleRedisClusterCrossClusterReplicationConfig)
 	PutMaintenancePolicy(value *GoogleRedisClusterMaintenancePolicy)
 	PutPersistenceConfig(value *GoogleRedisClusterPersistenceConfig)
 	PutPscConfigs(value interface{})
 	PutTimeouts(value *GoogleRedisClusterTimeouts)
 	PutZoneDistributionConfig(value *GoogleRedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
+	ResetCrossClusterReplicationConfig()
 	ResetDeletionProtectionEnabled()
 	ResetId()
 	ResetMaintenancePolicy()
@@ -261,6 +265,26 @@ func (j *jsiiProxy_GoogleRedisCluster) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) CrossClusterReplicationConfig() GoogleRedisClusterCrossClusterReplicationConfigOutputReference {
+	var returns GoogleRedisClusterCrossClusterReplicationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"crossClusterReplicationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) CrossClusterReplicationConfigInput() *GoogleRedisClusterCrossClusterReplicationConfig {
+	var returns *GoogleRedisClusterCrossClusterReplicationConfig
+	_jsii_.Get(
+		j,
+		"crossClusterReplicationConfigInput",
 		&returns,
 	)
 	return returns
@@ -767,7 +791,7 @@ func (j *jsiiProxy_GoogleRedisCluster) ZoneDistributionConfigInput() *GoogleRedi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) GoogleRedisCluster {
 	_init_.Initialize()
 
@@ -785,7 +809,7 @@ func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1338,6 +1362,17 @@ func (g *jsiiProxy_GoogleRedisCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) PutCrossClusterReplicationConfig(value *GoogleRedisClusterCrossClusterReplicationConfig) {
+	if err := g.validatePutCrossClusterReplicationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCrossClusterReplicationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) PutMaintenancePolicy(value *GoogleRedisClusterMaintenancePolicy) {
 	if err := g.validatePutMaintenancePolicyParameters(value); err != nil {
 		panic(err)
@@ -1397,6 +1432,14 @@ func (g *jsiiProxy_GoogleRedisCluster) ResetAuthorizationMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuthorizationMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) ResetCrossClusterReplicationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCrossClusterReplicationConfig",
 		nil, // no parameters
 	)
 }

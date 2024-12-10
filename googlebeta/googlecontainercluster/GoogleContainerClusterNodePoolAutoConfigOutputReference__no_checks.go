@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) validatePutLinuxNodeConfigParameters(value *GoogleContainerClusterNodePoolAutoConfigLinuxNodeConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigOutputReference) validatePutNetworkTagsParameters(value *GoogleContainerClusterNodePoolAutoConfigNetworkTags) error {
 	return nil
 }

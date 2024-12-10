@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
 type GoogleComputeSubnetwork interface {
 	cdktf.TerraformResource
 	AllowSubnetCidrRoutesOverlap() interface{}
@@ -116,6 +116,7 @@ type GoogleComputeSubnetwork interface {
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
+	SubnetworkId() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -779,6 +780,16 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) StackTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) SubnetworkId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subnetworkId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -830,7 +841,7 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -848,7 +859,7 @@ func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 

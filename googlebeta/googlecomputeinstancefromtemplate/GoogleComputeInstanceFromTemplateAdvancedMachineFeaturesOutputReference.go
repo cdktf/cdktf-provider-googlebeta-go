@@ -31,10 +31,16 @@ type GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference int
 	EnableNestedVirtualization() interface{}
 	SetEnableNestedVirtualization(val interface{})
 	EnableNestedVirtualizationInput() interface{}
+	EnableUefiNetworking() interface{}
+	SetEnableUefiNetworking(val interface{})
+	EnableUefiNetworkingInput() interface{}
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleComputeInstanceFromTemplateAdvancedMachineFeatures
 	SetInternalValue(val *GoogleComputeInstanceFromTemplateAdvancedMachineFeatures)
+	PerformanceMonitoringUnit() *string
+	SetPerformanceMonitoringUnit(val *string)
+	PerformanceMonitoringUnitInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -77,6 +83,8 @@ type GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference int
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnableNestedVirtualization()
+	ResetEnableUefiNetworking()
+	ResetPerformanceMonitoringUnit()
 	ResetThreadsPerCore()
 	ResetTurboMode()
 	ResetVisibleCoreCount()
@@ -145,6 +153,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutpu
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) EnableUefiNetworking() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableUefiNetworking",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) EnableUefiNetworkingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableUefiNetworkingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
@@ -160,6 +188,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutpu
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnit() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnit",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) PerformanceMonitoringUnitInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"performanceMonitoringUnitInput",
 		&returns,
 	)
 	return returns
@@ -306,6 +354,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutpu
 	)
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference)SetEnableUefiNetworking(val interface{}) {
+	if err := j.validateSetEnableUefiNetworkingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableUefiNetworking",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference)SetInternalValue(val *GoogleComputeInstanceFromTemplateAdvancedMachineFeatures) {
 	if err := j.validateSetInternalValueParameters(val); err != nil {
 		panic(err)
@@ -313,6 +372,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutpu
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference)SetPerformanceMonitoringUnit(val *string) {
+	if err := j.validateSetPerformanceMonitoringUnitParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"performanceMonitoringUnit",
 		val,
 	)
 }
@@ -562,6 +632,22 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnableNestedVirtualization",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) ResetEnableUefiNetworking() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableUefiNetworking",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference) ResetPerformanceMonitoringUnit() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPerformanceMonitoringUnit",
 		nil, // no parameters
 	)
 }

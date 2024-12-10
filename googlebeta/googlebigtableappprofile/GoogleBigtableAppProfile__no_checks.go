@@ -155,6 +155,10 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetProvisionersParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigtableAppProfile) validateSetRowAffinityParameters(val interface{}) error {
+	return nil
+}
+
 func validateNewGoogleBigtableAppProfileParameters(scope constructs.Construct, id *string, config *GoogleBigtableAppProfileConfig) error {
 	return nil
 }

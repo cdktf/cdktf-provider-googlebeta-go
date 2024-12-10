@@ -119,6 +119,10 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmCluster) validateSetCountParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmCluster) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOracleDatabaseCloudVmCluster) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

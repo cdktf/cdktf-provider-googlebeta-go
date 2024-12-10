@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputRefer
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) validatePutConfidentialInstanceConfigParameters(value *GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) validatePutNodeGroupAffinityParameters(value *GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity) error {
 	return nil
 }

@@ -171,6 +171,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetL
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetLocalSsdEncryptionModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetLoggingVariantParameters(val *string) error {
 	return nil
 }

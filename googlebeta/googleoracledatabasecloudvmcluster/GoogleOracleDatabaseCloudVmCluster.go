@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster}.
 type GoogleOracleDatabaseCloudVmCluster interface {
 	cdktf.TerraformResource
 	BackupSubnetCidr() *string
@@ -37,6 +37,9 @@ type GoogleOracleDatabaseCloudVmCluster interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreateTime() *string
+	DeletionProtection() interface{}
+	SetDeletionProtection(val interface{})
+	DeletionProtectionInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -145,6 +148,7 @@ type GoogleOracleDatabaseCloudVmCluster interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutProperties(value *GoogleOracleDatabaseCloudVmClusterProperties)
 	PutTimeouts(value *GoogleOracleDatabaseCloudVmClusterTimeouts)
+	ResetDeletionProtection()
 	ResetDisplayName()
 	ResetId()
 	ResetLabels()
@@ -277,6 +281,26 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmCluster) CreateTime() *string {
 	_jsii_.Get(
 		j,
 		"createTime",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmCluster) DeletionProtection() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtection",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmCluster) DeletionProtectionInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deletionProtectionInput",
 		&returns,
 	)
 	return returns
@@ -623,7 +647,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmCluster) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
 func NewGoogleOracleDatabaseCloudVmCluster(scope constructs.Construct, id *string, config *GoogleOracleDatabaseCloudVmClusterConfig) GoogleOracleDatabaseCloudVmCluster {
 	_init_.Initialize()
 
@@ -641,7 +665,7 @@ func NewGoogleOracleDatabaseCloudVmCluster(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_oracle_database_cloud_vm_cluster google_oracle_database_cloud_vm_cluster} Resource.
 func NewGoogleOracleDatabaseCloudVmCluster_Override(g GoogleOracleDatabaseCloudVmCluster, scope constructs.Construct, id *string, config *GoogleOracleDatabaseCloudVmClusterConfig) {
 	_init_.Initialize()
 
@@ -703,6 +727,17 @@ func (j *jsiiProxy_GoogleOracleDatabaseCloudVmCluster)SetCount(val interface{}) 
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleOracleDatabaseCloudVmCluster)SetDeletionProtection(val interface{}) {
+	if err := j.validateSetDeletionProtectionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deletionProtection",
 		val,
 	)
 }
@@ -1202,6 +1237,14 @@ func (g *jsiiProxy_GoogleOracleDatabaseCloudVmCluster) PutTimeouts(value *Google
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseCloudVmCluster) ResetDeletionProtection() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeletionProtection",
+		nil, // no parameters
 	)
 }
 

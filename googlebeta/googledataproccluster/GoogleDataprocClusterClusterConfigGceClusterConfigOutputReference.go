@@ -23,6 +23,8 @@ type GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference interface
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialInstanceConfig() GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference
+	ConfidentialInstanceConfigInput() *GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -94,9 +96,11 @@ type GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutConfidentialInstanceConfig(value *GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig)
 	PutNodeGroupAffinity(value *GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity)
 	PutReservationAffinity(value *GoogleDataprocClusterClusterConfigGceClusterConfigReservationAffinity)
 	PutShieldedInstanceConfig(value *GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfig)
+	ResetConfidentialInstanceConfig()
 	ResetInternalIpOnly()
 	ResetMetadata()
 	ResetNetwork()
@@ -138,6 +142,26 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputRefer
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) ConfidentialInstanceConfig() GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference {
+	var returns GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"confidentialInstanceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) ConfidentialInstanceConfigInput() *GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig {
+	var returns *GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig
+	_jsii_.Get(
+		j,
+		"confidentialInstanceConfigInput",
 		&returns,
 	)
 	return returns
@@ -770,6 +794,17 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputRefer
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) PutConfidentialInstanceConfig(value *GoogleDataprocClusterClusterConfigGceClusterConfigConfidentialInstanceConfig) {
+	if err := g.validatePutConfidentialInstanceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putConfidentialInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) PutNodeGroupAffinity(value *GoogleDataprocClusterClusterConfigGceClusterConfigNodeGroupAffinity) {
 	if err := g.validatePutNodeGroupAffinityParameters(value); err != nil {
 		panic(err)
@@ -800,6 +835,14 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputRefer
 		g,
 		"putShieldedInstanceConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigOutputReference) ResetConfidentialInstanceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConfidentialInstanceConfig",
+		nil, // no parameters
 	)
 }
 

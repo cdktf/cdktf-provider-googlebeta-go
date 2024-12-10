@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group}.
 type GoogleComputeRegionNetworkEndpointGroup interface {
 	cdktf.TerraformResource
 	AppEngine() GoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference
@@ -77,6 +77,8 @@ type GoogleComputeRegionNetworkEndpointGroup interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscData() GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference
+	PscDataInput() *GoogleComputeRegionNetworkEndpointGroupPscData
 	PscTargetService() *string
 	SetPscTargetService(val *string)
 	PscTargetServiceInput() *string
@@ -145,6 +147,7 @@ type GoogleComputeRegionNetworkEndpointGroup interface {
 	PutAppEngine(value *GoogleComputeRegionNetworkEndpointGroupAppEngine)
 	PutCloudFunction(value *GoogleComputeRegionNetworkEndpointGroupCloudFunction)
 	PutCloudRun(value *GoogleComputeRegionNetworkEndpointGroupCloudRun)
+	PutPscData(value *GoogleComputeRegionNetworkEndpointGroupPscData)
 	PutServerlessDeployment(value *GoogleComputeRegionNetworkEndpointGroupServerlessDeployment)
 	PutTimeouts(value *GoogleComputeRegionNetworkEndpointGroupTimeouts)
 	ResetAppEngine()
@@ -158,6 +161,7 @@ type GoogleComputeRegionNetworkEndpointGroup interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPscData()
 	ResetPscTargetService()
 	ResetServerlessDeployment()
 	ResetSubnetwork()
@@ -480,6 +484,26 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) Provisioners() *[]in
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) PscData() GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference {
+	var returns GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference
+	_jsii_.Get(
+		j,
+		"pscData",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) PscDataInput() *GoogleComputeRegionNetworkEndpointGroupPscData {
+	var returns *GoogleComputeRegionNetworkEndpointGroupPscData
+	_jsii_.Get(
+		j,
+		"pscDataInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) PscTargetService() *string {
 	var returns *string
 	_jsii_.Get(
@@ -631,7 +655,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
 func NewGoogleComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkEndpointGroupConfig) GoogleComputeRegionNetworkEndpointGroup {
 	_init_.Initialize()
 
@@ -649,7 +673,7 @@ func NewGoogleComputeRegionNetworkEndpointGroup(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_region_network_endpoint_group google_compute_region_network_endpoint_group} Resource.
 func NewGoogleComputeRegionNetworkEndpointGroup_Override(g GoogleComputeRegionNetworkEndpointGroup, scope constructs.Construct, id *string, config *GoogleComputeRegionNetworkEndpointGroupConfig) {
 	_init_.Initialize()
 
@@ -1213,6 +1237,17 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) PutCloudRun(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) PutPscData(value *GoogleComputeRegionNetworkEndpointGroupPscData) {
+	if err := g.validatePutPscDataParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPscData",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) PutServerlessDeployment(value *GoogleComputeRegionNetworkEndpointGroupServerlessDeployment) {
 	if err := g.validatePutServerlessDeploymentParameters(value); err != nil {
 		panic(err)
@@ -1303,6 +1338,14 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroup) ResetPscData() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscData",
 		nil, // no parameters
 	)
 }

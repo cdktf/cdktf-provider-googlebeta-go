@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type GoogleComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
 	AllowPscGlobalAccess() interface{}
@@ -43,6 +43,7 @@ type GoogleComputeGlobalForwardingRule interface {
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
 	SetForEach(val cdktf.ITerraformIterator)
+	ForwardingRuleId() *float64
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -321,6 +322,16 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) ForEach() cdktf.ITerraform
 	_jsii_.Get(
 		j,
 		"forEach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) ForwardingRuleId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"forwardingRuleId",
 		&returns,
 	)
 	return returns
@@ -817,7 +828,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) GoogleComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -835,7 +846,7 @@ func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule_Override(g GoogleComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 

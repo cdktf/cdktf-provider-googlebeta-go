@@ -13,6 +13,11 @@ import (
 
 type GoogleDataprocBatchRuntimeConfigOutputReference interface {
 	cdktf.ComplexObject
+	AutotuningConfig() GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReference
+	AutotuningConfigInput() *GoogleDataprocBatchRuntimeConfigAutotuningConfig
+	Cohort() *string
+	SetCohort(val *string)
+	CohortInput() *string
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -74,6 +79,9 @@ type GoogleDataprocBatchRuntimeConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAutotuningConfig(value *GoogleDataprocBatchRuntimeConfigAutotuningConfig)
+	ResetAutotuningConfig()
+	ResetCohort()
 	ResetContainerImage()
 	ResetProperties()
 	ResetVersion()
@@ -90,6 +98,46 @@ type GoogleDataprocBatchRuntimeConfigOutputReference interface {
 // The jsii proxy struct for GoogleDataprocBatchRuntimeConfigOutputReference
 type jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) AutotuningConfig() GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReference {
+	var returns GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReference
+	_jsii_.Get(
+		j,
+		"autotuningConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) AutotuningConfigInput() *GoogleDataprocBatchRuntimeConfigAutotuningConfig {
+	var returns *GoogleDataprocBatchRuntimeConfigAutotuningConfig
+	_jsii_.Get(
+		j,
+		"autotuningConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) Cohort() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cohort",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) CohortInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"cohortInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -257,6 +305,17 @@ func NewGoogleDataprocBatchRuntimeConfigOutputReference_Override(g GoogleDatapro
 		"@cdktf/provider-google-beta.googleDataprocBatch.GoogleDataprocBatchRuntimeConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference)SetCohort(val *string) {
+	if err := j.validateSetCohortParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"cohort",
+		val,
 	)
 }
 
@@ -532,6 +591,33 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) Interpolatio
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) PutAutotuningConfig(value *GoogleDataprocBatchRuntimeConfigAutotuningConfig) {
+	if err := g.validatePutAutotuningConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutotuningConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) ResetAutotuningConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutotuningConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) ResetCohort() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCohort",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigOutputReference) ResetContainerImage() {

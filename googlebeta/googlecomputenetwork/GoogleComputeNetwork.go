@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_network google_compute_network}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_network google_compute_network}.
 type GoogleComputeNetwork interface {
 	cdktf.TerraformResource
 	AutoCreateSubnetworks() interface{}
@@ -80,6 +80,9 @@ type GoogleComputeNetwork interface {
 	NetworkFirewallPolicyEnforcementOrder() *string
 	SetNetworkFirewallPolicyEnforcementOrder(val *string)
 	NetworkFirewallPolicyEnforcementOrderInput() *string
+	NetworkProfile() *string
+	SetNetworkProfile(val *string)
+	NetworkProfileInput() *string
 	// The tree node.
 	Node() constructs.Node
 	NumericId() *string
@@ -163,6 +166,7 @@ type GoogleComputeNetwork interface {
 	ResetInternalIpv6Range()
 	ResetMtu()
 	ResetNetworkFirewallPolicyEnforcementOrder()
+	ResetNetworkProfile()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -527,6 +531,26 @@ func (j *jsiiProxy_GoogleComputeNetwork) NetworkFirewallPolicyEnforcementOrderIn
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeNetwork) NetworkProfile() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork) NetworkProfileInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeNetwork) Node() constructs.Node {
 	var returns constructs.Node
 	_jsii_.Get(
@@ -678,7 +702,7 @@ func (j *jsiiProxy_GoogleComputeNetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_network google_compute_network} Resource.
 func NewGoogleComputeNetwork(scope constructs.Construct, id *string, config *GoogleComputeNetworkConfig) GoogleComputeNetwork {
 	_init_.Initialize()
 
@@ -696,7 +720,7 @@ func NewGoogleComputeNetwork(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/resources/google_compute_network google_compute_network} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_network google_compute_network} Resource.
 func NewGoogleComputeNetwork_Override(g GoogleComputeNetwork, scope constructs.Construct, id *string, config *GoogleComputeNetworkConfig) {
 	_init_.Initialize()
 
@@ -884,6 +908,17 @@ func (j *jsiiProxy_GoogleComputeNetwork)SetNetworkFirewallPolicyEnforcementOrder
 	_jsii_.Set(
 		j,
 		"networkFirewallPolicyEnforcementOrder",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeNetwork)SetNetworkProfile(val *string) {
+	if err := j.validateSetNetworkProfileParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkProfile",
 		val,
 	)
 }
@@ -1377,6 +1412,14 @@ func (g *jsiiProxy_GoogleComputeNetwork) ResetNetworkFirewallPolicyEnforcementOr
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetworkFirewallPolicyEnforcementOrder",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNetwork) ResetNetworkProfile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkProfile",
 		nil, // no parameters
 	)
 }

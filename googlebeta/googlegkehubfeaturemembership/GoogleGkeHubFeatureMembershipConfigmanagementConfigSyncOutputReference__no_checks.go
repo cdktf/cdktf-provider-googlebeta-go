@@ -87,6 +87,10 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetStopSyncingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

@@ -123,6 +123,10 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetDatabasePa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetDisplayNameParameters(val *string) error {
 	return nil
 }

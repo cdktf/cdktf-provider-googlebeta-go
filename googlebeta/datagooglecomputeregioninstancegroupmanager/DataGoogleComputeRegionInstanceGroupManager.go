@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager}.
 type DataGoogleComputeRegionInstanceGroupManager interface {
 	cdktf.TerraformDataSource
 	AllInstancesConfig() DataGoogleComputeRegionInstanceGroupManagerAllInstancesConfigList
@@ -48,6 +48,7 @@ type DataGoogleComputeRegionInstanceGroupManager interface {
 	IdInput() *string
 	InstanceFlexibilityPolicy() DataGoogleComputeRegionInstanceGroupManagerInstanceFlexibilityPolicyList
 	InstanceGroup() *string
+	InstanceGroupManagerId() *float64
 	InstanceLifecyclePolicy() DataGoogleComputeRegionInstanceGroupManagerInstanceLifecyclePolicyList
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
@@ -332,6 +333,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) InstanceGroup() 
 	_jsii_.Get(
 		j,
 		"instanceGroup",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) InstanceGroupManagerId() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"instanceGroupManagerId",
 		&returns,
 	)
 	return returns
@@ -658,7 +669,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceGroupManager) WaitForInstances
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Data Source.
 func NewDataGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceGroupManagerConfig) DataGoogleComputeRegionInstanceGroupManager {
 	_init_.Initialize()
 
@@ -676,7 +687,7 @@ func NewDataGoogleComputeRegionInstanceGroupManager(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.12.0/docs/data-sources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/data-sources/google_compute_region_instance_group_manager google_compute_region_instance_group_manager} Data Source.
 func NewDataGoogleComputeRegionInstanceGroupManager_Override(d DataGoogleComputeRegionInstanceGroupManager, scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceGroupManagerConfig) {
 	_init_.Initialize()
 

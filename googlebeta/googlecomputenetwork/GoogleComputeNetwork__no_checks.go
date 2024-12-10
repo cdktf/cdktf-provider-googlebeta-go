@@ -155,6 +155,10 @@ func (j *jsiiProxy_GoogleComputeNetwork) validateSetNetworkFirewallPolicyEnforce
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeNetwork) validateSetNetworkProfileParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeNetwork) validateSetProjectParameters(val *string) error {
 	return nil
 }

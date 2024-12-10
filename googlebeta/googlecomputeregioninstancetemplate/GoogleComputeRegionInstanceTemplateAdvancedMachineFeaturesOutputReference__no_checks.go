@@ -63,7 +63,15 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOut
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetEnableUefiNetworkingParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetInternalValueParameters(val *GoogleComputeRegionInstanceTemplateAdvancedMachineFeatures) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesOutputReference) validateSetPerformanceMonitoringUnitParameters(val *string) error {
 	return nil
 }
 

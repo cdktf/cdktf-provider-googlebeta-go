@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7Ddos
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) validatePutThresholdConfigsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigLayer7DdosDefenseConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

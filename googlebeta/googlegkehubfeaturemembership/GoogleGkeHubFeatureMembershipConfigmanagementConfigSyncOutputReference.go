@@ -48,6 +48,9 @@ type GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference inte
 	SourceFormat() *string
 	SetSourceFormat(val *string)
 	SourceFormatInput() *string
+	StopSyncing() interface{}
+	SetStopSyncing(val interface{})
+	StopSyncingInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -88,6 +91,7 @@ type GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference inte
 	ResetOci()
 	ResetPreventDrift()
 	ResetSourceFormat()
+	ResetStopSyncing()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -273,6 +277,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) StopSyncing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stopSyncing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) StopSyncingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"stopSyncingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -394,6 +418,17 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	_jsii_.Set(
 		j,
 		"sourceFormat",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference)SetStopSyncing(val interface{}) {
+	if err := j.validateSetStopSyncingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"stopSyncing",
 		val,
 	)
 }
@@ -672,6 +707,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	_jsii_.InvokeVoid(
 		g,
 		"resetSourceFormat",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) ResetStopSyncing() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStopSyncing",
 		nil, // no parameters
 	)
 }
