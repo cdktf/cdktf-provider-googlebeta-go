@@ -32,7 +32,6 @@ type GoogleAccessContextManagerServicePerimetersServicePerimetersOutputReference
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
-	Etag() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() interface{}
@@ -163,16 +162,6 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersO
 	_jsii_.Get(
 		j,
 		"descriptionInput",
-		&returns,
-	)
-	return returns
-}
-
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersOutputReference) Etag() *string {
-	var returns *string
-	_jsii_.Get(
-		j,
-		"etag",
 		&returns,
 	)
 	return returns

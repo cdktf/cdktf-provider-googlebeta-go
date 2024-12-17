@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_workbench_instance_iam_member google_workbench_instance_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_workbench_instance_iam_member google_workbench_instance_iam_member}.
 type GoogleWorkbenchInstanceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceIamMember) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_workbench_instance_iam_member google_workbench_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_workbench_instance_iam_member google_workbench_instance_iam_member} Resource.
 func NewGoogleWorkbenchInstanceIamMember(scope constructs.Construct, id *string, config *GoogleWorkbenchInstanceIamMemberConfig) GoogleWorkbenchInstanceIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleWorkbenchInstanceIamMember(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_workbench_instance_iam_member google_workbench_instance_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_workbench_instance_iam_member google_workbench_instance_iam_member} Resource.
 func NewGoogleWorkbenchInstanceIamMember_Override(g GoogleWorkbenchInstanceIamMember, scope constructs.Construct, id *string, config *GoogleWorkbenchInstanceIamMemberConfig) {
 	_init_.Initialize()
 

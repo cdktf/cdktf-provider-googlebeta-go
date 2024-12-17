@@ -30,6 +30,8 @@ type GoogleFirebaseHostingVersionConfigAOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	Headers() GoogleFirebaseHostingVersionConfigHeadersList
+	HeadersInput() interface{}
 	InternalValue() *GoogleFirebaseHostingVersionConfigA
 	SetInternalValue(val *GoogleFirebaseHostingVersionConfigA)
 	Redirects() GoogleFirebaseHostingVersionConfigRedirectsList
@@ -68,8 +70,10 @@ type GoogleFirebaseHostingVersionConfigAOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHeaders(value interface{})
 	PutRedirects(value interface{})
 	PutRewrites(value interface{})
+	ResetHeaders()
 	ResetRedirects()
 	ResetRewrites()
 	// Produce the Token's value at resolution time.
@@ -122,6 +126,26 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) Fqn() *st
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) Headers() GoogleFirebaseHostingVersionConfigHeadersList {
+	var returns GoogleFirebaseHostingVersionConfigHeadersList
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) HeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headersInput",
 		&returns,
 	)
 	return returns
@@ -466,6 +490,17 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) Interpola
 	return returns
 }
 
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) PutHeaders(value interface{}) {
+	if err := g.validatePutHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) PutRedirects(value interface{}) {
 	if err := g.validatePutRedirectsParameters(value); err != nil {
 		panic(err)
@@ -485,6 +520,14 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) PutRewrit
 		g,
 		"putRewrites",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigAOutputReference) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHeaders",
+		nil, // no parameters
 	)
 }
 

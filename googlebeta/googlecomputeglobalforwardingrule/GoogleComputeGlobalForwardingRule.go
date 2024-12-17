@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule}.
 type GoogleComputeGlobalForwardingRule interface {
 	cdktf.TerraformResource
 	AllowPscGlobalAccess() interface{}
@@ -79,6 +79,9 @@ type GoogleComputeGlobalForwardingRule interface {
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	NetworkTier() *string
+	SetNetworkTier(val *string)
+	NetworkTierInput() *string
 	NoAutomateDnsZone() interface{}
 	SetNoAutomateDnsZone(val interface{})
 	NoAutomateDnsZoneInput() interface{}
@@ -179,6 +182,7 @@ type GoogleComputeGlobalForwardingRule interface {
 	ResetLoadBalancingScheme()
 	ResetMetadataFilters()
 	ResetNetwork()
+	ResetNetworkTier()
 	ResetNoAutomateDnsZone()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -557,6 +561,26 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) NetworkInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) NetworkTier() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTier",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) NetworkTierInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkTierInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) NoAutomateDnsZone() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -828,7 +852,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) GoogleComputeGlobalForwardingRule {
 	_init_.Initialize()
 
@@ -846,7 +870,7 @@ func NewGoogleComputeGlobalForwardingRule(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.13.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_compute_global_forwarding_rule google_compute_global_forwarding_rule} Resource.
 func NewGoogleComputeGlobalForwardingRule_Override(g GoogleComputeGlobalForwardingRule, scope constructs.Construct, id *string, config *GoogleComputeGlobalForwardingRuleConfig) {
 	_init_.Initialize()
 
@@ -1012,6 +1036,17 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetNetwork(val *string) {
 	_jsii_.Set(
 		j,
 		"network",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRule)SetNetworkTier(val *string) {
+	if err := j.validateSetNetworkTierParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkTier",
 		val,
 	)
 }
@@ -1563,6 +1598,14 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetNetwork() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetNetwork",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRule) ResetNetworkTier() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkTier",
 		nil, // no parameters
 	)
 }
