@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_organization_notification_config google_scc_v2_organization_notification_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_notification_config google_scc_v2_organization_notification_config}.
 type GoogleSccV2OrganizationNotificationConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -496,7 +496,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationNotificationConfig) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource.
 func NewGoogleSccV2OrganizationNotificationConfig(scope constructs.Construct, id *string, config *GoogleSccV2OrganizationNotificationConfigConfig) GoogleSccV2OrganizationNotificationConfig {
 	_init_.Initialize()
 
@@ -514,7 +514,7 @@ func NewGoogleSccV2OrganizationNotificationConfig(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.0/docs/resources/google_scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_scc_v2_organization_notification_config google_scc_v2_organization_notification_config} Resource.
 func NewGoogleSccV2OrganizationNotificationConfig_Override(g GoogleSccV2OrganizationNotificationConfig, scope constructs.Construct, id *string, config *GoogleSccV2OrganizationNotificationConfigConfig) {
 	_init_.Initialize()
 
