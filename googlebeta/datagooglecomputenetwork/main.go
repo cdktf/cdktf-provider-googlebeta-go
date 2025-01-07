@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "name", GoGetter: "Name"},
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
+			_jsii_.MemberProperty{JsiiProperty: "networkId", GoGetter: "NetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "networkProfile", GoGetter: "NetworkProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "networkProfileInput", GoGetter: "NetworkProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

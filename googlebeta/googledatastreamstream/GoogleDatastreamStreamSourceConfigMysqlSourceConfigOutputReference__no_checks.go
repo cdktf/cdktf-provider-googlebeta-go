@@ -47,7 +47,15 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputRefe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validatePutBinaryLogPositionParameters(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfigBinaryLogPosition) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validatePutExcludeObjectsParameters(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfigExcludeObjects) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigMysqlSourceConfigOutputReference) validatePutGtidParameters(value *GoogleDatastreamStreamSourceConfigMysqlSourceConfigGtid) error {
 	return nil
 }
 

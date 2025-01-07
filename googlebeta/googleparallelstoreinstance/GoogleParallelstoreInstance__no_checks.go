@@ -107,6 +107,10 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetCountParameters(val i
 	return nil
 }
 
+func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetDeploymentTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleParallelstoreInstance) validateSetDescriptionParameters(val *string) error {
 	return nil
 }

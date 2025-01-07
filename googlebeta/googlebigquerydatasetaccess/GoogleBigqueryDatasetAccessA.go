@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access}.
 type GoogleBigqueryDatasetAccessA interface {
 	cdktf.TerraformResource
 	ApiUpdatedMember() cdktf.IResolvable
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	Condition() GoogleBigqueryDatasetAccessConditionAOutputReference
+	ConditionInput() *GoogleBigqueryDatasetAccessConditionA
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -140,10 +142,12 @@ type GoogleBigqueryDatasetAccessA interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutCondition(value *GoogleBigqueryDatasetAccessConditionA)
 	PutDataset(value *GoogleBigqueryDatasetAccessDatasetA)
 	PutRoutine(value *GoogleBigqueryDatasetAccessRoutineA)
 	PutTimeouts(value *GoogleBigqueryDatasetAccessTimeouts)
 	PutView(value *GoogleBigqueryDatasetAccessViewA)
+	ResetCondition()
 	ResetDataset()
 	ResetDomain()
 	ResetGroupByEmail()
@@ -192,6 +196,26 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) CdktfStack() cdktf.TerraformSta
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) Condition() GoogleBigqueryDatasetAccessConditionAOutputReference {
+	var returns GoogleBigqueryDatasetAccessConditionAOutputReference
+	_jsii_.Get(
+		j,
+		"condition",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) ConditionInput() *GoogleBigqueryDatasetAccessConditionA {
+	var returns *GoogleBigqueryDatasetAccessConditionA
+	_jsii_.Get(
+		j,
+		"conditionInput",
 		&returns,
 	)
 	return returns
@@ -608,7 +632,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) ViewInput() *GoogleBigqueryData
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewGoogleBigqueryDatasetAccessA(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetAccessAConfig) GoogleBigqueryDatasetAccessA {
 	_init_.Initialize()
 
@@ -626,7 +650,7 @@ func NewGoogleBigqueryDatasetAccessA(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewGoogleBigqueryDatasetAccessA_Override(g GoogleBigqueryDatasetAccessA, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetAccessAConfig) {
 	_init_.Initialize()
 
@@ -1157,6 +1181,17 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) OverrideLogicalId(newLogicalId 
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) PutCondition(value *GoogleBigqueryDatasetAccessConditionA) {
+	if err := g.validatePutConditionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCondition",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) PutDataset(value *GoogleBigqueryDatasetAccessDatasetA) {
 	if err := g.validatePutDatasetParameters(value); err != nil {
 		panic(err)
@@ -1198,6 +1233,14 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) PutView(value *GoogleBigqueryDa
 		g,
 		"putView",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessA) ResetCondition() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCondition",
+		nil, // no parameters
 	)
 }
 

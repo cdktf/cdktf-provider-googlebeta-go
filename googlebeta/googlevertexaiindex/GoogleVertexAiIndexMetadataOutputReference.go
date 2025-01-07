@@ -74,6 +74,7 @@ type GoogleVertexAiIndexMetadataOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutConfig(value *GoogleVertexAiIndexMetadataConfig)
 	ResetConfig()
+	ResetContentsDeltaUri()
 	ResetIsCompleteOverwrite()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -526,6 +527,14 @@ func (g *jsiiProxy_GoogleVertexAiIndexMetadataOutputReference) ResetConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiIndexMetadataOutputReference) ResetContentsDeltaUri() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContentsDeltaUri",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataform_repository_iam_member google_dataform_repository_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dataform_repository_iam_member google_dataform_repository_iam_member}.
 type GoogleDataformRepositoryIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryIamMember) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataform_repository_iam_member google_dataform_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dataform_repository_iam_member google_dataform_repository_iam_member} Resource.
 func NewGoogleDataformRepositoryIamMember(scope constructs.Construct, id *string, config *GoogleDataformRepositoryIamMemberConfig) GoogleDataformRepositoryIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleDataformRepositoryIamMember(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_dataform_repository_iam_member google_dataform_repository_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_dataform_repository_iam_member google_dataform_repository_iam_member} Resource.
 func NewGoogleDataformRepositoryIamMember_Override(g GoogleDataformRepositoryIamMember, scope constructs.Construct, id *string, config *GoogleDataformRepositoryIamMemberConfig) {
 	_init_.Initialize()
 

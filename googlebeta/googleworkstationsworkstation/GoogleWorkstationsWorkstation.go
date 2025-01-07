@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation google_workstations_workstation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation google_workstations_workstation}.
 type GoogleWorkstationsWorkstation interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -81,6 +81,9 @@ type GoogleWorkstationsWorkstation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SourceWorkstation() *string
+	SetSourceWorkstation(val *string)
+	SourceWorkstationInput() *string
 	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -154,6 +157,7 @@ type GoogleWorkstationsWorkstation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSourceWorkstation()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -493,6 +497,26 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) SourceWorkstation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceWorkstation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) SourceWorkstationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceWorkstationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstation) State() *string {
 	var returns *string
 	_jsii_.Get(
@@ -634,7 +658,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) WorkstationIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
 func NewGoogleWorkstationsWorkstation(scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfig) GoogleWorkstationsWorkstation {
 	_init_.Initialize()
 
@@ -652,7 +676,7 @@ func NewGoogleWorkstationsWorkstation(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_workstations_workstation google_workstations_workstation} Resource.
 func NewGoogleWorkstationsWorkstation_Override(g GoogleWorkstationsWorkstation, scope constructs.Construct, id *string, config *GoogleWorkstationsWorkstationConfig) {
 	_init_.Initialize()
 
@@ -804,6 +828,17 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation)SetProvisioners(val *[]interfac
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkstationsWorkstation)SetSourceWorkstation(val *string) {
+	if err := j.validateSetSourceWorkstationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceWorkstation",
 		val,
 	)
 }
@@ -1257,6 +1292,14 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstation) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkstationsWorkstation) ResetSourceWorkstation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceWorkstation",
 		nil, // no parameters
 	)
 }

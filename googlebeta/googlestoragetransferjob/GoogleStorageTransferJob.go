@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_storage_transfer_job google_storage_transfer_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_storage_transfer_job google_storage_transfer_job}.
 type GoogleStorageTransferJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -74,6 +74,8 @@ type GoogleStorageTransferJob interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicationSpec() GoogleStorageTransferJobReplicationSpecOutputReference
+	ReplicationSpecInput() *GoogleStorageTransferJobReplicationSpec
 	Schedule() GoogleStorageTransferJobScheduleOutputReference
 	ScheduleInput() *GoogleStorageTransferJobSchedule
 	Status() *string
@@ -132,6 +134,7 @@ type GoogleStorageTransferJob interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutEventStream(value *GoogleStorageTransferJobEventStream)
 	PutNotificationConfig(value *GoogleStorageTransferJobNotificationConfig)
+	PutReplicationSpec(value *GoogleStorageTransferJobReplicationSpec)
 	PutSchedule(value *GoogleStorageTransferJobSchedule)
 	PutTransferSpec(value *GoogleStorageTransferJobTransferSpec)
 	ResetEventStream()
@@ -142,8 +145,10 @@ type GoogleStorageTransferJob interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetReplicationSpec()
 	ResetSchedule()
 	ResetStatus()
+	ResetTransferSpec()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -442,6 +447,26 @@ func (j *jsiiProxy_GoogleStorageTransferJob) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleStorageTransferJob) ReplicationSpec() GoogleStorageTransferJobReplicationSpecOutputReference {
+	var returns GoogleStorageTransferJobReplicationSpecOutputReference
+	_jsii_.Get(
+		j,
+		"replicationSpec",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJob) ReplicationSpecInput() *GoogleStorageTransferJobReplicationSpec {
+	var returns *GoogleStorageTransferJobReplicationSpec
+	_jsii_.Get(
+		j,
+		"replicationSpecInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleStorageTransferJob) Schedule() GoogleStorageTransferJobScheduleOutputReference {
 	var returns GoogleStorageTransferJobScheduleOutputReference
 	_jsii_.Get(
@@ -533,7 +558,7 @@ func (j *jsiiProxy_GoogleStorageTransferJob) TransferSpecInput() *GoogleStorageT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
 func NewGoogleStorageTransferJob(scope constructs.Construct, id *string, config *GoogleStorageTransferJobConfig) GoogleStorageTransferJob {
 	_init_.Initialize()
 
@@ -551,7 +576,7 @@ func NewGoogleStorageTransferJob(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
 func NewGoogleStorageTransferJob_Override(g GoogleStorageTransferJob, scope constructs.Construct, id *string, config *GoogleStorageTransferJobConfig) {
 	_init_.Initialize()
 
@@ -1060,6 +1085,17 @@ func (g *jsiiProxy_GoogleStorageTransferJob) PutNotificationConfig(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJob) PutReplicationSpec(value *GoogleStorageTransferJobReplicationSpec) {
+	if err := g.validatePutReplicationSpecParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReplicationSpec",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJob) PutSchedule(value *GoogleStorageTransferJobSchedule) {
 	if err := g.validatePutScheduleParameters(value); err != nil {
 		panic(err)
@@ -1130,6 +1166,14 @@ func (g *jsiiProxy_GoogleStorageTransferJob) ResetProject() {
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJob) ResetReplicationSpec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplicationSpec",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJob) ResetSchedule() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1142,6 +1186,14 @@ func (g *jsiiProxy_GoogleStorageTransferJob) ResetStatus() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetStatus",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJob) ResetTransferSpec() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTransferSpec",
 		nil, // no parameters
 	)
 }

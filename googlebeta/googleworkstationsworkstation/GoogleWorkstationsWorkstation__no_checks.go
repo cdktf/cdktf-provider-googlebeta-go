@@ -139,6 +139,10 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstation) validateSetProvisionersParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkstationsWorkstation) validateSetSourceWorkstationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkstationsWorkstation) validateSetWorkstationClusterIdParameters(val *string) error {
 	return nil
 }

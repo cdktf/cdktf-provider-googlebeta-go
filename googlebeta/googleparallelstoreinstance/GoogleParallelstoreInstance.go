@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_parallelstore_instance google_parallelstore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_parallelstore_instance google_parallelstore_instance}.
 type GoogleParallelstoreInstance interface {
 	cdktf.TerraformResource
 	AccessPoints() *[]*string
@@ -37,6 +37,9 @@ type GoogleParallelstoreInstance interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DeploymentType() *string
+	SetDeploymentType(val *string)
+	DeploymentTypeInput() *string
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -149,6 +152,7 @@ type GoogleParallelstoreInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleParallelstoreInstanceTimeouts)
+	ResetDeploymentType()
 	ResetDescription()
 	ResetDirectoryStripeLevel()
 	ResetFileStripeLevel()
@@ -274,6 +278,26 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance) DeploymentType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance) DeploymentTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"deploymentTypeInput",
 		&returns,
 	)
 	return returns
@@ -670,7 +694,7 @@ func (j *jsiiProxy_GoogleParallelstoreInstance) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource.
 func NewGoogleParallelstoreInstance(scope constructs.Construct, id *string, config *GoogleParallelstoreInstanceConfig) GoogleParallelstoreInstance {
 	_init_.Initialize()
 
@@ -688,7 +712,7 @@ func NewGoogleParallelstoreInstance(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_parallelstore_instance google_parallelstore_instance} Resource.
 func NewGoogleParallelstoreInstance_Override(g GoogleParallelstoreInstance, scope constructs.Construct, id *string, config *GoogleParallelstoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -736,6 +760,17 @@ func (j *jsiiProxy_GoogleParallelstoreInstance)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleParallelstoreInstance)SetDeploymentType(val *string) {
+	if err := j.validateSetDeploymentTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deploymentType",
 		val,
 	)
 }
@@ -1249,6 +1284,14 @@ func (g *jsiiProxy_GoogleParallelstoreInstance) PutTimeouts(value *GoogleParalle
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleParallelstoreInstance) ResetDeploymentType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeploymentType",
+		nil, // no parameters
 	)
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_table google_bigquery_table}.
 type GoogleBigqueryTable interface {
 	cdktf.TerraformResource
 	BiglakeConfiguration() GoogleBigqueryTableBiglakeConfigurationOutputReference
@@ -53,6 +53,8 @@ type GoogleBigqueryTable interface {
 	ExpirationTime() *float64
 	SetExpirationTime(val *float64)
 	ExpirationTimeInput() *float64
+	ExternalCatalogTableOptions() GoogleBigqueryTableExternalCatalogTableOptionsOutputReference
+	ExternalCatalogTableOptionsInput() *GoogleBigqueryTableExternalCatalogTableOptions
 	ExternalDataConfiguration() GoogleBigqueryTableExternalDataConfigurationOutputReference
 	ExternalDataConfigurationInput() *GoogleBigqueryTableExternalDataConfiguration
 	// Experimental.
@@ -177,6 +179,7 @@ type GoogleBigqueryTable interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBiglakeConfiguration(value *GoogleBigqueryTableBiglakeConfiguration)
 	PutEncryptionConfiguration(value *GoogleBigqueryTableEncryptionConfiguration)
+	PutExternalCatalogTableOptions(value *GoogleBigqueryTableExternalCatalogTableOptions)
 	PutExternalDataConfiguration(value *GoogleBigqueryTableExternalDataConfiguration)
 	PutMaterializedView(value *GoogleBigqueryTableMaterializedView)
 	PutRangePartitioning(value *GoogleBigqueryTableRangePartitioning)
@@ -190,6 +193,7 @@ type GoogleBigqueryTable interface {
 	ResetDescription()
 	ResetEncryptionConfiguration()
 	ResetExpirationTime()
+	ResetExternalCatalogTableOptions()
 	ResetExternalDataConfiguration()
 	ResetFriendlyName()
 	ResetId()
@@ -441,6 +445,26 @@ func (j *jsiiProxy_GoogleBigqueryTable) ExpirationTimeInput() *float64 {
 	_jsii_.Get(
 		j,
 		"expirationTimeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) ExternalCatalogTableOptions() GoogleBigqueryTableExternalCatalogTableOptionsOutputReference {
+	var returns GoogleBigqueryTableExternalCatalogTableOptionsOutputReference
+	_jsii_.Get(
+		j,
+		"externalCatalogTableOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) ExternalCatalogTableOptionsInput() *GoogleBigqueryTableExternalCatalogTableOptions {
+	var returns *GoogleBigqueryTableExternalCatalogTableOptions
+	_jsii_.Get(
+		j,
+		"externalCatalogTableOptionsInput",
 		&returns,
 	)
 	return returns
@@ -957,7 +981,7 @@ func (j *jsiiProxy_GoogleBigqueryTable) ViewInput() *GoogleBigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) GoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -975,7 +999,7 @@ func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.14.1/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.15.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1583,6 +1607,17 @@ func (g *jsiiProxy_GoogleBigqueryTable) PutEncryptionConfiguration(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) PutExternalCatalogTableOptions(value *GoogleBigqueryTableExternalCatalogTableOptions) {
+	if err := g.validatePutExternalCatalogTableOptionsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putExternalCatalogTableOptions",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) PutExternalDataConfiguration(value *GoogleBigqueryTableExternalDataConfiguration) {
 	if err := g.validatePutExternalDataConfigurationParameters(value); err != nil {
 		panic(err)
@@ -1704,6 +1739,14 @@ func (g *jsiiProxy_GoogleBigqueryTable) ResetExpirationTime() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetExpirationTime",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) ResetExternalCatalogTableOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalCatalogTableOptions",
 		nil, // no parameters
 	)
 }

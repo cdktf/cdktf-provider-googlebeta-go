@@ -13,6 +13,8 @@ import (
 
 type GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference interface {
 	cdktf.ComplexObject
+	AirflowMetadataRetentionConfig() GoogleComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList
+	AirflowMetadataRetentionConfigInput() interface{}
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -66,7 +68,10 @@ type GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAirflowMetadataRetentionConfig(value interface{})
 	PutTaskLogsRetentionConfig(value interface{})
+	ResetAirflowMetadataRetentionConfig()
+	ResetTaskLogsRetentionConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -80,6 +85,26 @@ type GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference interface
 // The jsii proxy struct for GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference
 type jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) AirflowMetadataRetentionConfig() GoogleComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList {
+	var returns GoogleComposerEnvironmentConfigDataRetentionConfigAirflowMetadataRetentionConfigList
+	_jsii_.Get(
+		j,
+		"airflowMetadataRetentionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) AirflowMetadataRetentionConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"airflowMetadataRetentionConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -441,6 +466,17 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputRefer
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) PutAirflowMetadataRetentionConfig(value interface{}) {
+	if err := g.validatePutAirflowMetadataRetentionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAirflowMetadataRetentionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) PutTaskLogsRetentionConfig(value interface{}) {
 	if err := g.validatePutTaskLogsRetentionConfigParameters(value); err != nil {
 		panic(err)
@@ -449,6 +485,22 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputRefer
 		g,
 		"putTaskLogsRetentionConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) ResetAirflowMetadataRetentionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAirflowMetadataRetentionConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigDataRetentionConfigOutputReference) ResetTaskLogsRetentionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTaskLogsRetentionConfig",
+		nil, // no parameters
 	)
 }
 

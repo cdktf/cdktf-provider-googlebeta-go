@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "nameInput", GoGetter: "NameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "networkFirewallPolicyEnforcementOrder", GoGetter: "NetworkFirewallPolicyEnforcementOrder"},
 			_jsii_.MemberProperty{JsiiProperty: "networkFirewallPolicyEnforcementOrderInput", GoGetter: "NetworkFirewallPolicyEnforcementOrderInput"},
+			_jsii_.MemberProperty{JsiiProperty: "networkId", GoGetter: "NetworkId"},
 			_jsii_.MemberProperty{JsiiProperty: "networkProfile", GoGetter: "NetworkProfile"},
 			_jsii_.MemberProperty{JsiiProperty: "networkProfileInput", GoGetter: "NetworkProfileInput"},
 			_jsii_.MemberProperty{JsiiProperty: "node", GoGetter: "Node"},

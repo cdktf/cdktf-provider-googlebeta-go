@@ -83,6 +83,10 @@ func (g *jsiiProxy_GoogleBigqueryTable) validatePutEncryptionConfigurationParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutExternalCatalogTableOptionsParameters(value *GoogleBigqueryTableExternalCatalogTableOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutExternalDataConfigurationParameters(value *GoogleBigqueryTableExternalDataConfiguration) error {
 	return nil
 }

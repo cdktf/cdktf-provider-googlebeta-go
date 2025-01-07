@@ -127,6 +127,10 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetDescriptionParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetGroupParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkConnectivitySpoke) validateSetHubParameters(val *string) error {
 	return nil
 }

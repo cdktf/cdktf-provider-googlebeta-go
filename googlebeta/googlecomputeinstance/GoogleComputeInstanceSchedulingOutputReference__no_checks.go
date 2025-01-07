@@ -71,6 +71,10 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetAu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetAvailabilityDomainParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
