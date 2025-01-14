@@ -75,6 +75,10 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetEn
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetHealthCheckParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyOutputReference) validateSetInternalValueParameters(val *GoogleDnsRecordSetRoutingPolicy) error {
 	return nil
 }
