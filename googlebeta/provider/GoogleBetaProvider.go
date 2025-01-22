@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -161,6 +161,9 @@ type GoogleBetaProvider interface {
 	CloudTasksCustomEndpoint() *string
 	SetCloudTasksCustomEndpoint(val *string)
 	CloudTasksCustomEndpointInput() *string
+	ColabCustomEndpoint() *string
+	SetColabCustomEndpoint(val *string)
+	ColabCustomEndpointInput() *string
 	ComposerCustomEndpoint() *string
 	SetComposerCustomEndpoint(val *string)
 	ComposerCustomEndpointInput() *string
@@ -417,6 +420,12 @@ type GoogleBetaProvider interface {
 	ParallelstoreCustomEndpoint() *string
 	SetParallelstoreCustomEndpoint(val *string)
 	ParallelstoreCustomEndpointInput() *string
+	ParameterManagerCustomEndpoint() *string
+	SetParameterManagerCustomEndpoint(val *string)
+	ParameterManagerCustomEndpointInput() *string
+	ParameterManagerRegionalCustomEndpoint() *string
+	SetParameterManagerRegionalCustomEndpoint(val *string)
+	ParameterManagerRegionalCustomEndpointInput() *string
 	PrivatecaCustomEndpoint() *string
 	SetPrivatecaCustomEndpoint(val *string)
 	PrivatecaCustomEndpointInput() *string
@@ -628,6 +637,7 @@ type GoogleBetaProvider interface {
 	ResetCloudRunV2CustomEndpoint()
 	ResetCloudSchedulerCustomEndpoint()
 	ResetCloudTasksCustomEndpoint()
+	ResetColabCustomEndpoint()
 	ResetComposerCustomEndpoint()
 	ResetComputeCustomEndpoint()
 	ResetContainerAnalysisCustomEndpoint()
@@ -713,6 +723,8 @@ type GoogleBetaProvider interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetParallelstoreCustomEndpoint()
+	ResetParameterManagerCustomEndpoint()
+	ResetParameterManagerRegionalCustomEndpoint()
 	ResetPrivatecaCustomEndpoint()
 	ResetPrivilegedAccessManagerCustomEndpoint()
 	ResetProject()
@@ -1746,6 +1758,26 @@ func (j *jsiiProxy_GoogleBetaProvider) CloudTasksCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"cloudTasksCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ColabCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"colabCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ColabCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"colabCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -3441,6 +3473,46 @@ func (j *jsiiProxy_GoogleBetaProvider) ParallelstoreCustomEndpointInput() *strin
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) ParameterManagerCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ParameterManagerCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ParameterManagerRegionalCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerRegionalCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ParameterManagerRegionalCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"parameterManagerRegionalCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) PrivatecaCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4482,7 +4554,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4500,7 +4572,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4897,6 +4969,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetCloudTasksCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"cloudTasksCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetColabCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"colabCustomEndpoint",
 		val,
 	)
 }
@@ -5553,6 +5633,22 @@ func (j *jsiiProxy_GoogleBetaProvider)SetParallelstoreCustomEndpoint(val *string
 	_jsii_.Set(
 		j,
 		"parallelstoreCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetParameterManagerCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"parameterManagerCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetParameterManagerRegionalCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"parameterManagerRegionalCustomEndpoint",
 		val,
 	)
 }
@@ -6469,6 +6565,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetCloudTasksCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetColabCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetColabCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetComposerCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -7129,6 +7233,22 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetParallelstoreCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetParallelstoreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetParameterManagerCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParameterManagerCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetParameterManagerRegionalCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParameterManagerRegionalCustomEndpoint",
 		nil, // no parameters
 	)
 }

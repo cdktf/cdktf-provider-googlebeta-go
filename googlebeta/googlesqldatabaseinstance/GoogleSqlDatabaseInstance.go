@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_sql_database_instance google_sql_database_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_sql_database_instance google_sql_database_instance}.
 type GoogleSqlDatabaseInstance interface {
 	cdktf.TerraformResource
 	AvailableMaintenanceVersions() *[]*string
@@ -100,6 +100,8 @@ type GoogleSqlDatabaseInstance interface {
 	ReplicaNames() *[]*string
 	SetReplicaNames(val *[]*string)
 	ReplicaNamesInput() *[]*string
+	ReplicationCluster() GoogleSqlDatabaseInstanceReplicationClusterOutputReference
+	ReplicationClusterInput() *GoogleSqlDatabaseInstanceReplicationCluster
 	RestoreBackupContext() GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference
 	RestoreBackupContextInput() *GoogleSqlDatabaseInstanceRestoreBackupContext
 	RootPassword() *string
@@ -163,6 +165,7 @@ type GoogleSqlDatabaseInstance interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutClone(value *GoogleSqlDatabaseInstanceClone)
 	PutReplicaConfiguration(value *GoogleSqlDatabaseInstanceReplicaConfiguration)
+	PutReplicationCluster(value *GoogleSqlDatabaseInstanceReplicationCluster)
 	PutRestoreBackupContext(value *GoogleSqlDatabaseInstanceRestoreBackupContext)
 	PutSettings(value *GoogleSqlDatabaseInstanceSettings)
 	PutTimeouts(value *GoogleSqlDatabaseInstanceTimeouts)
@@ -181,6 +184,7 @@ type GoogleSqlDatabaseInstance interface {
 	ResetRegion()
 	ResetReplicaConfiguration()
 	ResetReplicaNames()
+	ResetReplicationCluster()
 	ResetRestoreBackupContext()
 	ResetRootPassword()
 	ResetSettings()
@@ -673,6 +677,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) ReplicaNamesInput() *[]*string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) ReplicationCluster() GoogleSqlDatabaseInstanceReplicationClusterOutputReference {
+	var returns GoogleSqlDatabaseInstanceReplicationClusterOutputReference
+	_jsii_.Get(
+		j,
+		"replicationCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) ReplicationClusterInput() *GoogleSqlDatabaseInstanceReplicationCluster {
+	var returns *GoogleSqlDatabaseInstanceReplicationCluster
+	_jsii_.Get(
+		j,
+		"replicationClusterInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstance) RestoreBackupContext() GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference {
 	var returns GoogleSqlDatabaseInstanceRestoreBackupContextOutputReference
 	_jsii_.Get(
@@ -814,7 +838,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_sql_database_instance google_sql_database_instance} Resource.
 func NewGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, config *GoogleSqlDatabaseInstanceConfig) GoogleSqlDatabaseInstance {
 	_init_.Initialize()
 
@@ -832,7 +856,7 @@ func NewGoogleSqlDatabaseInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_sql_database_instance google_sql_database_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_sql_database_instance google_sql_database_instance} Resource.
 func NewGoogleSqlDatabaseInstance_Override(g GoogleSqlDatabaseInstance, scope constructs.Construct, id *string, config *GoogleSqlDatabaseInstanceConfig) {
 	_init_.Initialize()
 
@@ -1418,6 +1442,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) PutReplicaConfiguration(value *Goo
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) PutReplicationCluster(value *GoogleSqlDatabaseInstanceReplicationCluster) {
+	if err := g.validatePutReplicationClusterParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putReplicationCluster",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstance) PutRestoreBackupContext(value *GoogleSqlDatabaseInstanceRestoreBackupContext) {
 	if err := g.validatePutRestoreBackupContextParameters(value); err != nil {
 		panic(err)
@@ -1551,6 +1586,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) ResetReplicaNames() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetReplicaNames",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) ResetReplicationCluster() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetReplicationCluster",
 		nil, // no parameters
 	)
 }

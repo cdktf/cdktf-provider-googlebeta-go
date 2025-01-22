@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
 type GoogleBigqueryAnalyticsHubListing interface {
 	cdktf.TerraformResource
 	BigqueryDataset() GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference
@@ -700,7 +700,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewGoogleBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingConfig) GoogleBigqueryAnalyticsHubListing {
 	_init_.Initialize()
 
@@ -718,7 +718,7 @@ func NewGoogleBigqueryAnalyticsHubListing(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewGoogleBigqueryAnalyticsHubListing_Override(g GoogleBigqueryAnalyticsHubListing, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingConfig) {
 	_init_.Initialize()
 

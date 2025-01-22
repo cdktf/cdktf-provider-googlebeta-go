@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config}.
 type GoogleIdentityPlatformTenantOauthIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -521,7 +521,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantOauthIdpConfig) TimeoutsInput() i
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource.
 func NewGoogleIdentityPlatformTenantOauthIdpConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformTenantOauthIdpConfigConfig) GoogleIdentityPlatformTenantOauthIdpConfig {
 	_init_.Initialize()
 
@@ -539,7 +539,7 @@ func NewGoogleIdentityPlatformTenantOauthIdpConfig(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_identity_platform_tenant_oauth_idp_config google_identity_platform_tenant_oauth_idp_config} Resource.
 func NewGoogleIdentityPlatformTenantOauthIdpConfig_Override(g GoogleIdentityPlatformTenantOauthIdpConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformTenantOauthIdpConfigConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_service_networking_vpc_service_controls google_service_networking_vpc_service_controls}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_service_networking_vpc_service_controls google_service_networking_vpc_service_controls}.
 type GoogleServiceNetworkingVpcServiceControls interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -427,7 +427,7 @@ func (j *jsiiProxy_GoogleServiceNetworkingVpcServiceControls) TimeoutsInput() in
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_service_networking_vpc_service_controls google_service_networking_vpc_service_controls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_service_networking_vpc_service_controls google_service_networking_vpc_service_controls} Resource.
 func NewGoogleServiceNetworkingVpcServiceControls(scope constructs.Construct, id *string, config *GoogleServiceNetworkingVpcServiceControlsConfig) GoogleServiceNetworkingVpcServiceControls {
 	_init_.Initialize()
 
@@ -445,7 +445,7 @@ func NewGoogleServiceNetworkingVpcServiceControls(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_service_networking_vpc_service_controls google_service_networking_vpc_service_controls} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_service_networking_vpc_service_controls google_service_networking_vpc_service_controls} Resource.
 func NewGoogleServiceNetworkingVpcServiceControls_Override(g GoogleServiceNetworkingVpcServiceControls, scope constructs.Construct, id *string, config *GoogleServiceNetworkingVpcServiceControlsConfig) {
 	_init_.Initialize()
 

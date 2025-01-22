@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_bigtable_authorized_view google_bigtable_authorized_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_bigtable_authorized_view google_bigtable_authorized_view}.
 type GoogleBigtableAuthorizedView interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -475,7 +475,7 @@ func (j *jsiiProxy_GoogleBigtableAuthorizedView) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_bigtable_authorized_view google_bigtable_authorized_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_bigtable_authorized_view google_bigtable_authorized_view} Resource.
 func NewGoogleBigtableAuthorizedView(scope constructs.Construct, id *string, config *GoogleBigtableAuthorizedViewConfig) GoogleBigtableAuthorizedView {
 	_init_.Initialize()
 
@@ -493,7 +493,7 @@ func NewGoogleBigtableAuthorizedView(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_bigtable_authorized_view google_bigtable_authorized_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_bigtable_authorized_view google_bigtable_authorized_view} Resource.
 func NewGoogleBigtableAuthorizedView_Override(g GoogleBigtableAuthorizedView, scope constructs.Construct, id *string, config *GoogleBigtableAuthorizedViewConfig) {
 	_init_.Initialize()
 

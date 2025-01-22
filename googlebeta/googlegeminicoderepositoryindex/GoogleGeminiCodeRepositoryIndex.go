@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index}.
 type GoogleGeminiCodeRepositoryIndex interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -36,6 +36,9 @@ type GoogleGeminiCodeRepositoryIndex interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	EffectiveLabels() cdktf.StringMap
+	ForceDestroy() interface{}
+	SetForceDestroy(val interface{})
+	ForceDestroyInput() interface{}
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -131,6 +134,7 @@ type GoogleGeminiCodeRepositoryIndex interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleGeminiCodeRepositoryIndexTimeouts)
+	ResetForceDestroy()
 	ResetId()
 	ResetKmsKey()
 	ResetLabels()
@@ -242,6 +246,26 @@ func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex) EffectiveLabels() cdktf.Stri
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex) ForceDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex) ForceDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceDestroyInput",
 		&returns,
 	)
 	return returns
@@ -518,7 +542,7 @@ func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index} Resource.
 func NewGoogleGeminiCodeRepositoryIndex(scope constructs.Construct, id *string, config *GoogleGeminiCodeRepositoryIndexConfig) GoogleGeminiCodeRepositoryIndex {
 	_init_.Initialize()
 
@@ -536,7 +560,7 @@ func NewGoogleGeminiCodeRepositoryIndex(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_gemini_code_repository_index google_gemini_code_repository_index} Resource.
 func NewGoogleGeminiCodeRepositoryIndex_Override(g GoogleGeminiCodeRepositoryIndex, scope constructs.Construct, id *string, config *GoogleGeminiCodeRepositoryIndexConfig) {
 	_init_.Initialize()
 
@@ -584,6 +608,17 @@ func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex)SetDependsOn(val *[]*string) 
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGeminiCodeRepositoryIndex)SetForceDestroy(val interface{}) {
+	if err := j.validateSetForceDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceDestroy",
 		val,
 	)
 }
@@ -1042,6 +1077,14 @@ func (g *jsiiProxy_GoogleGeminiCodeRepositoryIndex) PutTimeouts(value *GoogleGem
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGeminiCodeRepositoryIndex) ResetForceDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForceDestroy",
+		nil, // no parameters
 	)
 }
 

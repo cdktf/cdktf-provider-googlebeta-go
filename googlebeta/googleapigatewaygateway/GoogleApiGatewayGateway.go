@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway}.
 type GoogleApiGatewayGateway interface {
 	cdktf.TerraformResource
 	ApiConfig() *string
@@ -520,7 +520,7 @@ func (j *jsiiProxy_GoogleApiGatewayGateway) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource.
 func NewGoogleApiGatewayGateway(scope constructs.Construct, id *string, config *GoogleApiGatewayGatewayConfig) GoogleApiGatewayGateway {
 	_init_.Initialize()
 
@@ -538,7 +538,7 @@ func NewGoogleApiGatewayGateway(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.16.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_api_gateway_gateway google_api_gateway_gateway} Resource.
 func NewGoogleApiGatewayGateway_Override(g GoogleApiGatewayGateway, scope constructs.Construct, id *string, config *GoogleApiGatewayGatewayConfig) {
 	_init_.Initialize()
 
