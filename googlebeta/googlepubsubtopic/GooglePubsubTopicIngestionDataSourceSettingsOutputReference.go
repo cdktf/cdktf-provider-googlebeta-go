@@ -15,6 +15,8 @@ type GooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	cdktf.ComplexObject
 	AwsKinesis() GooglePubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference
 	AwsKinesisInput() *GooglePubsubTopicIngestionDataSourceSettingsAwsKinesis
+	AzureEventHubs() GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference
+	AzureEventHubsInput() *GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs
 	CloudStorage() GooglePubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference
 	CloudStorageInput() *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage
 	// the index of the complex object in a list.
@@ -71,9 +73,11 @@ type GooglePubsubTopicIngestionDataSourceSettingsOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAwsKinesis(value *GooglePubsubTopicIngestionDataSourceSettingsAwsKinesis)
+	PutAzureEventHubs(value *GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs)
 	PutCloudStorage(value *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage)
 	PutPlatformLogsSettings(value *GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettings)
 	ResetAwsKinesis()
+	ResetAzureEventHubs()
 	ResetCloudStorage()
 	ResetPlatformLogsSettings()
 	// Produce the Token's value at resolution time.
@@ -106,6 +110,26 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	_jsii_.Get(
 		j,
 		"awsKinesisInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) AzureEventHubs() GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference {
+	var returns GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference
+	_jsii_.Get(
+		j,
+		"azureEventHubs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) AzureEventHubsInput() *GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs {
+	var returns *GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs
+	_jsii_.Get(
+		j,
+		"azureEventHubsInput",
 		&returns,
 	)
 	return returns
@@ -501,6 +525,17 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	)
 }
 
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) PutAzureEventHubs(value *GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs) {
+	if err := g.validatePutAzureEventHubsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAzureEventHubs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) PutCloudStorage(value *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage) {
 	if err := g.validatePutCloudStorageParameters(value); err != nil {
 		panic(err)
@@ -527,6 +562,14 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	_jsii_.InvokeVoid(
 		g,
 		"resetAwsKinesis",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) ResetAzureEventHubs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAzureEventHubs",
 		nil, // no parameters
 	)
 }

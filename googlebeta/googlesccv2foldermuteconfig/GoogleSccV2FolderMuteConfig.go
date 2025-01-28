@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_v2_folder_mute_config google_scc_v2_folder_mute_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_scc_v2_folder_mute_config google_scc_v2_folder_mute_config}.
 type GoogleSccV2FolderMuteConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -518,7 +518,7 @@ func (j *jsiiProxy_GoogleSccV2FolderMuteConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_v2_folder_mute_config google_scc_v2_folder_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_scc_v2_folder_mute_config google_scc_v2_folder_mute_config} Resource.
 func NewGoogleSccV2FolderMuteConfig(scope constructs.Construct, id *string, config *GoogleSccV2FolderMuteConfigConfig) GoogleSccV2FolderMuteConfig {
 	_init_.Initialize()
 
@@ -536,7 +536,7 @@ func NewGoogleSccV2FolderMuteConfig(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_scc_v2_folder_mute_config google_scc_v2_folder_mute_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_scc_v2_folder_mute_config google_scc_v2_folder_mute_config} Resource.
 func NewGoogleSccV2FolderMuteConfig_Override(g GoogleSccV2FolderMuteConfig, scope constructs.Construct, id *string, config *GoogleSccV2FolderMuteConfigConfig) {
 	_init_.Initialize()
 

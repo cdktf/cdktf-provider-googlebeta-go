@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -42,6 +42,9 @@ type GoogleBetaProvider interface {
 	ApigeeCustomEndpoint() *string
 	SetApigeeCustomEndpoint(val *string)
 	ApigeeCustomEndpointInput() *string
+	ApihubCustomEndpoint() *string
+	SetApihubCustomEndpoint(val *string)
+	ApihubCustomEndpointInput() *string
 	ApikeysCustomEndpoint() *string
 	SetApikeysCustomEndpoint(val *string)
 	ApikeysCustomEndpointInput() *string
@@ -598,6 +601,7 @@ type GoogleBetaProvider interface {
 	ResetAlloydbCustomEndpoint()
 	ResetApiGatewayCustomEndpoint()
 	ResetApigeeCustomEndpoint()
+	ResetApihubCustomEndpoint()
 	ResetApikeysCustomEndpoint()
 	ResetAppEngineCustomEndpoint()
 	ResetApphubCustomEndpoint()
@@ -968,6 +972,26 @@ func (j *jsiiProxy_GoogleBetaProvider) ApigeeCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"apigeeCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ApihubCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apihubCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ApihubCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"apihubCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4554,7 +4578,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4572,7 +4596,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -4654,6 +4678,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetApigeeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"apigeeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetApihubCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"apihubCustomEndpoint",
 		val,
 	)
 }
@@ -6249,6 +6281,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetApigeeCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetApigeeCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetApihubCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetApihubCustomEndpoint",
 		nil, // no parameters
 	)
 }

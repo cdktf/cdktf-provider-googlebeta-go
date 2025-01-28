@@ -1,0 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package googleredisclusterusercreatedconnections
+
+
+type GoogleRedisClusterUserCreatedConnectionsClusterEndpointsConnections struct {
+	// psc_connection block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_redis_cluster_user_created_connections#psc_connection GoogleRedisClusterUserCreatedConnections#psc_connection}
+	PscConnection *GoogleRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnection `field:"optional" json:"pscConnection" yaml:"pscConnection"`
+}
+

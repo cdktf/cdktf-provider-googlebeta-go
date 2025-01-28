@@ -163,6 +163,10 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetProvisionersParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetTagsParameters(val *map[string]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleFilestoreInstance) validateSetTierParameters(val *string) error {
 	return nil
 }

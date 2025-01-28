@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_migration_center_preference_set google_migration_center_preference_set}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_migration_center_preference_set google_migration_center_preference_set}.
 type GoogleMigrationCenterPreferenceSet interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_GoogleMigrationCenterPreferenceSet) VirtualMachinePreferences
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_migration_center_preference_set google_migration_center_preference_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_migration_center_preference_set google_migration_center_preference_set} Resource.
 func NewGoogleMigrationCenterPreferenceSet(scope constructs.Construct, id *string, config *GoogleMigrationCenterPreferenceSetConfig) GoogleMigrationCenterPreferenceSet {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewGoogleMigrationCenterPreferenceSet(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.17.0/docs/resources/google_migration_center_preference_set google_migration_center_preference_set} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_migration_center_preference_set google_migration_center_preference_set} Resource.
 func NewGoogleMigrationCenterPreferenceSet_Override(g GoogleMigrationCenterPreferenceSet, scope constructs.Construct, id *string, config *GoogleMigrationCenterPreferenceSetConfig) {
 	_init_.Initialize()
 
