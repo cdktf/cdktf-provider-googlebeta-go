@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_instance_iam_policy google_compute_instance_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_compute_instance_iam_policy google_compute_instance_iam_policy}.
 type GoogleComputeInstanceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleComputeInstanceIamPolicy) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_instance_iam_policy google_compute_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_compute_instance_iam_policy google_compute_instance_iam_policy} Resource.
 func NewGoogleComputeInstanceIamPolicy(scope constructs.Construct, id *string, config *GoogleComputeInstanceIamPolicyConfig) GoogleComputeInstanceIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleComputeInstanceIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_compute_instance_iam_policy google_compute_instance_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_compute_instance_iam_policy google_compute_instance_iam_policy} Resource.
 func NewGoogleComputeInstanceIamPolicy_Override(g GoogleComputeInstanceIamPolicy, scope constructs.Construct, id *string, config *GoogleComputeInstanceIamPolicyConfig) {
 	_init_.Initialize()
 

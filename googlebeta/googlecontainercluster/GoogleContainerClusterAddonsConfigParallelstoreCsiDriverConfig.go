@@ -5,7 +5,7 @@ package googlecontainercluster
 
 
 type GoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_container_cluster#enabled GoogleContainerCluster#enabled}.
 	Enabled interface{} `field:"required" json:"enabled" yaml:"enabled"`
 }
 

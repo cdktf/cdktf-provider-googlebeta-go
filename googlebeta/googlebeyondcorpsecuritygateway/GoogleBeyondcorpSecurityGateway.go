@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_beyondcorp_security_gateway google_beyondcorp_security_gateway}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_beyondcorp_security_gateway google_beyondcorp_security_gateway}.
 type GoogleBeyondcorpSecurityGateway interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -507,7 +507,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGateway) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource.
 func NewGoogleBeyondcorpSecurityGateway(scope constructs.Construct, id *string, config *GoogleBeyondcorpSecurityGatewayConfig) GoogleBeyondcorpSecurityGateway {
 	_init_.Initialize()
 
@@ -525,7 +525,7 @@ func NewGoogleBeyondcorpSecurityGateway(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.0/docs/resources/google_beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_beyondcorp_security_gateway google_beyondcorp_security_gateway} Resource.
 func NewGoogleBeyondcorpSecurityGateway_Override(g GoogleBeyondcorpSecurityGateway, scope constructs.Construct, id *string, config *GoogleBeyondcorpSecurityGatewayConfig) {
 	_init_.Initialize()
 
