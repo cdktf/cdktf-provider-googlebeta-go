@@ -183,6 +183,10 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetMaxRunDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validateSetMetadataParameters(val *map[string]*string) error {
 	return nil
 }

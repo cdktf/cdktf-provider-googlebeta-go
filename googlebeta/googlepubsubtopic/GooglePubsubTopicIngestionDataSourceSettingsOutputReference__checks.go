@@ -104,6 +104,17 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutAwsMskParameters(value *GooglePubsubTopicIngestionDataSourceSettingsAwsMsk) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutAzureEventHubsParameters(value *GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubs) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
@@ -116,6 +127,17 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) 
 }
 
 func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutCloudStorageParameters(value *GooglePubsubTopicIngestionDataSourceSettingsCloudStorage) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsOutputReference) validatePutConfluentCloudParameters(value *GooglePubsubTopicIngestionDataSourceSettingsConfluentCloud) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}

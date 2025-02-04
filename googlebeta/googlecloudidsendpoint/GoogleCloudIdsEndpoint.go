@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloud_ids_endpoint google_cloud_ids_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloud_ids_endpoint google_cloud_ids_endpoint}.
 type GoogleCloudIdsEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -542,7 +542,7 @@ func (j *jsiiProxy_GoogleCloudIdsEndpoint) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
 func NewGoogleCloudIdsEndpoint(scope constructs.Construct, id *string, config *GoogleCloudIdsEndpointConfig) GoogleCloudIdsEndpoint {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewGoogleCloudIdsEndpoint(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloud_ids_endpoint google_cloud_ids_endpoint} Resource.
 func NewGoogleCloudIdsEndpoint_Override(g GoogleCloudIdsEndpoint, scope constructs.Construct, id *string, config *GoogleCloudIdsEndpointConfig) {
 	_init_.Initialize()
 

@@ -99,6 +99,10 @@ func (g *jsiiProxy_GoogleBigqueryTable) validatePutRangePartitioningParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryTable) validatePutSchemaForeignTypeInfoParameters(value *GoogleBigqueryTableSchemaForeignTypeInfo) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryTable) validatePutTableConstraintsParameters(value *GoogleBigqueryTableTableConstraints) error {
 	return nil
 }

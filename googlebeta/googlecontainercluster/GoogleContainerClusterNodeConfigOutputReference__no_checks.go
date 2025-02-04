@@ -183,6 +183,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetM
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetMaxRunDurationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validateSetMetadataParameters(val *map[string]*string) error {
 	return nil
 }

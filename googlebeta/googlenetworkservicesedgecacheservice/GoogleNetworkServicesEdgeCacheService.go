@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service}.
 type GoogleNetworkServicesEdgeCacheService interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -664,7 +664,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheService) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service} Resource.
 func NewGoogleNetworkServicesEdgeCacheService(scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheServiceConfig) GoogleNetworkServicesEdgeCacheService {
 	_init_.Initialize()
 
@@ -682,7 +682,7 @@ func NewGoogleNetworkServicesEdgeCacheService(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_network_services_edge_cache_service google_network_services_edge_cache_service} Resource.
 func NewGoogleNetworkServicesEdgeCacheService_Override(g GoogleNetworkServicesEdgeCacheService, scope constructs.Construct, id *string, config *GoogleNetworkServicesEdgeCacheServiceConfig) {
 	_init_.Initialize()
 

@@ -219,6 +219,10 @@ func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetRouterApplianceInstancePa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetZeroAdvertisedRoutePriorityParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRouterPeer) validateSetZeroCustomLearnedRoutePriorityParameters(val interface{}) error {
 	return nil
 }

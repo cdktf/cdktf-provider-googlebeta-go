@@ -89,6 +89,9 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
+	MaxRunDuration() *string
+	SetMaxRunDuration(val *string)
+	MaxRunDurationInput() *string
 	Metadata() *map[string]*string
 	SetMetadata(val *map[string]*string)
 	MetadataInput() *map[string]*string
@@ -211,6 +214,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
+	ResetMaxRunDuration()
 	ResetMetadata()
 	ResetMinCpuPlatform()
 	ResetNodeGroup()
@@ -764,6 +768,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Mach
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) MaxRunDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Metadata() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1311,6 +1335,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference)SetMa
 	_jsii_.Set(
 		j,
 		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference)SetMaxRunDuration(val *string) {
+	if err := j.validateSetMaxRunDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRunDuration",
 		val,
 	)
 }
@@ -2044,6 +2079,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetMachineType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetMaxRunDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxRunDuration",
 		nil, // no parameters
 	)
 }

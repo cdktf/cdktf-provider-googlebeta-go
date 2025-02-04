@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue}.
 type GoogleCloudTasksQueue interface {
 	cdktf.TerraformResource
 	AppEngineRoutingOverride() GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference
@@ -525,7 +525,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueue) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewGoogleCloudTasksQueue(scope constructs.Construct, id *string, config *GoogleCloudTasksQueueConfig) GoogleCloudTasksQueue {
 	_init_.Initialize()
 
@@ -543,7 +543,7 @@ func NewGoogleCloudTasksQueue(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_cloud_tasks_queue google_cloud_tasks_queue} Resource.
 func NewGoogleCloudTasksQueue_Override(g GoogleCloudTasksQueue, scope constructs.Construct, id *string, config *GoogleCloudTasksQueueConfig) {
 	_init_.Initialize()
 

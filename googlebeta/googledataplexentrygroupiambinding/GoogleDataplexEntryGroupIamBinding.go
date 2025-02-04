@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_entry_group_iam_binding google_dataplex_entry_group_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_entry_group_iam_binding google_dataplex_entry_group_iam_binding}.
 type GoogleDataplexEntryGroupIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleDataplexEntryGroupIamBinding) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_entry_group_iam_binding google_dataplex_entry_group_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_entry_group_iam_binding google_dataplex_entry_group_iam_binding} Resource.
 func NewGoogleDataplexEntryGroupIamBinding(scope constructs.Construct, id *string, config *GoogleDataplexEntryGroupIamBindingConfig) GoogleDataplexEntryGroupIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleDataplexEntryGroupIamBinding(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.18.1/docs/resources/google_dataplex_entry_group_iam_binding google_dataplex_entry_group_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataplex_entry_group_iam_binding google_dataplex_entry_group_iam_binding} Resource.
 func NewGoogleDataplexEntryGroupIamBinding_Override(g GoogleDataplexEntryGroupIamBinding, scope constructs.Construct, id *string, config *GoogleDataplexEntryGroupIamBindingConfig) {
 	_init_.Initialize()
 

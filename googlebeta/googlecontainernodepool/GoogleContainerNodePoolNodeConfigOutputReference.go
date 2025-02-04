@@ -89,6 +89,9 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	MachineType() *string
 	SetMachineType(val *string)
 	MachineTypeInput() *string
+	MaxRunDuration() *string
+	SetMaxRunDuration(val *string)
+	MaxRunDurationInput() *string
 	Metadata() *map[string]*string
 	SetMetadata(val *map[string]*string)
 	MetadataInput() *map[string]*string
@@ -211,6 +214,7 @@ type GoogleContainerNodePoolNodeConfigOutputReference interface {
 	ResetLocalSsdEncryptionMode()
 	ResetLoggingVariant()
 	ResetMachineType()
+	ResetMaxRunDuration()
 	ResetMetadata()
 	ResetMinCpuPlatform()
 	ResetNodeGroup()
@@ -764,6 +768,26 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) MachineType
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) MaxRunDuration() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDuration",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) MaxRunDurationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"maxRunDurationInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) Metadata() *map[string]*string {
 	var returns *map[string]*string
 	_jsii_.Get(
@@ -1311,6 +1335,17 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference)SetMachineTy
 	_jsii_.Set(
 		j,
 		"machineType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference)SetMaxRunDuration(val *string) {
+	if err := j.validateSetMaxRunDurationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"maxRunDuration",
 		val,
 	)
 }
@@ -2044,6 +2079,14 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetMachin
 	_jsii_.InvokeVoid(
 		g,
 		"resetMachineType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) ResetMaxRunDuration() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaxRunDuration",
 		nil, // no parameters
 	)
 }
