@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy}.
 type GoogleBigqueryDatasetIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetIamPolicy) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
 func NewGoogleBigqueryDatasetIamPolicy(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetIamPolicyConfig) GoogleBigqueryDatasetIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleBigqueryDatasetIamPolicy(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_bigquery_dataset_iam_policy google_bigquery_dataset_iam_policy} Resource.
 func NewGoogleBigqueryDatasetIamPolicy_Override(g GoogleBigqueryDatasetIamPolicy, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetIamPolicyConfig) {
 	_init_.Initialize()
 

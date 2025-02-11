@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validatePutFileSharesParameters(valu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) validatePutInitialReplicationParameters(value *GoogleFilestoreInstanceInitialReplication) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) validatePutNetworksParameters(value interface{}) error {
 	return nil
 }

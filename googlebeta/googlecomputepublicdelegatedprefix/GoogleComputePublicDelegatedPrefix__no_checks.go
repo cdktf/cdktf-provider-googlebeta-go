@@ -95,6 +95,10 @@ func validateGoogleComputePublicDelegatedPrefix_IsTerraformResourceParameters(x 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetAllocatablePrefixLengthParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetIsLiveMigratio
 }
 
 func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputePublicDelegatedPrefix) validateSetModeParameters(val *string) error {
 	return nil
 }
 

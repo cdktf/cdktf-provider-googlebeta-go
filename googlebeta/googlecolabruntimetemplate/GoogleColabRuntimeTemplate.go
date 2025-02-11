@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template google_colab_runtime_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_colab_runtime_template google_colab_runtime_template}.
 type GoogleColabRuntimeTemplate interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -94,6 +94,8 @@ type GoogleColabRuntimeTemplate interface {
 	RawOverrides() interface{}
 	ShieldedVmConfig() GoogleColabRuntimeTemplateShieldedVmConfigOutputReference
 	ShieldedVmConfigInput() *GoogleColabRuntimeTemplateShieldedVmConfig
+	SoftwareConfig() GoogleColabRuntimeTemplateSoftwareConfigOutputReference
+	SoftwareConfigInput() *GoogleColabRuntimeTemplateSoftwareConfig
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	TerraformLabels() cdktf.StringMap
@@ -153,6 +155,7 @@ type GoogleColabRuntimeTemplate interface {
 	PutMachineSpec(value *GoogleColabRuntimeTemplateMachineSpec)
 	PutNetworkSpec(value *GoogleColabRuntimeTemplateNetworkSpec)
 	PutShieldedVmConfig(value *GoogleColabRuntimeTemplateShieldedVmConfig)
+	PutSoftwareConfig(value *GoogleColabRuntimeTemplateSoftwareConfig)
 	PutTimeouts(value *GoogleColabRuntimeTemplateTimeouts)
 	ResetDataPersistentDiskSpec()
 	ResetDescription()
@@ -170,6 +173,7 @@ type GoogleColabRuntimeTemplate interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetShieldedVmConfig()
+	ResetSoftwareConfig()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -629,6 +633,26 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplate) ShieldedVmConfigInput() *GoogleCo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleColabRuntimeTemplate) SoftwareConfig() GoogleColabRuntimeTemplateSoftwareConfigOutputReference {
+	var returns GoogleColabRuntimeTemplateSoftwareConfigOutputReference
+	_jsii_.Get(
+		j,
+		"softwareConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleColabRuntimeTemplate) SoftwareConfigInput() *GoogleColabRuntimeTemplateSoftwareConfig {
+	var returns *GoogleColabRuntimeTemplateSoftwareConfig
+	_jsii_.Get(
+		j,
+		"softwareConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleColabRuntimeTemplate) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -690,7 +714,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template google_colab_runtime_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_colab_runtime_template google_colab_runtime_template} Resource.
 func NewGoogleColabRuntimeTemplate(scope constructs.Construct, id *string, config *GoogleColabRuntimeTemplateConfig) GoogleColabRuntimeTemplate {
 	_init_.Initialize()
 
@@ -708,7 +732,7 @@ func NewGoogleColabRuntimeTemplate(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_colab_runtime_template google_colab_runtime_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_colab_runtime_template google_colab_runtime_template} Resource.
 func NewGoogleColabRuntimeTemplate_Override(g GoogleColabRuntimeTemplate, scope constructs.Construct, id *string, config *GoogleColabRuntimeTemplateConfig) {
 	_init_.Initialize()
 
@@ -1305,6 +1329,17 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplate) PutShieldedVmConfig(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleColabRuntimeTemplate) PutSoftwareConfig(value *GoogleColabRuntimeTemplateSoftwareConfig) {
+	if err := g.validatePutSoftwareConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSoftwareConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleColabRuntimeTemplate) PutTimeouts(value *GoogleColabRuntimeTemplateTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1424,6 +1459,14 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplate) ResetShieldedVmConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetShieldedVmConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleColabRuntimeTemplate) ResetSoftwareConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSoftwareConfig",
 		nil, // no parameters
 	)
 }

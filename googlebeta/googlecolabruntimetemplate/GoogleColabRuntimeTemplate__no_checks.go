@@ -103,6 +103,10 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplate) validatePutShieldedVmConfigParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleColabRuntimeTemplate) validatePutSoftwareConfigParameters(value *GoogleColabRuntimeTemplateSoftwareConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleColabRuntimeTemplate) validatePutTimeoutsParameters(value *GoogleColabRuntimeTemplateTimeouts) error {
 	return nil
 }

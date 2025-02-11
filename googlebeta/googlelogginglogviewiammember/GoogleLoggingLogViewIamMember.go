@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_log_view_iam_member google_logging_log_view_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_log_view_iam_member google_logging_log_view_iam_member}.
 type GoogleLoggingLogViewIamMember interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_GoogleLoggingLogViewIamMember) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_log_view_iam_member google_logging_log_view_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_log_view_iam_member google_logging_log_view_iam_member} Resource.
 func NewGoogleLoggingLogViewIamMember(scope constructs.Construct, id *string, config *GoogleLoggingLogViewIamMemberConfig) GoogleLoggingLogViewIamMember {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewGoogleLoggingLogViewIamMember(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_logging_log_view_iam_member google_logging_log_view_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_logging_log_view_iam_member google_logging_log_view_iam_member} Resource.
 func NewGoogleLoggingLogViewIamMember_Override(g GoogleLoggingLogViewIamMember, scope constructs.Construct, id *string, config *GoogleLoggingLogViewIamMemberConfig) {
 	_init_.Initialize()
 

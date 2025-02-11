@@ -59,6 +59,10 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteR
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) validatePutRouteMethodsParameters(value *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleRouteMethods) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleOutputReference) validatePutUrlRedirectParameters(value *GoogleNetworkServicesEdgeCacheServiceRoutingPathMatcherRouteRuleUrlRedirect) error {
 	return nil
 }

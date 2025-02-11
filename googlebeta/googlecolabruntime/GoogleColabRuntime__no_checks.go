@@ -99,6 +99,10 @@ func validateGoogleColabRuntime_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_GoogleColabRuntime) validateSetAutoUpgradeParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleColabRuntime) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (j *jsiiProxy_GoogleColabRuntime) validateSetCountParameters(val interface{
 }
 
 func (j *jsiiProxy_GoogleColabRuntime) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleColabRuntime) validateSetDesiredStateParameters(val *string) error {
 	return nil
 }
 

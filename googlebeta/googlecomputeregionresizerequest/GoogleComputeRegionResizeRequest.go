@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request}.
 type GoogleComputeRegionResizeRequest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -140,6 +140,7 @@ type GoogleComputeRegionResizeRequest interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetRegion()
 	ResetRequestedRunDuration()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -531,7 +532,7 @@ func (j *jsiiProxy_GoogleComputeRegionResizeRequest) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request} Resource.
 func NewGoogleComputeRegionResizeRequest(scope constructs.Construct, id *string, config *GoogleComputeRegionResizeRequestConfig) GoogleComputeRegionResizeRequest {
 	_init_.Initialize()
 
@@ -549,7 +550,7 @@ func NewGoogleComputeRegionResizeRequest(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request} Resource.
 func NewGoogleComputeRegionResizeRequest_Override(g GoogleComputeRegionResizeRequest, scope constructs.Construct, id *string, config *GoogleComputeRegionResizeRequestConfig) {
 	_init_.Initialize()
 
@@ -1108,6 +1109,14 @@ func (g *jsiiProxy_GoogleComputeRegionResizeRequest) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionResizeRequest) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

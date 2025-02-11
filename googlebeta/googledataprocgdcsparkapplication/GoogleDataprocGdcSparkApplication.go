@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataproc_gdc_spark_application google_dataproc_gdc_spark_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_dataproc_gdc_spark_application google_dataproc_gdc_spark_application}.
 type GoogleDataprocGdcSparkApplication interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -847,7 +847,7 @@ func (j *jsiiProxy_GoogleDataprocGdcSparkApplication) VersionInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataproc_gdc_spark_application google_dataproc_gdc_spark_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_dataproc_gdc_spark_application google_dataproc_gdc_spark_application} Resource.
 func NewGoogleDataprocGdcSparkApplication(scope constructs.Construct, id *string, config *GoogleDataprocGdcSparkApplicationConfig) GoogleDataprocGdcSparkApplication {
 	_init_.Initialize()
 
@@ -865,7 +865,7 @@ func NewGoogleDataprocGdcSparkApplication(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.19.0/docs/resources/google_dataproc_gdc_spark_application google_dataproc_gdc_spark_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_dataproc_gdc_spark_application google_dataproc_gdc_spark_application} Resource.
 func NewGoogleDataprocGdcSparkApplication_Override(g GoogleDataprocGdcSparkApplication, scope constructs.Construct, id *string, config *GoogleDataprocGdcSparkApplicationConfig) {
 	_init_.Initialize()
 
