@@ -32,6 +32,7 @@ type DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference interface 
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GracefulShutdown() DataGoogleComputeRegionInstanceTemplateSchedulingGracefulShutdownList
 	HostErrorTimeoutSeconds() *float64
 	InstanceTerminationAction() *string
 	InternalValue() *DataGoogleComputeRegionInstanceTemplateScheduling
@@ -147,6 +148,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputRefere
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingOutputReference) GracefulShutdown() DataGoogleComputeRegionInstanceTemplateSchedulingGracefulShutdownList {
+	var returns DataGoogleComputeRegionInstanceTemplateSchedulingGracefulShutdownList
+	_jsii_.Get(
+		j,
+		"gracefulShutdown",
 		&returns,
 	)
 	return returns

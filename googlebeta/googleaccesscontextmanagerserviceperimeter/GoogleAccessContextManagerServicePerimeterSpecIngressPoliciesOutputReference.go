@@ -44,6 +44,9 @@ type GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesOutputReferenc
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	Title() *string
+	SetTitle(val *string)
+	TitleInput() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesOutputReferenc
 	PutIngressTo(value *GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressTo)
 	ResetIngressFrom()
 	ResetIngressTo()
+	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -197,6 +201,26 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	return returns
 }
 
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesOutputReference) Title() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"title",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesOutputReference) TitleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"titleInput",
+		&returns,
+	)
+	return returns
+}
+
 
 func NewGoogleAccessContextManagerServicePerimeterSpecIngressPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesOutputReference {
 	_init_.Initialize()
@@ -276,6 +300,17 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesOutputReference)SetTitle(val *string) {
+	if err := j.validateSetTitleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"title",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	_jsii_.InvokeVoid(
 		g,
 		"resetIngressTo",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesOutputReference) ResetTitle() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTitle",
 		nil, // no parameters
 	)
 }

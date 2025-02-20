@@ -123,6 +123,10 @@ func (j *jsiiProxy_GoogleNetworkServicesMesh) validateSetLifecycleParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesMesh) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesMesh) validateSetNameParameters(val *string) error {
 	return nil
 }

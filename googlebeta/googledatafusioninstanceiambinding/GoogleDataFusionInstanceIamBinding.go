@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_data_fusion_instance_iam_binding google_data_fusion_instance_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_data_fusion_instance_iam_binding google_data_fusion_instance_iam_binding}.
 type GoogleDataFusionInstanceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleDataFusionInstanceIamBinding) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_data_fusion_instance_iam_binding google_data_fusion_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_data_fusion_instance_iam_binding google_data_fusion_instance_iam_binding} Resource.
 func NewGoogleDataFusionInstanceIamBinding(scope constructs.Construct, id *string, config *GoogleDataFusionInstanceIamBindingConfig) GoogleDataFusionInstanceIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleDataFusionInstanceIamBinding(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.20.0/docs/resources/google_data_fusion_instance_iam_binding google_data_fusion_instance_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_data_fusion_instance_iam_binding google_data_fusion_instance_iam_binding} Resource.
 func NewGoogleDataFusionInstanceIamBinding_Override(g GoogleDataFusionInstanceIamBinding, scope constructs.Construct, id *string, config *GoogleDataFusionInstanceIamBindingConfig) {
 	_init_.Initialize()
 

@@ -63,6 +63,10 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validatePutConditionSqlParameters(value *GoogleMonitoringAlertPolicyConditionsConditionSql) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsOutputReference) validatePutConditionThresholdParameters(value *GoogleMonitoringAlertPolicyConditionsConditionThreshold) error {
 	return nil
 }
