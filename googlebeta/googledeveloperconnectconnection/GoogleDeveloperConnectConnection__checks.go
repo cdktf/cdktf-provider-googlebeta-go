@@ -207,6 +207,28 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutBitbucketCloudConfigParameters(value *GoogleDeveloperConnectConnectionBitbucketCloudConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutBitbucketDataCenterConfigParameters(value *GoogleDeveloperConnectConnectionBitbucketDataCenterConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutCryptoKeyConfigParameters(value *GoogleDeveloperConnectConnectionCryptoKeyConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

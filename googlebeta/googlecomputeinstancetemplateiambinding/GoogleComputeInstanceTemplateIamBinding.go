@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_instance_template_iam_binding google_compute_instance_template_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_instance_template_iam_binding google_compute_instance_template_iam_binding}.
 type GoogleComputeInstanceTemplateIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateIamBinding) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_instance_template_iam_binding google_compute_instance_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_instance_template_iam_binding google_compute_instance_template_iam_binding} Resource.
 func NewGoogleComputeInstanceTemplateIamBinding(scope constructs.Construct, id *string, config *GoogleComputeInstanceTemplateIamBindingConfig) GoogleComputeInstanceTemplateIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleComputeInstanceTemplateIamBinding(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_compute_instance_template_iam_binding google_compute_instance_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_compute_instance_template_iam_binding google_compute_instance_template_iam_binding} Resource.
 func NewGoogleComputeInstanceTemplateIamBinding_Override(g GoogleComputeInstanceTemplateIamBinding, scope constructs.Construct, id *string, config *GoogleComputeInstanceTemplateIamBindingConfig) {
 	_init_.Initialize()
 

@@ -75,6 +75,14 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnection) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutBitbucketCloudConfigParameters(value *GoogleDeveloperConnectConnectionBitbucketCloudConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutBitbucketDataCenterConfigParameters(value *GoogleDeveloperConnectConnectionBitbucketDataCenterConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDeveloperConnectConnection) validatePutCryptoKeyConfigParameters(value *GoogleDeveloperConnectConnectionCryptoKeyConfig) error {
 	return nil
 }

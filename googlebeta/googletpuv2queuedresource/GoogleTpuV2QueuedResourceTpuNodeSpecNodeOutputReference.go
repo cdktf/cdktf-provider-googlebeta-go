@@ -38,6 +38,8 @@ type GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleTpuV2QueuedResourceTpuNodeSpecNode
 	SetInternalValue(val *GoogleTpuV2QueuedResourceTpuNodeSpecNode)
+	NetworkConfig() GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference
+	NetworkConfigInput() *GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig
 	RuntimeVersion() *string
 	SetRuntimeVersion(val *string)
 	RuntimeVersionInput() *string
@@ -73,8 +75,10 @@ type GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutNetworkConfig(value *GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig)
 	ResetAcceleratorType()
 	ResetDescription()
+	ResetNetworkConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -175,6 +179,26 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) Inte
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) NetworkConfig() GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference {
+	var returns GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference
+	_jsii_.Get(
+		j,
+		"networkConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) NetworkConfigInput() *GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig {
+	var returns *GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig
+	_jsii_.Get(
+		j,
+		"networkConfigInput",
 		&returns,
 	)
 	return returns
@@ -522,6 +546,17 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) PutNetworkConfig(value *GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfig) {
+	if err := g.validatePutNetworkConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putNetworkConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) ResetAcceleratorType() {
 	_jsii_.InvokeVoid(
 		g,
@@ -534,6 +569,14 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeOutputReference) ResetNetworkConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkConfig",
 		nil, // no parameters
 	)
 }

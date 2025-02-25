@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/data-sources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version}.
 type DataGoogleParameterManagerParameterVersion interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -390,7 +390,7 @@ func (j *jsiiProxy_DataGoogleParameterManagerParameterVersion) UpdateTime() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/data-sources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version} Data Source.
 func NewDataGoogleParameterManagerParameterVersion(scope constructs.Construct, id *string, config *DataGoogleParameterManagerParameterVersionConfig) DataGoogleParameterManagerParameterVersion {
 	_init_.Initialize()
 
@@ -408,7 +408,7 @@ func NewDataGoogleParameterManagerParameterVersion(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/data-sources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/data-sources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version} Data Source.
 func NewDataGoogleParameterManagerParameterVersion_Override(d DataGoogleParameterManagerParameterVersion, scope constructs.Construct, id *string, config *DataGoogleParameterManagerParameterVersionConfig) {
 	_init_.Initialize()
 

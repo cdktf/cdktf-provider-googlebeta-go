@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment}.
 type GoogleEdgenetworkInterconnectAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -623,7 +623,7 @@ func (j *jsiiProxy_GoogleEdgenetworkInterconnectAttachment) ZoneInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
 func NewGoogleEdgenetworkInterconnectAttachment(scope constructs.Construct, id *string, config *GoogleEdgenetworkInterconnectAttachmentConfig) GoogleEdgenetworkInterconnectAttachment {
 	_init_.Initialize()
 
@@ -641,7 +641,7 @@ func NewGoogleEdgenetworkInterconnectAttachment(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_edgenetwork_interconnect_attachment google_edgenetwork_interconnect_attachment} Resource.
 func NewGoogleEdgenetworkInterconnectAttachment_Override(g GoogleEdgenetworkInterconnectAttachment, scope constructs.Construct, id *string, config *GoogleEdgenetworkInterconnectAttachmentConfig) {
 	_init_.Initialize()
 

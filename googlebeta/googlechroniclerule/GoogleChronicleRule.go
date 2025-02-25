@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_rule google_chronicle_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule google_chronicle_rule}.
 type GoogleChronicleRule interface {
 	cdktf.TerraformResource
 	AllowedRunFrequencies() *[]*string
@@ -689,7 +689,7 @@ func (j *jsiiProxy_GoogleChronicleRule) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_rule google_chronicle_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule google_chronicle_rule} Resource.
 func NewGoogleChronicleRule(scope constructs.Construct, id *string, config *GoogleChronicleRuleConfig) GoogleChronicleRule {
 	_init_.Initialize()
 
@@ -707,7 +707,7 @@ func NewGoogleChronicleRule(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_chronicle_rule google_chronicle_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_chronicle_rule google_chronicle_rule} Resource.
 func NewGoogleChronicleRule_Override(g GoogleChronicleRule, scope constructs.Construct, id *string, config *GoogleChronicleRuleConfig) {
 	_init_.Initialize()
 

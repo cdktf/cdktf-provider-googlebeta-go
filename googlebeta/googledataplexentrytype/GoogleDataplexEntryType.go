@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type}.
 type GoogleDataplexEntryType interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -640,7 +640,7 @@ func (j *jsiiProxy_GoogleDataplexEntryType) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type} Resource.
 func NewGoogleDataplexEntryType(scope constructs.Construct, id *string, config *GoogleDataplexEntryTypeConfig) GoogleDataplexEntryType {
 	_init_.Initialize()
 
@@ -658,7 +658,7 @@ func NewGoogleDataplexEntryType(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_dataplex_entry_type google_dataplex_entry_type} Resource.
 func NewGoogleDataplexEntryType_Override(g GoogleDataplexEntryType, scope constructs.Construct, id *string, config *GoogleDataplexEntryTypeConfig) {
 	_init_.Initialize()
 

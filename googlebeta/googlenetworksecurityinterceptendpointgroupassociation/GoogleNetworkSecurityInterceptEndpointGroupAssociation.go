@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_network_security_intercept_endpoint_group_association google_network_security_intercept_endpoint_group_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_intercept_endpoint_group_association google_network_security_intercept_endpoint_group_association}.
 type GoogleNetworkSecurityInterceptEndpointGroupAssociation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -563,7 +563,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroupAssociation) Updat
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_network_security_intercept_endpoint_group_association google_network_security_intercept_endpoint_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_intercept_endpoint_group_association google_network_security_intercept_endpoint_group_association} Resource.
 func NewGoogleNetworkSecurityInterceptEndpointGroupAssociation(scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptEndpointGroupAssociationConfig) GoogleNetworkSecurityInterceptEndpointGroupAssociation {
 	_init_.Initialize()
 
@@ -581,7 +581,7 @@ func NewGoogleNetworkSecurityInterceptEndpointGroupAssociation(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.21.0/docs/resources/google_network_security_intercept_endpoint_group_association google_network_security_intercept_endpoint_group_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_network_security_intercept_endpoint_group_association google_network_security_intercept_endpoint_group_association} Resource.
 func NewGoogleNetworkSecurityInterceptEndpointGroupAssociation_Override(g GoogleNetworkSecurityInterceptEndpointGroupAssociation, scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptEndpointGroupAssociationConfig) {
 	_init_.Initialize()
 
