@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed}.
 type GoogleCloudAssetProjectFeed interface {
 	cdktf.TerraformResource
 	AssetNames() *[]*string
@@ -535,7 +535,7 @@ func (j *jsiiProxy_GoogleCloudAssetProjectFeed) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
 func NewGoogleCloudAssetProjectFeed(scope constructs.Construct, id *string, config *GoogleCloudAssetProjectFeedConfig) GoogleCloudAssetProjectFeed {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewGoogleCloudAssetProjectFeed(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.22.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_cloud_asset_project_feed google_cloud_asset_project_feed} Resource.
 func NewGoogleCloudAssetProjectFeed_Override(g GoogleCloudAssetProjectFeed, scope constructs.Construct, id *string, config *GoogleCloudAssetProjectFeedConfig) {
 	_init_.Initialize()
 
