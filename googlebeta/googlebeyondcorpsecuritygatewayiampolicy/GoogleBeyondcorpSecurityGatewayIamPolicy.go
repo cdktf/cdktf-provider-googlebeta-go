@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_beyondcorp_security_gateway_iam_policy google_beyondcorp_security_gateway_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_beyondcorp_security_gateway_iam_policy google_beyondcorp_security_gateway_iam_policy}.
 type GoogleBeyondcorpSecurityGatewayIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayIamPolicy) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_beyondcorp_security_gateway_iam_policy google_beyondcorp_security_gateway_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_beyondcorp_security_gateway_iam_policy google_beyondcorp_security_gateway_iam_policy} Resource.
 func NewGoogleBeyondcorpSecurityGatewayIamPolicy(scope constructs.Construct, id *string, config *GoogleBeyondcorpSecurityGatewayIamPolicyConfig) GoogleBeyondcorpSecurityGatewayIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleBeyondcorpSecurityGatewayIamPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_beyondcorp_security_gateway_iam_policy google_beyondcorp_security_gateway_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_beyondcorp_security_gateway_iam_policy google_beyondcorp_security_gateway_iam_policy} Resource.
 func NewGoogleBeyondcorpSecurityGatewayIamPolicy_Override(g GoogleBeyondcorpSecurityGatewayIamPolicy, scope constructs.Construct, id *string, config *GoogleBeyondcorpSecurityGatewayIamPolicyConfig) {
 	_init_.Initialize()
 

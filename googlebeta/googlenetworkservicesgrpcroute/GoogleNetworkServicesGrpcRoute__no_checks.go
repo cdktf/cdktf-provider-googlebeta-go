@@ -131,6 +131,10 @@ func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute) validateSetLifecycleParameter
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute) validateSetLocationParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkServicesGrpcRoute) validateSetMeshesParameters(val *[]*string) error {
 	return nil
 }

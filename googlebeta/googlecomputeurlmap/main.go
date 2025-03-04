@@ -461,6 +461,47 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionMaxStreamDuration",
+		reflect.TypeOf((*GoogleComputeUrlMapDefaultRouteActionMaxStreamDuration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionMaxStreamDurationOutputReference",
+		reflect.TypeOf((*GoogleComputeUrlMapDefaultRouteActionMaxStreamDurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nanos", GoGetter: "Nanos"},
+			_jsii_.MemberProperty{JsiiProperty: "nanosInput", GoGetter: "NanosInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNanos", GoMethod: "ResetNanos"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "seconds", GoGetter: "Seconds"},
+			_jsii_.MemberProperty{JsiiProperty: "secondsInput", GoGetter: "SecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapDefaultRouteActionMaxStreamDurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionOutputReference",
 		reflect.TypeOf((*GoogleComputeUrlMapDefaultRouteActionOutputReference)(nil)).Elem(),
@@ -486,8 +527,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxStreamDuration", GoGetter: "MaxStreamDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "maxStreamDurationInput", GoGetter: "MaxStreamDurationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCorsPolicy", GoMethod: "PutCorsPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putFaultInjectionPolicy", GoMethod: "PutFaultInjectionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "putMaxStreamDuration", GoMethod: "PutMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestMirrorPolicy", GoMethod: "PutRequestMirrorPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetryPolicy", GoMethod: "PutRetryPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeout", GoMethod: "PutTimeout"},
@@ -497,6 +541,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestMirrorPolicyInput", GoGetter: "RequestMirrorPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCorsPolicy", GoMethod: "ResetCorsPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFaultInjectionPolicy", GoMethod: "ResetFaultInjectionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxStreamDuration", GoMethod: "ResetMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestMirrorPolicy", GoMethod: "ResetRequestMirrorPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetryPolicy", GoMethod: "ResetRetryPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
@@ -1628,6 +1673,47 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDuration",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDuration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nanos", GoGetter: "Nanos"},
+			_jsii_.MemberProperty{JsiiProperty: "nanosInput", GoGetter: "NanosInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNanos", GoMethod: "ResetNanos"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "seconds", GoGetter: "Seconds"},
+			_jsii_.MemberProperty{JsiiProperty: "secondsInput", GoGetter: "SecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionMaxStreamDurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference",
 		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherDefaultRouteActionOutputReference)(nil)).Elem(),
@@ -1653,8 +1739,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxStreamDuration", GoGetter: "MaxStreamDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "maxStreamDurationInput", GoGetter: "MaxStreamDurationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCorsPolicy", GoMethod: "PutCorsPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putFaultInjectionPolicy", GoMethod: "PutFaultInjectionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "putMaxStreamDuration", GoMethod: "PutMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestMirrorPolicy", GoMethod: "PutRequestMirrorPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetryPolicy", GoMethod: "PutRetryPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeout", GoMethod: "PutTimeout"},
@@ -1664,6 +1753,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestMirrorPolicyInput", GoGetter: "RequestMirrorPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCorsPolicy", GoMethod: "ResetCorsPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFaultInjectionPolicy", GoMethod: "ResetFaultInjectionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxStreamDuration", GoMethod: "ResetMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestMirrorPolicy", GoMethod: "ResetRequestMirrorPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetryPolicy", GoMethod: "ResetRetryPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
@@ -2881,6 +2971,47 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionMaxStreamDuration",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherPathRuleRouteActionMaxStreamDuration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionMaxStreamDurationOutputReference",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherPathRuleRouteActionMaxStreamDurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nanos", GoGetter: "Nanos"},
+			_jsii_.MemberProperty{JsiiProperty: "nanosInput", GoGetter: "NanosInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNanos", GoMethod: "ResetNanos"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "seconds", GoGetter: "Seconds"},
+			_jsii_.MemberProperty{JsiiProperty: "secondsInput", GoGetter: "SecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapPathMatcherPathRuleRouteActionMaxStreamDurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference",
 		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherPathRuleRouteActionOutputReference)(nil)).Elem(),
@@ -2906,8 +3037,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxStreamDuration", GoGetter: "MaxStreamDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "maxStreamDurationInput", GoGetter: "MaxStreamDurationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCorsPolicy", GoMethod: "PutCorsPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putFaultInjectionPolicy", GoMethod: "PutFaultInjectionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "putMaxStreamDuration", GoMethod: "PutMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestMirrorPolicy", GoMethod: "PutRequestMirrorPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetryPolicy", GoMethod: "PutRetryPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeout", GoMethod: "PutTimeout"},
@@ -2917,6 +3051,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestMirrorPolicyInput", GoGetter: "RequestMirrorPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCorsPolicy", GoMethod: "ResetCorsPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFaultInjectionPolicy", GoMethod: "ResetFaultInjectionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxStreamDuration", GoMethod: "ResetMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestMirrorPolicy", GoMethod: "ResetRequestMirrorPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetryPolicy", GoMethod: "ResetRetryPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},
@@ -4338,6 +4473,47 @@ func init() {
 			return &j
 		},
 	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDuration)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurationOutputReference",
+		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurationOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "nanos", GoGetter: "Nanos"},
+			_jsii_.MemberProperty{JsiiProperty: "nanosInput", GoGetter: "NanosInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetNanos", GoMethod: "ResetNanos"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "seconds", GoGetter: "Seconds"},
+			_jsii_.MemberProperty{JsiiProperty: "secondsInput", GoGetter: "SecondsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesRouteActionMaxStreamDurationOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
 	_jsii_.RegisterClass(
 		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference",
 		reflect.TypeOf((*GoogleComputeUrlMapPathMatcherRouteRulesRouteActionOutputReference)(nil)).Elem(),
@@ -4363,8 +4539,11 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "maxStreamDuration", GoGetter: "MaxStreamDuration"},
+			_jsii_.MemberProperty{JsiiProperty: "maxStreamDurationInput", GoGetter: "MaxStreamDurationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putCorsPolicy", GoMethod: "PutCorsPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putFaultInjectionPolicy", GoMethod: "PutFaultInjectionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "putMaxStreamDuration", GoMethod: "PutMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequestMirrorPolicy", GoMethod: "PutRequestMirrorPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putRetryPolicy", GoMethod: "PutRetryPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeout", GoMethod: "PutTimeout"},
@@ -4374,6 +4553,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "requestMirrorPolicyInput", GoGetter: "RequestMirrorPolicyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCorsPolicy", GoMethod: "ResetCorsPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFaultInjectionPolicy", GoMethod: "ResetFaultInjectionPolicy"},
+			_jsii_.MemberMethod{JsiiMethod: "resetMaxStreamDuration", GoMethod: "ResetMaxStreamDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRequestMirrorPolicy", GoMethod: "ResetRequestMirrorPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRetryPolicy", GoMethod: "ResetRetryPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeout", GoMethod: "ResetTimeout"},

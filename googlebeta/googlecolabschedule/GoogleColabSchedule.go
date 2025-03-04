@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_schedule google_colab_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_colab_schedule google_colab_schedule}.
 type GoogleColabSchedule interface {
 	cdktf.TerraformResource
 	AllowQueueing() interface{}
@@ -615,7 +615,7 @@ func (j *jsiiProxy_GoogleColabSchedule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_schedule google_colab_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_colab_schedule google_colab_schedule} Resource.
 func NewGoogleColabSchedule(scope constructs.Construct, id *string, config *GoogleColabScheduleConfig) GoogleColabSchedule {
 	_init_.Initialize()
 
@@ -633,7 +633,7 @@ func NewGoogleColabSchedule(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_colab_schedule google_colab_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_colab_schedule google_colab_schedule} Resource.
 func NewGoogleColabSchedule_Override(g GoogleColabSchedule, scope constructs.Construct, id *string, config *GoogleColabScheduleConfig) {
 	_init_.Initialize()
 

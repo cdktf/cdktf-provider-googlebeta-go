@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_secret_manager_regional_secret_iam_binding google_secret_manager_regional_secret_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_secret_manager_regional_secret_iam_binding google_secret_manager_regional_secret_iam_binding}.
 type GoogleSecretManagerRegionalSecretIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamBinding) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_secret_manager_regional_secret_iam_binding google_secret_manager_regional_secret_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_secret_manager_regional_secret_iam_binding google_secret_manager_regional_secret_iam_binding} Resource.
 func NewGoogleSecretManagerRegionalSecretIamBinding(scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretIamBindingConfig) GoogleSecretManagerRegionalSecretIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleSecretManagerRegionalSecretIamBinding(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_secret_manager_regional_secret_iam_binding google_secret_manager_regional_secret_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_secret_manager_regional_secret_iam_binding google_secret_manager_regional_secret_iam_binding} Resource.
 func NewGoogleSecretManagerRegionalSecretIamBinding_Override(g GoogleSecretManagerRegionalSecretIamBinding, scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretIamBindingConfig) {
 	_init_.Initialize()
 

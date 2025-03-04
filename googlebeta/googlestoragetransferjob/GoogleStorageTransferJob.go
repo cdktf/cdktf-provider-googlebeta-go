@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_storage_transfer_job google_storage_transfer_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_storage_transfer_job google_storage_transfer_job}.
 type GoogleStorageTransferJob interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -54,6 +54,8 @@ type GoogleStorageTransferJob interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LoggingConfig() GoogleStorageTransferJobLoggingConfigOutputReference
+	LoggingConfigInput() *GoogleStorageTransferJobLoggingConfig
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -133,12 +135,14 @@ type GoogleStorageTransferJob interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutEventStream(value *GoogleStorageTransferJobEventStream)
+	PutLoggingConfig(value *GoogleStorageTransferJobLoggingConfig)
 	PutNotificationConfig(value *GoogleStorageTransferJobNotificationConfig)
 	PutReplicationSpec(value *GoogleStorageTransferJobReplicationSpec)
 	PutSchedule(value *GoogleStorageTransferJobSchedule)
 	PutTransferSpec(value *GoogleStorageTransferJobTransferSpec)
 	ResetEventStream()
 	ResetId()
+	ResetLoggingConfig()
 	ResetName()
 	ResetNotificationConfig()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -342,6 +346,26 @@ func (j *jsiiProxy_GoogleStorageTransferJob) Lifecycle() *cdktf.TerraformResourc
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJob) LoggingConfig() GoogleStorageTransferJobLoggingConfigOutputReference {
+	var returns GoogleStorageTransferJobLoggingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"loggingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleStorageTransferJob) LoggingConfigInput() *GoogleStorageTransferJobLoggingConfig {
+	var returns *GoogleStorageTransferJobLoggingConfig
+	_jsii_.Get(
+		j,
+		"loggingConfigInput",
 		&returns,
 	)
 	return returns
@@ -558,7 +582,7 @@ func (j *jsiiProxy_GoogleStorageTransferJob) TransferSpecInput() *GoogleStorageT
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
 func NewGoogleStorageTransferJob(scope constructs.Construct, id *string, config *GoogleStorageTransferJobConfig) GoogleStorageTransferJob {
 	_init_.Initialize()
 
@@ -576,7 +600,7 @@ func NewGoogleStorageTransferJob(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.23.0/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_storage_transfer_job google_storage_transfer_job} Resource.
 func NewGoogleStorageTransferJob_Override(g GoogleStorageTransferJob, scope constructs.Construct, id *string, config *GoogleStorageTransferJobConfig) {
 	_init_.Initialize()
 
@@ -1074,6 +1098,17 @@ func (g *jsiiProxy_GoogleStorageTransferJob) PutEventStream(value *GoogleStorage
 	)
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJob) PutLoggingConfig(value *GoogleStorageTransferJobLoggingConfig) {
+	if err := g.validatePutLoggingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putLoggingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJob) PutNotificationConfig(value *GoogleStorageTransferJobNotificationConfig) {
 	if err := g.validatePutNotificationConfigParameters(value); err != nil {
 		panic(err)
@@ -1130,6 +1165,14 @@ func (g *jsiiProxy_GoogleStorageTransferJob) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleStorageTransferJob) ResetLoggingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLoggingConfig",
 		nil, // no parameters
 	)
 }
