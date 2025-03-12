@@ -103,6 +103,10 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) validateSetCount
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) validateSetDescriptionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) validateSetIdParameters(val *string) error {
 	return nil
 }

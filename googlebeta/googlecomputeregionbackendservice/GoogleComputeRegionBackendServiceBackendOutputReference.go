@@ -34,6 +34,8 @@ type GoogleComputeRegionBackendServiceBackendOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomMetrics() GoogleComputeRegionBackendServiceBackendCustomMetricsList
+	CustomMetricsInput() interface{}
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
@@ -100,8 +102,10 @@ type GoogleComputeRegionBackendServiceBackendOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutCustomMetrics(value interface{})
 	ResetBalancingMode()
 	ResetCapacityScaler()
+	ResetCustomMetrics()
 	ResetDescription()
 	ResetFailover()
 	ResetMaxConnections()
@@ -191,6 +195,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) Crea
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) CustomMetrics() GoogleComputeRegionBackendServiceBackendCustomMetricsList {
+	var returns GoogleComputeRegionBackendServiceBackendCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
 		&returns,
 	)
 	return returns
@@ -837,6 +861,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) Inte
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) PutCustomMetrics(value interface{}) {
+	if err := g.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) ResetBalancingMode() {
 	_jsii_.InvokeVoid(
 		g,
@@ -849,6 +884,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetCapacityScaler",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomMetrics",
 		nil, // no parameters
 	)
 }

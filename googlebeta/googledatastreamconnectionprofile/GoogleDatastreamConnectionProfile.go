@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile}.
 type GoogleDatastreamConnectionProfile interface {
 	cdktf.TerraformResource
 	BigqueryProfile() GoogleDatastreamConnectionProfileBigqueryProfileOutputReference
@@ -92,6 +92,8 @@ type GoogleDatastreamConnectionProfile interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	SalesforceProfile() GoogleDatastreamConnectionProfileSalesforceProfileOutputReference
+	SalesforceProfileInput() *GoogleDatastreamConnectionProfileSalesforceProfile
 	SqlServerProfile() GoogleDatastreamConnectionProfileSqlServerProfileOutputReference
 	SqlServerProfileInput() *GoogleDatastreamConnectionProfileSqlServerProfile
 	// Experimental.
@@ -153,6 +155,7 @@ type GoogleDatastreamConnectionProfile interface {
 	PutOracleProfile(value *GoogleDatastreamConnectionProfileOracleProfile)
 	PutPostgresqlProfile(value *GoogleDatastreamConnectionProfilePostgresqlProfile)
 	PutPrivateConnectivity(value *GoogleDatastreamConnectionProfilePrivateConnectivity)
+	PutSalesforceProfile(value *GoogleDatastreamConnectionProfileSalesforceProfile)
 	PutSqlServerProfile(value *GoogleDatastreamConnectionProfileSqlServerProfile)
 	PutTimeouts(value *GoogleDatastreamConnectionProfileTimeouts)
 	ResetBigqueryProfile()
@@ -169,6 +172,7 @@ type GoogleDatastreamConnectionProfile interface {
 	ResetPostgresqlProfile()
 	ResetPrivateConnectivity()
 	ResetProject()
+	ResetSalesforceProfile()
 	ResetSqlServerProfile()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -619,6 +623,26 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfile) RawOverrides() interface{}
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatastreamConnectionProfile) SalesforceProfile() GoogleDatastreamConnectionProfileSalesforceProfileOutputReference {
+	var returns GoogleDatastreamConnectionProfileSalesforceProfileOutputReference
+	_jsii_.Get(
+		j,
+		"salesforceProfile",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfile) SalesforceProfileInput() *GoogleDatastreamConnectionProfileSalesforceProfile {
+	var returns *GoogleDatastreamConnectionProfileSalesforceProfile
+	_jsii_.Get(
+		j,
+		"salesforceProfileInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatastreamConnectionProfile) SqlServerProfile() GoogleDatastreamConnectionProfileSqlServerProfileOutputReference {
 	var returns GoogleDatastreamConnectionProfileSqlServerProfileOutputReference
 	_jsii_.Get(
@@ -700,7 +724,7 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfile) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource.
 func NewGoogleDatastreamConnectionProfile(scope constructs.Construct, id *string, config *GoogleDatastreamConnectionProfileConfig) GoogleDatastreamConnectionProfile {
 	_init_.Initialize()
 
@@ -718,7 +742,7 @@ func NewGoogleDatastreamConnectionProfile(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_datastream_connection_profile google_datastream_connection_profile} Resource.
 func NewGoogleDatastreamConnectionProfile_Override(g GoogleDatastreamConnectionProfile, scope constructs.Construct, id *string, config *GoogleDatastreamConnectionProfileConfig) {
 	_init_.Initialize()
 
@@ -1304,6 +1328,17 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) PutPrivateConnectivity(val
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) PutSalesforceProfile(value *GoogleDatastreamConnectionProfileSalesforceProfile) {
+	if err := g.validatePutSalesforceProfileParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSalesforceProfile",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfile) PutSqlServerProfile(value *GoogleDatastreamConnectionProfileSqlServerProfile) {
 	if err := g.validatePutSqlServerProfileParameters(value); err != nil {
 		panic(err)
@@ -1418,6 +1453,14 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfile) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfile) ResetSalesforceProfile() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSalesforceProfile",
 		nil, // no parameters
 	)
 }

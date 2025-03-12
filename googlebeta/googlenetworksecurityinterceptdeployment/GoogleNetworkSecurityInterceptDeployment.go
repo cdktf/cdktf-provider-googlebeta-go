@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment}.
 type GoogleNetworkSecurityInterceptDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type GoogleNetworkSecurityInterceptDeployment interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Description() *string
+	SetDescription(val *string)
+	DescriptionInput() *string
 	EffectiveLabels() cdktf.StringMap
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
@@ -135,6 +138,7 @@ type GoogleNetworkSecurityInterceptDeployment interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleNetworkSecurityInterceptDeploymentTimeouts)
+	ResetDescription()
 	ResetId()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -215,6 +219,26 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) DependsOn() *[]*str
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) Description() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"description",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) DescriptionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"descriptionInput",
 		&returns,
 	)
 	return returns
@@ -551,7 +575,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
 func NewGoogleNetworkSecurityInterceptDeployment(scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptDeploymentConfig) GoogleNetworkSecurityInterceptDeployment {
 	_init_.Initialize()
 
@@ -569,7 +593,7 @@ func NewGoogleNetworkSecurityInterceptDeployment(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
 func NewGoogleNetworkSecurityInterceptDeployment_Override(g GoogleNetworkSecurityInterceptDeployment, scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptDeploymentConfig) {
 	_init_.Initialize()
 
@@ -606,6 +630,17 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment)SetDependsOn(val *[]
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment)SetDescription(val *string) {
+	if err := j.validateSetDescriptionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"description",
 		val,
 	)
 }
@@ -1086,6 +1121,14 @@ func (g *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) PutTimeouts(value *
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) ResetDescription() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDescription",
+		nil, // no parameters
 	)
 }
 

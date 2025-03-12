@@ -35,6 +35,12 @@ type GoogleComputeRegionBackendServiceLogConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleComputeRegionBackendServiceLogConfig
 	SetInternalValue(val *GoogleComputeRegionBackendServiceLogConfig)
+	OptionalFields() *[]*string
+	SetOptionalFields(val *[]*string)
+	OptionalFieldsInput() *[]*string
+	OptionalMode() *string
+	SetOptionalMode(val *string)
+	OptionalModeInput() *string
 	SampleRate() *float64
 	SetSampleRate(val *float64)
 	SampleRateInput() *float64
@@ -71,6 +77,8 @@ type GoogleComputeRegionBackendServiceLogConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetEnable()
+	ResetOptionalFields()
+	ResetOptionalMode()
 	ResetSampleRate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +160,46 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) In
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) OptionalFields() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalFields",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) OptionalFieldsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"optionalFieldsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) OptionalMode() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalMode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) OptionalModeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"optionalModeInput",
 		&returns,
 	)
 	return returns
@@ -265,6 +313,28 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference)Set
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference)SetOptionalFields(val *[]*string) {
+	if err := j.validateSetOptionalFieldsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalFields",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference)SetOptionalMode(val *string) {
+	if err := j.validateSetOptionalModeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"optionalMode",
 		val,
 	)
 }
@@ -492,6 +562,22 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) Re
 	_jsii_.InvokeVoid(
 		g,
 		"resetEnable",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) ResetOptionalFields() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOptionalFields",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceLogConfigOutputReference) ResetOptionalMode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOptionalMode",
 		nil, // no parameters
 	)
 }

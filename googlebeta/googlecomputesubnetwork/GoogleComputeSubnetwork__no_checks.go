@@ -131,6 +131,10 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetIpCidrRangeParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetIpCollectionParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) validateSetIpv6AccessTypeParameters(val *string) error {
 	return nil
 }

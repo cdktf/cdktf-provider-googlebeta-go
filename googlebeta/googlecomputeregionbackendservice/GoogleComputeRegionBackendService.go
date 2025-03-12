@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service}.
 type GoogleComputeRegionBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -44,6 +44,8 @@ type GoogleComputeRegionBackendService interface {
 	// Experimental.
 	SetCount(val interface{})
 	CreationTimestamp() *string
+	CustomMetrics() GoogleComputeRegionBackendServiceCustomMetricsList
+	CustomMetricsInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -191,6 +193,7 @@ type GoogleComputeRegionBackendService interface {
 	PutCircuitBreakers(value *GoogleComputeRegionBackendServiceCircuitBreakers)
 	PutConnectionTrackingPolicy(value *GoogleComputeRegionBackendServiceConnectionTrackingPolicy)
 	PutConsistentHash(value *GoogleComputeRegionBackendServiceConsistentHash)
+	PutCustomMetrics(value interface{})
 	PutFailoverPolicy(value *GoogleComputeRegionBackendServiceFailoverPolicy)
 	PutIap(value *GoogleComputeRegionBackendServiceIap)
 	PutLogConfig(value *GoogleComputeRegionBackendServiceLogConfig)
@@ -205,6 +208,7 @@ type GoogleComputeRegionBackendService interface {
 	ResetConnectionDrainingTimeoutSec()
 	ResetConnectionTrackingPolicy()
 	ResetConsistentHash()
+	ResetCustomMetrics()
 	ResetDescription()
 	ResetEnableCdn()
 	ResetFailoverPolicy()
@@ -433,6 +437,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) CreationTimestamp() *strin
 	_jsii_.Get(
 		j,
 		"creationTimestamp",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) CustomMetrics() GoogleComputeRegionBackendServiceCustomMetricsList {
+	var returns GoogleComputeRegionBackendServiceCustomMetricsList
+	_jsii_.Get(
+		j,
+		"customMetrics",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendService) CustomMetricsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customMetricsInput",
 		&returns,
 	)
 	return returns
@@ -1049,7 +1073,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendService) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) GoogleComputeRegionBackendService {
 	_init_.Initialize()
 
@@ -1067,7 +1091,7 @@ func NewGoogleComputeRegionBackendService(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_region_backend_service google_compute_region_backend_service} Resource.
 func NewGoogleComputeRegionBackendService_Override(g GoogleComputeRegionBackendService, scope constructs.Construct, id *string, config *GoogleComputeRegionBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1752,6 +1776,17 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) PutConsistentHash(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRegionBackendService) PutCustomMetrics(value interface{}) {
+	if err := g.validatePutCustomMetricsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putCustomMetrics",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionBackendService) PutFailoverPolicy(value *GoogleComputeRegionBackendServiceFailoverPolicy) {
 	if err := g.validatePutFailoverPolicyParameters(value); err != nil {
 		panic(err)
@@ -1881,6 +1916,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetConsistentHash() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConsistentHash",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendService) ResetCustomMetrics() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomMetrics",
 		nil, // no parameters
 	)
 }

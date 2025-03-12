@@ -38,6 +38,9 @@ type GoogleTpuV2VmSchedulingConfigOutputReference interface {
 	Reserved() interface{}
 	SetReserved(val interface{})
 	ReservedInput() interface{}
+	Spot() interface{}
+	SetSpot(val interface{})
+	SpotInput() interface{}
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -72,6 +75,7 @@ type GoogleTpuV2VmSchedulingConfigOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetPreemptible()
 	ResetReserved()
+	ResetSpot()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -177,6 +181,26 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ReservedInput()
 	return returns
 }
 
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) Spot() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"spot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) SpotInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"spotInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -276,6 +300,17 @@ func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetReserved(val 
 	_jsii_.Set(
 		j,
 		"reserved",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference)SetSpot(val interface{}) {
+	if err := j.validateSetSpotParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"spot",
 		val,
 	)
 }
@@ -500,6 +535,14 @@ func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ResetReserved()
 	_jsii_.InvokeVoid(
 		g,
 		"resetReserved",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleTpuV2VmSchedulingConfigOutputReference) ResetSpot() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSpot",
 		nil, // no parameters
 	)
 }

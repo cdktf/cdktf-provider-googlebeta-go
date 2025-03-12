@@ -36,6 +36,8 @@ type GoogleAlloydbInstancePscInstanceConfigOutputReference interface {
 	InternalValue() *GoogleAlloydbInstancePscInstanceConfig
 	SetInternalValue(val *GoogleAlloydbInstancePscInstanceConfig)
 	PscDnsName() *string
+	PscInterfaceConfigs() GoogleAlloydbInstancePscInstanceConfigPscInterfaceConfigsList
+	PscInterfaceConfigsInput() interface{}
 	ServiceAttachmentLink() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -69,7 +71,9 @@ type GoogleAlloydbInstancePscInstanceConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPscInterfaceConfigs(value interface{})
 	ResetAllowedConsumerProjects()
+	ResetPscInterfaceConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -160,6 +164,26 @@ func (j *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) PscDns
 	_jsii_.Get(
 		j,
 		"pscDnsName",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) PscInterfaceConfigs() GoogleAlloydbInstancePscInstanceConfigPscInterfaceConfigsList {
+	var returns GoogleAlloydbInstancePscInstanceConfigPscInterfaceConfigsList
+	_jsii_.Get(
+		j,
+		"pscInterfaceConfigs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) PscInterfaceConfigsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"pscInterfaceConfigsInput",
 		&returns,
 	)
 	return returns
@@ -475,10 +499,29 @@ func (g *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) Interp
 	return returns
 }
 
+func (g *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) PutPscInterfaceConfigs(value interface{}) {
+	if err := g.validatePutPscInterfaceConfigsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPscInterfaceConfigs",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) ResetAllowedConsumerProjects() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAllowedConsumerProjects",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstancePscInstanceConfigOutputReference) ResetPscInterfaceConfigs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscInterfaceConfigs",
 		nil, // no parameters
 	)
 }

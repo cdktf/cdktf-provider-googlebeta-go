@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version}.
 type GoogleParameterManagerRegionalParameterVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_GoogleParameterManagerRegionalParameterVersion) UpdateTime() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
 func NewGoogleParameterManagerRegionalParameterVersion(scope constructs.Construct, id *string, config *GoogleParameterManagerRegionalParameterVersionConfig) GoogleParameterManagerRegionalParameterVersion {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewGoogleParameterManagerRegionalParameterVersion(scope constructs.Construc
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_parameter_manager_regional_parameter_version google_parameter_manager_regional_parameter_version} Resource.
 func NewGoogleParameterManagerRegionalParameterVersion_Override(g GoogleParameterManagerRegionalParameterVersion, scope constructs.Construct, id *string, config *GoogleParameterManagerRegionalParameterVersionConfig) {
 	_init_.Initialize()
 

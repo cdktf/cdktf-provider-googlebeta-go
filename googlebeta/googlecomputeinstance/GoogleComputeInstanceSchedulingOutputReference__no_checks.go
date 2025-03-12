@@ -119,6 +119,10 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetPr
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetTerminationTimeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

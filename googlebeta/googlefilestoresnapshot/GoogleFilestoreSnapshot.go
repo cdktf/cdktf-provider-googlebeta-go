@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_filestore_snapshot google_filestore_snapshot}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_filestore_snapshot google_filestore_snapshot}.
 type GoogleFilestoreSnapshot interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -530,7 +530,7 @@ func (j *jsiiProxy_GoogleFilestoreSnapshot) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource.
 func NewGoogleFilestoreSnapshot(scope constructs.Construct, id *string, config *GoogleFilestoreSnapshotConfig) GoogleFilestoreSnapshot {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewGoogleFilestoreSnapshot(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.24.0/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_filestore_snapshot google_filestore_snapshot} Resource.
 func NewGoogleFilestoreSnapshot_Override(g GoogleFilestoreSnapshot, scope constructs.Construct, id *string, config *GoogleFilestoreSnapshotConfig) {
 	_init_.Initialize()
 

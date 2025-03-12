@@ -91,6 +91,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutConsistentHashParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutCustomMetricsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) validatePutIapParameters(value *GoogleComputeBackendServiceIap) error {
 	return nil
 }
