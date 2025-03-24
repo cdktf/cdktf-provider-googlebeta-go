@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_backend_bucket_iam_binding google_compute_backend_bucket_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_backend_bucket_iam_binding google_compute_backend_bucket_iam_binding}.
 type GoogleComputeBackendBucketIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleComputeBackendBucketIamBinding) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_backend_bucket_iam_binding google_compute_backend_bucket_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_backend_bucket_iam_binding google_compute_backend_bucket_iam_binding} Resource.
 func NewGoogleComputeBackendBucketIamBinding(scope constructs.Construct, id *string, config *GoogleComputeBackendBucketIamBindingConfig) GoogleComputeBackendBucketIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleComputeBackendBucketIamBinding(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_backend_bucket_iam_binding google_compute_backend_bucket_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_backend_bucket_iam_binding google_compute_backend_bucket_iam_binding} Resource.
 func NewGoogleComputeBackendBucketIamBinding_Override(g GoogleComputeBackendBucketIamBinding, scope constructs.Construct, id *string, config *GoogleComputeBackendBucketIamBindingConfig) {
 	_init_.Initialize()
 

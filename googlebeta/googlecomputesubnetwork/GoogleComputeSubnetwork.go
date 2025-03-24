@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_subnetwork google_compute_subnetwork}.
 type GoogleComputeSubnetwork interface {
 	cdktf.TerraformResource
 	AllowSubnetCidrRoutesOverlap() interface{}
@@ -38,6 +38,9 @@ type GoogleComputeSubnetwork interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	EnableFlowLogs() interface{}
+	SetEnableFlowLogs(val interface{})
+	EnableFlowLogsInput() interface{}
 	ExternalIpv6Prefix() *string
 	SetExternalIpv6Prefix(val *string)
 	ExternalIpv6PrefixInput() *string
@@ -120,6 +123,7 @@ type GoogleComputeSubnetwork interface {
 	StackType() *string
 	SetStackType(val *string)
 	StackTypeInput() *string
+	State() *string
 	SubnetworkId() *float64
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
@@ -177,6 +181,7 @@ type GoogleComputeSubnetwork interface {
 	PutTimeouts(value *GoogleComputeSubnetworkTimeouts)
 	ResetAllowSubnetCidrRoutesOverlap()
 	ResetDescription()
+	ResetEnableFlowLogs()
 	ResetExternalIpv6Prefix()
 	ResetId()
 	ResetIpCidrRange()
@@ -310,6 +315,26 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) EnableFlowLogs() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFlowLogs",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork) EnableFlowLogsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableFlowLogsInput",
 		&returns,
 	)
 	return returns
@@ -815,6 +840,16 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) StackTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeSubnetwork) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeSubnetwork) SubnetworkId() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -876,7 +911,7 @@ func (j *jsiiProxy_GoogleComputeSubnetwork) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) GoogleComputeSubnetwork {
 	_init_.Initialize()
 
@@ -894,7 +929,7 @@ func NewGoogleComputeSubnetwork(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_subnetwork google_compute_subnetwork} Resource.
 func NewGoogleComputeSubnetwork_Override(g GoogleComputeSubnetwork, scope constructs.Construct, id *string, config *GoogleComputeSubnetworkConfig) {
 	_init_.Initialize()
 
@@ -953,6 +988,17 @@ func (j *jsiiProxy_GoogleComputeSubnetwork)SetDescription(val *string) {
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeSubnetwork)SetEnableFlowLogs(val interface{}) {
+	if err := j.validateSetEnableFlowLogsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableFlowLogs",
 		val,
 	)
 }
@@ -1569,6 +1615,14 @@ func (g *jsiiProxy_GoogleComputeSubnetwork) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeSubnetwork) ResetEnableFlowLogs() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableFlowLogs",
 		nil, // no parameters
 	)
 }

@@ -119,6 +119,10 @@ func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetExecutionHistoryLevelParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleWorkflowsWorkflow) validateSetIdParameters(val *string) error {
 	return nil
 }

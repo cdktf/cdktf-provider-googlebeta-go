@@ -87,6 +87,10 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validatePutObjectMetadataR
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validatePutParquetOptionsParameters(value *GoogleStorageInsightsReportConfigParquetOptions) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validatePutTimeoutsParameters(value *GoogleStorageInsightsReportConfigTimeouts) error {
 	return nil
 }

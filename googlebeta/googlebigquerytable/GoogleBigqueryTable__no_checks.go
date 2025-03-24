@@ -207,6 +207,10 @@ func (j *jsiiProxy_GoogleBigqueryTable) validateSetTableIdParameters(val *string
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) validateSetTableMetadataViewParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleBigqueryTableParameters(scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_table google_bigquery_table}.
 type GoogleBigqueryTable interface {
 	cdktf.TerraformResource
 	BiglakeConfiguration() GoogleBigqueryTableBiglakeConfigurationOutputReference
@@ -122,6 +122,9 @@ type GoogleBigqueryTable interface {
 	TableId() *string
 	SetTableId(val *string)
 	TableIdInput() *string
+	TableMetadataView() *string
+	SetTableMetadataView(val *string)
+	TableMetadataViewInput() *string
 	TableReplicationInfo() GoogleBigqueryTableTableReplicationInfoOutputReference
 	TableReplicationInfoInput() *GoogleBigqueryTableTableReplicationInfo
 	// Experimental.
@@ -213,6 +216,7 @@ type GoogleBigqueryTable interface {
 	ResetSchema()
 	ResetSchemaForeignTypeInfo()
 	ResetTableConstraints()
+	ResetTableMetadataView()
 	ResetTableReplicationInfo()
 	ResetTimePartitioning()
 	ResetView()
@@ -894,6 +898,26 @@ func (j *jsiiProxy_GoogleBigqueryTable) TableIdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryTable) TableMetadataView() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableMetadataView",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable) TableMetadataViewInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tableMetadataViewInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryTable) TableReplicationInfo() GoogleBigqueryTableTableReplicationInfoOutputReference {
 	var returns GoogleBigqueryTableTableReplicationInfoOutputReference
 	_jsii_.Get(
@@ -1005,7 +1029,7 @@ func (j *jsiiProxy_GoogleBigqueryTable) ViewInput() *GoogleBigqueryTableView {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) GoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -1023,7 +1047,7 @@ func NewGoogleBigqueryTable(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_table google_bigquery_table} Resource.
 func NewGoogleBigqueryTable_Override(g GoogleBigqueryTable, scope constructs.Construct, id *string, config *GoogleBigqueryTableConfig) {
 	_init_.Initialize()
 
@@ -1252,6 +1276,17 @@ func (j *jsiiProxy_GoogleBigqueryTable)SetTableId(val *string) {
 	_jsii_.Set(
 		j,
 		"tableId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryTable)SetTableMetadataView(val *string) {
+	if err := j.validateSetTableMetadataViewParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tableMetadataView",
 		val,
 	)
 }
@@ -1894,6 +1929,14 @@ func (g *jsiiProxy_GoogleBigqueryTable) ResetTableConstraints() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTableConstraints",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryTable) ResetTableMetadataView() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTableMetadataView",
 		nil, // no parameters
 	)
 }

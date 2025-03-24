@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy}.
 type GoogleComputeInstantSnapshotIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleComputeInstantSnapshotIamPolicy) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy} Resource.
 func NewGoogleComputeInstantSnapshotIamPolicy(scope constructs.Construct, id *string, config *GoogleComputeInstantSnapshotIamPolicyConfig) GoogleComputeInstantSnapshotIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleComputeInstantSnapshotIamPolicy(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.25.0/docs/resources/google_compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_instant_snapshot_iam_policy google_compute_instant_snapshot_iam_policy} Resource.
 func NewGoogleComputeInstantSnapshotIamPolicy_Override(g GoogleComputeInstantSnapshotIamPolicy, scope constructs.Construct, id *string, config *GoogleComputeInstantSnapshotIamPolicyConfig) {
 	_init_.Initialize()
 
