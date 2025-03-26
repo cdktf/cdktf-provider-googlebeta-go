@@ -40,6 +40,9 @@ type GoogleComputeInstanceFromTemplateBootDiskOutputReference interface {
 	DiskEncryptionKeySha256() *string
 	// Experimental.
 	Fqn() *string
+	GuestOsFeatures() *[]*string
+	SetGuestOsFeatures(val *[]*string)
+	GuestOsFeaturesInput() *[]*string
 	InitializeParams() GoogleComputeInstanceFromTemplateBootDiskInitializeParamsOutputReference
 	InitializeParamsInput() *GoogleComputeInstanceFromTemplateBootDiskInitializeParams
 	Interface() *string
@@ -92,6 +95,7 @@ type GoogleComputeInstanceFromTemplateBootDiskOutputReference interface {
 	ResetAutoDelete()
 	ResetDeviceName()
 	ResetDiskEncryptionKeyRaw()
+	ResetGuestOsFeatures()
 	ResetInitializeParams()
 	ResetInterface()
 	ResetKmsKeySelfLink()
@@ -217,6 +221,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Fqn
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) GuestOsFeatures() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeatures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) GuestOsFeaturesInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"guestOsFeaturesInput",
 		&returns,
 	)
 	return returns
@@ -431,6 +455,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetD
 	_jsii_.Set(
 		j,
 		"diskEncryptionKeyRaw",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetGuestOsFeatures(val *[]*string) {
+	if err := j.validateSetGuestOsFeaturesParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"guestOsFeatures",
 		val,
 	)
 }
@@ -729,6 +764,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetDiskEncryptionKeyRaw",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ResetGuestOsFeatures() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGuestOsFeatures",
 		nil, // no parameters
 	)
 }

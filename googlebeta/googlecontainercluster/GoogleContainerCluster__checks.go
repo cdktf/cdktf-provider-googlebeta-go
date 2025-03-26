@@ -546,6 +546,17 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutNotificationConfigParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutPodAutoscalingParameters(value *GoogleContainerClusterPodAutoscaling) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutPodSecurityPolicyConfigParameters(value *GoogleContainerClusterPodSecurityPolicyConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

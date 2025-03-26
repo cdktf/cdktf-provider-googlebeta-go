@@ -71,6 +71,10 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutpu
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validateSetOnFailedHealthCheckParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceGroupManagerInstanceLifecyclePolicyOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

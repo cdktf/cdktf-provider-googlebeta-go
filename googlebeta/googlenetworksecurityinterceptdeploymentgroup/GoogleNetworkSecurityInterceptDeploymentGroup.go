@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_security_intercept_deployment_group google_network_security_intercept_deployment_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_network_security_intercept_deployment_group google_network_security_intercept_deployment_group}.
 type GoogleNetworkSecurityInterceptDeploymentGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,7 @@ type GoogleNetworkSecurityInterceptDeploymentGroup interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	Locations() GoogleNetworkSecurityInterceptDeploymentGroupLocationsList
 	Name() *string
 	Network() *string
 	SetNetwork(val *string)
@@ -382,6 +383,16 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeploymentGroup) LocationInput(
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeploymentGroup) Locations() GoogleNetworkSecurityInterceptDeploymentGroupLocationsList {
+	var returns GoogleNetworkSecurityInterceptDeploymentGroupLocationsList
+	_jsii_.Get(
+		j,
+		"locations",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeploymentGroup) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -563,7 +574,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeploymentGroup) UpdateTime() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_security_intercept_deployment_group google_network_security_intercept_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_network_security_intercept_deployment_group google_network_security_intercept_deployment_group} Resource.
 func NewGoogleNetworkSecurityInterceptDeploymentGroup(scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptDeploymentGroupConfig) GoogleNetworkSecurityInterceptDeploymentGroup {
 	_init_.Initialize()
 
@@ -581,7 +592,7 @@ func NewGoogleNetworkSecurityInterceptDeploymentGroup(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_network_security_intercept_deployment_group google_network_security_intercept_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_network_security_intercept_deployment_group google_network_security_intercept_deployment_group} Resource.
 func NewGoogleNetworkSecurityInterceptDeploymentGroup_Override(g GoogleNetworkSecurityInterceptDeploymentGroup, scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptDeploymentGroupConfig) {
 	_init_.Initialize()
 

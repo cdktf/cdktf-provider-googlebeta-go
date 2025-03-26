@@ -7,7 +7,7 @@ package googlesecuritypostureposture
 type GoogleSecurityposturePosturePolicySetsPoliciesConstraintSecurityHealthAnalyticsCustomModuleConfigCustomOutput struct {
 	// properties block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_securityposture_posture#properties GoogleSecurityposturePosture#properties}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_securityposture_posture#properties GoogleSecurityposturePosture#properties}
 	Properties interface{} `field:"optional" json:"properties" yaml:"properties"`
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -374,6 +374,9 @@ type GoogleBetaProvider interface {
 	LookerCustomEndpoint() *string
 	SetLookerCustomEndpoint(val *string)
 	LookerCustomEndpointInput() *string
+	LustreCustomEndpoint() *string
+	SetLustreCustomEndpoint(val *string)
+	LustreCustomEndpointInput() *string
 	ManagedKafkaCustomEndpoint() *string
 	SetManagedKafkaCustomEndpoint(val *string)
 	ManagedKafkaCustomEndpointInput() *string
@@ -423,6 +426,9 @@ type GoogleBetaProvider interface {
 	OsConfigCustomEndpoint() *string
 	SetOsConfigCustomEndpoint(val *string)
 	OsConfigCustomEndpointInput() *string
+	OsConfigV2CustomEndpoint() *string
+	SetOsConfigV2CustomEndpoint(val *string)
+	OsConfigV2CustomEndpointInput() *string
 	OsLoginCustomEndpoint() *string
 	SetOsLoginCustomEndpoint(val *string)
 	OsLoginCustomEndpointInput() *string
@@ -533,6 +539,9 @@ type GoogleBetaProvider interface {
 	SqlCustomEndpoint() *string
 	SetSqlCustomEndpoint(val *string)
 	SqlCustomEndpointInput() *string
+	StorageControlCustomEndpoint() *string
+	SetStorageControlCustomEndpoint(val *string)
+	StorageControlCustomEndpointInput() *string
 	StorageCustomEndpoint() *string
 	SetStorageCustomEndpoint(val *string)
 	StorageCustomEndpointInput() *string
@@ -715,6 +724,7 @@ type GoogleBetaProvider interface {
 	ResetKmsCustomEndpoint()
 	ResetLoggingCustomEndpoint()
 	ResetLookerCustomEndpoint()
+	ResetLustreCustomEndpoint()
 	ResetManagedKafkaCustomEndpoint()
 	ResetMemcacheCustomEndpoint()
 	ResetMemorystoreCustomEndpoint()
@@ -730,6 +740,7 @@ type GoogleBetaProvider interface {
 	ResetOracleDatabaseCustomEndpoint()
 	ResetOrgPolicyCustomEndpoint()
 	ResetOsConfigCustomEndpoint()
+	ResetOsConfigV2CustomEndpoint()
 	ResetOsLoginCustomEndpoint()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -769,6 +780,7 @@ type GoogleBetaProvider interface {
 	ResetSourceRepoCustomEndpoint()
 	ResetSpannerCustomEndpoint()
 	ResetSqlCustomEndpoint()
+	ResetStorageControlCustomEndpoint()
 	ResetStorageCustomEndpoint()
 	ResetStorageInsightsCustomEndpoint()
 	ResetStorageTransferCustomEndpoint()
@@ -3185,6 +3197,26 @@ func (j *jsiiProxy_GoogleBetaProvider) LookerCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) LustreCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lustreCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) LustreCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"lustreCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) ManagedKafkaCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -3500,6 +3532,26 @@ func (j *jsiiProxy_GoogleBetaProvider) OsConfigCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"osConfigCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) OsConfigV2CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osConfigV2CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) OsConfigV2CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"osConfigV2CustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4235,6 +4287,26 @@ func (j *jsiiProxy_GoogleBetaProvider) SqlCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) StorageControlCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageControlCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) StorageControlCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageControlCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) StorageCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4626,7 +4698,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4644,7 +4716,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -5597,6 +5669,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetLookerCustomEndpoint(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleBetaProvider)SetLustreCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"lustreCustomEndpoint",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBetaProvider)SetManagedKafkaCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
@@ -5713,6 +5793,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetOsConfigCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"osConfigCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetOsConfigV2CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"osConfigV2CustomEndpoint",
 		val,
 	)
 }
@@ -6001,6 +6089,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetSqlCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetStorageControlCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"storageControlCustomEndpoint",
 		val,
 	)
 }
@@ -7213,6 +7309,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetLookerCustomEndpoint() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBetaProvider) ResetLustreCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLustreCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBetaProvider) ResetManagedKafkaCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
@@ -7329,6 +7433,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetOsConfigCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOsConfigCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetOsConfigV2CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOsConfigV2CustomEndpoint",
 		nil, // no parameters
 	)
 }
@@ -7625,6 +7737,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetSqlCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSqlCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetStorageControlCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageControlCustomEndpoint",
 		nil, // no parameters
 	)
 }

@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference)
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetArchitectureParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceBootDiskInitializeParamsOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }

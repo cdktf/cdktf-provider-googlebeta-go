@@ -123,6 +123,10 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutWindowsNodeConfigParameters(value *GoogleContainerNodePoolNodeConfigWindowsNodeConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigOutputReference) validatePutWorkloadMetadataConfigParameters(value *GoogleContainerNodePoolNodeConfigWorkloadMetadataConfig) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_container_cluster google_container_cluster}.
 type DataGoogleContainerCluster interface {
 	cdktf.TerraformDataSource
 	AddonsConfig() DataGoogleContainerClusterAddonsConfigList
@@ -108,6 +108,7 @@ type DataGoogleContainerCluster interface {
 	NodeVersion() *string
 	NotificationConfig() DataGoogleContainerClusterNotificationConfigList
 	Operation() *string
+	PodAutoscaling() DataGoogleContainerClusterPodAutoscalingList
 	PodSecurityPolicyConfig() DataGoogleContainerClusterPodSecurityPolicyConfigList
 	PrivateClusterConfig() DataGoogleContainerClusterPrivateClusterConfigList
 	PrivateIpv6GoogleAccess() *string
@@ -924,6 +925,16 @@ func (j *jsiiProxy_DataGoogleContainerCluster) Operation() *string {
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleContainerCluster) PodAutoscaling() DataGoogleContainerClusterPodAutoscalingList {
+	var returns DataGoogleContainerClusterPodAutoscalingList
+	_jsii_.Get(
+		j,
+		"podAutoscaling",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleContainerCluster) PodSecurityPolicyConfig() DataGoogleContainerClusterPodSecurityPolicyConfigList {
 	var returns DataGoogleContainerClusterPodSecurityPolicyConfigList
 	_jsii_.Get(
@@ -1205,7 +1216,7 @@ func (j *jsiiProxy_DataGoogleContainerCluster) WorkloadIdentityConfig() DataGoog
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) DataGoogleContainerCluster {
 	_init_.Initialize()
 
@@ -1223,7 +1234,7 @@ func NewDataGoogleContainerCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/data-sources/google_container_cluster google_container_cluster} Data Source.
 func NewDataGoogleContainerCluster_Override(d DataGoogleContainerCluster, scope constructs.Construct, id *string, config *DataGoogleContainerClusterConfig) {
 	_init_.Initialize()
 

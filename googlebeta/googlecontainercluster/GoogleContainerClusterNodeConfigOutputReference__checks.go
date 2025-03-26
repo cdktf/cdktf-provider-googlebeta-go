@@ -362,6 +362,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutT
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutWindowsNodeConfigParameters(value *GoogleContainerClusterNodeConfigWindowsNodeConfig) error {
+	if value == nil {
+		return fmt.Errorf("parameter value is required, but nil was provided")
+	}
+	if err := _jsii_.ValidateStruct(value, func() string { return "parameter value" }); err != nil {
+		return err
+	}
+
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) validatePutWorkloadMetadataConfigParameters(value *GoogleContainerClusterNodeConfigWorkloadMetadataConfig) error {
 	if value == nil {
 		return fmt.Errorf("parameter value is required, but nil was provided")

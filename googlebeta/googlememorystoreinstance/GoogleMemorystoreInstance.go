@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
 type GoogleMemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -73,6 +73,9 @@ type GoogleMemorystoreInstance interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	MaintenancePolicy() GoogleMemorystoreInstanceMaintenancePolicyOutputReference
+	MaintenancePolicyInput() *GoogleMemorystoreInstanceMaintenancePolicy
+	MaintenanceSchedule() GoogleMemorystoreInstanceMaintenanceScheduleList
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -167,6 +170,7 @@ type GoogleMemorystoreInstance interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutDesiredPscAutoConnections(value interface{})
+	PutMaintenancePolicy(value *GoogleMemorystoreInstanceMaintenancePolicy)
 	PutPersistenceConfig(value *GoogleMemorystoreInstancePersistenceConfig)
 	PutTimeouts(value *GoogleMemorystoreInstanceTimeouts)
 	PutZoneDistributionConfig(value *GoogleMemorystoreInstanceZoneDistributionConfig)
@@ -176,6 +180,7 @@ type GoogleMemorystoreInstance interface {
 	ResetEngineVersion()
 	ResetId()
 	ResetLabels()
+	ResetMaintenancePolicy()
 	ResetMode()
 	ResetNodeType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -515,6 +520,36 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstance) MaintenancePolicy() GoogleMemorystoreInstanceMaintenancePolicyOutputReference {
+	var returns GoogleMemorystoreInstanceMaintenancePolicyOutputReference
+	_jsii_.Get(
+		j,
+		"maintenancePolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) MaintenancePolicyInput() *GoogleMemorystoreInstanceMaintenancePolicy {
+	var returns *GoogleMemorystoreInstanceMaintenancePolicy
+	_jsii_.Get(
+		j,
+		"maintenancePolicyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) MaintenanceSchedule() GoogleMemorystoreInstanceMaintenanceScheduleList {
+	var returns GoogleMemorystoreInstanceMaintenanceScheduleList
+	_jsii_.Get(
+		j,
+		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstance) Mode() *string {
 	var returns *string
 	_jsii_.Get(
@@ -846,7 +881,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) ZoneDistributionConfigInput() *Goo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) GoogleMemorystoreInstance {
 	_init_.Initialize()
 
@@ -864,7 +899,7 @@ func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance_Override(g GoogleMemorystoreInstance, scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1461,6 +1496,17 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutDesiredPscAutoConnections(value
 	)
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) PutMaintenancePolicy(value *GoogleMemorystoreInstanceMaintenancePolicy) {
+	if err := g.validatePutMaintenancePolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) PutPersistenceConfig(value *GoogleMemorystoreInstancePersistenceConfig) {
 	if err := g.validatePutPersistenceConfigParameters(value); err != nil {
 		panic(err)
@@ -1538,6 +1584,14 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ResetLabels() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetLabels",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) ResetMaintenancePolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMaintenancePolicy",
 		nil, // no parameters
 	)
 }

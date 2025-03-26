@@ -36,6 +36,9 @@ type GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	GpuTopology() *string
+	SetGpuTopology(val *string)
+	GpuTopologyInput() *string
 	InternalValue() *GoogleComputeResourcePolicyGroupPlacementPolicy
 	SetInternalValue(val *GoogleComputeResourcePolicyGroupPlacementPolicy)
 	MaxDistance() *float64
@@ -78,6 +81,7 @@ type GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetAvailabilityDomainCount()
 	ResetCollocation()
+	ResetGpuTopology()
 	ResetMaxDistance()
 	ResetVmCount()
 	// Produce the Token's value at resolution time.
@@ -170,6 +174,26 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) GpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) GpuTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"gpuTopologyInput",
 		&returns,
 	)
 	return returns
@@ -313,6 +337,17 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference)SetGpuTopology(val *string) {
+	if err := j.validateSetGpuTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"gpuTopology",
 		val,
 	)
 }
@@ -570,6 +605,14 @@ func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.InvokeVoid(
 		g,
 		"resetCollocation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) ResetGpuTopology() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGpuTopology",
 		nil, // no parameters
 	)
 }

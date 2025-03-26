@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation google_bigquery_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation google_bigquery_reservation}.
 type GoogleBigqueryReservation interface {
 	cdktf.TerraformResource
 	Autoscale() GoogleBigqueryReservationAutoscaleOutputReference
@@ -65,6 +65,8 @@ type GoogleBigqueryReservation interface {
 	NameInput() *string
 	// The tree node.
 	Node() constructs.Node
+	OriginalPrimaryLocation() *string
+	PrimaryLocation() *string
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -78,6 +80,10 @@ type GoogleBigqueryReservation interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	ReplicationStatus() GoogleBigqueryReservationReplicationStatusList
+	SecondaryLocation() *string
+	SetSecondaryLocation(val *string)
+	SecondaryLocationInput() *string
 	SlotCapacity() *float64
 	SetSlotCapacity(val *float64)
 	SlotCapacityInput() *float64
@@ -144,6 +150,7 @@ type GoogleBigqueryReservation interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetSecondaryLocation()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -403,6 +410,26 @@ func (j *jsiiProxy_GoogleBigqueryReservation) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryReservation) OriginalPrimaryLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"originalPrimaryLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) PrimaryLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"primaryLocation",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryReservation) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -448,6 +475,36 @@ func (j *jsiiProxy_GoogleBigqueryReservation) RawOverrides() interface{} {
 	_jsii_.Get(
 		j,
 		"rawOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) ReplicationStatus() GoogleBigqueryReservationReplicationStatusList {
+	var returns GoogleBigqueryReservationReplicationStatusList
+	_jsii_.Get(
+		j,
+		"replicationStatus",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) SecondaryLocation() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryLocation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation) SecondaryLocationInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secondaryLocationInput",
 		&returns,
 	)
 	return returns
@@ -524,7 +581,7 @@ func (j *jsiiProxy_GoogleBigqueryReservation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
 func NewGoogleBigqueryReservation(scope constructs.Construct, id *string, config *GoogleBigqueryReservationConfig) GoogleBigqueryReservation {
 	_init_.Initialize()
 
@@ -542,7 +599,7 @@ func NewGoogleBigqueryReservation(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_bigquery_reservation google_bigquery_reservation} Resource.
 func NewGoogleBigqueryReservation_Override(g GoogleBigqueryReservation, scope constructs.Construct, id *string, config *GoogleBigqueryReservationConfig) {
 	_init_.Initialize()
 
@@ -694,6 +751,17 @@ func (j *jsiiProxy_GoogleBigqueryReservation)SetProvisioners(val *[]interface{})
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryReservation)SetSecondaryLocation(val *string) {
+	if err := j.validateSetSecondaryLocationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secondaryLocation",
 		val,
 	)
 }
@@ -1144,6 +1212,14 @@ func (g *jsiiProxy_GoogleBigqueryReservation) ResetProject() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProject",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryReservation) ResetSecondaryLocation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecondaryLocation",
 		nil, // no parameters
 	)
 }

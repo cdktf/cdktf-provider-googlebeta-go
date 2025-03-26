@@ -75,6 +75,10 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetInterfaceParameters(val *string) error {
 	return nil
 }

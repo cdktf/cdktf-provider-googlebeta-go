@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_image google_compute_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_image google_compute_image}.
 type GoogleComputeImage interface {
 	cdktf.TerraformResource
 	ArchiveSizeBytes() *float64
@@ -90,6 +90,8 @@ type GoogleComputeImage interface {
 	// Experimental.
 	RawOverrides() interface{}
 	SelfLink() *string
+	ShieldedInstanceInitialState() GoogleComputeImageShieldedInstanceInitialStateOutputReference
+	ShieldedInstanceInitialStateInput() *GoogleComputeImageShieldedInstanceInitialState
 	SourceDisk() *string
 	SetSourceDisk(val *string)
 	SourceDiskInput() *string
@@ -157,6 +159,7 @@ type GoogleComputeImage interface {
 	PutGuestOsFeatures(value interface{})
 	PutImageEncryptionKey(value *GoogleComputeImageImageEncryptionKey)
 	PutRawDisk(value *GoogleComputeImageRawDisk)
+	PutShieldedInstanceInitialState(value *GoogleComputeImageShieldedInstanceInitialState)
 	PutTimeouts(value *GoogleComputeImageTimeouts)
 	ResetDescription()
 	ResetDiskSizeGb()
@@ -171,6 +174,7 @@ type GoogleComputeImage interface {
 	ResetOverrideLogicalId()
 	ResetProject()
 	ResetRawDisk()
+	ResetShieldedInstanceInitialState()
 	ResetSourceDisk()
 	ResetSourceImage()
 	ResetSourceSnapshot()
@@ -594,6 +598,26 @@ func (j *jsiiProxy_GoogleComputeImage) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeImage) ShieldedInstanceInitialState() GoogleComputeImageShieldedInstanceInitialStateOutputReference {
+	var returns GoogleComputeImageShieldedInstanceInitialStateOutputReference
+	_jsii_.Get(
+		j,
+		"shieldedInstanceInitialState",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeImage) ShieldedInstanceInitialStateInput() *GoogleComputeImageShieldedInstanceInitialState {
+	var returns *GoogleComputeImageShieldedInstanceInitialState
+	_jsii_.Get(
+		j,
+		"shieldedInstanceInitialStateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeImage) SourceDisk() *string {
 	var returns *string
 	_jsii_.Get(
@@ -735,7 +759,7 @@ func (j *jsiiProxy_GoogleComputeImage) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_image google_compute_image} Resource.
 func NewGoogleComputeImage(scope constructs.Construct, id *string, config *GoogleComputeImageConfig) GoogleComputeImage {
 	_init_.Initialize()
 
@@ -753,7 +777,7 @@ func NewGoogleComputeImage(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_compute_image google_compute_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_image google_compute_image} Resource.
 func NewGoogleComputeImage_Override(g GoogleComputeImage, scope constructs.Construct, id *string, config *GoogleComputeImageConfig) {
 	_init_.Initialize()
 
@@ -1350,6 +1374,17 @@ func (g *jsiiProxy_GoogleComputeImage) PutRawDisk(value *GoogleComputeImageRawDi
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeImage) PutShieldedInstanceInitialState(value *GoogleComputeImageShieldedInstanceInitialState) {
+	if err := g.validatePutShieldedInstanceInitialStateParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putShieldedInstanceInitialState",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeImage) PutTimeouts(value *GoogleComputeImageTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1445,6 +1480,14 @@ func (g *jsiiProxy_GoogleComputeImage) ResetRawDisk() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRawDisk",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeImage) ResetShieldedInstanceInitialState() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetShieldedInstanceInitialState",
 		nil, // no parameters
 	)
 }

@@ -656,6 +656,7 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingEnabled", GoGetter: "AutoscalingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "autoscalingEnabledInput", GoGetter: "AutoscalingEnabledInput"},
+			_jsii_.MemberProperty{JsiiProperty: "autoscalingFactor", GoGetter: "AutoscalingFactor"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},

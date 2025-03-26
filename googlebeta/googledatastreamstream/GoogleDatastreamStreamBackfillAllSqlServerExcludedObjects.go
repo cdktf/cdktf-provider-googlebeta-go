@@ -7,7 +7,7 @@ package googledatastreamstream
 type GoogleDatastreamStreamBackfillAllSqlServerExcludedObjects struct {
 	// schemas block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_datastream_stream#schemas GoogleDatastreamStream#schemas}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_datastream_stream#schemas GoogleDatastreamStream#schemas}
 	Schemas interface{} `field:"required" json:"schemas" yaml:"schemas"`
 }
 

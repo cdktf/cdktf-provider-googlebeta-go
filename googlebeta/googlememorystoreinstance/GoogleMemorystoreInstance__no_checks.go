@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutMaintenancePolicyParameters(value *GoogleMemorystoreInstanceMaintenancePolicy) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutPersistenceConfigParameters(value *GoogleMemorystoreInstancePersistenceConfig) error {
 	return nil
 }

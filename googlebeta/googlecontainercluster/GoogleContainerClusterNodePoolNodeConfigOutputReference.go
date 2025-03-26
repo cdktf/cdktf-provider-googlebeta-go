@@ -145,6 +145,8 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	WindowsNodeConfig() GoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference
+	WindowsNodeConfigInput() *GoogleContainerClusterNodePoolNodeConfigWindowsNodeConfig
 	WorkloadMetadataConfig() GoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference
 	WorkloadMetadataConfigInput() *GoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfig
 	// Experimental.
@@ -190,6 +192,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	PutShieldedInstanceConfig(value *GoogleContainerClusterNodePoolNodeConfigShieldedInstanceConfig)
 	PutSoleTenantConfig(value *GoogleContainerClusterNodePoolNodeConfigSoleTenantConfig)
 	PutTaint(value interface{})
+	PutWindowsNodeConfig(value *GoogleContainerClusterNodePoolNodeConfigWindowsNodeConfig)
 	PutWorkloadMetadataConfig(value *GoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfig)
 	ResetAdvancedMachineFeatures()
 	ResetBootDiskKmsKey()
@@ -232,6 +235,7 @@ type GoogleContainerClusterNodePoolNodeConfigOutputReference interface {
 	ResetStoragePools()
 	ResetTags()
 	ResetTaint()
+	ResetWindowsNodeConfig()
 	ResetWorkloadMetadataConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -1148,6 +1152,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Terr
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) WindowsNodeConfig() GoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference {
+	var returns GoogleContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference
+	_jsii_.Get(
+		j,
+		"windowsNodeConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) WindowsNodeConfigInput() *GoogleContainerClusterNodePoolNodeConfigWindowsNodeConfig {
+	var returns *GoogleContainerClusterNodePoolNodeConfigWindowsNodeConfig
+	_jsii_.Get(
+		j,
+		"windowsNodeConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) WorkloadMetadataConfig() GoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference {
 	var returns GoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference
 	_jsii_.Get(
@@ -1888,6 +1912,17 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutT
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutWindowsNodeConfig(value *GoogleContainerClusterNodePoolNodeConfigWindowsNodeConfig) {
+	if err := g.validatePutWindowsNodeConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putWindowsNodeConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) PutWorkloadMetadataConfig(value *GoogleContainerClusterNodePoolNodeConfigWorkloadMetadataConfig) {
 	if err := g.validatePutWorkloadMetadataConfigParameters(value); err != nil {
 		panic(err)
@@ -2223,6 +2258,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) Rese
 	_jsii_.InvokeVoid(
 		g,
 		"resetTaint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) ResetWindowsNodeConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetWindowsNodeConfig",
 		nil, // no parameters
 	)
 }

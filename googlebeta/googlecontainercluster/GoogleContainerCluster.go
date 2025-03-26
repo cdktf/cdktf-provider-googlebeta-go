@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -189,6 +189,8 @@ type GoogleContainerCluster interface {
 	NotificationConfig() GoogleContainerClusterNotificationConfigOutputReference
 	NotificationConfigInput() *GoogleContainerClusterNotificationConfig
 	Operation() *string
+	PodAutoscaling() GoogleContainerClusterPodAutoscalingOutputReference
+	PodAutoscalingInput() *GoogleContainerClusterPodAutoscaling
 	PodSecurityPolicyConfig() GoogleContainerClusterPodSecurityPolicyConfigOutputReference
 	PodSecurityPolicyConfigInput() *GoogleContainerClusterPodSecurityPolicyConfig
 	PrivateClusterConfig() GoogleContainerClusterPrivateClusterConfigOutputReference
@@ -324,6 +326,7 @@ type GoogleContainerCluster interface {
 	PutNodePoolAutoConfig(value *GoogleContainerClusterNodePoolAutoConfig)
 	PutNodePoolDefaults(value *GoogleContainerClusterNodePoolDefaults)
 	PutNotificationConfig(value *GoogleContainerClusterNotificationConfig)
+	PutPodAutoscaling(value *GoogleContainerClusterPodAutoscaling)
 	PutPodSecurityPolicyConfig(value *GoogleContainerClusterPodSecurityPolicyConfig)
 	PutPrivateClusterConfig(value *GoogleContainerClusterPrivateClusterConfig)
 	PutProtectConfig(value *GoogleContainerClusterProtectConfig)
@@ -396,6 +399,7 @@ type GoogleContainerCluster interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetPodAutoscaling()
 	ResetPodSecurityPolicyConfig()
 	ResetPrivateClusterConfig()
 	ResetPrivateIpv6GoogleAccess()
@@ -1703,6 +1707,26 @@ func (j *jsiiProxy_GoogleContainerCluster) Operation() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) PodAutoscaling() GoogleContainerClusterPodAutoscalingOutputReference {
+	var returns GoogleContainerClusterPodAutoscalingOutputReference
+	_jsii_.Get(
+		j,
+		"podAutoscaling",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) PodAutoscalingInput() *GoogleContainerClusterPodAutoscaling {
+	var returns *GoogleContainerClusterPodAutoscaling
+	_jsii_.Get(
+		j,
+		"podAutoscalingInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) PodSecurityPolicyConfig() GoogleContainerClusterPodSecurityPolicyConfigOutputReference {
 	var returns GoogleContainerClusterPodSecurityPolicyConfigOutputReference
 	_jsii_.Get(
@@ -2184,7 +2208,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2202,7 +2226,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3305,6 +3329,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutNotificationConfig(value *GoogleCo
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutPodAutoscaling(value *GoogleContainerClusterPodAutoscaling) {
+	if err := g.validatePutPodAutoscalingParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPodAutoscaling",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutPodSecurityPolicyConfig(value *GoogleContainerClusterPodSecurityPolicyConfig) {
 	if err := g.validatePutPodSecurityPolicyConfigParameters(value); err != nil {
 		panic(err)
@@ -3903,6 +3938,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetPodAutoscaling() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPodAutoscaling",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_vertex_ai_featurestore_iam_policy google_vertex_ai_featurestore_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_vertex_ai_featurestore_iam_policy google_vertex_ai_featurestore_iam_policy}.
 type GoogleVertexAiFeaturestoreIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_vertex_ai_featurestore_iam_policy google_vertex_ai_featurestore_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_vertex_ai_featurestore_iam_policy google_vertex_ai_featurestore_iam_policy} Resource.
 func NewGoogleVertexAiFeaturestoreIamPolicy(scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreIamPolicyConfig) GoogleVertexAiFeaturestoreIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleVertexAiFeaturestoreIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.26.0/docs/resources/google_vertex_ai_featurestore_iam_policy google_vertex_ai_featurestore_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_vertex_ai_featurestore_iam_policy google_vertex_ai_featurestore_iam_policy} Resource.
 func NewGoogleVertexAiFeaturestoreIamPolicy_Override(g GoogleVertexAiFeaturestoreIamPolicy, scope constructs.Construct, id *string, config *GoogleVertexAiFeaturestoreIamPolicyConfig) {
 	_init_.Initialize()
 

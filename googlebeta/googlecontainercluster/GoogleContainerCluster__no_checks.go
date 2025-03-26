@@ -191,6 +191,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutNotificationConfigParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutPodAutoscalingParameters(value *GoogleContainerClusterPodAutoscaling) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutPodSecurityPolicyConfigParameters(value *GoogleContainerClusterPodSecurityPolicyConfig) error {
 	return nil
 }
