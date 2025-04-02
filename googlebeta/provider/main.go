@@ -185,6 +185,8 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "essentialContactsCustomEndpointInput", GoGetter: "EssentialContactsCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "eventarcCustomEndpoint", GoGetter: "EventarcCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "eventarcCustomEndpointInput", GoGetter: "EventarcCustomEndpointInput"},
+			_jsii_.MemberProperty{JsiiProperty: "externalCredentials", GoGetter: "ExternalCredentials"},
+			_jsii_.MemberProperty{JsiiProperty: "externalCredentialsInput", GoGetter: "ExternalCredentialsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "filestoreCustomEndpoint", GoGetter: "FilestoreCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "filestoreCustomEndpointInput", GoGetter: "FilestoreCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "firebaseAppCheckCustomEndpoint", GoGetter: "FirebaseAppCheckCustomEndpoint"},
@@ -405,6 +407,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetEdgenetworkCustomEndpoint", GoMethod: "ResetEdgenetworkCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEssentialContactsCustomEndpoint", GoMethod: "ResetEssentialContactsCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventarcCustomEndpoint", GoMethod: "ResetEventarcCustomEndpoint"},
+			_jsii_.MemberMethod{JsiiMethod: "resetExternalCredentials", GoMethod: "ResetExternalCredentials"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilestoreCustomEndpoint", GoMethod: "ResetFilestoreCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFirebaseAppCheckCustomEndpoint", GoMethod: "ResetFirebaseAppCheckCustomEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFirebaseAppHostingCustomEndpoint", GoMethod: "ResetFirebaseAppHostingCustomEndpoint"},
@@ -614,5 +617,9 @@ func init() {
 	_jsii_.RegisterStruct(
 		"@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig",
 		reflect.TypeOf((*GoogleBetaProviderConfig)(nil)).Elem(),
+	)
+	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.provider.GoogleBetaProviderExternalCredentials",
+		reflect.TypeOf((*GoogleBetaProviderExternalCredentials)(nil)).Elem(),
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -271,6 +271,9 @@ type GoogleBetaProvider interface {
 	EventarcCustomEndpoint() *string
 	SetEventarcCustomEndpoint(val *string)
 	EventarcCustomEndpointInput() *string
+	ExternalCredentials() interface{}
+	SetExternalCredentials(val interface{})
+	ExternalCredentialsInput() interface{}
 	FilestoreCustomEndpoint() *string
 	SetFilestoreCustomEndpoint(val *string)
 	FilestoreCustomEndpointInput() *string
@@ -691,6 +694,7 @@ type GoogleBetaProvider interface {
 	ResetEdgenetworkCustomEndpoint()
 	ResetEssentialContactsCustomEndpoint()
 	ResetEventarcCustomEndpoint()
+	ResetExternalCredentials()
 	ResetFilestoreCustomEndpoint()
 	ResetFirebaseAppCheckCustomEndpoint()
 	ResetFirebaseAppHostingCustomEndpoint()
@@ -2512,6 +2516,26 @@ func (j *jsiiProxy_GoogleBetaProvider) EventarcCustomEndpointInput() *string {
 	_jsii_.Get(
 		j,
 		"eventarcCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ExternalCredentials() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalCredentials",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ExternalCredentialsInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"externalCredentialsInput",
 		&returns,
 	)
 	return returns
@@ -4698,7 +4722,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4716,7 +4740,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -5401,6 +5425,17 @@ func (j *jsiiProxy_GoogleBetaProvider)SetEventarcCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"eventarcCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetExternalCredentials(val interface{}) {
+	if err := j.validateSetExternalCredentialsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"externalCredentials",
 		val,
 	)
 }
@@ -7041,6 +7076,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetEventarcCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetEventarcCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetExternalCredentials() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExternalCredentials",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version}.
 type GoogleParameterManagerParameterVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -46,6 +46,7 @@ type GoogleParameterManagerParameterVersion interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKeyVersion() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -279,6 +280,16 @@ func (j *jsiiProxy_GoogleParameterManagerParameterVersion) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleParameterManagerParameterVersion) KmsKeyVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyVersion",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleParameterManagerParameterVersion) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -460,7 +471,7 @@ func (j *jsiiProxy_GoogleParameterManagerParameterVersion) UpdateTime() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version} Resource.
 func NewGoogleParameterManagerParameterVersion(scope constructs.Construct, id *string, config *GoogleParameterManagerParameterVersionConfig) GoogleParameterManagerParameterVersion {
 	_init_.Initialize()
 
@@ -478,7 +489,7 @@ func NewGoogleParameterManagerParameterVersion(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_parameter_manager_parameter_version google_parameter_manager_parameter_version} Resource.
 func NewGoogleParameterManagerParameterVersion_Override(g GoogleParameterManagerParameterVersion, scope constructs.Construct, id *string, config *GoogleParameterManagerParameterVersionConfig) {
 	_init_.Initialize()
 

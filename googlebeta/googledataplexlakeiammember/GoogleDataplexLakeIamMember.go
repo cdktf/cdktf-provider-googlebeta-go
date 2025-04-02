@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member}.
 type GoogleDataplexLakeIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleDataplexLakeIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member} Resource.
 func NewGoogleDataplexLakeIamMember(scope constructs.Construct, id *string, config *GoogleDataplexLakeIamMemberConfig) GoogleDataplexLakeIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleDataplexLakeIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_dataplex_lake_iam_member google_dataplex_lake_iam_member} Resource.
 func NewGoogleDataplexLakeIamMember_Override(g GoogleDataplexLakeIamMember, scope constructs.Construct, id *string, config *GoogleDataplexLakeIamMemberConfig) {
 	_init_.Initialize()
 

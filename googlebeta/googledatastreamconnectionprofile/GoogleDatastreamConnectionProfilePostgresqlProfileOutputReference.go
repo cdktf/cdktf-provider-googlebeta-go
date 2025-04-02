@@ -44,6 +44,9 @@ type GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference interface
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	SecretManagerStoredPassword() *string
+	SetSecretManagerStoredPassword(val *string)
+	SecretManagerStoredPasswordInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -79,7 +82,9 @@ type GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference interface
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetPassword()
 	ResetPort()
+	ResetSecretManagerStoredPassword()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -220,6 +225,26 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputRefer
 	_jsii_.Get(
 		j,
 		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference) SecretManagerStoredPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference) SecretManagerStoredPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPasswordInput",
 		&returns,
 	)
 	return returns
@@ -366,6 +391,17 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputRefer
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference)SetSecretManagerStoredPassword(val *string) {
+	if err := j.validateSetSecretManagerStoredPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretManagerStoredPassword",
 		val,
 	)
 }
@@ -589,10 +625,26 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputRefer
 	return returns
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfilePostgresqlProfileOutputReference) ResetSecretManagerStoredPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretManagerStoredPassword",
 		nil, // no parameters
 	)
 }

@@ -299,6 +299,10 @@ func (j *jsiiProxy_GoogleContainerCluster) validateSetDescriptionParameters(val 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) validateSetDisableL4LbFirewallReconciliationParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) validateSetEnableAutopilotParameters(val interface{}) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template}.
 type GoogleComputeInstanceFromTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromTemplateAdvancedMachineFeaturesOutputReference
@@ -77,6 +77,8 @@ type GoogleComputeInstanceFromTemplate interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstanceEncryptionKey() GoogleComputeInstanceFromTemplateInstanceEncryptionKeyOutputReference
+	InstanceEncryptionKeyInput() *GoogleComputeInstanceFromTemplateInstanceEncryptionKey
 	InstanceId() *string
 	KeyRevocationActionType() *string
 	SetKeyRevocationActionType(val *string)
@@ -210,6 +212,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	PutBootDisk(value *GoogleComputeInstanceFromTemplateBootDisk)
 	PutConfidentialInstanceConfig(value *GoogleComputeInstanceFromTemplateConfidentialInstanceConfig)
 	PutGuestAccelerator(value interface{})
+	PutInstanceEncryptionKey(value *GoogleComputeInstanceFromTemplateInstanceEncryptionKey)
 	PutNetworkInterface(value interface{})
 	PutNetworkPerformanceConfig(value *GoogleComputeInstanceFromTemplateNetworkPerformanceConfig)
 	PutParams(value *GoogleComputeInstanceFromTemplateParams)
@@ -232,6 +235,7 @@ type GoogleComputeInstanceFromTemplate interface {
 	ResetGuestAccelerator()
 	ResetHostname()
 	ResetId()
+	ResetInstanceEncryptionKey()
 	ResetKeyRevocationActionType()
 	ResetLabels()
 	ResetMachineType()
@@ -648,6 +652,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) InstanceEncryptionKey() GoogleComputeInstanceFromTemplateInstanceEncryptionKeyOutputReference {
+	var returns GoogleComputeInstanceFromTemplateInstanceEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) InstanceEncryptionKeyInput() *GoogleComputeInstanceFromTemplateInstanceEncryptionKey {
+	var returns *GoogleComputeInstanceFromTemplateInstanceEncryptionKey
+	_jsii_.Get(
+		j,
+		"instanceEncryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -1234,7 +1258,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplate) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) GoogleComputeInstanceFromTemplate {
 	_init_.Initialize()
 
@@ -1252,7 +1276,7 @@ func NewGoogleComputeInstanceFromTemplate(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_compute_instance_from_template google_compute_instance_from_template} Resource.
 func NewGoogleComputeInstanceFromTemplate_Override(g GoogleComputeInstanceFromTemplate, scope constructs.Construct, id *string, config *GoogleComputeInstanceFromTemplateConfig) {
 	_init_.Initialize()
 
@@ -1970,6 +1994,17 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutGuestAccelerator(value 
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutInstanceEncryptionKey(value *GoogleComputeInstanceFromTemplateInstanceEncryptionKey) {
+	if err := g.validatePutInstanceEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInstanceEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) PutNetworkInterface(value interface{}) {
 	if err := g.validatePutNetworkInterfaceParameters(value); err != nil {
 		panic(err)
@@ -2169,6 +2204,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplate) ResetInstanceEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstanceEncryptionKey",
 		nil, // no parameters
 	)
 }

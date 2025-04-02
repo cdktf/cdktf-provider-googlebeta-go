@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -152,6 +152,8 @@ type GoogleComputeBackendService interface {
 	SetTimeoutSec(val *float64)
 	TimeoutSecInput() *float64
 	TimeoutsInput() interface{}
+	TlsSettings() GoogleComputeBackendServiceTlsSettingsOutputReference
+	TlsSettingsInput() *GoogleComputeBackendServiceTlsSettings
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -207,6 +209,7 @@ type GoogleComputeBackendService interface {
 	PutSecuritySettings(value *GoogleComputeBackendServiceSecuritySettings)
 	PutStrongSessionAffinityCookie(value *GoogleComputeBackendServiceStrongSessionAffinityCookie)
 	PutTimeouts(value *GoogleComputeBackendServiceTimeouts)
+	PutTlsSettings(value *GoogleComputeBackendServiceTlsSettings)
 	ResetAffinityCookieTtlSec()
 	ResetBackend()
 	ResetCdnPolicy()
@@ -242,6 +245,7 @@ type GoogleComputeBackendService interface {
 	ResetStrongSessionAffinityCookie()
 	ResetTimeouts()
 	ResetTimeoutSec()
+	ResetTlsSettings()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -1120,8 +1124,28 @@ func (j *jsiiProxy_GoogleComputeBackendService) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) TlsSettings() GoogleComputeBackendServiceTlsSettingsOutputReference {
+	var returns GoogleComputeBackendServiceTlsSettingsOutputReference
+	_jsii_.Get(
+		j,
+		"tlsSettings",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+func (j *jsiiProxy_GoogleComputeBackendService) TlsSettingsInput() *GoogleComputeBackendServiceTlsSettings {
+	var returns *GoogleComputeBackendServiceTlsSettings
+	_jsii_.Get(
+		j,
+		"tlsSettingsInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1139,7 +1163,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 
@@ -1934,6 +1958,17 @@ func (g *jsiiProxy_GoogleComputeBackendService) PutTimeouts(value *GoogleCompute
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) PutTlsSettings(value *GoogleComputeBackendServiceTlsSettings) {
+	if err := g.validatePutTlsSettingsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTlsSettings",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeBackendService) ResetAffinityCookieTtlSec() {
 	_jsii_.InvokeVoid(
 		g,
@@ -2194,6 +2229,14 @@ func (g *jsiiProxy_GoogleComputeBackendService) ResetTimeoutSec() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeoutSec",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeBackendService) ResetTlsSettings() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTlsSettings",
 		nil, // no parameters
 	)
 }

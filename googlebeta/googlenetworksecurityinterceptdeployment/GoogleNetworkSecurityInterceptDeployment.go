@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment}.
 type GoogleNetworkSecurityInterceptDeployment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -575,7 +575,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptDeployment) UpdateTime() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
 func NewGoogleNetworkSecurityInterceptDeployment(scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptDeploymentConfig) GoogleNetworkSecurityInterceptDeployment {
 	_init_.Initialize()
 
@@ -593,7 +593,7 @@ func NewGoogleNetworkSecurityInterceptDeployment(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_network_security_intercept_deployment google_network_security_intercept_deployment} Resource.
 func NewGoogleNetworkSecurityInterceptDeployment_Override(g GoogleNetworkSecurityInterceptDeployment, scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptDeploymentConfig) {
 	_init_.Initialize()
 

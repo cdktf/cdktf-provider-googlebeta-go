@@ -41,6 +41,9 @@ type GoogleDatastreamConnectionProfileMysqlProfileOutputReference interface {
 	Port() *float64
 	SetPort(val *float64)
 	PortInput() *float64
+	SecretManagerStoredPassword() *string
+	SetSecretManagerStoredPassword(val *string)
+	SecretManagerStoredPasswordInput() *string
 	SslConfig() GoogleDatastreamConnectionProfileMysqlProfileSslConfigOutputReference
 	SslConfigInput() *GoogleDatastreamConnectionProfileMysqlProfileSslConfig
 	// Experimental.
@@ -79,7 +82,9 @@ type GoogleDatastreamConnectionProfileMysqlProfileOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutSslConfig(value *GoogleDatastreamConnectionProfileMysqlProfileSslConfig)
+	ResetPassword()
 	ResetPort()
+	ResetSecretManagerStoredPassword()
 	ResetSslConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -201,6 +206,26 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference)
 	_jsii_.Get(
 		j,
 		"portInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference) SecretManagerStoredPassword() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPassword",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference) SecretManagerStoredPasswordInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"secretManagerStoredPasswordInput",
 		&returns,
 	)
 	return returns
@@ -356,6 +381,17 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference)
 	_jsii_.Set(
 		j,
 		"port",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference)SetSecretManagerStoredPassword(val *string) {
+	if err := j.validateSetSecretManagerStoredPasswordParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"secretManagerStoredPassword",
 		val,
 	)
 }
@@ -590,10 +626,26 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference)
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference) ResetPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPassword",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference) ResetPort() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPort",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMysqlProfileOutputReference) ResetSecretManagerStoredPassword() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSecretManagerStoredPassword",
 		nil, // no parameters
 	)
 }

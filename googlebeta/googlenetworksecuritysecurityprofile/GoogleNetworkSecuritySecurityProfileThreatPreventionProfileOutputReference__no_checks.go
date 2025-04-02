@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) validatePutAntivirusOverridesParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileOutputReference) validatePutSeverityOverridesParameters(value interface{}) error {
 	return nil
 }

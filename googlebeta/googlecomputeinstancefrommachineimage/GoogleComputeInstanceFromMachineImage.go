@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image}.
 type GoogleComputeInstanceFromMachineImage interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceFromMachineImageAdvancedMachineFeaturesOutputReference
@@ -75,6 +75,8 @@ type GoogleComputeInstanceFromMachineImage interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	InstanceEncryptionKey() GoogleComputeInstanceFromMachineImageInstanceEncryptionKeyOutputReference
+	InstanceEncryptionKeyInput() *GoogleComputeInstanceFromMachineImageInstanceEncryptionKey
 	InstanceId() *string
 	KeyRevocationActionType() *string
 	SetKeyRevocationActionType(val *string)
@@ -142,6 +144,8 @@ type GoogleComputeInstanceFromMachineImage interface {
 	ShieldedInstanceConfigInput() *GoogleComputeInstanceFromMachineImageShieldedInstanceConfig
 	SourceMachineImage() *string
 	SetSourceMachineImage(val *string)
+	SourceMachineImageEncryptionKey() GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKeyOutputReference
+	SourceMachineImageEncryptionKeyInput() *GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKey
 	SourceMachineImageInput() *string
 	Tags() *[]*string
 	SetTags(val *[]*string)
@@ -205,6 +209,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	PutAdvancedMachineFeatures(value *GoogleComputeInstanceFromMachineImageAdvancedMachineFeatures)
 	PutConfidentialInstanceConfig(value *GoogleComputeInstanceFromMachineImageConfidentialInstanceConfig)
 	PutGuestAccelerator(value interface{})
+	PutInstanceEncryptionKey(value *GoogleComputeInstanceFromMachineImageInstanceEncryptionKey)
 	PutNetworkInterface(value interface{})
 	PutNetworkPerformanceConfig(value *GoogleComputeInstanceFromMachineImageNetworkPerformanceConfig)
 	PutParams(value *GoogleComputeInstanceFromMachineImageParams)
@@ -212,6 +217,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	PutScheduling(value *GoogleComputeInstanceFromMachineImageScheduling)
 	PutServiceAccount(value *GoogleComputeInstanceFromMachineImageServiceAccount)
 	PutShieldedInstanceConfig(value *GoogleComputeInstanceFromMachineImageShieldedInstanceConfig)
+	PutSourceMachineImageEncryptionKey(value *GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKey)
 	PutTimeouts(value *GoogleComputeInstanceFromMachineImageTimeouts)
 	ResetAdvancedMachineFeatures()
 	ResetAllowStoppingForUpdate()
@@ -224,6 +230,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	ResetGuestAccelerator()
 	ResetHostname()
 	ResetId()
+	ResetInstanceEncryptionKey()
 	ResetKeyRevocationActionType()
 	ResetLabels()
 	ResetMachineType()
@@ -243,6 +250,7 @@ type GoogleComputeInstanceFromMachineImage interface {
 	ResetScheduling()
 	ResetServiceAccount()
 	ResetShieldedInstanceConfig()
+	ResetSourceMachineImageEncryptionKey()
 	ResetTags()
 	ResetTimeouts()
 	ResetZone()
@@ -619,6 +627,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) InstanceEncryptionKey() GoogleComputeInstanceFromMachineImageInstanceEncryptionKeyOutputReference {
+	var returns GoogleComputeInstanceFromMachineImageInstanceEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"instanceEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) InstanceEncryptionKeyInput() *GoogleComputeInstanceFromMachineImageInstanceEncryptionKey {
+	var returns *GoogleComputeInstanceFromMachineImageInstanceEncryptionKey
+	_jsii_.Get(
+		j,
+		"instanceEncryptionKeyInput",
 		&returns,
 	)
 	return returns
@@ -1074,6 +1102,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SourceMachineImage() *
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SourceMachineImageEncryptionKey() GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKeyOutputReference {
+	var returns GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKeyOutputReference
+	_jsii_.Get(
+		j,
+		"sourceMachineImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SourceMachineImageEncryptionKeyInput() *GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKey {
+	var returns *GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKey
+	_jsii_.Get(
+		j,
+		"sourceMachineImageEncryptionKeyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) SourceMachineImageInput() *string {
 	var returns *string
 	_jsii_.Get(
@@ -1195,7 +1243,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
 func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *string, config *GoogleComputeInstanceFromMachineImageConfig) GoogleComputeInstanceFromMachineImage {
 	_init_.Initialize()
 
@@ -1213,7 +1261,7 @@ func NewGoogleComputeInstanceFromMachineImage(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_compute_instance_from_machine_image google_compute_instance_from_machine_image} Resource.
 func NewGoogleComputeInstanceFromMachineImage_Override(g GoogleComputeInstanceFromMachineImage, scope constructs.Construct, id *string, config *GoogleComputeInstanceFromMachineImageConfig) {
 	_init_.Initialize()
 
@@ -1909,6 +1957,17 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutGuestAccelerator(va
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutInstanceEncryptionKey(value *GoogleComputeInstanceFromMachineImageInstanceEncryptionKey) {
+	if err := g.validatePutInstanceEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putInstanceEncryptionKey",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutNetworkInterface(value interface{}) {
 	if err := g.validatePutNetworkInterfaceParameters(value); err != nil {
 		panic(err)
@@ -1982,6 +2041,17 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutShieldedInstanceCon
 	_jsii_.InvokeVoid(
 		g,
 		"putShieldedInstanceConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) PutSourceMachineImageEncryptionKey(value *GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKey) {
+	if err := g.validatePutSourceMachineImageEncryptionKeyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putSourceMachineImageEncryptionKey",
 		[]interface{}{value},
 	)
 }
@@ -2081,6 +2151,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ResetInstanceEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstanceEncryptionKey",
 		nil, // no parameters
 	)
 }
@@ -2217,6 +2295,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ResetShieldedInstanceC
 	_jsii_.InvokeVoid(
 		g,
 		"resetShieldedInstanceConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) ResetSourceMachineImageEncryptionKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceMachineImageEncryptionKey",
 		nil, // no parameters
 	)
 }

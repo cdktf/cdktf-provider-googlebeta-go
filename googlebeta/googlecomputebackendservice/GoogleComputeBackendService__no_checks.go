@@ -123,6 +123,10 @@ func (g *jsiiProxy_GoogleComputeBackendService) validatePutTimeoutsParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeBackendService) validatePutTlsSettingsParameters(value *GoogleComputeBackendServiceTlsSettings) error {
+	return nil
+}
+
 func validateGoogleComputeBackendService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

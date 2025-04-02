@@ -15,6 +15,8 @@ type GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputRefer
 	cdktf.ComplexObject
 	AppendOnly() GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnlyOutputReference
 	AppendOnlyInput() *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnly
+	BlmtConfig() GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference
+	BlmtConfigInput() *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -76,10 +78,12 @@ type GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputRefer
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutAppendOnly(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigAppendOnly)
+	PutBlmtConfig(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig)
 	PutMerge(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigMerge)
 	PutSingleTargetDataset(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSingleTargetDataset)
 	PutSourceHierarchyDatasets(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigSourceHierarchyDatasets)
 	ResetAppendOnly()
+	ResetBlmtConfig()
 	ResetDataFreshness()
 	ResetMerge()
 	ResetSingleTargetDataset()
@@ -114,6 +118,26 @@ func (j *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationCon
 	_jsii_.Get(
 		j,
 		"appendOnlyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) BlmtConfig() GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference {
+	var returns GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfigOutputReference
+	_jsii_.Get(
+		j,
+		"blmtConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) BlmtConfigInput() *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig {
+	var returns *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig
+	_jsii_.Get(
+		j,
+		"blmtConfigInput",
 		&returns,
 	)
 	return returns
@@ -560,6 +584,17 @@ func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationCon
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) PutBlmtConfig(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigBlmtConfig) {
+	if err := g.validatePutBlmtConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putBlmtConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) PutMerge(value *GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigMerge) {
 	if err := g.validatePutMergeParameters(value); err != nil {
 		panic(err)
@@ -597,6 +632,14 @@ func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationCon
 	_jsii_.InvokeVoid(
 		g,
 		"resetAppendOnly",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference) ResetBlmtConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetBlmtConfig",
 		nil, // no parameters
 	)
 }

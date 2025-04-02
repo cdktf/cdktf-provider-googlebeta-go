@@ -41,6 +41,9 @@ type GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReferenc
 	ResourceManagerTags() cdktf.StringMap
 	ResourcePolicies() *[]*string
 	Size() *float64
+	Snapshot() *string
+	SourceImageEncryptionKey() GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList
+	SourceSnapshotEncryptionKey() GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceSnapshotEncryptionKeyList
 	StoragePool() *string
 	// Experimental.
 	TerraformAttribute() *string
@@ -225,6 +228,36 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	_jsii_.Get(
 		j,
 		"size",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) Snapshot() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"snapshot",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) SourceImageEncryptionKey() GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList {
+	var returns GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList
+	_jsii_.Get(
+		j,
+		"sourceImageEncryptionKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsOutputReference) SourceSnapshotEncryptionKey() GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceSnapshotEncryptionKeyList {
+	var returns GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceSnapshotEncryptionKeyList
+	_jsii_.Get(
+		j,
+		"sourceSnapshotEncryptionKey",
 		&returns,
 	)
 	return returns

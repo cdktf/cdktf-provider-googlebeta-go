@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_redis_cluster google_redis_cluster}.
 type GoogleRedisCluster interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
 	SetAuthorizationMode(val *string)
 	AuthorizationModeInput() *string
+	AutomatedBackupConfig() GoogleRedisClusterAutomatedBackupConfigOutputReference
+	AutomatedBackupConfigInput() *GoogleRedisClusterAutomatedBackupConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -162,6 +164,7 @@ type GoogleRedisCluster interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutomatedBackupConfig(value *GoogleRedisClusterAutomatedBackupConfig)
 	PutCrossClusterReplicationConfig(value *GoogleRedisClusterCrossClusterReplicationConfig)
 	PutMaintenancePolicy(value *GoogleRedisClusterMaintenancePolicy)
 	PutPersistenceConfig(value *GoogleRedisClusterPersistenceConfig)
@@ -169,6 +172,7 @@ type GoogleRedisCluster interface {
 	PutTimeouts(value *GoogleRedisClusterTimeouts)
 	PutZoneDistributionConfig(value *GoogleRedisClusterZoneDistributionConfig)
 	ResetAuthorizationMode()
+	ResetAutomatedBackupConfig()
 	ResetCrossClusterReplicationConfig()
 	ResetDeletionProtectionEnabled()
 	ResetId()
@@ -221,6 +225,26 @@ func (j *jsiiProxy_GoogleRedisCluster) AuthorizationModeInput() *string {
 	_jsii_.Get(
 		j,
 		"authorizationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) AutomatedBackupConfig() GoogleRedisClusterAutomatedBackupConfigOutputReference {
+	var returns GoogleRedisClusterAutomatedBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"automatedBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) AutomatedBackupConfigInput() *GoogleRedisClusterAutomatedBackupConfig {
+	var returns *GoogleRedisClusterAutomatedBackupConfig
+	_jsii_.Get(
+		j,
+		"automatedBackupConfigInput",
 		&returns,
 	)
 	return returns
@@ -827,7 +851,7 @@ func (j *jsiiProxy_GoogleRedisCluster) ZoneDistributionConfigInput() *GoogleRedi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) GoogleRedisCluster {
 	_init_.Initialize()
 
@@ -845,7 +869,7 @@ func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) {
 	_init_.Initialize()
 
@@ -1409,6 +1433,17 @@ func (g *jsiiProxy_GoogleRedisCluster) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GoogleRedisCluster) PutAutomatedBackupConfig(value *GoogleRedisClusterAutomatedBackupConfig) {
+	if err := g.validatePutAutomatedBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutomatedBackupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleRedisCluster) PutCrossClusterReplicationConfig(value *GoogleRedisClusterCrossClusterReplicationConfig) {
 	if err := g.validatePutCrossClusterReplicationConfigParameters(value); err != nil {
 		panic(err)
@@ -1479,6 +1514,14 @@ func (g *jsiiProxy_GoogleRedisCluster) ResetAuthorizationMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuthorizationMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) ResetAutomatedBackupConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutomatedBackupConfig",
 		nil, // no parameters
 	)
 }

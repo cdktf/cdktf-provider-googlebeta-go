@@ -32,6 +32,8 @@ type GoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleMemorystoreInstanceStateInfoUpdateInfo
 	SetInternalValue(val *GoogleMemorystoreInstanceStateInfoUpdateInfo)
+	TargetEngineVersion() *string
+	TargetNodeType() *string
 	TargetReplicaCount() *float64
 	TargetShardCount() *float64
 	// Experimental.
@@ -126,6 +128,26 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference) 
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference) TargetEngineVersion() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetEngineVersion",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstanceStateInfoUpdateInfoOutputReference) TargetNodeType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"targetNodeType",
 		&returns,
 	)
 	return returns

@@ -95,6 +95,10 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetEx
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetGpuZonalRedundancyDisabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateOutputReference) validateSetInternalValueParameters(val *GoogleCloudRunV2ServiceTemplate) error {
 	return nil
 }

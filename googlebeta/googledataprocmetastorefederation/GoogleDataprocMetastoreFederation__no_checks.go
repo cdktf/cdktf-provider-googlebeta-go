@@ -107,6 +107,10 @@ func (j *jsiiProxy_GoogleDataprocMetastoreFederation) validateSetCountParameters
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreFederation) validateSetDeletionProtectionParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreFederation) validateSetFederationIdParameters(val *string) error {
 	return nil
 }

@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutCrossInstanceReplicationConfigParameters(value *GoogleMemorystoreInstanceCrossInstanceReplicationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
 	return nil
 }

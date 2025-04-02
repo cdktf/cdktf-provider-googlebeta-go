@@ -83,6 +83,10 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference) validateSetSecretManagerStoredPasswordParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDatastreamConnectionProfileOracleProfileOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

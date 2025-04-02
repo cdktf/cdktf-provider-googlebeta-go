@@ -87,6 +87,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutGuestAccele
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutInstanceEncryptionKeyParameters(value *GoogleComputeInstanceFromMachineImageInstanceEncryptionKey) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutNetworkInterfaceParameters(value interface{}) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutServiceAcco
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutShieldedInstanceConfigParameters(value *GoogleComputeInstanceFromMachineImageShieldedInstanceConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutSourceMachineImageEncryptionKeyParameters(value *GoogleComputeInstanceFromMachineImageSourceMachineImageEncryptionKey) error {
 	return nil
 }
 

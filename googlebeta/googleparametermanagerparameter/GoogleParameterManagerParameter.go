@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter}.
 type GoogleParameterManagerParameter interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,6 +47,9 @@ type GoogleParameterManagerParameter interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	KmsKey() *string
+	SetKmsKey(val *string)
+	KmsKeyInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -130,6 +133,7 @@ type GoogleParameterManagerParameter interface {
 	PutTimeouts(value *GoogleParameterManagerParameterTimeouts)
 	ResetFormat()
 	ResetId()
+	ResetKmsKey()
 	ResetLabels()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -289,6 +293,26 @@ func (j *jsiiProxy_GoogleParameterManagerParameter) IdInput() *string {
 	_jsii_.Get(
 		j,
 		"idInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleParameterManagerParameter) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleParameterManagerParameter) KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
 		&returns,
 	)
 	return returns
@@ -495,7 +519,7 @@ func (j *jsiiProxy_GoogleParameterManagerParameter) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter} Resource.
 func NewGoogleParameterManagerParameter(scope constructs.Construct, id *string, config *GoogleParameterManagerParameterConfig) GoogleParameterManagerParameter {
 	_init_.Initialize()
 
@@ -513,7 +537,7 @@ func NewGoogleParameterManagerParameter(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.27.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_parameter_manager_parameter google_parameter_manager_parameter} Resource.
 func NewGoogleParameterManagerParameter_Override(g GoogleParameterManagerParameter, scope constructs.Construct, id *string, config *GoogleParameterManagerParameterConfig) {
 	_init_.Initialize()
 
@@ -580,6 +604,17 @@ func (j *jsiiProxy_GoogleParameterManagerParameter)SetId(val *string) {
 	_jsii_.Set(
 		j,
 		"id",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleParameterManagerParameter)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKey",
 		val,
 	)
 }
@@ -1023,6 +1058,14 @@ func (g *jsiiProxy_GoogleParameterManagerParameter) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleParameterManagerParameter) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKey",
 		nil, // no parameters
 	)
 }
