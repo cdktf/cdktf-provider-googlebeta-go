@@ -44,6 +44,7 @@ type DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interfac
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TpuTopology() *string
 	VmCount() *float64
 	// Experimental.
 	ComputeFqn() *string
@@ -189,6 +190,16 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputRefe
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) TpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopology",
 		&returns,
 	)
 	return returns

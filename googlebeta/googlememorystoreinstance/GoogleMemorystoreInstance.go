@@ -12,12 +12,14 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
 type GoogleMemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
 	SetAuthorizationMode(val *string)
 	AuthorizationModeInput() *string
+	AutomatedBackupConfig() GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference
+	AutomatedBackupConfigInput() *GoogleMemorystoreInstanceAutomatedBackupConfig
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -172,6 +174,7 @@ type GoogleMemorystoreInstance interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAutomatedBackupConfig(value *GoogleMemorystoreInstanceAutomatedBackupConfig)
 	PutCrossInstanceReplicationConfig(value *GoogleMemorystoreInstanceCrossInstanceReplicationConfig)
 	PutDesiredPscAutoConnections(value interface{})
 	PutMaintenancePolicy(value *GoogleMemorystoreInstanceMaintenancePolicy)
@@ -179,6 +182,7 @@ type GoogleMemorystoreInstance interface {
 	PutTimeouts(value *GoogleMemorystoreInstanceTimeouts)
 	PutZoneDistributionConfig(value *GoogleMemorystoreInstanceZoneDistributionConfig)
 	ResetAuthorizationMode()
+	ResetAutomatedBackupConfig()
 	ResetCrossInstanceReplicationConfig()
 	ResetDeletionProtectionEnabled()
 	ResetDesiredPscAutoConnections()
@@ -231,6 +235,26 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) AuthorizationModeInput() *string {
 	_jsii_.Get(
 		j,
 		"authorizationModeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) AutomatedBackupConfig() GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference {
+	var returns GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference
+	_jsii_.Get(
+		j,
+		"automatedBackupConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) AutomatedBackupConfigInput() *GoogleMemorystoreInstanceAutomatedBackupConfig {
+	var returns *GoogleMemorystoreInstanceAutomatedBackupConfig
+	_jsii_.Get(
+		j,
+		"automatedBackupConfigInput",
 		&returns,
 	)
 	return returns
@@ -917,7 +941,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) ZoneDistributionConfigInput() *Goo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) GoogleMemorystoreInstance {
 	_init_.Initialize()
 
@@ -935,7 +959,7 @@ func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance_Override(g GoogleMemorystoreInstance, scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1521,6 +1545,17 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) OverrideLogicalId(newLogicalId *st
 	)
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) PutAutomatedBackupConfig(value *GoogleMemorystoreInstanceAutomatedBackupConfig) {
+	if err := g.validatePutAutomatedBackupConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAutomatedBackupConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) PutCrossInstanceReplicationConfig(value *GoogleMemorystoreInstanceCrossInstanceReplicationConfig) {
 	if err := g.validatePutCrossInstanceReplicationConfigParameters(value); err != nil {
 		panic(err)
@@ -1591,6 +1626,14 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ResetAuthorizationMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAuthorizationMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) ResetAutomatedBackupConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAutomatedBackupConfig",
 		nil, // no parameters
 	)
 }

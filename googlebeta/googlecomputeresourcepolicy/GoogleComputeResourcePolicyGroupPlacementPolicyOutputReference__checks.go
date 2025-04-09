@@ -222,6 +222,14 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetTpuTopologyParameters(val *string) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetVmCountParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")

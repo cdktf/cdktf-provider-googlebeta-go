@@ -49,6 +49,8 @@ type GoogleNetappVolumeReplicationDestinationVolumeParametersOutputReference int
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TieringPolicy() GoogleNetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference
+	TieringPolicyInput() *GoogleNetappVolumeReplicationDestinationVolumeParametersTieringPolicy
 	VolumeId() *string
 	SetVolumeId(val *string)
 	VolumeIdInput() *string
@@ -76,8 +78,10 @@ type GoogleNetappVolumeReplicationDestinationVolumeParametersOutputReference int
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutTieringPolicy(value *GoogleNetappVolumeReplicationDestinationVolumeParametersTieringPolicy)
 	ResetDescription()
 	ResetShareName()
+	ResetTieringPolicy()
 	ResetVolumeId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -219,6 +223,26 @@ func (j *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutpu
 	_jsii_.Get(
 		j,
 		"terraformResource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutputReference) TieringPolicy() GoogleNetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference {
+	var returns GoogleNetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference
+	_jsii_.Get(
+		j,
+		"tieringPolicy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutputReference) TieringPolicyInput() *GoogleNetappVolumeReplicationDestinationVolumeParametersTieringPolicy {
+	var returns *GoogleNetappVolumeReplicationDestinationVolumeParametersTieringPolicy
+	_jsii_.Get(
+		j,
+		"tieringPolicyInput",
 		&returns,
 	)
 	return returns
@@ -557,6 +581,17 @@ func (g *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutpu
 	return returns
 }
 
+func (g *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutputReference) PutTieringPolicy(value *GoogleNetappVolumeReplicationDestinationVolumeParametersTieringPolicy) {
+	if err := g.validatePutTieringPolicyParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putTieringPolicy",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -569,6 +604,14 @@ func (g *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutpu
 	_jsii_.InvokeVoid(
 		g,
 		"resetShareName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolumeReplicationDestinationVolumeParametersOutputReference) ResetTieringPolicy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTieringPolicy",
 		nil, // no parameters
 	)
 }

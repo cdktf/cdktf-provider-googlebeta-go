@@ -111,6 +111,10 @@ func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetIdParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetKmsKeyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

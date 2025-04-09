@@ -52,6 +52,9 @@ type GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	TerraformResource() cdktf.IInterpolatingParent
 	// Experimental.
 	SetTerraformResource(val cdktf.IInterpolatingParent)
+	TpuTopology() *string
+	SetTpuTopology(val *string)
+	TpuTopologyInput() *string
 	VmCount() *float64
 	SetVmCount(val *float64)
 	VmCountInput() *float64
@@ -83,6 +86,7 @@ type GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference interface {
 	ResetCollocation()
 	ResetGpuTopology()
 	ResetMaxDistance()
+	ResetTpuTopology()
 	ResetVmCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -249,6 +253,26 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) TpuTopology() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopology",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) TpuTopologyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"tpuTopologyInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) VmCount() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -392,6 +416,17 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.Set(
 		j,
 		"terraformResource",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference)SetTpuTopology(val *string) {
+	if err := j.validateSetTpuTopologyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tpuTopology",
 		val,
 	)
 }
@@ -621,6 +656,14 @@ func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaxDistance",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) ResetTpuTopology() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTpuTopology",
 		nil, // no parameters
 	)
 }

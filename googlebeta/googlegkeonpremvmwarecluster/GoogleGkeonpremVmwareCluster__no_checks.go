@@ -159,6 +159,10 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetDisableBundledIngres
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetEnableAdvancedClusterParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareCluster) validateSetEnableControlPlaneV2Parameters(val interface{}) error {
 	return nil
 }

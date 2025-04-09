@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config}.
 type GoogleFirebaseAppCheckAppAttestConfig interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -416,7 +416,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckAppAttestConfig) TokenTtlInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config} Resource.
 func NewGoogleFirebaseAppCheckAppAttestConfig(scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckAppAttestConfigConfig) GoogleFirebaseAppCheckAppAttestConfig {
 	_init_.Initialize()
 
@@ -434,7 +434,7 @@ func NewGoogleFirebaseAppCheckAppAttestConfig(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.28.0/docs/resources/google_firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_firebase_app_check_app_attest_config google_firebase_app_check_app_attest_config} Resource.
 func NewGoogleFirebaseAppCheckAppAttestConfig_Override(g GoogleFirebaseAppCheckAppAttestConfig, scope constructs.Construct, id *string, config *GoogleFirebaseAppCheckAppAttestConfigConfig) {
 	_init_.Initialize()
 

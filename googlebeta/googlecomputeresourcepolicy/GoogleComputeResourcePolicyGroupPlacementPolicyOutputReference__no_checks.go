@@ -87,6 +87,10 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReferenc
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetTpuTopologyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeResourcePolicyGroupPlacementPolicyOutputReference) validateSetVmCountParameters(val *float64) error {
 	return nil
 }
