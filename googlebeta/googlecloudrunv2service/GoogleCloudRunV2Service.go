@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service}.
 type GoogleCloudRunV2Service interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -73,6 +73,9 @@ type GoogleCloudRunV2Service interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	Generation() *string
+	IapEnabled() interface{}
+	SetIapEnabled(val interface{})
+	IapEnabledInput() interface{}
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -197,6 +200,7 @@ type GoogleCloudRunV2Service interface {
 	ResetDefaultUriDisabled()
 	ResetDeletionProtection()
 	ResetDescription()
+	ResetIapEnabled()
 	ResetId()
 	ResetIngress()
 	ResetInvokerIamDisabled()
@@ -572,6 +576,26 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) Generation() *string {
 	_jsii_.Get(
 		j,
 		"generation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) IapEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"iapEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service) IapEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"iapEnabledInput",
 		&returns,
 	)
 	return returns
@@ -1018,7 +1042,7 @@ func (j *jsiiProxy_GoogleCloudRunV2Service) Urls() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) GoogleCloudRunV2Service {
 	_init_.Initialize()
 
@@ -1036,7 +1060,7 @@ func NewGoogleCloudRunV2Service(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_cloud_run_v2_service google_cloud_run_v2_service} Resource.
 func NewGoogleCloudRunV2Service_Override(g GoogleCloudRunV2Service, scope constructs.Construct, id *string, config *GoogleCloudRunV2ServiceConfig) {
 	_init_.Initialize()
 
@@ -1158,6 +1182,17 @@ func (j *jsiiProxy_GoogleCloudRunV2Service)SetForEach(val cdktf.ITerraformIterat
 	_jsii_.Set(
 		j,
 		"forEach",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2Service)SetIapEnabled(val interface{}) {
+	if err := j.validateSetIapEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"iapEnabled",
 		val,
 	)
 }
@@ -1767,6 +1802,14 @@ func (g *jsiiProxy_GoogleCloudRunV2Service) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2Service) ResetIapEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIapEnabled",
 		nil, // no parameters
 	)
 }

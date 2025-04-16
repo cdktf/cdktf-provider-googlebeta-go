@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_integration_connectors_managed_zone google_integration_connectors_managed_zone}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_integration_connectors_managed_zone google_integration_connectors_managed_zone}.
 type GoogleIntegrationConnectorsManagedZone interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -542,7 +542,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsManagedZone) UpdateTime() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_integration_connectors_managed_zone google_integration_connectors_managed_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_integration_connectors_managed_zone google_integration_connectors_managed_zone} Resource.
 func NewGoogleIntegrationConnectorsManagedZone(scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsManagedZoneConfig) GoogleIntegrationConnectorsManagedZone {
 	_init_.Initialize()
 
@@ -560,7 +560,7 @@ func NewGoogleIntegrationConnectorsManagedZone(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_integration_connectors_managed_zone google_integration_connectors_managed_zone} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_integration_connectors_managed_zone google_integration_connectors_managed_zone} Resource.
 func NewGoogleIntegrationConnectorsManagedZone_Override(g GoogleIntegrationConnectorsManagedZone, scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsManagedZoneConfig) {
 	_init_.Initialize()
 

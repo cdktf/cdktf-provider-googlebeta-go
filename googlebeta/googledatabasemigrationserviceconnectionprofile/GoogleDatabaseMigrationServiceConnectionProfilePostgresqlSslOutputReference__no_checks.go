@@ -83,6 +83,10 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslO
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) validateSetTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }

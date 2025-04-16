@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_global_address google_compute_global_address}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_global_address google_compute_global_address}.
 type GoogleComputeGlobalAddress interface {
 	cdktf.TerraformResource
 	Address() *string
@@ -628,7 +628,7 @@ func (j *jsiiProxy_GoogleComputeGlobalAddress) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_global_address google_compute_global_address} Resource.
 func NewGoogleComputeGlobalAddress(scope constructs.Construct, id *string, config *GoogleComputeGlobalAddressConfig) GoogleComputeGlobalAddress {
 	_init_.Initialize()
 
@@ -646,7 +646,7 @@ func NewGoogleComputeGlobalAddress(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_global_address google_compute_global_address} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_global_address google_compute_global_address} Resource.
 func NewGoogleComputeGlobalAddress_Override(g GoogleComputeGlobalAddress, scope constructs.Construct, id *string, config *GoogleComputeGlobalAddressConfig) {
 	_init_.Initialize()
 

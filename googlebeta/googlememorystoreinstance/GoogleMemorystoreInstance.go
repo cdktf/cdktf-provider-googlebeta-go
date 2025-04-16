@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
 type GoogleMemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -20,6 +20,7 @@ type GoogleMemorystoreInstance interface {
 	AuthorizationModeInput() *string
 	AutomatedBackupConfig() GoogleMemorystoreInstanceAutomatedBackupConfigOutputReference
 	AutomatedBackupConfigInput() *GoogleMemorystoreInstanceAutomatedBackupConfig
+	BackupCollection() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
 	// Experimental.
@@ -61,6 +62,8 @@ type GoogleMemorystoreInstance interface {
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
+	GcsSource() GoogleMemorystoreInstanceGcsSourceOutputReference
+	GcsSourceInput() *GoogleMemorystoreInstanceGcsSource
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -80,6 +83,8 @@ type GoogleMemorystoreInstance interface {
 	MaintenancePolicy() GoogleMemorystoreInstanceMaintenancePolicyOutputReference
 	MaintenancePolicyInput() *GoogleMemorystoreInstanceMaintenancePolicy
 	MaintenanceSchedule() GoogleMemorystoreInstanceMaintenanceScheduleList
+	ManagedBackupSource() GoogleMemorystoreInstanceManagedBackupSourceOutputReference
+	ManagedBackupSourceInput() *GoogleMemorystoreInstanceManagedBackupSource
 	Mode() *string
 	SetMode(val *string)
 	ModeInput() *string
@@ -177,7 +182,9 @@ type GoogleMemorystoreInstance interface {
 	PutAutomatedBackupConfig(value *GoogleMemorystoreInstanceAutomatedBackupConfig)
 	PutCrossInstanceReplicationConfig(value *GoogleMemorystoreInstanceCrossInstanceReplicationConfig)
 	PutDesiredPscAutoConnections(value interface{})
+	PutGcsSource(value *GoogleMemorystoreInstanceGcsSource)
 	PutMaintenancePolicy(value *GoogleMemorystoreInstanceMaintenancePolicy)
+	PutManagedBackupSource(value *GoogleMemorystoreInstanceManagedBackupSource)
 	PutPersistenceConfig(value *GoogleMemorystoreInstancePersistenceConfig)
 	PutTimeouts(value *GoogleMemorystoreInstanceTimeouts)
 	PutZoneDistributionConfig(value *GoogleMemorystoreInstanceZoneDistributionConfig)
@@ -188,9 +195,11 @@ type GoogleMemorystoreInstance interface {
 	ResetDesiredPscAutoConnections()
 	ResetEngineConfigs()
 	ResetEngineVersion()
+	ResetGcsSource()
 	ResetId()
 	ResetLabels()
 	ResetMaintenancePolicy()
+	ResetManagedBackupSource()
 	ResetMode()
 	ResetNodeType()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -255,6 +264,16 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) AutomatedBackupConfigInput() *Goog
 	_jsii_.Get(
 		j,
 		"automatedBackupConfigInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) BackupCollection() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"backupCollection",
 		&returns,
 	)
 	return returns
@@ -480,6 +499,26 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) FriendlyUniqueId() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleMemorystoreInstance) GcsSource() GoogleMemorystoreInstanceGcsSourceOutputReference {
+	var returns GoogleMemorystoreInstanceGcsSourceOutputReference
+	_jsii_.Get(
+		j,
+		"gcsSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) GcsSourceInput() *GoogleMemorystoreInstanceGcsSource {
+	var returns *GoogleMemorystoreInstanceGcsSource
+	_jsii_.Get(
+		j,
+		"gcsSourceInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleMemorystoreInstance) Id() *string {
 	var returns *string
 	_jsii_.Get(
@@ -595,6 +634,26 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) MaintenanceSchedule() GoogleMemory
 	_jsii_.Get(
 		j,
 		"maintenanceSchedule",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) ManagedBackupSource() GoogleMemorystoreInstanceManagedBackupSourceOutputReference {
+	var returns GoogleMemorystoreInstanceManagedBackupSourceOutputReference
+	_jsii_.Get(
+		j,
+		"managedBackupSource",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) ManagedBackupSourceInput() *GoogleMemorystoreInstanceManagedBackupSource {
+	var returns *GoogleMemorystoreInstanceManagedBackupSource
+	_jsii_.Get(
+		j,
+		"managedBackupSourceInput",
 		&returns,
 	)
 	return returns
@@ -941,7 +1000,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) ZoneDistributionConfigInput() *Goo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) GoogleMemorystoreInstance {
 	_init_.Initialize()
 
@@ -959,7 +1018,7 @@ func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance_Override(g GoogleMemorystoreInstance, scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1578,6 +1637,17 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutDesiredPscAutoConnections(value
 	)
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) PutGcsSource(value *GoogleMemorystoreInstanceGcsSource) {
+	if err := g.validatePutGcsSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putGcsSource",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) PutMaintenancePolicy(value *GoogleMemorystoreInstanceMaintenancePolicy) {
 	if err := g.validatePutMaintenancePolicyParameters(value); err != nil {
 		panic(err)
@@ -1585,6 +1655,17 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) PutMaintenancePolicy(value *Google
 	_jsii_.InvokeVoid(
 		g,
 		"putMaintenancePolicy",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) PutManagedBackupSource(value *GoogleMemorystoreInstanceManagedBackupSource) {
+	if err := g.validatePutManagedBackupSourceParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putManagedBackupSource",
 		[]interface{}{value},
 	)
 }
@@ -1678,6 +1759,14 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ResetEngineVersion() {
 	)
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) ResetGcsSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGcsSource",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1698,6 +1787,14 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ResetMaintenancePolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetMaintenancePolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) ResetManagedBackupSource() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetManagedBackupSource",
 		nil, // no parameters
 	)
 }

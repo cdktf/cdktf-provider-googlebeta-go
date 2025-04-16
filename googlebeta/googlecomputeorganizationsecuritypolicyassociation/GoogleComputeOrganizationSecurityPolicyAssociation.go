@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association}.
 type GoogleComputeOrganizationSecurityPolicyAssociation interface {
 	cdktf.TerraformResource
 	AttachmentId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleComputeOrganizationSecurityPolicyAssociation) TimeoutsI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
 func NewGoogleComputeOrganizationSecurityPolicyAssociation(scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyAssociationConfig) GoogleComputeOrganizationSecurityPolicyAssociation {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleComputeOrganizationSecurityPolicyAssociation(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_compute_organization_security_policy_association google_compute_organization_security_policy_association} Resource.
 func NewGoogleComputeOrganizationSecurityPolicyAssociation_Override(g GoogleComputeOrganizationSecurityPolicyAssociation, scope constructs.Construct, id *string, config *GoogleComputeOrganizationSecurityPolicyAssociationConfig) {
 	_init_.Initialize()
 

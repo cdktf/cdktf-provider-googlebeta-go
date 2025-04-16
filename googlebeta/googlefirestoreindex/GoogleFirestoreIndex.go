@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_firestore_index google_firestore_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index google_firestore_index}.
 type GoogleFirestoreIndex interface {
 	cdktf.TerraformResource
 	ApiScope() *string
@@ -36,6 +36,9 @@ type GoogleFirestoreIndex interface {
 	Database() *string
 	SetDatabase(val *string)
 	DatabaseInput() *string
+	Density() *string
+	SetDensity(val *string)
+	DensityInput() *string
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -57,6 +60,9 @@ type GoogleFirestoreIndex interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	Multikey() interface{}
+	SetMultikey(val interface{})
+	MultikeyInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -131,7 +137,9 @@ type GoogleFirestoreIndex interface {
 	PutTimeouts(value *GoogleFirestoreIndexTimeouts)
 	ResetApiScope()
 	ResetDatabase()
+	ResetDensity()
 	ResetId()
+	ResetMultikey()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -256,6 +264,26 @@ func (j *jsiiProxy_GoogleFirestoreIndex) DatabaseInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleFirestoreIndex) Density() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"density",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreIndex) DensityInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"densityInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleFirestoreIndex) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -341,6 +369,26 @@ func (j *jsiiProxy_GoogleFirestoreIndex) Lifecycle() *cdktf.TerraformResourceLif
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreIndex) Multikey() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multikey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFirestoreIndex) MultikeyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"multikeyInput",
 		&returns,
 	)
 	return returns
@@ -487,7 +535,7 @@ func (j *jsiiProxy_GoogleFirestoreIndex) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index google_firestore_index} Resource.
 func NewGoogleFirestoreIndex(scope constructs.Construct, id *string, config *GoogleFirestoreIndexConfig) GoogleFirestoreIndex {
 	_init_.Initialize()
 
@@ -505,7 +553,7 @@ func NewGoogleFirestoreIndex(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.29.0/docs/resources/google_firestore_index google_firestore_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_firestore_index google_firestore_index} Resource.
 func NewGoogleFirestoreIndex_Override(g GoogleFirestoreIndex, scope constructs.Construct, id *string, config *GoogleFirestoreIndexConfig) {
 	_init_.Initialize()
 
@@ -571,6 +619,17 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetDatabase(val *string) {
 	)
 }
 
+func (j *jsiiProxy_GoogleFirestoreIndex)SetDensity(val *string) {
+	if err := j.validateSetDensityParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"density",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleFirestoreIndex)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -605,6 +664,17 @@ func (j *jsiiProxy_GoogleFirestoreIndex)SetLifecycle(val *cdktf.TerraformResourc
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleFirestoreIndex)SetMultikey(val interface{}) {
+	if err := j.validateSetMultikeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"multikey",
 		val,
 	)
 }
@@ -1041,10 +1111,26 @@ func (g *jsiiProxy_GoogleFirestoreIndex) ResetDatabase() {
 	)
 }
 
+func (g *jsiiProxy_GoogleFirestoreIndex) ResetDensity() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDensity",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleFirestoreIndex) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFirestoreIndex) ResetMultikey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMultikey",
 		nil, // no parameters
 	)
 }
