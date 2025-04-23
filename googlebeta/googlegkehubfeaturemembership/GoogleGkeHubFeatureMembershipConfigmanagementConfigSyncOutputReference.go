@@ -28,6 +28,8 @@ type GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference inte
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DeploymentOverrides() GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList
+	DeploymentOverridesInput() interface{}
 	Enabled() interface{}
 	SetEnabled(val interface{})
 	EnabledInput() interface{}
@@ -83,8 +85,10 @@ type GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference inte
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDeploymentOverrides(value interface{})
 	PutGit(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGit)
 	PutOci(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOci)
+	ResetDeploymentOverrides()
 	ResetEnabled()
 	ResetGit()
 	ResetMetricsGcpServiceAccountEmail()
@@ -132,6 +136,26 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) DeploymentOverrides() GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList {
+	var returns GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncDeploymentOverridesList
+	_jsii_.Get(
+		j,
+		"deploymentOverrides",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) DeploymentOverridesInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deploymentOverridesInput",
 		&returns,
 	)
 	return returns
@@ -641,6 +665,17 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 	return returns
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) PutDeploymentOverrides(value interface{}) {
+	if err := g.validatePutDeploymentOverridesParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDeploymentOverrides",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) PutGit(value *GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncGit) {
 	if err := g.validatePutGitParameters(value); err != nil {
 		panic(err)
@@ -660,6 +695,14 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutput
 		g,
 		"putOci",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementConfigSyncOutputReference) ResetDeploymentOverrides() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeploymentOverrides",
+		nil, // no parameters
 	)
 }
 

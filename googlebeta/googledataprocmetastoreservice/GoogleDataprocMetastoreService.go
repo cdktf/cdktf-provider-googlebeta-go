@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service}.
 type GoogleDataprocMetastoreService interface {
 	cdktf.TerraformResource
 	ArtifactGcsUri() *string
@@ -106,6 +106,9 @@ type GoogleDataprocMetastoreService interface {
 	ServiceIdInput() *string
 	State() *string
 	StateMessage() *string
+	Tags() *map[string]*string
+	SetTags(val *map[string]*string)
+	TagsInput() *map[string]*string
 	TelemetryConfig() GoogleDataprocMetastoreServiceTelemetryConfigOutputReference
 	TelemetryConfigInput() *GoogleDataprocMetastoreServiceTelemetryConfig
 	// Experimental.
@@ -193,6 +196,7 @@ type GoogleDataprocMetastoreService interface {
 	ResetReleaseChannel()
 	ResetScalingConfig()
 	ResetScheduledBackup()
+	ResetTags()
 	ResetTelemetryConfig()
 	ResetTier()
 	ResetTimeouts()
@@ -754,6 +758,26 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) StateMessage() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDataprocMetastoreService) Tags() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tags",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService) TagsInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"tagsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDataprocMetastoreService) TelemetryConfig() GoogleDataprocMetastoreServiceTelemetryConfigOutputReference {
 	var returns GoogleDataprocMetastoreServiceTelemetryConfigOutputReference
 	_jsii_.Get(
@@ -875,7 +899,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) GoogleDataprocMetastoreService {
 	_init_.Initialize()
 
@@ -893,7 +917,7 @@ func NewGoogleDataprocMetastoreService(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_dataproc_metastore_service google_dataproc_metastore_service} Resource.
 func NewGoogleDataprocMetastoreService_Override(g GoogleDataprocMetastoreService, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreServiceConfig) {
 	_init_.Initialize()
 
@@ -1078,6 +1102,17 @@ func (j *jsiiProxy_GoogleDataprocMetastoreService)SetServiceId(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocMetastoreService)SetTags(val *map[string]*string) {
+	if err := j.validateSetTagsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"tags",
 		val,
 	)
 }
@@ -1677,6 +1712,14 @@ func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetScheduledBackup() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetScheduledBackup",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocMetastoreService) ResetTags() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTags",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/data-sources/google_compute_backend_service google_compute_backend_service}.
 type DataGoogleComputeBackendService interface {
 	cdktf.TerraformDataSource
 	AffinityCookieTtlSec() *float64
@@ -65,6 +65,7 @@ type DataGoogleComputeBackendService interface {
 	LocalityLbPolicies() DataGoogleComputeBackendServiceLocalityLbPoliciesList
 	LocalityLbPolicy() *string
 	LogConfig() DataGoogleComputeBackendServiceLogConfigList
+	MaxStreamDuration() DataGoogleComputeBackendServiceMaxStreamDurationList
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -475,6 +476,16 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) LogConfig() DataGoogleComput
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeBackendService) MaxStreamDuration() DataGoogleComputeBackendServiceMaxStreamDurationList {
+	var returns DataGoogleComputeBackendServiceMaxStreamDurationList
+	_jsii_.Get(
+		j,
+		"maxStreamDuration",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeBackendService) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -686,7 +697,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendService) TlsSettings() DataGoogleComp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) DataGoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -704,7 +715,7 @@ func NewDataGoogleComputeBackendService(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/data-sources/google_compute_backend_service google_compute_backend_service} Data Source.
 func NewDataGoogleComputeBackendService_Override(d DataGoogleComputeBackendService, scope constructs.Construct, id *string, config *DataGoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 

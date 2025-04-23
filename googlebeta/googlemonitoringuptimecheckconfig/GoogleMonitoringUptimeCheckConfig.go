@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config}.
 type GoogleMonitoringUptimeCheckConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -56,6 +56,9 @@ type GoogleMonitoringUptimeCheckConfig interface {
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
 	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	LogCheckFailures() interface{}
+	SetLogCheckFailures(val interface{})
+	LogCheckFailuresInput() interface{}
 	MonitoredResource() GoogleMonitoringUptimeCheckConfigMonitoredResourceOutputReference
 	MonitoredResourceInput() *GoogleMonitoringUptimeCheckConfigMonitoredResource
 	Name() *string
@@ -155,6 +158,7 @@ type GoogleMonitoringUptimeCheckConfig interface {
 	ResetContentMatchers()
 	ResetHttpCheck()
 	ResetId()
+	ResetLogCheckFailures()
 	ResetMonitoredResource()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -370,6 +374,26 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) Lifecycle() *cdktf.Terrafo
 	_jsii_.Get(
 		j,
 		"lifecycle",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) LogCheckFailures() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logCheckFailures",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) LogCheckFailuresInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logCheckFailuresInput",
 		&returns,
 	)
 	return returns
@@ -666,7 +690,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig) UserLabelsInput() *map[str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewGoogleMonitoringUptimeCheckConfig(scope constructs.Construct, id *string, config *GoogleMonitoringUptimeCheckConfigConfig) GoogleMonitoringUptimeCheckConfig {
 	_init_.Initialize()
 
@@ -684,7 +708,7 @@ func NewGoogleMonitoringUptimeCheckConfig(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs/resources/google_monitoring_uptime_check_config google_monitoring_uptime_check_config} Resource.
 func NewGoogleMonitoringUptimeCheckConfig_Override(g GoogleMonitoringUptimeCheckConfig, scope constructs.Construct, id *string, config *GoogleMonitoringUptimeCheckConfigConfig) {
 	_init_.Initialize()
 
@@ -773,6 +797,17 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig)SetLifecycle(val *cdktf.Ter
 	_jsii_.Set(
 		j,
 		"lifecycle",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfig)SetLogCheckFailures(val interface{}) {
+	if err := j.validateSetLogCheckFailuresParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logCheckFailures",
 		val,
 	)
 }
@@ -1309,6 +1344,14 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfig) ResetLogCheckFailures() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLogCheckFailures",
 		nil, // no parameters
 	)
 }

@@ -35,6 +35,9 @@ type GoogleAlloydbInstanceMachineConfigOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleAlloydbInstanceMachineConfig
 	SetInternalValue(val *GoogleAlloydbInstanceMachineConfig)
+	MachineType() *string
+	SetMachineType(val *string)
+	MachineTypeInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -68,6 +71,7 @@ type GoogleAlloydbInstanceMachineConfigOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCpuCount()
+	ResetMachineType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -148,6 +152,26 @@ func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) InternalVa
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) MachineType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) MachineTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"machineTypeInput",
 		&returns,
 	)
 	return returns
@@ -241,6 +265,17 @@ func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference)SetInternal
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference)SetMachineType(val *string) {
+	if err := j.validateSetMachineTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"machineType",
 		val,
 	)
 }
@@ -457,6 +492,14 @@ func (g *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) ResetCpuCo
 	_jsii_.InvokeVoid(
 		g,
 		"resetCpuCount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleAlloydbInstanceMachineConfigOutputReference) ResetMachineType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMachineType",
 		nil, // no parameters
 	)
 }

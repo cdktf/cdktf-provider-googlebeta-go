@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -542,6 +542,9 @@ type GoogleBetaProvider interface {
 	SqlCustomEndpoint() *string
 	SetSqlCustomEndpoint(val *string)
 	SqlCustomEndpointInput() *string
+	StorageBatchOperationsCustomEndpoint() *string
+	SetStorageBatchOperationsCustomEndpoint(val *string)
+	StorageBatchOperationsCustomEndpointInput() *string
 	StorageControlCustomEndpoint() *string
 	SetStorageControlCustomEndpoint(val *string)
 	StorageControlCustomEndpointInput() *string
@@ -784,6 +787,7 @@ type GoogleBetaProvider interface {
 	ResetSourceRepoCustomEndpoint()
 	ResetSpannerCustomEndpoint()
 	ResetSqlCustomEndpoint()
+	ResetStorageBatchOperationsCustomEndpoint()
 	ResetStorageControlCustomEndpoint()
 	ResetStorageCustomEndpoint()
 	ResetStorageInsightsCustomEndpoint()
@@ -4311,6 +4315,26 @@ func (j *jsiiProxy_GoogleBetaProvider) SqlCustomEndpointInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) StorageBatchOperationsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBatchOperationsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) StorageBatchOperationsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"storageBatchOperationsCustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) StorageControlCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4722,7 +4746,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4740,7 +4764,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.30.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.31.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -6124,6 +6148,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetSqlCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"sqlCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetStorageBatchOperationsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"storageBatchOperationsCustomEndpoint",
 		val,
 	)
 }
@@ -7780,6 +7812,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetSqlCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetSqlCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetStorageBatchOperationsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStorageBatchOperationsCustomEndpoint",
 		nil, // no parameters
 	)
 }

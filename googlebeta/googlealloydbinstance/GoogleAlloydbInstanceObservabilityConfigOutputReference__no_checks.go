@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) vali
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetAssistiveExperiencesEnabledParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstanceObservabilityConfigOutputReference) validateSetComplexObjectIndexParameters(val interface{}) error {
 	return nil
 }
