@@ -53,6 +53,9 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	EphemeralStorageLocalSsdConfigInput() *GoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfig
 	FastSocket() GoogleContainerClusterNodeConfigFastSocketOutputReference
 	FastSocketInput() *GoogleContainerClusterNodeConfigFastSocket
+	FlexStart() interface{}
+	SetFlexStart(val interface{})
+	FlexStartInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() GoogleContainerClusterNodeConfigGcfsConfigOutputReference
@@ -204,6 +207,7 @@ type GoogleContainerClusterNodeConfigOutputReference interface {
 	ResetEphemeralStorageConfig()
 	ResetEphemeralStorageLocalSsdConfig()
 	ResetFastSocket()
+	ResetFlexStart()
 	ResetGcfsConfig()
 	ResetGuestAccelerator()
 	ResetGvnic()
@@ -487,6 +491,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) FastSocketIn
 	_jsii_.Get(
 		j,
 		"fastSocketInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) FlexStart() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStart",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) FlexStartInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"flexStartInput",
 		&returns,
 	)
 	return returns
@@ -1286,6 +1310,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetEnableConf
 	)
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetFlexStart(val interface{}) {
+	if err := j.validateSetFlexStartParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"flexStart",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference)SetImageType(val *string) {
 	if err := j.validateSetImageTypeParameters(val); err != nil {
 		panic(err)
@@ -2010,6 +2045,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetFastSoc
 	_jsii_.InvokeVoid(
 		g,
 		"resetFastSocket",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigOutputReference) ResetFlexStart() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetFlexStart",
 		nil, // no parameters
 	)
 }

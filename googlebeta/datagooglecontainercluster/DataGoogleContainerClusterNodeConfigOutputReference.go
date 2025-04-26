@@ -39,6 +39,7 @@ type DataGoogleContainerClusterNodeConfigOutputReference interface {
 	EphemeralStorageConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageConfigList
 	EphemeralStorageLocalSsdConfig() DataGoogleContainerClusterNodeConfigEphemeralStorageLocalSsdConfigList
 	FastSocket() DataGoogleContainerClusterNodeConfigFastSocketList
+	FlexStart() cdktf.IResolvable
 	// Experimental.
 	Fqn() *string
 	GcfsConfig() DataGoogleContainerClusterNodeConfigGcfsConfigList
@@ -258,6 +259,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) FastSock
 	_jsii_.Get(
 		j,
 		"fastSocket",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigOutputReference) FlexStart() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"flexStart",
 		&returns,
 	)
 	return returns
