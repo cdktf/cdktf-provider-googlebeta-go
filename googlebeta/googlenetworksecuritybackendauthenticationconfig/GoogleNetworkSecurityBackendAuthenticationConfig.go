@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_backend_authentication_config google_network_security_backend_authentication_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_network_security_backend_authentication_config google_network_security_backend_authentication_config}.
 type GoogleNetworkSecurityBackendAuthenticationConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -569,7 +569,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) WellKnownRo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_backend_authentication_config google_network_security_backend_authentication_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_network_security_backend_authentication_config google_network_security_backend_authentication_config} Resource.
 func NewGoogleNetworkSecurityBackendAuthenticationConfig(scope constructs.Construct, id *string, config *GoogleNetworkSecurityBackendAuthenticationConfigConfig) GoogleNetworkSecurityBackendAuthenticationConfig {
 	_init_.Initialize()
 
@@ -587,7 +587,7 @@ func NewGoogleNetworkSecurityBackendAuthenticationConfig(scope constructs.Constr
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_network_security_backend_authentication_config google_network_security_backend_authentication_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_network_security_backend_authentication_config google_network_security_backend_authentication_config} Resource.
 func NewGoogleNetworkSecurityBackendAuthenticationConfig_Override(g GoogleNetworkSecurityBackendAuthenticationConfig, scope constructs.Construct, id *string, config *GoogleNetworkSecurityBackendAuthenticationConfigConfig) {
 	_init_.Initialize()
 

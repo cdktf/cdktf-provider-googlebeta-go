@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputRef
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference) validatePutNotificationReportParameters(value *GoogleDataplexDatascanDataQualitySpecPostScanActionsNotificationReport) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecPostScanActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

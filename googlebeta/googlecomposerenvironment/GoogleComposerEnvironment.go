@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_composer_environment google_composer_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_composer_environment google_composer_environment}.
 type GoogleComposerEnvironment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -499,7 +499,7 @@ func (j *jsiiProxy_GoogleComposerEnvironment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_composer_environment google_composer_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_composer_environment google_composer_environment} Resource.
 func NewGoogleComposerEnvironment(scope constructs.Construct, id *string, config *GoogleComposerEnvironmentConfig) GoogleComposerEnvironment {
 	_init_.Initialize()
 
@@ -517,7 +517,7 @@ func NewGoogleComposerEnvironment(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_composer_environment google_composer_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_composer_environment google_composer_environment} Resource.
 func NewGoogleComposerEnvironment_Override(g GoogleComposerEnvironment, scope constructs.Construct, id *string, config *GoogleComposerEnvironmentConfig) {
 	_init_.Initialize()
 

@@ -41,6 +41,9 @@ type GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputRefer
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Metadata() *map[string]*string
+	SetMetadata(val *map[string]*string)
+	MetadataInput() *map[string]*string
 	Name() *string
 	SetName(val *string)
 	NameInput() *string
@@ -88,6 +91,7 @@ type GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputRefer
 	ResetAuthority()
 	ResetFailOpen()
 	ResetForwardHeaders()
+	ResetMetadata()
 	ResetSupportedEvents()
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
@@ -210,6 +214,26 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) Metadata() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) MetadataInput() *map[string]*string {
+	var returns *map[string]*string
+	_jsii_.Get(
+		j,
+		"metadataInput",
 		&returns,
 	)
 	return returns
@@ -405,6 +429,17 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference)SetMetadata(val *map[string]*string) {
+	if err := j.validateSetMetadataParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"metadata",
 		val,
 	)
 }
@@ -681,6 +716,14 @@ func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	_jsii_.InvokeVoid(
 		g,
 		"resetForwardHeaders",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsOutputReference) ResetMetadata() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMetadata",
 		nil, // no parameters
 	)
 }

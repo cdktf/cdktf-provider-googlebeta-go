@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_machine_image_iam_policy google_compute_machine_image_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_compute_machine_image_iam_policy google_compute_machine_image_iam_policy}.
 type GoogleComputeMachineImageIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleComputeMachineImageIamPolicy) TerraformResourceType() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_machine_image_iam_policy google_compute_machine_image_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_compute_machine_image_iam_policy google_compute_machine_image_iam_policy} Resource.
 func NewGoogleComputeMachineImageIamPolicy(scope constructs.Construct, id *string, config *GoogleComputeMachineImageIamPolicyConfig) GoogleComputeMachineImageIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleComputeMachineImageIamPolicy(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_machine_image_iam_policy google_compute_machine_image_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_compute_machine_image_iam_policy google_compute_machine_image_iam_policy} Resource.
 func NewGoogleComputeMachineImageIamPolicy_Override(g GoogleComputeMachineImageIamPolicy, scope constructs.Construct, id *string, config *GoogleComputeMachineImageIamPolicyConfig) {
 	_init_.Initialize()
 

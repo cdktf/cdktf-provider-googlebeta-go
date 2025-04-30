@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule}.
 type GoogleComputeRegionSecurityPolicyRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -594,7 +594,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRule) TimeoutsInput() interf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule} Resource.
 func NewGoogleComputeRegionSecurityPolicyRule(scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyRuleConfig) GoogleComputeRegionSecurityPolicyRule {
 	_init_.Initialize()
 
@@ -612,7 +612,7 @@ func NewGoogleComputeRegionSecurityPolicyRule(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_compute_region_security_policy_rule google_compute_region_security_policy_rule} Resource.
 func NewGoogleComputeRegionSecurityPolicyRule_Override(g GoogleComputeRegionSecurityPolicyRule, scope constructs.Construct, id *string, config *GoogleComputeRegionSecurityPolicyRuleConfig) {
 	_init_.Initialize()
 

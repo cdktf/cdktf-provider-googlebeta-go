@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
 type GoogleNetappStoragePool interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -36,6 +36,9 @@ type GoogleNetappStoragePool interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CustomPerformanceEnabled() interface{}
+	SetCustomPerformanceEnabled(val interface{})
+	CustomPerformanceEnabledInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -108,6 +111,12 @@ type GoogleNetappStoragePool interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleNetappStoragePoolTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	TotalIops() *string
+	SetTotalIops(val *string)
+	TotalIopsInput() *string
+	TotalThroughputMibps() *string
+	SetTotalThroughputMibps(val *string)
+	TotalThroughputMibpsInput() *string
 	VolumeCapacityGib() *string
 	VolumeCount() *float64
 	Zone() *string
@@ -159,6 +168,7 @@ type GoogleNetappStoragePool interface {
 	PutTimeouts(value *GoogleNetappStoragePoolTimeouts)
 	ResetActiveDirectory()
 	ResetAllowAutoTiering()
+	ResetCustomPerformanceEnabled()
 	ResetDescription()
 	ResetId()
 	ResetKmsConfig()
@@ -170,6 +180,8 @@ type GoogleNetappStoragePool interface {
 	ResetProject()
 	ResetReplicaZone()
 	ResetTimeouts()
+	ResetTotalIops()
+	ResetTotalThroughputMibps()
 	ResetZone()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -284,6 +296,26 @@ func (j *jsiiProxy_GoogleNetappStoragePool) Count() interface{} {
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) CustomPerformanceEnabled() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customPerformanceEnabled",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) CustomPerformanceEnabledInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"customPerformanceEnabledInput",
 		&returns,
 	)
 	return returns
@@ -679,6 +711,46 @@ func (j *jsiiProxy_GoogleNetappStoragePool) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) TotalIops() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalIops",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) TotalIopsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalIopsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) TotalThroughputMibps() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalThroughputMibps",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) TotalThroughputMibpsInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"totalThroughputMibpsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) VolumeCapacityGib() *string {
 	var returns *string
 	_jsii_.Get(
@@ -720,7 +792,7 @@ func (j *jsiiProxy_GoogleNetappStoragePool) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) GoogleNetappStoragePool {
 	_init_.Initialize()
 
@@ -738,7 +810,7 @@ func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.32.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool_Override(g GoogleNetappStoragePool, scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) {
 	_init_.Initialize()
 
@@ -800,6 +872,17 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetCount(val interface{}) {
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetCustomPerformanceEnabled(val interface{}) {
+	if err := j.validateSetCustomPerformanceEnabledParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customPerformanceEnabled",
 		val,
 	)
 }
@@ -967,6 +1050,28 @@ func (j *jsiiProxy_GoogleNetappStoragePool)SetServiceLevel(val *string) {
 	_jsii_.Set(
 		j,
 		"serviceLevel",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetTotalIops(val *string) {
+	if err := j.validateSetTotalIopsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalIops",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool)SetTotalThroughputMibps(val *string) {
+	if err := j.validateSetTotalThroughputMibpsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"totalThroughputMibps",
 		val,
 	)
 }
@@ -1362,6 +1467,14 @@ func (g *jsiiProxy_GoogleNetappStoragePool) ResetAllowAutoTiering() {
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetCustomPerformanceEnabled() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomPerformanceEnabled",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappStoragePool) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1430,6 +1543,22 @@ func (g *jsiiProxy_GoogleNetappStoragePool) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetTotalIops() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTotalIops",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappStoragePool) ResetTotalThroughputMibps() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetTotalThroughputMibps",
 		nil, // no parameters
 	)
 }
