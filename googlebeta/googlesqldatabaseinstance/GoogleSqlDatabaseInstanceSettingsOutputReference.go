@@ -38,6 +38,8 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConnectionPoolConfig() GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList
+	ConnectionPoolConfigInput() interface{}
 	ConnectorEnforcement() *string
 	SetConnectorEnforcement(val *string)
 	ConnectorEnforcementInput() *string
@@ -149,6 +151,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	PutActiveDirectoryConfig(value *GoogleSqlDatabaseInstanceSettingsActiveDirectoryConfig)
 	PutAdvancedMachineFeatures(value *GoogleSqlDatabaseInstanceSettingsAdvancedMachineFeatures)
 	PutBackupConfiguration(value *GoogleSqlDatabaseInstanceSettingsBackupConfiguration)
+	PutConnectionPoolConfig(value interface{})
 	PutDatabaseFlags(value interface{})
 	PutDataCacheConfig(value *GoogleSqlDatabaseInstanceSettingsDataCacheConfig)
 	PutDenyMaintenancePeriod(value *GoogleSqlDatabaseInstanceSettingsDenyMaintenancePeriod)
@@ -164,6 +167,7 @@ type GoogleSqlDatabaseInstanceSettingsOutputReference interface {
 	ResetAvailabilityType()
 	ResetBackupConfiguration()
 	ResetCollation()
+	ResetConnectionPoolConfig()
 	ResetConnectorEnforcement()
 	ResetDatabaseFlags()
 	ResetDataCacheConfig()
@@ -338,6 +342,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ComplexObje
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfig() GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList {
+	var returns GoogleSqlDatabaseInstanceSettingsConnectionPoolConfigList
+	_jsii_.Get(
+		j,
+		"connectionPoolConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ConnectionPoolConfigInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"connectionPoolConfigInput",
 		&returns,
 	)
 	return returns
@@ -1414,6 +1438,17 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutBackupCo
 	)
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutConnectionPoolConfig(value interface{}) {
+	if err := g.validatePutConnectionPoolConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putConnectionPoolConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) PutDatabaseFlags(value interface{}) {
 	if err := g.validatePutDatabaseFlagsParameters(value); err != nil {
 		panic(err)
@@ -1557,6 +1592,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetCollat
 	_jsii_.InvokeVoid(
 		g,
 		"resetCollation",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsOutputReference) ResetConnectionPoolConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConnectionPoolConfig",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -479,6 +479,9 @@ type GoogleBetaProvider interface {
 	RequestTimeout() *string
 	SetRequestTimeout(val *string)
 	RequestTimeoutInput() *string
+	ResourceManager3CustomEndpoint() *string
+	SetResourceManager3CustomEndpoint(val *string)
+	ResourceManager3CustomEndpointInput() *string
 	ResourceManagerCustomEndpoint() *string
 	SetResourceManagerCustomEndpoint(val *string)
 	ResourceManagerCustomEndpointInput() *string
@@ -766,6 +769,7 @@ type GoogleBetaProvider interface {
 	ResetRegion()
 	ResetRequestReason()
 	ResetRequestTimeout()
+	ResetResourceManager3CustomEndpoint()
 	ResetResourceManagerCustomEndpoint()
 	ResetResourceManagerV3CustomEndpoint()
 	ResetRuntimeconfigCustomEndpoint()
@@ -3895,6 +3899,26 @@ func (j *jsiiProxy_GoogleBetaProvider) RequestTimeoutInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBetaProvider) ResourceManager3CustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManager3CustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ResourceManager3CustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"resourceManager3CustomEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBetaProvider) ResourceManagerCustomEndpoint() *string {
 	var returns *string
 	_jsii_.Get(
@@ -4746,7 +4770,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4764,7 +4788,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.33.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -5980,6 +6004,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetRequestTimeout(val *string) {
 	_jsii_.Set(
 		j,
 		"requestTimeout",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetResourceManager3CustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"resourceManager3CustomEndpoint",
 		val,
 	)
 }
@@ -7644,6 +7676,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetRequestTimeout() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRequestTimeout",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetResourceManager3CustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetResourceManager3CustomEndpoint",
 		nil, // no parameters
 	)
 }

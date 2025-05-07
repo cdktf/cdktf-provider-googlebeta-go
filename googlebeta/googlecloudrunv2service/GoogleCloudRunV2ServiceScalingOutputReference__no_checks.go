@@ -63,7 +63,15 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) validateSetInt
 	return nil
 }
 
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) validateSetManualInstanceCountParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) validateSetMinInstanceCountParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) validateSetScalingModeParameters(val *string) error {
 	return nil
 }
 
