@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member}.
 type GoogleDataprocMetastoreDatabaseIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreDatabaseIamMember) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member} Resource.
 func NewGoogleDataprocMetastoreDatabaseIamMember(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreDatabaseIamMemberConfig) GoogleDataprocMetastoreDatabaseIamMember {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewGoogleDataprocMetastoreDatabaseIamMember(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member} Resource.
 func NewGoogleDataprocMetastoreDatabaseIamMember_Override(g GoogleDataprocMetastoreDatabaseIamMember, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreDatabaseIamMemberConfig) {
 	_init_.Initialize()
 

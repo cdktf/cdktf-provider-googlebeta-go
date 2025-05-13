@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group}.
 type GoogleNetworkSecurityMirroringDeploymentGroup interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -574,7 +574,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringDeploymentGroup) UpdateTime() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
 func NewGoogleNetworkSecurityMirroringDeploymentGroup(scope constructs.Construct, id *string, config *GoogleNetworkSecurityMirroringDeploymentGroupConfig) GoogleNetworkSecurityMirroringDeploymentGroup {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewGoogleNetworkSecurityMirroringDeploymentGroup(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_network_security_mirroring_deployment_group google_network_security_mirroring_deployment_group} Resource.
 func NewGoogleNetworkSecurityMirroringDeploymentGroup_Override(g GoogleNetworkSecurityMirroringDeploymentGroup, scope constructs.Construct, id *string, config *GoogleNetworkSecurityMirroringDeploymentGroupConfig) {
 	_init_.Initialize()
 

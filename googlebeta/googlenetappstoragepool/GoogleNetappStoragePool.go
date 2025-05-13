@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_netapp_storage_pool google_netapp_storage_pool}.
 type GoogleNetappStoragePool interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -792,7 +792,7 @@ func (j *jsiiProxy_GoogleNetappStoragePool) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) GoogleNetappStoragePool {
 	_init_.Initialize()
 
@@ -810,7 +810,7 @@ func NewGoogleNetappStoragePool(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_netapp_storage_pool google_netapp_storage_pool} Resource.
 func NewGoogleNetappStoragePool_Override(g GoogleNetappStoragePool, scope constructs.Construct, id *string, config *GoogleNetappStoragePoolConfig) {
 	_init_.Initialize()
 

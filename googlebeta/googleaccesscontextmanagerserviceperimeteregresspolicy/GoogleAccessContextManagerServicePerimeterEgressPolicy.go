@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_access_context_manager_service_perimeter_egress_policy google_access_context_manager_service_perimeter_egress_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_access_context_manager_service_perimeter_egress_policy google_access_context_manager_service_perimeter_egress_policy}.
 type GoogleAccessContextManagerServicePerimeterEgressPolicy interface {
 	cdktf.TerraformResource
 	AccessPolicyId() *string
@@ -451,7 +451,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicy) Title
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_access_context_manager_service_perimeter_egress_policy google_access_context_manager_service_perimeter_egress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_access_context_manager_service_perimeter_egress_policy google_access_context_manager_service_perimeter_egress_policy} Resource.
 func NewGoogleAccessContextManagerServicePerimeterEgressPolicy(scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimeterEgressPolicyConfig) GoogleAccessContextManagerServicePerimeterEgressPolicy {
 	_init_.Initialize()
 
@@ -469,7 +469,7 @@ func NewGoogleAccessContextManagerServicePerimeterEgressPolicy(scope constructs.
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.0/docs/resources/google_access_context_manager_service_perimeter_egress_policy google_access_context_manager_service_perimeter_egress_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_access_context_manager_service_perimeter_egress_policy google_access_context_manager_service_perimeter_egress_policy} Resource.
 func NewGoogleAccessContextManagerServicePerimeterEgressPolicy_Override(g GoogleAccessContextManagerServicePerimeterEgressPolicy, scope constructs.Construct, id *string, config *GoogleAccessContextManagerServicePerimeterEgressPolicyConfig) {
 	_init_.Initialize()
 
