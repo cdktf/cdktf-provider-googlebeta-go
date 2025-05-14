@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/data-sources/google_compute_health_check google_compute_health_check}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/data-sources/google_compute_health_check google_compute_health_check}.
 type DataGoogleComputeHealthCheck interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -39,6 +39,7 @@ type DataGoogleComputeHealthCheck interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	GrpcHealthCheck() DataGoogleComputeHealthCheckGrpcHealthCheckList
+	GrpcTlsHealthCheck() DataGoogleComputeHealthCheckGrpcTlsHealthCheckList
 	HealthyThreshold() *float64
 	Http2HealthCheck() DataGoogleComputeHealthCheckHttp2HealthCheckList
 	HttpHealthCheck() DataGoogleComputeHealthCheckHttpHealthCheckList
@@ -232,6 +233,16 @@ func (j *jsiiProxy_DataGoogleComputeHealthCheck) GrpcHealthCheck() DataGoogleCom
 	_jsii_.Get(
 		j,
 		"grpcHealthCheck",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleComputeHealthCheck) GrpcTlsHealthCheck() DataGoogleComputeHealthCheckGrpcTlsHealthCheckList {
+	var returns DataGoogleComputeHealthCheckGrpcTlsHealthCheckList
+	_jsii_.Get(
+		j,
+		"grpcTlsHealthCheck",
 		&returns,
 	)
 	return returns
@@ -488,7 +499,7 @@ func (j *jsiiProxy_DataGoogleComputeHealthCheck) UnhealthyThreshold() *float64 {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/data-sources/google_compute_health_check google_compute_health_check} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/data-sources/google_compute_health_check google_compute_health_check} Data Source.
 func NewDataGoogleComputeHealthCheck(scope constructs.Construct, id *string, config *DataGoogleComputeHealthCheckConfig) DataGoogleComputeHealthCheck {
 	_init_.Initialize()
 
@@ -506,7 +517,7 @@ func NewDataGoogleComputeHealthCheck(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/data-sources/google_compute_health_check google_compute_health_check} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/data-sources/google_compute_health_check google_compute_health_check} Data Source.
 func NewDataGoogleComputeHealthCheck_Override(d DataGoogleComputeHealthCheck, scope constructs.Construct, id *string, config *DataGoogleComputeHealthCheckConfig) {
 	_init_.Initialize()
 

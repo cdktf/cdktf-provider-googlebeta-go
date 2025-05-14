@@ -90,6 +90,7 @@ type GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReferenc
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetCountryCode()
 	ResetLocality()
+	ResetOrganization()
 	ResetOrganizationalUnit()
 	ResetPostalCode()
 	ResetProvince()
@@ -708,6 +709,14 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubject
 	_jsii_.InvokeVoid(
 		g,
 		"resetLocality",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference) ResetOrganization() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetOrganization",
 		nil, // no parameters
 	)
 }

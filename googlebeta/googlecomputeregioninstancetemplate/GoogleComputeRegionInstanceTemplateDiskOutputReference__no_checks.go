@@ -63,6 +63,10 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) valid
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetArchitectureParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetAutoDeleteParameters(val interface{}) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) valid
 }
 
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetDiskTypeParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateDiskOutputReference) validateSetGuestOsFeaturesParameters(val *[]*string) error {
 	return nil
 }
 

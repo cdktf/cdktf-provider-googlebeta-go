@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel}.
 type GoogleFirebaseHostingChannel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannel) TtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource.
 func NewGoogleFirebaseHostingChannel(scope constructs.Construct, id *string, config *GoogleFirebaseHostingChannelConfig) GoogleFirebaseHostingChannel {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewGoogleFirebaseHostingChannel(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_firebase_hosting_channel google_firebase_hosting_channel} Resource.
 func NewGoogleFirebaseHostingChannel_Override(g GoogleFirebaseHostingChannel, scope constructs.Construct, id *string, config *GoogleFirebaseHostingChannelConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type}.
 type GoogleClouddeployCustomTargetType interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -588,7 +588,7 @@ func (j *jsiiProxy_GoogleClouddeployCustomTargetType) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource.
 func NewGoogleClouddeployCustomTargetType(scope constructs.Construct, id *string, config *GoogleClouddeployCustomTargetTypeConfig) GoogleClouddeployCustomTargetType {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewGoogleClouddeployCustomTargetType(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_clouddeploy_custom_target_type google_clouddeploy_custom_target_type} Resource.
 func NewGoogleClouddeployCustomTargetType_Override(g GoogleClouddeployCustomTargetType, scope constructs.Construct, id *string, config *GoogleClouddeployCustomTargetTypeConfig) {
 	_init_.Initialize()
 

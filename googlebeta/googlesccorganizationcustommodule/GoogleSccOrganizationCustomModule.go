@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_scc_organization_custom_module google_scc_organization_custom_module}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_scc_organization_custom_module google_scc_organization_custom_module}.
 type GoogleSccOrganizationCustomModule interface {
 	cdktf.TerraformResource
 	AncestorModule() *string
@@ -470,7 +470,7 @@ func (j *jsiiProxy_GoogleSccOrganizationCustomModule) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_scc_organization_custom_module google_scc_organization_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_scc_organization_custom_module google_scc_organization_custom_module} Resource.
 func NewGoogleSccOrganizationCustomModule(scope constructs.Construct, id *string, config *GoogleSccOrganizationCustomModuleConfig) GoogleSccOrganizationCustomModule {
 	_init_.Initialize()
 
@@ -488,7 +488,7 @@ func NewGoogleSccOrganizationCustomModule(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_scc_organization_custom_module google_scc_organization_custom_module} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_scc_organization_custom_module google_scc_organization_custom_module} Resource.
 func NewGoogleSccOrganizationCustomModule_Override(g GoogleSccOrganizationCustomModule, scope constructs.Construct, id *string, config *GoogleSccOrganizationCustomModuleConfig) {
 	_init_.Initialize()
 

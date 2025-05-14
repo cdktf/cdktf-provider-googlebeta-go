@@ -5,7 +5,7 @@ package googlecontainercluster
 
 
 type GoogleContainerClusterAddonsConfigNetworkPolicyConfig struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.34.1/docs/resources/google_container_cluster#disabled GoogleContainerCluster#disabled}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_container_cluster#disabled GoogleContainerCluster#disabled}.
 	Disabled interface{} `field:"required" json:"disabled" yaml:"disabled"`
 }
 
