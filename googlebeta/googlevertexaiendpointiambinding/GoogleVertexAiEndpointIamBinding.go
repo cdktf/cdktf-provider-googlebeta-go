@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_vertex_ai_endpoint_iam_binding google_vertex_ai_endpoint_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_vertex_ai_endpoint_iam_binding google_vertex_ai_endpoint_iam_binding}.
 type GoogleVertexAiEndpointIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointIamBinding) TerraformResourceType() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_vertex_ai_endpoint_iam_binding google_vertex_ai_endpoint_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_vertex_ai_endpoint_iam_binding google_vertex_ai_endpoint_iam_binding} Resource.
 func NewGoogleVertexAiEndpointIamBinding(scope constructs.Construct, id *string, config *GoogleVertexAiEndpointIamBindingConfig) GoogleVertexAiEndpointIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleVertexAiEndpointIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_vertex_ai_endpoint_iam_binding google_vertex_ai_endpoint_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_vertex_ai_endpoint_iam_binding google_vertex_ai_endpoint_iam_binding} Resource.
 func NewGoogleVertexAiEndpointIamBinding_Override(g GoogleVertexAiEndpointIamBinding, scope constructs.Construct, id *string, config *GoogleVertexAiEndpointIamBindingConfig) {
 	_init_.Initialize()
 

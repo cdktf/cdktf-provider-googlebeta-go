@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_service_directory_service_iam_binding google_service_directory_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_service_directory_service_iam_binding google_service_directory_service_iam_binding}.
 type GoogleServiceDirectoryServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryServiceIamBinding) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_service_directory_service_iam_binding google_service_directory_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_service_directory_service_iam_binding google_service_directory_service_iam_binding} Resource.
 func NewGoogleServiceDirectoryServiceIamBinding(scope constructs.Construct, id *string, config *GoogleServiceDirectoryServiceIamBindingConfig) GoogleServiceDirectoryServiceIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleServiceDirectoryServiceIamBinding(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_service_directory_service_iam_binding google_service_directory_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_service_directory_service_iam_binding google_service_directory_service_iam_binding} Resource.
 func NewGoogleServiceDirectoryServiceIamBinding_Override(g GoogleServiceDirectoryServiceIamBinding, scope constructs.Construct, id *string, config *GoogleServiceDirectoryServiceIamBindingConfig) {
 	_init_.Initialize()
 

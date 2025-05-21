@@ -187,6 +187,14 @@ func (j *jsiiProxy_GoogleComputeBackendService) validateSetEnableCdnParameters(v
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetExternalManagedMigrationStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeBackendService) validateSetExternalManagedMigrationTestingPercentageParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendService) validateSetHealthChecksParameters(val *[]*string) error {
 	return nil
 }

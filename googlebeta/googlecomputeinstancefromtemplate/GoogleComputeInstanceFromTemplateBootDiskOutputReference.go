@@ -44,6 +44,9 @@ type GoogleComputeInstanceFromTemplateBootDiskOutputReference interface {
 	DiskEncryptionServiceAccount() *string
 	SetDiskEncryptionServiceAccount(val *string)
 	DiskEncryptionServiceAccountInput() *string
+	ForceAttach() interface{}
+	SetForceAttach(val interface{})
+	ForceAttachInput() interface{}
 	// Experimental.
 	Fqn() *string
 	GuestOsFeatures() *[]*string
@@ -103,6 +106,7 @@ type GoogleComputeInstanceFromTemplateBootDiskOutputReference interface {
 	ResetDiskEncryptionKeyRaw()
 	ResetDiskEncryptionKeyRsa()
 	ResetDiskEncryptionServiceAccount()
+	ResetForceAttach()
 	ResetGuestOsFeatures()
 	ResetInitializeParams()
 	ResetInterface()
@@ -259,6 +263,26 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Dis
 	_jsii_.Get(
 		j,
 		"diskEncryptionServiceAccountInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ForceAttach() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAttach",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ForceAttachInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"forceAttachInput",
 		&returns,
 	)
 	return returns
@@ -525,6 +549,17 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetD
 	_jsii_.Set(
 		j,
 		"diskEncryptionServiceAccount",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference)SetForceAttach(val interface{}) {
+	if err := j.validateSetForceAttachParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"forceAttach",
 		val,
 	)
 }
@@ -850,6 +885,14 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) Res
 	_jsii_.InvokeVoid(
 		g,
 		"resetDiskEncryptionServiceAccount",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) ResetForceAttach() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetForceAttach",
 		nil, // no parameters
 	)
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy}.
 type GoogleSecretManagerRegionalSecretIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretIamPolicy) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Resource.
 func NewGoogleSecretManagerRegionalSecretIamPolicy(scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretIamPolicyConfig) GoogleSecretManagerRegionalSecretIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleSecretManagerRegionalSecretIamPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.35.0/docs/resources/google_secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_secret_manager_regional_secret_iam_policy google_secret_manager_regional_secret_iam_policy} Resource.
 func NewGoogleSecretManagerRegionalSecretIamPolicy_Override(g GoogleSecretManagerRegionalSecretIamPolicy, scope constructs.Construct, id *string, config *GoogleSecretManagerRegionalSecretIamPolicyConfig) {
 	_init_.Initialize()
 
