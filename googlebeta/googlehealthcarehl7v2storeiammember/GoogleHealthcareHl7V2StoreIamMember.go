@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_healthcare_hl7_v2_store_iam_member google_healthcare_hl7_v2_store_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_healthcare_hl7_v2_store_iam_member google_healthcare_hl7_v2_store_iam_member}.
 type GoogleHealthcareHl7V2StoreIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_healthcare_hl7_v2_store_iam_member google_healthcare_hl7_v2_store_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_healthcare_hl7_v2_store_iam_member google_healthcare_hl7_v2_store_iam_member} Resource.
 func NewGoogleHealthcareHl7V2StoreIamMember(scope constructs.Construct, id *string, config *GoogleHealthcareHl7V2StoreIamMemberConfig) GoogleHealthcareHl7V2StoreIamMember {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleHealthcareHl7V2StoreIamMember(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_healthcare_hl7_v2_store_iam_member google_healthcare_hl7_v2_store_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_healthcare_hl7_v2_store_iam_member google_healthcare_hl7_v2_store_iam_member} Resource.
 func NewGoogleHealthcareHl7V2StoreIamMember_Override(g GoogleHealthcareHl7V2StoreIamMember, scope constructs.Construct, id *string, config *GoogleHealthcareHl7V2StoreIamMemberConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override}.
 type GoogleServiceUsageConsumerQuotaOverride interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverride) TimeoutsInput() inte
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
 func NewGoogleServiceUsageConsumerQuotaOverride(scope constructs.Construct, id *string, config *GoogleServiceUsageConsumerQuotaOverrideConfig) GoogleServiceUsageConsumerQuotaOverride {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewGoogleServiceUsageConsumerQuotaOverride(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_service_usage_consumer_quota_override google_service_usage_consumer_quota_override} Resource.
 func NewGoogleServiceUsageConsumerQuotaOverride_Override(g GoogleServiceUsageConsumerQuotaOverride, scope constructs.Construct, id *string, config *GoogleServiceUsageConsumerQuotaOverrideConfig) {
 	_init_.Initialize()
 

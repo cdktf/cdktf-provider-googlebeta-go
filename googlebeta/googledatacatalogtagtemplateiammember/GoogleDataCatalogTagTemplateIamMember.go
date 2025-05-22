@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member}.
 type GoogleDataCatalogTagTemplateIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member} Resource.
 func NewGoogleDataCatalogTagTemplateIamMember(scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamMemberConfig) GoogleDataCatalogTagTemplateIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleDataCatalogTagTemplateIamMember(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.0/docs/resources/google_data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_data_catalog_tag_template_iam_member google_data_catalog_tag_template_iam_member} Resource.
 func NewGoogleDataCatalogTagTemplateIamMember_Override(g GoogleDataCatalogTagTemplateIamMember, scope constructs.Construct, id *string, config *GoogleDataCatalogTagTemplateIamMemberConfig) {
 	_init_.Initialize()
 
