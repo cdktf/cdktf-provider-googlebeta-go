@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection}.
 type GoogleDatabaseMigrationServicePrivateConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -27,6 +27,9 @@ type GoogleDatabaseMigrationServicePrivateConnection interface {
 	Count() interface{}
 	// Experimental.
 	SetCount(val interface{})
+	CreateWithoutValidation() interface{}
+	SetCreateWithoutValidation(val interface{})
+	CreateWithoutValidationInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -133,6 +136,7 @@ type GoogleDatabaseMigrationServicePrivateConnection interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleDatabaseMigrationServicePrivateConnectionTimeouts)
 	PutVpcPeeringConfig(value *GoogleDatabaseMigrationServicePrivateConnectionVpcPeeringConfig)
+	ResetCreateWithoutValidation()
 	ResetDisplayName()
 	ResetId()
 	ResetLabels()
@@ -194,6 +198,26 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) Count() inte
 	_jsii_.Get(
 		j,
 		"count",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) CreateWithoutValidation() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createWithoutValidation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) CreateWithoutValidationInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"createWithoutValidationInput",
 		&returns,
 	)
 	return returns
@@ -530,7 +554,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) VpcPeeringCo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
 func NewGoogleDatabaseMigrationServicePrivateConnection(scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServicePrivateConnectionConfig) GoogleDatabaseMigrationServicePrivateConnection {
 	_init_.Initialize()
 
@@ -548,7 +572,7 @@ func NewGoogleDatabaseMigrationServicePrivateConnection(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_database_migration_service_private_connection google_database_migration_service_private_connection} Resource.
 func NewGoogleDatabaseMigrationServicePrivateConnection_Override(g GoogleDatabaseMigrationServicePrivateConnection, scope constructs.Construct, id *string, config *GoogleDatabaseMigrationServicePrivateConnectionConfig) {
 	_init_.Initialize()
 
@@ -577,6 +601,17 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection)SetCount(val 
 	_jsii_.Set(
 		j,
 		"count",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection)SetCreateWithoutValidation(val interface{}) {
+	if err := j.validateSetCreateWithoutValidationParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"createWithoutValidation",
 		val,
 	)
 }
@@ -1065,6 +1100,14 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) PutVpcPeerin
 		g,
 		"putVpcPeeringConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDatabaseMigrationServicePrivateConnection) ResetCreateWithoutValidation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCreateWithoutValidation",
+		nil, // no parameters
 	)
 }
 

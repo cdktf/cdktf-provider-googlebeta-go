@@ -83,6 +83,10 @@ func (g *jsiiProxy_GoogleNetappVolume) validatePutExportPolicyParameters(value *
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappVolume) validatePutHybridReplicationParametersParameters(value *GoogleNetappVolumeHybridReplicationParameters) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappVolume) validatePutRestoreParametersParameters(value *GoogleNetappVolumeRestoreParameters) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_netapp_volume google_netapp_volume}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_netapp_volume google_netapp_volume}.
 type GoogleNetappVolume interface {
 	cdktf.TerraformResource
 	ActiveDirectory() *string
@@ -58,6 +58,8 @@ type GoogleNetappVolume interface {
 	// Experimental.
 	FriendlyUniqueId() *string
 	HasReplication() cdktf.IResolvable
+	HybridReplicationParameters() GoogleNetappVolumeHybridReplicationParametersOutputReference
+	HybridReplicationParametersInput() *GoogleNetappVolumeHybridReplicationParameters
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
@@ -193,6 +195,7 @@ type GoogleNetappVolume interface {
 	OverrideLogicalId(newLogicalId *string)
 	PutBackupConfig(value *GoogleNetappVolumeBackupConfig)
 	PutExportPolicy(value *GoogleNetappVolumeExportPolicy)
+	PutHybridReplicationParameters(value *GoogleNetappVolumeHybridReplicationParameters)
 	PutRestoreParameters(value *GoogleNetappVolumeRestoreParameters)
 	PutSnapshotPolicy(value *GoogleNetappVolumeSnapshotPolicy)
 	PutTieringPolicy(value *GoogleNetappVolumeTieringPolicy)
@@ -201,6 +204,7 @@ type GoogleNetappVolume interface {
 	ResetDeletionPolicy()
 	ResetDescription()
 	ResetExportPolicy()
+	ResetHybridReplicationParameters()
 	ResetId()
 	ResetKerberosEnabled()
 	ResetLabels()
@@ -472,6 +476,26 @@ func (j *jsiiProxy_GoogleNetappVolume) HasReplication() cdktf.IResolvable {
 	_jsii_.Get(
 		j,
 		"hasReplication",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) HybridReplicationParameters() GoogleNetappVolumeHybridReplicationParametersOutputReference {
+	var returns GoogleNetappVolumeHybridReplicationParametersOutputReference
+	_jsii_.Get(
+		j,
+		"hybridReplicationParameters",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleNetappVolume) HybridReplicationParametersInput() *GoogleNetappVolumeHybridReplicationParameters {
+	var returns *GoogleNetappVolumeHybridReplicationParameters
+	_jsii_.Get(
+		j,
+		"hybridReplicationParametersInput",
 		&returns,
 	)
 	return returns
@@ -1078,7 +1102,7 @@ func (j *jsiiProxy_GoogleNetappVolume) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
 func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *GoogleNetappVolumeConfig) GoogleNetappVolume {
 	_init_.Initialize()
 
@@ -1096,7 +1120,7 @@ func NewGoogleNetappVolume(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_netapp_volume google_netapp_volume} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_netapp_volume google_netapp_volume} Resource.
 func NewGoogleNetappVolume_Override(g GoogleNetappVolume, scope constructs.Construct, id *string, config *GoogleNetappVolumeConfig) {
 	_init_.Initialize()
 
@@ -1759,6 +1783,17 @@ func (g *jsiiProxy_GoogleNetappVolume) PutExportPolicy(value *GoogleNetappVolume
 	)
 }
 
+func (g *jsiiProxy_GoogleNetappVolume) PutHybridReplicationParameters(value *GoogleNetappVolumeHybridReplicationParameters) {
+	if err := g.validatePutHybridReplicationParametersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHybridReplicationParameters",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleNetappVolume) PutRestoreParameters(value *GoogleNetappVolumeRestoreParameters) {
 	if err := g.validatePutRestoreParametersParameters(value); err != nil {
 		panic(err)
@@ -1831,6 +1866,14 @@ func (g *jsiiProxy_GoogleNetappVolume) ResetExportPolicy() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetExportPolicy",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleNetappVolume) ResetHybridReplicationParameters() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHybridReplicationParameters",
 		nil, // no parameters
 	)
 }

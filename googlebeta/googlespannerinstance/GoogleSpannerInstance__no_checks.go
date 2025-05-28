@@ -131,6 +131,10 @@ func (j *jsiiProxy_GoogleSpannerInstance) validateSetIdParameters(val *string) e
 	return nil
 }
 
+func (j *jsiiProxy_GoogleSpannerInstance) validateSetInstanceTypeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleSpannerInstance) validateSetLabelsParameters(val *map[string]*string) error {
 	return nil
 }

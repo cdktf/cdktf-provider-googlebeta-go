@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_spanner_database google_spanner_database}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_spanner_database google_spanner_database}.
 type GoogleSpannerDatabase interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -583,7 +583,7 @@ func (j *jsiiProxy_GoogleSpannerDatabase) VersionRetentionPeriodInput() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_spanner_database google_spanner_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_spanner_database google_spanner_database} Resource.
 func NewGoogleSpannerDatabase(scope constructs.Construct, id *string, config *GoogleSpannerDatabaseConfig) GoogleSpannerDatabase {
 	_init_.Initialize()
 
@@ -601,7 +601,7 @@ func NewGoogleSpannerDatabase(scope constructs.Construct, id *string, config *Go
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_spanner_database google_spanner_database} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_spanner_database google_spanner_database} Resource.
 func NewGoogleSpannerDatabase_Override(g GoogleSpannerDatabase, scope constructs.Construct, id *string, config *GoogleSpannerDatabaseConfig) {
 	_init_.Initialize()
 

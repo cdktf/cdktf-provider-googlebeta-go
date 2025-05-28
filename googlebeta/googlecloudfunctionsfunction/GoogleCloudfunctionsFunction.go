@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_cloudfunctions_function google_cloudfunctions_function}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function}.
 type GoogleCloudfunctionsFunction interface {
 	cdktf.TerraformResource
 	AvailableMemoryMb() *float64
@@ -1120,7 +1120,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunction) VpcConnectorInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_cloudfunctions_function google_cloudfunctions_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function} Resource.
 func NewGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, config *GoogleCloudfunctionsFunctionConfig) GoogleCloudfunctionsFunction {
 	_init_.Initialize()
 
@@ -1138,7 +1138,7 @@ func NewGoogleCloudfunctionsFunction(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_cloudfunctions_function google_cloudfunctions_function} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudfunctions_function google_cloudfunctions_function} Resource.
 func NewGoogleCloudfunctionsFunction_Override(g GoogleCloudfunctionsFunction, scope constructs.Construct, id *string, config *GoogleCloudfunctionsFunctionConfig) {
 	_init_.Initialize()
 

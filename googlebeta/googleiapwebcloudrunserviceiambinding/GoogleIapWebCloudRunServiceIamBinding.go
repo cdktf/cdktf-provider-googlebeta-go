@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding}.
 type GoogleIapWebCloudRunServiceIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamBinding) TerraformResourceType(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource.
 func NewGoogleIapWebCloudRunServiceIamBinding(scope constructs.Construct, id *string, config *GoogleIapWebCloudRunServiceIamBindingConfig) GoogleIapWebCloudRunServiceIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleIapWebCloudRunServiceIamBinding(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iap_web_cloud_run_service_iam_binding google_iap_web_cloud_run_service_iam_binding} Resource.
 func NewGoogleIapWebCloudRunServiceIamBinding_Override(g GoogleIapWebCloudRunServiceIamBinding, scope constructs.Construct, id *string, config *GoogleIapWebCloudRunServiceIamBindingConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy}.
 type GoogleDataplexGlossaryIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleDataplexGlossaryIamPolicy) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy} Resource.
 func NewGoogleDataplexGlossaryIamPolicy(scope constructs.Construct, id *string, config *GoogleDataplexGlossaryIamPolicyConfig) GoogleDataplexGlossaryIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleDataplexGlossaryIamPolicy(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_glossary_iam_policy google_dataplex_glossary_iam_policy} Resource.
 func NewGoogleDataplexGlossaryIamPolicy_Override(g GoogleDataplexGlossaryIamPolicy, scope constructs.Construct, id *string, config *GoogleDataplexGlossaryIamPolicyConfig) {
 	_init_.Initialize()
 

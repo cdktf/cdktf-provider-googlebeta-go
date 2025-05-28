@@ -42,6 +42,8 @@ type GoogleFilestoreInstanceNetworksOutputReference interface {
 	Network() *string
 	SetNetwork(val *string)
 	NetworkInput() *string
+	PscConfig() GoogleFilestoreInstanceNetworksPscConfigOutputReference
+	PscConfigInput() *GoogleFilestoreInstanceNetworksPscConfig
 	ReservedIpRange() *string
 	SetReservedIpRange(val *string)
 	ReservedIpRangeInput() *string
@@ -77,7 +79,9 @@ type GoogleFilestoreInstanceNetworksOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutPscConfig(value *GoogleFilestoreInstanceNetworksPscConfig)
 	ResetConnectMode()
+	ResetPscConfig()
 	ResetReservedIpRange()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -209,6 +213,26 @@ func (j *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) NetworkInput(
 	_jsii_.Get(
 		j,
 		"networkInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) PscConfig() GoogleFilestoreInstanceNetworksPscConfigOutputReference {
+	var returns GoogleFilestoreInstanceNetworksPscConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) PscConfigInput() *GoogleFilestoreInstanceNetworksPscConfig {
+	var returns *GoogleFilestoreInstanceNetworksPscConfig
+	_jsii_.Get(
+		j,
+		"pscConfigInput",
 		&returns,
 	)
 	return returns
@@ -567,10 +591,29 @@ func (g *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) Interpolation
 	return returns
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) PutPscConfig(value *GoogleFilestoreInstanceNetworksPscConfig) {
+	if err := g.validatePutPscConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPscConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) ResetConnectMode() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetConnectMode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstanceNetworksOutputReference) ResetPscConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscConfig",
 		nil, // no parameters
 	)
 }

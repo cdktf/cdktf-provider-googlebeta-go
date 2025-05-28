@@ -12,12 +12,15 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job}.
 type GoogleDataflowFlexTemplateJob interface {
 	cdktf.TerraformResource
 	AdditionalExperiments() *[]*string
 	SetAdditionalExperiments(val *[]*string)
 	AdditionalExperimentsInput() *[]*string
+	AdditionalPipelineOptions() *[]*string
+	SetAdditionalPipelineOptions(val *[]*string)
+	AdditionalPipelineOptionsInput() *[]*string
 	AutoscalingAlgorithm() *string
 	SetAutoscalingAlgorithm(val *string)
 	AutoscalingAlgorithmInput() *string
@@ -185,6 +188,7 @@ type GoogleDataflowFlexTemplateJob interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	ResetAdditionalExperiments()
+	ResetAdditionalPipelineOptions()
 	ResetAutoscalingAlgorithm()
 	ResetEnableStreamingEngine()
 	ResetId()
@@ -243,6 +247,26 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) AdditionalExperimentsInput() *
 	_jsii_.Get(
 		j,
 		"additionalExperimentsInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) AdditionalPipelineOptions() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalPipelineOptions",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) AdditionalPipelineOptionsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"additionalPipelineOptionsInput",
 		&returns,
 	)
 	return returns
@@ -939,7 +963,7 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) Type() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource.
 func NewGoogleDataflowFlexTemplateJob(scope constructs.Construct, id *string, config *GoogleDataflowFlexTemplateJobConfig) GoogleDataflowFlexTemplateJob {
 	_init_.Initialize()
 
@@ -957,7 +981,7 @@ func NewGoogleDataflowFlexTemplateJob(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataflow_flex_template_job google_dataflow_flex_template_job} Resource.
 func NewGoogleDataflowFlexTemplateJob_Override(g GoogleDataflowFlexTemplateJob, scope constructs.Construct, id *string, config *GoogleDataflowFlexTemplateJobConfig) {
 	_init_.Initialize()
 
@@ -975,6 +999,17 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetAdditionalExperiments(val *[
 	_jsii_.Set(
 		j,
 		"additionalExperiments",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob)SetAdditionalPipelineOptions(val *[]*string) {
+	if err := j.validateSetAdditionalPipelineOptionsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"additionalPipelineOptions",
 		val,
 	)
 }
@@ -1668,6 +1703,14 @@ func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetAdditionalExperiments() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAdditionalExperiments",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) ResetAdditionalPipelineOptions() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAdditionalPipelineOptions",
 		nil, // no parameters
 	)
 }

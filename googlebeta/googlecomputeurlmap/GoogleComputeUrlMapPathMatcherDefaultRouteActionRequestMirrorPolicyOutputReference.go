@@ -35,6 +35,9 @@ type GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputRe
 	Fqn() *string
 	InternalValue() *GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy
 	SetInternalValue(val *GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicy)
+	MirrorPercent() *float64
+	SetMirrorPercent(val *float64)
+	MirrorPercentInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputRe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetMirrorPercent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) MirrorPercent() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"mirrorPercent",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) MirrorPercentInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"mirrorPercentInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference)SetMirrorPercent(val *float64) {
+	if err := j.validateSetMirrorPercentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"mirrorPercent",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) ResetMirrorPercent() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetMirrorPercent",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

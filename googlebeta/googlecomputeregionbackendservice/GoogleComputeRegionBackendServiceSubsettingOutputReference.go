@@ -35,6 +35,9 @@ type GoogleComputeRegionBackendServiceSubsettingOutputReference interface {
 	Policy() *string
 	SetPolicy(val *string)
 	PolicyInput() *string
+	SubsetSize() *float64
+	SetSubsetSize(val *float64)
+	SubsetSizeInput() *float64
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -67,6 +70,7 @@ type GoogleComputeRegionBackendServiceSubsettingOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetSubsetSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -147,6 +151,26 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference) P
 	_jsii_.Get(
 		j,
 		"policyInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference) SubsetSize() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subsetSize",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference) SubsetSizeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"subsetSizeInput",
 		&returns,
 	)
 	return returns
@@ -240,6 +264,17 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference)Se
 	_jsii_.Set(
 		j,
 		"policy",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference)SetSubsetSize(val *float64) {
+	if err := j.validateSetSubsetSizeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"subsetSize",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference) I
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference) ResetSubsetSize() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSubsetSize",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleComputeRegionBackendServiceSubsettingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

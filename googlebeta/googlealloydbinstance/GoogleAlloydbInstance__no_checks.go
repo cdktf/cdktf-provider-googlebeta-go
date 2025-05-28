@@ -123,6 +123,10 @@ func validateGoogleAlloydbInstance_IsTerraformResourceParameters(x interface{}) 
 	return nil
 }
 
+func (j *jsiiProxy_GoogleAlloydbInstance) validateSetActivationPolicyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleAlloydbInstance) validateSetAnnotationsParameters(val *map[string]*string) error {
 	return nil
 }

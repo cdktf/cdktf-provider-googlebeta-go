@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_storage_pool google_compute_storage_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_storage_pool google_compute_storage_pool}.
 type GoogleComputeStoragePool interface {
 	cdktf.TerraformResource
 	CapacityProvisioningType() *string
@@ -636,7 +636,7 @@ func (j *jsiiProxy_GoogleComputeStoragePool) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_storage_pool google_compute_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_storage_pool google_compute_storage_pool} Resource.
 func NewGoogleComputeStoragePool(scope constructs.Construct, id *string, config *GoogleComputeStoragePoolConfig) GoogleComputeStoragePool {
 	_init_.Initialize()
 
@@ -654,7 +654,7 @@ func NewGoogleComputeStoragePool(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.36.1/docs/resources/google_compute_storage_pool google_compute_storage_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_storage_pool google_compute_storage_pool} Resource.
 func NewGoogleComputeStoragePool_Override(g GoogleComputeStoragePool, scope constructs.Construct, id *string, config *GoogleComputeStoragePoolConfig) {
 	_init_.Initialize()
 

@@ -83,6 +83,10 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutCrossInstanceReplicatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredAutoCreatedEndpointsParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemorystoreInstance) validatePutDesiredPscAutoConnectionsParameters(value interface{}) error {
 	return nil
 }
