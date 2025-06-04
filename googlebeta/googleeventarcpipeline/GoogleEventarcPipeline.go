@@ -5,14 +5,14 @@ package googleeventarcpipeline
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcpipeline/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleeventarcpipeline/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline}.
 type GoogleEventarcPipeline interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -707,7 +707,7 @@ func (j *jsiiProxy_GoogleEventarcPipeline) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline} Resource.
 func NewGoogleEventarcPipeline(scope constructs.Construct, id *string, config *GoogleEventarcPipelineConfig) GoogleEventarcPipeline {
 	_init_.Initialize()
 
@@ -725,7 +725,7 @@ func NewGoogleEventarcPipeline(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_pipeline google_eventarc_pipeline} Resource.
 func NewGoogleEventarcPipeline_Override(g GoogleEventarcPipeline, scope constructs.Construct, id *string, config *GoogleEventarcPipelineConfig) {
 	_init_.Initialize()
 

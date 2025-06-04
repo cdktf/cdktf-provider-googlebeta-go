@@ -5,14 +5,14 @@ package googlecomputeinstancetemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinstancetemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputeinstancetemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_instance_template google_compute_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_instance_template google_compute_instance_template}.
 type GoogleComputeInstanceTemplate interface {
 	cdktf.TerraformResource
 	AdvancedMachineFeatures() GoogleComputeInstanceTemplateAdvancedMachineFeaturesOutputReference
@@ -1092,7 +1092,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplate) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_instance_template google_compute_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_instance_template google_compute_instance_template} Resource.
 func NewGoogleComputeInstanceTemplate(scope constructs.Construct, id *string, config *GoogleComputeInstanceTemplateConfig) GoogleComputeInstanceTemplate {
 	_init_.Initialize()
 
@@ -1110,7 +1110,7 @@ func NewGoogleComputeInstanceTemplate(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_instance_template google_compute_instance_template} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_instance_template google_compute_instance_template} Resource.
 func NewGoogleComputeInstanceTemplate_Override(g GoogleComputeInstanceTemplate, scope constructs.Construct, id *string, config *GoogleComputeInstanceTemplateConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googledataplexaspecttypeiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataplexaspecttypeiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledataplexaspecttypeiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy}.
 type GoogleDataplexAspectTypeIamPolicy interface {
 	cdktf.TerraformResource
 	AspectTypeId() *string
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleDataplexAspectTypeIamPolicy) TerraformResourceType() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy} Resource.
 func NewGoogleDataplexAspectTypeIamPolicy(scope constructs.Construct, id *string, config *GoogleDataplexAspectTypeIamPolicyConfig) GoogleDataplexAspectTypeIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleDataplexAspectTypeIamPolicy(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataplex_aspect_type_iam_policy google_dataplex_aspect_type_iam_policy} Resource.
 func NewGoogleDataplexAspectTypeIamPolicy_Override(g GoogleDataplexAspectTypeIamPolicy, scope constructs.Construct, id *string, config *GoogleDataplexAspectTypeIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlesccv2organizationsourceiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesccv2organizationsourceiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlesccv2organizationsourceiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member}.
 type GoogleSccV2OrganizationSourceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamMember) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource.
 func NewGoogleSccV2OrganizationSourceIamMember(scope constructs.Construct, id *string, config *GoogleSccV2OrganizationSourceIamMemberConfig) GoogleSccV2OrganizationSourceIamMember {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewGoogleSccV2OrganizationSourceIamMember(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource.
 func NewGoogleSccV2OrganizationSourceIamMember_Override(g GoogleSccV2OrganizationSourceIamMember, scope constructs.Construct, id *string, config *GoogleSccV2OrganizationSourceIamMemberConfig) {
 	_init_.Initialize()
 

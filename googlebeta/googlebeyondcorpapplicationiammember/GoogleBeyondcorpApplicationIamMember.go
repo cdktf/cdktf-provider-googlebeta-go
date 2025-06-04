@@ -5,14 +5,14 @@ package googlebeyondcorpapplicationiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplicationiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebeyondcorpapplicationiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_application_iam_member google_beyondcorp_application_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_beyondcorp_application_iam_member google_beyondcorp_application_iam_member}.
 type GoogleBeyondcorpApplicationIamMember interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -461,7 +461,7 @@ func (j *jsiiProxy_GoogleBeyondcorpApplicationIamMember) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_application_iam_member google_beyondcorp_application_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_beyondcorp_application_iam_member google_beyondcorp_application_iam_member} Resource.
 func NewGoogleBeyondcorpApplicationIamMember(scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationIamMemberConfig) GoogleBeyondcorpApplicationIamMember {
 	_init_.Initialize()
 
@@ -479,7 +479,7 @@ func NewGoogleBeyondcorpApplicationIamMember(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_application_iam_member google_beyondcorp_application_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_beyondcorp_application_iam_member google_beyondcorp_application_iam_member} Resource.
 func NewGoogleBeyondcorpApplicationIamMember_Override(g GoogleBeyondcorpApplicationIamMember, scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationIamMemberConfig) {
 	_init_.Initialize()
 

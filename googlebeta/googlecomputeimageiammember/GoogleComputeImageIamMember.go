@@ -5,14 +5,14 @@ package googlecomputeimageiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeimageiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputeimageiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_image_iam_member google_compute_image_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_image_iam_member google_compute_image_iam_member}.
 type GoogleComputeImageIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleComputeImageIamMember) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_image_iam_member google_compute_image_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_image_iam_member google_compute_image_iam_member} Resource.
 func NewGoogleComputeImageIamMember(scope constructs.Construct, id *string, config *GoogleComputeImageIamMemberConfig) GoogleComputeImageIamMember {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleComputeImageIamMember(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_image_iam_member google_compute_image_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_image_iam_member google_compute_image_iam_member} Resource.
 func NewGoogleComputeImageIamMember_Override(g GoogleComputeImageIamMember, scope constructs.Construct, id *string, config *GoogleComputeImageIamMemberConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlelogginglogview
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlelogginglogview/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlelogginglogview/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_logging_log_view google_logging_log_view}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_logging_log_view google_logging_log_view}.
 type GoogleLoggingLogView interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -498,7 +498,7 @@ func (j *jsiiProxy_GoogleLoggingLogView) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_logging_log_view google_logging_log_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_logging_log_view google_logging_log_view} Resource.
 func NewGoogleLoggingLogView(scope constructs.Construct, id *string, config *GoogleLoggingLogViewConfig) GoogleLoggingLogView {
 	_init_.Initialize()
 
@@ -516,7 +516,7 @@ func NewGoogleLoggingLogView(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_logging_log_view google_logging_log_view} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_logging_log_view google_logging_log_view} Resource.
 func NewGoogleLoggingLogView_Override(g GoogleLoggingLogView, scope constructs.Construct, id *string, config *GoogleLoggingLogViewConfig) {
 	_init_.Initialize()
 

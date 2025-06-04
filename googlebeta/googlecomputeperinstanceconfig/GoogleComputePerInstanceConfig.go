@@ -5,14 +5,14 @@ package googlecomputeperinstanceconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeperinstanceconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputeperinstanceconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config}.
 type GoogleComputePerInstanceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -548,7 +548,7 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfig) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config} Resource.
 func NewGoogleComputePerInstanceConfig(scope constructs.Construct, id *string, config *GoogleComputePerInstanceConfigConfig) GoogleComputePerInstanceConfig {
 	_init_.Initialize()
 
@@ -566,7 +566,7 @@ func NewGoogleComputePerInstanceConfig(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_per_instance_config google_compute_per_instance_config} Resource.
 func NewGoogleComputePerInstanceConfig_Override(g GoogleComputePerInstanceConfig, scope constructs.Construct, id *string, config *GoogleComputePerInstanceConfigConfig) {
 	_init_.Initialize()
 

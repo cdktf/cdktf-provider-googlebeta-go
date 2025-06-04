@@ -5,14 +5,14 @@ package googleiamworkloadidentitypooliampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamworkloadidentitypooliampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleiamworkloadidentitypooliampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy}.
 type GoogleIamWorkloadIdentityPoolIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolIamPolicy) WorkloadIdentityPoolI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy} Resource.
 func NewGoogleIamWorkloadIdentityPoolIamPolicy(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolIamPolicyConfig) GoogleIamWorkloadIdentityPoolIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleIamWorkloadIdentityPoolIamPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iam_workload_identity_pool_iam_policy google_iam_workload_identity_pool_iam_policy} Resource.
 func NewGoogleIamWorkloadIdentityPoolIamPolicy_Override(g GoogleIamWorkloadIdentityPoolIamPolicy, scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolIamPolicyConfig) {
 	_init_.Initialize()
 

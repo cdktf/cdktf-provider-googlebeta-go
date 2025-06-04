@@ -5,14 +5,14 @@ package googlevertexaifeaturegroupiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlevertexaifeaturegroupiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlevertexaifeaturegroupiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_vertex_ai_feature_group_iam_policy google_vertex_ai_feature_group_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_vertex_ai_feature_group_iam_policy google_vertex_ai_feature_group_iam_policy}.
 type GoogleVertexAiFeatureGroupIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamPolicy) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_vertex_ai_feature_group_iam_policy google_vertex_ai_feature_group_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_vertex_ai_feature_group_iam_policy google_vertex_ai_feature_group_iam_policy} Resource.
 func NewGoogleVertexAiFeatureGroupIamPolicy(scope constructs.Construct, id *string, config *GoogleVertexAiFeatureGroupIamPolicyConfig) GoogleVertexAiFeatureGroupIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleVertexAiFeatureGroupIamPolicy(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_vertex_ai_feature_group_iam_policy google_vertex_ai_feature_group_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_vertex_ai_feature_group_iam_policy google_vertex_ai_feature_group_iam_policy} Resource.
 func NewGoogleVertexAiFeatureGroupIamPolicy_Override(g GoogleVertexAiFeatureGroupIamPolicy, scope constructs.Construct, id *string, config *GoogleVertexAiFeatureGroupIamPolicyConfig) {
 	_init_.Initialize()
 

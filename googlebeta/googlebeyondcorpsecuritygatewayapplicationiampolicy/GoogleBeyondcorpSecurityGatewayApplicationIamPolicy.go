@@ -5,14 +5,14 @@ package googlebeyondcorpsecuritygatewayapplicationiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpsecuritygatewayapplicationiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebeyondcorpsecuritygatewayapplicationiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy}.
 type GoogleBeyondcorpSecurityGatewayApplicationIamPolicy interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationIamPolicy) Terrafor
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Resource.
 func NewGoogleBeyondcorpSecurityGatewayApplicationIamPolicy(scope constructs.Construct, id *string, config *GoogleBeyondcorpSecurityGatewayApplicationIamPolicyConfig) GoogleBeyondcorpSecurityGatewayApplicationIamPolicy {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleBeyondcorpSecurityGatewayApplicationIamPolicy(scope constructs.Con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_beyondcorp_security_gateway_application_iam_policy google_beyondcorp_security_gateway_application_iam_policy} Resource.
 func NewGoogleBeyondcorpSecurityGatewayApplicationIamPolicy_Override(g GoogleBeyondcorpSecurityGatewayApplicationIamPolicy, scope constructs.Construct, id *string, config *GoogleBeyondcorpSecurityGatewayApplicationIamPolicyConfig) {
 	_init_.Initialize()
 

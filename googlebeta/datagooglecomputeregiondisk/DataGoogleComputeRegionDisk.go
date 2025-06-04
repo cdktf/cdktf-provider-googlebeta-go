@@ -5,14 +5,14 @@ package datagooglecomputeregiondisk
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeregiondisk/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglecomputeregiondisk/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_disk google_compute_region_disk}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_compute_region_disk google_compute_region_disk}.
 type DataGoogleComputeRegionDisk interface {
 	cdktf.TerraformDataSource
 	AsyncPrimaryDisk() DataGoogleComputeRegionDiskAsyncPrimaryDiskList
@@ -633,7 +633,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionDisk) Users() *[]*string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
 func NewDataGoogleComputeRegionDisk(scope constructs.Construct, id *string, config *DataGoogleComputeRegionDiskConfig) DataGoogleComputeRegionDisk {
 	_init_.Initialize()
 
@@ -651,7 +651,7 @@ func NewDataGoogleComputeRegionDisk(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_compute_region_disk google_compute_region_disk} Data Source.
 func NewDataGoogleComputeRegionDisk_Override(d DataGoogleComputeRegionDisk, scope constructs.Construct, id *string, config *DataGoogleComputeRegionDiskConfig) {
 	_init_.Initialize()
 

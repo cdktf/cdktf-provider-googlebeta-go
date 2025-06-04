@@ -55,6 +55,14 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutHttpFilterConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutHttpFilterMetadataParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesOutputReference) validatePutMatchRulesParameters(value interface{}) error {
 	return nil
 }

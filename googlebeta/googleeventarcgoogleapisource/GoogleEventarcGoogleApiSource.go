@@ -5,14 +5,14 @@ package googleeventarcgoogleapisource
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcgoogleapisource/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleeventarcgoogleapisource/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_eventarc_google_api_source google_eventarc_google_api_source}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_google_api_source google_eventarc_google_api_source}.
 type GoogleEventarcGoogleApiSource interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -635,7 +635,7 @@ func (j *jsiiProxy_GoogleEventarcGoogleApiSource) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_eventarc_google_api_source google_eventarc_google_api_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_google_api_source google_eventarc_google_api_source} Resource.
 func NewGoogleEventarcGoogleApiSource(scope constructs.Construct, id *string, config *GoogleEventarcGoogleApiSourceConfig) GoogleEventarcGoogleApiSource {
 	_init_.Initialize()
 
@@ -653,7 +653,7 @@ func NewGoogleEventarcGoogleApiSource(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_eventarc_google_api_source google_eventarc_google_api_source} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_google_api_source google_eventarc_google_api_source} Resource.
 func NewGoogleEventarcGoogleApiSource_Override(g GoogleEventarcGoogleApiSource, scope constructs.Construct, id *string, config *GoogleEventarcGoogleApiSourceConfig) {
 	_init_.Initialize()
 

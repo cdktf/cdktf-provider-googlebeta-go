@@ -5,14 +5,14 @@ package googlecomputeinstancegroupmembership
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeinstancegroupmembership/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputeinstancegroupmembership/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_instance_group_membership google_compute_instance_group_membership}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_instance_group_membership google_compute_instance_group_membership}.
 type GoogleComputeInstanceGroupMembership interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupMembership) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_instance_group_membership google_compute_instance_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_instance_group_membership google_compute_instance_group_membership} Resource.
 func NewGoogleComputeInstanceGroupMembership(scope constructs.Construct, id *string, config *GoogleComputeInstanceGroupMembershipConfig) GoogleComputeInstanceGroupMembership {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewGoogleComputeInstanceGroupMembership(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_instance_group_membership google_compute_instance_group_membership} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_instance_group_membership google_compute_instance_group_membership} Resource.
 func NewGoogleComputeInstanceGroupMembership_Override(g GoogleComputeInstanceGroupMembership, scope constructs.Construct, id *string, config *GoogleComputeInstanceGroupMembershipConfig) {
 	_init_.Initialize()
 

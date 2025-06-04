@@ -5,14 +5,14 @@ package googlesecretmanagersecret
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecretmanagersecret/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlesecretmanagersecret/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_secret_manager_secret google_secret_manager_secret}.
 type GoogleSecretManagerSecret interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -651,7 +651,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecret) VersionDestroyTtlInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
 func NewGoogleSecretManagerSecret(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretConfig) GoogleSecretManagerSecret {
 	_init_.Initialize()
 
@@ -669,7 +669,7 @@ func NewGoogleSecretManagerSecret(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_secret_manager_secret google_secret_manager_secret} Resource.
 func NewGoogleSecretManagerSecret_Override(g GoogleSecretManagerSecret, scope constructs.Construct, id *string, config *GoogleSecretManagerSecretConfig) {
 	_init_.Initialize()
 

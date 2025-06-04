@@ -5,14 +5,14 @@ package googlesiteverificationowner
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesiteverificationowner/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlesiteverificationowner/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_site_verification_owner google_site_verification_owner}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_site_verification_owner google_site_verification_owner}.
 type GoogleSiteVerificationOwner interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -380,7 +380,7 @@ func (j *jsiiProxy_GoogleSiteVerificationOwner) WebResourceIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_site_verification_owner google_site_verification_owner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_site_verification_owner google_site_verification_owner} Resource.
 func NewGoogleSiteVerificationOwner(scope constructs.Construct, id *string, config *GoogleSiteVerificationOwnerConfig) GoogleSiteVerificationOwner {
 	_init_.Initialize()
 
@@ -398,7 +398,7 @@ func NewGoogleSiteVerificationOwner(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_site_verification_owner google_site_verification_owner} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_site_verification_owner google_site_verification_owner} Resource.
 func NewGoogleSiteVerificationOwner_Override(g GoogleSiteVerificationOwner, scope constructs.Construct, id *string, config *GoogleSiteVerificationOwnerConfig) {
 	_init_.Initialize()
 

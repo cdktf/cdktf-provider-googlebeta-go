@@ -5,14 +5,14 @@ package datagooglebigquerytable
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglebigquerytable/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglebigquerytable/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_bigquery_table google_bigquery_table}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_bigquery_table google_bigquery_table}.
 type DataGoogleBigqueryTable interface {
 	cdktf.TerraformDataSource
 	BiglakeConfiguration() DataGoogleBigqueryTableBiglakeConfigurationList
@@ -698,7 +698,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTable) View() DataGoogleBigqueryTableViewLi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_bigquery_table google_bigquery_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_bigquery_table google_bigquery_table} Data Source.
 func NewDataGoogleBigqueryTable(scope constructs.Construct, id *string, config *DataGoogleBigqueryTableConfig) DataGoogleBigqueryTable {
 	_init_.Initialize()
 
@@ -716,7 +716,7 @@ func NewDataGoogleBigqueryTable(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_bigquery_table google_bigquery_table} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_bigquery_table google_bigquery_table} Data Source.
 func NewDataGoogleBigqueryTable_Override(d DataGoogleBigqueryTable, scope constructs.Construct, id *string, config *DataGoogleBigqueryTableConfig) {
 	_init_.Initialize()
 

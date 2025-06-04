@@ -5,14 +5,14 @@ package googledeveloperconnectgitrepositorylink
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectgitrepositorylink/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledeveloperconnectgitrepositorylink/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_developer_connect_git_repository_link google_developer_connect_git_repository_link}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_developer_connect_git_repository_link google_developer_connect_git_repository_link}.
 type GoogleDeveloperConnectGitRepositoryLink interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -621,7 +621,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectGitRepositoryLink) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_developer_connect_git_repository_link google_developer_connect_git_repository_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_developer_connect_git_repository_link google_developer_connect_git_repository_link} Resource.
 func NewGoogleDeveloperConnectGitRepositoryLink(scope constructs.Construct, id *string, config *GoogleDeveloperConnectGitRepositoryLinkConfig) GoogleDeveloperConnectGitRepositoryLink {
 	_init_.Initialize()
 
@@ -639,7 +639,7 @@ func NewGoogleDeveloperConnectGitRepositoryLink(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_developer_connect_git_repository_link google_developer_connect_git_repository_link} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_developer_connect_git_repository_link google_developer_connect_git_repository_link} Resource.
 func NewGoogleDeveloperConnectGitRepositoryLink_Override(g GoogleDeveloperConnectGitRepositoryLink, scope constructs.Construct, id *string, config *GoogleDeveloperConnectGitRepositoryLinkConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlesecuresourcemanagerrepositoryiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlesecuresourcemanagerrepositoryiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlesecuresourcemanagerrepositoryiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding}.
 type GoogleSecureSourceManagerRepositoryIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryIamBinding) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding} Resource.
 func NewGoogleSecureSourceManagerRepositoryIamBinding(scope constructs.Construct, id *string, config *GoogleSecureSourceManagerRepositoryIamBindingConfig) GoogleSecureSourceManagerRepositoryIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleSecureSourceManagerRepositoryIamBinding(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_secure_source_manager_repository_iam_binding google_secure_source_manager_repository_iam_binding} Resource.
 func NewGoogleSecureSourceManagerRepositoryIamBinding_Override(g GoogleSecureSourceManagerRepositoryIamBinding, scope constructs.Construct, id *string, config *GoogleSecureSourceManagerRepositoryIamBindingConfig) {
 	_init_.Initialize()
 

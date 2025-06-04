@@ -5,14 +5,14 @@ package datagooglesourcereporepository
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglesourcereporepository/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglesourcereporepository/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_sourcerepo_repository google_sourcerepo_repository}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_sourcerepo_repository google_sourcerepo_repository}.
 type DataGoogleSourcerepoRepository interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataGoogleSourcerepoRepository) Url() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_sourcerepo_repository google_sourcerepo_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_sourcerepo_repository google_sourcerepo_repository} Data Source.
 func NewDataGoogleSourcerepoRepository(scope constructs.Construct, id *string, config *DataGoogleSourcerepoRepositoryConfig) DataGoogleSourcerepoRepository {
 	_init_.Initialize()
 
@@ -374,7 +374,7 @@ func NewDataGoogleSourcerepoRepository(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_sourcerepo_repository google_sourcerepo_repository} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_sourcerepo_repository google_sourcerepo_repository} Data Source.
 func NewDataGoogleSourcerepoRepository_Override(d DataGoogleSourcerepoRepository, scope constructs.Construct, id *string, config *DataGoogleSourcerepoRepositoryConfig) {
 	_init_.Initialize()
 

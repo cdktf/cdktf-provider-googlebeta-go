@@ -5,14 +5,14 @@ package googlecloudbuildworkerpool
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudbuildworkerpool/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecloudbuildworkerpool/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool}.
 type GoogleCloudbuildWorkerPool interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -590,7 +590,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPool) WorkerConfigInput() *GoogleCloudb
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewGoogleCloudbuildWorkerPool(scope constructs.Construct, id *string, config *GoogleCloudbuildWorkerPoolConfig) GoogleCloudbuildWorkerPool {
 	_init_.Initialize()
 
@@ -608,7 +608,7 @@ func NewGoogleCloudbuildWorkerPool(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_cloudbuild_worker_pool google_cloudbuild_worker_pool} Resource.
 func NewGoogleCloudbuildWorkerPool_Override(g GoogleCloudbuildWorkerPool, scope constructs.Construct, id *string, config *GoogleCloudbuildWorkerPoolConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package datagooglevertexaifeatureonlinestoreiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglevertexaifeatureonlinestoreiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglevertexaifeatureonlinestoreiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_vertex_ai_feature_online_store_iam_policy google_vertex_ai_feature_online_store_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_vertex_ai_feature_online_store_iam_policy google_vertex_ai_feature_online_store_iam_policy}.
 type DataGoogleVertexAiFeatureOnlineStoreIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -358,7 +358,7 @@ func (j *jsiiProxy_DataGoogleVertexAiFeatureOnlineStoreIamPolicy) TerraformResou
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_vertex_ai_feature_online_store_iam_policy google_vertex_ai_feature_online_store_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_vertex_ai_feature_online_store_iam_policy google_vertex_ai_feature_online_store_iam_policy} Data Source.
 func NewDataGoogleVertexAiFeatureOnlineStoreIamPolicy(scope constructs.Construct, id *string, config *DataGoogleVertexAiFeatureOnlineStoreIamPolicyConfig) DataGoogleVertexAiFeatureOnlineStoreIamPolicy {
 	_init_.Initialize()
 
@@ -376,7 +376,7 @@ func NewDataGoogleVertexAiFeatureOnlineStoreIamPolicy(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_vertex_ai_feature_online_store_iam_policy google_vertex_ai_feature_online_store_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_vertex_ai_feature_online_store_iam_policy google_vertex_ai_feature_online_store_iam_policy} Data Source.
 func NewDataGoogleVertexAiFeatureOnlineStoreIamPolicy_Override(d DataGoogleVertexAiFeatureOnlineStoreIamPolicy, scope constructs.Construct, id *string, config *DataGoogleVertexAiFeatureOnlineStoreIamPolicyConfig) {
 	_init_.Initialize()
 

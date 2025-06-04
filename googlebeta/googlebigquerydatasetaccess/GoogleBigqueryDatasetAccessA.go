@@ -5,14 +5,14 @@ package googlebigquerydatasetaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigquerydatasetaccess/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigquerydatasetaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access}.
 type GoogleBigqueryDatasetAccessA interface {
 	cdktf.TerraformResource
 	ApiUpdatedMember() cdktf.IResolvable
@@ -632,7 +632,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessA) ViewInput() *GoogleBigqueryData
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewGoogleBigqueryDatasetAccessA(scope constructs.Construct, id *string, config *GoogleBigqueryDatasetAccessAConfig) GoogleBigqueryDatasetAccessA {
 	_init_.Initialize()
 
@@ -650,7 +650,7 @@ func NewGoogleBigqueryDatasetAccessA(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_bigquery_dataset_access google_bigquery_dataset_access} Resource.
 func NewGoogleBigqueryDatasetAccessA_Override(g GoogleBigqueryDatasetAccessA, scope constructs.Construct, id *string, config *GoogleBigqueryDatasetAccessAConfig) {
 	_init_.Initialize()
 

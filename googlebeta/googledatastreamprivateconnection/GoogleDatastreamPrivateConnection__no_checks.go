@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validateOverrideLogicalIdP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validatePutPscInterfaceConfigParameters(value *GoogleDatastreamPrivateConnectionPscInterfaceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDatastreamPrivateConnection) validatePutTimeoutsParameters(value *GoogleDatastreamPrivateConnectionTimeouts) error {
 	return nil
 }

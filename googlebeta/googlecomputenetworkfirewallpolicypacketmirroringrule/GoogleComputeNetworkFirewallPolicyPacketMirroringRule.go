@@ -5,14 +5,14 @@ package googlecomputenetworkfirewallpolicypacketmirroringrule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputenetworkfirewallpolicypacketmirroringrule/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputenetworkfirewallpolicypacketmirroringrule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_network_firewall_policy_packet_mirroring_rule google_compute_network_firewall_policy_packet_mirroring_rule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_network_firewall_policy_packet_mirroring_rule google_compute_network_firewall_policy_packet_mirroring_rule}.
 type GoogleComputeNetworkFirewallPolicyPacketMirroringRule interface {
 	cdktf.TerraformResource
 	Action() *string
@@ -650,7 +650,7 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyPacketMirroringRule) TlsIns
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_network_firewall_policy_packet_mirroring_rule google_compute_network_firewall_policy_packet_mirroring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_network_firewall_policy_packet_mirroring_rule google_compute_network_firewall_policy_packet_mirroring_rule} Resource.
 func NewGoogleComputeNetworkFirewallPolicyPacketMirroringRule(scope constructs.Construct, id *string, config *GoogleComputeNetworkFirewallPolicyPacketMirroringRuleConfig) GoogleComputeNetworkFirewallPolicyPacketMirroringRule {
 	_init_.Initialize()
 
@@ -668,7 +668,7 @@ func NewGoogleComputeNetworkFirewallPolicyPacketMirroringRule(scope constructs.C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_network_firewall_policy_packet_mirroring_rule google_compute_network_firewall_policy_packet_mirroring_rule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_network_firewall_policy_packet_mirroring_rule google_compute_network_firewall_policy_packet_mirroring_rule} Resource.
 func NewGoogleComputeNetworkFirewallPolicyPacketMirroringRule_Override(g GoogleComputeNetworkFirewallPolicyPacketMirroringRule, scope constructs.Construct, id *string, config *GoogleComputeNetworkFirewallPolicyPacketMirroringRuleConfig) {
 	_init_.Initialize()
 

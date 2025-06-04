@@ -5,14 +5,14 @@ package googlecomputeimageiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeimageiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputeimageiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_image_iam_policy google_compute_image_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_image_iam_policy google_compute_image_iam_policy}.
 type GoogleComputeImageIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleComputeImageIamPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_image_iam_policy google_compute_image_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_image_iam_policy google_compute_image_iam_policy} Resource.
 func NewGoogleComputeImageIamPolicy(scope constructs.Construct, id *string, config *GoogleComputeImageIamPolicyConfig) GoogleComputeImageIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleComputeImageIamPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_image_iam_policy google_compute_image_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_image_iam_policy google_compute_image_iam_policy} Resource.
 func NewGoogleComputeImageIamPolicy_Override(g GoogleComputeImageIamPolicy, scope constructs.Construct, id *string, config *GoogleComputeImageIamPolicyConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlegeminidatasharingwithgooglesettingbinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegeminidatasharingwithgooglesettingbinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlegeminidatasharingwithgooglesettingbinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_gemini_data_sharing_with_google_setting_binding google_gemini_data_sharing_with_google_setting_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gemini_data_sharing_with_google_setting_binding google_gemini_data_sharing_with_google_setting_binding}.
 type GoogleGeminiDataSharingWithGoogleSettingBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -554,7 +554,7 @@ func (j *jsiiProxy_GoogleGeminiDataSharingWithGoogleSettingBinding) UpdateTime()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_gemini_data_sharing_with_google_setting_binding google_gemini_data_sharing_with_google_setting_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gemini_data_sharing_with_google_setting_binding google_gemini_data_sharing_with_google_setting_binding} Resource.
 func NewGoogleGeminiDataSharingWithGoogleSettingBinding(scope constructs.Construct, id *string, config *GoogleGeminiDataSharingWithGoogleSettingBindingConfig) GoogleGeminiDataSharingWithGoogleSettingBinding {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewGoogleGeminiDataSharingWithGoogleSettingBinding(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_gemini_data_sharing_with_google_setting_binding google_gemini_data_sharing_with_google_setting_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gemini_data_sharing_with_google_setting_binding google_gemini_data_sharing_with_google_setting_binding} Resource.
 func NewGoogleGeminiDataSharingWithGoogleSettingBinding_Override(g GoogleGeminiDataSharingWithGoogleSettingBinding, scope constructs.Construct, id *string, config *GoogleGeminiDataSharingWithGoogleSettingBindingConfig) {
 	_init_.Initialize()
 

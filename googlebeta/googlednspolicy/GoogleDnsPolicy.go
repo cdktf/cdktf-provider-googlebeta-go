@@ -5,14 +5,14 @@ package googlednspolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlednspolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlednspolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy google_dns_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy google_dns_policy}.
 type GoogleDnsPolicy interface {
 	cdktf.TerraformResource
 	AlternativeNameServerConfig() GoogleDnsPolicyAlternativeNameServerConfigOutputReference
@@ -36,6 +36,8 @@ type GoogleDnsPolicy interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	Dns64Config() GoogleDnsPolicyDns64ConfigOutputReference
+	Dns64ConfigInput() *GoogleDnsPolicyDns64Config
 	EnableInboundForwarding() interface{}
 	SetEnableInboundForwarding(val interface{})
 	EnableInboundForwardingInput() interface{}
@@ -129,10 +131,12 @@ type GoogleDnsPolicy interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAlternativeNameServerConfig(value *GoogleDnsPolicyAlternativeNameServerConfig)
+	PutDns64Config(value *GoogleDnsPolicyDns64Config)
 	PutNetworks(value interface{})
 	PutTimeouts(value *GoogleDnsPolicyTimeouts)
 	ResetAlternativeNameServerConfig()
 	ResetDescription()
+	ResetDns64Config()
 	ResetEnableInboundForwarding()
 	ResetEnableLogging()
 	ResetId()
@@ -245,6 +249,26 @@ func (j *jsiiProxy_GoogleDnsPolicy) DescriptionInput() *string {
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsPolicy) Dns64Config() GoogleDnsPolicyDns64ConfigOutputReference {
+	var returns GoogleDnsPolicyDns64ConfigOutputReference
+	_jsii_.Get(
+		j,
+		"dns64Config",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDnsPolicy) Dns64ConfigInput() *GoogleDnsPolicyDns64Config {
+	var returns *GoogleDnsPolicyDns64Config
+	_jsii_.Get(
+		j,
+		"dns64ConfigInput",
 		&returns,
 	)
 	return returns
@@ -501,7 +525,7 @@ func (j *jsiiProxy_GoogleDnsPolicy) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy google_dns_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy google_dns_policy} Resource.
 func NewGoogleDnsPolicy(scope constructs.Construct, id *string, config *GoogleDnsPolicyConfig) GoogleDnsPolicy {
 	_init_.Initialize()
 
@@ -519,7 +543,7 @@ func NewGoogleDnsPolicy(scope constructs.Construct, id *string, config *GoogleDn
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dns_policy google_dns_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dns_policy google_dns_policy} Resource.
 func NewGoogleDnsPolicy_Override(g GoogleDnsPolicy, scope constructs.Construct, id *string, config *GoogleDnsPolicyConfig) {
 	_init_.Initialize()
 
@@ -1028,6 +1052,17 @@ func (g *jsiiProxy_GoogleDnsPolicy) PutAlternativeNameServerConfig(value *Google
 	)
 }
 
+func (g *jsiiProxy_GoogleDnsPolicy) PutDns64Config(value *GoogleDnsPolicyDns64Config) {
+	if err := g.validatePutDns64ConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDns64Config",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDnsPolicy) PutNetworks(value interface{}) {
 	if err := g.validatePutNetworksParameters(value); err != nil {
 		panic(err)
@@ -1062,6 +1097,14 @@ func (g *jsiiProxy_GoogleDnsPolicy) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDnsPolicy) ResetDns64Config() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDns64Config",
 		nil, // no parameters
 	)
 }

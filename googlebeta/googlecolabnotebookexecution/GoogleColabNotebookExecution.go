@@ -5,14 +5,14 @@ package googlecolabnotebookexecution
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecolabnotebookexecution/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecolabnotebookexecution/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_colab_notebook_execution google_colab_notebook_execution}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_colab_notebook_execution google_colab_notebook_execution}.
 type GoogleColabNotebookExecution interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -619,7 +619,7 @@ func (j *jsiiProxy_GoogleColabNotebookExecution) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_colab_notebook_execution google_colab_notebook_execution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_colab_notebook_execution google_colab_notebook_execution} Resource.
 func NewGoogleColabNotebookExecution(scope constructs.Construct, id *string, config *GoogleColabNotebookExecutionConfig) GoogleColabNotebookExecution {
 	_init_.Initialize()
 
@@ -637,7 +637,7 @@ func NewGoogleColabNotebookExecution(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_colab_notebook_execution google_colab_notebook_execution} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_colab_notebook_execution google_colab_notebook_execution} Resource.
 func NewGoogleColabNotebookExecution_Override(g GoogleColabNotebookExecution, scope constructs.Construct, id *string, config *GoogleColabNotebookExecutionConfig) {
 	_init_.Initialize()
 

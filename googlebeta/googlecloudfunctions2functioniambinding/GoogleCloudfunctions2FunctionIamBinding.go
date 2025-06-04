@@ -5,14 +5,14 @@ package googlecloudfunctions2functioniambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudfunctions2functioniambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecloudfunctions2functioniambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudfunctions2_function_iam_binding google_cloudfunctions2_function_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_cloudfunctions2_function_iam_binding google_cloudfunctions2_function_iam_binding}.
 type GoogleCloudfunctions2FunctionIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionIamBinding) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudfunctions2_function_iam_binding google_cloudfunctions2_function_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_cloudfunctions2_function_iam_binding google_cloudfunctions2_function_iam_binding} Resource.
 func NewGoogleCloudfunctions2FunctionIamBinding(scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionIamBindingConfig) GoogleCloudfunctions2FunctionIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleCloudfunctions2FunctionIamBinding(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudfunctions2_function_iam_binding google_cloudfunctions2_function_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_cloudfunctions2_function_iam_binding google_cloudfunctions2_function_iam_binding} Resource.
 func NewGoogleCloudfunctions2FunctionIamBinding_Override(g GoogleCloudfunctions2FunctionIamBinding, scope constructs.Construct, id *string, config *GoogleCloudfunctions2FunctionIamBindingConfig) {
 	_init_.Initialize()
 

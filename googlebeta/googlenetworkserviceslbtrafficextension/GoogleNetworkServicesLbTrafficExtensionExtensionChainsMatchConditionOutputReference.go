@@ -5,9 +5,9 @@ package googlenetworkserviceslbtrafficextension
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenetworkserviceslbtrafficextension/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlenetworkserviceslbtrafficextension/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 

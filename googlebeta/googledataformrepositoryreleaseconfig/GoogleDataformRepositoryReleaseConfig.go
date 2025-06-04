@@ -5,14 +5,14 @@ package googledataformrepositoryreleaseconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledataformrepositoryreleaseconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledataformrepositoryreleaseconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config}.
 type GoogleDataformRepositoryReleaseConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -535,7 +535,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryReleaseConfig) TimeZoneInput() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
 func NewGoogleDataformRepositoryReleaseConfig(scope constructs.Construct, id *string, config *GoogleDataformRepositoryReleaseConfigConfig) GoogleDataformRepositoryReleaseConfig {
 	_init_.Initialize()
 
@@ -553,7 +553,7 @@ func NewGoogleDataformRepositoryReleaseConfig(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_dataform_repository_release_config google_dataform_repository_release_config} Resource.
 func NewGoogleDataformRepositoryReleaseConfig_Override(g GoogleDataformRepositoryReleaseConfig, scope constructs.Construct, id *string, config *GoogleDataformRepositoryReleaseConfigConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlealloydbcluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlealloydbcluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlealloydbcluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_alloydb_cluster google_alloydb_cluster}.
 type GoogleAlloydbCluster interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -992,7 +992,7 @@ func (j *jsiiProxy_GoogleAlloydbCluster) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) GoogleAlloydbCluster {
 	_init_.Initialize()
 
@@ -1010,7 +1010,7 @@ func NewGoogleAlloydbCluster(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_alloydb_cluster google_alloydb_cluster} Resource.
 func NewGoogleAlloydbCluster_Override(g GoogleAlloydbCluster, scope constructs.Construct, id *string, config *GoogleAlloydbClusterConfig) {
 	_init_.Initialize()
 

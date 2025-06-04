@@ -5,14 +5,14 @@ package googlecomputeresourcepolicyattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeresourcepolicyattachment/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputeresourcepolicyattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_resource_policy_attachment google_compute_resource_policy_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_resource_policy_attachment google_compute_resource_policy_attachment}.
 type GoogleComputeResourcePolicyAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyAttachment) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_resource_policy_attachment google_compute_resource_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_resource_policy_attachment google_compute_resource_policy_attachment} Resource.
 func NewGoogleComputeResourcePolicyAttachment(scope constructs.Construct, id *string, config *GoogleComputeResourcePolicyAttachmentConfig) GoogleComputeResourcePolicyAttachment {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewGoogleComputeResourcePolicyAttachment(scope constructs.Construct, id *st
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_resource_policy_attachment google_compute_resource_policy_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_resource_policy_attachment google_compute_resource_policy_attachment} Resource.
 func NewGoogleComputeResourcePolicyAttachment_Override(g GoogleComputeResourcePolicyAttachment, scope constructs.Construct, id *string, config *GoogleComputeResourcePolicyAttachmentConfig) {
 	_init_.Initialize()
 

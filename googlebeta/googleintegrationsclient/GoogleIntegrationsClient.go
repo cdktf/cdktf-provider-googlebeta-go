@@ -5,14 +5,14 @@ package googleintegrationsclient
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleintegrationsclient/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleintegrationsclient/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_integrations_client google_integrations_client}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_integrations_client google_integrations_client}.
 type GoogleIntegrationsClient interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -453,7 +453,7 @@ func (j *jsiiProxy_GoogleIntegrationsClient) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_integrations_client google_integrations_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_integrations_client google_integrations_client} Resource.
 func NewGoogleIntegrationsClient(scope constructs.Construct, id *string, config *GoogleIntegrationsClientConfig) GoogleIntegrationsClient {
 	_init_.Initialize()
 
@@ -471,7 +471,7 @@ func NewGoogleIntegrationsClient(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_integrations_client google_integrations_client} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_integrations_client google_integrations_client} Resource.
 func NewGoogleIntegrationsClient_Override(g GoogleIntegrationsClient, scope constructs.Construct, id *string, config *GoogleIntegrationsClientConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googlecomputediskiammember
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputediskiammember/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputediskiammember/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_disk_iam_member google_compute_disk_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_disk_iam_member google_compute_disk_iam_member}.
 type GoogleComputeDiskIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleComputeDiskIamMember) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_disk_iam_member google_compute_disk_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_disk_iam_member google_compute_disk_iam_member} Resource.
 func NewGoogleComputeDiskIamMember(scope constructs.Construct, id *string, config *GoogleComputeDiskIamMemberConfig) GoogleComputeDiskIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleComputeDiskIamMember(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_disk_iam_member google_compute_disk_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_disk_iam_member google_compute_disk_iam_member} Resource.
 func NewGoogleComputeDiskIamMember_Override(g GoogleComputeDiskIamMember, scope constructs.Construct, id *string, config *GoogleComputeDiskIamMemberConfig) {
 	_init_.Initialize()
 

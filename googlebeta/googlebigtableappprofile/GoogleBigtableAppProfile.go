@@ -5,14 +5,14 @@ package googlebigtableappprofile
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebigtableappprofile/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebigtableappprofile/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile}.
 type GoogleBigtableAppProfile interface {
 	cdktf.TerraformResource
 	AppProfileId() *string
@@ -608,7 +608,7 @@ func (j *jsiiProxy_GoogleBigtableAppProfile) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewGoogleBigtableAppProfile(scope constructs.Construct, id *string, config *GoogleBigtableAppProfileConfig) GoogleBigtableAppProfile {
 	_init_.Initialize()
 
@@ -626,7 +626,7 @@ func NewGoogleBigtableAppProfile(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_bigtable_app_profile google_bigtable_app_profile} Resource.
 func NewGoogleBigtableAppProfile_Override(g GoogleBigtableAppProfile, scope constructs.Construct, id *string, config *GoogleBigtableAppProfileConfig) {
 	_init_.Initialize()
 

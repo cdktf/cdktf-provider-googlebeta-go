@@ -5,14 +5,14 @@ package googlekmskeyringiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlekmskeyringiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlekmskeyringiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding}.
 type GoogleKmsKeyRingIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingIamBinding) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
 func NewGoogleKmsKeyRingIamBinding(scope constructs.Construct, id *string, config *GoogleKmsKeyRingIamBindingConfig) GoogleKmsKeyRingIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleKmsKeyRingIamBinding(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_kms_key_ring_iam_binding google_kms_key_ring_iam_binding} Resource.
 func NewGoogleKmsKeyRingIamBinding_Override(g GoogleKmsKeyRingIamBinding, scope constructs.Construct, id *string, config *GoogleKmsKeyRingIamBindingConfig) {
 	_init_.Initialize()
 

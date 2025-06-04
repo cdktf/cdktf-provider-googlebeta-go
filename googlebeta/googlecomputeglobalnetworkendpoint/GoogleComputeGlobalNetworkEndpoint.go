@@ -5,14 +5,14 @@ package googlecomputeglobalnetworkendpoint
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeglobalnetworkendpoint/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputeglobalnetworkendpoint/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_global_network_endpoint google_compute_global_network_endpoint}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_global_network_endpoint google_compute_global_network_endpoint}.
 type GoogleComputeGlobalNetworkEndpoint interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -452,7 +452,7 @@ func (j *jsiiProxy_GoogleComputeGlobalNetworkEndpoint) TimeoutsInput() interface
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_global_network_endpoint google_compute_global_network_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_global_network_endpoint google_compute_global_network_endpoint} Resource.
 func NewGoogleComputeGlobalNetworkEndpoint(scope constructs.Construct, id *string, config *GoogleComputeGlobalNetworkEndpointConfig) GoogleComputeGlobalNetworkEndpoint {
 	_init_.Initialize()
 
@@ -470,7 +470,7 @@ func NewGoogleComputeGlobalNetworkEndpoint(scope constructs.Construct, id *strin
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_global_network_endpoint google_compute_global_network_endpoint} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_global_network_endpoint google_compute_global_network_endpoint} Resource.
 func NewGoogleComputeGlobalNetworkEndpoint_Override(g GoogleComputeGlobalNetworkEndpoint, scope constructs.Construct, id *string, config *GoogleComputeGlobalNetworkEndpointConfig) {
 	_init_.Initialize()
 

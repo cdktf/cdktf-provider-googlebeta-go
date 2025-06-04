@@ -5,14 +5,14 @@ package googlegkebackupbackupchannel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlegkebackupbackupchannel/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlegkebackupbackupchannel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel}.
 type GoogleGkeBackupBackupChannel interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -530,7 +530,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupChannel) Uid() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel} Resource.
 func NewGoogleGkeBackupBackupChannel(scope constructs.Construct, id *string, config *GoogleGkeBackupBackupChannelConfig) GoogleGkeBackupBackupChannel {
 	_init_.Initialize()
 
@@ -548,7 +548,7 @@ func NewGoogleGkeBackupBackupChannel(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gke_backup_backup_channel google_gke_backup_backup_channel} Resource.
 func NewGoogleGkeBackupBackupChannel_Override(g GoogleGkeBackupBackupChannel, scope constructs.Construct, id *string, config *GoogleGkeBackupBackupChannelConfig) {
 	_init_.Initialize()
 

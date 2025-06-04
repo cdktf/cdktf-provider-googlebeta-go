@@ -5,14 +5,14 @@ package googledeveloperconnectconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledeveloperconnectconnection/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledeveloperconnectconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_developer_connect_connection google_developer_connect_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_developer_connect_connection google_developer_connect_connection}.
 type GoogleDeveloperConnectConnection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -778,7 +778,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource.
 func NewGoogleDeveloperConnectConnection(scope constructs.Construct, id *string, config *GoogleDeveloperConnectConnectionConfig) GoogleDeveloperConnectConnection {
 	_init_.Initialize()
 
@@ -796,7 +796,7 @@ func NewGoogleDeveloperConnectConnection(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_developer_connect_connection google_developer_connect_connection} Resource.
 func NewGoogleDeveloperConnectConnection_Override(g GoogleDeveloperConnectConnection, scope constructs.Construct, id *string, config *GoogleDeveloperConnectConnectionConfig) {
 	_init_.Initialize()
 

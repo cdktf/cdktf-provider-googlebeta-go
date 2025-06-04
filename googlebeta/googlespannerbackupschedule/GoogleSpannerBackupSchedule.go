@@ -5,14 +5,14 @@ package googlespannerbackupschedule
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlespannerbackupschedule/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlespannerbackupschedule/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule}.
 type GoogleSpannerBackupSchedule interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -547,7 +547,7 @@ func (j *jsiiProxy_GoogleSpannerBackupSchedule) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource.
 func NewGoogleSpannerBackupSchedule(scope constructs.Construct, id *string, config *GoogleSpannerBackupScheduleConfig) GoogleSpannerBackupSchedule {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewGoogleSpannerBackupSchedule(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_spanner_backup_schedule google_spanner_backup_schedule} Resource.
 func NewGoogleSpannerBackupSchedule_Override(g GoogleSpannerBackupSchedule, scope constructs.Construct, id *string, config *GoogleSpannerBackupScheduleConfig) {
 	_init_.Initialize()
 

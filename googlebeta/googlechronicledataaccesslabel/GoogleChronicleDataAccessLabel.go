@@ -5,14 +5,14 @@ package googlechronicledataaccesslabel
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlechronicledataaccesslabel/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlechronicledataaccesslabel/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_chronicle_data_access_label google_chronicle_data_access_label}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_chronicle_data_access_label google_chronicle_data_access_label}.
 type GoogleChronicleDataAccessLabel interface {
 	cdktf.TerraformResource
 	Author() *string
@@ -540,7 +540,7 @@ func (j *jsiiProxy_GoogleChronicleDataAccessLabel) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_chronicle_data_access_label google_chronicle_data_access_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_chronicle_data_access_label google_chronicle_data_access_label} Resource.
 func NewGoogleChronicleDataAccessLabel(scope constructs.Construct, id *string, config *GoogleChronicleDataAccessLabelConfig) GoogleChronicleDataAccessLabel {
 	_init_.Initialize()
 
@@ -558,7 +558,7 @@ func NewGoogleChronicleDataAccessLabel(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_chronicle_data_access_label google_chronicle_data_access_label} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_chronicle_data_access_label google_chronicle_data_access_label} Resource.
 func NewGoogleChronicleDataAccessLabel_Override(g GoogleChronicleDataAccessLabel, scope constructs.Construct, id *string, config *GoogleChronicleDataAccessLabelConfig) {
 	_init_.Initialize()
 

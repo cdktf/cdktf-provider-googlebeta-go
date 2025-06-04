@@ -5,14 +5,14 @@ package googledatastreamprivateconnection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googledatastreamprivateconnection/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googledatastreamprivateconnection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection google_datastream_private_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection google_datastream_private_connection}.
 type GoogleDatastreamPrivateConnection interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -77,6 +77,8 @@ type GoogleDatastreamPrivateConnection interface {
 	Provisioners() *[]interface{}
 	// Experimental.
 	SetProvisioners(val *[]interface{})
+	PscInterfaceConfig() GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference
+	PscInterfaceConfigInput() *GoogleDatastreamPrivateConnectionPscInterfaceConfig
 	// Experimental.
 	RawOverrides() interface{}
 	State() *string
@@ -134,6 +136,7 @@ type GoogleDatastreamPrivateConnection interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutPscInterfaceConfig(value *GoogleDatastreamPrivateConnectionPscInterfaceConfig)
 	PutTimeouts(value *GoogleDatastreamPrivateConnectionTimeouts)
 	PutVpcPeeringConfig(value *GoogleDatastreamPrivateConnectionVpcPeeringConfig)
 	ResetCreateWithoutValidation()
@@ -143,7 +146,9 @@ type GoogleDatastreamPrivateConnection interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetProject()
+	ResetPscInterfaceConfig()
 	ResetTimeouts()
+	ResetVpcPeeringConfig()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -452,6 +457,26 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) Provisioners() *[]interfac
 	return returns
 }
 
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) PscInterfaceConfig() GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference {
+	var returns GoogleDatastreamPrivateConnectionPscInterfaceConfigOutputReference
+	_jsii_.Get(
+		j,
+		"pscInterfaceConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDatastreamPrivateConnection) PscInterfaceConfigInput() *GoogleDatastreamPrivateConnectionPscInterfaceConfig {
+	var returns *GoogleDatastreamPrivateConnectionPscInterfaceConfig
+	_jsii_.Get(
+		j,
+		"pscInterfaceConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleDatastreamPrivateConnection) RawOverrides() interface{} {
 	var returns interface{}
 	_jsii_.Get(
@@ -553,7 +578,7 @@ func (j *jsiiProxy_GoogleDatastreamPrivateConnection) VpcPeeringConfigInput() *G
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
 func NewGoogleDatastreamPrivateConnection(scope constructs.Construct, id *string, config *GoogleDatastreamPrivateConnectionConfig) GoogleDatastreamPrivateConnection {
 	_init_.Initialize()
 
@@ -571,7 +596,7 @@ func NewGoogleDatastreamPrivateConnection(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_datastream_private_connection google_datastream_private_connection} Resource.
 func NewGoogleDatastreamPrivateConnection_Override(g GoogleDatastreamPrivateConnection, scope constructs.Construct, id *string, config *GoogleDatastreamPrivateConnectionConfig) {
 	_init_.Initialize()
 
@@ -1080,6 +1105,17 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnection) OverrideLogicalId(newLogic
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) PutPscInterfaceConfig(value *GoogleDatastreamPrivateConnectionPscInterfaceConfig) {
+	if err := g.validatePutPscInterfaceConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPscInterfaceConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamPrivateConnection) PutTimeouts(value *GoogleDatastreamPrivateConnectionTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1142,10 +1178,26 @@ func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetProject() {
 	)
 }
 
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetPscInterfaceConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPscInterfaceConfig",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDatastreamPrivateConnection) ResetVpcPeeringConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetVpcPeeringConfig",
 		nil, // no parameters
 	)
 }

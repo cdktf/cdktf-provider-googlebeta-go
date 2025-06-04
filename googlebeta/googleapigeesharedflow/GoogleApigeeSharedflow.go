@@ -5,14 +5,14 @@ package googleapigeesharedflow
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeesharedflow/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeesharedflow/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow}.
 type GoogleApigeeSharedflow interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -471,7 +471,7 @@ func (j *jsiiProxy_GoogleApigeeSharedflow) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource.
 func NewGoogleApigeeSharedflow(scope constructs.Construct, id *string, config *GoogleApigeeSharedflowConfig) GoogleApigeeSharedflow {
 	_init_.Initialize()
 
@@ -489,7 +489,7 @@ func NewGoogleApigeeSharedflow(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_apigee_sharedflow google_apigee_sharedflow} Resource.
 func NewGoogleApigeeSharedflow_Override(g GoogleApigeeSharedflow, scope constructs.Construct, id *string, config *GoogleApigeeSharedflowConfig) {
 	_init_.Initialize()
 

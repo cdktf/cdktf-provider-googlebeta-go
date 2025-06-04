@@ -5,14 +5,14 @@ package googleapigatewayapiiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigatewayapiiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigatewayapiiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_api_gateway_api_iam_policy google_api_gateway_api_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_api_gateway_api_iam_policy google_api_gateway_api_iam_policy}.
 type GoogleApiGatewayApiIamPolicy interface {
 	cdktf.TerraformResource
 	Api() *string
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamPolicy) TerraformResourceType() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_api_gateway_api_iam_policy google_api_gateway_api_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_api_gateway_api_iam_policy google_api_gateway_api_iam_policy} Resource.
 func NewGoogleApiGatewayApiIamPolicy(scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamPolicyConfig) GoogleApiGatewayApiIamPolicy {
 	_init_.Initialize()
 
@@ -409,7 +409,7 @@ func NewGoogleApiGatewayApiIamPolicy(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_api_gateway_api_iam_policy google_api_gateway_api_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_api_gateway_api_iam_policy google_api_gateway_api_iam_policy} Resource.
 func NewGoogleApiGatewayApiIamPolicy_Override(g GoogleApiGatewayApiIamPolicy, scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamPolicyConfig) {
 	_init_.Initialize()
 

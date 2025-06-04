@@ -5,14 +5,14 @@ package googlecloudbuildv2connection
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecloudbuildv2connection/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecloudbuildv2connection/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection}.
 type GoogleCloudbuildv2Connection interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -638,7 +638,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionConfig) GoogleCloudbuildv2Connection {
 	_init_.Initialize()
 
@@ -656,7 +656,7 @@ func NewGoogleCloudbuildv2Connection(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_cloudbuildv2_connection google_cloudbuildv2_connection} Resource.
 func NewGoogleCloudbuildv2Connection_Override(g GoogleCloudbuildv2Connection, scope constructs.Construct, id *string, config *GoogleCloudbuildv2ConnectionConfig) {
 	_init_.Initialize()
 

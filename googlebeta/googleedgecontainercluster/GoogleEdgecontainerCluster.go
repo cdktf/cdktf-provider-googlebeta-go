@@ -5,14 +5,14 @@ package googleedgecontainercluster
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleedgecontainercluster/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleedgecontainercluster/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster}.
 type GoogleEdgecontainerCluster interface {
 	cdktf.TerraformResource
 	Authorization() GoogleEdgecontainerClusterAuthorizationOutputReference
@@ -810,7 +810,7 @@ func (j *jsiiProxy_GoogleEdgecontainerCluster) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster} Resource.
 func NewGoogleEdgecontainerCluster(scope constructs.Construct, id *string, config *GoogleEdgecontainerClusterConfig) GoogleEdgecontainerCluster {
 	_init_.Initialize()
 
@@ -828,7 +828,7 @@ func NewGoogleEdgecontainerCluster(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_edgecontainer_cluster google_edgecontainer_cluster} Resource.
 func NewGoogleEdgecontainerCluster_Override(g GoogleEdgecontainerCluster, scope constructs.Construct, id *string, config *GoogleEdgecontainerClusterConfig) {
 	_init_.Initialize()
 

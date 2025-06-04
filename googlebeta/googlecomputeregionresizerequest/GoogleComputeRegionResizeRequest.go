@@ -5,14 +5,14 @@ package googlecomputeregionresizerequest
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlecomputeregionresizerequest/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlecomputeregionresizerequest/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request}.
 type GoogleComputeRegionResizeRequest interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -532,7 +532,7 @@ func (j *jsiiProxy_GoogleComputeRegionResizeRequest) TimeoutsInput() interface{}
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request} Resource.
 func NewGoogleComputeRegionResizeRequest(scope constructs.Construct, id *string, config *GoogleComputeRegionResizeRequestConfig) GoogleComputeRegionResizeRequest {
 	_init_.Initialize()
 
@@ -550,7 +550,7 @@ func NewGoogleComputeRegionResizeRequest(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_compute_region_resize_request google_compute_region_resize_request} Resource.
 func NewGoogleComputeRegionResizeRequest_Override(g GoogleComputeRegionResizeRequest, scope constructs.Construct, id *string, config *GoogleComputeRegionResizeRequestConfig) {
 	_init_.Initialize()
 

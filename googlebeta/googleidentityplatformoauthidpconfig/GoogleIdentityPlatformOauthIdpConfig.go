@@ -5,14 +5,14 @@ package googleidentityplatformoauthidpconfig
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleidentityplatformoauthidpconfig/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleidentityplatformoauthidpconfig/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config}.
 type GoogleIdentityPlatformOauthIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -523,7 +523,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformOauthIdpConfig) TimeoutsInput() interfa
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewGoogleIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformOauthIdpConfigConfig) GoogleIdentityPlatformOauthIdpConfig {
 	_init_.Initialize()
 
@@ -541,7 +541,7 @@ func NewGoogleIdentityPlatformOauthIdpConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_identity_platform_oauth_idp_config google_identity_platform_oauth_idp_config} Resource.
 func NewGoogleIdentityPlatformOauthIdpConfig_Override(g GoogleIdentityPlatformOauthIdpConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformOauthIdpConfigConfig) {
 	_init_.Initialize()
 

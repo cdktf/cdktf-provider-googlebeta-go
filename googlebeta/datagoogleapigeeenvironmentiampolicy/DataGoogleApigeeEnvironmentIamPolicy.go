@@ -5,14 +5,14 @@ package datagoogleapigeeenvironmentiampolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagoogleapigeeenvironmentiampolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagoogleapigeeenvironmentiampolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy}.
 type DataGoogleApigeeEnvironmentIamPolicy interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -333,7 +333,7 @@ func (j *jsiiProxy_DataGoogleApigeeEnvironmentIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy} Data Source.
 func NewDataGoogleApigeeEnvironmentIamPolicy(scope constructs.Construct, id *string, config *DataGoogleApigeeEnvironmentIamPolicyConfig) DataGoogleApigeeEnvironmentIamPolicy {
 	_init_.Initialize()
 
@@ -351,7 +351,7 @@ func NewDataGoogleApigeeEnvironmentIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_apigee_environment_iam_policy google_apigee_environment_iam_policy} Data Source.
 func NewDataGoogleApigeeEnvironmentIamPolicy_Override(d DataGoogleApigeeEnvironmentIamPolicy, scope constructs.Construct, id *string, config *DataGoogleApigeeEnvironmentIamPolicyConfig) {
 	_init_.Initialize()
 

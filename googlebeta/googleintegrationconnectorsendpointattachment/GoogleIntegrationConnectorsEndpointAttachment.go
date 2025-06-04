@@ -5,14 +5,14 @@ package googleintegrationconnectorsendpointattachment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleintegrationconnectorsendpointattachment/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleintegrationconnectorsendpointattachment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment}.
 type GoogleIntegrationConnectorsEndpointAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -554,7 +554,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachment) UpdateTime() *
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
 func NewGoogleIntegrationConnectorsEndpointAttachment(scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsEndpointAttachmentConfig) GoogleIntegrationConnectorsEndpointAttachment {
 	_init_.Initialize()
 
@@ -572,7 +572,7 @@ func NewGoogleIntegrationConnectorsEndpointAttachment(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_integration_connectors_endpoint_attachment google_integration_connectors_endpoint_attachment} Resource.
 func NewGoogleIntegrationConnectorsEndpointAttachment_Override(g GoogleIntegrationConnectorsEndpointAttachment, scope constructs.Construct, id *string, config *GoogleIntegrationConnectorsEndpointAttachmentConfig) {
 	_init_.Initialize()
 

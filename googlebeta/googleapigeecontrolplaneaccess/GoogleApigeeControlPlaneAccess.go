@@ -5,14 +5,14 @@ package googleapigeecontrolplaneaccess
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigeecontrolplaneaccess/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigeecontrolplaneaccess/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_control_plane_access google_apigee_control_plane_access}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_apigee_control_plane_access google_apigee_control_plane_access}.
 type GoogleApigeeControlPlaneAccess interface {
 	cdktf.TerraformResource
 	AnalyticsPublisherIdentities() *[]*string
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GoogleApigeeControlPlaneAccess) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_control_plane_access google_apigee_control_plane_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_apigee_control_plane_access google_apigee_control_plane_access} Resource.
 func NewGoogleApigeeControlPlaneAccess(scope constructs.Construct, id *string, config *GoogleApigeeControlPlaneAccessConfig) GoogleApigeeControlPlaneAccess {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewGoogleApigeeControlPlaneAccess(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_apigee_control_plane_access google_apigee_control_plane_access} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_apigee_control_plane_access google_apigee_control_plane_access} Resource.
 func NewGoogleApigeeControlPlaneAccess_Override(g GoogleApigeeControlPlaneAccess, scope constructs.Construct, id *string, config *GoogleApigeeControlPlaneAccessConfig) {
 	_init_.Initialize()
 

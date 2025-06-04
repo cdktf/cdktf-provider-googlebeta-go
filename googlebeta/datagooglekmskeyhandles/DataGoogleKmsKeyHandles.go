@@ -5,14 +5,14 @@ package datagooglekmskeyhandles
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglekmskeyhandles/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglekmskeyhandles/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_kms_key_handles google_kms_key_handles}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_kms_key_handles google_kms_key_handles}.
 type DataGoogleKmsKeyHandles interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -346,7 +346,7 @@ func (j *jsiiProxy_DataGoogleKmsKeyHandles) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_kms_key_handles google_kms_key_handles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_kms_key_handles google_kms_key_handles} Data Source.
 func NewDataGoogleKmsKeyHandles(scope constructs.Construct, id *string, config *DataGoogleKmsKeyHandlesConfig) DataGoogleKmsKeyHandles {
 	_init_.Initialize()
 
@@ -364,7 +364,7 @@ func NewDataGoogleKmsKeyHandles(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_kms_key_handles google_kms_key_handles} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_kms_key_handles google_kms_key_handles} Data Source.
 func NewDataGoogleKmsKeyHandles_Override(d DataGoogleKmsKeyHandles, scope constructs.Construct, id *string, config *DataGoogleKmsKeyHandlesConfig) {
 	_init_.Initialize()
 

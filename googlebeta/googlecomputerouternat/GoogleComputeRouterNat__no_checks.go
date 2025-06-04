@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleComputeRouterNat) validatePutLogConfigParameters(value 
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRouterNat) validatePutNat64SubnetworkParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRouterNat) validatePutRulesParameters(value interface{}) error {
 	return nil
 }
@@ -188,6 +192,10 @@ func (j *jsiiProxy_GoogleComputeRouterNat) validateSetRouterParameters(val *stri
 }
 
 func (j *jsiiProxy_GoogleComputeRouterNat) validateSetSourceSubnetworkIpRangesToNatParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRouterNat) validateSetSourceSubnetworkIpRangesToNat64Parameters(val *string) error {
 	return nil
 }
 

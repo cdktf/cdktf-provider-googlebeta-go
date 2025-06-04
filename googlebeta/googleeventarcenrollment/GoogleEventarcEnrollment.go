@@ -5,14 +5,14 @@ package googleeventarcenrollment
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleeventarcenrollment/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleeventarcenrollment/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_eventarc_enrollment google_eventarc_enrollment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_enrollment google_eventarc_enrollment}.
 type GoogleEventarcEnrollment interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -633,7 +633,7 @@ func (j *jsiiProxy_GoogleEventarcEnrollment) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_eventarc_enrollment google_eventarc_enrollment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_enrollment google_eventarc_enrollment} Resource.
 func NewGoogleEventarcEnrollment(scope constructs.Construct, id *string, config *GoogleEventarcEnrollmentConfig) GoogleEventarcEnrollment {
 	_init_.Initialize()
 
@@ -651,7 +651,7 @@ func NewGoogleEventarcEnrollment(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_eventarc_enrollment google_eventarc_enrollment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_enrollment google_eventarc_enrollment} Resource.
 func NewGoogleEventarcEnrollment_Override(g GoogleEventarcEnrollment, scope constructs.Construct, id *string, config *GoogleEventarcEnrollmentConfig) {
 	_init_.Initialize()
 

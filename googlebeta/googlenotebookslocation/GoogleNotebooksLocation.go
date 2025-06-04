@@ -5,14 +5,14 @@ package googlenotebookslocation
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlenotebookslocation/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlenotebookslocation/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_notebooks_location google_notebooks_location}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_notebooks_location google_notebooks_location}.
 type GoogleNotebooksLocation interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleNotebooksLocation) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_notebooks_location google_notebooks_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_notebooks_location google_notebooks_location} Resource.
 func NewGoogleNotebooksLocation(scope constructs.Construct, id *string, config *GoogleNotebooksLocationConfig) GoogleNotebooksLocation {
 	_init_.Initialize()
 
@@ -411,7 +411,7 @@ func NewGoogleNotebooksLocation(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_notebooks_location google_notebooks_location} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_notebooks_location google_notebooks_location} Resource.
 func NewGoogleNotebooksLocation_Override(g GoogleNotebooksLocation, scope constructs.Construct, id *string, config *GoogleNotebooksLocationConfig) {
 	_init_.Initialize()
 

@@ -5,14 +5,14 @@ package googleiapappengineversioniambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapappengineversioniambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleiapappengineversioniambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding}.
 type GoogleIapAppEngineVersionIamBinding interface {
 	cdktf.TerraformResource
 	AppId() *string
@@ -484,7 +484,7 @@ func (j *jsiiProxy_GoogleIapAppEngineVersionIamBinding) VersionIdInput() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding} Resource.
 func NewGoogleIapAppEngineVersionIamBinding(scope constructs.Construct, id *string, config *GoogleIapAppEngineVersionIamBindingConfig) GoogleIapAppEngineVersionIamBinding {
 	_init_.Initialize()
 
@@ -502,7 +502,7 @@ func NewGoogleIapAppEngineVersionIamBinding(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iap_app_engine_version_iam_binding google_iap_app_engine_version_iam_binding} Resource.
 func NewGoogleIapAppEngineVersionIamBinding_Override(g GoogleIapAppEngineVersionIamBinding, scope constructs.Construct, id *string, config *GoogleIapAppEngineVersionIamBindingConfig) {
 	_init_.Initialize()
 

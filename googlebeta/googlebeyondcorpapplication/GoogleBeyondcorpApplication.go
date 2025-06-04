@@ -5,14 +5,14 @@ package googlebeyondcorpapplication
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googlebeyondcorpapplication/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googlebeyondcorpapplication/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_application google_beyondcorp_application}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_beyondcorp_application google_beyondcorp_application}.
 type GoogleBeyondcorpApplication interface {
 	cdktf.TerraformResource
 	ApplicationId() *string
@@ -508,7 +508,7 @@ func (j *jsiiProxy_GoogleBeyondcorpApplication) UpstreamsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_application google_beyondcorp_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_beyondcorp_application google_beyondcorp_application} Resource.
 func NewGoogleBeyondcorpApplication(scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationConfig) GoogleBeyondcorpApplication {
 	_init_.Initialize()
 
@@ -526,7 +526,7 @@ func NewGoogleBeyondcorpApplication(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_beyondcorp_application google_beyondcorp_application} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_beyondcorp_application google_beyondcorp_application} Resource.
 func NewGoogleBeyondcorpApplication_Override(g GoogleBeyondcorpApplication, scope constructs.Construct, id *string, config *GoogleBeyondcorpApplicationConfig) {
 	_init_.Initialize()
 

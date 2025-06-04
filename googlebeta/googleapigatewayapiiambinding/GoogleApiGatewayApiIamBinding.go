@@ -5,14 +5,14 @@ package googleapigatewayapiiambinding
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleapigatewayapiiambinding/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleapigatewayapiiambinding/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding}.
 type GoogleApiGatewayApiIamBinding interface {
 	cdktf.TerraformResource
 	Api() *string
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiIamBinding) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding} Resource.
 func NewGoogleApiGatewayApiIamBinding(scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamBindingConfig) GoogleApiGatewayApiIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleApiGatewayApiIamBinding(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_api_gateway_api_iam_binding google_api_gateway_api_iam_binding} Resource.
 func NewGoogleApiGatewayApiIamBinding_Override(g GoogleApiGatewayApiIamBinding, scope constructs.Construct, id *string, config *GoogleApiGatewayApiIamBindingConfig) {
 	_init_.Initialize()
 

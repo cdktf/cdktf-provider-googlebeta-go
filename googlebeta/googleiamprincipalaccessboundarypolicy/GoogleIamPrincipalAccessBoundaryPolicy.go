@@ -5,14 +5,14 @@ package googleiamprincipalaccessboundarypolicy
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiamprincipalaccessboundarypolicy/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleiamprincipalaccessboundarypolicy/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy}.
 type GoogleIamPrincipalAccessBoundaryPolicy interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -541,7 +541,7 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicy) UpdateTime() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy} Resource.
 func NewGoogleIamPrincipalAccessBoundaryPolicy(scope constructs.Construct, id *string, config *GoogleIamPrincipalAccessBoundaryPolicyConfig) GoogleIamPrincipalAccessBoundaryPolicy {
 	_init_.Initialize()
 
@@ -559,7 +559,7 @@ func NewGoogleIamPrincipalAccessBoundaryPolicy(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iam_principal_access_boundary_policy google_iam_principal_access_boundary_policy} Resource.
 func NewGoogleIamPrincipalAccessBoundaryPolicy_Override(g GoogleIamPrincipalAccessBoundaryPolicy, scope constructs.Construct, id *string, config *GoogleIamPrincipalAccessBoundaryPolicyConfig) {
 	_init_.Initialize()
 

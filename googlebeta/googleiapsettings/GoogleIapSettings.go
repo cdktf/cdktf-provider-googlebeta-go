@@ -5,14 +5,14 @@ package googleiapsettings
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/googleiapsettings/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/googleiapsettings/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iap_settings google_iap_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iap_settings google_iap_settings}.
 type GoogleIapSettings interface {
 	cdktf.TerraformResource
 	AccessSettings() GoogleIapSettingsAccessSettingsOutputReference
@@ -405,7 +405,7 @@ func (j *jsiiProxy_GoogleIapSettings) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iap_settings google_iap_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iap_settings google_iap_settings} Resource.
 func NewGoogleIapSettings(scope constructs.Construct, id *string, config *GoogleIapSettingsConfig) GoogleIapSettings {
 	_init_.Initialize()
 
@@ -423,7 +423,7 @@ func NewGoogleIapSettings(scope constructs.Construct, id *string, config *Google
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/resources/google_iap_settings google_iap_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iap_settings google_iap_settings} Resource.
 func NewGoogleIapSettings_Override(g GoogleIapSettings, scope constructs.Construct, id *string, config *GoogleIapSettingsConfig) {
 	_init_.Initialize()
 

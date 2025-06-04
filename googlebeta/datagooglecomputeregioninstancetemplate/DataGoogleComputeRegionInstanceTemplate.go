@@ -5,14 +5,14 @@ package datagooglecomputeregioninstancetemplate
 
 import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
-	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/jsii"
+	_init_ "github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v14/datagooglecomputeregioninstancetemplate/internal"
+	"github.com/cdktf/cdktf-provider-googlebeta-go/googlebeta/v15/datagooglecomputeregioninstancetemplate/internal"
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template}.
 type DataGoogleComputeRegionInstanceTemplate interface {
 	cdktf.TerraformDataSource
 	AdvancedMachineFeatures() DataGoogleComputeRegionInstanceTemplateAdvancedMachineFeaturesList
@@ -73,6 +73,7 @@ type DataGoogleComputeRegionInstanceTemplate interface {
 	NetworkPerformanceConfig() DataGoogleComputeRegionInstanceTemplateNetworkPerformanceConfigList
 	// The tree node.
 	Node() constructs.Node
+	NumericId() *string
 	PartnerMetadata() cdktf.StringMap
 	Project() *string
 	SetProject(val *string)
@@ -525,6 +526,16 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) Node() constructs.No
 	return returns
 }
 
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) NumericId() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"numericId",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) PartnerMetadata() cdktf.StringMap {
 	var returns cdktf.StringMap
 	_jsii_.Get(
@@ -726,7 +737,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplate) TerraformResourceTyp
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template} Data Source.
 func NewDataGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceTemplateConfig) DataGoogleComputeRegionInstanceTemplate {
 	_init_.Initialize()
 
@@ -744,7 +755,7 @@ func NewDataGoogleComputeRegionInstanceTemplate(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.37.0/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/data-sources/google_compute_region_instance_template google_compute_region_instance_template} Data Source.
 func NewDataGoogleComputeRegionInstanceTemplate_Override(d DataGoogleComputeRegionInstanceTemplate, scope constructs.Construct, id *string, config *DataGoogleComputeRegionInstanceTemplateConfig) {
 	_init_.Initialize()
 
