@@ -7,7 +7,7 @@ package googletranscoderjob
 type GoogleTranscoderJobConfigMuxStreamsSegmentSettings struct {
 	// Duration of the segments in seconds. The default is '6.0s'.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_transcoder_job#segment_duration GoogleTranscoderJob#segment_duration}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_transcoder_job#segment_duration GoogleTranscoderJob#segment_duration}
 	SegmentDuration *string `field:"optional" json:"segmentDuration" yaml:"segmentDuration"`
 }
 

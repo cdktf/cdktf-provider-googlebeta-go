@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
 type GoogleGkeonpremVmwareAdminCluster interface {
 	cdktf.TerraformResource
 	AddonNode() GoogleGkeonpremVmwareAdminClusterAddonNodeOutputReference
@@ -92,6 +92,8 @@ type GoogleGkeonpremVmwareAdminCluster interface {
 	OnPremVersionInput() *string
 	PlatformConfig() GoogleGkeonpremVmwareAdminClusterPlatformConfigOutputReference
 	PlatformConfigInput() *GoogleGkeonpremVmwareAdminClusterPlatformConfig
+	PrivateRegistryConfig() GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference
+	PrivateRegistryConfigInput() *GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfig
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -171,6 +173,7 @@ type GoogleGkeonpremVmwareAdminCluster interface {
 	PutLoadBalancer(value *GoogleGkeonpremVmwareAdminClusterLoadBalancer)
 	PutNetworkConfig(value *GoogleGkeonpremVmwareAdminClusterNetworkConfig)
 	PutPlatformConfig(value *GoogleGkeonpremVmwareAdminClusterPlatformConfig)
+	PutPrivateRegistryConfig(value *GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfig)
 	PutTimeouts(value *GoogleGkeonpremVmwareAdminClusterTimeouts)
 	PutVcenter(value *GoogleGkeonpremVmwareAdminClusterVcenter)
 	ResetAddonNode()
@@ -189,6 +192,7 @@ type GoogleGkeonpremVmwareAdminCluster interface {
 	// Experimental.
 	ResetOverrideLogicalId()
 	ResetPlatformConfig()
+	ResetPrivateRegistryConfig()
 	ResetProject()
 	ResetTimeouts()
 	ResetVcenter()
@@ -700,6 +704,26 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) PlatformConfigInput() *Goo
 	return returns
 }
 
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) PrivateRegistryConfig() GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference {
+	var returns GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference
+	_jsii_.Get(
+		j,
+		"privateRegistryConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) PrivateRegistryConfigInput() *GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfig {
+	var returns *GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfig
+	_jsii_.Get(
+		j,
+		"privateRegistryConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) Project() *string {
 	var returns *string
 	_jsii_.Get(
@@ -871,7 +895,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) VcenterInput() *GoogleGkeo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGoogleGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareAdminClusterConfig) GoogleGkeonpremVmwareAdminCluster {
 	_init_.Initialize()
 
@@ -889,7 +913,7 @@ func NewGoogleGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGoogleGkeonpremVmwareAdminCluster_Override(g GoogleGkeonpremVmwareAdminCluster, scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareAdminClusterConfig) {
 	_init_.Initialize()
 
@@ -1508,6 +1532,17 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) PutPlatformConfig(value *G
 	)
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) PutPrivateRegistryConfig(value *GoogleGkeonpremVmwareAdminClusterPrivateRegistryConfig) {
+	if err := g.validatePutPrivateRegistryConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putPrivateRegistryConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) PutTimeouts(value *GoogleGkeonpremVmwareAdminClusterTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1638,6 +1673,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) ResetPlatformConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetPlatformConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) ResetPrivateRegistryConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPrivateRegistryConfig",
 		nil, // no parameters
 	)
 }

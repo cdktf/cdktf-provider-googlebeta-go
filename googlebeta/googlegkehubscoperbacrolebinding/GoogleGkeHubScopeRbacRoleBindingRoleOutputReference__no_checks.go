@@ -59,6 +59,10 @@ func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference) validate
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference) validateSetCustomRoleParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference) validateSetInternalValueParameters(val *GoogleGkeHubScopeRbacRoleBindingRole) error {
 	return nil
 }

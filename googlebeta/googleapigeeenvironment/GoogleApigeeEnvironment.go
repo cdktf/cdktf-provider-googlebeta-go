@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_apigee_environment google_apigee_environment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_apigee_environment google_apigee_environment}.
 type GoogleApigeeEnvironment interface {
 	cdktf.TerraformResource
 	ApiProxyType() *string
@@ -20,6 +20,8 @@ type GoogleApigeeEnvironment interface {
 	ApiProxyTypeInput() *string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	ClientIpResolutionConfig() GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference
+	ClientIpResolutionConfigInput() *GoogleApigeeEnvironmentClientIpResolutionConfig
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -137,10 +139,12 @@ type GoogleApigeeEnvironment interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutClientIpResolutionConfig(value *GoogleApigeeEnvironmentClientIpResolutionConfig)
 	PutNodeConfig(value *GoogleApigeeEnvironmentNodeConfig)
 	PutProperties(value *GoogleApigeeEnvironmentProperties)
 	PutTimeouts(value *GoogleApigeeEnvironmentTimeouts)
 	ResetApiProxyType()
+	ResetClientIpResolutionConfig()
 	ResetDeploymentType()
 	ResetDescription()
 	ResetDisplayName()
@@ -196,6 +200,26 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) CdktfStack() cdktf.TerraformStack {
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeEnvironment) ClientIpResolutionConfig() GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference {
+	var returns GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference
+	_jsii_.Get(
+		j,
+		"clientIpResolutionConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleApigeeEnvironment) ClientIpResolutionConfigInput() *GoogleApigeeEnvironmentClientIpResolutionConfig {
+	var returns *GoogleApigeeEnvironmentClientIpResolutionConfig
+	_jsii_.Get(
+		j,
+		"clientIpResolutionConfigInput",
 		&returns,
 	)
 	return returns
@@ -572,7 +596,7 @@ func (j *jsiiProxy_GoogleApigeeEnvironment) TypeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
 func NewGoogleApigeeEnvironment(scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentConfig) GoogleApigeeEnvironment {
 	_init_.Initialize()
 
@@ -590,7 +614,7 @@ func NewGoogleApigeeEnvironment(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_apigee_environment google_apigee_environment} Resource.
 func NewGoogleApigeeEnvironment_Override(g GoogleApigeeEnvironment, scope constructs.Construct, id *string, config *GoogleApigeeEnvironmentConfig) {
 	_init_.Initialize()
 
@@ -1121,6 +1145,17 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) OverrideLogicalId(newLogicalId *stri
 	)
 }
 
+func (g *jsiiProxy_GoogleApigeeEnvironment) PutClientIpResolutionConfig(value *GoogleApigeeEnvironmentClientIpResolutionConfig) {
+	if err := g.validatePutClientIpResolutionConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putClientIpResolutionConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleApigeeEnvironment) PutNodeConfig(value *GoogleApigeeEnvironmentNodeConfig) {
 	if err := g.validatePutNodeConfigParameters(value); err != nil {
 		panic(err)
@@ -1158,6 +1193,14 @@ func (g *jsiiProxy_GoogleApigeeEnvironment) ResetApiProxyType() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetApiProxyType",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleApigeeEnvironment) ResetClientIpResolutionConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetClientIpResolutionConfig",
 		nil, // no parameters
 	)
 }

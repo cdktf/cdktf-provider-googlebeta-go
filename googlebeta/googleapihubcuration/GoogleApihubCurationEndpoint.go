@@ -1,0 +1,13 @@
+// Copyright (c) HashiCorp, Inc.
+// SPDX-License-Identifier: MPL-2.0
+
+package googleapihubcuration
+
+
+type GoogleApihubCurationEndpoint struct {
+	// application_integration_endpoint_details block.
+	//
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_apihub_curation#application_integration_endpoint_details GoogleApihubCuration#application_integration_endpoint_details}
+	ApplicationIntegrationEndpointDetails *GoogleApihubCurationEndpointApplicationIntegrationEndpointDetails `field:"required" json:"applicationIntegrationEndpointDetails" yaml:"applicationIntegrationEndpointDetails"`
+}
+

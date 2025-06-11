@@ -28,6 +28,9 @@ type GoogleGkeHubScopeRbacRoleBindingRoleOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	CustomRole() *string
+	SetCustomRole(val *string)
+	CustomRoleInput() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleGkeHubScopeRbacRoleBindingRole
@@ -67,6 +70,7 @@ type GoogleGkeHubScopeRbacRoleBindingRoleOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetCustomRole()
 	ResetPredefinedRole()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -108,6 +112,26 @@ func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference) CustomRole() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customRole",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference) CustomRoleInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"customRoleInput",
 		&returns,
 	)
 	return returns
@@ -219,6 +243,17 @@ func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference)SetComple
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference)SetCustomRole(val *string) {
+	if err := j.validateSetCustomRoleParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"customRole",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (g *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference) Interpol
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference) ResetCustomRole() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetCustomRole",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleGkeHubScopeRbacRoleBindingRoleOutputReference) ResetPredefinedRole() {

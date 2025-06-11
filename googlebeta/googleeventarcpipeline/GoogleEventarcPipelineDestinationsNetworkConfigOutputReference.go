@@ -67,6 +67,7 @@ type GoogleEventarcPipelineDestinationsNetworkConfigOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetNetworkAttachment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -450,6 +451,14 @@ func (g *jsiiProxy_GoogleEventarcPipelineDestinationsNetworkConfigOutputReferenc
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleEventarcPipelineDestinationsNetworkConfigOutputReference) ResetNetworkAttachment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkAttachment",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleEventarcPipelineDestinationsNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

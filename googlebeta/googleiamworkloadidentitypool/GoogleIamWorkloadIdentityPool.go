@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool}.
 type GoogleIamWorkloadIdentityPool interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -547,7 +547,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPool) WorkloadIdentityPoolIdInput() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
 func NewGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolConfig) GoogleIamWorkloadIdentityPool {
 	_init_.Initialize()
 
@@ -565,7 +565,7 @@ func NewGoogleIamWorkloadIdentityPool(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_iam_workload_identity_pool google_iam_workload_identity_pool} Resource.
 func NewGoogleIamWorkloadIdentityPool_Override(g GoogleIamWorkloadIdentityPool, scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolConfig) {
 	_init_.Initialize()
 

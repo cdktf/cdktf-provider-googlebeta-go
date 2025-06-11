@@ -167,6 +167,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutMonitoringConfigParameters
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutNetworkPerformanceConfigParameters(value *GoogleContainerClusterNetworkPerformanceConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutNetworkPolicyParameters(value *GoogleContainerClusterNetworkPolicy) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting}.
 type GoogleGeminiGeminiGcpEnablementSetting interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -32,6 +32,9 @@ type GoogleGeminiGeminiGcpEnablementSetting interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	DisableWebGrounding() interface{}
+	SetDisableWebGrounding(val interface{})
+	DisableWebGroundingInput() interface{}
 	EffectiveLabels() cdktf.StringMap
 	EnableCustomerDataSharing() interface{}
 	SetEnableCustomerDataSharing(val interface{})
@@ -130,6 +133,7 @@ type GoogleGeminiGeminiGcpEnablementSetting interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutTimeouts(value *GoogleGeminiGeminiGcpEnablementSettingTimeouts)
+	ResetDisableWebGrounding()
 	ResetEnableCustomerDataSharing()
 	ResetId()
 	ResetLabels()
@@ -211,6 +215,26 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) DependsOn() *[]*strin
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) DisableWebGrounding() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableWebGrounding",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) DisableWebGroundingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"disableWebGroundingInput",
 		&returns,
 	)
 	return returns
@@ -507,7 +531,7 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) UpdateTime() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
 func NewGoogleGeminiGeminiGcpEnablementSetting(scope constructs.Construct, id *string, config *GoogleGeminiGeminiGcpEnablementSettingConfig) GoogleGeminiGeminiGcpEnablementSetting {
 	_init_.Initialize()
 
@@ -525,7 +549,7 @@ func NewGoogleGeminiGeminiGcpEnablementSetting(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_gemini_gemini_gcp_enablement_setting google_gemini_gemini_gcp_enablement_setting} Resource.
 func NewGoogleGeminiGeminiGcpEnablementSetting_Override(g GoogleGeminiGeminiGcpEnablementSetting, scope constructs.Construct, id *string, config *GoogleGeminiGeminiGcpEnablementSettingConfig) {
 	_init_.Initialize()
 
@@ -562,6 +586,17 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting)SetDependsOn(val *[]*s
 	_jsii_.Set(
 		j,
 		"dependsOn",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting)SetDisableWebGrounding(val interface{}) {
+	if err := j.validateSetDisableWebGroundingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"disableWebGrounding",
 		val,
 	)
 }
@@ -1031,6 +1066,14 @@ func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) PutTimeouts(value *Go
 		g,
 		"putTimeouts",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) ResetDisableWebGrounding() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDisableWebGrounding",
+		nil, // no parameters
 	)
 }
 

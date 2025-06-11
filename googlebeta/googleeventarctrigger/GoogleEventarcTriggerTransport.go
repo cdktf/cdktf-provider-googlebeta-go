@@ -7,7 +7,7 @@ package googleeventarctrigger
 type GoogleEventarcTriggerTransport struct {
 	// pubsub block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.38.0/docs/resources/google_eventarc_trigger#pubsub GoogleEventarcTrigger#pubsub}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_eventarc_trigger#pubsub GoogleEventarcTrigger#pubsub}
 	Pubsub *GoogleEventarcTriggerTransportPubsub `field:"optional" json:"pubsub" yaml:"pubsub"`
 }
 

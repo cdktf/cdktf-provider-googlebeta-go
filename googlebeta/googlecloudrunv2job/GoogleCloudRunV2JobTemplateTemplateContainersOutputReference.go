@@ -34,6 +34,9 @@ type GoogleCloudRunV2JobTemplateTemplateContainersOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DependsOn() *[]*string
+	SetDependsOn(val *[]*string)
+	DependsOnInput() *[]*string
 	Env() GoogleCloudRunV2JobTemplateTemplateContainersEnvList
 	EnvInput() interface{}
 	// Experimental.
@@ -50,6 +53,8 @@ type GoogleCloudRunV2JobTemplateTemplateContainersOutputReference interface {
 	PortsInput() interface{}
 	Resources() GoogleCloudRunV2JobTemplateTemplateContainersResourcesOutputReference
 	ResourcesInput() *GoogleCloudRunV2JobTemplateTemplateContainersResources
+	StartupProbe() GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference
+	StartupProbeInput() *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbe
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -90,13 +95,16 @@ type GoogleCloudRunV2JobTemplateTemplateContainersOutputReference interface {
 	PutEnv(value interface{})
 	PutPorts(value interface{})
 	PutResources(value *GoogleCloudRunV2JobTemplateTemplateContainersResources)
+	PutStartupProbe(value *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbe)
 	PutVolumeMounts(value interface{})
 	ResetArgs()
 	ResetCommand()
+	ResetDependsOn()
 	ResetEnv()
 	ResetName()
 	ResetPorts()
 	ResetResources()
+	ResetStartupProbe()
 	ResetVolumeMounts()
 	ResetWorkingDir()
 	// Produce the Token's value at resolution time.
@@ -179,6 +187,26 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) DependsOn() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) DependsOnInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"dependsOnInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +327,26 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 	_jsii_.Get(
 		j,
 		"resourcesInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) StartupProbe() GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference {
+	var returns GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference
+	_jsii_.Get(
+		j,
+		"startupProbe",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) StartupProbeInput() *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbe {
+	var returns *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbe
+	_jsii_.Get(
+		j,
+		"startupProbeInput",
 		&returns,
 	)
 	return returns
@@ -432,6 +480,17 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)SetDependsOn(val *[]*string) {
+	if err := j.validateSetDependsOnParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"dependsOn",
 		val,
 	)
 }
@@ -721,6 +780,17 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 	)
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) PutStartupProbe(value *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbe) {
+	if err := g.validatePutStartupProbeParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putStartupProbe",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) PutVolumeMounts(value interface{}) {
 	if err := g.validatePutVolumeMountsParameters(value); err != nil {
 		panic(err)
@@ -744,6 +814,14 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"resetCommand",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) ResetDependsOn() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDependsOn",
 		nil, // no parameters
 	)
 }
@@ -776,6 +854,14 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 	_jsii_.InvokeVoid(
 		g,
 		"resetResources",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) ResetStartupProbe() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetStartupProbe",
 		nil, // no parameters
 	)
 }

@@ -59,6 +59,10 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutStartupProbeParameters(value *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbe) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validatePutVolumeMountsParameters(value interface{}) error {
 	return nil
 }
@@ -80,6 +84,10 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference)
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersOutputReference) validateSetDependsOnParameters(val *[]*string) error {
 	return nil
 }
 
