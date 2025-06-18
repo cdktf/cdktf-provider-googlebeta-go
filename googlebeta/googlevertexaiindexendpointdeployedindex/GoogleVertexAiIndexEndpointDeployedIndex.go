@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index}.
 type GoogleVertexAiIndexEndpointDeployedIndex interface {
 	cdktf.TerraformResource
 	AutomaticResources() GoogleVertexAiIndexEndpointDeployedIndexAutomaticResourcesOutputReference
@@ -86,6 +86,9 @@ type GoogleVertexAiIndexEndpointDeployedIndex interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	Region() *string
+	SetRegion(val *string)
+	RegionInput() *string
 	ReservedIpRanges() *[]*string
 	SetReservedIpRanges(val *[]*string)
 	ReservedIpRangesInput() *[]*string
@@ -154,6 +157,7 @@ type GoogleVertexAiIndexEndpointDeployedIndex interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetRegion()
 	ResetReservedIpRanges()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
@@ -544,6 +548,26 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) RawOverrides() inte
 	return returns
 }
 
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) Region() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"region",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) RegionInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"regionInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) ReservedIpRanges() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -615,7 +639,7 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) TimeoutsInput() int
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
 func NewGoogleVertexAiIndexEndpointDeployedIndex(scope constructs.Construct, id *string, config *GoogleVertexAiIndexEndpointDeployedIndexConfig) GoogleVertexAiIndexEndpointDeployedIndex {
 	_init_.Initialize()
 
@@ -633,7 +657,7 @@ func NewGoogleVertexAiIndexEndpointDeployedIndex(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_vertex_ai_index_endpoint_deployed_index google_vertex_ai_index_endpoint_deployed_index} Resource.
 func NewGoogleVertexAiIndexEndpointDeployedIndex_Override(g GoogleVertexAiIndexEndpointDeployedIndex, scope constructs.Construct, id *string, config *GoogleVertexAiIndexEndpointDeployedIndexConfig) {
 	_init_.Initialize()
 
@@ -785,6 +809,17 @@ func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex)SetProvisioners(val 
 	_jsii_.Set(
 		j,
 		"provisioners",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex)SetRegion(val *string) {
+	if err := j.validateSetRegionParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"region",
 		val,
 	)
 }
@@ -1257,6 +1292,14 @@ func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) ResetOverrideLogica
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleVertexAiIndexEndpointDeployedIndex) ResetRegion() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRegion",
 		nil, // no parameters
 	)
 }

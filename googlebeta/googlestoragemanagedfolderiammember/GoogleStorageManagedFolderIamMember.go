@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_storage_managed_folder_iam_member google_storage_managed_folder_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_storage_managed_folder_iam_member google_storage_managed_folder_iam_member}.
 type GoogleStorageManagedFolderIamMember interface {
 	cdktf.TerraformResource
 	Bucket() *string
@@ -437,7 +437,7 @@ func (j *jsiiProxy_GoogleStorageManagedFolderIamMember) TerraformResourceType() 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_storage_managed_folder_iam_member google_storage_managed_folder_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_storage_managed_folder_iam_member google_storage_managed_folder_iam_member} Resource.
 func NewGoogleStorageManagedFolderIamMember(scope constructs.Construct, id *string, config *GoogleStorageManagedFolderIamMemberConfig) GoogleStorageManagedFolderIamMember {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewGoogleStorageManagedFolderIamMember(scope constructs.Construct, id *stri
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_storage_managed_folder_iam_member google_storage_managed_folder_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_storage_managed_folder_iam_member google_storage_managed_folder_iam_member} Resource.
 func NewGoogleStorageManagedFolderIamMember_Override(g GoogleStorageManagedFolderIamMember, scope constructs.Construct, id *string, config *GoogleStorageManagedFolderIamMemberConfig) {
 	_init_.Initialize()
 

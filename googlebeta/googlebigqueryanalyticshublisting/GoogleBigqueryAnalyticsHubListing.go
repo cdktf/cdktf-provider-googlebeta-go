@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
 type GoogleBigqueryAnalyticsHubListing interface {
 	cdktf.TerraformResource
 	BigqueryDataset() GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference
@@ -74,6 +74,9 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LogLinkedDatasetQueryUserEmail() interface{}
+	SetLogLinkedDatasetQueryUserEmail(val interface{})
+	LogLinkedDatasetQueryUserEmailInput() interface{}
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -162,6 +165,7 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	ResetDocumentation()
 	ResetIcon()
 	ResetId()
+	ResetLogLinkedDatasetQueryUserEmail()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -499,6 +503,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) LocationInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) LogLinkedDatasetQueryUserEmail() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logLinkedDatasetQueryUserEmail",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) LogLinkedDatasetQueryUserEmailInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"logLinkedDatasetQueryUserEmailInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -700,7 +724,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewGoogleBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingConfig) GoogleBigqueryAnalyticsHubListing {
 	_init_.Initialize()
 
@@ -718,7 +742,7 @@ func NewGoogleBigqueryAnalyticsHubListing(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewGoogleBigqueryAnalyticsHubListing_Override(g GoogleBigqueryAnalyticsHubListing, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingConfig) {
 	_init_.Initialize()
 
@@ -873,6 +897,17 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetLocation(val *string) {
 	_jsii_.Set(
 		j,
 		"location",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetLogLinkedDatasetQueryUserEmail(val interface{}) {
+	if err := j.validateSetLogLinkedDatasetQueryUserEmailParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"logLinkedDatasetQueryUserEmail",
 		val,
 	)
 }
@@ -1381,6 +1416,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetLogLinkedDatasetQueryUserEmail() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetLogLinkedDatasetQueryUserEmail",
 		nil, // no parameters
 	)
 }

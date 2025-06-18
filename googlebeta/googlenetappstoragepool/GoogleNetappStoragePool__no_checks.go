@@ -123,6 +123,14 @@ func (j *jsiiProxy_GoogleNetappStoragePool) validateSetDescriptionParameters(val
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetEnableHotTierAutoResizeParameters(val interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetappStoragePool) validateSetHotTierSizeGibParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetappStoragePool) validateSetIdParameters(val *string) error {
 	return nil
 }

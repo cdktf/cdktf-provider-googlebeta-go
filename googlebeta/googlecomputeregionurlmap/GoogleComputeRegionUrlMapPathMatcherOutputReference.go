@@ -28,6 +28,8 @@ type GoogleComputeRegionUrlMapPathMatcherOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
+	DefaultRouteAction() GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference
+	DefaultRouteActionInput() *GoogleComputeRegionUrlMapPathMatcherDefaultRouteAction
 	DefaultService() *string
 	SetDefaultService(val *string)
 	DefaultServiceInput() *string
@@ -79,9 +81,11 @@ type GoogleComputeRegionUrlMapPathMatcherOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutDefaultRouteAction(value *GoogleComputeRegionUrlMapPathMatcherDefaultRouteAction)
 	PutDefaultUrlRedirect(value *GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirect)
 	PutPathRule(value interface{})
 	PutRouteRules(value interface{})
+	ResetDefaultRouteAction()
 	ResetDefaultService()
 	ResetDefaultUrlRedirect()
 	ResetDescription()
@@ -127,6 +131,26 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) Creation
 	_jsii_.Get(
 		j,
 		"creationStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) DefaultRouteAction() GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference {
+	var returns GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionOutputReference
+	_jsii_.Get(
+		j,
+		"defaultRouteAction",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) DefaultRouteActionInput() *GoogleComputeRegionUrlMapPathMatcherDefaultRouteAction {
+	var returns *GoogleComputeRegionUrlMapPathMatcherDefaultRouteAction
+	_jsii_.Get(
+		j,
+		"defaultRouteActionInput",
 		&returns,
 	)
 	return returns
@@ -594,6 +618,17 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) Interpol
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) PutDefaultRouteAction(value *GoogleComputeRegionUrlMapPathMatcherDefaultRouteAction) {
+	if err := g.validatePutDefaultRouteActionParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putDefaultRouteAction",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) PutDefaultUrlRedirect(value *GoogleComputeRegionUrlMapPathMatcherDefaultUrlRedirect) {
 	if err := g.validatePutDefaultUrlRedirectParameters(value); err != nil {
 		panic(err)
@@ -624,6 +659,14 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) PutRoute
 		g,
 		"putRouteRules",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherOutputReference) ResetDefaultRouteAction() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDefaultRouteAction",
+		nil, // no parameters
 	)
 }
 

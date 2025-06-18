@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent}.
 type GoogleDialogflowCxAgent interface {
 	cdktf.TerraformResource
 	AdvancedSettings() GoogleDialogflowCxAgentAdvancedSettingsOutputReference
@@ -35,6 +35,9 @@ type GoogleDialogflowCxAgent interface {
 	DefaultLanguageCode() *string
 	SetDefaultLanguageCode(val *string)
 	DefaultLanguageCodeInput() *string
+	DeleteChatEngineOnDestroy() interface{}
+	SetDeleteChatEngineOnDestroy(val interface{})
+	DeleteChatEngineOnDestroyInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -162,6 +165,7 @@ type GoogleDialogflowCxAgent interface {
 	PutTimeouts(value *GoogleDialogflowCxAgentTimeouts)
 	ResetAdvancedSettings()
 	ResetAvatarUri()
+	ResetDeleteChatEngineOnDestroy()
 	ResetDescription()
 	ResetEnableSpellCorrection()
 	ResetEnableStackdriverLogging()
@@ -290,6 +294,26 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) DefaultLanguageCodeInput() *string {
 	_jsii_.Get(
 		j,
 		"defaultLanguageCodeInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) DeleteChatEngineOnDestroy() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteChatEngineOnDestroy",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent) DeleteChatEngineOnDestroyInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteChatEngineOnDestroyInput",
 		&returns,
 	)
 	return returns
@@ -736,7 +760,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent) TimeZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) GoogleDialogflowCxAgent {
 	_init_.Initialize()
 
@@ -754,7 +778,7 @@ func NewGoogleDialogflowCxAgent(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_dialogflow_cx_agent google_dialogflow_cx_agent} Resource.
 func NewGoogleDialogflowCxAgent_Override(g GoogleDialogflowCxAgent, scope constructs.Construct, id *string, config *GoogleDialogflowCxAgentConfig) {
 	_init_.Initialize()
 
@@ -805,6 +829,17 @@ func (j *jsiiProxy_GoogleDialogflowCxAgent)SetDefaultLanguageCode(val *string) {
 	_jsii_.Set(
 		j,
 		"defaultLanguageCode",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxAgent)SetDeleteChatEngineOnDestroy(val interface{}) {
+	if err := j.validateSetDeleteChatEngineOnDestroyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteChatEngineOnDestroy",
 		val,
 	)
 }
@@ -1396,6 +1431,14 @@ func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetAvatarUri() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAvatarUri",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxAgent) ResetDeleteChatEngineOnDestroy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeleteChatEngineOnDestroy",
 		nil, // no parameters
 	)
 }

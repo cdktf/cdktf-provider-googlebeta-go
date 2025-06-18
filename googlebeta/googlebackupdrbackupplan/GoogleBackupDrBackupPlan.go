@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan}.
 type GoogleBackupDrBackupPlan interface {
 	cdktf.TerraformResource
 	BackupPlanId() *string
@@ -81,6 +81,7 @@ type GoogleBackupDrBackupPlan interface {
 	ResourceType() *string
 	SetResourceType(val *string)
 	ResourceTypeInput() *string
+	SupportedResourceTypes() *[]*string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -480,6 +481,16 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) ResourceTypeInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBackupDrBackupPlan) SupportedResourceTypes() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"supportedResourceTypes",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBackupDrBackupPlan) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -541,7 +552,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlan) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewGoogleBackupDrBackupPlan(scope constructs.Construct, id *string, config *GoogleBackupDrBackupPlanConfig) GoogleBackupDrBackupPlan {
 	_init_.Initialize()
 
@@ -559,7 +570,7 @@ func NewGoogleBackupDrBackupPlan(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.39.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_backup_dr_backup_plan google_backup_dr_backup_plan} Resource.
 func NewGoogleBackupDrBackupPlan_Override(g GoogleBackupDrBackupPlan, scope constructs.Construct, id *string, config *GoogleBackupDrBackupPlanConfig) {
 	_init_.Initialize()
 

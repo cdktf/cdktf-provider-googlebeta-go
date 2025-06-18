@@ -159,6 +159,10 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetLocationParamet
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetLogLinkedDatasetQueryUserEmailParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validateSetPrimaryContactParameters(val *string) error {
 	return nil
 }

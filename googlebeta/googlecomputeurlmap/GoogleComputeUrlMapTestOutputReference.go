@@ -31,8 +31,16 @@ type GoogleComputeUrlMapTestOutputReference interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	ExpectedOutputUrl() *string
+	SetExpectedOutputUrl(val *string)
+	ExpectedOutputUrlInput() *string
+	ExpectedRedirectResponseCode() *float64
+	SetExpectedRedirectResponseCode(val *float64)
+	ExpectedRedirectResponseCodeInput() *float64
 	// Experimental.
 	Fqn() *string
+	Headers() GoogleComputeUrlMapTestHeadersList
+	HeadersInput() interface{}
 	Host() *string
 	SetHost(val *string)
 	HostInput() *string
@@ -76,7 +84,12 @@ type GoogleComputeUrlMapTestOutputReference interface {
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutHeaders(value interface{})
 	ResetDescription()
+	ResetExpectedOutputUrl()
+	ResetExpectedRedirectResponseCode()
+	ResetHeaders()
+	ResetService()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -142,11 +155,71 @@ func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) DescriptionInput() *s
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) ExpectedOutputUrl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedOutputUrl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) ExpectedOutputUrlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"expectedOutputUrlInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) ExpectedRedirectResponseCode() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expectedRedirectResponseCode",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) ExpectedRedirectResponseCodeInput() *float64 {
+	var returns *float64
+	_jsii_.Get(
+		j,
+		"expectedRedirectResponseCodeInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) Fqn() *string {
 	var returns *string
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) Headers() GoogleComputeUrlMapTestHeadersList {
+	var returns GoogleComputeUrlMapTestHeadersList
+	_jsii_.Get(
+		j,
+		"headers",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference) HeadersInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"headersInput",
 		&returns,
 	)
 	return returns
@@ -299,6 +372,28 @@ func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference)SetDescription(val *st
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference)SetExpectedOutputUrl(val *string) {
+	if err := j.validateSetExpectedOutputUrlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expectedOutputUrl",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeUrlMapTestOutputReference)SetExpectedRedirectResponseCode(val *float64) {
+	if err := j.validateSetExpectedRedirectResponseCodeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"expectedRedirectResponseCode",
 		val,
 	)
 }
@@ -555,10 +650,53 @@ func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) InterpolationForAttri
 	return returns
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) PutHeaders(value interface{}) {
+	if err := g.validatePutHeadersParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putHeaders",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) ResetExpectedOutputUrl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExpectedOutputUrl",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) ResetExpectedRedirectResponseCode() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetExpectedRedirectResponseCode",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) ResetHeaders() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetHeaders",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeUrlMapTestOutputReference) ResetService() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetService",
 		nil, // no parameters
 	)
 }
