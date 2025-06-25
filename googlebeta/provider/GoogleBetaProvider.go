@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs google-beta}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs google-beta}.
 type GoogleBetaProvider interface {
 	cdktf.TerraformProvider
 	AccessApprovalCustomEndpoint() *string
@@ -175,6 +175,9 @@ type GoogleBetaProvider interface {
 	ComputeCustomEndpointInput() *string
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
+	ContactCenterInsightsCustomEndpoint() *string
+	SetContactCenterInsightsCustomEndpoint(val *string)
+	ContactCenterInsightsCustomEndpointInput() *string
 	ContainerAnalysisCustomEndpoint() *string
 	SetContainerAnalysisCustomEndpoint(val *string)
 	ContainerAnalysisCustomEndpointInput() *string
@@ -668,6 +671,7 @@ type GoogleBetaProvider interface {
 	ResetColabCustomEndpoint()
 	ResetComposerCustomEndpoint()
 	ResetComputeCustomEndpoint()
+	ResetContactCenterInsightsCustomEndpoint()
 	ResetContainerAnalysisCustomEndpoint()
 	ResetContainerAttachedCustomEndpoint()
 	ResetContainerAwsCustomEndpoint()
@@ -1884,6 +1888,26 @@ func (j *jsiiProxy_GoogleBetaProvider) ConstructNodeMetadata() *map[string]inter
 	_jsii_.Get(
 		j,
 		"constructNodeMetadata",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ContactCenterInsightsCustomEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contactCenterInsightsCustomEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBetaProvider) ContactCenterInsightsCustomEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"contactCenterInsightsCustomEndpointInput",
 		&returns,
 	)
 	return returns
@@ -4770,7 +4794,7 @@ func (j *jsiiProxy_GoogleBetaProvider) ZoneInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs google-beta} Resource.
 func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) GoogleBetaProvider {
 	_init_.Initialize()
 
@@ -4788,7 +4812,7 @@ func NewGoogleBetaProvider(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs google-beta} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs google-beta} Resource.
 func NewGoogleBetaProvider_Override(g GoogleBetaProvider, scope constructs.Construct, id *string, config *GoogleBetaProviderConfig) {
 	_init_.Initialize()
 
@@ -5217,6 +5241,14 @@ func (j *jsiiProxy_GoogleBetaProvider)SetComputeCustomEndpoint(val *string) {
 	_jsii_.Set(
 		j,
 		"computeCustomEndpoint",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBetaProvider)SetContactCenterInsightsCustomEndpoint(val *string) {
+	_jsii_.Set(
+		j,
+		"contactCenterInsightsCustomEndpoint",
 		val,
 	)
 }
@@ -6884,6 +6916,14 @@ func (g *jsiiProxy_GoogleBetaProvider) ResetComputeCustomEndpoint() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetComputeCustomEndpoint",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBetaProvider) ResetContactCenterInsightsCustomEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetContactCenterInsightsCustomEndpoint",
 		nil, // no parameters
 	)
 }

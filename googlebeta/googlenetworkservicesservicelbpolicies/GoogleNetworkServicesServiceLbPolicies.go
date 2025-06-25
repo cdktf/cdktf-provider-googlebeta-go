@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_network_services_service_lb_policies google_network_services_service_lb_policies}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_network_services_service_lb_policies google_network_services_service_lb_policies}.
 type GoogleNetworkServicesServiceLbPolicies interface {
 	cdktf.TerraformResource
 	AutoCapacityDrain() GoogleNetworkServicesServiceLbPoliciesAutoCapacityDrainOutputReference
@@ -568,7 +568,7 @@ func (j *jsiiProxy_GoogleNetworkServicesServiceLbPolicies) UpdateTime() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_network_services_service_lb_policies google_network_services_service_lb_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_network_services_service_lb_policies google_network_services_service_lb_policies} Resource.
 func NewGoogleNetworkServicesServiceLbPolicies(scope constructs.Construct, id *string, config *GoogleNetworkServicesServiceLbPoliciesConfig) GoogleNetworkServicesServiceLbPolicies {
 	_init_.Initialize()
 
@@ -586,7 +586,7 @@ func NewGoogleNetworkServicesServiceLbPolicies(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_network_services_service_lb_policies google_network_services_service_lb_policies} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_network_services_service_lb_policies google_network_services_service_lb_policies} Resource.
 func NewGoogleNetworkServicesServiceLbPolicies_Override(g GoogleNetworkServicesServiceLbPolicies, scope constructs.Construct, id *string, config *GoogleNetworkServicesServiceLbPoliciesConfig) {
 	_init_.Initialize()
 

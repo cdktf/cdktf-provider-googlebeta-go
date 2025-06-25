@@ -87,6 +87,10 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validatePutPublisherParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validatePutPubsubTopicParameters(value *GoogleBigqueryAnalyticsHubListingPubsubTopic) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) validatePutRestrictedExportConfigParameters(value *GoogleBigqueryAnalyticsHubListingRestrictedExportConfig) error {
 	return nil
 }

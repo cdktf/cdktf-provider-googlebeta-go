@@ -333,6 +333,8 @@ func init() {
 		"@cdktf/provider-google-beta.googleAlloydbInstance.GoogleAlloydbInstanceNetworkConfigOutputReference",
 		reflect.TypeOf((*GoogleAlloydbInstanceNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRangeOverride", GoGetter: "AllocatedIpRangeOverride"},
+			_jsii_.MemberProperty{JsiiProperty: "allocatedIpRangeOverrideInput", GoGetter: "AllocatedIpRangeOverrideInput"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedExternalNetworks", GoGetter: "AuthorizedExternalNetworks"},
 			_jsii_.MemberProperty{JsiiProperty: "authorizedExternalNetworksInput", GoGetter: "AuthorizedExternalNetworksInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -357,6 +359,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "putAuthorizedExternalNetworks", GoMethod: "PutAuthorizedExternalNetworks"},
+			_jsii_.MemberMethod{JsiiMethod: "resetAllocatedIpRangeOverride", GoMethod: "ResetAllocatedIpRangeOverride"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthorizedExternalNetworks", GoMethod: "ResetAuthorizedExternalNetworks"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableOutboundPublicIp", GoMethod: "ResetEnableOutboundPublicIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnablePublicIp", GoMethod: "ResetEnablePublicIp"},

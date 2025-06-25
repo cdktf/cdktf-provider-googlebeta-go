@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription}.
 type GoogleBigqueryAnalyticsHubListingSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -61,6 +61,7 @@ type GoogleBigqueryAnalyticsHubListingSubscription interface {
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
+	LogLinkedDatasetQueryUserEmail() cdktf.IResolvable
 	Name() *string
 	// The tree node.
 	Node() constructs.Node
@@ -390,6 +391,16 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscription) LocationInput(
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscription) LogLinkedDatasetQueryUserEmail() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"logLinkedDatasetQueryUserEmail",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscription) Name() *string {
 	var returns *string
 	_jsii_.Get(
@@ -571,7 +582,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscription) TimeoutsInput(
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription} Resource.
 func NewGoogleBigqueryAnalyticsHubListingSubscription(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingSubscriptionConfig) GoogleBigqueryAnalyticsHubListingSubscription {
 	_init_.Initialize()
 
@@ -589,7 +600,7 @@ func NewGoogleBigqueryAnalyticsHubListingSubscription(scope constructs.Construct
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_bigquery_analytics_hub_listing_subscription google_bigquery_analytics_hub_listing_subscription} Resource.
 func NewGoogleBigqueryAnalyticsHubListingSubscription_Override(g GoogleBigqueryAnalyticsHubListingSubscription, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingSubscriptionConfig) {
 	_init_.Initialize()
 

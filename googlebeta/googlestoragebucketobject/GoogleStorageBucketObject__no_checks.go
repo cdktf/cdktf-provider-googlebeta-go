@@ -175,6 +175,10 @@ func (j *jsiiProxy_GoogleStorageBucketObject) validateSetSourceParameters(val *s
 	return nil
 }
 
+func (j *jsiiProxy_GoogleStorageBucketObject) validateSetSourceMd5HashParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleStorageBucketObject) validateSetStorageClassParameters(val *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config}.
 type GoogleStorageControlFolderIntelligenceConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfig) UpdateTime() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
 func NewGoogleStorageControlFolderIntelligenceConfig(scope constructs.Construct, id *string, config *GoogleStorageControlFolderIntelligenceConfigConfig) GoogleStorageControlFolderIntelligenceConfig {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleStorageControlFolderIntelligenceConfig(scope constructs.Construct,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_storage_control_folder_intelligence_config google_storage_control_folder_intelligence_config} Resource.
 func NewGoogleStorageControlFolderIntelligenceConfig_Override(g GoogleStorageControlFolderIntelligenceConfig, scope constructs.Construct, id *string, config *GoogleStorageControlFolderIntelligenceConfigConfig) {
 	_init_.Initialize()
 

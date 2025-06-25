@@ -119,6 +119,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberProperty{JsiiProperty: "wireGroups", GoGetter: "WireGroups"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeInterconnect{}

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy}.
 type GoogleServiceDirectoryNamespaceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleServiceDirectoryNamespaceIamPolicy) TerraformResourceTy
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy} Resource.
 func NewGoogleServiceDirectoryNamespaceIamPolicy(scope constructs.Construct, id *string, config *GoogleServiceDirectoryNamespaceIamPolicyConfig) GoogleServiceDirectoryNamespaceIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewGoogleServiceDirectoryNamespaceIamPolicy(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_service_directory_namespace_iam_policy google_service_directory_namespace_iam_policy} Resource.
 func NewGoogleServiceDirectoryNamespaceIamPolicy_Override(g GoogleServiceDirectoryNamespaceIamPolicy, scope constructs.Construct, id *string, config *GoogleServiceDirectoryNamespaceIamPolicyConfig) {
 	_init_.Initialize()
 

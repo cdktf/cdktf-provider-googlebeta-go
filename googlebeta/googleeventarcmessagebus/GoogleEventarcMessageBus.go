@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_eventarc_message_bus google_eventarc_message_bus}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_eventarc_message_bus google_eventarc_message_bus}.
 type GoogleEventarcMessageBus interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -612,7 +612,7 @@ func (j *jsiiProxy_GoogleEventarcMessageBus) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_eventarc_message_bus google_eventarc_message_bus} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_eventarc_message_bus google_eventarc_message_bus} Resource.
 func NewGoogleEventarcMessageBus(scope constructs.Construct, id *string, config *GoogleEventarcMessageBusConfig) GoogleEventarcMessageBus {
 	_init_.Initialize()
 
@@ -630,7 +630,7 @@ func NewGoogleEventarcMessageBus(scope constructs.Construct, id *string, config 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_eventarc_message_bus google_eventarc_message_bus} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_eventarc_message_bus google_eventarc_message_bus} Resource.
 func NewGoogleEventarcMessageBus_Override(g GoogleEventarcMessageBus, scope constructs.Construct, id *string, config *GoogleEventarcMessageBusConfig) {
 	_init_.Initialize()
 

@@ -139,6 +139,10 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateSetLocationPa
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateSetLogLinkedDatasetQueryUserEmailParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateSetPrimaryContactParameters(val *string) error {
 	return nil
 }

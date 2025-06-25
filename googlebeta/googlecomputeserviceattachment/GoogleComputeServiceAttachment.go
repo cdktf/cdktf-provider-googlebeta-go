@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_service_attachment google_compute_service_attachment}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_service_attachment google_compute_service_attachment}.
 type GoogleComputeServiceAttachment interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -96,6 +96,9 @@ type GoogleComputeServiceAttachment interface {
 	SetRegion(val *string)
 	RegionInput() *string
 	SelfLink() *string
+	SendPropagatedConnectionLimitIfZero() interface{}
+	SetSendPropagatedConnectionLimitIfZero(val interface{})
+	SendPropagatedConnectionLimitIfZeroInput() interface{}
 	TargetService() *string
 	SetTargetService(val *string)
 	TargetServiceInput() *string
@@ -164,6 +167,7 @@ type GoogleComputeServiceAttachment interface {
 	ResetPropagatedConnectionLimit()
 	ResetReconcileConnections()
 	ResetRegion()
+	ResetSendPropagatedConnectionLimitIfZero()
 	ResetTimeouts()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
@@ -603,6 +607,26 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment) SelfLink() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeServiceAttachment) SendPropagatedConnectionLimitIfZero() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendPropagatedConnectionLimitIfZero",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeServiceAttachment) SendPropagatedConnectionLimitIfZeroInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"sendPropagatedConnectionLimitIfZeroInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeServiceAttachment) TargetService() *string {
 	var returns *string
 	_jsii_.Get(
@@ -674,7 +698,7 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource.
 func NewGoogleComputeServiceAttachment(scope constructs.Construct, id *string, config *GoogleComputeServiceAttachmentConfig) GoogleComputeServiceAttachment {
 	_init_.Initialize()
 
@@ -692,7 +716,7 @@ func NewGoogleComputeServiceAttachment(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_compute_service_attachment google_compute_service_attachment} Resource.
 func NewGoogleComputeServiceAttachment_Override(g GoogleComputeServiceAttachment, scope constructs.Construct, id *string, config *GoogleComputeServiceAttachmentConfig) {
 	_init_.Initialize()
 
@@ -899,6 +923,17 @@ func (j *jsiiProxy_GoogleComputeServiceAttachment)SetRegion(val *string) {
 	_jsii_.Set(
 		j,
 		"region",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeServiceAttachment)SetSendPropagatedConnectionLimitIfZero(val interface{}) {
+	if err := j.validateSetSendPropagatedConnectionLimitIfZeroParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sendPropagatedConnectionLimitIfZero",
 		val,
 	)
 }
@@ -1365,6 +1400,14 @@ func (g *jsiiProxy_GoogleComputeServiceAttachment) ResetRegion() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetRegion",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeServiceAttachment) ResetSendPropagatedConnectionLimitIfZero() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSendPropagatedConnectionLimitIfZero",
 		nil, // no parameters
 	)
 }

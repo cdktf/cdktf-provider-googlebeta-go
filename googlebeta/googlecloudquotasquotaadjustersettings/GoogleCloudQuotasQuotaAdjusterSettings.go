@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_cloud_quotas_quota_adjuster_settings google_cloud_quotas_quota_adjuster_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_cloud_quotas_quota_adjuster_settings google_cloud_quotas_quota_adjuster_settings}.
 type GoogleCloudQuotasQuotaAdjusterSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -47,6 +47,8 @@ type GoogleCloudQuotasQuotaAdjusterSettings interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
+	Inherited() cdktf.IResolvable
+	InheritedFrom() *string
 	// Experimental.
 	Lifecycle() *cdktf.TerraformResourceLifecycle
 	// Experimental.
@@ -282,6 +284,26 @@ func (j *jsiiProxy_GoogleCloudQuotasQuotaAdjusterSettings) IdInput() *string {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleCloudQuotasQuotaAdjusterSettings) Inherited() cdktf.IResolvable {
+	var returns cdktf.IResolvable
+	_jsii_.Get(
+		j,
+		"inherited",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleCloudQuotasQuotaAdjusterSettings) InheritedFrom() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"inheritedFrom",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleCloudQuotasQuotaAdjusterSettings) Lifecycle() *cdktf.TerraformResourceLifecycle {
 	var returns *cdktf.TerraformResourceLifecycle
 	_jsii_.Get(
@@ -403,7 +425,7 @@ func (j *jsiiProxy_GoogleCloudQuotasQuotaAdjusterSettings) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_cloud_quotas_quota_adjuster_settings google_cloud_quotas_quota_adjuster_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_cloud_quotas_quota_adjuster_settings google_cloud_quotas_quota_adjuster_settings} Resource.
 func NewGoogleCloudQuotasQuotaAdjusterSettings(scope constructs.Construct, id *string, config *GoogleCloudQuotasQuotaAdjusterSettingsConfig) GoogleCloudQuotasQuotaAdjusterSettings {
 	_init_.Initialize()
 
@@ -421,7 +443,7 @@ func NewGoogleCloudQuotasQuotaAdjusterSettings(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.40.0/docs/resources/google_cloud_quotas_quota_adjuster_settings google_cloud_quotas_quota_adjuster_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_cloud_quotas_quota_adjuster_settings google_cloud_quotas_quota_adjuster_settings} Resource.
 func NewGoogleCloudQuotasQuotaAdjusterSettings_Override(g GoogleCloudQuotasQuotaAdjusterSettings, scope constructs.Construct, id *string, config *GoogleCloudQuotasQuotaAdjusterSettingsConfig) {
 	_init_.Initialize()
 
