@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_redis_instance google_redis_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_redis_instance google_redis_instance}.
 type GoogleRedisInstance interface {
 	cdktf.TerraformResource
 	AlternativeLocationId() *string
@@ -53,6 +53,7 @@ type GoogleRedisInstance interface {
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
 	EffectiveLabels() cdktf.StringMap
+	EffectiveReservedIpRange() *string
 	// Experimental.
 	ForEach() cdktf.ITerraformIterator
 	// Experimental.
@@ -441,6 +442,16 @@ func (j *jsiiProxy_GoogleRedisInstance) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisInstance) EffectiveReservedIpRange() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"effectiveReservedIpRange",
 		&returns,
 	)
 	return returns
@@ -1027,7 +1038,7 @@ func (j *jsiiProxy_GoogleRedisInstance) TransitEncryptionModeInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_redis_instance google_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_redis_instance google_redis_instance} Resource.
 func NewGoogleRedisInstance(scope constructs.Construct, id *string, config *GoogleRedisInstanceConfig) GoogleRedisInstance {
 	_init_.Initialize()
 
@@ -1045,7 +1056,7 @@ func NewGoogleRedisInstance(scope constructs.Construct, id *string, config *Goog
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_redis_instance google_redis_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_redis_instance google_redis_instance} Resource.
 func NewGoogleRedisInstance_Override(g GoogleRedisInstance, scope constructs.Construct, id *string, config *GoogleRedisInstanceConfig) {
 	_init_.Initialize()
 

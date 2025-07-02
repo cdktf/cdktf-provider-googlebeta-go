@@ -111,6 +111,10 @@ func validateGoogleComputeRegionDisk_IsTerraformResourceParameters(x interface{}
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetAccessModeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetConnectionParameters(val interface{}) error {
 	return nil
 }

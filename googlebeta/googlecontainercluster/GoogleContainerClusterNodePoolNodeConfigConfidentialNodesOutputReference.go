@@ -23,6 +23,9 @@ type GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference in
 	ComplexObjectIsFromSet() *bool
 	// Experimental.
 	SetComplexObjectIsFromSet(val *bool)
+	ConfidentialInstanceType() *string
+	SetConfidentialInstanceType(val *string)
+	ConfidentialInstanceTypeInput() *string
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -67,6 +70,7 @@ type GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference in
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetConfidentialInstanceType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -97,6 +101,26 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutp
 	_jsii_.Get(
 		j,
 		"complexObjectIsFromSet",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference) ConfidentialInstanceType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialInstanceType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference) ConfidentialInstanceTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"confidentialInstanceTypeInput",
 		&returns,
 	)
 	return returns
@@ -218,6 +242,17 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutp
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference)SetConfidentialInstanceType(val *string) {
+	if err := j.validateSetConfidentialInstanceTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"confidentialInstanceType",
 		val,
 	)
 }
@@ -450,6 +485,14 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutp
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference) ResetConfidentialInstanceType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetConfidentialInstanceType",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {

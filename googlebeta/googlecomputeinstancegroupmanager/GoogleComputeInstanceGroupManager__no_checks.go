@@ -95,6 +95,10 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutParamsParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutResourcePoliciesParameters(value *GoogleComputeInstanceGroupManagerResourcePolicies) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceGroupManager) validatePutStandbyPolicyParameters(value *GoogleComputeInstanceGroupManagerStandbyPolicy) error {
 	return nil
 }

@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validatePutNodeSelectorParameters(value *GoogleCloudRunV2JobTemplateTemplateNodeSelector) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validatePutVolumesParameters(value interface{}) error {
 	return nil
 }

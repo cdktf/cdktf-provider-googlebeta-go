@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_kms_autokey_config google_kms_autokey_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_kms_autokey_config google_kms_autokey_config}.
 type GoogleKmsAutokeyConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -31,6 +31,7 @@ type GoogleKmsAutokeyConfig interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Etag() *string
 	Folder() *string
 	SetFolder(val *string)
 	FolderInput() *string
@@ -185,6 +186,16 @@ func (j *jsiiProxy_GoogleKmsAutokeyConfig) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleKmsAutokeyConfig) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -381,7 +392,7 @@ func (j *jsiiProxy_GoogleKmsAutokeyConfig) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_kms_autokey_config google_kms_autokey_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_kms_autokey_config google_kms_autokey_config} Resource.
 func NewGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, config *GoogleKmsAutokeyConfigConfig) GoogleKmsAutokeyConfig {
 	_init_.Initialize()
 
@@ -399,7 +410,7 @@ func NewGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_kms_autokey_config google_kms_autokey_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_kms_autokey_config google_kms_autokey_config} Resource.
 func NewGoogleKmsAutokeyConfig_Override(g GoogleKmsAutokeyConfig, scope constructs.Construct, id *string, config *GoogleKmsAutokeyConfigConfig) {
 	_init_.Initialize()
 

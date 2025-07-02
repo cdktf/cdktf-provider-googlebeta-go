@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member}.
 type GoogleSccV2OrganizationSourceIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -437,7 +437,7 @@ func (j *jsiiProxy_GoogleSccV2OrganizationSourceIamMember) TerraformResourceType
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource.
 func NewGoogleSccV2OrganizationSourceIamMember(scope constructs.Construct, id *string, config *GoogleSccV2OrganizationSourceIamMemberConfig) GoogleSccV2OrganizationSourceIamMember {
 	_init_.Initialize()
 
@@ -455,7 +455,7 @@ func NewGoogleSccV2OrganizationSourceIamMember(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_scc_v2_organization_source_iam_member google_scc_v2_organization_source_iam_member} Resource.
 func NewGoogleSccV2OrganizationSourceIamMember_Override(g GoogleSccV2OrganizationSourceIamMember, scope constructs.Construct, id *string, config *GoogleSccV2OrganizationSourceIamMemberConfig) {
 	_init_.Initialize()
 

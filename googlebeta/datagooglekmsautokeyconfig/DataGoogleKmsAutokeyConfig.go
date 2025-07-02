@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config}.
 type DataGoogleKmsAutokeyConfig interface {
 	cdktf.TerraformDataSource
 	// Experimental.
@@ -27,6 +27,7 @@ type DataGoogleKmsAutokeyConfig interface {
 	DependsOn() *[]*string
 	// Experimental.
 	SetDependsOn(val *[]*string)
+	Etag() *string
 	Folder() *string
 	SetFolder(val *string)
 	FolderInput() *string
@@ -143,6 +144,16 @@ func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) DependsOn() *[]*string {
 	_jsii_.Get(
 		j,
 		"dependsOn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) Etag() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"etag",
 		&returns,
 	)
 	return returns
@@ -299,7 +310,7 @@ func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) TerraformResourceType() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config} Data Source.
 func NewDataGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, config *DataGoogleKmsAutokeyConfigConfig) DataGoogleKmsAutokeyConfig {
 	_init_.Initialize()
 
@@ -317,7 +328,7 @@ func NewDataGoogleKmsAutokeyConfig(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config} Data Source.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/data-sources/google_kms_autokey_config google_kms_autokey_config} Data Source.
 func NewDataGoogleKmsAutokeyConfig_Override(d DataGoogleKmsAutokeyConfig, scope constructs.Construct, id *string, config *DataGoogleKmsAutokeyConfigConfig) {
 	_init_.Initialize()
 

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_memorystore_instance google_memorystore_instance}.
 type GoogleMemorystoreInstance interface {
 	cdktf.TerraformResource
 	AuthorizationMode() *string
@@ -72,6 +72,9 @@ type GoogleMemorystoreInstance interface {
 	InstanceId() *string
 	SetInstanceId(val *string)
 	InstanceIdInput() *string
+	KmsKey() *string
+	SetKmsKey(val *string)
+	KmsKeyInput() *string
 	Labels() *map[string]*string
 	SetLabels(val *map[string]*string)
 	LabelsInput() *map[string]*string
@@ -201,6 +204,7 @@ type GoogleMemorystoreInstance interface {
 	ResetEngineVersion()
 	ResetGcsSource()
 	ResetId()
+	ResetKmsKey()
 	ResetLabels()
 	ResetMaintenancePolicy()
 	ResetManagedBackupSource()
@@ -578,6 +582,26 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) InstanceIdInput() *string {
 	_jsii_.Get(
 		j,
 		"instanceIdInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) KmsKey() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKey",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance) KmsKeyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"kmsKeyInput",
 		&returns,
 	)
 	return returns
@@ -1024,7 +1048,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstance) ZoneDistributionConfigInput() *Goo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) GoogleMemorystoreInstance {
 	_init_.Initialize()
 
@@ -1042,7 +1066,7 @@ func NewGoogleMemorystoreInstance(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.41.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_memorystore_instance google_memorystore_instance} Resource.
 func NewGoogleMemorystoreInstance_Override(g GoogleMemorystoreInstance, scope constructs.Construct, id *string, config *GoogleMemorystoreInstanceConfig) {
 	_init_.Initialize()
 
@@ -1153,6 +1177,17 @@ func (j *jsiiProxy_GoogleMemorystoreInstance)SetInstanceId(val *string) {
 	_jsii_.Set(
 		j,
 		"instanceId",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleMemorystoreInstance)SetKmsKey(val *string) {
+	if err := j.validateSetKmsKeyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"kmsKey",
 		val,
 	)
 }
@@ -1814,6 +1849,14 @@ func (g *jsiiProxy_GoogleMemorystoreInstance) ResetId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleMemorystoreInstance) ResetKmsKey() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetKmsKey",
 		nil, // no parameters
 	)
 }
