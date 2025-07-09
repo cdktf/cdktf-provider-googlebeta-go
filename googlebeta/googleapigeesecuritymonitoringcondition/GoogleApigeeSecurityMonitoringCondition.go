@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_apigee_security_monitoring_condition google_apigee_security_monitoring_condition}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_security_monitoring_condition google_apigee_security_monitoring_condition}.
 type GoogleApigeeSecurityMonitoringCondition interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -505,7 +505,7 @@ func (j *jsiiProxy_GoogleApigeeSecurityMonitoringCondition) UpdateTime() *string
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
 func NewGoogleApigeeSecurityMonitoringCondition(scope constructs.Construct, id *string, config *GoogleApigeeSecurityMonitoringConditionConfig) GoogleApigeeSecurityMonitoringCondition {
 	_init_.Initialize()
 
@@ -523,7 +523,7 @@ func NewGoogleApigeeSecurityMonitoringCondition(scope constructs.Construct, id *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_apigee_security_monitoring_condition google_apigee_security_monitoring_condition} Resource.
 func NewGoogleApigeeSecurityMonitoringCondition_Override(g GoogleApigeeSecurityMonitoringCondition, scope constructs.Construct, id *string, config *GoogleApigeeSecurityMonitoringConditionConfig) {
 	_init_.Initialize()
 

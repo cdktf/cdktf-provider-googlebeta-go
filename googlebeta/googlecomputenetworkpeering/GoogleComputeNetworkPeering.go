@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network_peering google_compute_network_peering}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_network_peering google_compute_network_peering}.
 type GoogleComputeNetworkPeering interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -92,6 +92,9 @@ type GoogleComputeNetworkPeering interface {
 	TerraformResourceType() *string
 	Timeouts() GoogleComputeNetworkPeeringTimeoutsOutputReference
 	TimeoutsInput() interface{}
+	UpdateStrategy() *string
+	SetUpdateStrategy(val *string)
+	UpdateStrategyInput() *string
 	// Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 	// Experimental.
 	AddMoveTarget(moveTarget *string)
@@ -146,6 +149,7 @@ type GoogleComputeNetworkPeering interface {
 	ResetOverrideLogicalId()
 	ResetStackType()
 	ResetTimeouts()
+	ResetUpdateStrategy()
 	SynthesizeAttributes() *map[string]interface{}
 	SynthesizeHclAttributes() *map[string]interface{}
 	// Experimental.
@@ -544,8 +548,28 @@ func (j *jsiiProxy_GoogleComputeNetworkPeering) TimeoutsInput() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeNetworkPeering) UpdateStrategy() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateStrategy",
+		&returns,
+	)
+	return returns
+}
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network_peering google_compute_network_peering} Resource.
+func (j *jsiiProxy_GoogleComputeNetworkPeering) UpdateStrategyInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"updateStrategyInput",
+		&returns,
+	)
+	return returns
+}
+
+
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_network_peering google_compute_network_peering} Resource.
 func NewGoogleComputeNetworkPeering(scope constructs.Construct, id *string, config *GoogleComputeNetworkPeeringConfig) GoogleComputeNetworkPeering {
 	_init_.Initialize()
 
@@ -563,7 +587,7 @@ func NewGoogleComputeNetworkPeering(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_network_peering google_compute_network_peering} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_network_peering google_compute_network_peering} Resource.
 func NewGoogleComputeNetworkPeering_Override(g GoogleComputeNetworkPeering, scope constructs.Construct, id *string, config *GoogleComputeNetworkPeeringConfig) {
 	_init_.Initialize()
 
@@ -737,6 +761,17 @@ func (j *jsiiProxy_GoogleComputeNetworkPeering)SetStackType(val *string) {
 	_jsii_.Set(
 		j,
 		"stackType",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeNetworkPeering)SetUpdateStrategy(val *string) {
+	if err := j.validateSetUpdateStrategyParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"updateStrategy",
 		val,
 	)
 }
@@ -1165,6 +1200,14 @@ func (g *jsiiProxy_GoogleComputeNetworkPeering) ResetTimeouts() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetTimeouts",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkPeering) ResetUpdateStrategy() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetUpdateStrategy",
 		nil, // no parameters
 	)
 }

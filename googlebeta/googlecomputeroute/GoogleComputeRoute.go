@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_route google_compute_route}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_route google_compute_route}.
 type GoogleComputeRoute interface {
 	cdktf.TerraformResource
 	AsPaths() GoogleComputeRouteAsPathsList
@@ -86,6 +86,8 @@ type GoogleComputeRoute interface {
 	NextHopVpnTunnelInput() *string
 	// The tree node.
 	Node() constructs.Node
+	Params() GoogleComputeRouteParamsOutputReference
+	ParamsInput() *GoogleComputeRouteParams
 	Priority() *float64
 	SetPriority(val *float64)
 	PriorityInput() *float64
@@ -160,6 +162,7 @@ type GoogleComputeRoute interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutParams(value *GoogleComputeRouteParams)
 	PutTimeouts(value *GoogleComputeRouteTimeouts)
 	ResetDescription()
 	ResetId()
@@ -172,6 +175,7 @@ type GoogleComputeRoute interface {
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
+	ResetParams()
 	ResetPriority()
 	ResetProject()
 	ResetTags()
@@ -594,6 +598,26 @@ func (j *jsiiProxy_GoogleComputeRoute) Node() constructs.Node {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeRoute) Params() GoogleComputeRouteParamsOutputReference {
+	var returns GoogleComputeRouteParamsOutputReference
+	_jsii_.Get(
+		j,
+		"params",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeRoute) ParamsInput() *GoogleComputeRouteParams {
+	var returns *GoogleComputeRouteParams
+	_jsii_.Get(
+		j,
+		"paramsInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeRoute) Priority() *float64 {
 	var returns *float64
 	_jsii_.Get(
@@ -775,7 +799,7 @@ func (j *jsiiProxy_GoogleComputeRoute) Warnings() GoogleComputeRouteWarningsList
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_route google_compute_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_route google_compute_route} Resource.
 func NewGoogleComputeRoute(scope constructs.Construct, id *string, config *GoogleComputeRouteConfig) GoogleComputeRoute {
 	_init_.Initialize()
 
@@ -793,7 +817,7 @@ func NewGoogleComputeRoute(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_compute_route google_compute_route} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_route google_compute_route} Resource.
 func NewGoogleComputeRoute_Override(g GoogleComputeRoute, scope constructs.Construct, id *string, config *GoogleComputeRouteConfig) {
 	_init_.Initialize()
 
@@ -1379,6 +1403,17 @@ func (g *jsiiProxy_GoogleComputeRoute) OverrideLogicalId(newLogicalId *string) {
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeRoute) PutParams(value *GoogleComputeRouteParams) {
+	if err := g.validatePutParamsParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putParams",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeRoute) PutTimeouts(value *GoogleComputeRouteTimeouts) {
 	if err := g.validatePutTimeoutsParameters(value); err != nil {
 		panic(err)
@@ -1458,6 +1493,14 @@ func (g *jsiiProxy_GoogleComputeRoute) ResetOverrideLogicalId() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetOverrideLogicalId",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeRoute) ResetParams() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetParams",
 		nil, // no parameters
 	)
 }

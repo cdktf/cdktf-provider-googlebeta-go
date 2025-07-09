@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -20,6 +20,8 @@ type GoogleContainerCluster interface {
 	AllowNetAdmin() interface{}
 	SetAllowNetAdmin(val interface{})
 	AllowNetAdminInput() interface{}
+	AnonymousAuthenticationConfig() GoogleContainerClusterAnonymousAuthenticationConfigOutputReference
+	AnonymousAuthenticationConfigInput() *GoogleContainerClusterAnonymousAuthenticationConfig
 	AuthenticatorGroupsConfig() GoogleContainerClusterAuthenticatorGroupsConfigOutputReference
 	AuthenticatorGroupsConfigInput() *GoogleContainerClusterAuthenticatorGroupsConfig
 	BinaryAuthorization() GoogleContainerClusterBinaryAuthorizationOutputReference
@@ -308,6 +310,7 @@ type GoogleContainerCluster interface {
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
 	PutAddonsConfig(value *GoogleContainerClusterAddonsConfig)
+	PutAnonymousAuthenticationConfig(value *GoogleContainerClusterAnonymousAuthenticationConfig)
 	PutAuthenticatorGroupsConfig(value *GoogleContainerClusterAuthenticatorGroupsConfig)
 	PutBinaryAuthorization(value *GoogleContainerClusterBinaryAuthorization)
 	PutClusterAutoscaling(value *GoogleContainerClusterClusterAutoscaling)
@@ -355,6 +358,7 @@ type GoogleContainerCluster interface {
 	PutWorkloadIdentityConfig(value *GoogleContainerClusterWorkloadIdentityConfig)
 	ResetAddonsConfig()
 	ResetAllowNetAdmin()
+	ResetAnonymousAuthenticationConfig()
 	ResetAuthenticatorGroupsConfig()
 	ResetBinaryAuthorization()
 	ResetClusterAutoscaling()
@@ -488,6 +492,26 @@ func (j *jsiiProxy_GoogleContainerCluster) AllowNetAdminInput() interface{} {
 	_jsii_.Get(
 		j,
 		"allowNetAdminInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AnonymousAuthenticationConfig() GoogleContainerClusterAnonymousAuthenticationConfigOutputReference {
+	var returns GoogleContainerClusterAnonymousAuthenticationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) AnonymousAuthenticationConfigInput() *GoogleContainerClusterAnonymousAuthenticationConfig {
+	var returns *GoogleContainerClusterAnonymousAuthenticationConfig
+	_jsii_.Get(
+		j,
+		"anonymousAuthenticationConfigInput",
 		&returns,
 	)
 	return returns
@@ -2304,7 +2328,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2322,7 +2346,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.42.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3139,6 +3163,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutAddonsConfig(value *GoogleContaine
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutAnonymousAuthenticationConfig(value *GoogleContainerClusterAnonymousAuthenticationConfig) {
+	if err := g.validatePutAnonymousAuthenticationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAnonymousAuthenticationConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutAuthenticatorGroupsConfig(value *GoogleContainerClusterAuthenticatorGroupsConfig) {
 	if err := g.validatePutAuthenticatorGroupsConfigParameters(value); err != nil {
 		panic(err)
@@ -3646,6 +3681,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetAllowNetAdmin() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetAllowNetAdmin",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetAnonymousAuthenticationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAnonymousAuthenticationConfig",
 		nil, // no parameters
 	)
 }

@@ -139,6 +139,10 @@ func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetLifecycleParameters(va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetLoadBalancingSchemeParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeBackendBucket) validateSetNameParameters(val *string) error {
 	return nil
 }

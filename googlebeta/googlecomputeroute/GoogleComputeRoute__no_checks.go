@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleComputeRoute) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRoute) validatePutParamsParameters(value *GoogleComputeRouteParams) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRoute) validatePutTimeoutsParameters(value *GoogleComputeRouteTimeouts) error {
 	return nil
 }

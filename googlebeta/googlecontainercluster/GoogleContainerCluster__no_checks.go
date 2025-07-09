@@ -79,6 +79,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutAddonsConfigParameters(val
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutAnonymousAuthenticationConfigParameters(value *GoogleContainerClusterAnonymousAuthenticationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutAuthenticatorGroupsConfigParameters(value *GoogleContainerClusterAuthenticatorGroupsConfig) error {
 	return nil
 }
