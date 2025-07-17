@@ -34,6 +34,9 @@ type GoogleComputeReservationShareSettingsOutputReference interface {
 	SetInternalValue(val *GoogleComputeReservationShareSettings)
 	ProjectMap() GoogleComputeReservationShareSettingsProjectMapList
 	ProjectMapInput() interface{}
+	Projects() *[]*string
+	SetProjects(val *[]*string)
+	ProjectsInput() *[]*string
 	ShareType() *string
 	SetShareType(val *string)
 	ShareTypeInput() *string
@@ -71,6 +74,7 @@ type GoogleComputeReservationShareSettingsOutputReference interface {
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutProjectMap(value interface{})
 	ResetProjectMap()
+	ResetProjects()
 	ResetShareType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -152,6 +156,26 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) Project
 	_jsii_.Get(
 		j,
 		"projectMapInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) Projects() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projects",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) ProjectsInput() *[]*string {
+	var returns *[]*string
+	_jsii_.Get(
+		j,
+		"projectsInput",
 		&returns,
 	)
 	return returns
@@ -254,6 +278,17 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetInter
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference)SetProjects(val *[]*string) {
+	if err := j.validateSetProjectsParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"projects",
 		val,
 	)
 }
@@ -492,6 +527,14 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) ResetPr
 	_jsii_.InvokeVoid(
 		g,
 		"resetProjectMap",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeReservationShareSettingsOutputReference) ResetProjects() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetProjects",
 		nil, // no parameters
 	)
 }

@@ -167,6 +167,14 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProjectParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedIopsParameters(val *float64) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedThroughputParameters(val *float64) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionersParameters(val *[]interface{}) error {
 	return nil
 }

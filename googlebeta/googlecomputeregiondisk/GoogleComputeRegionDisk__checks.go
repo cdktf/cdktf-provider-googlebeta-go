@@ -520,6 +520,22 @@ func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProjectParameters(val *st
 	return nil
 }
 
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedIopsParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionedThroughputParameters(val *float64) error {
+	if val == nil {
+		return fmt.Errorf("parameter val is required, but nil was provided")
+	}
+
+	return nil
+}
+
 func (j *jsiiProxy_GoogleComputeRegionDisk) validateSetProvisionersParameters(val *[]interface{}) error {
 	for idx_97dfc6, v := range *val {
 		switch v.(type) {

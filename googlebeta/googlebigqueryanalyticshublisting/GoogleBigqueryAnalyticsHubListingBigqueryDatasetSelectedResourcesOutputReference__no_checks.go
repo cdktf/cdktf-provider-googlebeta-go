@@ -63,6 +63,10 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResou
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) validateSetRoutineParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) validateSetTableParameters(val *string) error {
 	return nil
 }

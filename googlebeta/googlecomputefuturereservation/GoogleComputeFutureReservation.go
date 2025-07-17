@@ -12,9 +12,11 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_future_reservation google_compute_future_reservation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_future_reservation google_compute_future_reservation}.
 type GoogleComputeFutureReservation interface {
 	cdktf.TerraformResource
+	AggregateReservation() GoogleComputeFutureReservationAggregateReservationOutputReference
+	AggregateReservationInput() *GoogleComputeFutureReservationAggregateReservation
 	AutoCreatedReservationsDeleteTime() *string
 	SetAutoCreatedReservationsDeleteTime(val *string)
 	AutoCreatedReservationsDeleteTimeInput() *string
@@ -160,12 +162,14 @@ type GoogleComputeFutureReservation interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	PutAggregateReservation(value *GoogleComputeFutureReservationAggregateReservation)
 	PutAutoCreatedReservationsDuration(value *GoogleComputeFutureReservationAutoCreatedReservationsDuration)
 	PutCommitmentInfo(value *GoogleComputeFutureReservationCommitmentInfo)
 	PutShareSettings(value *GoogleComputeFutureReservationShareSettings)
 	PutSpecificSkuProperties(value *GoogleComputeFutureReservationSpecificSkuProperties)
 	PutTimeouts(value *GoogleComputeFutureReservationTimeouts)
 	PutTimeWindow(value *GoogleComputeFutureReservationTimeWindow)
+	ResetAggregateReservation()
 	ResetAutoCreatedReservationsDeleteTime()
 	ResetAutoCreatedReservationsDuration()
 	ResetAutoDeleteAutoCreatedReservations()
@@ -202,6 +206,26 @@ type GoogleComputeFutureReservation interface {
 // The jsii proxy struct for GoogleComputeFutureReservation
 type jsiiProxy_GoogleComputeFutureReservation struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleComputeFutureReservation) AggregateReservation() GoogleComputeFutureReservationAggregateReservationOutputReference {
+	var returns GoogleComputeFutureReservationAggregateReservationOutputReference
+	_jsii_.Get(
+		j,
+		"aggregateReservation",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeFutureReservation) AggregateReservationInput() *GoogleComputeFutureReservationAggregateReservation {
+	var returns *GoogleComputeFutureReservationAggregateReservation
+	_jsii_.Get(
+		j,
+		"aggregateReservationInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleComputeFutureReservation) AutoCreatedReservationsDeleteTime() *string {
@@ -795,7 +819,7 @@ func (j *jsiiProxy_GoogleComputeFutureReservation) Zone() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_future_reservation google_compute_future_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_future_reservation google_compute_future_reservation} Resource.
 func NewGoogleComputeFutureReservation(scope constructs.Construct, id *string, config *GoogleComputeFutureReservationConfig) GoogleComputeFutureReservation {
 	_init_.Initialize()
 
@@ -813,7 +837,7 @@ func NewGoogleComputeFutureReservation(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.43.0/docs/resources/google_compute_future_reservation google_compute_future_reservation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_future_reservation google_compute_future_reservation} Resource.
 func NewGoogleComputeFutureReservation_Override(g GoogleComputeFutureReservation, scope constructs.Construct, id *string, config *GoogleComputeFutureReservationConfig) {
 	_init_.Initialize()
 
@@ -1388,6 +1412,17 @@ func (g *jsiiProxy_GoogleComputeFutureReservation) OverrideLogicalId(newLogicalI
 	)
 }
 
+func (g *jsiiProxy_GoogleComputeFutureReservation) PutAggregateReservation(value *GoogleComputeFutureReservationAggregateReservation) {
+	if err := g.validatePutAggregateReservationParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAggregateReservation",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleComputeFutureReservation) PutAutoCreatedReservationsDuration(value *GoogleComputeFutureReservationAutoCreatedReservationsDuration) {
 	if err := g.validatePutAutoCreatedReservationsDurationParameters(value); err != nil {
 		panic(err)
@@ -1451,6 +1486,14 @@ func (g *jsiiProxy_GoogleComputeFutureReservation) PutTimeWindow(value *GoogleCo
 		g,
 		"putTimeWindow",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeFutureReservation) ResetAggregateReservation() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAggregateReservation",
+		nil, // no parameters
 	)
 }
 

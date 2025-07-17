@@ -38,6 +38,9 @@ type GoogleComputeReservationSpecificReservationOutputReference interface {
 	InternalValue() *GoogleComputeReservationSpecificReservation
 	SetInternalValue(val *GoogleComputeReservationSpecificReservation)
 	InUseCount() *float64
+	SourceInstanceTemplate() *string
+	SetSourceInstanceTemplate(val *string)
+	SourceInstanceTemplateInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -71,6 +74,8 @@ type GoogleComputeReservationSpecificReservationOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutInstanceProperties(value *GoogleComputeReservationSpecificReservationInstanceProperties)
+	ResetInstanceProperties()
+	ResetSourceInstanceTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -186,6 +191,26 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) I
 	return returns
 }
 
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) SourceInstanceTemplate() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceTemplate",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) SourceInstanceTemplateInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"sourceInstanceTemplateInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -274,6 +299,17 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference)SetSourceInstanceTemplate(val *string) {
+	if err := j.validateSetSourceInstanceTemplateParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"sourceInstanceTemplate",
 		val,
 	)
 }
@@ -494,6 +530,22 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) P
 		g,
 		"putInstanceProperties",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) ResetInstanceProperties() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetInstanceProperties",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) ResetSourceInstanceTemplate() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetSourceInstanceTemplate",
+		nil, // no parameters
 	)
 }
 

@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleComputeInterconnect) validateOverrideLogicalIdParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInterconnect) validatePutApplicationAwareInterconnectParameters(value *GoogleComputeInterconnectApplicationAwareInterconnect) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInterconnect) validatePutMacsecParameters(value *GoogleComputeInterconnectMacsec) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func validateGoogleComputeInterconnect_IsTerraformElementParameters(x interface{
 }
 
 func validateGoogleComputeInterconnect_IsTerraformResourceParameters(x interface{}) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleComputeInterconnect) validateSetAaiEnabledParameters(val interface{}) error {
 	return nil
 }
 

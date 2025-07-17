@@ -75,6 +75,10 @@ func (g *jsiiProxy_GoogleApigeeInstance) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeInstance) validatePutAccessLoggingConfigParameters(value *GoogleApigeeInstanceAccessLoggingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeInstance) validatePutTimeoutsParameters(value *GoogleApigeeInstanceTimeouts) error {
 	return nil
 }

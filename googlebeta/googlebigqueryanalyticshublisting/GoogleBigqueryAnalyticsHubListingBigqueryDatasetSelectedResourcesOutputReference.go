@@ -32,6 +32,9 @@ type GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputRefe
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	Routine() *string
+	SetRoutine(val *string)
+	RoutineInput() *string
 	Table() *string
 	SetTable(val *string)
 	TableInput() *string
@@ -67,6 +70,7 @@ type GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputRefe
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	ResetRoutine()
 	ResetTable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
@@ -128,6 +132,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResou
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) Routine() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routine",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) RoutineInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"routineInput",
 		&returns,
 	)
 	return returns
@@ -230,6 +254,17 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResou
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference)SetRoutine(val *string) {
+	if err := j.validateSetRoutineParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"routine",
 		val,
 	)
 }
@@ -451,6 +486,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResou
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) ResetRoutine() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRoutine",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingBigqueryDatasetSelectedResourcesOutputReference) ResetTable() {

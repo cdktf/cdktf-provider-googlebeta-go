@@ -79,6 +79,10 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanTimeoutsOutputReference) validateSetT
 	return nil
 }
 
+func (j *jsiiProxy_GoogleBackupDrBackupPlanTimeoutsOutputReference) validateSetUpdateParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleBackupDrBackupPlanTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
