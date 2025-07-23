@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy}.
 type GoogleClouddeployDeliveryPipelineIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineIamPolicy) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Resource.
 func NewGoogleClouddeployDeliveryPipelineIamPolicy(scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineIamPolicyConfig) GoogleClouddeployDeliveryPipelineIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleClouddeployDeliveryPipelineIamPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_clouddeploy_delivery_pipeline_iam_policy google_clouddeploy_delivery_pipeline_iam_policy} Resource.
 func NewGoogleClouddeployDeliveryPipelineIamPolicy_Override(g GoogleClouddeployDeliveryPipelineIamPolicy, scope constructs.Construct, id *string, config *GoogleClouddeployDeliveryPipelineIamPolicyConfig) {
 	_init_.Initialize()
 

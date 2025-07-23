@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dns_managed_zone_iam_binding google_dns_managed_zone_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_managed_zone_iam_binding google_dns_managed_zone_iam_binding}.
 type GoogleDnsManagedZoneIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleDnsManagedZoneIamBinding) TerraformResourceType() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dns_managed_zone_iam_binding google_dns_managed_zone_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_managed_zone_iam_binding google_dns_managed_zone_iam_binding} Resource.
 func NewGoogleDnsManagedZoneIamBinding(scope constructs.Construct, id *string, config *GoogleDnsManagedZoneIamBindingConfig) GoogleDnsManagedZoneIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleDnsManagedZoneIamBinding(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dns_managed_zone_iam_binding google_dns_managed_zone_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dns_managed_zone_iam_binding google_dns_managed_zone_iam_binding} Resource.
 func NewGoogleDnsManagedZoneIamBinding_Override(g GoogleDnsManagedZoneIamBinding, scope constructs.Construct, id *string, config *GoogleDnsManagedZoneIamBindingConfig) {
 	_init_.Initialize()
 

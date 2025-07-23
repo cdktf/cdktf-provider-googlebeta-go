@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion}.
 type GoogleLoggingProjectExclusion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -428,7 +428,7 @@ func (j *jsiiProxy_GoogleLoggingProjectExclusion) TerraformResourceType() *strin
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion} Resource.
 func NewGoogleLoggingProjectExclusion(scope constructs.Construct, id *string, config *GoogleLoggingProjectExclusionConfig) GoogleLoggingProjectExclusion {
 	_init_.Initialize()
 
@@ -446,7 +446,7 @@ func NewGoogleLoggingProjectExclusion(scope constructs.Construct, id *string, co
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_logging_project_exclusion google_logging_project_exclusion} Resource.
 func NewGoogleLoggingProjectExclusion_Override(g GoogleLoggingProjectExclusion, scope constructs.Construct, id *string, config *GoogleLoggingProjectExclusionConfig) {
 	_init_.Initialize()
 

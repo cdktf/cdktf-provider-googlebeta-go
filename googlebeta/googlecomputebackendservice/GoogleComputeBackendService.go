@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service google_compute_backend_service}.
 type GoogleComputeBackendService interface {
 	cdktf.TerraformResource
 	AffinityCookieTtlSec() *float64
@@ -1265,7 +1265,7 @@ func (j *jsiiProxy_GoogleComputeBackendService) TlsSettingsInput() *GoogleComput
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService(scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) GoogleComputeBackendService {
 	_init_.Initialize()
 
@@ -1283,7 +1283,7 @@ func NewGoogleComputeBackendService(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_compute_backend_service google_compute_backend_service} Resource.
 func NewGoogleComputeBackendService_Override(g GoogleComputeBackendService, scope constructs.Construct, id *string, config *GoogleComputeBackendServiceConfig) {
 	_init_.Initialize()
 

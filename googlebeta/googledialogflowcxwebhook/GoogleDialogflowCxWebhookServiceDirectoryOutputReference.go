@@ -70,6 +70,7 @@ type GoogleDialogflowCxWebhookServiceDirectoryOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutGenericWebService(value *GoogleDialogflowCxWebhookServiceDirectoryGenericWebService)
+	ResetGenericWebService()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -483,6 +484,14 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryOutputReference) Put
 		g,
 		"putGenericWebService",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryOutputReference) ResetGenericWebService() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetGenericWebService",
+		nil, // no parameters
 	)
 }
 

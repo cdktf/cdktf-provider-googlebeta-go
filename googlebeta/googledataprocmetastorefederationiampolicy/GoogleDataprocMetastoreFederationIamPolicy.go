@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataproc_metastore_federation_iam_policy google_dataproc_metastore_federation_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_federation_iam_policy google_dataproc_metastore_federation_iam_policy}.
 type GoogleDataprocMetastoreFederationIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreFederationIamPolicy) TerraformResource
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataproc_metastore_federation_iam_policy google_dataproc_metastore_federation_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_federation_iam_policy google_dataproc_metastore_federation_iam_policy} Resource.
 func NewGoogleDataprocMetastoreFederationIamPolicy(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreFederationIamPolicyConfig) GoogleDataprocMetastoreFederationIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleDataprocMetastoreFederationIamPolicy(scope constructs.Construct, i
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataproc_metastore_federation_iam_policy google_dataproc_metastore_federation_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_federation_iam_policy google_dataproc_metastore_federation_iam_policy} Resource.
 func NewGoogleDataprocMetastoreFederationIamPolicy_Override(g GoogleDataprocMetastoreFederationIamPolicy, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreFederationIamPolicyConfig) {
 	_init_.Initialize()
 

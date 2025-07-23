@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary_iam_member google_dataplex_glossary_iam_member}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary_iam_member google_dataplex_glossary_iam_member}.
 type GoogleDataplexGlossaryIamMember interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleDataplexGlossaryIamMember) TerraformResourceType() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary_iam_member google_dataplex_glossary_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary_iam_member google_dataplex_glossary_iam_member} Resource.
 func NewGoogleDataplexGlossaryIamMember(scope constructs.Construct, id *string, config *GoogleDataplexGlossaryIamMemberConfig) GoogleDataplexGlossaryIamMember {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleDataplexGlossaryIamMember(scope constructs.Construct, id *string, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataplex_glossary_iam_member google_dataplex_glossary_iam_member} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataplex_glossary_iam_member google_dataplex_glossary_iam_member} Resource.
 func NewGoogleDataplexGlossaryIamMember_Override(g GoogleDataplexGlossaryIamMember, scope constructs.Construct, id *string, config *GoogleDataplexGlossaryIamMemberConfig) {
 	_init_.Initialize()
 

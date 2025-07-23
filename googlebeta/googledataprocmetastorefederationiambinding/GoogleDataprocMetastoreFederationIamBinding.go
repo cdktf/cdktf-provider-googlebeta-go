@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataproc_metastore_federation_iam_binding google_dataproc_metastore_federation_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_federation_iam_binding google_dataproc_metastore_federation_iam_binding}.
 type GoogleDataprocMetastoreFederationIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreFederationIamBinding) TerraformResourc
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataproc_metastore_federation_iam_binding google_dataproc_metastore_federation_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_federation_iam_binding google_dataproc_metastore_federation_iam_binding} Resource.
 func NewGoogleDataprocMetastoreFederationIamBinding(scope constructs.Construct, id *string, config *GoogleDataprocMetastoreFederationIamBindingConfig) GoogleDataprocMetastoreFederationIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleDataprocMetastoreFederationIamBinding(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.44.0/docs/resources/google_dataproc_metastore_federation_iam_binding google_dataproc_metastore_federation_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_dataproc_metastore_federation_iam_binding google_dataproc_metastore_federation_iam_binding} Resource.
 func NewGoogleDataprocMetastoreFederationIamBinding_Override(g GoogleDataprocMetastoreFederationIamBinding, scope constructs.Construct, id *string, config *GoogleDataprocMetastoreFederationIamBindingConfig) {
 	_init_.Initialize()
 

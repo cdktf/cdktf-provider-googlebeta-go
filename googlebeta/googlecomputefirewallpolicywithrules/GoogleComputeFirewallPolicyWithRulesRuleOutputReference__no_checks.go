@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleOutputReference) validatePutTargetSecureTagParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

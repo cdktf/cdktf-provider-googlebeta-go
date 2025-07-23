@@ -139,6 +139,10 @@ func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetProvisione
 	return nil
 }
 
+func (j *jsiiProxy_GoogleGeminiGeminiGcpEnablementSetting) validateSetWebGroundingTypeParameters(val *string) error {
+	return nil
+}
+
 func validateNewGoogleGeminiGeminiGcpEnablementSettingParameters(scope constructs.Construct, id *string, config *GoogleGeminiGeminiGcpEnablementSettingConfig) error {
 	return nil
 }

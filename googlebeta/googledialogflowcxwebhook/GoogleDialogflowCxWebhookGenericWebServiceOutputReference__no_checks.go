@@ -47,6 +47,14 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validatePutOauthConfigParameters(value *GoogleDialogflowCxWebhookGenericWebServiceOauthConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validatePutSecretVersionsForRequestHeadersParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -63,11 +71,31 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) va
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetHttpMethodParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetInternalValueParameters(val *GoogleDialogflowCxWebhookGenericWebService) error {
 	return nil
 }
 
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetParameterMappingParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetRequestBodyParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetRequestHeadersParameters(val *map[string]*string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetSecretVersionForUsernamePasswordParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetServiceAgentAuthParameters(val *string) error {
 	return nil
 }
 
@@ -80,6 +108,10 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) va
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetUriParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceOutputReference) validateSetWebhookTypeParameters(val *string) error {
 	return nil
 }
 
