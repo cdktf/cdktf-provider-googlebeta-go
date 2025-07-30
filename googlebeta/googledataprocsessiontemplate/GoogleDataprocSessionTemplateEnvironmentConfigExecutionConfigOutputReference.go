@@ -13,6 +13,8 @@ import (
 
 type GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference interface {
 	cdktf.ComplexObject
+	AuthenticationConfig() GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
+	AuthenticationConfigInput() *GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -30,6 +32,9 @@ type GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReferenc
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
+	IdleTtl() *string
+	SetIdleTtl(val *string)
+	IdleTtlInput() *string
 	InternalValue() *GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfig
 	SetInternalValue(val *GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfig)
 	KmsKey() *string
@@ -82,6 +87,9 @@ type GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReferenc
 	InterpolationAsList() cdktf.IResolvable
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
+	PutAuthenticationConfig(value *GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig)
+	ResetAuthenticationConfig()
+	ResetIdleTtl()
 	ResetKmsKey()
 	ResetNetworkTags()
 	ResetServiceAccount()
@@ -101,6 +109,26 @@ type GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReferenc
 // The jsii proxy struct for GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference
 type jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference struct {
 	internal.Type__cdktfComplexObject
+}
+
+func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) AuthenticationConfig() GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference {
+	var returns GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
+	_jsii_.Get(
+		j,
+		"authenticationConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) AuthenticationConfigInput() *GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig {
+	var returns *GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig
+	_jsii_.Get(
+		j,
+		"authenticationConfigInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -138,6 +166,26 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfig
 	_jsii_.Get(
 		j,
 		"fqn",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) IdleTtl() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleTtl",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) IdleTtlInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"idleTtlInput",
 		&returns,
 	)
 	return returns
@@ -339,6 +387,17 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfig
 	_jsii_.Set(
 		j,
 		"complexObjectIsFromSet",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference)SetIdleTtl(val *string) {
+	if err := j.validateSetIdleTtlParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"idleTtl",
 		val,
 	)
 }
@@ -626,6 +685,33 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfig
 	)
 
 	return returns
+}
+
+func (g *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) PutAuthenticationConfig(value *GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig) {
+	if err := g.validatePutAuthenticationConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putAuthenticationConfig",
+		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) ResetAuthenticationConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAuthenticationConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) ResetIdleTtl() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetIdleTtl",
+		nil, // no parameters
+	)
 }
 
 func (g *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) ResetKmsKey() {

@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance google_workbench_instance}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_workbench_instance google_workbench_instance}.
 type GoogleWorkbenchInstance interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -40,6 +40,9 @@ type GoogleWorkbenchInstance interface {
 	SetDisableProxyAccess(val interface{})
 	DisableProxyAccessInput() interface{}
 	EffectiveLabels() cdktf.StringMap
+	EnableManagedEuc() interface{}
+	SetEnableManagedEuc(val interface{})
+	EnableManagedEucInput() interface{}
 	EnableThirdPartyIdentity() interface{}
 	SetEnableThirdPartyIdentity(val interface{})
 	EnableThirdPartyIdentityInput() interface{}
@@ -152,6 +155,7 @@ type GoogleWorkbenchInstance interface {
 	PutTimeouts(value *GoogleWorkbenchInstanceTimeouts)
 	ResetDesiredState()
 	ResetDisableProxyAccess()
+	ResetEnableManagedEuc()
 	ResetEnableThirdPartyIdentity()
 	ResetGceSetup()
 	ResetId()
@@ -296,6 +300,26 @@ func (j *jsiiProxy_GoogleWorkbenchInstance) EffectiveLabels() cdktf.StringMap {
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkbenchInstance) EnableManagedEuc() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableManagedEuc",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleWorkbenchInstance) EnableManagedEucInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableManagedEucInput",
 		&returns,
 	)
 	return returns
@@ -682,7 +706,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstance) UpgradeHistory() GoogleWorkbenchInst
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_workbench_instance google_workbench_instance} Resource.
 func NewGoogleWorkbenchInstance(scope constructs.Construct, id *string, config *GoogleWorkbenchInstanceConfig) GoogleWorkbenchInstance {
 	_init_.Initialize()
 
@@ -700,7 +724,7 @@ func NewGoogleWorkbenchInstance(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_workbench_instance google_workbench_instance} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_workbench_instance google_workbench_instance} Resource.
 func NewGoogleWorkbenchInstance_Override(g GoogleWorkbenchInstance, scope constructs.Construct, id *string, config *GoogleWorkbenchInstanceConfig) {
 	_init_.Initialize()
 
@@ -759,6 +783,17 @@ func (j *jsiiProxy_GoogleWorkbenchInstance)SetDisableProxyAccess(val interface{}
 	_jsii_.Set(
 		j,
 		"disableProxyAccess",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleWorkbenchInstance)SetEnableManagedEuc(val interface{}) {
+	if err := j.validateSetEnableManagedEucParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableManagedEuc",
 		val,
 	)
 }
@@ -1276,6 +1311,14 @@ func (g *jsiiProxy_GoogleWorkbenchInstance) ResetDisableProxyAccess() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDisableProxyAccess",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleWorkbenchInstance) ResetEnableManagedEuc() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableManagedEuc",
 		nil, // no parameters
 	)
 }

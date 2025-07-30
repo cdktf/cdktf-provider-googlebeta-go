@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy}.
 type GoogleKmsCryptoKeyIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyIamPolicy) TerraformResourceType() *string 
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Resource.
 func NewGoogleKmsCryptoKeyIamPolicy(scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyIamPolicyConfig) GoogleKmsCryptoKeyIamPolicy {
 	_init_.Initialize()
 
@@ -385,7 +385,7 @@ func NewGoogleKmsCryptoKeyIamPolicy(scope constructs.Construct, id *string, conf
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_kms_crypto_key_iam_policy google_kms_crypto_key_iam_policy} Resource.
 func NewGoogleKmsCryptoKeyIamPolicy_Override(g GoogleKmsCryptoKeyIamPolicy, scope constructs.Construct, id *string, config *GoogleKmsCryptoKeyIamPolicyConfig) {
 	_init_.Initialize()
 

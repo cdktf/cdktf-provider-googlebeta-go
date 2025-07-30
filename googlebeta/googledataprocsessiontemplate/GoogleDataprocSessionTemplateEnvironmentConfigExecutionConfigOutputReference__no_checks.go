@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfig
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validatePutAuthenticationConfigParameters(value *GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }
@@ -56,6 +60,10 @@ func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfig
 }
 
 func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateSetComplexObjectIsFromSetParameters(val *bool) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateSetIdleTtlParameters(val *string) error {
 	return nil
 }
 

@@ -47,6 +47,10 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputRefe
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) validatePutAuthenticationConfigParameters(value *GoogleDataprocBatchEnvironmentConfigExecutionConfigAuthenticationConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigExecutionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

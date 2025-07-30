@@ -11,7 +11,7 @@ type GoogleContainerClusterAnonymousAuthenticationConfig struct {
 	// * ENABLED: Authentication of anonymous users is enabled for all endpoints.
 	// * LIMITED: Anonymous access is only allowed for health check endpoints.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.45.0/docs/resources/google_container_cluster#mode GoogleContainerCluster#mode}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_container_cluster#mode GoogleContainerCluster#mode}
 	Mode *string `field:"required" json:"mode" yaml:"mode"`
 }
 
