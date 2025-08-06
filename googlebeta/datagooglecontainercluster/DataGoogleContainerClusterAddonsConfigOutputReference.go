@@ -43,6 +43,7 @@ type DataGoogleContainerClusterAddonsConfigOutputReference interface {
 	SetInternalValue(val *DataGoogleContainerClusterAddonsConfig)
 	IstioConfig() DataGoogleContainerClusterAddonsConfigIstioConfigList
 	KalmConfig() DataGoogleContainerClusterAddonsConfigKalmConfigList
+	LustreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList
 	NetworkPolicyConfig() DataGoogleContainerClusterAddonsConfigNetworkPolicyConfigList
 	ParallelstoreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigParallelstoreCsiDriverConfigList
 	RayOperatorConfig() DataGoogleContainerClusterAddonsConfigRayOperatorConfigList
@@ -249,6 +250,16 @@ func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) KalmCo
 	_jsii_.Get(
 		j,
 		"kalmConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_DataGoogleContainerClusterAddonsConfigOutputReference) LustreCsiDriverConfig() DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList {
+	var returns DataGoogleContainerClusterAddonsConfigLustreCsiDriverConfigList
+	_jsii_.Get(
+		j,
+		"lustreCsiDriverConfig",
 		&returns,
 	)
 	return returns

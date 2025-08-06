@@ -127,6 +127,10 @@ func validateGoogleRedisCluster_IsTerraformResourceParameters(x interface{}) err
 	return nil
 }
 
+func (j *jsiiProxy_GoogleRedisCluster) validateSetAllowFewerZonesDeploymentParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleRedisCluster) validateSetAuthorizationModeParameters(val *string) error {
 	return nil
 }

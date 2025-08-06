@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_container_cluster google_container_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_container_cluster google_container_cluster}.
 type GoogleContainerCluster interface {
 	cdktf.TerraformResource
 	AddonsConfig() GoogleContainerClusterAddonsConfigOutputReference
@@ -225,6 +225,8 @@ type GoogleContainerCluster interface {
 	SetProvisioners(val *[]interface{})
 	// Experimental.
 	RawOverrides() interface{}
+	RbacBindingConfig() GoogleContainerClusterRbacBindingConfigOutputReference
+	RbacBindingConfigInput() *GoogleContainerClusterRbacBindingConfig
 	ReleaseChannel() GoogleContainerClusterReleaseChannelOutputReference
 	ReleaseChannelInput() *GoogleContainerClusterReleaseChannel
 	RemoveDefaultNodePool() interface{}
@@ -345,6 +347,7 @@ type GoogleContainerCluster interface {
 	PutPodSecurityPolicyConfig(value *GoogleContainerClusterPodSecurityPolicyConfig)
 	PutPrivateClusterConfig(value *GoogleContainerClusterPrivateClusterConfig)
 	PutProtectConfig(value *GoogleContainerClusterProtectConfig)
+	PutRbacBindingConfig(value *GoogleContainerClusterRbacBindingConfig)
 	PutReleaseChannel(value *GoogleContainerClusterReleaseChannel)
 	PutResourceUsageExportConfig(value *GoogleContainerClusterResourceUsageExportConfig)
 	PutSecretManagerConfig(value *GoogleContainerClusterSecretManagerConfig)
@@ -425,6 +428,7 @@ type GoogleContainerCluster interface {
 	ResetPrivateIpv6GoogleAccess()
 	ResetProject()
 	ResetProtectConfig()
+	ResetRbacBindingConfig()
 	ResetReleaseChannel()
 	ResetRemoveDefaultNodePool()
 	ResetResourceLabels()
@@ -1977,6 +1981,26 @@ func (j *jsiiProxy_GoogleContainerCluster) RawOverrides() interface{} {
 	return returns
 }
 
+func (j *jsiiProxy_GoogleContainerCluster) RbacBindingConfig() GoogleContainerClusterRbacBindingConfigOutputReference {
+	var returns GoogleContainerClusterRbacBindingConfigOutputReference
+	_jsii_.Get(
+		j,
+		"rbacBindingConfig",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleContainerCluster) RbacBindingConfigInput() *GoogleContainerClusterRbacBindingConfig {
+	var returns *GoogleContainerClusterRbacBindingConfig
+	_jsii_.Get(
+		j,
+		"rbacBindingConfigInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleContainerCluster) ReleaseChannel() GoogleContainerClusterReleaseChannelOutputReference {
 	var returns GoogleContainerClusterReleaseChannelOutputReference
 	_jsii_.Get(
@@ -2328,7 +2352,7 @@ func (j *jsiiProxy_GoogleContainerCluster) WorkloadIdentityConfigInput() *Google
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) GoogleContainerCluster {
 	_init_.Initialize()
 
@@ -2346,7 +2370,7 @@ func NewGoogleContainerCluster(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_container_cluster google_container_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_container_cluster google_container_cluster} Resource.
 func NewGoogleContainerCluster_Override(g GoogleContainerCluster, scope constructs.Construct, id *string, config *GoogleContainerClusterConfig) {
 	_init_.Initialize()
 
@@ -3548,6 +3572,17 @@ func (g *jsiiProxy_GoogleContainerCluster) PutProtectConfig(value *GoogleContain
 	)
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) PutRbacBindingConfig(value *GoogleContainerClusterRbacBindingConfig) {
+	if err := g.validatePutRbacBindingConfigParameters(value); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		g,
+		"putRbacBindingConfig",
+		[]interface{}{value},
+	)
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) PutReleaseChannel(value *GoogleContainerClusterReleaseChannel) {
 	if err := g.validatePutReleaseChannelParameters(value); err != nil {
 		panic(err)
@@ -4201,6 +4236,14 @@ func (g *jsiiProxy_GoogleContainerCluster) ResetProtectConfig() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetProtectConfig",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleContainerCluster) ResetRbacBindingConfig() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetRbacBindingConfig",
 		nil, // no parameters
 	)
 }

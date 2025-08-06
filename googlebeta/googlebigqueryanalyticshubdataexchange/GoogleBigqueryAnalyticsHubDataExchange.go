@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange}.
 type GoogleBigqueryAnalyticsHubDataExchange interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -37,6 +37,9 @@ type GoogleBigqueryAnalyticsHubDataExchange interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DiscoveryType() *string
+	SetDiscoveryType(val *string)
+	DiscoveryTypeInput() *string
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -143,6 +146,7 @@ type GoogleBigqueryAnalyticsHubDataExchange interface {
 	PutSharingEnvironmentConfig(value *GoogleBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig)
 	PutTimeouts(value *GoogleBigqueryAnalyticsHubDataExchangeTimeouts)
 	ResetDescription()
+	ResetDiscoveryType()
 	ResetDocumentation()
 	ResetIcon()
 	ResetId()
@@ -257,6 +261,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) DescriptionInput() *s
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) DiscoveryType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) DiscoveryTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryTypeInput",
 		&returns,
 	)
 	return returns
@@ -593,7 +617,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) TimeoutsInput() inter
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) GoogleBigqueryAnalyticsHubDataExchange {
 	_init_.Initialize()
 
@@ -611,7 +635,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchange(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_bigquery_analytics_hub_data_exchange google_bigquery_analytics_hub_data_exchange} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchange_Override(g GoogleBigqueryAnalyticsHubDataExchange, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeConfig) {
 	_init_.Initialize()
 
@@ -670,6 +694,17 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange)SetDescription(val *st
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange)SetDiscoveryType(val *string) {
+	if err := j.validateSetDiscoveryTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"discoveryType",
 		val,
 	)
 }
@@ -1179,6 +1214,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) ResetDiscoveryType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiscoveryType",
 		nil, // no parameters
 	)
 }

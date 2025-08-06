@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_iap_web_cloud_run_service_iam_policy google_iap_web_cloud_run_service_iam_policy}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_iap_web_cloud_run_service_iam_policy google_iap_web_cloud_run_service_iam_policy}.
 type GoogleIapWebCloudRunServiceIamPolicy interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -415,7 +415,7 @@ func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamPolicy) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_iap_web_cloud_run_service_iam_policy google_iap_web_cloud_run_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_iap_web_cloud_run_service_iam_policy google_iap_web_cloud_run_service_iam_policy} Resource.
 func NewGoogleIapWebCloudRunServiceIamPolicy(scope constructs.Construct, id *string, config *GoogleIapWebCloudRunServiceIamPolicyConfig) GoogleIapWebCloudRunServiceIamPolicy {
 	_init_.Initialize()
 
@@ -433,7 +433,7 @@ func NewGoogleIapWebCloudRunServiceIamPolicy(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_iap_web_cloud_run_service_iam_policy google_iap_web_cloud_run_service_iam_policy} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_iap_web_cloud_run_service_iam_policy google_iap_web_cloud_run_service_iam_policy} Resource.
 func NewGoogleIapWebCloudRunServiceIamPolicy_Override(g GoogleIapWebCloudRunServiceIamPolicy, scope constructs.Construct, id *string, config *GoogleIapWebCloudRunServiceIamPolicyConfig) {
 	_init_.Initialize()
 

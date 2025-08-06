@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_colab_runtime_template_iam_binding google_colab_runtime_template_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_colab_runtime_template_iam_binding google_colab_runtime_template_iam_binding}.
 type GoogleColabRuntimeTemplateIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_colab_runtime_template_iam_binding google_colab_runtime_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_colab_runtime_template_iam_binding google_colab_runtime_template_iam_binding} Resource.
 func NewGoogleColabRuntimeTemplateIamBinding(scope constructs.Construct, id *string, config *GoogleColabRuntimeTemplateIamBindingConfig) GoogleColabRuntimeTemplateIamBinding {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleColabRuntimeTemplateIamBinding(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_colab_runtime_template_iam_binding google_colab_runtime_template_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_colab_runtime_template_iam_binding google_colab_runtime_template_iam_binding} Resource.
 func NewGoogleColabRuntimeTemplateIamBinding_Override(g GoogleColabRuntimeTemplateIamBinding, scope constructs.Construct, id *string, config *GoogleColabRuntimeTemplateIamBindingConfig) {
 	_init_.Initialize()
 

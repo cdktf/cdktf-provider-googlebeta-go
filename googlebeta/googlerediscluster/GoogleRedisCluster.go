@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_redis_cluster google_redis_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_redis_cluster google_redis_cluster}.
 type GoogleRedisCluster interface {
 	cdktf.TerraformResource
+	AllowFewerZonesDeployment() interface{}
+	SetAllowFewerZonesDeployment(val interface{})
+	AllowFewerZonesDeploymentInput() interface{}
 	AuthorizationMode() *string
 	SetAuthorizationMode(val *string)
 	AuthorizationModeInput() *string
@@ -179,6 +182,7 @@ type GoogleRedisCluster interface {
 	PutPscConfigs(value interface{})
 	PutTimeouts(value *GoogleRedisClusterTimeouts)
 	PutZoneDistributionConfig(value *GoogleRedisClusterZoneDistributionConfig)
+	ResetAllowFewerZonesDeployment()
 	ResetAuthorizationMode()
 	ResetAutomatedBackupConfig()
 	ResetCrossClusterReplicationConfig()
@@ -218,6 +222,26 @@ type GoogleRedisCluster interface {
 // The jsii proxy struct for GoogleRedisCluster
 type jsiiProxy_GoogleRedisCluster struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) AllowFewerZonesDeployment() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowFewerZonesDeployment",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleRedisCluster) AllowFewerZonesDeploymentInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowFewerZonesDeploymentInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleRedisCluster) AuthorizationMode() *string {
@@ -921,7 +945,7 @@ func (j *jsiiProxy_GoogleRedisCluster) ZoneDistributionConfigInput() *GoogleRedi
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) GoogleRedisCluster {
 	_init_.Initialize()
 
@@ -939,7 +963,7 @@ func NewGoogleRedisCluster(scope constructs.Construct, id *string, config *Googl
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_redis_cluster google_redis_cluster} Resource.
 func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Construct, id *string, config *GoogleRedisClusterConfig) {
 	_init_.Initialize()
 
@@ -947,6 +971,17 @@ func NewGoogleRedisCluster_Override(g GoogleRedisCluster, scope constructs.Const
 		"@cdktf/provider-google-beta.googleRedisCluster.GoogleRedisCluster",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleRedisCluster)SetAllowFewerZonesDeployment(val interface{}) {
+	if err := j.validateSetAllowFewerZonesDeploymentParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowFewerZonesDeployment",
+		val,
 	)
 }
 
@@ -1599,6 +1634,14 @@ func (g *jsiiProxy_GoogleRedisCluster) PutZoneDistributionConfig(value *GoogleRe
 		g,
 		"putZoneDistributionConfig",
 		[]interface{}{value},
+	)
+}
+
+func (g *jsiiProxy_GoogleRedisCluster) ResetAllowFewerZonesDeployment() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowFewerZonesDeployment",
+		nil, // no parameters
 	)
 }
 

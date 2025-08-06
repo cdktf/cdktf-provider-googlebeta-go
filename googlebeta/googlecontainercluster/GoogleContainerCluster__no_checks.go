@@ -219,6 +219,10 @@ func (g *jsiiProxy_GoogleContainerCluster) validatePutProtectConfigParameters(va
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerCluster) validatePutRbacBindingConfigParameters(value *GoogleContainerClusterRbacBindingConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerCluster) validatePutReleaseChannelParameters(value *GoogleContainerClusterReleaseChannel) error {
 	return nil
 }

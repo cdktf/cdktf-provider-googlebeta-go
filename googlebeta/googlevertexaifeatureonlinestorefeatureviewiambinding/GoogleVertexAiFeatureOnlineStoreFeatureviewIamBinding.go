@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding}.
 type GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding) Terraf
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding(scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig) GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewGoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding(scope constructs.C
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_vertex_ai_feature_online_store_featureview_iam_binding google_vertex_ai_feature_online_store_featureview_iam_binding} Resource.
 func NewGoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding_Override(g GoogleVertexAiFeatureOnlineStoreFeatureviewIamBinding, scope constructs.Construct, id *string, config *GoogleVertexAiFeatureOnlineStoreFeatureviewIamBindingConfig) {
 	_init_.Initialize()
 

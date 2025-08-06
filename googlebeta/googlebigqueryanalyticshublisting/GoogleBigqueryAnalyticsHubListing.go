@@ -12,9 +12,12 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing}.
 type GoogleBigqueryAnalyticsHubListing interface {
 	cdktf.TerraformResource
+	AllowOnlyMetadataSharing() interface{}
+	SetAllowOnlyMetadataSharing(val interface{})
+	AllowOnlyMetadataSharingInput() interface{}
 	BigqueryDataset() GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference
 	BigqueryDatasetInput() *GoogleBigqueryAnalyticsHubListingBigqueryDataset
 	Categories() *[]*string
@@ -22,6 +25,7 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	CategoriesInput() *[]*string
 	// Experimental.
 	CdktfStack() cdktf.TerraformStack
+	CommercialInfo() GoogleBigqueryAnalyticsHubListingCommercialInfoList
 	// Experimental.
 	Connection() interface{}
 	// Experimental.
@@ -37,6 +41,9 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	DataExchangeIdInput() *string
 	DataProvider() GoogleBigqueryAnalyticsHubListingDataProviderOutputReference
 	DataProviderInput() *GoogleBigqueryAnalyticsHubListingDataProvider
+	DeleteCommercial() interface{}
+	SetDeleteCommercial(val interface{})
+	DeleteCommercialInput() interface{}
 	// Experimental.
 	DependsOn() *[]*string
 	// Experimental.
@@ -44,6 +51,9 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	Description() *string
 	SetDescription(val *string)
 	DescriptionInput() *string
+	DiscoveryType() *string
+	SetDiscoveryType(val *string)
+	DiscoveryTypeInput() *string
 	DisplayName() *string
 	SetDisplayName(val *string)
 	DisplayNameInput() *string
@@ -105,6 +115,7 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	RequestAccessInput() *string
 	RestrictedExportConfig() GoogleBigqueryAnalyticsHubListingRestrictedExportConfigOutputReference
 	RestrictedExportConfigInput() *GoogleBigqueryAnalyticsHubListingRestrictedExportConfig
+	State() *string
 	// Experimental.
 	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
 	// Experimental.
@@ -162,10 +173,13 @@ type GoogleBigqueryAnalyticsHubListing interface {
 	PutPubsubTopic(value *GoogleBigqueryAnalyticsHubListingPubsubTopic)
 	PutRestrictedExportConfig(value *GoogleBigqueryAnalyticsHubListingRestrictedExportConfig)
 	PutTimeouts(value *GoogleBigqueryAnalyticsHubListingTimeouts)
+	ResetAllowOnlyMetadataSharing()
 	ResetBigqueryDataset()
 	ResetCategories()
 	ResetDataProvider()
+	ResetDeleteCommercial()
 	ResetDescription()
+	ResetDiscoveryType()
 	ResetDocumentation()
 	ResetIcon()
 	ResetId()
@@ -196,6 +210,26 @@ type GoogleBigqueryAnalyticsHubListing interface {
 // The jsii proxy struct for GoogleBigqueryAnalyticsHubListing
 type jsiiProxy_GoogleBigqueryAnalyticsHubListing struct {
 	internal.Type__cdktfTerraformResource
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) AllowOnlyMetadataSharing() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowOnlyMetadataSharing",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) AllowOnlyMetadataSharingInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"allowOnlyMetadataSharingInput",
+		&returns,
+	)
+	return returns
 }
 
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) BigqueryDataset() GoogleBigqueryAnalyticsHubListingBigqueryDatasetOutputReference {
@@ -243,6 +277,16 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) CdktfStack() cdktf.Terrafo
 	_jsii_.Get(
 		j,
 		"cdktfStack",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) CommercialInfo() GoogleBigqueryAnalyticsHubListingCommercialInfoList {
+	var returns GoogleBigqueryAnalyticsHubListingCommercialInfoList
+	_jsii_.Get(
+		j,
+		"commercialInfo",
 		&returns,
 	)
 	return returns
@@ -318,6 +362,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) DataProviderInput() *Googl
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) DeleteCommercial() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteCommercial",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) DeleteCommercialInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"deleteCommercialInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) DependsOn() *[]*string {
 	var returns *[]*string
 	_jsii_.Get(
@@ -343,6 +407,26 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) DescriptionInput() *string
 	_jsii_.Get(
 		j,
 		"descriptionInput",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) DiscoveryType() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryType",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) DiscoveryTypeInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"discoveryTypeInput",
 		&returns,
 	)
 	return returns
@@ -698,6 +782,16 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) RestrictedExportConfigInpu
 	return returns
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) State() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"state",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
 	var returns *cdktf.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
@@ -749,7 +843,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewGoogleBigqueryAnalyticsHubListing(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingConfig) GoogleBigqueryAnalyticsHubListing {
 	_init_.Initialize()
 
@@ -767,7 +861,7 @@ func NewGoogleBigqueryAnalyticsHubListing(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.46.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_bigquery_analytics_hub_listing google_bigquery_analytics_hub_listing} Resource.
 func NewGoogleBigqueryAnalyticsHubListing_Override(g GoogleBigqueryAnalyticsHubListing, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubListingConfig) {
 	_init_.Initialize()
 
@@ -775,6 +869,17 @@ func NewGoogleBigqueryAnalyticsHubListing_Override(g GoogleBigqueryAnalyticsHubL
 		"@cdktf/provider-google-beta.googleBigqueryAnalyticsHubListing.GoogleBigqueryAnalyticsHubListing",
 		[]interface{}{scope, id, config},
 		g,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetAllowOnlyMetadataSharing(val interface{}) {
+	if err := j.validateSetAllowOnlyMetadataSharingParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"allowOnlyMetadataSharing",
+		val,
 	)
 }
 
@@ -822,6 +927,17 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetDataExchangeId(val *stri
 	)
 }
 
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetDeleteCommercial(val interface{}) {
+	if err := j.validateSetDeleteCommercialParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"deleteCommercial",
+		val,
+	)
+}
+
 func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetDependsOn(val *[]*string) {
 	_jsii_.Set(
 		j,
@@ -837,6 +953,17 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetDescription(val *string)
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListing)SetDiscoveryType(val *string) {
+	if err := j.validateSetDiscoveryTypeParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"discoveryType",
 		val,
 	)
 }
@@ -1408,6 +1535,14 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) PutTimeouts(value *GoogleB
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetAllowOnlyMetadataSharing() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetAllowOnlyMetadataSharing",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetBigqueryDataset() {
 	_jsii_.InvokeVoid(
 		g,
@@ -1432,10 +1567,26 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetDataProvider() {
 	)
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetDeleteCommercial() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDeleteCommercial",
+		nil, // no parameters
+	)
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListing) ResetDiscoveryType() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetDiscoveryType",
 		nil, // no parameters
 	)
 }
