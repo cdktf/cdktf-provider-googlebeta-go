@@ -111,6 +111,10 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputRe
 	return nil
 }
 
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateSetSingleProcessOomKillParameters(val interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigKubeletConfigOutputReference) validateSetTerraformAttributeParameters(val *string) error {
 	return nil
 }

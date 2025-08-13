@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_logging_organization_settings google_logging_organization_settings}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_logging_organization_settings google_logging_organization_settings}.
 type GoogleLoggingOrganizationSettings interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSettings) TimeoutsInput() interface{
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_logging_organization_settings google_logging_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_logging_organization_settings google_logging_organization_settings} Resource.
 func NewGoogleLoggingOrganizationSettings(scope constructs.Construct, id *string, config *GoogleLoggingOrganizationSettingsConfig) GoogleLoggingOrganizationSettings {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleLoggingOrganizationSettings(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_logging_organization_settings google_logging_organization_settings} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_logging_organization_settings google_logging_organization_settings} Resource.
 func NewGoogleLoggingOrganizationSettings_Override(g GoogleLoggingOrganizationSettings, scope constructs.Construct, id *string, config *GoogleLoggingOrganizationSettingsConfig) {
 	_init_.Initialize()
 

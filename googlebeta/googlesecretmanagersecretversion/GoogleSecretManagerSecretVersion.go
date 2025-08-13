@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version}.
 type GoogleSecretManagerSecretVersion interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -545,7 +545,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretVersion) Version() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewGoogleSecretManagerSecretVersion(scope constructs.Construct, id *string, config *GoogleSecretManagerSecretVersionConfig) GoogleSecretManagerSecretVersion {
 	_init_.Initialize()
 
@@ -563,7 +563,7 @@ func NewGoogleSecretManagerSecretVersion(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_secret_manager_secret_version google_secret_manager_secret_version} Resource.
 func NewGoogleSecretManagerSecretVersion_Override(g GoogleSecretManagerSecretVersion, scope constructs.Construct, id *string, config *GoogleSecretManagerSecretVersionConfig) {
 	_init_.Initialize()
 

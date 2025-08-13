@@ -36,6 +36,9 @@ type GoogleSqlDatabaseInstanceReplicationClusterOutputReference interface {
 	Fqn() *string
 	InternalValue() *GoogleSqlDatabaseInstanceReplicationCluster
 	SetInternalValue(val *GoogleSqlDatabaseInstanceReplicationCluster)
+	PsaWriteEndpoint() *string
+	SetPsaWriteEndpoint(val *string)
+	PsaWriteEndpointInput() *string
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
@@ -69,6 +72,7 @@ type GoogleSqlDatabaseInstanceReplicationClusterOutputReference interface {
 	// Experimental.
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	ResetFailoverDrReplicaName()
+	ResetPsaWriteEndpoint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
 	Resolve(_context cdktf.IResolveContext) interface{}
@@ -164,6 +168,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) I
 	return returns
 }
 
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) PsaWriteEndpoint() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"psaWriteEndpoint",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) PsaWriteEndpointInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"psaWriteEndpointInput",
+		&returns,
+	)
+	return returns
+}
+
 func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) TerraformAttribute() *string {
 	var returns *string
 	_jsii_.Get(
@@ -252,6 +276,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference)Se
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference)SetPsaWriteEndpoint(val *string) {
+	if err := j.validateSetPsaWriteEndpointParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"psaWriteEndpoint",
 		val,
 	)
 }
@@ -468,6 +503,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) R
 	_jsii_.InvokeVoid(
 		g,
 		"resetFailoverDrReplicaName",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceReplicationClusterOutputReference) ResetPsaWriteEndpoint() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetPsaWriteEndpoint",
 		nil, // no parameters
 	)
 }

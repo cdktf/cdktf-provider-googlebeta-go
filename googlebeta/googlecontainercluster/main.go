@@ -3379,6 +3379,54 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigBootDisk",
+		reflect.TypeOf((*GoogleContainerClusterNodeConfigBootDisk)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigBootDiskOutputReference",
+		reflect.TypeOf((*GoogleContainerClusterNodeConfigBootDiskOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "diskType", GoGetter: "DiskType"},
+			_jsii_.MemberProperty{JsiiProperty: "diskTypeInput", GoGetter: "DiskTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedIops", GoGetter: "ProvisionedIops"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedIopsInput", GoGetter: "ProvisionedIopsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedThroughput", GoGetter: "ProvisionedThroughput"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedThroughputInput", GoGetter: "ProvisionedThroughputInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskType", GoMethod: "ResetDiskType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProvisionedIops", GoMethod: "ResetProvisionedIops"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProvisionedThroughput", GoMethod: "ResetProvisionedThroughput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSizeGb", GoMethod: "ResetSizeGb"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeGb", GoGetter: "SizeGb"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeGbInput", GoGetter: "SizeGbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerClusterNodeConfigBootDiskOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodeConfigConfidentialNodes",
 		reflect.TypeOf((*GoogleContainerClusterNodeConfigConfidentialNodes)(nil)).Elem(),
 	)
@@ -4105,7 +4153,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetImageMinimumGcAge", GoMethod: "ResetImageMinimumGcAge"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsecureKubeletReadonlyPortEnabled", GoMethod: "ResetInsecureKubeletReadonlyPortEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPodPidsLimit", GoMethod: "ResetPodPidsLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSingleProcessOomKill", GoMethod: "ResetSingleProcessOomKill"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "singleProcessOomKill", GoGetter: "SingleProcessOomKill"},
+			_jsii_.MemberProperty{JsiiProperty: "singleProcessOomKillInput", GoGetter: "SingleProcessOomKillInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -4248,6 +4299,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedMachineFeatures", GoGetter: "AdvancedMachineFeatures"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedMachineFeaturesInput", GoGetter: "AdvancedMachineFeaturesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bootDisk", GoGetter: "BootDisk"},
+			_jsii_.MemberProperty{JsiiProperty: "bootDiskInput", GoGetter: "BootDiskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskKmsKey", GoGetter: "BootDiskKmsKey"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskKmsKeyInput", GoGetter: "BootDiskKmsKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4325,6 +4378,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "preemptible", GoGetter: "Preemptible"},
 			_jsii_.MemberProperty{JsiiProperty: "preemptibleInput", GoGetter: "PreemptibleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAdvancedMachineFeatures", GoMethod: "PutAdvancedMachineFeatures"},
+			_jsii_.MemberMethod{JsiiMethod: "putBootDisk", GoMethod: "PutBootDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfidentialNodes", GoMethod: "PutConfidentialNodes"},
 			_jsii_.MemberMethod{JsiiMethod: "putContainerdConfig", GoMethod: "PutContainerdConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorageConfig", GoMethod: "PutEphemeralStorageConfig"},
@@ -4348,6 +4402,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "reservationAffinity", GoGetter: "ReservationAffinity"},
 			_jsii_.MemberProperty{JsiiProperty: "reservationAffinityInput", GoGetter: "ReservationAffinityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedMachineFeatures", GoMethod: "ResetAdvancedMachineFeatures"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBootDisk", GoMethod: "ResetBootDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBootDiskKmsKey", GoMethod: "ResetBootDiskKmsKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfidentialNodes", GoMethod: "ResetConfidentialNodes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContainerdConfig", GoMethod: "ResetContainerdConfig"},
@@ -5778,6 +5833,54 @@ func init() {
 		},
 	)
 	_jsii_.RegisterStruct(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigBootDisk",
+		reflect.TypeOf((*GoogleContainerClusterNodePoolNodeConfigBootDisk)(nil)).Elem(),
+	)
+	_jsii_.RegisterClass(
+		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference",
+		reflect.TypeOf((*GoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference)(nil)).Elem(),
+		[]_jsii_.Member{
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
+			_jsii_.MemberProperty{JsiiProperty: "complexObjectIsFromSet", GoGetter: "ComplexObjectIsFromSet"},
+			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
+			_jsii_.MemberProperty{JsiiProperty: "creationStack", GoGetter: "CreationStack"},
+			_jsii_.MemberProperty{JsiiProperty: "diskType", GoGetter: "DiskType"},
+			_jsii_.MemberProperty{JsiiProperty: "diskTypeInput", GoGetter: "DiskTypeInput"},
+			_jsii_.MemberProperty{JsiiProperty: "fqn", GoGetter: "Fqn"},
+			_jsii_.MemberMethod{JsiiMethod: "getAnyMapAttribute", GoMethod: "GetAnyMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanAttribute", GoMethod: "GetBooleanAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getBooleanMapAttribute", GoMethod: "GetBooleanMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getListAttribute", GoMethod: "GetListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberAttribute", GoMethod: "GetNumberAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberListAttribute", GoMethod: "GetNumberListAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getNumberMapAttribute", GoMethod: "GetNumberMapAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringAttribute", GoMethod: "GetStringAttribute"},
+			_jsii_.MemberMethod{JsiiMethod: "getStringMapAttribute", GoMethod: "GetStringMapAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "internalValue", GoGetter: "InternalValue"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationAsList", GoMethod: "InterpolationAsList"},
+			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedIops", GoGetter: "ProvisionedIops"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedIopsInput", GoGetter: "ProvisionedIopsInput"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedThroughput", GoGetter: "ProvisionedThroughput"},
+			_jsii_.MemberProperty{JsiiProperty: "provisionedThroughputInput", GoGetter: "ProvisionedThroughputInput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetDiskType", GoMethod: "ResetDiskType"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProvisionedIops", GoMethod: "ResetProvisionedIops"},
+			_jsii_.MemberMethod{JsiiMethod: "resetProvisionedThroughput", GoMethod: "ResetProvisionedThroughput"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSizeGb", GoMethod: "ResetSizeGb"},
+			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeGb", GoGetter: "SizeGb"},
+			_jsii_.MemberProperty{JsiiProperty: "sizeGbInput", GoGetter: "SizeGbInput"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
+			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
+			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
+		},
+		func() interface{} {
+			j := jsiiProxy_GoogleContainerClusterNodePoolNodeConfigBootDiskOutputReference{}
+			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			return &j
+		},
+	)
+	_jsii_.RegisterStruct(
 		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterNodePoolNodeConfigConfidentialNodes",
 		reflect.TypeOf((*GoogleContainerClusterNodePoolNodeConfigConfidentialNodes)(nil)).Elem(),
 	)
@@ -6504,7 +6607,10 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "resetImageMinimumGcAge", GoMethod: "ResetImageMinimumGcAge"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInsecureKubeletReadonlyPortEnabled", GoMethod: "ResetInsecureKubeletReadonlyPortEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPodPidsLimit", GoMethod: "ResetPodPidsLimit"},
+			_jsii_.MemberMethod{JsiiMethod: "resetSingleProcessOomKill", GoMethod: "ResetSingleProcessOomKill"},
 			_jsii_.MemberMethod{JsiiMethod: "resolve", GoMethod: "Resolve"},
+			_jsii_.MemberProperty{JsiiProperty: "singleProcessOomKill", GoGetter: "SingleProcessOomKill"},
+			_jsii_.MemberProperty{JsiiProperty: "singleProcessOomKillInput", GoGetter: "SingleProcessOomKillInput"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformAttribute", GoGetter: "TerraformAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "terraformResource", GoGetter: "TerraformResource"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
@@ -6647,6 +6753,8 @@ func init() {
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "advancedMachineFeatures", GoGetter: "AdvancedMachineFeatures"},
 			_jsii_.MemberProperty{JsiiProperty: "advancedMachineFeaturesInput", GoGetter: "AdvancedMachineFeaturesInput"},
+			_jsii_.MemberProperty{JsiiProperty: "bootDisk", GoGetter: "BootDisk"},
+			_jsii_.MemberProperty{JsiiProperty: "bootDiskInput", GoGetter: "BootDiskInput"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskKmsKey", GoGetter: "BootDiskKmsKey"},
 			_jsii_.MemberProperty{JsiiProperty: "bootDiskKmsKeyInput", GoGetter: "BootDiskKmsKeyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6724,6 +6832,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "preemptible", GoGetter: "Preemptible"},
 			_jsii_.MemberProperty{JsiiProperty: "preemptibleInput", GoGetter: "PreemptibleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putAdvancedMachineFeatures", GoMethod: "PutAdvancedMachineFeatures"},
+			_jsii_.MemberMethod{JsiiMethod: "putBootDisk", GoMethod: "PutBootDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfidentialNodes", GoMethod: "PutConfidentialNodes"},
 			_jsii_.MemberMethod{JsiiMethod: "putContainerdConfig", GoMethod: "PutContainerdConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putEphemeralStorageConfig", GoMethod: "PutEphemeralStorageConfig"},
@@ -6747,6 +6856,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "reservationAffinity", GoGetter: "ReservationAffinity"},
 			_jsii_.MemberProperty{JsiiProperty: "reservationAffinityInput", GoGetter: "ReservationAffinityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedMachineFeatures", GoMethod: "ResetAdvancedMachineFeatures"},
+			_jsii_.MemberMethod{JsiiMethod: "resetBootDisk", GoMethod: "ResetBootDisk"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBootDiskKmsKey", GoMethod: "ResetBootDiskKmsKey"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConfidentialNodes", GoMethod: "ResetConfidentialNodes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContainerdConfig", GoMethod: "ResetContainerdConfig"},

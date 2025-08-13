@@ -35,6 +35,9 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference in
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
+	NetworkAttachmentUri() *string
+	SetNetworkAttachmentUri(val *string)
+	NetworkAttachmentUriInput() *string
 	PscAutoConnections() GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigPscAutoConnectionsList
 	PscAutoConnectionsInput() interface{}
 	PscEnabled() interface{}
@@ -74,6 +77,7 @@ type GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference in
 	InterpolationForAttribute(property *string) cdktf.IResolvable
 	PutPscAutoConnections(value interface{})
 	ResetAllowedConsumerProjects()
+	ResetNetworkAttachmentUri()
 	ResetPscAutoConnections()
 	ResetPscEnabled()
 	// Produce the Token's value at resolution time.
@@ -156,6 +160,26 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutp
 	_jsii_.Get(
 		j,
 		"internalValue",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) NetworkAttachmentUri() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentUri",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) NetworkAttachmentUriInput() *string {
+	var returns *string
+	_jsii_.Get(
+		j,
+		"networkAttachmentUriInput",
 		&returns,
 	)
 	return returns
@@ -289,6 +313,17 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutp
 	_jsii_.Set(
 		j,
 		"internalValue",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference)SetNetworkAttachmentUri(val *string) {
+	if err := j.validateSetNetworkAttachmentUriParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"networkAttachmentUri",
 		val,
 	)
 }
@@ -527,6 +562,14 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutp
 	_jsii_.InvokeVoid(
 		g,
 		"resetAllowedConsumerProjects",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsIpConfigurationPscConfigOutputReference) ResetNetworkAttachmentUri() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetNetworkAttachmentUri",
 		nil, // no parameters
 	)
 }

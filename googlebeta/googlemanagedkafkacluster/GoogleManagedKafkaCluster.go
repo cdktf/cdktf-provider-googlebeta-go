@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster}.
 type GoogleManagedKafkaCluster interface {
 	cdktf.TerraformResource
 	CapacityConfig() GoogleManagedKafkaClusterCapacityConfigOutputReference
@@ -588,7 +588,7 @@ func (j *jsiiProxy_GoogleManagedKafkaCluster) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster} Resource.
 func NewGoogleManagedKafkaCluster(scope constructs.Construct, id *string, config *GoogleManagedKafkaClusterConfig) GoogleManagedKafkaCluster {
 	_init_.Initialize()
 
@@ -606,7 +606,7 @@ func NewGoogleManagedKafkaCluster(scope constructs.Construct, id *string, config
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_managed_kafka_cluster google_managed_kafka_cluster} Resource.
 func NewGoogleManagedKafkaCluster_Override(g GoogleManagedKafkaCluster, scope constructs.Construct, id *string, config *GoogleManagedKafkaClusterConfig) {
 	_init_.Initialize()
 

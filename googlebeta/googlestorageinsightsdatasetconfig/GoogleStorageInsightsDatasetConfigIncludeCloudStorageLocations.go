@@ -7,7 +7,7 @@ package googlestorageinsightsdatasetconfig
 type GoogleStorageInsightsDatasetConfigIncludeCloudStorageLocations struct {
 	// The list of cloud storage locations to include in the DatasetConfig.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_storage_insights_dataset_config#locations GoogleStorageInsightsDatasetConfig#locations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_storage_insights_dataset_config#locations GoogleStorageInsightsDatasetConfig#locations}
 	Locations *[]*string `field:"required" json:"locations" yaml:"locations"`
 }
 

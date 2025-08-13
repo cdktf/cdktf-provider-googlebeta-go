@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster}.
 type GoogleGkeonpremVmwareAdminCluster interface {
 	cdktf.TerraformResource
 	AddonNode() GoogleGkeonpremVmwareAdminClusterAddonNodeOutputReference
@@ -52,7 +52,9 @@ type GoogleGkeonpremVmwareAdminCluster interface {
 	SetDescription(val *string)
 	DescriptionInput() *string
 	EffectiveAnnotations() cdktf.StringMap
-	EnableAdvancedCluster() cdktf.IResolvable
+	EnableAdvancedCluster() interface{}
+	SetEnableAdvancedCluster(val interface{})
+	EnableAdvancedClusterInput() interface{}
 	Endpoint() *string
 	Etag() *string
 	Fleet() GoogleGkeonpremVmwareAdminClusterFleetList
@@ -184,6 +186,7 @@ type GoogleGkeonpremVmwareAdminCluster interface {
 	ResetBootstrapClusterMembership()
 	ResetControlPlaneNode()
 	ResetDescription()
+	ResetEnableAdvancedCluster()
 	ResetId()
 	ResetImageType()
 	ResetLoadBalancer()
@@ -444,11 +447,21 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) EffectiveAnnotations() cdk
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) EnableAdvancedCluster() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) EnableAdvancedCluster() interface{} {
+	var returns interface{}
 	_jsii_.Get(
 		j,
 		"enableAdvancedCluster",
+		&returns,
+	)
+	return returns
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) EnableAdvancedClusterInput() interface{} {
+	var returns interface{}
+	_jsii_.Get(
+		j,
+		"enableAdvancedClusterInput",
 		&returns,
 	)
 	return returns
@@ -895,7 +908,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) VcenterInput() *GoogleGkeo
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGoogleGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareAdminClusterConfig) GoogleGkeonpremVmwareAdminCluster {
 	_init_.Initialize()
 
@@ -913,7 +926,7 @@ func NewGoogleGkeonpremVmwareAdminCluster(scope constructs.Construct, id *string
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.47.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_gkeonprem_vmware_admin_cluster google_gkeonprem_vmware_admin_cluster} Resource.
 func NewGoogleGkeonpremVmwareAdminCluster_Override(g GoogleGkeonpremVmwareAdminCluster, scope constructs.Construct, id *string, config *GoogleGkeonpremVmwareAdminClusterConfig) {
 	_init_.Initialize()
 
@@ -983,6 +996,17 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster)SetDescription(val *string)
 	_jsii_.Set(
 		j,
 		"description",
+		val,
+	)
+}
+
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster)SetEnableAdvancedCluster(val interface{}) {
+	if err := j.validateSetEnableAdvancedClusterParameters(val); err != nil {
+		panic(err)
+	}
+	_jsii_.Set(
+		j,
+		"enableAdvancedCluster",
 		val,
 	)
 }
@@ -1625,6 +1649,14 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) ResetDescription() {
 	_jsii_.InvokeVoid(
 		g,
 		"resetDescription",
+		nil, // no parameters
+	)
+}
+
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) ResetEnableAdvancedCluster() {
+	_jsii_.InvokeVoid(
+		g,
+		"resetEnableAdvancedCluster",
 		nil, // no parameters
 	)
 }

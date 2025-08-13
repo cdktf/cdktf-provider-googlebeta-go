@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourc
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validatePutFederatedIdentityConfigParameters(value *GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceFederatedIdentityConfig) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecAzureBlobStorageDataSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
 	return nil
 }

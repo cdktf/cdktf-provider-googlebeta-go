@@ -51,6 +51,10 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) vali
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutBootDiskParameters(value *GoogleContainerClusterNodePoolNodeConfigBootDisk) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContainerClusterNodePoolNodeConfigOutputReference) validatePutConfidentialNodesParameters(value *GoogleContainerClusterNodePoolNodeConfigConfidentialNodes) error {
 	return nil
 }
