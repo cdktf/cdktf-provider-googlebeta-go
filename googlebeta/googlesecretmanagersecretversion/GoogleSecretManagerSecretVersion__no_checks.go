@@ -139,7 +139,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetSecretDataWoPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetSecretDataWoVersionParameters(val *float64) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetSecretDataWoVersionParameters(val *string) error {
 	return nil
 }
 

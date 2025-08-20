@@ -147,6 +147,10 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetMetadata
 	return nil
 }
 
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetNetworkParameters(val *string) error {
+	return nil
+}
+
 func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetProjectParameters(val *string) error {
 	return nil
 }
@@ -156,6 +160,10 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetProvisio
 }
 
 func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetStateParameters(val *string) error {
+	return nil
+}
+
+func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) validateSetSubnetParameters(val *string) error {
 	return nil
 }
 

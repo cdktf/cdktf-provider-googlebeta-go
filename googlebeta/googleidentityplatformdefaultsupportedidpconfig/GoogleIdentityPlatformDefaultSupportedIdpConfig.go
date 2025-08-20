@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config}.
 type GoogleIdentityPlatformDefaultSupportedIdpConfig interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -462,7 +462,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformDefaultSupportedIdpConfig) TimeoutsInpu
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config} Resource.
 func NewGoogleIdentityPlatformDefaultSupportedIdpConfig(scope constructs.Construct, id *string, config *GoogleIdentityPlatformDefaultSupportedIdpConfigConfig) GoogleIdentityPlatformDefaultSupportedIdpConfig {
 	_init_.Initialize()
 
@@ -480,7 +480,7 @@ func NewGoogleIdentityPlatformDefaultSupportedIdpConfig(scope constructs.Constru
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_identity_platform_default_supported_idp_config google_identity_platform_default_supported_idp_config} Resource.
 func NewGoogleIdentityPlatformDefaultSupportedIdpConfig_Override(g GoogleIdentityPlatformDefaultSupportedIdpConfig, scope constructs.Construct, id *string, config *GoogleIdentityPlatformDefaultSupportedIdpConfigConfig) {
 	_init_.Initialize()
 

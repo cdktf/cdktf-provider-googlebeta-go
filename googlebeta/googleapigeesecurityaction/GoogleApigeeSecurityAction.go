@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action google_apigee_security_action}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_apigee_security_action google_apigee_security_action}.
 type GoogleApigeeSecurityAction interface {
 	cdktf.TerraformResource
 	Allow() GoogleApigeeSecurityActionAllowOutputReference
@@ -639,7 +639,7 @@ func (j *jsiiProxy_GoogleApigeeSecurityAction) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action google_apigee_security_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_apigee_security_action google_apigee_security_action} Resource.
 func NewGoogleApigeeSecurityAction(scope constructs.Construct, id *string, config *GoogleApigeeSecurityActionConfig) GoogleApigeeSecurityAction {
 	_init_.Initialize()
 
@@ -657,7 +657,7 @@ func NewGoogleApigeeSecurityAction(scope constructs.Construct, id *string, confi
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apigee_security_action google_apigee_security_action} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_apigee_security_action google_apigee_security_action} Resource.
 func NewGoogleApigeeSecurityAction_Override(g GoogleApigeeSecurityAction, scope constructs.Construct, id *string, config *GoogleApigeeSecurityActionConfig) {
 	_init_.Initialize()
 

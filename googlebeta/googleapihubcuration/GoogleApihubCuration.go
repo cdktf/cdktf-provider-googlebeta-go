@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apihub_curation google_apihub_curation}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_apihub_curation google_apihub_curation}.
 type GoogleApihubCuration interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -551,7 +551,7 @@ func (j *jsiiProxy_GoogleApihubCuration) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apihub_curation google_apihub_curation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_apihub_curation google_apihub_curation} Resource.
 func NewGoogleApihubCuration(scope constructs.Construct, id *string, config *GoogleApihubCurationConfig) GoogleApihubCuration {
 	_init_.Initialize()
 
@@ -569,7 +569,7 @@ func NewGoogleApihubCuration(scope constructs.Construct, id *string, config *Goo
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_apihub_curation google_apihub_curation} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_apihub_curation google_apihub_curation} Resource.
 func NewGoogleApihubCuration_Override(g GoogleApihubCuration, scope constructs.Construct, id *string, config *GoogleApihubCurationConfig) {
 	_init_.Initialize()
 

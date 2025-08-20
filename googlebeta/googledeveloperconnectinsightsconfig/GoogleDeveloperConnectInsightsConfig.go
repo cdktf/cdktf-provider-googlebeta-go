@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config}.
 type GoogleDeveloperConnectInsightsConfig interface {
 	cdktf.TerraformResource
 	Annotations() *map[string]*string
@@ -609,7 +609,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectInsightsConfig) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config} Resource.
 func NewGoogleDeveloperConnectInsightsConfig(scope constructs.Construct, id *string, config *GoogleDeveloperConnectInsightsConfigConfig) GoogleDeveloperConnectInsightsConfig {
 	_init_.Initialize()
 
@@ -627,7 +627,7 @@ func NewGoogleDeveloperConnectInsightsConfig(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_developer_connect_insights_config google_developer_connect_insights_config} Resource.
 func NewGoogleDeveloperConnectInsightsConfig_Override(g GoogleDeveloperConnectInsightsConfig, scope constructs.Construct, id *string, config *GoogleDeveloperConnectInsightsConfigConfig) {
 	_init_.Initialize()
 

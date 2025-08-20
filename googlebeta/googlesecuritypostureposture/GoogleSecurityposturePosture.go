@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_securityposture_posture google_securityposture_posture}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_securityposture_posture google_securityposture_posture}.
 type GoogleSecurityposturePosture interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -539,7 +539,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosture) UpdateTime() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_securityposture_posture google_securityposture_posture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_securityposture_posture google_securityposture_posture} Resource.
 func NewGoogleSecurityposturePosture(scope constructs.Construct, id *string, config *GoogleSecurityposturePostureConfig) GoogleSecurityposturePosture {
 	_init_.Initialize()
 
@@ -557,7 +557,7 @@ func NewGoogleSecurityposturePosture(scope constructs.Construct, id *string, con
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.48.0/docs/resources/google_securityposture_posture google_securityposture_posture} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_securityposture_posture google_securityposture_posture} Resource.
 func NewGoogleSecurityposturePosture_Override(g GoogleSecurityposturePosture, scope constructs.Construct, id *string, config *GoogleSecurityposturePostureConfig) {
 	_init_.Initialize()
 
