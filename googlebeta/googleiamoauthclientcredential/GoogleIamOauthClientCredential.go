@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iam_oauth_client_credential google_iam_oauth_client_credential}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iam_oauth_client_credential google_iam_oauth_client_credential}.
 type GoogleIamOauthClientCredential interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -497,7 +497,7 @@ func (j *jsiiProxy_GoogleIamOauthClientCredential) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iam_oauth_client_credential google_iam_oauth_client_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iam_oauth_client_credential google_iam_oauth_client_credential} Resource.
 func NewGoogleIamOauthClientCredential(scope constructs.Construct, id *string, config *GoogleIamOauthClientCredentialConfig) GoogleIamOauthClientCredential {
 	_init_.Initialize()
 
@@ -515,7 +515,7 @@ func NewGoogleIamOauthClientCredential(scope constructs.Construct, id *string, c
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iam_oauth_client_credential google_iam_oauth_client_credential} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iam_oauth_client_credential google_iam_oauth_client_credential} Resource.
 func NewGoogleIamOauthClientCredential_Override(g GoogleIamOauthClientCredential, scope constructs.Construct, id *string, config *GoogleIamOauthClientCredentialConfig) {
 	_init_.Initialize()
 

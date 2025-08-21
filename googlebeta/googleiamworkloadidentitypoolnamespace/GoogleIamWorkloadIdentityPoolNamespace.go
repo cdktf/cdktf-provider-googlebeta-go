@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace}.
 type GoogleIamWorkloadIdentityPoolNamespace interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -485,7 +485,7 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolNamespace) WorkloadIdentityPoolN
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace} Resource.
 func NewGoogleIamWorkloadIdentityPoolNamespace(scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolNamespaceConfig) GoogleIamWorkloadIdentityPoolNamespace {
 	_init_.Initialize()
 
@@ -503,7 +503,7 @@ func NewGoogleIamWorkloadIdentityPoolNamespace(scope constructs.Construct, id *s
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_iam_workload_identity_pool_namespace google_iam_workload_identity_pool_namespace} Resource.
 func NewGoogleIamWorkloadIdentityPoolNamespace_Override(g GoogleIamWorkloadIdentityPoolNamespace, scope constructs.Construct, id *string, config *GoogleIamWorkloadIdentityPoolNamespaceConfig) {
 	_init_.Initialize()
 

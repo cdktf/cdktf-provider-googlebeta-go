@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group}.
 type GoogleNetworkSecurityInterceptEndpointGroup interface {
 	cdktf.TerraformResource
 	Associations() GoogleNetworkSecurityInterceptEndpointGroupAssociationsList
@@ -574,7 +574,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityInterceptEndpointGroup) UpdateTime() *st
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group} Resource.
 func NewGoogleNetworkSecurityInterceptEndpointGroup(scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptEndpointGroupConfig) GoogleNetworkSecurityInterceptEndpointGroup {
 	_init_.Initialize()
 
@@ -592,7 +592,7 @@ func NewGoogleNetworkSecurityInterceptEndpointGroup(scope constructs.Construct, 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_network_security_intercept_endpoint_group google_network_security_intercept_endpoint_group} Resource.
 func NewGoogleNetworkSecurityInterceptEndpointGroup_Override(g GoogleNetworkSecurityInterceptEndpointGroup, scope constructs.Construct, id *string, config *GoogleNetworkSecurityInterceptEndpointGroupConfig) {
 	_init_.Initialize()
 

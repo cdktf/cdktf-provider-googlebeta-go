@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_apigee_api_product google_apigee_api_product}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_apigee_api_product google_apigee_api_product}.
 type GoogleApigeeApiProduct interface {
 	cdktf.TerraformResource
 	ApiResources() *[]*string
@@ -785,7 +785,7 @@ func (j *jsiiProxy_GoogleApigeeApiProduct) TimeoutsInput() interface{} {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_apigee_api_product google_apigee_api_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_apigee_api_product google_apigee_api_product} Resource.
 func NewGoogleApigeeApiProduct(scope constructs.Construct, id *string, config *GoogleApigeeApiProductConfig) GoogleApigeeApiProduct {
 	_init_.Initialize()
 
@@ -803,7 +803,7 @@ func NewGoogleApigeeApiProduct(scope constructs.Construct, id *string, config *G
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_apigee_api_product google_apigee_api_product} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_apigee_api_product google_apigee_api_product} Resource.
 func NewGoogleApigeeApiProduct_Override(g GoogleApigeeApiProduct, scope constructs.Construct, id *string, config *GoogleApigeeApiProductConfig) {
 	_init_.Initialize()
 

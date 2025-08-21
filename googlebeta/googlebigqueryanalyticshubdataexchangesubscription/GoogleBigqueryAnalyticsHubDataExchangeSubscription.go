@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_bigquery_analytics_hub_data_exchange_subscription google_bigquery_analytics_hub_data_exchange_subscription}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_bigquery_analytics_hub_data_exchange_subscription google_bigquery_analytics_hub_data_exchange_subscription}.
 type GoogleBigqueryAnalyticsHubDataExchangeSubscription interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -666,7 +666,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchangeSubscription) TimeoutsI
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_bigquery_analytics_hub_data_exchange_subscription google_bigquery_analytics_hub_data_exchange_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_bigquery_analytics_hub_data_exchange_subscription google_bigquery_analytics_hub_data_exchange_subscription} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchangeSubscription(scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeSubscriptionConfig) GoogleBigqueryAnalyticsHubDataExchangeSubscription {
 	_init_.Initialize()
 
@@ -684,7 +684,7 @@ func NewGoogleBigqueryAnalyticsHubDataExchangeSubscription(scope constructs.Cons
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.0/docs/resources/google_bigquery_analytics_hub_data_exchange_subscription google_bigquery_analytics_hub_data_exchange_subscription} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_bigquery_analytics_hub_data_exchange_subscription google_bigquery_analytics_hub_data_exchange_subscription} Resource.
 func NewGoogleBigqueryAnalyticsHubDataExchangeSubscription_Override(g GoogleBigqueryAnalyticsHubDataExchangeSubscription, scope constructs.Construct, id *string, config *GoogleBigqueryAnalyticsHubDataExchangeSubscriptionConfig) {
 	_init_.Initialize()
 

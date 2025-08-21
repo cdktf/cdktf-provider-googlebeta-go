@@ -482,7 +482,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetSecretDataWoPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetSecretDataWoVersionParameters(val *string) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretVersion) validateSetSecretDataWoVersionParameters(val *float64) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
