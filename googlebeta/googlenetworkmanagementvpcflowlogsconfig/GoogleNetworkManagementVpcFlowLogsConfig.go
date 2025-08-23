@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_network_management_vpc_flow_logs_config google_network_management_vpc_flow_logs_config}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_network_management_vpc_flow_logs_config google_network_management_vpc_flow_logs_config}.
 type GoogleNetworkManagementVpcFlowLogsConfig interface {
 	cdktf.TerraformResource
 	AggregationInterval() *string
@@ -758,7 +758,7 @@ func (j *jsiiProxy_GoogleNetworkManagementVpcFlowLogsConfig) VpnTunnelInput() *s
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_network_management_vpc_flow_logs_config google_network_management_vpc_flow_logs_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_network_management_vpc_flow_logs_config google_network_management_vpc_flow_logs_config} Resource.
 func NewGoogleNetworkManagementVpcFlowLogsConfig(scope constructs.Construct, id *string, config *GoogleNetworkManagementVpcFlowLogsConfigConfig) GoogleNetworkManagementVpcFlowLogsConfig {
 	_init_.Initialize()
 
@@ -776,7 +776,7 @@ func NewGoogleNetworkManagementVpcFlowLogsConfig(scope constructs.Construct, id 
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_network_management_vpc_flow_logs_config google_network_management_vpc_flow_logs_config} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_network_management_vpc_flow_logs_config google_network_management_vpc_flow_logs_config} Resource.
 func NewGoogleNetworkManagementVpcFlowLogsConfig_Override(g GoogleNetworkManagementVpcFlowLogsConfig, scope constructs.Construct, id *string, config *GoogleNetworkManagementVpcFlowLogsConfigConfig) {
 	_init_.Initialize()
 

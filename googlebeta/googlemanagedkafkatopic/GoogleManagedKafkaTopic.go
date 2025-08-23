@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_managed_kafka_topic google_managed_kafka_topic}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_topic google_managed_kafka_topic}.
 type GoogleManagedKafkaTopic interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -509,7 +509,7 @@ func (j *jsiiProxy_GoogleManagedKafkaTopic) TopicIdInput() *string {
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_managed_kafka_topic google_managed_kafka_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_topic google_managed_kafka_topic} Resource.
 func NewGoogleManagedKafkaTopic(scope constructs.Construct, id *string, config *GoogleManagedKafkaTopicConfig) GoogleManagedKafkaTopic {
 	_init_.Initialize()
 
@@ -527,7 +527,7 @@ func NewGoogleManagedKafkaTopic(scope constructs.Construct, id *string, config *
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.1/docs/resources/google_managed_kafka_topic google_managed_kafka_topic} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_managed_kafka_topic google_managed_kafka_topic} Resource.
 func NewGoogleManagedKafkaTopic_Override(g GoogleManagedKafkaTopic, scope constructs.Construct, id *string, config *GoogleManagedKafkaTopicConfig) {
 	_init_.Initialize()
 
