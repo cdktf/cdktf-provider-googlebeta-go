@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine}.
 type GoogleDiscoveryEngineRecommendationEngine interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -555,7 +555,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) UpdateTime() *stri
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource.
 func NewGoogleDiscoveryEngineRecommendationEngine(scope constructs.Construct, id *string, config *GoogleDiscoveryEngineRecommendationEngineConfig) GoogleDiscoveryEngineRecommendationEngine {
 	_init_.Initialize()
 
@@ -573,7 +573,7 @@ func NewGoogleDiscoveryEngineRecommendationEngine(scope constructs.Construct, id
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_discovery_engine_recommendation_engine google_discovery_engine_recommendation_engine} Resource.
 func NewGoogleDiscoveryEngineRecommendationEngine_Override(g GoogleDiscoveryEngineRecommendationEngine, scope constructs.Construct, id *string, config *GoogleDiscoveryEngineRecommendationEngineConfig) {
 	_init_.Initialize()
 

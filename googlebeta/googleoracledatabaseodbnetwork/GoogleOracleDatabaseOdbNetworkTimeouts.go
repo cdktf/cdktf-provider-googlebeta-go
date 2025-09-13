@@ -5,11 +5,11 @@ package googleoracledatabaseodbnetwork
 
 
 type GoogleOracleDatabaseOdbNetworkTimeouts struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_oracle_database_odb_network#create GoogleOracleDatabaseOdbNetwork#create}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_oracle_database_odb_network#create GoogleOracleDatabaseOdbNetwork#create}.
 	Create *string `field:"optional" json:"create" yaml:"create"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_oracle_database_odb_network#delete GoogleOracleDatabaseOdbNetwork#delete}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_oracle_database_odb_network#delete GoogleOracleDatabaseOdbNetwork#delete}.
 	Delete *string `field:"optional" json:"delete" yaml:"delete"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_oracle_database_odb_network#update GoogleOracleDatabaseOdbNetwork#update}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_oracle_database_odb_network#update GoogleOracleDatabaseOdbNetwork#update}.
 	Update *string `field:"optional" json:"update" yaml:"update"`
 }
 

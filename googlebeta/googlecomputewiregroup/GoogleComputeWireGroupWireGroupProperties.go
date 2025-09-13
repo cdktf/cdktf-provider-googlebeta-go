@@ -11,7 +11,7 @@ type GoogleComputeWireGroupWireGroupProperties struct {
 	// REDUNDANT: two pseudowires over four Interconnect connections, with two connections in one metro and two connections in another metro.
 	// BOX_AND_CROSS: four pseudowires over four Interconnect connections, with two connections in one metro and two connections in another metro.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_compute_wire_group#type GoogleComputeWireGroup#type}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_compute_wire_group#type GoogleComputeWireGroup#type}
 	Type *string `field:"optional" json:"type" yaml:"type"`
 }
 

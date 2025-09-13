@@ -5,11 +5,11 @@ package googlecomputewiregroup
 
 
 type GoogleComputeWireGroupEndpoints struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_compute_wire_group#endpoint GoogleComputeWireGroup#endpoint}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_compute_wire_group#endpoint GoogleComputeWireGroup#endpoint}.
 	Endpoint *string `field:"required" json:"endpoint" yaml:"endpoint"`
 	// interconnects block.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_compute_wire_group#interconnects GoogleComputeWireGroup#interconnects}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_compute_wire_group#interconnects GoogleComputeWireGroup#interconnects}
 	Interconnects interface{} `field:"optional" json:"interconnects" yaml:"interconnects"`
 }
 

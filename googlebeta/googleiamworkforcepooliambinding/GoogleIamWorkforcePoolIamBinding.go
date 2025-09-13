@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding}.
 type GoogleIamWorkforcePoolIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -438,7 +438,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolIamBinding) WorkforcePoolIdInput() *str
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding} Resource.
 func NewGoogleIamWorkforcePoolIamBinding(scope constructs.Construct, id *string, config *GoogleIamWorkforcePoolIamBindingConfig) GoogleIamWorkforcePoolIamBinding {
 	_init_.Initialize()
 
@@ -456,7 +456,7 @@ func NewGoogleIamWorkforcePoolIamBinding(scope constructs.Construct, id *string,
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.2/docs/resources/google_iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_iam_workforce_pool_iam_binding google_iam_workforce_pool_iam_binding} Resource.
 func NewGoogleIamWorkforcePoolIamBinding_Override(g GoogleIamWorkforcePoolIamBinding, scope constructs.Construct, id *string, config *GoogleIamWorkforcePoolIamBindingConfig) {
 	_init_.Initialize()
 
