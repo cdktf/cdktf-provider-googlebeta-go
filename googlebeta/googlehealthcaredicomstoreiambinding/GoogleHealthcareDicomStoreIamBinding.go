@@ -12,7 +12,7 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding}.
+// Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding}.
 type GoogleHealthcareDicomStoreIamBinding interface {
 	cdktf.TerraformResource
 	// Experimental.
@@ -414,7 +414,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamBinding) TerraformResourceType()
 }
 
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding} Resource.
 func NewGoogleHealthcareDicomStoreIamBinding(scope constructs.Construct, id *string, config *GoogleHealthcareDicomStoreIamBindingConfig) GoogleHealthcareDicomStoreIamBinding {
 	_init_.Initialize()
 
@@ -432,7 +432,7 @@ func NewGoogleHealthcareDicomStoreIamBinding(scope constructs.Construct, id *str
 	return &j
 }
 
-// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding} Resource.
+// Create a new {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_healthcare_dicom_store_iam_binding google_healthcare_dicom_store_iam_binding} Resource.
 func NewGoogleHealthcareDicomStoreIamBinding_Override(g GoogleHealthcareDicomStoreIamBinding, scope constructs.Construct, id *string, config *GoogleHealthcareDicomStoreIamBindingConfig) {
 	_init_.Initialize()
 

@@ -5,11 +5,11 @@ package googleworkbenchinstanceiammember
 
 
 type GoogleWorkbenchInstanceIamMemberCondition struct {
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_workbench_instance_iam_member#expression GoogleWorkbenchInstanceIamMember#expression}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_workbench_instance_iam_member#expression GoogleWorkbenchInstanceIamMember#expression}.
 	Expression *string `field:"required" json:"expression" yaml:"expression"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_workbench_instance_iam_member#title GoogleWorkbenchInstanceIamMember#title}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_workbench_instance_iam_member#title GoogleWorkbenchInstanceIamMember#title}.
 	Title *string `field:"required" json:"title" yaml:"title"`
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_workbench_instance_iam_member#description GoogleWorkbenchInstanceIamMember#description}.
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_workbench_instance_iam_member#description GoogleWorkbenchInstanceIamMember#description}.
 	Description *string `field:"optional" json:"description" yaml:"description"`
 }
 

@@ -7,7 +7,7 @@ package googlestorageinsightsdatasetconfig
 type GoogleStorageInsightsDatasetConfigExcludeCloudStorageLocations struct {
 	// The list of cloud storage locations to exclude in the DatasetConfig.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_storage_insights_dataset_config#locations GoogleStorageInsightsDatasetConfig#locations}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_storage_insights_dataset_config#locations GoogleStorageInsightsDatasetConfig#locations}
 	Locations *[]*string `field:"required" json:"locations" yaml:"locations"`
 }
 

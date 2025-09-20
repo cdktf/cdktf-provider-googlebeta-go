@@ -7,7 +7,7 @@ package googledialogflowcxpage
 type GoogleDialogflowCxPageFormParametersFillBehaviorRepromptEventHandlersTriggerFulfillmentMessagesText struct {
 	// A collection of text responses.
 	//
-	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.49.3/docs/resources/google_dialogflow_cx_page#text GoogleDialogflowCxPage#text}
+	// Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google-beta/6.50.0/docs/resources/google_dialogflow_cx_page#text GoogleDialogflowCxPage#text}
 	Text *[]*string `field:"optional" json:"text" yaml:"text"`
 }
 
